@@ -6,7 +6,6 @@ __pycache__/
 *.so
 
 # Distribution / packaging
-bin/
 build/
 develop-eggs/
 dist/
@@ -48,3 +47,6 @@ coverage.xml
 
 # Sphinx documentation
 docs/_build/
+
+# MacOS
+.DS_Store
