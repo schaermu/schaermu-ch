@@ -12,21 +12,84 @@
         <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        {# Global stylesheets #}
-        <link rel="stylesheet" type="text/css" href="{% static 'css/schaermu_ch.css' %}">
+      	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500' rel='stylesheet' type='text/css'>
+      	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+      	<link rel="stylesheet" href="{% static 'css/animate.css' %}">
+      	<link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+      	<link rel="stylesheet" href="{% static 'css/salvattore.css' %}">
+      	<link rel="stylesheet" href="{% static 'css/style.css' %}">
 
         {% block extra_css %}
             {# Override this in templates to add extra stylesheets #}
         {% endblock %}
+
+      	<!-- Modernizr JS -->
+      	<script src="{% static 'js/modernizr-2.6.2.min.js' %}"></script>
+      	<!-- FOR IE9 below -->
+      	<!--[if lt IE 9]>
+      	<script src="{% static 'js/respond.min.js' %}"></script>
+      	<![endif]-->
     </head>
 
     <body class="{% block body_class %}{% endblock %}">
         {% wagtailuserbar %}
+        <div id="fh5co-offcanvass">
+      		<a href="#" class="fh5co-offcanvass-close js-fh5co-offcanvass-close"> <i class="icon-cross"></i> </a>
+      		<h1 class="fh5co-logo"></h1>
+      		<ul>
+      			<li class="active"><a href="/">/ home</a></li>
+      			<li><a href="/projects">/ projects</a></li>
+      			<li><a href="/contact">/ contact</a></li>
+      		</ul>
+      		<h3 class="fh5co-lead">.social</h3>
+      		<p class="fh5co-social-icons">
+      			<a href="#"><i class="icon-stackoverflow"></i></a>
+      			<a href="#"><i class="icon-linkedin"></i></a>
+      			<a href="#"><i class="icon-github"></i></a>
+      		</p>
+      	</div>
 
-        {% block content %}{% endblock %}
+        <header id="fh5co-header" role="banner">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <a href="#" class="fh5co-menu-btn js-fh5co-menu-btn"><i class="icon-menu"></i></a>
+                <a class="navbar-brand" href="/">schaermu.ch</a>
+              </div>
+            </div>
+          </div>
+        </header>
+        <div id="fh5co-main">
+          <div class="container">
+            <div class="row">
+              {% block content %}{% endblock %}
+            </div>
+          </div>
+        </div>
 
-        {# Global javascript #}
-        <script type="text/javascript" src="{% static 'js/schaermu_ch.js' %}"></script>
+        <footer id="fh5co-footer">
+      		<div class="container">
+      			<div class="row row-padded">
+      				<div class="col-md-12 text-center">
+      					<p class="fh5co-social-icons">
+            			<a href="#"><i class="icon-stackoverflow"></i></a>
+            			<a href="#"><i class="icon-linkedin"></i></a>
+            			<a href="#"><i class="icon-github"></i></a>
+      					</p>
+      					<p><small>&copy; Hydrogen Free HTML5 Template. All Rights Reserved. <br>Designed by: <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> | Images by: <a href="http://pexels.com" target="_blank">Pexels</a> </small></p>
+      				</div>
+      			</div>
+      		</div>
+      	</footer>
+
+      	<script src="{% static 'js/jquery.min.js' %}"></script>
+      	<script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+      	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+      	<script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+      	<script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+      	<script src="{% static 'js/salvattore.min.js' %}"></script>
+      	<script src="{% static 'js/main.js' %}"></script>
 
         {% block extra_js %}
             {# Override this in templates to add extra javascript #}
