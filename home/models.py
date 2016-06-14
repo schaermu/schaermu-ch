@@ -1,6 +1,7 @@
 from __future__ import absolute_import, unicode_literals
 
 from django.db import models
+from django.utils import timezone, text
 
 from wagtail.wagtailcore.models import Page, Orderable
 from wagtail.wagtailcore.fields import RichTextField
@@ -31,6 +32,12 @@ class HomePage(Page):
     def get_context(self, request):
         context = super(HomePage, self).get_context(request)
 
-        # Add extra variables and return the updated context
-        context['projects'] = ProjectPage.objects.child_of(self).live()
+        context['latest_projects'] = ProjectPage.get_latest()
         return context
+
+    def create_test(title, lead):
+        parent_page = Page.get_first_root_node()
+        home = HomePage(heading=title, title=title, lead=lead,
+                        slug=text.slugify(title))
+        parent_page.add_child(instance=home)
+        return home
