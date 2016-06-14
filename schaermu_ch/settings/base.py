@@ -69,6 +69,8 @@ MIDDLEWARE_CLASSES = [
 
 ROOT_URLCONF = 'schaermu_ch.urls'
 
+TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -138,6 +140,6 @@ MEDIA_URL = '/media/'
 
 WAGTAIL_SITE_NAME = "schaermu_ch"
 
-# Base URL to use when referring to full URLs within the Wagtail admin backend -
+# Base URL to use when referring to full URLs within the Wagtail admin backend
 # e.g. in notification emails. Don't include '/admin' or a trailing slash
 BASE_URL = 'http://www.schaermu.ch'
