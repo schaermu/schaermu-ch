@@ -65,3 +65,6 @@ class ProjectPage(Page):
         FieldPanel('lead'),
         FieldPanel('body', classname="full")
     ]
+
+    def get_latest(limit=3):
+        return ProjectPage.objects.live().order_by('-project_date').all()[:limit]
