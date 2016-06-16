@@ -1,0 +1,13 @@
+<section class="career">
+  <ul class="timeline">
+  {% for block in self %}
+    <li class="{% cycle '' 'timeline-inverted' %}">
+      <div class="timeline-badge">
+        <a><i class="fa fa-circle{% cycle '' ' invert' %}"></i></a>
+      </div>
+      {{ block }}
+    </li>
+  {% endfor %}
+    <li class="clearfix no-float"></li>
+  </ul>
+</section>
