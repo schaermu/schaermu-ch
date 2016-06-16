@@ -41,9 +41,11 @@ coverage.xml
 # Rope
 .ropeproject
 
-# Django stuff:
+# Django/wagtail stuff:
 *.log
 *.pot
+media/
+.sass-cache/
 
 # Sphinx documentation
 docs/_build/
