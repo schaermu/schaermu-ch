@@ -35,6 +35,10 @@ $lines-desktop: 8;
   }
 }
 
+.timeline-heading h4 {
+  color: $brand-primary;
+}
+
 @media screen and (max-width: $screen-sm) {
   .timeline-body p {
     height: $line-height-computed*$lines-mobile;
@@ -72,6 +76,7 @@ body.home {
   }
 
   .career {
+    margin-bottom: 4em;
     > p {
       margin-bottom: 0;
       text-align: center;
@@ -83,6 +88,19 @@ body.home {
         text-align: left;
         margin-left: 1.5em;
       }
+    }
+  }
+
+  .skills {
+    margin-bottom: 4em;
+    .progress {
+      border-radius: 0px;
+    }
+  }
+
+  .latest-projects {
+    a {
+      text-decoration: none;
     }
   }
 }
