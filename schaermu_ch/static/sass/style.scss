@@ -1,27 +1,5 @@
-// Fonts
-$font-monsterrat: 'Montserrat', arial, sans-serif;
-$font-roboto: 'Roboto', arial, sans-serif;
 
-// Overrides
-$grid-gutter-width: 40px !default;
-$border-radius-base:  4px !default;
-$padding-base-vertical: 14px !default;
-
-$brand-primary: #ef5353 !default;
-$brand-white: #fff;
-$brand-black: #000;
-$brand-darker: #444;
-$brand-gray: #ccc;
-$brand-lighter: #e9e9e9;
-$brand-body-color: #818892;
-$brand-selection-color: #f9f6f0;
-$brand-overlay-color: #000;
-$brand-bg-color: #f5f6f7;
-
-$input-border-focus:  $brand-primary !default;
-$form-group-margin-bottom:       30px !default;
-
-$navbar-height:                  60px !default;
+@import '_variable_override';
 
 // Mixin
 @mixin transition($transition) {
@@ -45,122 +23,11 @@ $navbar-height:                  60px !default;
           border-radius: $radius;
 }
 
-@font-face {
-  font-family: 'icomoon';
-  src: url('../fonts/icomoon.eot?srf3rx');
-  src: url('../fonts/icomoon.eot?srf3rx#iefix') format('embedded-opentype'),
-		url('../fonts/icomoon.ttf?srf3rx') format('truetype'),
-		url('../fonts/icomoon.woff?srf3rx') format('woff'),
-		url('../fonts/icomoon.svg?srf3rx#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@mixin icomoon() {
-  font-family: 'icomoon';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-  // Better Font Rendering ===========
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-[class^="icon-"], [class*=" icon-"] {
-  @include icomoon;
-}
-
-// Import Bootstrap
+// frameworks
 @import 'bootstrap';
+@import 'font-awesome/font-awesome';
 
-// icomoon
-.icon-headphones:before {
-    content: "\e910";
-}
-.icon-mic:before {
-    content: "\e91e";
-}
-.icon-stack:before {
-    content: "\e92e";
-}
-.icon-database:before {
-    content: "\e964";
-}
-.icon-bubble:before {
-    content: "\e96b";
-}
-.icon-bubble2:before {
-    content: "\e96e";
-}
-.icon-user-tie:before {
-    content: "\e976";
-}
-.icon-lab:before {
-    content: "\e9aa";
-}
-.icon-power:before {
-    content: "\e9b5";
-}
-.icon-menu:before {
-    content: "\e9bd";
-}
-.icon-link:before {
-    content: "\e9cb";
-}
-.icon-cross:before {
-    content: "\ea0f";
-}
-.icon-checkmark:before {
-    content: "\ea10";
-}
-.icon-checkmark2:before {
-    content: "\ea11";
-}
-.icon-checkbox-checked:before {
-    content: "\ea52";
-}
-.icon-checkbox-unchecked:before {
-    content: "\ea53";
-}
-.icon-embed2:before {
-    content: "\ea80";
-}
-.icon-facebook2:before {
-    content: "\ea91";
-}
-.icon-rss:before {
-    content: "\ea9b";
-}
-.icon-rss2:before {
-    content: "\ea9c";
-}
-.icon-github:before {
-    content: "\eab0";
-}
-.icon-tux:before {
-    content: "\eabd";
-}
-.icon-appleinc:before {
-    content: "\eabe";
-}
-.icon-windows8:before {
-    content: "\eac2";
-}
-.icon-linkedin:before {
-    content: "\eac9";
-}
-.icon-stackoverflow:before {
-    content: "\ead0";
-}
-.icon-git:before {
-    content: "\eae7";
-}
-
-/* Template Style =========== */
+// Template Styles ===========
 
 // Template Base
 body {
@@ -757,9 +624,8 @@ pre {
 		line-height: 20px;
 
 		&:before {
-			@include icomoon;
-			content: "\e116";
-			content: "\e042";
+			@include fa-icon;
+			content: '\f14a';
 			position: absolute;
 			top: 0;
 			left: 0;
@@ -1134,3 +1000,5 @@ a > img {
 		margin-right: auto
 	}
 }
+
+@import 'custom';

@@ -14,13 +14,27 @@ from wagtail.wagtailimages.blocks import ImageChooserBlock
 from projects.models import ProjectPage
 
 
+class CareerItemBlock(blocks.StructBlock):
+    url = blocks.URLBlock(max_length=250, default='', label='URL')
+    name = blocks.CharBlock(max_length=150, default='', label='Firma')
+    start_date = blocks.DateBlock(label='Datum Antritt')
+    end_date = blocks.DateBlock(label='Datum Austritt')
+    text = blocks.RichTextBlock(label='Beschreibung')
+
+    class Meta:
+        template = 'blocks/career_item.html'
+
+
 class HomePage(Page):
     heading = models.CharField(max_length=100, default='')
     lead = models.CharField(max_length=150, default='')
     body = StreamField([
-        ('heading', blocks.CharBlock(classname="full title")),
-        ('paragraph', blocks.RichTextBlock()),
-        ('image', ImageChooserBlock()),
+        ('heading', blocks.CharBlock(classname='full title', label='Titel')),
+        ('paragraph', blocks.RichTextBlock(label='Absatz')),
+        ('image', ImageChooserBlock(label='Bild')),
+        ('career', blocks.ListBlock(CareerItemBlock, label='Karriere',
+                                    template='blocks/career.html',
+                                    icon='user'))
     ])
 
     content_panels = Page.content_panels + [
