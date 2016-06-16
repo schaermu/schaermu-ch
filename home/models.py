@@ -4,12 +4,12 @@ from django.db import models
 from django.utils import timezone, text
 
 from wagtail.wagtailcore.models import Page, Orderable
-from wagtail.wagtailcore.fields import RichTextField
-from wagtail.wagtailcore.fields import StreamField
+from wagtail.wagtailcore.fields import RichTextField, StreamField
 from wagtail.wagtailcore import blocks
 from wagtail.wagtailadmin.edit_handlers import (FieldPanel, MultiFieldPanel,
                                                 InlinePanel, StreamFieldPanel)
 from wagtail.wagtailimages.blocks import ImageChooserBlock
+from wagtail.wagtailimages.edit_handlers import ImageChooserPanel
 
 from projects.models import ProjectPage
 
@@ -28,6 +28,13 @@ class CareerItemBlock(blocks.StructBlock):
 class HomePage(Page):
     heading = models.CharField(max_length=100, default='')
     lead = models.CharField(max_length=150, default='')
+    portrait_image = models.ForeignKey(
+        'wagtailimages.Image',
+        null=True,
+        blank=True,
+        on_delete=models.SET_NULL,
+        related_name='+'
+    )
     body = StreamField([
         ('heading', blocks.CharBlock(classname='full title', label='Titel')),
         ('paragraph', blocks.RichTextBlock(label='Absatz')),
@@ -40,6 +47,7 @@ class HomePage(Page):
     content_panels = Page.content_panels + [
         FieldPanel('heading'),
         FieldPanel('lead'),
+        ImageChooserPanel('portrait_image'),
         StreamFieldPanel('body'),
     ]
 

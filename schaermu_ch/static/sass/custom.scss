@@ -1,2 +1,55 @@
 @import 'variable_override';
 @import '../css/timeline.css';
+
+// timeline overides
+@media screen and (max-width: $screen-sm) {
+  .timeline-body { padding: 10px 15px 10px 15px; }
+  .timeline-body p {
+    cursor: pointer;
+    padding: 0;
+    display: block;
+    display: -webkit-box;
+    max-width: 100%;
+    height: $line-height-computed*4;
+    margin: 0 auto;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    &.show {
+      text-overflow: auto;
+      overflow: auto;
+      -webkit-line-clamp: auto;
+      height: auto;
+    }
+  }
+}
+
+body.home {
+  .heading {
+    font-size: 0;
+    display: table;
+    table-layout: fixed;
+
+    > div[class^='col'] {
+      display: table-cell;
+      vertical-align: middle;
+      float: none;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    @media screen and (max-width: 360px) {
+      h1 { font-size: $font-size-base * 2.15; }
+    }
+
+    .portrait {
+      padding-right: 0;
+      img {
+        border-radius: 170px;
+      }
+    }
+  }
+}
