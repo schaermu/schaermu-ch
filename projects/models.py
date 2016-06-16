@@ -1,4 +1,6 @@
+import datetime
 from django.db import models
+from django.utils import timezone, text
 
 from wagtail.wagtailcore.models import Page
 from wagtail.wagtailcore.fields import RichTextField
@@ -23,11 +25,19 @@ class ProjectIndexPage(Page):
         FieldPanel('intro', classname="full")
     ]
 
+    def create_test(title, intro):
+        parent_page = Page.get_first_root_node()
+        project_idx = ProjectIndexPage(title=title, intro=intro,
+                                       slug=text.slugify(title))
+        parent_page.add_child(instance=project_idx)
+        return project_idx
+
     def get_context(self, request):
         context = super(ProjectIndexPage, self).get_context(request)
 
         # Add extra variables and return the updated context
-        context['projects'] = ProjectPage.objects.child_of(self).live()
+        context['projects'] = ProjectPage.objects.child_of(self) \
+            .order_by('-project_date').live()
         return context
 
 
@@ -65,3 +75,15 @@ class ProjectPage(Page):
         FieldPanel('lead'),
         FieldPanel('body', classname="full")
     ]
+
+    def get_latest(limit=4):
+        return ProjectPage.objects.live().order_by('-project_date') \
+            .all()[:limit]
+
+    def create_test(name, lead, body, day_offset, parent_page):
+        proj_date = timezone.now() + datetime.timedelta(days=day_offset)
+        project_page = ProjectPage(name=name, title=name, lead=lead, body=body,
+                                   slug=text.slugify(name),
+                                   project_date=proj_date)
+        parent_page.add_child(instance=project_page)
+        return project_page
