@@ -1,15 +1,15 @@
 ;(function () {
-	
+
 	'use strict';
 
-	// iPad and iPod detection	
+	// iPad and iPod detection
 	var isiPad = function(){
 		return (navigator.platform.indexOf("iPad") != -1);
 	};
 
 	var isiPhone = function(){
 	    return (
-			(navigator.platform.indexOf("iPhone") != -1) || 
+			(navigator.platform.indexOf("iPhone") != -1) ||
 			(navigator.platform.indexOf("iPod") != -1)
 	    );
 	};
@@ -42,7 +42,7 @@
 	};
 
 	// Magnific Popup
-	
+
 	var magnifPopup = function() {
 		$('.image-popup').magnificPopup({
 			type: 'image',
@@ -70,8 +70,6 @@
 		});
 	};
 
-
-
 	var animateBoxWayPoint = function() {
 
 		if ($('.animate-box').length > 0) {
@@ -86,15 +84,18 @@
 
 	};
 
-	
+	var bindTextToggler = function() {
+		$('.timeline-body p').on('click', function(e) {
+			$(this).toggleClass('show');
+		});
+	};
 
-	
-	$(function(){
+	$(function() {
 		magnifPopup();
 		offCanvass();
 		mobileMenuOutsideClick();
 		animateBoxWayPoint();
+		bindTextToggler();
 	});
-
 
 }());
