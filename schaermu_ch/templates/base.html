@@ -35,7 +35,7 @@
     <body class="{% block body_class %}{% endblock %}">
         {% wagtailuserbar %}
         <div id="fh5co-offcanvass">
-      		<a href="#" class="fh5co-offcanvass-close js-fh5co-offcanvass-close"> <i class="icon-cross"></i> </a>
+      		<a href="#" class="fh5co-offcanvass-close js-fh5co-offcanvass-close"> <i class="fa fa-times"></i> </a>
       		<h1 class="fh5co-logo"></h1>
       		<ul>
       			<li class="active"><a href="/">/ home</a></li>
@@ -44,9 +44,9 @@
       		</ul>
       		<h3 class="fh5co-lead">.social</h3>
       		<p class="fh5co-social-icons">
-      			<a href="#"><i class="icon-stackoverflow"></i></a>
-      			<a href="#"><i class="icon-linkedin"></i></a>
-      			<a href="#"><i class="icon-github"></i></a>
+      			<a href="#"><i class="fa fa-stack-overflow"></i></a>
+      			<a href="#"><i class="fa fa-linkedin"></i></a>
+      			<a href="#"><i class="fa fa-github"></i></a>
       		</p>
       	</div>
 
@@ -54,7 +54,7 @@
           <div class="container">
             <div class="row">
               <div class="col-md-12">
-                <a href="#" class="fh5co-menu-btn js-fh5co-menu-btn"><i class="icon-menu"></i></a>
+                <a href="#" class="fh5co-menu-btn js-fh5co-menu-btn"><i class="fa fa-bars"></i></a>
                 <a class="navbar-brand" href="/">schaermu.ch</a>
               </div>
             </div>
@@ -62,9 +62,7 @@
         </header>
         <div id="fh5co-main">
           <div class="container">
-            <div class="row">
-              {% block content %}{% endblock %}
-            </div>
+            {% block content %}{% endblock %}
           </div>
         </div>
 
@@ -73,11 +71,17 @@
       			<div class="row row-padded">
       				<div class="col-md-12 text-center">
       					<p class="fh5co-social-icons">
-            			<a href="#"><i class="icon-stackoverflow"></i></a>
-            			<a href="#"><i class="icon-linkedin"></i></a>
-            			<a href="#"><i class="icon-github"></i></a>
+            			<a href="#"><i class="fa fa-stack-overflow"></i></a>
+            			<a href="#"><i class="fa fa-linkedin"></i></a>
+            			<a href="#"><i class="fa fa-github"></i></a>
       					</p>
-      					<p><small>&copy; Hydrogen Free HTML5 Template. All Rights Reserved. <br>Designed by: <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> | Images by: <a href="http://pexels.com" target="_blank">Pexels</a> </small></p>
+      					<p>
+                  <small>
+                    template: <a href="http://freehtml5.co/" target="_blank">Hydrogen</a>. All Rights Reserved.
+                    <br />
+                    &copy; {% now 'Y' %} Stefan Schärmeli &lt;<a href="mailto:me@schaermu.ch">me@schaermu.ch</a>&gt;
+                  </small>
+                </p>
       				</div>
       			</div>
       		</div>

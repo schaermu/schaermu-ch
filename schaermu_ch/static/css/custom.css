@@ -1,0 +1,23 @@
+.career .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap; }
+  .career .row [class*="col-"] {
+    display: flex;
+    flex-direction: column; }
+
+.timeline {
+  text-align: center; }
+  .timeline > span {
+    align-self: flex-end;
+    display: inline-flex;
+    flex-grow: 1; }
+    .timeline > span > span {
+      display: inline-block;
+      border-left: 1px solid #444;
+      position: absolute;
+      height: 100%;
+      right: 3.3em; }
+
+/*# sourceMappingURL=custom.css.map */

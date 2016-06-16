@@ -2,9 +2,48 @@
 
 {% load wagtailcore_tags wagtailimages_tags %}
 
-{% block body_class %}template-homepage{% endblock %}
+{% block body_class %}home{% endblock %}
 
 {% block content %}
-  <h1>{{ page.heading }}</h1>
-  <h4>{{ page.lead }}</h4>
+
+<div class="row heading">
+  <div class="col-xs-3 portrait">
+    {% image page.portrait_image width-180 class='img-responsive' %}
+  </div>
+  <div class="col-xs-9">
+    <h1>{{ page.heading }}</h1>
+    <p class="lead hidden-xs">{{ page.lead }}</p>
+  </div>
+</div>
+<hr />
+<div class="row">
+ <div class="col-xs-12">
+    <p class="lead text-center visible-xs">{{ page.lead }}</p>
+  </div>
+</div>
+{% for block in page.body %}
+  {% if block.block_type == 'heading' %}
+    <h4>{{ block }}</h4>
+  {% else %}
+    {{ block }}
+  {% endif %}
+{% endfor %}
+
+<section class="latest-projects">
+  <div class="row">
+    {% for project in latest_projects %}
+    <div class="col-sm-6 col-md-3">
+      <a href="{% pageurl project %}">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            {% image project.main_image width-300 class='img-responsive' %}
+          </div>
+          <div class="panel-footer">{{ project.name }}</div>
+        </div>
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
 {% endblock %}
