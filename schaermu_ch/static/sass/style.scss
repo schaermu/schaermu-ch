@@ -520,15 +520,15 @@ pre {
 // Input Text
 .form-control {
 	box-shadow: none!important;
-	border: 2px solid $brand-darker;
-	background: transparent;
+	border: 1px solid $brand-lighter;
+	background: $brand-white;
 	font-family: $font-monsterrat;
 	&:hover,
 	&:focus,
 	&:active {
 		outline: none;
 		box-shadow: none!important;
-		border: 2px solid $brand-primary;
+		border: 1px solid $brand-primary;
 	}
 }
 
