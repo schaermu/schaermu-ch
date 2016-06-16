@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% load wagtailcore_tags wagtailimages_tags %}
+
+{% block body_class %}projects{% endblock %}
+
+{% block content %}
+  <h1>{{ page.title }}</h1>
+  <h4>{{ page.intro|richtext }}</h4>
+  <div id="fh5co-board" data-columns>
+  {% for project in projects %}
+    <div class="item">
+      <div class="animate-box">
+        <a href="{% pageurl project %}" class="fh5co-board-img">
+          {% if project.main_image %}
+              {% image project.main_image width-400 %}
+          {% endif %}
+        </a>
+        <div class="fh5co-desc">{{ project.name }}</div>
+      </div>
+    </div>
+  {% endfor %}
+  </div>
+{% endblock %}
