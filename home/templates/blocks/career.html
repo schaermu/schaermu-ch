@@ -1,15 +1,17 @@
+{% load wagtailcore_tags wagtailimages_tags extra_tags %}
+
 <section class="career">
-  <p>2016</p>
+  <p>{% now "Y" %}</p>
   <ul class="timeline">
-  {% for block in self %}
+    {% for block in self %}
     <li class="{% cycle '' 'timeline-inverted' %}">
       <div class="timeline-badge">
         <a><i class="fa fa-circle{% cycle '' ' invert' %}"></i></a>
       </div>
       {{ block }}
     </li>
-  {% endfor %}
+    {% endfor %}
     <li class="clearfix no-float"></li>
   </ul>
-  <p>2003</p>
+  <p>{{ self|last|svalue:'start_date'|date:'Y' }}</p>
 </section>
