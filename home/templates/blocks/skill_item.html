@@ -1,0 +1,14 @@
+{% load wagtailcore_tags wagtailimages_tags %}
+
+<div class="row">
+  <div class="col-sm-3">
+    <strong>{{ value.name }}</strong>
+  </div>
+  <div class="col-sm-9">
+    <div class="progress">
+      <div class="progress-bar" role="progressbar" aria-valuenow="{{ value.value }}" aria-valuemin="0" aria-valuemax="100" style="width: {{value.value}}%;">
+        {{ value.value }}%
+      </div>
+    </div>
+  </div>
+</div>
