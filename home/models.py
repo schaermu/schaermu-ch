@@ -25,6 +25,14 @@ class CareerItemBlock(blocks.StructBlock):
         template = 'blocks/career_item.html'
 
 
+class SkillItemBlock(blocks.StructBlock):
+    name = blocks.CharBlock(max_length=50, default='', label='Bezeichnung')
+    value = blocks.CharBlock(max_length=3, default=0, label='Wert in %')
+
+    class Meta:
+        template = 'blocks/skill_item.html'
+
+
 class HomePage(Page):
     heading = models.CharField(max_length=100, default='')
     lead = models.CharField(max_length=150, default='')
@@ -41,14 +49,32 @@ class HomePage(Page):
         ('image', ImageChooserBlock(label='Bild')),
         ('career', blocks.ListBlock(CareerItemBlock, label='Karriere',
                                     template='blocks/career.html',
-                                    icon='user'))
+                                    icon='user')),
+        ('skills', blocks.ListBlock(SkillItemBlock, label='Skills',
+                                    template='blocks/skills.html',
+                                    icon='pick'))
     ])
+    url_stackoverflow = models.CharField(max_length=250, default='')
+    url_linkedin = models.CharField(max_length=250, default='')
+    url_github = models.CharField(max_length=250, default='')
 
     content_panels = Page.content_panels + [
         FieldPanel('heading'),
         FieldPanel('lead'),
         ImageChooserPanel('portrait_image'),
         StreamFieldPanel('body'),
+    ]
+
+    promote_panels = Page.promote_panels + [
+        MultiFieldPanel(
+            [
+                FieldPanel('url_stackoverflow'),
+                FieldPanel('url_linkedin'),
+                FieldPanel('url_github'),
+            ],
+            heading='Footer URL\'s',
+            classname='collapsible'
+        ),
     ]
 
     def get_context(self, request):

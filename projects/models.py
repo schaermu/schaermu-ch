@@ -76,7 +76,7 @@ class ProjectPage(Page):
         FieldPanel('body', classname="full")
     ]
 
-    def get_latest(limit=3):
+    def get_latest(limit=4):
         return ProjectPage.objects.live().order_by('-project_date') \
             .all()[:limit]
 

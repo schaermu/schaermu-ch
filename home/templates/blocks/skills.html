@@ -1,0 +1,7 @@
+{% load wagtailcore_tags wagtailimages_tags extra_tags %}
+
+<section class="skills">
+  {% for block in self %}
+    {{ block }}
+  {% endfor %}
+</section>
