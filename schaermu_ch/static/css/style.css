@@ -6707,6 +6707,15 @@ a > img.fh5co-align-center {
   .timeline-body p {
     height: 100px;
     -webkit-line-clamp: 4; } }
+body.projects .rich-text > p {
+  margin-bottom: 25px;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 1.4; }
+  @media (min-width: 768px) {
+    body.projects .rich-text > p {
+      font-size: 22.5px; } }
+
 body.home .heading {
   font-size: 0;
   display: table;
