@@ -1,4 +1,4 @@
-{% load static wagtailuserbar %}
+{% load static wagtailuserbar common_tags %}
 
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -44,9 +44,7 @@
       		</ul>
       		<h3 class="fh5co-lead">.social</h3>
       		<p class="fh5co-social-icons">
-      			<a href="#"><i class="fa fa-stack-overflow"></i></a>
-      			<a href="#"><i class="fa fa-linkedin"></i></a>
-      			<a href="#"><i class="fa fa-github"></i></a>
+            {% social_links %}
       		</p>
       	</div>
 
@@ -71,9 +69,7 @@
       			<div class="row row-padded">
       				<div class="col-md-12 text-center">
       					<p class="fh5co-social-icons">
-            			<a href="#"><i class="fa fa-stack-overflow"></i></a>
-            			<a href="#"><i class="fa fa-linkedin"></i></a>
-            			<a href="#"><i class="fa fa-github"></i></a>
+                  {% social_links %}
       					</p>
       					<p>
                   <small>
