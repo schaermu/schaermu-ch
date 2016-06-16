@@ -36,7 +36,8 @@ class ProjectIndexPage(Page):
         context = super(ProjectIndexPage, self).get_context(request)
 
         # Add extra variables and return the updated context
-        context['projects'] = ProjectPage.objects.child_of(self).live()
+        context['projects'] = ProjectPage.objects.child_of(self) \
+            .order_by('-project_date').live()
         return context
 
 
@@ -76,7 +77,8 @@ class ProjectPage(Page):
     ]
 
     def get_latest(limit=3):
-        return ProjectPage.objects.live().order_by('-project_date').all()[:limit]
+        return ProjectPage.objects.live().order_by('-project_date') \
+            .all()[:limit]
 
     def create_test(name, lead, body, day_offset, parent_page):
         proj_date = timezone.now() + datetime.timedelta(days=day_offset)
