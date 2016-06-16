@@ -1,27 +1,34 @@
 @import 'variable_override';
 @import '../css/timeline.css';
 
+$lines-mobile: 4;
+$lines-desktop: 8;
+
 // timeline overides
+.timeline-body { padding: 10px 15px 10px 15px; }
+.timeline-body p {
+  cursor: pointer;
+  padding: 0;
+  display: block;
+  display: -webkit-box;
+  max-width: 100%;
+  min-height: $line-height-computed*$lines-desktop;
+  margin: 0 auto;
+  -webkit-line-clamp: $lines-desktop;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  &.show {
+    text-overflow: auto;
+    overflow: auto;
+    -webkit-line-clamp: auto;
+  }
+}
+
 @media screen and (max-width: $screen-sm) {
-  .timeline-body { padding: 10px 15px 10px 15px; }
   .timeline-body p {
-    cursor: pointer;
-    padding: 0;
-    display: block;
-    display: -webkit-box;
-    max-width: 100%;
-    height: $line-height-computed*4;
-    margin: 0 auto;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    &.show {
-      text-overflow: auto;
-      overflow: auto;
-      -webkit-line-clamp: auto;
-      height: auto;
-    }
+    height: $line-height-computed*$lines-mobile;
+    -webkit-line-clamp: $lines-mobile;
   }
 }
 
@@ -50,6 +57,14 @@ body.home {
       img {
         border-radius: 170px;
       }
+    }
+  }
+
+  .career {
+    > p {
+      margin-bottom: 0;
+      text-align: center;
+      font-style: italic;
     }
   }
 }
