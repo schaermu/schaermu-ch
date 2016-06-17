@@ -30,7 +30,7 @@ $(function() {
     <div class="grid-item">
         <a href="{% pageurl project %}">
           {% if project.main_image %}
-            {% image project.main_image width-150 %}
+            {% image project.main_image fill-180x180 %}
           {% else %}
             <img src="http://placehold.it/180x180" />
           {% endif %}
