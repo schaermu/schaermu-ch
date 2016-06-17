@@ -6,14 +6,18 @@
 
 {% block content %}
   {% if page.main_image %}
-    {% image page.main_image width-980 as main_image %}
-    <section class="header" style="background-image url('{{ main_image }}');">
+  {% image page.main_image width-980 as main_image %}
+  <section class="header" style="background-image url('{{ main_image }}');">
   {% else %}
   <section class="header" style="background-image: url(http://placehold.it/980x350);">
   {% endif %}
-    <h1>{{ page.title }}</h1>
-    <p class="meta">{{ page.project_date }}</p>
-    <p class="lead">{{ page.lead }}</div>
+    <div class="container">
+      <div class="row">
+        <h1>{{ page.title }}</h1>
+        <p class="meta">{{ page.project_date }}</p>
+        <p class="lead">{{ page.lead }}</div>
+      </div>
+    </div>
   </section>
   <section class="body">
     {{ page.body|richtext }}
