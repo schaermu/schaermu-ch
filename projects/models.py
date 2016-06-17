@@ -50,7 +50,6 @@ class ProjectPage(Page):
         related_name='+'
     )
     project_date = models.DateField("Projektdatum")
-    name = models.CharField(max_length=100)
     lead = models.CharField(max_length=250)
     body = RichTextField(blank=True)
     tags = ClusterTaggableManager(through=ProjectPageTag, blank=True)
@@ -70,7 +69,6 @@ class ProjectPage(Page):
 
     content_panels = Page.content_panels + [
         FieldPanel('project_date'),
-        FieldPanel('name'),
         ImageChooserPanel('main_image'),
         FieldPanel('lead'),
         FieldPanel('body', classname="full")
