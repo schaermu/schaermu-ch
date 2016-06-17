@@ -1,23 +1,41 @@
 {% extends "base.html" %}
 
-{% load wagtailcore_tags wagtailimages_tags %}
+{% load static wagtailcore_tags wagtailimages_tags %}
 
 {% block body_class %}projects{% endblock %}
+
+{% block extra_js %}
+<script src="{% static 'js/isotope.pkgd.min.js' %}"></script>
+<script>
+$(function() {
+  $('.grid').isotope({
+    itemSelector: '.grid-item',
+    masonry: {
+      columnWidth: '.grid-sizer',
+      gutter: '.gutter-sizer',
+    },
+    percentPosition: true,
+  });
+});
+</script>
+{% endblock %}
 
 {% block content %}
   <h1>{{ page.title }}</h1>
   {{ page.intro|richtext }}
-  <div id="fh5co-board" data-columns>
+  <div class="grid">
+    <div class="grid-sizer"></div>
+    <div class="gutter-sizer"></div>
   {% for project in projects %}
-    <div class="item">
-      <div class="animate-box">
-        <a href="{% pageurl project %}" class="fh5co-board-img">
+    <div class="grid-item">
+        <a href="{% pageurl project %}">
           {% if project.main_image %}
-              {% image project.main_image width-400 %}
+            {% image project.main_image fill-180x180 %}
+          {% else %}
+            <img src="http://placehold.it/180x180" />
           {% endif %}
         </a>
-        <div class="fh5co-desc">{{ project.name }}</div>
-      </div>
+        <p class="text-center">{{ project.title }}</p>
     </div>
   {% endfor %}
   </div>

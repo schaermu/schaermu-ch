@@ -32,13 +32,17 @@
 <section class="latest-projects">
   <div class="row">
     {% for project in latest_projects %}
-    <div class="col-sm-6 col-md-3">
+    <div class="col-xs-6 col-md-3">
       <a href="{% pageurl project %}">
         <div class="panel panel-default">
           <div class="panel-body">
-            {% image project.main_image width-300 class='img-responsive' %}
+            {% if project.main_image %}
+              {% image project.main_image width-300 class='img-responsive' %}
+            {% else %}
+              <img src="http://placehold.it/300x300" class="img-responsive" />
+            {% endif %}
           </div>
-          <div class="panel-footer">{{ project.name }}</div>
+          <div class="panel-footer">{{ project.title }}</div>
         </div>
       </a>
     </div>

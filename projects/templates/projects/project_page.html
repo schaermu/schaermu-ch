@@ -2,17 +2,32 @@
 
 {% load wagtailcore_tags wagtailimages_tags %}
 
-{% block body_class %}template-blogpage{% endblock %}
+{% block body_class %}project-detail{% endblock %}
 
 {% block content %}
-    <h1>{{ page.name }}</h1>
-    <p class="meta">{{ page.project_date }}</p>
-
-    {% if page.main_image %}
-        {% image page.main_image width-400 %}
-    {% endif %}
-
-    <div class="intro">{{ page.lead }}</div>
-
-    {{ page.body|richtext }}
+  {% if page.main_image %}
+  {% image page.main_image width-980 as main_image %}
+  <section class="header" style="background-image url('{{ main_image }}');">
+  {% else %}
+  <section class="header" style="background-image: url(http://placehold.it/980x350);">
+  {% endif %}
+    <div class="container">
+      <div class="row">
+        <h1>{{ page.title }}</h1>
+        <p class="meta">{{ page.project_date }}</p>
+        <p class="lead">{{ page.lead }}</div>
+      </div>
+    </div>
+  </section>
+  <div class="container">
+    <section class="content row">
+      {% for block in page.body %}
+        {% if block.block_type == 'heading' %}
+          <h4>{{ block }}</h4>
+        {% else %}
+          {{ block }}
+        {% endif %}
+      {% endfor %}
+    </section>
+  </div>
 {% endblock %}
