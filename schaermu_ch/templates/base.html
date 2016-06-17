@@ -1,4 +1,5 @@
-{% load static wagtailuserbar %}
+{% load static wagtailuserbar wagtailcore_tags common_tags %}
+{% get_site_root as site_root %}
 
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -38,15 +39,12 @@
       		<a href="#" class="fh5co-offcanvass-close js-fh5co-offcanvass-close"> <i class="fa fa-times"></i> </a>
       		<h1 class="fh5co-logo"></h1>
       		<ul>
-      			<li class="active"><a href="/">/ home</a></li>
-      			<li><a href="/projects">/ projects</a></li>
-      			<li><a href="/contact">/ contact</a></li>
+      			<li class="{% if site_root.url == page.url %}active{% endif %}"><a href="{% pageurl site_root %}">/ home</a></li>
+            {% menu_items parent=site_root calling_page=self %}
       		</ul>
       		<h3 class="fh5co-lead">.social</h3>
       		<p class="fh5co-social-icons">
-      			<a href="#"><i class="fa fa-stack-overflow"></i></a>
-      			<a href="#"><i class="fa fa-linkedin"></i></a>
-      			<a href="#"><i class="fa fa-github"></i></a>
+            {% social_links %}
       		</p>
       	</div>
 
@@ -71,9 +69,7 @@
       			<div class="row row-padded">
       				<div class="col-md-12 text-center">
       					<p class="fh5co-social-icons">
-            			<a href="#"><i class="fa fa-stack-overflow"></i></a>
-            			<a href="#"><i class="fa fa-linkedin"></i></a>
-            			<a href="#"><i class="fa fa-github"></i></a>
+                  {% social_links %}
       					</p>
       					<p>
                   <small>

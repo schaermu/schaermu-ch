@@ -30,6 +30,7 @@ INSTALLED_APPS = [
     'projects',
     'contact',
     'search',
+    'common',
     'bootstrap3',
 
     'wagtail.wagtailforms',
