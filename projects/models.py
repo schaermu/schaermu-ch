@@ -3,8 +3,11 @@ from django.db import models
 from django.utils import timezone, text
 
 from wagtail.wagtailcore.models import Page
-from wagtail.wagtailcore.fields import RichTextField
-from wagtail.wagtailadmin.edit_handlers import FieldPanel
+from wagtail.wagtailcore.fields import RichTextField, StreamField
+from wagtail.wagtailcore import blocks
+from wagtail.wagtailimages.blocks import ImageChooserBlock
+from wagtail.wagtailadmin.edit_handlers import (FieldPanel, MultiFieldPanel,
+                                                InlinePanel, StreamFieldPanel)
 from wagtail.wagtailimages.edit_handlers import ImageChooserPanel
 from wagtail.wagtailsearch import index
 
@@ -51,8 +54,17 @@ class ProjectPage(Page):
     )
     project_date = models.DateField("Projektdatum")
     lead = models.CharField(max_length=250)
-    body = RichTextField(blank=True)
     tags = ClusterTaggableManager(through=ProjectPageTag, blank=True)
+    body = StreamField([
+        ('heading', blocks.CharBlock(classname='full title', label='Titel',
+                                     icon='title')),
+        ('paragraph', blocks.RichTextBlock(label='Absatz')),
+        ('image', ImageChooserBlock(label='Bild')),
+        ('gallery', blocks.ListBlock(ImageChooserBlock(label='Bild'),
+                                     label='Bildgalerie',
+                                     template='blocks/gallery.html',
+                                     icon='grip'))
+    ])
 
     parent_page_types = [
         'projects.ProjectIndexPage',
@@ -71,7 +83,7 @@ class ProjectPage(Page):
         FieldPanel('project_date'),
         ImageChooserPanel('main_image'),
         FieldPanel('lead'),
-        FieldPanel('body', classname="full")
+        StreamFieldPanel('body')
     ]
 
     def get_latest(limit=4):

@@ -6930,5 +6930,8 @@ body.project-detail .header {
   position: absolute;
   left: 0;
   width: 100%; }
+body.project-detail .content {
+  margin-top: 450px;
+  margin-top: 45vh; }
 
 /*# sourceMappingURL=style.css.map */

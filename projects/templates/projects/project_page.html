@@ -19,7 +19,15 @@
       </div>
     </div>
   </section>
-  <section class="body">
-    {{ page.body|richtext }}
-  </section>
+  <div class="container">
+    <section class="content row">
+      {% for block in page.body %}
+        {% if block.block_type == 'heading' %}
+          <h4>{{ block }}</h4>
+        {% else %}
+          {{ block }}
+        {% endif %}
+      {% endfor %}
+    </section>
+  </div>
 {% endblock %}
