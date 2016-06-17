@@ -31,6 +31,7 @@ INSTALLED_APPS = [
     'contact',
     'search',
     'common',
+    'bootstrap3',
 
     'wagtail.wagtailforms',
     'wagtail.wagtailredirects',
