@@ -7,7 +7,7 @@ from .base import *
 import os
 
 env = os.environ.copy()
-SECRET_KEY = env['SECRET_KEY']
+SECRET_KEY = env.get('SECRET_KEY')
 
 DEBUG = False
 
@@ -15,6 +15,13 @@ try:
     from .local import *
 except ImportError:
     pass
+
+
+ANYMAIL = {
+    "MAILGUN_API_KEY": env['MAILGUN_API_KEY']
+}
+EMAIL_BACKEND = "anymail.backends.mailgun.MailgunBackend"
+DEFAULT_FROM_EMAIL = "noreply@schaermu.ch"
 
 # Parse database configuration from $DATABASE_URL
 DATABASES['default'] = dj_database_url.config()

@@ -1,0 +1,36 @@
+// Isotope grid
+.grid {
+  .grid-sizer { width: 49%; }
+  .gutter-sizer { width: 2%; }
+
+  // special nasty hack for iphone6
+  @media only screen
+    and (min-device-width : 375px)
+    and (max-device-width : 667px)
+    and (color : 8)
+    and (device-aspect-ratio : 375/667)
+  {
+    .grid-item img { width: 160px; }
+  }
+
+  @media only screen
+      and (min-device-width : 414px)
+      and (max-device-width : 736px)
+      and (orientation : landscape)
+      and (-webkit-min-device-pixel-ratio : 3)
+  {
+    .grid-sizer { width: 32%; }
+  }
+
+  @media screen and (min-width: $screen-sm-min) and (max-width: $screen-md) {
+    .grid-sizer { width: 32%; }
+  }
+
+  @media screen and (min-width: $screen-md-min) and (max-width: $screen-lg) {
+    .grid-sizer { width: 23.5%; }
+  }
+
+  @media screen and (min-width: $screen-lg-min) {
+    .grid-sizer { width: 18.4%; }
+  }
+}

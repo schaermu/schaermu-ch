@@ -1,0 +1,63 @@
+// home styles
+body.home {
+  .heading {
+    font-size: 0;
+    display: table;
+    table-layout: fixed;
+
+    > div[class^='col'] {
+      display: table-cell;
+      vertical-align: middle;
+      float: none;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    @media screen and (max-width: $screen-sm) {
+      h1 { font-size: $font-size-base * 2.15; }
+    }
+
+    .portrait {
+      padding-right: 0;
+      img {
+        border-radius: 170px;
+      }
+    }
+  }
+
+  .career {
+    margin-bottom: 4em;
+    > p {
+      margin-bottom: 0;
+      text-align: center;
+      font-style: italic;
+    }
+
+    @media screen and (max-width: $screen-sm) {
+      > p {
+        text-align: left;
+        margin-left: 1.5em;
+      }
+    }
+  }
+
+  .skills {
+    margin-bottom: 4em;
+    .progress {
+      border-radius: 0px;
+    }
+  }
+
+  .latest-projects {
+    .panel-body { padding: 0; }
+    a {
+      text-decoration: none;
+    }
+
+    @media screen and (max-width: $screen-xs) {
+      font-size: $font-size-base * 0.8;
+    }
+  }
+}

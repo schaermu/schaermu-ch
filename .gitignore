@@ -4,6 +4,7 @@ __pycache__/
 
 # C extensions
 *.so
+.env
 
 # Distribution / packaging
 build/
@@ -29,6 +30,7 @@ pip-delete-this-directory.txt
 .cache
 nosetests.xml
 coverage.xml
+run_coveralls.sh
 
 # Translations
 *.mo

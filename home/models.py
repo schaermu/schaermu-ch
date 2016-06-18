@@ -54,27 +54,12 @@ class HomePage(Page):
                                     template='blocks/skills.html',
                                     icon='pick'))
     ])
-    url_stackoverflow = models.CharField(max_length=250, default='')
-    url_linkedin = models.CharField(max_length=250, default='')
-    url_github = models.CharField(max_length=250, default='')
 
     content_panels = Page.content_panels + [
         FieldPanel('heading'),
         FieldPanel('lead'),
         ImageChooserPanel('portrait_image'),
         StreamFieldPanel('body'),
-    ]
-
-    promote_panels = Page.promote_panels + [
-        MultiFieldPanel(
-            [
-                FieldPanel('url_stackoverflow'),
-                FieldPanel('url_linkedin'),
-                FieldPanel('url_github'),
-            ],
-            heading='Footer URL\'s',
-            classname='collapsible'
-        ),
     ]
 
     def get_context(self, request):

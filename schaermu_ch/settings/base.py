@@ -14,10 +14,10 @@ from __future__ import absolute_import, unicode_literals
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
+import sys
 
 PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE_DIR = os.path.dirname(PROJECT_DIR)
-
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.9/howto/deployment/checklist/
@@ -28,7 +28,11 @@ BASE_DIR = os.path.dirname(PROJECT_DIR)
 INSTALLED_APPS = [
     'home',
     'projects',
+    'contact',
     'search',
+    'common',
+    'bootstrap3',
+    'anymail',
 
     'wagtail.wagtailforms',
     'wagtail.wagtailredirects',
@@ -69,8 +73,6 @@ MIDDLEWARE_CLASSES = [
 
 ROOT_URLCONF = 'schaermu_ch.urls'
 
-TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
-
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -91,7 +93,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'schaermu_ch.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
 
@@ -102,6 +103,10 @@ DATABASES = {
     }
 }
 
+if 'test' in sys.argv or 'test_coverage' in sys.argv:
+    DB_ENV = os.environ.get('TEST_DB')
+    if DB_ENV == 'sqlite':
+        DATABASES['default']['ENGINE'] = 'django.db.backends.sqlite3'
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.9/topics/i18n/
