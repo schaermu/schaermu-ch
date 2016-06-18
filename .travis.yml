@@ -12,7 +12,7 @@ before_script:
 install:
   - if [[ $DB == postgres ]]; then pip install -q psycopg2; fi
   - pip install -q -r requirements.txt
-  - pip install -q coveralls
+  - pip install -q pytest pytest-django pytest-cov coveralls
 script:
   - py.test --cov projects --cov contact --cov home --cov common
 after_success: coveralls
