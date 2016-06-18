@@ -73,8 +73,6 @@ MIDDLEWARE_CLASSES = [
 
 ROOT_URLCONF = 'schaermu_ch.urls'
 
-TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
-
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',

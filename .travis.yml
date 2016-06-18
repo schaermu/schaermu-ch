@@ -14,5 +14,5 @@ install:
   - pip install -q -r requirements.txt
   - pip install -q coveralls
 script:
-  - coverage run ./manage.py test --with-coverage --cover-package schaermu_ch,common,contact,projects,home
+  - coverage run py.test --cov projects --cov contact --cov home --cov common
 after_success: coveralls
