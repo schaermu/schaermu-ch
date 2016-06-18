@@ -16,8 +16,8 @@ class HomePageTests(TestCase):
 
     def test_home_with_latest_projects(self):
         proj_idx = ProjectIndexPage.create_test('project index', 'test')
-        ProjectPage.create_test('Project 1', 'test', 'test', 1, proj_idx)
-        ProjectPage.create_test('Project 2', 'test', 'test', 1, proj_idx)
+        ProjectPage.create_test('Project 1', 'test', 1, proj_idx)
+        ProjectPage.create_test('Project 2', 'test', 1, proj_idx)
 
         res = self.client.get('/')
         self.assertEqual(res.status_code, 200)

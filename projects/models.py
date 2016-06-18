@@ -90,10 +90,10 @@ class ProjectPage(Page):
         return ProjectPage.objects.live().order_by('-project_date') \
             .all()[:limit]
 
-    def create_test(name, lead, body, day_offset, parent_page):
+    def create_test(title, lead, day_offset, parent_page):
         proj_date = timezone.now() + datetime.timedelta(days=day_offset)
-        project_page = ProjectPage(name=name, title=name, lead=lead, body=body,
-                                   slug=text.slugify(name),
+        project_page = ProjectPage(title=title, lead=lead,
+                                   slug=text.slugify(title),
                                    project_date=proj_date)
         parent_page.add_child(instance=project_page)
         return project_page
