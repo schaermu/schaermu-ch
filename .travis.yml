@@ -11,8 +11,8 @@ before_script:
   - export TEST_DB=$DB
 install:
   - if [[ $DB == postgres ]]; then pip install -q psycopg2; fi
-  - pip install -q --user requirements.txt
-  - pip install -q --user coveralls
+  - pip install -q requirements.txt
+  - pip install -q coveralls
 script:
-  - coverage run --source=schaermu_ch ./manage.py test
+  - coverage run ./manage.py test --with-coverage --cover-package schaermu_ch,common,contact,projects,home
 after_success: coveralls
