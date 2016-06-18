@@ -13,6 +13,6 @@ echo "-----> Running migrate"
 python $MANAGE_FILE migrate  2>&1 | sed '/^Copying/d;/^$/d;/^ /d' | indent
 
 echo "-----> Collecting static files"
-python $MANAGE_FILE collectstatic --noinput  2>&1 | sed '/^Copying/d;/^$/d;/^ /d' | indent
+python $MANAGE_FILE collectstatic --noinput -i *.scss  2>&1 | sed '/^Copying/d;/^$/d;/^ /d' | indent
 
 echo

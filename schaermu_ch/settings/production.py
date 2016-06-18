@@ -16,12 +16,13 @@ try:
 except ImportError:
     pass
 
-
 ANYMAIL = {
     "MAILGUN_API_KEY": env['MAILGUN_API_KEY']
 }
 EMAIL_BACKEND = "anymail.backends.mailgun.MailgunBackend"
 DEFAULT_FROM_EMAIL = "noreply@schaermu.ch"
+
+SECURE_SSL_REDIRECT = True
 
 # Parse database configuration from $DATABASE_URL
 DATABASES['default'] = dj_database_url.config()
