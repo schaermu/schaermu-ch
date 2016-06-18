@@ -106,7 +106,9 @@ DATABASES = {
 }
 
 if 'test' in sys.argv or 'test_coverage' in sys.argv:
-    DATABASES['default']['ENGINE'] = 'django.db.backends.sqlite3'
+    DB_ENV = os.environ.get('TEST_DB')
+    if DB_ENV == 'sqlite':
+        DATABASES['default']['ENGINE'] = 'django.db.backends.sqlite3'
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.9/topics/i18n/
