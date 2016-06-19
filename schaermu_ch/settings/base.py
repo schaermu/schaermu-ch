@@ -58,6 +58,8 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE_CLASSES = [
+    'django.middleware.gzip.GZipMiddleware',
+    'htmlmin.middleware.HtmlMinifyMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -102,11 +104,6 @@ DATABASES = {
         'NAME': 'schaermu_ch',
     }
 }
-
-if 'test' in sys.argv or 'test_coverage' in sys.argv:
-    DB_ENV = os.environ.get('TEST_DB')
-    if DB_ENV == 'sqlite':
-        DATABASES['default']['ENGINE'] = 'django.db.backends.sqlite3'
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.9/topics/i18n/

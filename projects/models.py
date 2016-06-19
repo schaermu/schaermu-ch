@@ -28,11 +28,12 @@ class ProjectIndexPage(Page):
         FieldPanel('intro', classname="full")
     ]
 
-    def create_test(title, intro):
-        parent_page = Page.get_first_root_node()
+    def create_test(title, intro, parent=None):
+        if (parent is None):
+            parent = Page.get_first_root_node()
         project_idx = ProjectIndexPage(title=title, intro=intro,
                                        slug=text.slugify(title))
-        parent_page.add_child(instance=project_idx)
+        parent.add_child(instance=project_idx)
         return project_idx
 
     def get_context(self, request):

@@ -68,9 +68,10 @@ class HomePage(Page):
         context['latest_projects'] = ProjectPage.get_latest()
         return context
 
-    def create_test(title, lead):
-        parent_page = Page.get_first_root_node()
+    def create_test(title, lead, parent=None):
+        if (parent is None):
+            parent = Page.get_first_root_node()
         home = HomePage(heading=title, title=title, lead=lead,
                         slug=text.slugify(title))
-        parent_page.add_child(instance=home)
+        parent.add_child(instance=home)
         return home

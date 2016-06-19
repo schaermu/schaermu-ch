@@ -1,0 +1,1957 @@
+[
+{
+    "model": "projects.projectpagetag",
+    "pk": 5,
+    "fields": {
+        "tag": 1,
+        "content_object": 4
+    }
+},
+{
+    "model": "projects.projectpagetag",
+    "pk": 6,
+    "fields": {
+        "tag": 2,
+        "content_object": 4
+    }
+},
+{
+    "model": "projects.projectpagetag",
+    "pk": 7,
+    "fields": {
+        "tag": 3,
+        "content_object": 4
+    }
+},
+{
+    "model": "projects.projectpagetag",
+    "pk": 8,
+    "fields": {
+        "tag": 4,
+        "content_object": 4
+    }
+},
+{
+    "model": "contact.formfield",
+    "pk": 1,
+    "fields": {
+        "sort_order": 0,
+        "label": "Deine E-Mail Adresse",
+        "field_type": "email",
+        "required": true,
+        "choices": "",
+        "default_value": "",
+        "help_text": "",
+        "page": 6
+    }
+},
+{
+    "model": "contact.formfield",
+    "pk": 2,
+    "fields": {
+        "sort_order": 1,
+        "label": "Deine Mitteilung",
+        "field_type": "multiline",
+        "required": true,
+        "choices": "",
+        "default_value": "",
+        "help_text": "",
+        "page": 6
+    }
+},
+{
+    "model": "contact.formfield",
+    "pk": 3,
+    "fields": {
+        "sort_order": 2,
+        "label": "URL zu einem tollen GIF",
+        "field_type": "url",
+        "required": false,
+        "choices": "",
+        "default_value": "",
+        "help_text": "Nein, Upload gibts nicht. Wirklich nicht.",
+        "page": 6
+    }
+},
+{
+    "model": "common.sociallink",
+    "pk": 1,
+    "fields": {
+        "url": "http://stackoverflow.com/users/221217/schaermu",
+        "icon": "stack-overflow"
+    }
+},
+{
+    "model": "common.sociallink",
+    "pk": 2,
+    "fields": {
+        "url": "https://www.linkedin.com/in/stefanschaermeli",
+        "icon": "linkedin"
+    }
+},
+{
+    "model": "common.sociallink",
+    "pk": 3,
+    "fields": {
+        "url": "https://github.com/schaermu",
+        "icon": "github"
+    }
+},
+{
+    "model": "wagtailforms.formsubmission",
+    "pk": 8,
+    "fields": {
+        "form_data": "{\"deine-mitteilung\": \"hsjdfhskdjhfksdg\", \"url-zu-einem-tollen-gif\": \"\", \"deine-e-mail-adresse\": \"schaermu@gmail.com\"}",
+        "page": 6,
+        "submit_time": "2016-06-16T22:24:18.026Z"
+    }
+},
+{
+    "model": "wagtailforms.formsubmission",
+    "pk": 9,
+    "fields": {
+        "form_data": "{\"deine-mitteilung\": \"hsjdfhskdjhfksdg\", \"url-zu-einem-tollen-gif\": \"\", \"deine-e-mail-adresse\": \"schaermu@gmail.com\"}",
+        "page": 6,
+        "submit_time": "2016-06-16T22:24:28.898Z"
+    }
+},
+{
+    "model": "wagtailforms.formsubmission",
+    "pk": 10,
+    "fields": {
+        "form_data": "{\"deine-mitteilung\": \"hsjdfhskdjhfksdg\", \"url-zu-einem-tollen-gif\": \"\", \"deine-e-mail-adresse\": \"schaermu@gmail.com\"}",
+        "page": 6,
+        "submit_time": "2016-06-16T22:24:30.578Z"
+    }
+},
+{
+    "model": "wagtailforms.formsubmission",
+    "pk": 11,
+    "fields": {
+        "form_data": "{\"deine-mitteilung\": \"hsjdfhskdjhfksdg\", \"url-zu-einem-tollen-gif\": \"\", \"deine-e-mail-adresse\": \"schaermu@gmail.com\"}",
+        "page": 6,
+        "submit_time": "2016-06-16T22:24:35.557Z"
+    }
+},
+{
+    "model": "wagtailforms.formsubmission",
+    "pk": 12,
+    "fields": {
+        "form_data": "{\"deine-mitteilung\": \"hsjdfhskdjhfksdg\", \"url-zu-einem-tollen-gif\": \"\", \"deine-e-mail-adresse\": \"schaermu@gmail.com\"}",
+        "page": 6,
+        "submit_time": "2016-06-16T22:24:41.910Z"
+    }
+},
+{
+    "model": "wagtailforms.formsubmission",
+    "pk": 13,
+    "fields": {
+        "form_data": "{\"deine-mitteilung\": \"hsjdfhskdjhfksdg\", \"url-zu-einem-tollen-gif\": \"\", \"deine-e-mail-adresse\": \"schaermu@gmail.com\"}",
+        "page": 6,
+        "submit_time": "2016-06-16T22:24:45.176Z"
+    }
+},
+{
+    "model": "wagtailforms.formsubmission",
+    "pk": 14,
+    "fields": {
+        "form_data": "{\"deine-mitteilung\": \"hsjdfhskdjhfksdg\", \"url-zu-einem-tollen-gif\": \"\", \"deine-e-mail-adresse\": \"schaermu@gmail.com\"}",
+        "page": 6,
+        "submit_time": "2016-06-16T22:25:05.484Z"
+    }
+},
+{
+    "model": "wagtailforms.formsubmission",
+    "pk": 15,
+    "fields": {
+        "form_data": "{\"deine-mitteilung\": \"hsjdfhskdjhfksdg\", \"url-zu-einem-tollen-gif\": \"\", \"deine-e-mail-adresse\": \"schaermu@gmail.com\"}",
+        "page": 6,
+        "submit_time": "2016-06-16T22:25:11.243Z"
+    }
+},
+{
+    "model": "wagtailforms.formsubmission",
+    "pk": 16,
+    "fields": {
+        "form_data": "{\"deine-mitteilung\": \"hsjdfhskdjhfksdg\", \"url-zu-einem-tollen-gif\": \"\", \"deine-e-mail-adresse\": \"schaermu@gmail.com\"}",
+        "page": 6,
+        "submit_time": "2016-06-16T22:25:17.630Z"
+    }
+},
+{
+    "model": "wagtailforms.formsubmission",
+    "pk": 17,
+    "fields": {
+        "form_data": "{\"deine-mitteilung\": \"hsjdfhskdjhfksdg\", \"url-zu-einem-tollen-gif\": \"\", \"deine-e-mail-adresse\": \"schaermu@gmail.com\"}",
+        "page": 6,
+        "submit_time": "2016-06-16T22:25:25.201Z"
+    }
+},
+{
+    "model": "wagtailforms.formsubmission",
+    "pk": 18,
+    "fields": {
+        "form_data": "{\"deine-mitteilung\": \"hsjdfhskdjhfksdg\", \"url-zu-einem-tollen-gif\": \"\", \"deine-e-mail-adresse\": \"schaermu@gmail.com\"}",
+        "page": 6,
+        "submit_time": "2016-06-16T22:25:29.620Z"
+    }
+},
+{
+    "model": "wagtailforms.formsubmission",
+    "pk": 19,
+    "fields": {
+        "form_data": "{\"deine-mitteilung\": \"hsjdfhskdjhfksdg\", \"url-zu-einem-tollen-gif\": \"\", \"deine-e-mail-adresse\": \"schaermu@gmail.com\"}",
+        "page": 6,
+        "submit_time": "2016-06-16T22:25:33.060Z"
+    }
+},
+{
+    "model": "wagtailforms.formsubmission",
+    "pk": 20,
+    "fields": {
+        "form_data": "{\"deine-mitteilung\": \"hsjdfhskdjhfksdg\", \"url-zu-einem-tollen-gif\": \"\", \"deine-e-mail-adresse\": \"schaermu@gmail.com\"}",
+        "page": 6,
+        "submit_time": "2016-06-16T22:29:17.720Z"
+    }
+},
+{
+    "model": "wagtailforms.formsubmission",
+    "pk": 21,
+    "fields": {
+        "form_data": "{\"deine-mitteilung\": \"hsjdfhskdjhfksdg\", \"url-zu-einem-tollen-gif\": \"\", \"deine-e-mail-adresse\": \"schaermu@gmail.com\"}",
+        "page": 6,
+        "submit_time": "2016-06-16T22:29:19.734Z"
+    }
+},
+{
+    "model": "wagtailforms.formsubmission",
+    "pk": 22,
+    "fields": {
+        "form_data": "{\"deine-mitteilung\": \"hsjdfhskdjhfksdg\", \"url-zu-einem-tollen-gif\": \"\", \"deine-e-mail-adresse\": \"schaermu@gmail.com\"}",
+        "page": 6,
+        "submit_time": "2016-06-16T22:29:43.535Z"
+    }
+},
+{
+    "model": "wagtailforms.formsubmission",
+    "pk": 23,
+    "fields": {
+        "form_data": "{\"deine-mitteilung\": \"hsjdfhskdjhfksdg\", \"url-zu-einem-tollen-gif\": \"\", \"deine-e-mail-adresse\": \"schaermu@gmail.com\"}",
+        "page": 6,
+        "submit_time": "2016-06-16T22:29:49.765Z"
+    }
+},
+{
+    "model": "wagtailforms.formsubmission",
+    "pk": 24,
+    "fields": {
+        "form_data": "{\"deine-e-mail-adresse\": \"schaermu@gmail.com\", \"deine-mitteilung\": \"hsjdfhskdjhfksdg\", \"url-zu-einem-tollen-gif\": \"\"}",
+        "page": 6,
+        "submit_time": "2016-06-16T22:35:37.613Z"
+    }
+},
+{
+    "model": "wagtailforms.formsubmission",
+    "pk": 25,
+    "fields": {
+        "form_data": "{\"deine-e-mail-adresse\": \"schaermu@gmail.com\", \"deine-mitteilung\": \"hsjdfhskdjhfksdg\", \"url-zu-einem-tollen-gif\": \"\"}",
+        "page": 6,
+        "submit_time": "2016-06-16T22:37:30.105Z"
+    }
+},
+{
+    "model": "wagtailforms.formsubmission",
+    "pk": 26,
+    "fields": {
+        "form_data": "{\"deine-e-mail-adresse\": \"schaermu@gmail.com\", \"deine-mitteilung\": \"sdjkfhkjsdhgkjshdkjghsgd\", \"url-zu-einem-tollen-gif\": \"\"}",
+        "page": 6,
+        "submit_time": "2016-06-16T22:57:46.767Z"
+    }
+},
+{
+    "model": "wagtailimages.filter",
+    "pk": 1,
+    "fields": {
+        "spec": "max-165x165"
+    }
+},
+{
+    "model": "wagtailimages.filter",
+    "pk": 2,
+    "fields": {
+        "spec": "width-400"
+    }
+},
+{
+    "model": "wagtailimages.filter",
+    "pk": 3,
+    "fields": {
+        "spec": "max-800x600"
+    }
+},
+{
+    "model": "wagtailimages.filter",
+    "pk": 4,
+    "fields": {
+        "spec": "width-500"
+    }
+},
+{
+    "model": "wagtailimages.filter",
+    "pk": 5,
+    "fields": {
+        "spec": "width-64"
+    }
+},
+{
+    "model": "wagtailimages.filter",
+    "pk": 6,
+    "fields": {
+        "spec": "width-64|media-object"
+    }
+},
+{
+    "model": "wagtailimages.filter",
+    "pk": 7,
+    "fields": {
+        "spec": "fill-64x64"
+    }
+},
+{
+    "model": "wagtailimages.filter",
+    "pk": 8,
+    "fields": {
+        "spec": "min-64x64"
+    }
+},
+{
+    "model": "wagtailimages.filter",
+    "pk": 9,
+    "fields": {
+        "spec": "max-64x64"
+    }
+},
+{
+    "model": "wagtailimages.filter",
+    "pk": 10,
+    "fields": {
+        "spec": "original"
+    }
+},
+{
+    "model": "wagtailimages.filter",
+    "pk": 11,
+    "fields": {
+        "spec": "width-180"
+    }
+},
+{
+    "model": "wagtailimages.filter",
+    "pk": 12,
+    "fields": {
+        "spec": "width-300"
+    }
+},
+{
+    "model": "wagtailimages.rendition",
+    "pk": 30,
+    "fields": {
+        "filter": 1,
+        "file": "images/portrait-square.max-165x165.jpg",
+        "width": 165,
+        "height": 164,
+        "focal_point_key": "",
+        "image": 5
+    }
+},
+{
+    "model": "wagtailimages.rendition",
+    "pk": 31,
+    "fields": {
+        "filter": 11,
+        "file": "images/portrait-square.width-180.jpg",
+        "width": 180,
+        "height": 179,
+        "focal_point_key": "",
+        "image": 5
+    }
+},
+{
+    "model": "wagtailcore.site",
+    "fields": {
+        "hostname": "localhost",
+        "port": 80,
+        "site_name": "schaermu.ch",
+        "root_page": 3,
+        "is_default_site": true
+    }
+},
+{
+    "model": "wagtailcore.pageviewrestriction",
+    "pk": 1,
+    "fields": {
+        "page": 3,
+        "password": "pulppulp"
+    }
+},
+{
+    "model": "wagtailcore.collection",
+    "pk": 1,
+    "fields": {
+        "path": "0001",
+        "depth": 1,
+        "numchild": 0,
+        "name": "Root"
+    }
+},
+{
+    "model": "taggit.tag",
+    "pk": 1,
+    "fields": {
+        "name": "c#",
+        "slug": "c"
+    }
+},
+{
+    "model": "taggit.tag",
+    "pk": 2,
+    "fields": {
+        "name": "asp.net",
+        "slug": "aspnet"
+    }
+},
+{
+    "model": "taggit.tag",
+    "pk": 3,
+    "fields": {
+        "name": "soa",
+        "slug": "soa"
+    }
+},
+{
+    "model": "taggit.tag",
+    "pk": 4,
+    "fields": {
+        "name": "webapi",
+        "slug": "webapi"
+    }
+},
+{
+    "model": "auth.group",
+    "fields": {
+        "name": "Moderators",
+        "permissions": [
+            [
+                "access_admin",
+                "wagtailadmin",
+                "admin"
+            ],
+            [
+                "add_document",
+                "wagtaildocs",
+                "document"
+            ],
+            [
+                "change_document",
+                "wagtaildocs",
+                "document"
+            ],
+            [
+                "delete_document",
+                "wagtaildocs",
+                "document"
+            ],
+            [
+                "add_image",
+                "wagtailimages",
+                "image"
+            ],
+            [
+                "change_image",
+                "wagtailimages",
+                "image"
+            ],
+            [
+                "delete_image",
+                "wagtailimages",
+                "image"
+            ]
+        ]
+    }
+},
+{
+    "model": "auth.group",
+    "fields": {
+        "name": "Editors",
+        "permissions": [
+            [
+                "access_admin",
+                "wagtailadmin",
+                "admin"
+            ],
+            [
+                "add_document",
+                "wagtaildocs",
+                "document"
+            ],
+            [
+                "change_document",
+                "wagtaildocs",
+                "document"
+            ],
+            [
+                "delete_document",
+                "wagtaildocs",
+                "document"
+            ],
+            [
+                "add_image",
+                "wagtailimages",
+                "image"
+            ],
+            [
+                "change_image",
+                "wagtailimages",
+                "image"
+            ],
+            [
+                "delete_image",
+                "wagtailimages",
+                "image"
+            ]
+        ]
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$24000$A8i8TrApfzWS$mwcx8xxjJHHUcGlU7FPkG7kRQU3ivjp4q/GiV2jxKt8=",
+        "last_login": "2016-06-16T18:32:49.798Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "schaermu@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2016-06-12T11:43:00.304Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "l1qnvrk0g5ejcq9cqok429ejevrvj3o1",
+    "fields": {
+        "session_data": "ZWRhZWZkMzJkYWY3MWMxN2JhZWU2OTIxNTI2NzliNDRmNjZiOGJmODp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiN2Y5YTRiYWM0MzZkNGFiNTY0ZGJkNTUyYzI2NWI2OTU1ZGFhMjUwNyIsIl9hdXRoX3VzZXJfaWQiOiIxIiwicGFzc2VkX3BhZ2Vfdmlld19yZXN0cmljdGlvbnMiOlsxXX0=",
+        "expire_date": "2016-07-01T08:08:08.900Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "lmf7jspr14edi6ezdspjb9vqfoy4lilm",
+    "fields": {
+        "session_data": "MDcyMzA0NGZmNjdkMjM1YjEzM2I3YTdkNWI5MzJhNmEwNGY5NDQ4Nzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI3ZjlhNGJhYzQzNmQ0YWI1NjRkYmQ1NTJjMjY1YjY5NTVkYWEyNTA3In0=",
+        "expire_date": "2016-06-26T12:34:16.989Z"
+    }
+},
+{
+    "model": "wagtailcore.groupcollectionpermission",
+    "pk": 1,
+    "fields": {
+        "group": [
+            "Moderators"
+        ],
+        "collection": 1,
+        "permission": [
+            "add_document",
+            "wagtaildocs",
+            "document"
+        ]
+    }
+},
+{
+    "model": "wagtailcore.groupcollectionpermission",
+    "pk": 2,
+    "fields": {
+        "group": [
+            "Editors"
+        ],
+        "collection": 1,
+        "permission": [
+            "add_document",
+            "wagtaildocs",
+            "document"
+        ]
+    }
+},
+{
+    "model": "wagtailcore.groupcollectionpermission",
+    "pk": 3,
+    "fields": {
+        "group": [
+            "Moderators"
+        ],
+        "collection": 1,
+        "permission": [
+            "change_document",
+            "wagtaildocs",
+            "document"
+        ]
+    }
+},
+{
+    "model": "wagtailcore.groupcollectionpermission",
+    "pk": 4,
+    "fields": {
+        "group": [
+            "Editors"
+        ],
+        "collection": 1,
+        "permission": [
+            "change_document",
+            "wagtaildocs",
+            "document"
+        ]
+    }
+},
+{
+    "model": "wagtailcore.groupcollectionpermission",
+    "pk": 5,
+    "fields": {
+        "group": [
+            "Moderators"
+        ],
+        "collection": 1,
+        "permission": [
+            "add_image",
+            "wagtailimages",
+            "image"
+        ]
+    }
+},
+{
+    "model": "wagtailcore.groupcollectionpermission",
+    "pk": 6,
+    "fields": {
+        "group": [
+            "Editors"
+        ],
+        "collection": 1,
+        "permission": [
+            "add_image",
+            "wagtailimages",
+            "image"
+        ]
+    }
+},
+{
+    "model": "wagtailcore.groupcollectionpermission",
+    "pk": 7,
+    "fields": {
+        "group": [
+            "Moderators"
+        ],
+        "collection": 1,
+        "permission": [
+            "change_image",
+            "wagtailimages",
+            "image"
+        ]
+    }
+},
+{
+    "model": "wagtailcore.groupcollectionpermission",
+    "pk": 8,
+    "fields": {
+        "group": [
+            "Editors"
+        ],
+        "collection": 1,
+        "permission": [
+            "change_image",
+            "wagtailimages",
+            "image"
+        ]
+    }
+},
+{
+    "model": "wagtailcore.grouppagepermission",
+    "pk": 1,
+    "fields": {
+        "group": [
+            "Moderators"
+        ],
+        "page": 1,
+        "permission_type": "add"
+    }
+},
+{
+    "model": "wagtailcore.grouppagepermission",
+    "pk": 2,
+    "fields": {
+        "group": [
+            "Moderators"
+        ],
+        "page": 1,
+        "permission_type": "edit"
+    }
+},
+{
+    "model": "wagtailcore.grouppagepermission",
+    "pk": 3,
+    "fields": {
+        "group": [
+            "Moderators"
+        ],
+        "page": 1,
+        "permission_type": "publish"
+    }
+},
+{
+    "model": "wagtailcore.grouppagepermission",
+    "pk": 4,
+    "fields": {
+        "group": [
+            "Editors"
+        ],
+        "page": 1,
+        "permission_type": "add"
+    }
+},
+{
+    "model": "wagtailcore.grouppagepermission",
+    "pk": 5,
+    "fields": {
+        "group": [
+            "Editors"
+        ],
+        "page": 1,
+        "permission_type": "edit"
+    }
+},
+{
+    "model": "wagtailcore.grouppagepermission",
+    "pk": 6,
+    "fields": {
+        "group": [
+            "Moderators"
+        ],
+        "page": 1,
+        "permission_type": "lock"
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 1,
+    "fields": {
+        "page": 3,
+        "submitted_for_moderation": false,
+        "created_at": "2016-06-13T11:07:52.835Z",
+        "user": [
+            "admin"
+        ],
+        "content_json": "{\"latest_revision_created_at\": null, \"expired\": false, \"numchild\": 0, \"path\": \"00010001\", \"expire_at\": null, \"body\": \"<p>Yada yada</p>\", \"locked\": false, \"url_path\": \"/home/\", \"pk\": 3, \"depth\": 2, \"content_type\": 2, \"seo_title\": \"\", \"live\": true, \"search_description\": \"\", \"show_in_menus\": false, \"first_published_at\": null, \"slug\": \"home\", \"title\": \"Homepage\", \"go_live_at\": null, \"has_unpublished_changes\": false, \"owner\": null}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 2,
+    "fields": {
+        "page": 3,
+        "submitted_for_moderation": false,
+        "created_at": "2016-06-13T11:07:56.425Z",
+        "user": [
+            "admin"
+        ],
+        "content_json": "{\"latest_revision_created_at\": \"2016-06-13T11:07:52.835Z\", \"expired\": false, \"numchild\": 0, \"path\": \"00010001\", \"expire_at\": null, \"body\": \"<p>Yada yada</p>\", \"locked\": false, \"url_path\": \"/home/\", \"pk\": 3, \"depth\": 2, \"content_type\": 2, \"seo_title\": \"\", \"live\": true, \"search_description\": \"\", \"show_in_menus\": false, \"first_published_at\": null, \"slug\": \"home\", \"title\": \"Homepage\", \"go_live_at\": null, \"has_unpublished_changes\": true, \"owner\": null}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 3,
+    "fields": {
+        "page": 3,
+        "submitted_for_moderation": false,
+        "created_at": "2016-06-13T12:43:09.820Z",
+        "user": [
+            "admin"
+        ],
+        "content_json": "{\"search_description\": \"\", \"live\": true, \"slug\": \"home\", \"first_published_at\": \"2016-06-13T11:07:56.441Z\", \"expire_at\": null, \"numchild\": 0, \"heading\": \"Hallo, ich bin Sch\\u00e4rmu.\", \"url_path\": \"/home/\", \"seo_title\": \"\", \"content_type\": 2, \"has_unpublished_changes\": false, \"show_in_menus\": false, \"owner\": null, \"lead\": \"Ein Web-Entwickler (fast) seit Stunde Null, immer auf der Suche nach dem n\\u00e4chsten Trend.\", \"latest_revision_created_at\": \"2016-06-13T11:07:56.425Z\", \"expired\": false, \"title\": \"Homepage\", \"pk\": 3, \"path\": \"00010001\", \"go_live_at\": null, \"locked\": false, \"depth\": 2}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 4,
+    "fields": {
+        "page": 3,
+        "submitted_for_moderation": false,
+        "created_at": "2016-06-13T12:43:14.643Z",
+        "user": [
+            "admin"
+        ],
+        "content_json": "{\"search_description\": \"\", \"live\": true, \"slug\": \"home\", \"first_published_at\": \"2016-06-13T11:07:56.441Z\", \"expire_at\": null, \"numchild\": 0, \"heading\": \"Hallo, ich bin Sch\\u00e4rmu.\", \"url_path\": \"/home/\", \"seo_title\": \"\", \"content_type\": 2, \"has_unpublished_changes\": true, \"show_in_menus\": false, \"owner\": null, \"lead\": \"Ein Web-Entwickler (fast) seit Stunde Null, immer auf der Suche nach dem n\\u00e4chsten Trend.\", \"latest_revision_created_at\": \"2016-06-13T12:43:09.820Z\", \"expired\": false, \"title\": \"Homepage\", \"pk\": 3, \"path\": \"00010001\", \"go_live_at\": null, \"locked\": false, \"depth\": 2}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 5,
+    "fields": {
+        "page": 4,
+        "submitted_for_moderation": false,
+        "created_at": "2016-06-13T14:47:07.770Z",
+        "user": [
+            "admin"
+        ],
+        "content_json": "{\"content_type\": 28, \"title\": \"RAG Interface & Map API\", \"path\": \"000100010001\", \"lead\": \"\\u00e4be ja\", \"expired\": false, \"body\": \"<p>Blubber blah</p>\", \"live\": false, \"first_published_at\": null, \"name\": \"RAG Interface & Map API\", \"project_date\": \"2016-06-01\", \"show_in_menus\": false, \"main_image\": 1, \"owner\": 1, \"latest_revision_created_at\": null, \"slug\": \"rag-interface-map-api\", \"pk\": 4, \"has_unpublished_changes\": false, \"search_description\": \"\", \"url_path\": \"/home/rag-interface-map-api/\", \"seo_title\": \"\", \"depth\": 3, \"numchild\": 0, \"go_live_at\": null, \"locked\": false, \"expire_at\": null}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 6,
+    "fields": {
+        "page": 4,
+        "submitted_for_moderation": false,
+        "created_at": "2016-06-13T14:47:11.728Z",
+        "user": [
+            "admin"
+        ],
+        "content_json": "{\"content_type\": 28, \"title\": \"RAG Interface & Map API\", \"path\": \"000100010001\", \"lead\": \"\\u00e4be ja\", \"expired\": false, \"body\": \"<p>Blubber blah</p>\", \"live\": false, \"first_published_at\": null, \"name\": \"RAG Interface & Map API\", \"project_date\": \"2016-06-01\", \"show_in_menus\": false, \"main_image\": 1, \"owner\": 1, \"latest_revision_created_at\": \"2016-06-13T14:47:07.770Z\", \"slug\": \"rag-interface-map-api\", \"pk\": 4, \"has_unpublished_changes\": true, \"search_description\": \"\", \"url_path\": \"/home/rag-interface-map-api/\", \"seo_title\": \"\", \"depth\": 3, \"numchild\": 0, \"go_live_at\": null, \"locked\": false, \"expire_at\": null}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 7,
+    "fields": {
+        "page": 4,
+        "submitted_for_moderation": false,
+        "created_at": "2016-06-13T15:11:37.540Z",
+        "user": [
+            "admin"
+        ],
+        "content_json": "{\"pk\": 4, \"show_in_menus\": false, \"latest_revision_created_at\": \"2016-06-13T14:47:11.728Z\", \"title\": \"RAG Interface & Map API\", \"url_path\": \"/home/rag-interface-map-api/\", \"go_live_at\": null, \"live\": true, \"expired\": false, \"tagged_items\": [{\"tag\": 1, \"pk\": null, \"content_object\": 4}, {\"tag\": 2, \"pk\": null, \"content_object\": 4}, {\"tag\": 3, \"pk\": null, \"content_object\": 4}, {\"tag\": 4, \"pk\": null, \"content_object\": 4}], \"seo_title\": \"\", \"first_published_at\": \"2016-06-13T14:47:11.771Z\", \"lead\": \"\\u00e4be ja\", \"name\": \"RAG Interface & Map API\", \"has_unpublished_changes\": false, \"owner\": 1, \"search_description\": \"\", \"path\": \"000100010001\", \"numchild\": 0, \"content_type\": 28, \"expire_at\": null, \"main_image\": 1, \"depth\": 3, \"body\": \"<p>Blubber blah</p>\", \"locked\": false, \"project_date\": \"2016-06-01\", \"slug\": \"rag-interface-map-api\"}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 8,
+    "fields": {
+        "page": 4,
+        "submitted_for_moderation": false,
+        "created_at": "2016-06-13T15:11:49.068Z",
+        "user": [
+            "admin"
+        ],
+        "content_json": "{\"pk\": 4, \"show_in_menus\": false, \"latest_revision_created_at\": \"2016-06-13T15:11:37.540Z\", \"title\": \"RAG Interface & Map API\", \"url_path\": \"/home/rag-interface-map-api/\", \"go_live_at\": null, \"live\": true, \"expired\": false, \"tagged_items\": [{\"tag\": 1, \"pk\": null, \"content_object\": 4}, {\"tag\": 2, \"pk\": null, \"content_object\": 4}, {\"tag\": 3, \"pk\": null, \"content_object\": 4}, {\"tag\": 4, \"pk\": null, \"content_object\": 4}], \"seo_title\": \"\", \"first_published_at\": \"2016-06-13T14:47:11.771Z\", \"lead\": \"\\u00e4be ja\", \"name\": \"RAG Interface & Map API\", \"has_unpublished_changes\": true, \"owner\": 1, \"search_description\": \"\", \"path\": \"000100010001\", \"numchild\": 0, \"content_type\": 28, \"expire_at\": null, \"main_image\": 1, \"depth\": 3, \"body\": \"<p>Blubber blah</p>\", \"locked\": false, \"project_date\": \"2016-06-01\", \"slug\": \"rag-interface-map-api\"}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 9,
+    "fields": {
+        "page": 5,
+        "submitted_for_moderation": false,
+        "created_at": "2016-06-14T10:08:52.964Z",
+        "user": [
+            "admin"
+        ],
+        "content_json": "{\"content_type\": 30, \"numchild\": 0, \"depth\": 2, \"intro\": \"<p>Das Untenstehende ist nur eine Auswahl an Projekten, welche ich in der Vergangenheit umgesetzt habe. Viele kleinere Lab-Basteleien oder OpenSource-Beteiligungen sind in meinem GitHub-Profil ersichtlich.</p>\", \"go_live_at\": null, \"has_unpublished_changes\": false, \"search_description\": \"\", \"locked\": false, \"path\": \"00010002\", \"expire_at\": null, \"url_path\": \"/projekte/\", \"title\": \"Projekte\", \"seo_title\": \"\", \"live\": false, \"show_in_menus\": false, \"expired\": false, \"latest_revision_created_at\": null, \"pk\": 5, \"first_published_at\": null, \"owner\": 1, \"slug\": \"projekte\"}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 10,
+    "fields": {
+        "page": 5,
+        "submitted_for_moderation": false,
+        "created_at": "2016-06-14T10:10:18.468Z",
+        "user": [
+            "admin"
+        ],
+        "content_json": "{\"content_type\": 30, \"numchild\": 0, \"depth\": 3, \"intro\": \"<p>Das Untenstehende ist nur eine Auswahl an Projekten, welche ich in der Vergangenheit umgesetzt habe. Viele kleinere Lab-Basteleien oder OpenSource-Beteiligungen sind in meinem GitHub-Profil ersichtlich.</p>\", \"go_live_at\": null, \"has_unpublished_changes\": true, \"search_description\": \"\", \"locked\": false, \"path\": \"000100010002\", \"expire_at\": null, \"url_path\": \"/home/projekte/\", \"title\": \"Projekte\", \"seo_title\": \"\", \"live\": false, \"show_in_menus\": false, \"expired\": false, \"latest_revision_created_at\": \"2016-06-14T10:08:52.964Z\", \"pk\": 5, \"first_published_at\": null, \"owner\": 1, \"slug\": \"projekte\"}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 11,
+    "fields": {
+        "page": 3,
+        "submitted_for_moderation": false,
+        "created_at": "2016-06-14T12:56:25.595Z",
+        "user": [
+            "admin"
+        ],
+        "content_json": "{\"pk\": 3, \"first_published_at\": \"2016-06-13T11:07:56.441Z\", \"numchild\": 1, \"url_path\": \"/home/\", \"seo_title\": \"\", \"owner\": null, \"depth\": 2, \"show_in_menus\": false, \"expire_at\": null, \"content_type\": 2, \"search_description\": \"\", \"slug\": \"home\", \"has_unpublished_changes\": false, \"path\": \"00010001\", \"lead\": \"Ein Web-Entwickler (fast) seit Stunde Null, immer auf der Suche nach dem n\\u00e4chsten Trend.\", \"live\": true, \"latest_revision_created_at\": \"2016-06-13T12:43:14.643Z\", \"locked\": false, \"expired\": false, \"go_live_at\": null, \"body\": \"[{\\\"value\\\": \\\"<p>Ich arbeite seit ca. 2001 als Software-Entwickler im Web-Umfeld mit unterschiedlichsten Technologien, Frameworks und Plattformen. H\\\\u00f6rt sich 08/15 an? Ist es aber nicht. Da ich die klassische Software-Entwicklung (3 Monate spezifizieren, 4 Monate diskutieren, 6 Monate Testszenarien entwickeln und 12 Monate entwickeln) immer als relativ langweilig empfand, entschloss ich mich zu einer eher atypischen Karriere.</p>\\\", \\\"type\\\": \\\"paragraph\\\"}]\", \"title\": \"Homepage\", \"heading\": \"Hallo, ich bin Sch\\u00e4rmu.\"}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 12,
+    "fields": {
+        "page": 3,
+        "submitted_for_moderation": false,
+        "created_at": "2016-06-14T12:59:02.328Z",
+        "user": [
+            "admin"
+        ],
+        "content_json": "{\"slug\": \"home\", \"body\": \"[{\\\"type\\\": \\\"paragraph\\\", \\\"value\\\": \\\"<p>Ich arbeite seit ca. 2001 als Software-Entwickler im Web-Umfeld mit unterschiedlichsten Technologien, Frameworks und Plattformen. H\\\\u00f6rt sich 08/15 an? Ist es aber nicht. Da ich die klassische Software-Entwicklung (3 Monate spezifizieren, 4 Monate diskutieren, 6 Monate Testszenarien entwickeln und 12 Monate entwickeln) immer als relativ langweilig empfand, entschloss ich mich zu einer eher atypischen Karriere.</p>\\\"}]\", \"seo_title\": \"\", \"depth\": 2, \"expired\": false, \"latest_revision_created_at\": \"2016-06-14T12:56:25.595Z\", \"show_in_menus\": false, \"expire_at\": null, \"live\": true, \"locked\": false, \"first_published_at\": \"2016-06-13T11:07:56.441Z\", \"lead\": \"Ein Web-Entwickler (fast) seit Stunde Null, immer auf der Suche nach dem n\\u00e4chsten Trend.\", \"url_path\": \"/home/\", \"search_description\": \"\", \"title\": \"Homepage\", \"pk\": 3, \"go_live_at\": null, \"content_type\": 2, \"owner\": null, \"has_unpublished_changes\": true, \"path\": \"00010001\", \"numchild\": 1, \"heading\": \"Hallo, ich bin Sch\\u00e4rmu.\"}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 13,
+    "fields": {
+        "page": 3,
+        "submitted_for_moderation": false,
+        "created_at": "2016-06-14T23:23:25.486Z",
+        "user": [
+            "admin"
+        ],
+        "content_json": "{\"go_live_at\": null, \"expire_at\": null, \"url_path\": \"/home/\", \"first_published_at\": \"2016-06-13T11:07:56.441Z\", \"depth\": 2, \"has_unpublished_changes\": true, \"content_type\": 2, \"locked\": false, \"title\": \"Homepage\", \"numchild\": 1, \"latest_revision_created_at\": \"2016-06-14T12:59:02.328Z\", \"body\": \"[{\\\"type\\\": \\\"career\\\", \\\"value\\\": [{\\\"image\\\": 2, \\\"name\\\": \\\"n c ag\\\", \\\"text\\\": \\\"<p>Die Neue Chemigraphie AG (kurz n c ag) ist im Bereich Durckvorstufe / Publishing t\\\\u00e4tig und war Ende 2004 auf der Suche nach Verst\\\\u00e4rkung f\\\\u00fcr den digitalen Web-Bereich. Ich durfte w\\\\u00e4hrend knapp 4 Jahren als Web-Entwickler an diversen, sehr spannenden Projekten mitarbeiten und gelangte ganz nebenbei zum ersten Mal mit C# sowie node.js in Kontakt. Diese Zeit macht mir endg\\\\u00fcltig klar: meine Leidenschaft liegt in der Web-Entwicklung.</p>\\\", \\\"url\\\": \\\"http://www.ncag.ch\\\"}, {\\\"image\\\": 3, \\\"name\\\": \\\"Interactive Data Managed Solutions\\\", \\\"text\\\": \\\"<p>Die Interactive Data Managed Solutions bietet Finanzdaten f\\\\u00fcr Web-Portale und Offline-Clients in allen m\\\\u00f6glichen Granulanit\\\\u00e4ten und f\\\\u00fcr alle nur erdenklichen B\\\\u00f6rsenpl\\\\u00e4tze an. Meine Aufgabe war es w\\\\u00e4hrend meines knappen Jahres in dieser Firma den laufenden Betrieb sicherzustellen, das Incident Management zu koordinieren und Deployments auszul\\\\u00f6sen und zu \\\\u00fcberwachen. Um es kurz zu machen: manchmal muss man einen Job mal machen um zu wissen dass man ihn nicht m\\\\u00f6chte.</p>\\\", \\\"url\\\": \\\"http://www.interactivedata.de/\\\"}, {\\\"image\\\": 4, \\\"name\\\": \\\"Maxomedia AG\\\", \\\"text\\\": \\\"<p>adsdasdasd</p>\\\", \\\"url\\\": \\\"https://www.maxomedia.ch\\\"}]}, {\\\"type\\\": \\\"paragraph\\\", \\\"value\\\": \\\"<p>Ich arbeite seit ca. 2001 als Software-Entwickler im Web-Umfeld mit unterschiedlichsten Technologien, Frameworks und Plattformen. H\\\\u00f6rt sich 08/15 an? Ist es aber nicht. Da ich die klassische Software-Entwicklung (3 Monate spezifizieren, 4 Monate diskutieren, 6 Monate Testszenarien entwickeln und 12 Monate entwickeln) immer als relativ langweilig empfand, entschloss ich mich zu einer eher atypischen Karriere.</p>\\\"}]\", \"expired\": false, \"show_in_menus\": false, \"search_description\": \"\", \"pk\": 3, \"seo_title\": \"\", \"owner\": null, \"live\": true, \"path\": \"00010001\", \"heading\": \"Hallo, ich bin Sch\\u00e4rmu.\", \"lead\": \"Ein Web-Entwickler (fast) seit Stunde Null, immer auf der Suche nach dem n\\u00e4chsten Trend.\", \"slug\": \"home\"}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 14,
+    "fields": {
+        "page": 3,
+        "submitted_for_moderation": false,
+        "created_at": "2016-06-14T23:23:40.871Z",
+        "user": [
+            "admin"
+        ],
+        "content_json": "{\"go_live_at\": null, \"expire_at\": null, \"url_path\": \"/home/\", \"first_published_at\": \"2016-06-13T11:07:56.441Z\", \"depth\": 2, \"has_unpublished_changes\": true, \"content_type\": 2, \"locked\": false, \"title\": \"Homepage\", \"numchild\": 1, \"latest_revision_created_at\": \"2016-06-14T23:23:25.486Z\", \"body\": \"[{\\\"type\\\": \\\"paragraph\\\", \\\"value\\\": \\\"<p>Ich arbeite seit ca. 2001 als Software-Entwickler im Web-Umfeld mit unterschiedlichsten Technologien, Frameworks und Plattformen. H\\\\u00f6rt sich 08/15 an? Ist es aber nicht. Da ich die klassische Software-Entwicklung (3 Monate spezifizieren, 4 Monate diskutieren, 6 Monate Testszenarien entwickeln und 12 Monate entwickeln) immer als relativ langweilig empfand, entschloss ich mich zu einer eher atypischen Karriere.</p>\\\"}, {\\\"type\\\": \\\"career\\\", \\\"value\\\": [{\\\"image\\\": 2, \\\"name\\\": \\\"n c ag\\\", \\\"text\\\": \\\"<p>Die Neue Chemigraphie AG (kurz n c ag) ist im Bereich Durckvorstufe / Publishing t\\\\u00e4tig und war Ende 2004 auf der Suche nach Verst\\\\u00e4rkung f\\\\u00fcr den digitalen Web-Bereich. Ich durfte w\\\\u00e4hrend knapp 4 Jahren als Web-Entwickler an diversen, sehr spannenden Projekten mitarbeiten und gelangte ganz nebenbei zum ersten Mal mit C# sowie node.js in Kontakt. Diese Zeit macht mir endg\\\\u00fcltig klar: meine Leidenschaft liegt in der Web-Entwicklung.</p>\\\", \\\"url\\\": \\\"http://www.ncag.ch\\\"}, {\\\"image\\\": 3, \\\"name\\\": \\\"Interactive Data Managed Solutions\\\", \\\"text\\\": \\\"<p>Die Interactive Data Managed Solutions bietet Finanzdaten f\\\\u00fcr Web-Portale und Offline-Clients in allen m\\\\u00f6glichen Granulanit\\\\u00e4ten und f\\\\u00fcr alle nur erdenklichen B\\\\u00f6rsenpl\\\\u00e4tze an. Meine Aufgabe war es w\\\\u00e4hrend meines knappen Jahres in dieser Firma den laufenden Betrieb sicherzustellen, das Incident Management zu koordinieren und Deployments auszul\\\\u00f6sen und zu \\\\u00fcberwachen. Um es kurz zu machen: manchmal muss man einen Job mal machen um zu wissen dass man ihn nicht m\\\\u00f6chte.</p>\\\", \\\"url\\\": \\\"http://www.interactivedata.de/\\\"}, {\\\"image\\\": 4, \\\"name\\\": \\\"Maxomedia AG\\\", \\\"text\\\": \\\"<p>adsdasdasd</p>\\\", \\\"url\\\": \\\"https://www.maxomedia.ch\\\"}]}]\", \"expired\": false, \"show_in_menus\": false, \"search_description\": \"\", \"pk\": 3, \"seo_title\": \"\", \"owner\": null, \"live\": true, \"path\": \"00010001\", \"heading\": \"Hallo, ich bin Sch\\u00e4rmu.\", \"lead\": \"Ein Web-Entwickler (fast) seit Stunde Null, immer auf der Suche nach dem n\\u00e4chsten Trend.\", \"slug\": \"home\"}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 15,
+    "fields": {
+        "page": 3,
+        "submitted_for_moderation": false,
+        "created_at": "2016-06-14T23:47:51.055Z",
+        "user": [
+            "admin"
+        ],
+        "content_json": "{\"slug\": \"home\", \"show_in_menus\": false, \"has_unpublished_changes\": false, \"url_path\": \"/home/\", \"seo_title\": \"\", \"search_description\": \"\", \"path\": \"00010001\", \"expired\": false, \"depth\": 2, \"go_live_at\": null, \"numchild\": 1, \"locked\": false, \"content_type\": 2, \"lead\": \"Ein Web-Entwickler (fast) seit Stunde Null, immer auf der Suche nach dem n\\u00e4chsten Trend.\", \"heading\": \"Hallo, ich bin Sch\\u00e4rmu.\", \"owner\": null, \"live\": true, \"latest_revision_created_at\": \"2016-06-14T23:23:40.871Z\", \"first_published_at\": \"2016-06-13T11:07:56.441Z\", \"pk\": 3, \"body\": \"[{\\\"type\\\": \\\"paragraph\\\", \\\"value\\\": \\\"<p>Ich arbeite seit ca. 2001 als Software-Entwickler im Web-Umfeld mit unterschiedlichsten Technologien, Frameworks und Plattformen. H\\\\u00f6rt sich 08/15 an? Ist es aber nicht. Da ich die klassische Software-Entwicklung (3 Monate spezifizieren, 4 Monate diskutieren, 6 Monate Testszenarien entwickeln und 12 Monate entwickeln) immer als relativ langweilig empfand, entschloss ich mich zu einer eher atypischen Karriere.</p>\\\"}, {\\\"type\\\": \\\"career\\\", \\\"value\\\": [{\\\"url\\\": \\\"http://www.ncag.ch\\\", \\\"name\\\": \\\"n c ag\\\", \\\"image\\\": 2, \\\"start_date\\\": \\\"2007-12-01\\\", \\\"text\\\": \\\"<p>Die Neue Chemigraphie AG (kurz n c ag) ist im Bereich Durckvorstufe / Publishing t\\\\u00e4tig und war Ende 2007 auf der Suche nach Verst\\\\u00e4rkung f\\\\u00fcr ihre Web-Abteilung. Ich durfte w\\\\u00e4hrend knapp 4 Jahren als Web-Entwickler an diversen, sehr spannenden Projekten mitarbeiten und gelangte ganz nebenbei zum ersten Mal mit C# sowie node.js in Kontakt. Diese Zeit macht mir endg\\\\u00fcltig klar: meine Leidenschaft liegt in der Web-Entwicklung.</p>\\\", \\\"end_date\\\": \\\"2011-06-30\\\"}, {\\\"url\\\": \\\"http://www.interactivedata.de/\\\", \\\"name\\\": \\\"Interactive Data Managed Solutions\\\", \\\"image\\\": 3, \\\"start_date\\\": \\\"2011-08-01\\\", \\\"text\\\": \\\"<p>Die Interactive Data Managed Solutions bietet Finanzdaten f\\\\u00fcr Web-Portale und Offline-Clients in allen m\\\\u00f6glichen Granulanit\\\\u00e4ten und f\\\\u00fcr alle nur erdenklichen B\\\\u00f6rsenpl\\\\u00e4tze an. Meine Aufgabe war es w\\\\u00e4hrend meines knappen Jahres in dieser Firma den laufenden Betrieb sicherzustellen, das Incident Management zu koordinieren und Deployments auszul\\\\u00f6sen und zu \\\\u00fcberwachen. Um es kurz zu machen: manchmal muss man einen Job mal machen, nur um festzustellen dass es nicht der Richtige ist.</p>\\\", \\\"end_date\\\": \\\"2012-06-30\\\"}, {\\\"url\\\": \\\"https://www.maxomedia.ch\\\", \\\"name\\\": \\\"Maxomedia AG\\\", \\\"image\\\": 4, \\\"start_date\\\": \\\"2012-07-02\\\", \\\"text\\\": \\\"<p>adsdasdasd</p>\\\", \\\"end_date\\\": \\\"2016-07-31\\\"}]}]\", \"expire_at\": null, \"title\": \"Homepage\"}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 16,
+    "fields": {
+        "page": 3,
+        "submitted_for_moderation": false,
+        "created_at": "2016-06-14T23:47:59.975Z",
+        "user": [
+            "admin"
+        ],
+        "content_json": "{\"slug\": \"home\", \"show_in_menus\": false, \"has_unpublished_changes\": true, \"url_path\": \"/home/\", \"seo_title\": \"\", \"search_description\": \"\", \"path\": \"00010001\", \"expired\": false, \"depth\": 2, \"go_live_at\": null, \"numchild\": 1, \"locked\": false, \"content_type\": 2, \"lead\": \"Ein Web-Entwickler (fast) seit Stunde Null, immer auf der Suche nach dem n\\u00e4chsten Trend.\", \"heading\": \"Hallo, ich bin Sch\\u00e4rmu.\", \"owner\": null, \"live\": true, \"latest_revision_created_at\": \"2016-06-14T23:47:51.055Z\", \"first_published_at\": \"2016-06-13T11:07:56.441Z\", \"pk\": 3, \"body\": \"[{\\\"type\\\": \\\"paragraph\\\", \\\"value\\\": \\\"<p>Ich arbeite seit ca. 2001 als Software-Entwickler im Web-Umfeld mit unterschiedlichsten Technologien, Frameworks und Plattformen. H\\\\u00f6rt sich 08/15 an? Ist es aber nicht. Da ich die klassische Software-Entwicklung (3 Monate spezifizieren, 4 Monate diskutieren, 6 Monate Testszenarien entwickeln und 12 Monate entwickeln) immer als relativ langweilig empfand, entschloss ich mich zu einer eher atypischen Karriere.</p>\\\"}, {\\\"type\\\": \\\"career\\\", \\\"value\\\": [{\\\"url\\\": \\\"http://www.ncag.ch\\\", \\\"name\\\": \\\"n c ag\\\", \\\"image\\\": 2, \\\"start_date\\\": \\\"2007-12-01\\\", \\\"text\\\": \\\"<p>Die Neue Chemigraphie AG (kurz n c ag) ist im Bereich Durckvorstufe / Publishing t\\\\u00e4tig und war Ende 2007 auf der Suche nach Verst\\\\u00e4rkung f\\\\u00fcr ihre Web-Abteilung. Ich durfte w\\\\u00e4hrend knapp 4 Jahren als Web-Entwickler an diversen, sehr spannenden Projekten mitarbeiten und gelangte ganz nebenbei zum ersten Mal mit C# sowie node.js in Kontakt. Diese Zeit macht mir endg\\\\u00fcltig klar: meine Leidenschaft liegt in der Web-Entwicklung.</p>\\\", \\\"end_date\\\": \\\"2011-06-30\\\"}, {\\\"url\\\": \\\"http://www.interactivedata.de/\\\", \\\"name\\\": \\\"Interactive Data Managed Solutions\\\", \\\"image\\\": 3, \\\"start_date\\\": \\\"2011-08-01\\\", \\\"text\\\": \\\"<p>Die Interactive Data Managed Solutions bietet Finanzdaten f\\\\u00fcr Web-Portale und Offline-Clients in allen m\\\\u00f6glichen Granulanit\\\\u00e4ten und f\\\\u00fcr alle nur erdenklichen B\\\\u00f6rsenpl\\\\u00e4tze an. Meine Aufgabe war es w\\\\u00e4hrend meines knappen Jahres in dieser Firma den laufenden Betrieb sicherzustellen, das Incident Management zu koordinieren und Deployments auszul\\\\u00f6sen und zu \\\\u00fcberwachen. Um es kurz zu machen: manchmal muss man einen Job mal machen, nur um festzustellen dass es nicht der Richtige ist.</p>\\\", \\\"end_date\\\": \\\"2012-06-30\\\"}, {\\\"url\\\": \\\"https://www.maxomedia.ch\\\", \\\"name\\\": \\\"Maxomedia AG\\\", \\\"image\\\": 4, \\\"start_date\\\": \\\"2012-07-02\\\", \\\"text\\\": \\\"<p>adsdasdasd</p>\\\", \\\"end_date\\\": \\\"2016-07-31\\\"}]}]\", \"expire_at\": null, \"title\": \"Homepage\"}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 17,
+    "fields": {
+        "page": 3,
+        "submitted_for_moderation": false,
+        "created_at": "2016-06-14T23:49:30.649Z",
+        "user": [
+            "admin"
+        ],
+        "content_json": "{\"slug\": \"home\", \"show_in_menus\": false, \"has_unpublished_changes\": false, \"url_path\": \"/home/\", \"seo_title\": \"\", \"search_description\": \"\", \"path\": \"00010001\", \"expired\": false, \"depth\": 2, \"go_live_at\": null, \"numchild\": 1, \"locked\": false, \"content_type\": 2, \"lead\": \"Ein Web-Entwickler (fast) seit Stunde Null, immer auf der Suche nach dem n\\u00e4chsten Trend.\", \"heading\": \"Hallo, ich bin Sch\\u00e4rmu.\", \"owner\": null, \"live\": true, \"latest_revision_created_at\": \"2016-06-14T23:47:59.975Z\", \"first_published_at\": \"2016-06-13T11:07:56.441Z\", \"pk\": 3, \"body\": \"[{\\\"type\\\": \\\"paragraph\\\", \\\"value\\\": \\\"<p>Ich arbeite seit ca. 2001 als Software-Entwickler im Web-Umfeld mit unterschiedlichsten Technologien, Frameworks und Plattformen. H\\\\u00f6rt sich 08/15 an? Ist es aber nicht. Da ich die klassische Software-Entwicklung (3 Monate spezifizieren, 4 Monate diskutieren, 6 Monate Testszenarien entwickeln und 12 Monate entwickeln) immer als relativ langweilig empfand, entschloss ich mich zu einer eher atypischen Karriere.</p>\\\"}, {\\\"type\\\": \\\"career\\\", \\\"value\\\": [{\\\"url\\\": \\\"http://www.ncag.ch\\\", \\\"name\\\": \\\"neue chemigraphie AG\\\", \\\"image\\\": 2, \\\"start_date\\\": \\\"2007-12-01\\\", \\\"text\\\": \\\"<p>Die Neue Chemigraphie AG (kurz n c ag) ist im Bereich Durckvorstufe / Publishing t\\\\u00e4tig und war Ende 2007 auf der Suche nach Verst\\\\u00e4rkung f\\\\u00fcr ihre Web-Abteilung. Ich durfte w\\\\u00e4hrend knapp 4 Jahren als Web-Entwickler an diversen, sehr spannenden Projekten mitarbeiten und gelangte ganz nebenbei zum ersten Mal mit C# sowie node.js in Kontakt. Diese Zeit macht mir endg\\\\u00fcltig klar: meine Leidenschaft liegt in der Web-Entwicklung.</p>\\\", \\\"end_date\\\": \\\"2011-06-30\\\"}, {\\\"url\\\": \\\"http://www.interactivedata.de/\\\", \\\"name\\\": \\\"Interactive Data Managed Solutions\\\", \\\"image\\\": 3, \\\"start_date\\\": \\\"2011-08-01\\\", \\\"text\\\": \\\"<p>Die Interactive Data Managed Solutions bietet Finanzdaten f\\\\u00fcr Web-Portale und Offline-Clients in allen m\\\\u00f6glichen Granulanit\\\\u00e4ten und f\\\\u00fcr alle nur erdenklichen B\\\\u00f6rsenpl\\\\u00e4tze an. Meine Aufgabe war es w\\\\u00e4hrend meines knappen Jahres in dieser Firma den laufenden Betrieb sicherzustellen, das Incident Management zu koordinieren und Deployments auszul\\\\u00f6sen und zu \\\\u00fcberwachen. Um es kurz zu machen: manchmal muss man einen Job mal machen, nur um festzustellen dass es nicht der Richtige ist.</p>\\\", \\\"end_date\\\": \\\"2012-06-30\\\"}, {\\\"url\\\": \\\"https://www.maxomedia.ch\\\", \\\"name\\\": \\\"Maxomedia AG\\\", \\\"image\\\": 4, \\\"start_date\\\": \\\"2012-07-02\\\", \\\"text\\\": \\\"<p>adsdasdasd</p>\\\", \\\"end_date\\\": \\\"2016-07-31\\\"}]}]\", \"expire_at\": null, \"title\": \"Homepage\"}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 18,
+    "fields": {
+        "page": 3,
+        "submitted_for_moderation": false,
+        "created_at": "2016-06-16T07:51:53.747Z",
+        "user": [
+            "admin"
+        ],
+        "content_json": "{\"live\": true, \"title\": \"Homepage\", \"slug\": \"home\", \"seo_title\": \"\", \"path\": \"00010001\", \"numchild\": 1, \"body\": \"[{\\\"value\\\": \\\"<p>Ich arbeite seit ca. 2001 als Software-Entwickler im Web-Umfeld mit unterschiedlichsten Technologien, Frameworks und Plattformen. H\\\\u00f6rt sich 08/15 an? Ist es aber nicht. Da ich die klassische Software-Entwicklung (3 Monate spezifizieren, 4 Monate diskutieren, 6 Monate Testszenarien entwickeln und 12 Monate entwickeln) immer als relativ langweilig empfand, entschloss ich mich zu einer eher atypischen Karriere.</p>\\\", \\\"type\\\": \\\"paragraph\\\"}, {\\\"value\\\": [{\\\"text\\\": \\\"<p>adsdasdasd</p>\\\", \\\"url\\\": \\\"https://www.maxomedia.ch\\\", \\\"name\\\": \\\"Maxomedia AG\\\", \\\"start_date\\\": \\\"2012-07-02\\\", \\\"end_date\\\": \\\"2016-07-31\\\"}, {\\\"text\\\": \\\"<p>Die Interactive Data Managed Solutions bietet Finanzdaten f\\\\u00fcr Web-Portale und Offline-Clients in allen m\\\\u00f6glichen Granulanit\\\\u00e4ten und f\\\\u00fcr alle nur erdenklichen B\\\\u00f6rsenpl\\\\u00e4tze an. Meine Aufgabe war es w\\\\u00e4hrend meines knappen Jahres in dieser Firma den laufenden Betrieb sicherzustellen, das Incident Management zu koordinieren und Deployments auszul\\\\u00f6sen und zu \\\\u00fcberwachen. Um es kurz zu machen: manchmal muss man einen Job mal machen, nur um festzustellen dass es nicht der Richtige ist.</p>\\\", \\\"url\\\": \\\"http://www.interactivedata.de/\\\", \\\"name\\\": \\\"Interactive Data Managed Solutions\\\", \\\"start_date\\\": \\\"2011-08-01\\\", \\\"end_date\\\": \\\"2012-06-30\\\"}, {\\\"text\\\": \\\"<p>Die Neue Chemigraphie AG (kurz n c ag) ist im Bereich Durckvorstufe / Publishing t\\\\u00e4tig und war Ende 2007 auf der Suche nach Verst\\\\u00e4rkung f\\\\u00fcr ihre Web-Abteilung. Ich durfte w\\\\u00e4hrend knapp 4 Jahren als Web-Entwickler an diversen, sehr spannenden Projekten mitarbeiten und gelangte ganz nebenbei zum ersten Mal mit C# sowie node.js in Kontakt. Diese Zeit macht mir endg\\\\u00fcltig klar: meine Leidenschaft liegt in der Web-Entwicklung.</p>\\\", \\\"url\\\": \\\"http://www.ncag.ch\\\", \\\"name\\\": \\\"neue chemigraphie AG\\\", \\\"start_date\\\": \\\"2007-12-01\\\", \\\"end_date\\\": \\\"2011-06-30\\\"}], \\\"type\\\": \\\"career\\\"}]\", \"expired\": false, \"latest_revision_created_at\": \"2016-06-14T23:49:30.649Z\", \"show_in_menus\": false, \"owner\": null, \"heading\": \"Hallo, ich bin Sch\\u00e4rmu.\", \"lead\": \"Ein Web-Entwickler (fast) seit Stunde Null, immer auf der Suche nach dem n\\u00e4chsten Trend.\", \"expire_at\": null, \"depth\": 2, \"search_description\": \"\", \"locked\": false, \"go_live_at\": null, \"content_type\": 2, \"pk\": 3, \"first_published_at\": \"2016-06-13T11:07:56.441Z\", \"url_path\": \"/home/\", \"has_unpublished_changes\": false}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 19,
+    "fields": {
+        "page": 3,
+        "submitted_for_moderation": false,
+        "created_at": "2016-06-16T08:00:45.237Z",
+        "user": [
+            "admin"
+        ],
+        "content_json": "{\"live\": true, \"title\": \"Homepage\", \"slug\": \"home\", \"seo_title\": \"\", \"path\": \"00010001\", \"numchild\": 1, \"body\": \"[{\\\"value\\\": \\\"<p>Ich arbeite seit ca. 2001 als Software-Entwickler im Web-Umfeld mit unterschiedlichsten Technologien, Frameworks und Plattformen. H\\\\u00f6rt sich 08/15 an? Ist es aber nicht. Da ich die klassische Software-Entwicklung (3 Monate spezifizieren, 4 Monate diskutieren, 6 Monate Testszenarien entwickeln und 12 Monate entwickeln) immer als relativ langweilig empfand, entschloss ich mich zu einer eher atypischen Karriere:</p>\\\", \\\"type\\\": \\\"paragraph\\\"}, {\\\"value\\\": [{\\\"text\\\": \\\"<p>adsdasdasd</p>\\\", \\\"url\\\": \\\"https://www.maxomedia.ch\\\", \\\"name\\\": \\\"Maxomedia AG\\\", \\\"start_date\\\": \\\"2012-07-02\\\", \\\"end_date\\\": \\\"2016-07-31\\\"}, {\\\"text\\\": \\\"<p>Die Interactive Data Managed Solutions bietet Finanzdaten f\\\\u00fcr Web-Portale und Offline-Clients in allen m\\\\u00f6glichen Granulanit\\\\u00e4ten und f\\\\u00fcr alle nur erdenklichen B\\\\u00f6rsenpl\\\\u00e4tze an. Meine Aufgabe war es w\\\\u00e4hrend meines knappen Jahres in dieser Firma den laufenden Betrieb sicherzustellen, das Incident Management zu koordinieren und Deployments auszul\\\\u00f6sen und zu \\\\u00fcberwachen. Um es kurz zu machen: manchmal muss man einen Job mal machen, nur um festzustellen dass es nicht der Richtige ist.</p>\\\", \\\"url\\\": \\\"http://www.interactivedata.de/\\\", \\\"name\\\": \\\"Interactive Data Managed Solutions\\\", \\\"start_date\\\": \\\"2011-08-01\\\", \\\"end_date\\\": \\\"2012-06-30\\\"}, {\\\"text\\\": \\\"<p>Die Neue Chemigraphie AG (kurz n c ag) ist im Bereich Druckvorstufe / Publishing t\\\\u00e4tig und war Ende 2007 auf der Suche nach Verst\\\\u00e4rkung f\\\\u00fcr ihre Web-Abteilung. Ich durfte w\\\\u00e4hrend knapp 4 Jahren als Web-Entwickler an diversen, sehr spannenden Projekten mitarbeiten und gelangte ganz nebenbei zum ersten Mal mit C# sowie node.js in Kontakt. Diese Zeit macht mir endg\\\\u00fcltig klar: meine Leidenschaft liegt in der Web-Entwicklung.</p>\\\", \\\"url\\\": \\\"http://www.ncag.ch\\\", \\\"name\\\": \\\"neue chemigraphie AG\\\", \\\"start_date\\\": \\\"2007-12-01\\\", \\\"end_date\\\": \\\"2011-06-30\\\"}, {\\\"text\\\": \\\"<p>Direkt nach meiner Ausbildung zum Informatiker arbeitete ich zuerst ca. 1 Jahr f\\\\u00fcr die Agentur mediatower als Freelancer auf PHP/Typo3, danach gr\\\\u00fcndete ich gemeinsam mit einem Freund eine Firma, spezialisiert auf automatisiertes G\\\\u00fcnstig-Hosting und PHP-Auftragsarbeiten.</p>\\\", \\\"url\\\": \\\"http://www.mediatower.ch\\\", \\\"name\\\": \\\"selbstst\\\\u00e4ndig/Freelancer\\\", \\\"start_date\\\": \\\"2003-08-01\\\", \\\"end_date\\\": \\\"2007-11-30\\\"}], \\\"type\\\": \\\"career\\\"}]\", \"expired\": false, \"latest_revision_created_at\": \"2016-06-16T07:51:53.747Z\", \"show_in_menus\": false, \"owner\": null, \"heading\": \"Hallo, ich bin Sch\\u00e4rmu.\", \"lead\": \"Web-Entwickler seit Frontpage noch was Gutes und selfhtml.de besser als Google war.\", \"expire_at\": null, \"depth\": 2, \"search_description\": \"\", \"locked\": false, \"go_live_at\": null, \"content_type\": 2, \"pk\": 3, \"first_published_at\": \"2016-06-13T11:07:56.441Z\", \"url_path\": \"/home/\", \"has_unpublished_changes\": false}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 20,
+    "fields": {
+        "page": 3,
+        "submitted_for_moderation": false,
+        "created_at": "2016-06-16T08:08:35.110Z",
+        "user": [
+            "admin"
+        ],
+        "content_json": "{\"live\": true, \"title\": \"Homepage\", \"slug\": \"home\", \"seo_title\": \"\", \"path\": \"00010001\", \"numchild\": 1, \"body\": \"[{\\\"value\\\": \\\"<p>Ich arbeite seit ca. 2001 als Software-Entwickler im Web-Umfeld mit unterschiedlichsten Technologien, Frameworks und Plattformen. H\\\\u00f6rt sich 08/15 an? Ist es aber nicht. Da ich die klassische Software-Entwicklung (3 Monate spezifizieren, 4 Monate diskutieren, 6 Monate Testszenarien entwickeln und 12 Monate entwickeln) immer als relativ langweilig empfand, entschloss ich mich zu einer eher atypischen Karriere:</p>\\\", \\\"type\\\": \\\"paragraph\\\"}, {\\\"value\\\": [{\\\"text\\\": \\\"<p>Als Crossmedia-Agentur versteht sich die Maxomedia als Integrator von klassischer Werbung wie TV- / Radio-Spots, Plakaten, Inseraten und allen digitalen Kan\\\\u00e4len von Social Media bis Apps und Plattformen. Bereits nach dem Vorstellungsgespr\\\\u00e4ch hat es hier Klick gemacht: das junge Team, die in der Luft liegende Kreativit\\\\u00e4t und die Attit\\\\u00fcde, dass technisch nichts unm\\\\u00f6glich ist haben mich sofort in Ihren Bann gezogen. Die Projekte waren so divers wie angenommen und begannen mit kleinsten Microsite's oder Kampagnen-begleitenden Websites und h\\\\u00f6rten auf bei Plattformen f\\\\u00fcr mehrere 100'000 Benutzer und Apps mit t\\\\u00e4glich bis zu 20'000 Unique-Usern.</p>\\\", \\\"url\\\": \\\"https://www.maxomedia.ch\\\", \\\"name\\\": \\\"Maxomedia AG\\\", \\\"start_date\\\": \\\"2012-07-02\\\", \\\"end_date\\\": \\\"2016-07-31\\\"}, {\\\"text\\\": \\\"<p>Interactive Data Managed Solutions bietet Finanzdaten f\\\\u00fcr Web-Portale und Offline-Clients in allen m\\\\u00f6glichen Granulanit\\\\u00e4ten und f\\\\u00fcr alle nur erdenklichen B\\\\u00f6rsenpl\\\\u00e4tze an. Meine Aufgabe war es w\\\\u00e4hrend meines knappen Jahres in dieser Firma den laufenden Betrieb sicherzustellen, das Incident Management zu koordinieren und Deployments auszul\\\\u00f6sen und zu \\\\u00fcberwachen. Um es kurz zu machen: manchmal muss man einen Job mal machen, nur um festzustellen dass es nicht der Richtige ist.</p>\\\", \\\"url\\\": \\\"http://www.interactivedata.de/\\\", \\\"name\\\": \\\"Interactive Data Managed Solutions\\\", \\\"start_date\\\": \\\"2011-08-01\\\", \\\"end_date\\\": \\\"2012-06-30\\\"}, {\\\"text\\\": \\\"<p>Die Neue Chemigraphie AG (kurz n c ag) ist im Bereich Druckvorstufe / Publishing t\\\\u00e4tig und war Ende 2007 auf der Suche nach Verst\\\\u00e4rkung f\\\\u00fcr ihre Web-Abteilung. Ich durfte w\\\\u00e4hrend knapp 4 Jahren als Web-Entwickler an diversen, sehr spannenden Projekten mitarbeiten und gelangte ganz nebenbei zum ersten Mal mit C# sowie node.js in Kontakt. Diese Zeit macht mir endg\\\\u00fcltig klar: meine Leidenschaft liegt in der Web-Entwicklung.</p>\\\", \\\"url\\\": \\\"http://www.ncag.ch\\\", \\\"name\\\": \\\"neue chemigraphie AG\\\", \\\"start_date\\\": \\\"2007-12-01\\\", \\\"end_date\\\": \\\"2011-06-30\\\"}, {\\\"text\\\": \\\"<p>Direkt nach meiner Ausbildung zum Informatiker arbeitete ich zuerst ca. 1 Jahr f\\\\u00fcr die Agentur mediatower als Freelancer auf PHP/Typo3, danach gr\\\\u00fcndete ich gemeinsam mit einem Freund eine Firma, spezialisiert auf automatisiertes G\\\\u00fcnstig-Hosting und PHP-Auftragsarbeiten.</p>\\\", \\\"url\\\": \\\"http://www.mediatower.ch\\\", \\\"name\\\": \\\"selbstst\\\\u00e4ndig/Freelancer\\\", \\\"start_date\\\": \\\"2003-08-01\\\", \\\"end_date\\\": \\\"2007-11-30\\\"}], \\\"type\\\": \\\"career\\\"}]\", \"expired\": false, \"latest_revision_created_at\": \"2016-06-16T08:00:45.237Z\", \"show_in_menus\": false, \"owner\": null, \"heading\": \"Hallo, ich bin Sch\\u00e4rmu.\", \"lead\": \"Web-Entwickler seit Frontpage noch was Gutes und selfhtml.de besser als Google war.\", \"expire_at\": null, \"depth\": 2, \"search_description\": \"\", \"locked\": false, \"go_live_at\": null, \"content_type\": 2, \"pk\": 3, \"first_published_at\": \"2016-06-13T11:07:56.441Z\", \"url_path\": \"/home/\", \"has_unpublished_changes\": true}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 21,
+    "fields": {
+        "page": 3,
+        "submitted_for_moderation": false,
+        "created_at": "2016-06-16T08:30:42.059Z",
+        "user": [
+            "admin"
+        ],
+        "content_json": "{\"live\": true, \"path\": \"00010001\", \"latest_revision_created_at\": \"2016-06-16T08:08:35.110Z\", \"content_type\": 2, \"locked\": false, \"body\": \"[{\\\"type\\\": \\\"paragraph\\\", \\\"value\\\": \\\"<p>Ich arbeite seit ca. 2001 als Software-Entwickler im Web-Umfeld mit unterschiedlichsten Technologien, Frameworks und Plattformen. H\\\\u00f6rt sich 08/15 an? Ist es aber nicht. Da ich die klassische Software-Entwicklung (3 Monate spezifizieren, 4 Monate diskutieren, 6 Monate Testszenarien entwickeln und 12 Monate entwickeln) immer als relativ langweilig empfand, entschloss ich mich zu einer eher atypischen Karriere:</p>\\\"}, {\\\"type\\\": \\\"career\\\", \\\"value\\\": [{\\\"end_date\\\": \\\"2016-07-31\\\", \\\"name\\\": \\\"Maxomedia AG\\\", \\\"start_date\\\": \\\"2012-07-02\\\", \\\"url\\\": \\\"https://www.maxomedia.ch\\\", \\\"text\\\": \\\"<p>Als Crossmedia-Agentur versteht sich die Maxomedia als Integrator von klassischer Werbung wie TV- / Radio-Spots, Plakaten, Inseraten und allen digitalen Kan\\\\u00e4len von Social Media bis Apps und Plattformen. Bereits nach dem Vorstellungsgespr\\\\u00e4ch hat es hier Klick gemacht: das junge Team, die in der Luft liegende Kreativit\\\\u00e4t und die Attit\\\\u00fcde, dass technisch nichts unm\\\\u00f6glich ist haben mich sofort in Ihren Bann gezogen. Die Projekte waren so divers wie angenommen und begannen mit kleinsten Microsite's oder Kampagnen-begleitenden Websites und h\\\\u00f6rten auf bei Plattformen f\\\\u00fcr mehrere 100'000 Benutzer und Apps mit t\\\\u00e4glich bis zu 20'000 Unique-Usern.</p>\\\"}, {\\\"end_date\\\": \\\"2012-06-30\\\", \\\"name\\\": \\\"Interactive Data Managed Solutions\\\", \\\"start_date\\\": \\\"2011-08-01\\\", \\\"url\\\": \\\"http://www.interactivedata.de/\\\", \\\"text\\\": \\\"<p>Interactive Data Managed Solutions bietet Finanzdaten f\\\\u00fcr Web-Portale und Offline-Clients in allen m\\\\u00f6glichen Granulanit\\\\u00e4ten und f\\\\u00fcr alle nur erdenklichen B\\\\u00f6rsenpl\\\\u00e4tze an. Meine Aufgabe war es w\\\\u00e4hrend meines knappen Jahres in dieser Firma den laufenden Betrieb sicherzustellen, das Incident Management zu koordinieren und Deployments auszul\\\\u00f6sen und zu \\\\u00fcberwachen. Um es kurz zu machen: manchmal muss man einen Job mal machen, nur um festzustellen dass es nicht der Richtige ist.</p>\\\"}, {\\\"end_date\\\": \\\"2011-06-30\\\", \\\"name\\\": \\\"neue chemigraphie AG\\\", \\\"start_date\\\": \\\"2007-12-01\\\", \\\"url\\\": \\\"http://www.ncag.ch\\\", \\\"text\\\": \\\"<p>Die Neue Chemigraphie AG (kurz n c ag) ist im Bereich Druckvorstufe / Publishing t\\\\u00e4tig und war Ende 2007 auf der Suche nach Verst\\\\u00e4rkung f\\\\u00fcr ihre Web-Abteilung. Ich durfte w\\\\u00e4hrend knapp 4 Jahren als Web-Entwickler an diversen, sehr spannenden Projekten mitarbeiten und gelangte ganz nebenbei zum ersten Mal mit C# sowie node.js in Kontakt. Diese Zeit macht mir endg\\\\u00fcltig klar: meine Leidenschaft liegt in der Web-Entwicklung.</p>\\\"}, {\\\"end_date\\\": \\\"2007-11-30\\\", \\\"name\\\": \\\"selbstst\\\\u00e4ndig/Freelancer\\\", \\\"start_date\\\": \\\"2003-08-01\\\", \\\"url\\\": \\\"http://www.mediatower.ch\\\", \\\"text\\\": \\\"<p>Direkt nach meiner Ausbildung zum Informatiker arbeitete ich zuerst ca. 1 Jahr f\\\\u00fcr die Agentur mediatower als Freelancer auf PHP/Typo3, danach gr\\\\u00fcndete ich gemeinsam mit einem Freund eine Firma, spezialisiert auf automatisiertes G\\\\u00fcnstig-Hosting und PHP-Auftragsarbeiten.</p>\\\"}]}]\", \"expired\": false, \"url_path\": \"/home/\", \"pk\": 3, \"search_description\": \"\", \"owner\": null, \"seo_title\": \"\", \"lead\": \"Web-Entwickler seit Frontpage noch was Gutes und selfhtml.de besser als Google war.\", \"expire_at\": null, \"heading\": \"Hallo, ich bin Sch\\u00e4rmu.\", \"has_unpublished_changes\": false, \"first_published_at\": \"2016-06-13T11:07:56.441Z\", \"go_live_at\": null, \"depth\": 2, \"portrait_image\": 5, \"show_in_menus\": false, \"slug\": \"home\", \"title\": \"Homepage\", \"numchild\": 1}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 22,
+    "fields": {
+        "page": 3,
+        "submitted_for_moderation": false,
+        "created_at": "2016-06-16T16:44:26.796Z",
+        "user": [
+            "admin"
+        ],
+        "content_json": "{\"expire_at\": null, \"latest_revision_created_at\": \"2016-06-16T08:30:42.059Z\", \"expired\": false, \"live\": true, \"first_published_at\": \"2016-06-13T11:07:56.441Z\", \"show_in_menus\": false, \"url_path\": \"/home/\", \"owner\": null, \"portrait_image\": 5, \"locked\": false, \"search_description\": \"\", \"content_type\": 2, \"title\": \"Homepage\", \"body\": \"[{\\\"value\\\": \\\"<p>Ich arbeite seit ca. 2002/2003 als Software-Entwickler im Web-Umfeld mit unterschiedlichsten Technologien, Frameworks und Plattformen. H\\\\u00f6rt sich nach einer 08/15 Geschichte an? Ist es aber nicht. Da ich die klassische Software-Entwicklung (3 Monate spezifizieren, 4 Monate diskutieren, 6 Monate Testszenarien entwickeln und 12 Monate entwickeln) immer als relativ langweilig empfand, entschloss ich mich zu einer eher atypischen Karriere:</p>\\\", \\\"type\\\": \\\"paragraph\\\"}, {\\\"value\\\": [{\\\"text\\\": \\\"<p>Als Crossmedia-Agentur versteht sich die Maxomedia als Integrator von klassischer Werbung wie TV- / Radio-Spots, Plakaten, Inseraten und allen digitalen Kan\\\\u00e4len von Social Media bis Apps und Plattformen. Bereits nach dem Vorstellungsgespr\\\\u00e4ch hat es hier Klick gemacht: das junge Team, die in der Luft liegende Kreativit\\\\u00e4t und die Attit\\\\u00fcde, dass technisch nichts unm\\\\u00f6glich ist haben mich sofort in Ihren Bann gezogen. Die Projekte waren so divers wie angenommen und begannen mit kleinsten Microsite's oder Kampagnen-begleitenden Websites und h\\\\u00f6rten auf bei Plattformen f\\\\u00fcr mehrere 100'000 Benutzer und Apps mit t\\\\u00e4glich bis zu 20'000 Unique-Usern.</p>\\\", \\\"start_date\\\": \\\"2012-07-02\\\", \\\"end_date\\\": \\\"2016-07-31\\\", \\\"url\\\": \\\"https://www.maxomedia.ch\\\", \\\"name\\\": \\\"Maxomedia AG\\\"}, {\\\"text\\\": \\\"<p>Interactive Data Managed Solutions bietet Finanzdaten f\\\\u00fcr Web-Portale und Offline-Clients in allen m\\\\u00f6glichen Granulanit\\\\u00e4ten und f\\\\u00fcr alle nur erdenklichen B\\\\u00f6rsenpl\\\\u00e4tze an. Meine Aufgabe war es w\\\\u00e4hrend meines knappen Jahres in dieser Firma den laufenden Betrieb sicherzustellen, das Incident Management zu koordinieren und Deployments auszul\\\\u00f6sen und zu \\\\u00fcberwachen. Um es kurz zu machen: manchmal muss man einen Job mal machen, nur um festzustellen dass es nicht der Richtige ist.</p>\\\", \\\"start_date\\\": \\\"2011-08-01\\\", \\\"end_date\\\": \\\"2012-06-30\\\", \\\"url\\\": \\\"http://www.interactivedata.de/\\\", \\\"name\\\": \\\"Interactive Data Managed Solutions\\\"}, {\\\"text\\\": \\\"<p>Die Neue Chemigraphie AG (kurz n c ag) ist im Bereich Druckvorstufe / Publishing t\\\\u00e4tig und war Ende 2007 auf der Suche nach Verst\\\\u00e4rkung f\\\\u00fcr ihre Web-Abteilung. Ich durfte w\\\\u00e4hrend knapp 4 Jahren als Web-Entwickler an diversen, sehr spannenden Projekten mitarbeiten und gelangte ganz nebenbei zum ersten Mal mit C# sowie node.js in Kontakt. Diese Zeit macht mir endg\\\\u00fcltig klar: meine Leidenschaft liegt in der Web-Entwicklung.</p>\\\", \\\"start_date\\\": \\\"2007-12-01\\\", \\\"end_date\\\": \\\"2011-06-30\\\", \\\"url\\\": \\\"http://www.ncag.ch\\\", \\\"name\\\": \\\"neue chemigraphie AG\\\"}, {\\\"text\\\": \\\"<p>Direkt nach meiner Ausbildung zum Informatiker arbeitete ich zuerst ca. 1 Jahr f\\\\u00fcr die Agentur mediatower als Freelancer auf PHP/Typo3, danach gr\\\\u00fcndete ich gemeinsam mit einem Freund eine Firma, spezialisiert auf automatisiertes G\\\\u00fcnstig-Hosting und PHP-Auftragsarbeiten.</p>\\\", \\\"start_date\\\": \\\"2003-08-01\\\", \\\"end_date\\\": \\\"2007-11-30\\\", \\\"url\\\": \\\"http://www.mediatower.ch\\\", \\\"name\\\": \\\"selbstst\\\\u00e4ndig/Freelancer\\\"}], \\\"type\\\": \\\"career\\\"}]\", \"go_live_at\": null, \"slug\": \"home\", \"path\": \"00010001\", \"numchild\": 1, \"has_unpublished_changes\": false, \"seo_title\": \"\", \"lead\": \"Web-Entwickler seit Frontpage noch was Gutes und selfhtml.de besser als Google war.\", \"heading\": \"Hallo, ich bin Sch\\u00e4rmu.\", \"pk\": 3, \"depth\": 2}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 23,
+    "fields": {
+        "page": 3,
+        "submitted_for_moderation": false,
+        "created_at": "2016-06-16T16:52:14.100Z",
+        "user": [
+            "admin"
+        ],
+        "content_json": "{\"expire_at\": null, \"latest_revision_created_at\": \"2016-06-16T16:44:26.796Z\", \"expired\": false, \"live\": true, \"first_published_at\": \"2016-06-13T11:07:56.441Z\", \"show_in_menus\": false, \"url_path\": \"/home/\", \"owner\": null, \"portrait_image\": 5, \"locked\": false, \"search_description\": \"\", \"content_type\": 2, \"title\": \"Homepage\", \"body\": \"[{\\\"value\\\": \\\"<p>Ich arbeite seit ca. 2002/2003 als Software-Entwickler im Web-Umfeld mit unterschiedlichsten Technologien, Frameworks und Plattformen. H\\\\u00f6rt sich nach einer 08/15 Geschichte an? Ist es aber nicht. Da ich die klassische Software-Entwicklung (3 Monate spezifizieren, 4 Monate diskutieren, 6 Monate Testszenarien entwickeln und 12 Monate entwickeln) immer als relativ langweilig empfand, entschloss ich mich zu einer eher atypischen Karriere:</p>\\\", \\\"type\\\": \\\"paragraph\\\"}, {\\\"value\\\": [{\\\"text\\\": \\\"<p>Als Crossmedia-Agentur versteht sich die Maxomedia als Integrator von klassischer Werbung wie TV- / Radio-Spots, Plakaten, Inseraten und allen digitalen Kan\\\\u00e4len von Social Media bis Apps und Plattformen. Bereits nach dem Vorstellungsgespr\\\\u00e4ch hat es hier Klick gemacht: das junge Team, die in der Luft liegende Kreativit\\\\u00e4t und die Attit\\\\u00fcde, dass technisch nichts unm\\\\u00f6glich ist haben mich sofort in Ihren Bann gezogen. Die Projekte waren so divers wie angenommen und begannen mit kleinsten Microsite's oder Kampagnen-begleitenden Websites und h\\\\u00f6rten auf bei Plattformen f\\\\u00fcr mehrere 100'000 Benutzer und Apps mit t\\\\u00e4glich bis zu 20'000 Unique-Usern.</p>\\\", \\\"start_date\\\": \\\"2012-07-02\\\", \\\"end_date\\\": \\\"2016-07-31\\\", \\\"url\\\": \\\"https://www.maxomedia.ch\\\", \\\"name\\\": \\\"Maxomedia AG\\\"}, {\\\"text\\\": \\\"<p>Interactive Data Managed Solutions bietet Finanzdaten f\\\\u00fcr Web-Portale und Offline-Clients in allen m\\\\u00f6glichen Granulanit\\\\u00e4ten und f\\\\u00fcr alle nur erdenklichen B\\\\u00f6rsenpl\\\\u00e4tze an. Meine Aufgabe war es w\\\\u00e4hrend meines knappen Jahres in dieser Firma den laufenden Betrieb sicherzustellen, das Incident Management zu koordinieren und Deployments auszul\\\\u00f6sen und zu \\\\u00fcberwachen. Um es kurz zu machen: manchmal muss man einen Job mal machen, nur um festzustellen dass es nicht der Richtige ist.</p>\\\", \\\"start_date\\\": \\\"2011-08-01\\\", \\\"end_date\\\": \\\"2012-06-30\\\", \\\"url\\\": \\\"http://www.interactivedata.de/\\\", \\\"name\\\": \\\"Interactive Data Managed Solutions\\\"}, {\\\"text\\\": \\\"<p>Die Neue Chemigraphie AG (kurz n c ag) ist im Bereich Druckvorstufe / Publishing t\\\\u00e4tig und war Ende 2007 auf der Suche nach Verst\\\\u00e4rkung f\\\\u00fcr ihre Web-Abteilung. Ich durfte w\\\\u00e4hrend knapp 4 Jahren als Web-Entwickler an diversen, sehr spannenden Projekten mitarbeiten und gelangte ganz nebenbei zum ersten Mal mit C# sowie node.js in Kontakt. Diese Zeit macht mir endg\\\\u00fcltig klar: meine Leidenschaft liegt in der Web-Entwicklung.</p>\\\", \\\"start_date\\\": \\\"2007-12-01\\\", \\\"end_date\\\": \\\"2011-06-30\\\", \\\"url\\\": \\\"http://www.ncag.ch\\\", \\\"name\\\": \\\"neue chemigraphie AG\\\"}, {\\\"text\\\": \\\"<p>Direkt nach meiner Ausbildung zum Informatiker arbeitete ich zuerst ca. 1 Jahr f\\\\u00fcr die Agentur mediatower als Freelancer auf PHP/Typo3, danach gr\\\\u00fcndete ich gemeinsam mit einem Freund eine Firma, spezialisiert auf automatisiertes G\\\\u00fcnstig-Hosting und PHP-Auftragsarbeiten.</p>\\\", \\\"start_date\\\": \\\"2003-08-01\\\", \\\"end_date\\\": \\\"2007-11-30\\\", \\\"url\\\": \\\"http://www.mediatower.ch\\\", \\\"name\\\": \\\"selbstst\\\\u00e4ndig/Freelancer\\\"}], \\\"type\\\": \\\"career\\\"}, {\\\"value\\\": \\\"Was kann der Sch\\\\u00e4rmu denn so?\\\", \\\"type\\\": \\\"heading\\\"}, {\\\"value\\\": \\\"<p>W\\\\u00e4hrend dieser Stationen konnte ich mir ein breites Wissen im Umfeld der Web-Entwicklung aneignen. Angefangen hat die Reise w\\\\u00e4hrend der Ausbildung mit PHP 4, was sich auch f\\\\u00fcr die n\\\\u00e4chsten 6 Jahre als Umfeld meiner Wahl herausstellte (auch mit diversen CMS-Systemen, haupts\\\\u00e4chlich jedoch Custom-Development). Mit dem Job-Antritt bei der n c ag (nota bene als PHP-Entwickler) ver\\\\u00e4nderte sich mein technischer Fokus abrupt: ich \\\\u00fcbernahm den Betrieb und die Weiterentwicklung f\\\\u00fcr eine C#-Applikation! Von da aus war der Schritt zu ASP.NET WebForms/MVC und WebAPI kein grosser und nur ein logischer. Die\\\\u00a0darauf folgende\\\\u00a0Zeit bei\\\\u00a0der Maxomedia war ebenfalls durch diese Technologien gepr\\\\u00e4gt und gab mir die M\\\\u00f6glichkeit zur Weiterentwicklung und Vertiefung in diesen (und vielen anderen Themen). Und nun sitze ich hier und entwickle ich meine pers\\\\u00f6nliche Website auf dem CMS <a href=\\\\\\\"http://wagtail.io\\\\\\\">Wagtail</a>, einem Python/Django-basierenden CMS :)</p>\\\", \\\"type\\\": \\\"paragraph\\\"}, {\\\"value\\\": [], \\\"type\\\": \\\"skills\\\"}]\", \"go_live_at\": null, \"slug\": \"home\", \"path\": \"00010001\", \"numchild\": 1, \"has_unpublished_changes\": true, \"seo_title\": \"\", \"lead\": \"Web-Entwickler seit Frontpage noch was Gutes und selfhtml.de besser als Google war.\", \"heading\": \"Hallo, ich bin Sch\\u00e4rmu.\", \"pk\": 3, \"depth\": 2}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 24,
+    "fields": {
+        "page": 3,
+        "submitted_for_moderation": false,
+        "created_at": "2016-06-16T16:55:21.388Z",
+        "user": [
+            "admin"
+        ],
+        "content_json": "{\"live\": true, \"expire_at\": null, \"body\": \"[{\\\"type\\\": \\\"paragraph\\\", \\\"value\\\": \\\"<p>Ich arbeite seit ca. 2002/2003 als Software-Entwickler im Web-Umfeld mit unterschiedlichsten Technologien, Frameworks und Plattformen. H\\\\u00f6rt sich nach einer 08/15 Geschichte an? Ist es aber nicht. Da ich die klassische Software-Entwicklung (3 Monate spezifizieren, 4 Monate diskutieren, 6 Monate Testszenarien entwickeln und 12 Monate entwickeln) immer als relativ langweilig empfand, entschloss ich mich zu einer eher atypischen Karriere:</p>\\\"}, {\\\"type\\\": \\\"career\\\", \\\"value\\\": [{\\\"url\\\": \\\"https://www.maxomedia.ch\\\", \\\"start_date\\\": \\\"2012-07-02\\\", \\\"text\\\": \\\"<p>Als Crossmedia-Agentur versteht sich die Maxomedia als Integrator von klassischer Werbung wie TV- / Radio-Spots, Plakaten, Inseraten und allen digitalen Kan\\\\u00e4len von Social Media bis Apps und Plattformen. Bereits nach dem Vorstellungsgespr\\\\u00e4ch hat es hier Klick gemacht: das junge Team, die in der Luft liegende Kreativit\\\\u00e4t und die Attit\\\\u00fcde, dass technisch nichts unm\\\\u00f6glich ist haben mich sofort in Ihren Bann gezogen. Die Projekte waren so divers wie angenommen und begannen mit kleinsten Microsite's oder Kampagnen-begleitenden Websites und h\\\\u00f6rten auf bei Plattformen f\\\\u00fcr mehrere 100'000 Benutzer und Apps mit t\\\\u00e4glich bis zu 20'000 Unique-Usern.</p>\\\", \\\"name\\\": \\\"Maxomedia AG\\\", \\\"end_date\\\": \\\"2016-07-31\\\"}, {\\\"url\\\": \\\"http://www.interactivedata.de/\\\", \\\"start_date\\\": \\\"2011-08-01\\\", \\\"text\\\": \\\"<p>Interactive Data Managed Solutions bietet Finanzdaten f\\\\u00fcr Web-Portale und Offline-Clients in allen m\\\\u00f6glichen Granulanit\\\\u00e4ten und f\\\\u00fcr alle nur erdenklichen B\\\\u00f6rsenpl\\\\u00e4tze an. Meine Aufgabe war es w\\\\u00e4hrend meines knappen Jahres in dieser Firma den laufenden Betrieb sicherzustellen, das Incident Management zu koordinieren und Deployments auszul\\\\u00f6sen und zu \\\\u00fcberwachen. Um es kurz zu machen: manchmal muss man einen Job mal machen, nur um festzustellen dass es nicht der Richtige ist.</p>\\\", \\\"name\\\": \\\"Interactive Data Managed Solutions\\\", \\\"end_date\\\": \\\"2012-06-30\\\"}, {\\\"url\\\": \\\"http://www.ncag.ch\\\", \\\"start_date\\\": \\\"2007-12-01\\\", \\\"text\\\": \\\"<p>Die Neue Chemigraphie AG (kurz n c ag) ist im Bereich Druckvorstufe / Publishing t\\\\u00e4tig und war Ende 2007 auf der Suche nach Verst\\\\u00e4rkung f\\\\u00fcr ihre Web-Abteilung. Ich durfte w\\\\u00e4hrend knapp 4 Jahren als Web-Entwickler an diversen, sehr spannenden Projekten mitarbeiten und gelangte ganz nebenbei zum ersten Mal mit C# sowie node.js in Kontakt. Diese Zeit macht mir endg\\\\u00fcltig klar: meine Leidenschaft liegt in der Web-Entwicklung.</p>\\\", \\\"name\\\": \\\"neue chemigraphie AG\\\", \\\"end_date\\\": \\\"2011-06-30\\\"}, {\\\"url\\\": \\\"http://www.mediatower.ch\\\", \\\"start_date\\\": \\\"2003-08-01\\\", \\\"text\\\": \\\"<p>Direkt nach meiner Ausbildung zum Informatiker arbeitete ich zuerst ca. 1 Jahr f\\\\u00fcr die Agentur mediatower als Freelancer auf PHP/Typo3, danach gr\\\\u00fcndete ich gemeinsam mit einem Freund eine Firma, spezialisiert auf automatisiertes G\\\\u00fcnstig-Hosting und PHP-Auftragsarbeiten.</p>\\\", \\\"name\\\": \\\"selbstst\\\\u00e4ndig/Freelancer\\\", \\\"end_date\\\": \\\"2007-11-30\\\"}]}, {\\\"type\\\": \\\"heading\\\", \\\"value\\\": \\\"Was kann der Sch\\\\u00e4rmu denn so?\\\"}, {\\\"type\\\": \\\"paragraph\\\", \\\"value\\\": \\\"<p>W\\\\u00e4hrend dieser Stationen konnte ich mir ein breites Wissen im Umfeld der Web-Entwicklung aneignen. Angefangen hat die Reise w\\\\u00e4hrend der Ausbildung mit PHP 4, was sich auch f\\\\u00fcr die n\\\\u00e4chsten 6 Jahre als Umfeld meiner Wahl herausstellte (auch mit diversen CMS-Systemen, haupts\\\\u00e4chlich jedoch Custom-Development). Mit dem Job-Antritt bei der n c ag (nota bene als PHP-Entwickler) ver\\\\u00e4nderte sich mein technischer Fokus abrupt: ich \\\\u00fcbernahm den Betrieb und die Weiterentwicklung f\\\\u00fcr eine C#-Applikation! Von da aus war der Schritt zu ASP.NET WebForms/MVC und WebAPI kein grosser und nur ein logischer. Die\\\\u00a0darauf folgende\\\\u00a0Zeit bei\\\\u00a0der Maxomedia war ebenfalls durch diese Technologien gepr\\\\u00e4gt und gab mir die M\\\\u00f6glichkeit zur Weiterentwicklung und Vertiefung in diesen (und vielen anderen Themen). Und nun sitze ich hier und entwickle ich meine pers\\\\u00f6nliche Website auf dem CMS <a href=\\\\\\\"http://wagtail.io\\\\\\\">Wagtail</a>, einem Python/Django-basierenden CMS :)</p>\\\"}, {\\\"type\\\": \\\"skills\\\", \\\"value\\\": [{\\\"value\\\": \\\"80\\\", \\\"name\\\": \\\"C#\\\"}, {\\\"value\\\": \\\"80\\\", \\\"name\\\": \\\"ASP.NET MVC\\\"}, {\\\"value\\\": \\\"85\\\", \\\"name\\\": \\\"ASP.NET WebAPI2\\\"}, {\\\"value\\\": \\\"50\\\", \\\"name\\\": \\\"PHP\\\"}, {\\\"value\\\": \\\"30\\\", \\\"name\\\": \\\"Python/Django\\\"}, {\\\"value\\\": \\\"75\\\", \\\"name\\\": \\\"JavaScript (AngularJS/React/jQuery)\\\"}, {\\\"value\\\": \\\"65\\\", \\\"name\\\": \\\"JavaScript (node.js)\\\"}]}]\", \"seo_title\": \"\", \"search_description\": \"\", \"content_type\": 2, \"url_path\": \"/home/\", \"numchild\": 1, \"latest_revision_created_at\": \"2016-06-16T16:52:14.100Z\", \"slug\": \"home\", \"locked\": false, \"owner\": null, \"show_in_menus\": false, \"go_live_at\": null, \"portrait_image\": 5, \"lead\": \"Web-Entwickler seit Frontpage noch was Gutes und selfhtml.de besser als Google war.\", \"first_published_at\": \"2016-06-13T11:07:56.441Z\", \"pk\": 3, \"path\": \"00010001\", \"title\": \"Homepage\", \"depth\": 2, \"heading\": \"Hallo, ich bin Sch\\u00e4rmu.\", \"expired\": false, \"has_unpublished_changes\": true}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 25,
+    "fields": {
+        "page": 3,
+        "submitted_for_moderation": false,
+        "created_at": "2016-06-16T16:58:49.577Z",
+        "user": [
+            "admin"
+        ],
+        "content_json": "{\"live\": true, \"expire_at\": null, \"body\": \"[{\\\"type\\\": \\\"paragraph\\\", \\\"value\\\": \\\"<p>Ich arbeite seit ca. 2002/2003 als Software-Entwickler im Web-Umfeld mit unterschiedlichsten Technologien, Frameworks und Plattformen. H\\\\u00f6rt sich nach einer 08/15 Geschichte an? Ist es aber nicht. Da ich die klassische Software-Entwicklung (3 Monate spezifizieren, 4 Monate diskutieren, 6 Monate Testszenarien entwickeln und 12 Monate entwickeln) immer als relativ langweilig empfand, entschloss ich mich zu einer eher atypischen Karriere:</p>\\\"}, {\\\"type\\\": \\\"career\\\", \\\"value\\\": [{\\\"url\\\": \\\"https://www.maxomedia.ch\\\", \\\"start_date\\\": \\\"2012-07-02\\\", \\\"text\\\": \\\"<p>Als Crossmedia-Agentur versteht sich die Maxomedia als Integrator von klassischer Werbung wie TV- / Radio-Spots, Plakaten, Inseraten und allen digitalen Kan\\\\u00e4len von Social Media bis Apps und Plattformen. Bereits nach dem Vorstellungsgespr\\\\u00e4ch hat es hier Klick gemacht: das junge Team, die in der Luft liegende Kreativit\\\\u00e4t und die Attit\\\\u00fcde, dass technisch nichts unm\\\\u00f6glich ist haben mich sofort in Ihren Bann gezogen. Die Projekte waren so divers wie angenommen und begannen mit kleinsten Microsite's oder Kampagnen-begleitenden Websites und h\\\\u00f6rten auf bei Plattformen f\\\\u00fcr mehrere 100'000 Benutzer und Apps mit t\\\\u00e4glich bis zu 20'000 Unique-Usern.</p>\\\", \\\"name\\\": \\\"Maxomedia AG\\\", \\\"end_date\\\": \\\"2016-07-31\\\"}, {\\\"url\\\": \\\"http://www.interactivedata.de/\\\", \\\"start_date\\\": \\\"2011-08-01\\\", \\\"text\\\": \\\"<p>Interactive Data Managed Solutions bietet Finanzdaten f\\\\u00fcr Web-Portale und Offline-Clients in allen m\\\\u00f6glichen Granulanit\\\\u00e4ten und f\\\\u00fcr alle nur erdenklichen B\\\\u00f6rsenpl\\\\u00e4tze an. Meine Aufgabe war es w\\\\u00e4hrend meines knappen Jahres in dieser Firma den laufenden Betrieb sicherzustellen, das Incident Management zu koordinieren und Deployments auszul\\\\u00f6sen und zu \\\\u00fcberwachen. Um es kurz zu machen: manchmal muss man einen Job mal machen, nur um festzustellen dass es nicht der Richtige ist.</p>\\\", \\\"name\\\": \\\"Interactive Data Managed Solutions\\\", \\\"end_date\\\": \\\"2012-06-30\\\"}, {\\\"url\\\": \\\"http://www.ncag.ch\\\", \\\"start_date\\\": \\\"2007-12-01\\\", \\\"text\\\": \\\"<p>Die Neue Chemigraphie AG (kurz n c ag) ist im Bereich Druckvorstufe / Publishing t\\\\u00e4tig und war Ende 2007 auf der Suche nach Verst\\\\u00e4rkung f\\\\u00fcr ihre Web-Abteilung. Ich durfte w\\\\u00e4hrend knapp 4 Jahren als Web-Entwickler an diversen, sehr spannenden Projekten mitarbeiten und gelangte ganz nebenbei zum ersten Mal mit C# sowie node.js in Kontakt. Diese Zeit macht mir endg\\\\u00fcltig klar: meine Leidenschaft liegt in der Web-Entwicklung.</p>\\\", \\\"name\\\": \\\"neue chemigraphie AG\\\", \\\"end_date\\\": \\\"2011-06-30\\\"}, {\\\"url\\\": \\\"http://www.mediatower.ch\\\", \\\"start_date\\\": \\\"2003-08-01\\\", \\\"text\\\": \\\"<p>Direkt nach meiner Ausbildung zum Informatiker arbeitete ich zuerst ca. 1 Jahr f\\\\u00fcr die Agentur mediatower als Freelancer auf PHP/Typo3, danach gr\\\\u00fcndete ich gemeinsam mit einem Freund eine Firma, spezialisiert auf automatisiertes G\\\\u00fcnstig-Hosting und PHP-Auftragsarbeiten.</p>\\\", \\\"name\\\": \\\"selbstst\\\\u00e4ndig/Freelancer\\\", \\\"end_date\\\": \\\"2007-11-30\\\"}]}, {\\\"type\\\": \\\"heading\\\", \\\"value\\\": \\\"Was kann der Sch\\\\u00e4rmu denn so?\\\"}, {\\\"type\\\": \\\"paragraph\\\", \\\"value\\\": \\\"<p>W\\\\u00e4hrend dieser Stationen konnte ich mir ein breites Wissen im Umfeld der Web-Entwicklung aneignen. Angefangen hat die Reise w\\\\u00e4hrend der Ausbildung mit PHP 4, was sich auch f\\\\u00fcr die n\\\\u00e4chsten 6 Jahre als Umfeld meiner Wahl herausstellte (auch mit diversen CMS-Systemen, haupts\\\\u00e4chlich jedoch Custom-Development). Mit dem Job-Antritt bei der n c ag (nota bene als PHP-Entwickler) ver\\\\u00e4nderte sich mein technischer Fokus abrupt: ich \\\\u00fcbernahm den Betrieb und die Weiterentwicklung f\\\\u00fcr eine C#-Applikation! Von da aus war der Schritt zu ASP.NET WebForms/MVC und WebAPI kein grosser und nur ein logischer. Die\\\\u00a0darauf folgende\\\\u00a0Zeit bei\\\\u00a0der Maxomedia war ebenfalls durch diese Technologien gepr\\\\u00e4gt und gab mir die M\\\\u00f6glichkeit zur Weiterentwicklung und Vertiefung in diesen (und vielen anderen Themen). Und nun sitze ich hier und entwickle ich meine pers\\\\u00f6nliche Website auf dem CMS <a href=\\\\\\\"http://wagtail.io\\\\\\\">Wagtail</a>, einem Python/Django-basierenden CMS :)</p>\\\"}, {\\\"type\\\": \\\"skills\\\", \\\"value\\\": [{\\\"value\\\": \\\"80\\\", \\\"name\\\": \\\"C#\\\"}, {\\\"value\\\": \\\"80\\\", \\\"name\\\": \\\"ASP.NET MVC\\\"}, {\\\"value\\\": \\\"85\\\", \\\"name\\\": \\\"ASP.NET WebAPI2\\\"}, {\\\"value\\\": \\\"50\\\", \\\"name\\\": \\\"PHP\\\"}, {\\\"value\\\": \\\"30\\\", \\\"name\\\": \\\"Python/Django\\\"}, {\\\"value\\\": \\\"75\\\", \\\"name\\\": \\\"JavaScript (AngularJS/React/jQuery)\\\"}, {\\\"value\\\": \\\"65\\\", \\\"name\\\": \\\"JavaScript (node.js)\\\"}]}]\", \"seo_title\": \"\", \"search_description\": \"\", \"content_type\": 2, \"url_path\": \"/home/\", \"numchild\": 1, \"latest_revision_created_at\": \"2016-06-16T16:55:21.388Z\", \"slug\": \"home\", \"locked\": false, \"owner\": null, \"show_in_menus\": false, \"go_live_at\": null, \"portrait_image\": 5, \"lead\": \"Web-Entwickler seit Frontpage noch was Gutes und selfhtml.de besser als Google war.\", \"first_published_at\": \"2016-06-13T11:07:56.441Z\", \"pk\": 3, \"path\": \"00010001\", \"title\": \"Homepage\", \"depth\": 2, \"heading\": \"Hallo, ich bin Sch\\u00e4rmu.\", \"expired\": false, \"has_unpublished_changes\": true}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 26,
+    "fields": {
+        "page": 3,
+        "submitted_for_moderation": false,
+        "created_at": "2016-06-16T17:04:49.841Z",
+        "user": [
+            "admin"
+        ],
+        "content_json": "{\"live\": true, \"expire_at\": null, \"body\": \"[{\\\"type\\\": \\\"paragraph\\\", \\\"value\\\": \\\"<p>Ich arbeite seit ca. 2002/2003 als Software-Entwickler im Web-Umfeld mit unterschiedlichsten Technologien, Frameworks und Plattformen. H\\\\u00f6rt sich nach einer 08/15 Geschichte an? Ist es aber nicht. Da ich die klassische Software-Entwicklung (3 Monate spezifizieren, 4 Monate diskutieren, 6 Monate Testszenarien entwickeln und 12 Monate entwickeln) immer als relativ langweilig empfand, entschloss ich mich zu einer eher atypischen Karriere:</p>\\\"}, {\\\"type\\\": \\\"career\\\", \\\"value\\\": [{\\\"url\\\": \\\"https://www.maxomedia.ch\\\", \\\"start_date\\\": \\\"2012-07-02\\\", \\\"text\\\": \\\"<p>Als Crossmedia-Agentur versteht sich die Maxomedia als Integrator von klassischer Werbung wie TV- / Radio-Spots, Plakaten, Inseraten und allen digitalen Kan\\\\u00e4len von Social Media bis Apps und Plattformen. Bereits nach dem Vorstellungsgespr\\\\u00e4ch hat es hier Klick gemacht: das junge Team, die in der Luft liegende Kreativit\\\\u00e4t und die Attit\\\\u00fcde, dass technisch nichts unm\\\\u00f6glich ist haben mich sofort in Ihren Bann gezogen. Die Projekte waren so divers wie angenommen und begannen mit kleinsten Microsite's oder Kampagnen-begleitenden Websites und h\\\\u00f6rten auf bei Plattformen f\\\\u00fcr mehrere 100'000 Benutzer und Apps mit t\\\\u00e4glich bis zu 20'000 Unique-Usern.</p>\\\", \\\"name\\\": \\\"Maxomedia AG\\\", \\\"end_date\\\": \\\"2016-07-31\\\"}, {\\\"url\\\": \\\"http://www.interactivedata.de/\\\", \\\"start_date\\\": \\\"2011-08-01\\\", \\\"text\\\": \\\"<p>Interactive Data Managed Solutions bietet Finanzdaten f\\\\u00fcr Web-Portale und Offline-Clients in allen m\\\\u00f6glichen Granulanit\\\\u00e4ten und f\\\\u00fcr alle nur erdenklichen B\\\\u00f6rsenpl\\\\u00e4tze an. Meine Aufgabe war es w\\\\u00e4hrend meines knappen Jahres in dieser Firma den laufenden Betrieb sicherzustellen, das Incident Management zu koordinieren und Deployments auszul\\\\u00f6sen und zu \\\\u00fcberwachen. Um es kurz zu machen: manchmal muss man einen Job mal machen, nur um festzustellen dass es nicht der Richtige ist.</p>\\\", \\\"name\\\": \\\"Interactive Data Managed Solutions\\\", \\\"end_date\\\": \\\"2012-06-30\\\"}, {\\\"url\\\": \\\"http://www.ncag.ch\\\", \\\"start_date\\\": \\\"2007-12-01\\\", \\\"text\\\": \\\"<p>Die Neue Chemigraphie AG (kurz n c ag) ist im Bereich Druckvorstufe / Publishing t\\\\u00e4tig und war Ende 2007 auf der Suche nach Verst\\\\u00e4rkung f\\\\u00fcr ihre Web-Abteilung. Ich durfte w\\\\u00e4hrend knapp 4 Jahren als Web-Entwickler an diversen, sehr spannenden Projekten mitarbeiten und gelangte ganz nebenbei zum ersten Mal mit C# sowie node.js in Kontakt. Diese Zeit macht mir endg\\\\u00fcltig klar: meine Leidenschaft liegt in der Web-Entwicklung.</p>\\\", \\\"name\\\": \\\"neue chemigraphie AG\\\", \\\"end_date\\\": \\\"2011-06-30\\\"}, {\\\"url\\\": \\\"http://www.mediatower.ch\\\", \\\"start_date\\\": \\\"2003-08-01\\\", \\\"text\\\": \\\"<p>Direkt nach meiner Ausbildung zum Informatiker arbeitete ich zuerst ca. 1 Jahr f\\\\u00fcr die Agentur mediatower als Freelancer auf PHP/Typo3, danach gr\\\\u00fcndete ich gemeinsam mit einem Freund eine Firma, spezialisiert auf automatisiertes G\\\\u00fcnstig-Hosting und PHP-Auftragsarbeiten.</p>\\\", \\\"name\\\": \\\"selbstst\\\\u00e4ndig/Freelancer\\\", \\\"end_date\\\": \\\"2007-11-30\\\"}]}, {\\\"type\\\": \\\"heading\\\", \\\"value\\\": \\\"Was kann der Sch\\\\u00e4rmu denn so?\\\"}, {\\\"type\\\": \\\"paragraph\\\", \\\"value\\\": \\\"<p>W\\\\u00e4hrend dieser Stationen konnte ich mir ein breites Wissen im Umfeld der Web-Entwicklung aneignen. Angefangen hat die Reise w\\\\u00e4hrend der Ausbildung mit PHP 4, was sich auch f\\\\u00fcr die n\\\\u00e4chsten 6 Jahre als Umfeld meiner Wahl herausstellte (auch mit diversen CMS-Systemen, haupts\\\\u00e4chlich jedoch Custom-Development). Mit dem Job-Antritt bei der n c ag (nota bene als PHP-Entwickler) ver\\\\u00e4nderte sich mein technischer Fokus abrupt: ich \\\\u00fcbernahm den Betrieb und die Weiterentwicklung f\\\\u00fcr eine C#-Applikation! Von da aus war der Schritt zu ASP.NET WebForms/MVC und WebAPI kein grosser und nur ein logischer. Die\\\\u00a0darauf folgende\\\\u00a0Zeit bei\\\\u00a0der Maxomedia war ebenfalls durch diese Technologien gepr\\\\u00e4gt und gab mir die M\\\\u00f6glichkeit zur Weiterentwicklung und Vertiefung in diesen (und vielen anderen Themen). Und nun sitze ich hier und entwickle ich meine pers\\\\u00f6nliche Website auf dem CMS <a href=\\\\\\\"http://wagtail.io\\\\\\\">Wagtail</a>, einem Python/Django-basierenden CMS :)</p>\\\"}, {\\\"type\\\": \\\"skills\\\", \\\"value\\\": [{\\\"value\\\": \\\"85\\\", \\\"name\\\": \\\"ASP.NET WebAPI2\\\"}, {\\\"value\\\": \\\"80\\\", \\\"name\\\": \\\"C#\\\"}, {\\\"value\\\": \\\"80\\\", \\\"name\\\": \\\"ASP.NET MVC\\\"}, {\\\"value\\\": \\\"50\\\", \\\"name\\\": \\\"PHP\\\"}, {\\\"value\\\": \\\"30\\\", \\\"name\\\": \\\"Python/Django\\\"}, {\\\"value\\\": \\\"75\\\", \\\"name\\\": \\\"JavaScript (AngularJS/React/jQuery)\\\"}, {\\\"value\\\": \\\"65\\\", \\\"name\\\": \\\"JavaScript (node.js)\\\"}]}]\", \"seo_title\": \"\", \"search_description\": \"\", \"content_type\": 2, \"url_path\": \"/home/\", \"numchild\": 1, \"latest_revision_created_at\": \"2016-06-16T16:58:49.577Z\", \"slug\": \"home\", \"locked\": false, \"owner\": null, \"show_in_menus\": false, \"go_live_at\": null, \"portrait_image\": 5, \"lead\": \"Web-Entwickler seit Frontpage noch was Gutes und selfhtml.de besser als Google war.\", \"first_published_at\": \"2016-06-13T11:07:56.441Z\", \"pk\": 3, \"path\": \"00010001\", \"title\": \"Homepage\", \"depth\": 2, \"heading\": \"Hallo, ich bin Sch\\u00e4rmu.\", \"expired\": false, \"has_unpublished_changes\": false}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 27,
+    "fields": {
+        "page": 3,
+        "submitted_for_moderation": false,
+        "created_at": "2016-06-16T17:05:54.691Z",
+        "user": [
+            "admin"
+        ],
+        "content_json": "{\"live\": true, \"expire_at\": null, \"body\": \"[{\\\"type\\\": \\\"paragraph\\\", \\\"value\\\": \\\"<p>Ich arbeite seit ca. 2002/2003 als Software-Entwickler im Web-Umfeld mit unterschiedlichsten Technologien, Frameworks und Plattformen. H\\\\u00f6rt sich nach einer 08/15 Geschichte an? Ist es aber nicht. Da ich die klassische Software-Entwicklung (3 Monate spezifizieren, 4 Monate diskutieren, 6 Monate Testszenarien entwickeln und 12 Monate entwickeln) immer als relativ langweilig empfand, entschloss ich mich zu einer eher atypischen Karriere:</p>\\\"}, {\\\"type\\\": \\\"career\\\", \\\"value\\\": [{\\\"url\\\": \\\"https://www.maxomedia.ch\\\", \\\"start_date\\\": \\\"2012-07-02\\\", \\\"text\\\": \\\"<p>Als Crossmedia-Agentur versteht sich die Maxomedia als Integrator von klassischer Werbung wie TV- / Radio-Spots, Plakaten, Inseraten und allen digitalen Kan\\\\u00e4len von Social Media bis Apps und Plattformen. Bereits nach dem Vorstellungsgespr\\\\u00e4ch hat es hier Klick gemacht: das junge Team, die in der Luft liegende Kreativit\\\\u00e4t und die Attit\\\\u00fcde, dass technisch nichts unm\\\\u00f6glich ist haben mich sofort in Ihren Bann gezogen. Die Projekte waren so divers wie angenommen und begannen mit kleinsten Microsite's oder Kampagnen-begleitenden Websites und h\\\\u00f6rten auf bei Plattformen f\\\\u00fcr mehrere 100'000 Benutzer und Apps mit t\\\\u00e4glich bis zu 20'000 Unique-Usern.</p>\\\", \\\"name\\\": \\\"Maxomedia AG\\\", \\\"end_date\\\": \\\"2016-07-31\\\"}, {\\\"url\\\": \\\"http://www.interactivedata.de/\\\", \\\"start_date\\\": \\\"2011-08-01\\\", \\\"text\\\": \\\"<p>Interactive Data Managed Solutions bietet Finanzdaten f\\\\u00fcr Web-Portale und Offline-Clients in allen m\\\\u00f6glichen Granulanit\\\\u00e4ten und f\\\\u00fcr alle nur erdenklichen B\\\\u00f6rsenpl\\\\u00e4tze an. Meine Aufgabe war es w\\\\u00e4hrend meines knappen Jahres in dieser Firma den laufenden Betrieb sicherzustellen, das Incident Management zu koordinieren und Deployments auszul\\\\u00f6sen und zu \\\\u00fcberwachen. Um es kurz zu machen: manchmal muss man einen Job mal machen, nur um festzustellen dass es nicht der Richtige ist.</p>\\\", \\\"name\\\": \\\"Interactive Data Managed Solutions\\\", \\\"end_date\\\": \\\"2012-06-30\\\"}, {\\\"url\\\": \\\"http://www.ncag.ch\\\", \\\"start_date\\\": \\\"2007-12-01\\\", \\\"text\\\": \\\"<p>Die Neue Chemigraphie AG (kurz n c ag) ist im Bereich Druckvorstufe / Publishing t\\\\u00e4tig und war Ende 2007 auf der Suche nach Verst\\\\u00e4rkung f\\\\u00fcr ihre Web-Abteilung. Ich durfte w\\\\u00e4hrend knapp 4 Jahren als Web-Entwickler an diversen, sehr spannenden Projekten mitarbeiten und gelangte ganz nebenbei zum ersten Mal mit C# sowie node.js in Kontakt. Diese Zeit macht mir endg\\\\u00fcltig klar: meine Leidenschaft liegt in der Web-Entwicklung.</p>\\\", \\\"name\\\": \\\"neue chemigraphie AG\\\", \\\"end_date\\\": \\\"2011-06-30\\\"}, {\\\"url\\\": \\\"http://www.mediatower.ch\\\", \\\"start_date\\\": \\\"2003-08-01\\\", \\\"text\\\": \\\"<p>Direkt nach meiner Ausbildung zum Informatiker arbeitete ich zuerst ca. 1 Jahr f\\\\u00fcr die Agentur mediatower als Freelancer auf PHP/Typo3, danach gr\\\\u00fcndete ich gemeinsam mit einem Freund eine Firma, spezialisiert auf automatisiertes G\\\\u00fcnstig-Hosting und PHP-Auftragsarbeiten.</p>\\\", \\\"name\\\": \\\"selbstst\\\\u00e4ndig/Freelancer\\\", \\\"end_date\\\": \\\"2007-11-30\\\"}]}, {\\\"type\\\": \\\"heading\\\", \\\"value\\\": \\\"Was kann der Sch\\\\u00e4rmu denn so?\\\"}, {\\\"type\\\": \\\"paragraph\\\", \\\"value\\\": \\\"<p>W\\\\u00e4hrend dieser Stationen konnte ich mir ein breites Wissen im Umfeld der Web-Entwicklung aneignen. Angefangen hat die Reise w\\\\u00e4hrend der Ausbildung mit PHP 4, was sich auch f\\\\u00fcr die n\\\\u00e4chsten 6 Jahre als Umfeld meiner Wahl herausstellte (auch mit diversen CMS-Systemen, haupts\\\\u00e4chlich jedoch Custom-Development). Mit dem Job-Antritt bei der n c ag (nota bene als PHP-Entwickler) ver\\\\u00e4nderte sich mein technischer Fokus abrupt: ich \\\\u00fcbernahm den Betrieb und die Weiterentwicklung f\\\\u00fcr eine C#-Applikation! Von da aus war der Schritt zu ASP.NET WebForms/MVC und WebAPI kein grosser und nur ein logischer. Die\\\\u00a0darauf folgende\\\\u00a0Zeit bei\\\\u00a0der Maxomedia war ebenfalls durch diese Technologien gepr\\\\u00e4gt und gab mir die M\\\\u00f6glichkeit zur Weiterentwicklung und Vertiefung in diesen (und vielen anderen Themen). Und nun sitze ich hier und entwickle ich meine pers\\\\u00f6nliche Website auf dem CMS <a href=\\\\\\\"http://wagtail.io\\\\\\\">Wagtail</a>, einem Python/Django-basierenden CMS :)</p>\\\"}, {\\\"type\\\": \\\"skills\\\", \\\"value\\\": [{\\\"value\\\": \\\"85\\\", \\\"name\\\": \\\"ASP.NET WebAPI2\\\"}, {\\\"value\\\": \\\"80\\\", \\\"name\\\": \\\"C#\\\"}, {\\\"value\\\": \\\"80\\\", \\\"name\\\": \\\"ASP.NET MVC\\\"}, {\\\"value\\\": \\\"75\\\", \\\"name\\\": \\\"JavaScript (AngularJS/React/jQuery)\\\"}, {\\\"value\\\": \\\"65\\\", \\\"name\\\": \\\"JavaScript (node.js)\\\"}, {\\\"value\\\": \\\"50\\\", \\\"name\\\": \\\"PHP\\\"}, {\\\"value\\\": \\\"30\\\", \\\"name\\\": \\\"Python/Django\\\"}]}]\", \"seo_title\": \"\", \"search_description\": \"\", \"content_type\": 2, \"url_path\": \"/home/\", \"numchild\": 1, \"latest_revision_created_at\": \"2016-06-16T17:04:49.841Z\", \"slug\": \"home\", \"locked\": false, \"owner\": null, \"show_in_menus\": false, \"go_live_at\": null, \"portrait_image\": 5, \"lead\": \"Web-Entwickler seit Frontpage noch was Gutes und selfhtml.de besser als Google war.\", \"first_published_at\": \"2016-06-13T11:07:56.441Z\", \"pk\": 3, \"path\": \"00010001\", \"title\": \"Homepage\", \"depth\": 2, \"heading\": \"Hallo, ich bin Sch\\u00e4rmu.\", \"expired\": false, \"has_unpublished_changes\": false}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 28,
+    "fields": {
+        "page": 3,
+        "submitted_for_moderation": false,
+        "created_at": "2016-06-16T17:09:30.309Z",
+        "user": [
+            "admin"
+        ],
+        "content_json": "{\"live\": true, \"expire_at\": null, \"body\": \"[{\\\"type\\\": \\\"paragraph\\\", \\\"value\\\": \\\"<p>Ich arbeite seit ca. 2002/2003 als Software-Entwickler im Web-Umfeld mit unterschiedlichsten Technologien, Frameworks und Plattformen. H\\\\u00f6rt sich nach einer 08/15 Geschichte an? Ist es aber nicht. Da ich die klassische Software-Entwicklung (3 Monate spezifizieren, 4 Monate diskutieren, 6 Monate Testszenarien entwickeln und 12 Monate entwickeln) immer als relativ langweilig empfand, entschloss ich mich zu einer eher atypischen Karriere:</p>\\\"}, {\\\"type\\\": \\\"career\\\", \\\"value\\\": [{\\\"url\\\": \\\"https://www.maxomedia.ch\\\", \\\"start_date\\\": \\\"2012-07-02\\\", \\\"text\\\": \\\"<p>Als Crossmedia-Agentur versteht sich die Maxomedia als Integrator von klassischer Werbung wie TV- / Radio-Spots, Plakaten, Inseraten und allen digitalen Kan\\\\u00e4len von Social Media bis Apps und Plattformen. Bereits nach dem Vorstellungsgespr\\\\u00e4ch hat es hier Klick gemacht: das junge Team, die in der Luft liegende Kreativit\\\\u00e4t und die Attit\\\\u00fcde, dass technisch nichts unm\\\\u00f6glich ist haben mich sofort in Ihren Bann gezogen. Die Projekte waren so divers wie angenommen und begannen mit kleinsten Microsite's oder Kampagnen-begleitenden Websites und h\\\\u00f6rten auf bei Plattformen f\\\\u00fcr mehrere 100'000 Benutzer und Apps mit t\\\\u00e4glich bis zu 20'000 Unique-Usern.</p>\\\", \\\"name\\\": \\\"Maxomedia AG\\\", \\\"end_date\\\": \\\"2016-07-31\\\"}, {\\\"url\\\": \\\"http://www.interactivedata.de/\\\", \\\"start_date\\\": \\\"2011-08-01\\\", \\\"text\\\": \\\"<p>Interactive Data Managed Solutions bietet Finanzdaten f\\\\u00fcr Web-Portale und Offline-Clients in allen m\\\\u00f6glichen Granulanit\\\\u00e4ten und f\\\\u00fcr alle nur erdenklichen B\\\\u00f6rsenpl\\\\u00e4tze an. Meine Aufgabe war es w\\\\u00e4hrend meines knappen Jahres in dieser Firma den laufenden Betrieb sicherzustellen, das Incident Management zu koordinieren und Deployments auszul\\\\u00f6sen und zu \\\\u00fcberwachen. Um es kurz zu machen: manchmal muss man einen Job mal machen, nur um festzustellen dass es nicht der Richtige ist.</p>\\\", \\\"name\\\": \\\"Interactive Data Managed Solutions\\\", \\\"end_date\\\": \\\"2012-06-30\\\"}, {\\\"url\\\": \\\"http://www.ncag.ch\\\", \\\"start_date\\\": \\\"2007-12-01\\\", \\\"text\\\": \\\"<p>Die Neue Chemigraphie AG (kurz n c ag) ist im Bereich Druckvorstufe / Publishing t\\\\u00e4tig und war Ende 2007 auf der Suche nach Verst\\\\u00e4rkung f\\\\u00fcr ihre Web-Abteilung. Ich durfte w\\\\u00e4hrend knapp 4 Jahren als Web-Entwickler an diversen, sehr spannenden Projekten mitarbeiten und gelangte ganz nebenbei zum ersten Mal mit C# sowie node.js in Kontakt. Diese Zeit macht mir endg\\\\u00fcltig klar: meine Leidenschaft liegt in der Web-Entwicklung.</p>\\\", \\\"name\\\": \\\"neue chemigraphie AG\\\", \\\"end_date\\\": \\\"2011-06-30\\\"}, {\\\"url\\\": \\\"http://www.mediatower.ch\\\", \\\"start_date\\\": \\\"2003-08-01\\\", \\\"text\\\": \\\"<p>Direkt nach meiner Ausbildung zum Informatiker arbeitete ich zuerst ca. 1 Jahr f\\\\u00fcr die Agentur mediatower als Freelancer auf PHP/Typo3, danach gr\\\\u00fcndete ich gemeinsam mit einem Freund eine Firma, spezialisiert auf automatisiertes G\\\\u00fcnstig-Hosting und PHP-Auftragsarbeiten.</p>\\\", \\\"name\\\": \\\"selbstst\\\\u00e4ndig/Freelancer\\\", \\\"end_date\\\": \\\"2007-11-30\\\"}]}, {\\\"type\\\": \\\"heading\\\", \\\"value\\\": \\\"Was kann der Sch\\\\u00e4rmu denn so?\\\"}, {\\\"type\\\": \\\"paragraph\\\", \\\"value\\\": \\\"<p>W\\\\u00e4hrend dieser Stationen konnte ich mir ein breites Wissen im Umfeld der Web-Entwicklung aneignen. Angefangen hat die Reise w\\\\u00e4hrend der Ausbildung mit PHP 4, was sich auch f\\\\u00fcr die n\\\\u00e4chsten 6 Jahre als Umfeld meiner Wahl herausstellte (auch mit diversen CMS-Systemen, haupts\\\\u00e4chlich jedoch Custom-Development). Mit dem Job-Antritt bei der n c ag (nota bene als PHP-Entwickler) ver\\\\u00e4nderte sich mein technischer Fokus abrupt: ich \\\\u00fcbernahm den Betrieb und die Weiterentwicklung f\\\\u00fcr eine C#-Applikation! Von da aus war der Schritt zu ASP.NET WebForms/MVC und WebAPI kein grosser und nur ein logischer. Die\\\\u00a0darauf folgende\\\\u00a0Zeit bei\\\\u00a0der Maxomedia war ebenfalls durch diese Technologien gepr\\\\u00e4gt und gab mir die M\\\\u00f6glichkeit zur Weiterentwicklung und Vertiefung in diesen (und vielen anderen Themen). Und nun sitze ich hier und entwickle ich meine pers\\\\u00f6nliche Website auf dem CMS <a href=\\\\\\\"http://wagtail.io\\\\\\\">Wagtail</a>, einem Python/Django-basierenden CMS :)</p>\\\"}, {\\\"type\\\": \\\"skills\\\", \\\"value\\\": [{\\\"value\\\": \\\"85\\\", \\\"name\\\": \\\"ASP.NET WebAPI2\\\"}, {\\\"value\\\": \\\"80\\\", \\\"name\\\": \\\"C#\\\"}, {\\\"value\\\": \\\"80\\\", \\\"name\\\": \\\"ASP.NET MVC\\\"}, {\\\"value\\\": \\\"75\\\", \\\"name\\\": \\\"JavaScript (AngularJS/React/jQuery)\\\"}, {\\\"value\\\": \\\"65\\\", \\\"name\\\": \\\"JavaScript (node.js)\\\"}, {\\\"value\\\": \\\"50\\\", \\\"name\\\": \\\"PHP\\\"}, {\\\"value\\\": \\\"30\\\", \\\"name\\\": \\\"Python/Django\\\"}]}]\", \"seo_title\": \"\", \"search_description\": \"\", \"content_type\": 2, \"url_path\": \"/home/\", \"numchild\": 1, \"latest_revision_created_at\": \"2016-06-16T17:05:54.691Z\", \"slug\": \"home\", \"locked\": false, \"owner\": null, \"show_in_menus\": false, \"go_live_at\": null, \"portrait_image\": 5, \"lead\": \"Web-Entwickler seit Frontpage noch was Gutes und selfhtml.de besser als Google war.\", \"first_published_at\": \"2016-06-13T11:07:56.441Z\", \"pk\": 3, \"path\": \"00010001\", \"title\": \"Homepage\", \"depth\": 2, \"heading\": \"Hallo, ich bin Sch\\u00e4rmu.\", \"expired\": false, \"has_unpublished_changes\": false}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 29,
+    "fields": {
+        "page": 3,
+        "submitted_for_moderation": false,
+        "created_at": "2016-06-16T17:10:02.911Z",
+        "user": [
+            "admin"
+        ],
+        "content_json": "{\"live\": true, \"expire_at\": null, \"body\": \"[{\\\"type\\\": \\\"paragraph\\\", \\\"value\\\": \\\"<p>Ich arbeite seit ca. 2002/2003 als Software-Entwickler im Web-Umfeld mit unterschiedlichsten Technologien, Frameworks und Plattformen. H\\\\u00f6rt sich nach einer 08/15 Geschichte an? Ist es aber nicht. Da ich die klassische Software-Entwicklung (3 Monate spezifizieren, 4 Monate diskutieren, 6 Monate Testszenarien entwickeln und 12 Monate entwickeln) immer als relativ langweilig empfand, entschloss ich mich zu einer eher atypischen Karriere:</p>\\\"}, {\\\"type\\\": \\\"career\\\", \\\"value\\\": [{\\\"url\\\": \\\"https://www.maxomedia.ch\\\", \\\"start_date\\\": \\\"2012-07-02\\\", \\\"text\\\": \\\"<p>Als Crossmedia-Agentur versteht sich die Maxomedia als Integrator von klassischer Werbung wie TV- / Radio-Spots, Plakaten, Inseraten und allen digitalen Kan\\\\u00e4len von Social Media bis Apps und Plattformen. Bereits nach dem Vorstellungsgespr\\\\u00e4ch hat es hier Klick gemacht: das junge Team, die in der Luft liegende Kreativit\\\\u00e4t und die Attit\\\\u00fcde, dass technisch nichts unm\\\\u00f6glich ist haben mich sofort in Ihren Bann gezogen. Die Projekte waren so divers wie angenommen und begannen mit kleinsten Microsite's oder Kampagnen-begleitenden Websites und h\\\\u00f6rten auf bei Plattformen f\\\\u00fcr mehrere 100'000 Benutzer und Apps mit t\\\\u00e4glich bis zu 20'000 Unique-Usern.</p>\\\", \\\"name\\\": \\\"Maxomedia AG\\\", \\\"end_date\\\": \\\"2016-07-31\\\"}, {\\\"url\\\": \\\"http://www.interactivedata.de/\\\", \\\"start_date\\\": \\\"2011-08-01\\\", \\\"text\\\": \\\"<p>Interactive Data Managed Solutions bietet Finanzdaten f\\\\u00fcr Web-Portale und Offline-Clients in allen m\\\\u00f6glichen Granulanit\\\\u00e4ten und f\\\\u00fcr alle nur erdenklichen B\\\\u00f6rsenpl\\\\u00e4tze an. Meine Aufgabe war es w\\\\u00e4hrend meines knappen Jahres in dieser Firma den laufenden Betrieb sicherzustellen, das Incident Management zu koordinieren und Deployments auszul\\\\u00f6sen und zu \\\\u00fcberwachen. Um es kurz zu machen: manchmal muss man einen Job mal machen, nur um festzustellen dass es nicht der Richtige ist.</p>\\\", \\\"name\\\": \\\"Interactive Data Managed Solutions\\\", \\\"end_date\\\": \\\"2012-06-30\\\"}, {\\\"url\\\": \\\"http://www.ncag.ch\\\", \\\"start_date\\\": \\\"2007-12-01\\\", \\\"text\\\": \\\"<p>Die Neue Chemigraphie AG (kurz n c ag) ist im Bereich Druckvorstufe / Publishing t\\\\u00e4tig und war Ende 2007 auf der Suche nach Verst\\\\u00e4rkung f\\\\u00fcr ihre Web-Abteilung. Ich durfte w\\\\u00e4hrend knapp 4 Jahren als Web-Entwickler an diversen, sehr spannenden Projekten mitarbeiten und gelangte ganz nebenbei zum ersten Mal mit C# sowie node.js in Kontakt. Diese Zeit macht mir endg\\\\u00fcltig klar: meine Leidenschaft liegt in der Web-Entwicklung.</p>\\\", \\\"name\\\": \\\"neue chemigraphie AG\\\", \\\"end_date\\\": \\\"2011-06-30\\\"}, {\\\"url\\\": \\\"http://www.mediatower.ch\\\", \\\"start_date\\\": \\\"2003-08-01\\\", \\\"text\\\": \\\"<p>Direkt nach meiner Ausbildung zum Informatiker arbeitete ich zuerst ca. 1 Jahr f\\\\u00fcr die Agentur mediatower als Freelancer auf PHP/Typo3, danach gr\\\\u00fcndete ich gemeinsam mit einem Freund eine Firma, spezialisiert auf automatisiertes G\\\\u00fcnstig-Hosting und PHP-Auftragsarbeiten.</p>\\\", \\\"name\\\": \\\"selbstst\\\\u00e4ndig/Freelancer\\\", \\\"end_date\\\": \\\"2007-11-30\\\"}]}, {\\\"type\\\": \\\"heading\\\", \\\"value\\\": \\\"Was kann der Sch\\\\u00e4rmu denn so?\\\"}, {\\\"type\\\": \\\"paragraph\\\", \\\"value\\\": \\\"<p>W\\\\u00e4hrend dieser Stationen konnte ich mir ein breites Wissen im Umfeld der Web-Entwicklung aneignen. Angefangen hat die Reise w\\\\u00e4hrend der Ausbildung mit PHP 4, was sich auch f\\\\u00fcr die n\\\\u00e4chsten 6 Jahre als Umfeld meiner Wahl herausstellte (auch mit diversen CMS-Systemen, haupts\\\\u00e4chlich jedoch Custom-Development). Mit dem Job-Antritt bei der n c ag (nota bene als PHP-Entwickler) ver\\\\u00e4nderte sich mein technischer Fokus abrupt: ich \\\\u00fcbernahm den Betrieb und die Weiterentwicklung f\\\\u00fcr eine C#-Applikation! Von da aus war der Schritt zu ASP.NET WebForms/MVC und WebAPI kein grosser und nur ein logischer. Die\\\\u00a0darauf folgende\\\\u00a0Zeit bei\\\\u00a0der Maxomedia war ebenfalls durch diese Technologien gepr\\\\u00e4gt und gab mir die M\\\\u00f6glichkeit zur Weiterentwicklung und Vertiefung in diesen (und vielen anderen Themen). Und nun sitze ich hier und entwickle ich meine pers\\\\u00f6nliche Website auf dem CMS <a href=\\\\\\\"http://wagtail.io\\\\\\\">Wagtail</a>, einem Python/Django-basierenden CMS :)</p>\\\"}, {\\\"type\\\": \\\"skills\\\", \\\"value\\\": [{\\\"value\\\": \\\"85\\\", \\\"name\\\": \\\"ASP.NET WebAPI2\\\"}, {\\\"value\\\": \\\"80\\\", \\\"name\\\": \\\"C#\\\"}, {\\\"value\\\": \\\"80\\\", \\\"name\\\": \\\"ASP.NET MVC\\\"}, {\\\"value\\\": \\\"65\\\", \\\"name\\\": \\\"AngularJS/React/jQuery\\\"}, {\\\"value\\\": \\\"65\\\", \\\"name\\\": \\\"node.js\\\"}, {\\\"value\\\": \\\"50\\\", \\\"name\\\": \\\"PHP\\\"}, {\\\"value\\\": \\\"30\\\", \\\"name\\\": \\\"Python/Django\\\"}]}]\", \"seo_title\": \"\", \"search_description\": \"\", \"content_type\": 2, \"url_path\": \"/home/\", \"numchild\": 1, \"latest_revision_created_at\": \"2016-06-16T17:09:30.309Z\", \"slug\": \"home\", \"locked\": false, \"owner\": null, \"show_in_menus\": false, \"go_live_at\": null, \"portrait_image\": 5, \"lead\": \"Web-Entwickler seit Frontpage noch was Gutes und selfhtml.de besser als Google war.\", \"first_published_at\": \"2016-06-13T11:07:56.441Z\", \"pk\": 3, \"path\": \"00010001\", \"title\": \"Homepage\", \"depth\": 2, \"heading\": \"Hallo, ich bin Sch\\u00e4rmu.\", \"expired\": false, \"has_unpublished_changes\": true}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 30,
+    "fields": {
+        "page": 3,
+        "submitted_for_moderation": false,
+        "created_at": "2016-06-16T17:15:03.221Z",
+        "user": [
+            "admin"
+        ],
+        "content_json": "{\"live\": true, \"expire_at\": null, \"body\": \"[{\\\"type\\\": \\\"paragraph\\\", \\\"value\\\": \\\"<p>Ich arbeite seit ca. 2002/2003 als Software-Entwickler im Web-Umfeld mit unterschiedlichsten Technologien, Frameworks und Plattformen. H\\\\u00f6rt sich nach einer 08/15 Geschichte an? Ist es aber nicht. Da ich die klassische Software-Entwicklung (3 Monate spezifizieren, 4 Monate diskutieren, 6 Monate Testszenarien entwickeln und 12 Monate entwickeln) immer als relativ langweilig empfand, entschloss ich mich zu einer eher atypischen Karriere:</p>\\\"}, {\\\"type\\\": \\\"career\\\", \\\"value\\\": [{\\\"url\\\": \\\"https://www.maxomedia.ch\\\", \\\"start_date\\\": \\\"2012-07-02\\\", \\\"text\\\": \\\"<p>Als Crossmedia-Agentur versteht sich die Maxomedia als Integrator von klassischer Werbung wie TV- / Radio-Spots, Plakaten, Inseraten und allen digitalen Kan\\\\u00e4len von Social Media bis Apps und Plattformen. Bereits nach dem Vorstellungsgespr\\\\u00e4ch hat es hier Klick gemacht: das junge Team, die in der Luft liegende Kreativit\\\\u00e4t und die Attit\\\\u00fcde, dass technisch nichts unm\\\\u00f6glich ist haben mich sofort in Ihren Bann gezogen. Die Projekte waren so divers wie angenommen und begannen mit kleinsten Microsite's oder Kampagnen-begleitenden Websites und h\\\\u00f6rten auf bei Plattformen f\\\\u00fcr mehrere 100'000 Benutzer und Apps mit t\\\\u00e4glich bis zu 20'000 Unique-Usern.</p>\\\", \\\"name\\\": \\\"Maxomedia AG\\\", \\\"end_date\\\": \\\"2016-07-31\\\"}, {\\\"url\\\": \\\"http://www.interactivedata.de/\\\", \\\"start_date\\\": \\\"2011-08-01\\\", \\\"text\\\": \\\"<p>Interactive Data Managed Solutions bietet Finanzdaten f\\\\u00fcr Web-Portale und Offline-Clients in allen m\\\\u00f6glichen Granulanit\\\\u00e4ten und f\\\\u00fcr alle nur erdenklichen B\\\\u00f6rsenpl\\\\u00e4tze an. Meine Aufgabe war es w\\\\u00e4hrend meines knappen Jahres in dieser Firma den laufenden Betrieb sicherzustellen, das Incident Management zu koordinieren und Deployments auszul\\\\u00f6sen und zu \\\\u00fcberwachen. Um es kurz zu machen: manchmal muss man einen Job mal machen, nur um festzustellen dass es nicht der Richtige ist.</p>\\\", \\\"name\\\": \\\"Interactive Data Managed Solutions\\\", \\\"end_date\\\": \\\"2012-06-30\\\"}, {\\\"url\\\": \\\"http://www.ncag.ch\\\", \\\"start_date\\\": \\\"2007-12-01\\\", \\\"text\\\": \\\"<p>Die Neue Chemigraphie AG (kurz n c ag) ist im Bereich Druckvorstufe / Publishing t\\\\u00e4tig und war Ende 2007 auf der Suche nach Verst\\\\u00e4rkung f\\\\u00fcr ihre Web-Abteilung. Ich durfte w\\\\u00e4hrend knapp 4 Jahren als Web-Entwickler an diversen, sehr spannenden Projekten mitarbeiten und gelangte ganz nebenbei zum ersten Mal mit C# sowie node.js in Kontakt. Diese Zeit macht mir endg\\\\u00fcltig klar: meine Leidenschaft liegt in der Web-Entwicklung.</p>\\\", \\\"name\\\": \\\"neue chemigraphie AG\\\", \\\"end_date\\\": \\\"2011-06-30\\\"}, {\\\"url\\\": \\\"http://www.mediatower.ch\\\", \\\"start_date\\\": \\\"2003-08-01\\\", \\\"text\\\": \\\"<p>Direkt nach meiner Ausbildung zum Informatiker arbeitete ich zuerst ca. 1 Jahr f\\\\u00fcr die Agentur mediatower als Freelancer auf PHP/Typo3, danach gr\\\\u00fcndete ich gemeinsam mit einem Freund eine Firma, spezialisiert auf automatisiertes G\\\\u00fcnstig-Hosting und PHP-Auftragsarbeiten.</p>\\\", \\\"name\\\": \\\"selbstst\\\\u00e4ndig/Freelancer\\\", \\\"end_date\\\": \\\"2007-11-30\\\"}]}, {\\\"type\\\": \\\"heading\\\", \\\"value\\\": \\\"Was kann der Sch\\\\u00e4rmu denn so?\\\"}, {\\\"type\\\": \\\"paragraph\\\", \\\"value\\\": \\\"<p>W\\\\u00e4hrend dieser Stationen konnte ich mir ein breites Wissen im Umfeld der Web-Entwicklung aneignen. Angefangen hat die Reise w\\\\u00e4hrend der Ausbildung mit PHP 4, was sich auch f\\\\u00fcr die n\\\\u00e4chsten 6 Jahre als Umfeld meiner Wahl herausstellte (auch mit diversen CMS-Systemen, haupts\\\\u00e4chlich jedoch Custom-Development). Mit dem Job-Antritt bei der n c ag (nota bene als PHP-Entwickler) ver\\\\u00e4nderte sich mein technischer Fokus abrupt: ich \\\\u00fcbernahm den Betrieb und die Weiterentwicklung f\\\\u00fcr eine C#-Applikation! Von da aus war der Schritt zu ASP.NET WebForms/MVC und WebAPI kein grosser und nur ein logischer. Die\\\\u00a0darauf folgende\\\\u00a0Zeit bei\\\\u00a0der Maxomedia war ebenfalls durch diese Technologien gepr\\\\u00e4gt und gab mir die M\\\\u00f6glichkeit zur Weiterentwicklung und Vertiefung in diesen (und vielen anderen Themen). Und nun sitze ich hier und entwickle ich meine pers\\\\u00f6nliche Website auf dem CMS <a href=\\\\\\\"http://wagtail.io\\\\\\\">Wagtail</a>, einem Python/Django-basierenden CMS :)</p>\\\"}, {\\\"type\\\": \\\"skills\\\", \\\"value\\\": [{\\\"value\\\": \\\"85\\\", \\\"name\\\": \\\"ASP.NET WebAPI2\\\"}, {\\\"value\\\": \\\"80\\\", \\\"name\\\": \\\"ASP.NET MVC\\\"}, {\\\"value\\\": \\\"80\\\", \\\"name\\\": \\\"C#\\\"}, {\\\"value\\\": \\\"65\\\", \\\"name\\\": \\\"AngularJS/React/jQuery\\\"}, {\\\"value\\\": \\\"65\\\", \\\"name\\\": \\\"node.js\\\"}, {\\\"value\\\": \\\"50\\\", \\\"name\\\": \\\"PHP\\\"}, {\\\"value\\\": \\\"30\\\", \\\"name\\\": \\\"Python/Django\\\"}]}]\", \"seo_title\": \"\", \"search_description\": \"\", \"content_type\": 2, \"url_path\": \"/home/\", \"numchild\": 1, \"latest_revision_created_at\": \"2016-06-16T17:10:02.911Z\", \"slug\": \"home\", \"locked\": false, \"owner\": null, \"show_in_menus\": false, \"go_live_at\": null, \"portrait_image\": 5, \"lead\": \"Web-Entwickler seit Frontpage noch was Gutes und selfhtml.de besser als Google war.\", \"first_published_at\": \"2016-06-13T11:07:56.441Z\", \"pk\": 3, \"path\": \"00010001\", \"title\": \"Homepage\", \"depth\": 2, \"heading\": \"Hallo, ich bin Sch\\u00e4rmu.\", \"expired\": false, \"has_unpublished_changes\": false}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 31,
+    "fields": {
+        "page": 3,
+        "submitted_for_moderation": false,
+        "created_at": "2016-06-16T17:20:21.241Z",
+        "user": [
+            "admin"
+        ],
+        "content_json": "{\"live\": true, \"expire_at\": null, \"body\": \"[{\\\"type\\\": \\\"paragraph\\\", \\\"value\\\": \\\"<p>Ich arbeite seit ca. 2002/2003 als Software-Entwickler im Web-Umfeld mit unterschiedlichsten Technologien, Frameworks und Plattformen. H\\\\u00f6rt sich nach einer 08/15 Geschichte an? Ist es aber nicht. Da ich die klassische Software-Entwicklung (3 Monate spezifizieren, 4 Monate diskutieren, 6 Monate Testszenarien entwickeln und 12 Monate entwickeln) immer als relativ langweilig empfand, entschloss ich mich zu einer eher atypischen Karriere:</p>\\\"}, {\\\"type\\\": \\\"career\\\", \\\"value\\\": [{\\\"url\\\": \\\"https://www.maxomedia.ch\\\", \\\"start_date\\\": \\\"2012-07-02\\\", \\\"text\\\": \\\"<p>Als Crossmedia-Agentur versteht sich die Maxomedia als Integrator von klassischer Werbung wie TV- / Radio-Spots, Plakaten, Inseraten und allen digitalen Kan\\\\u00e4len von Social Media bis Apps und Plattformen. Bereits nach dem Vorstellungsgespr\\\\u00e4ch hat es hier Klick gemacht: das junge Team, die in der Luft liegende Kreativit\\\\u00e4t und die Attit\\\\u00fcde, dass technisch nichts unm\\\\u00f6glich ist haben mich sofort in Ihren Bann gezogen. Die Projekte waren so divers wie angenommen und begannen mit kleinsten Microsite's oder Kampagnen-begleitenden Websites und h\\\\u00f6rten auf bei Plattformen f\\\\u00fcr mehrere 100'000 Benutzer und Apps mit t\\\\u00e4glich bis zu 20'000 Unique-Usern.</p>\\\", \\\"name\\\": \\\"Maxomedia AG\\\", \\\"end_date\\\": \\\"2016-07-31\\\"}, {\\\"url\\\": \\\"http://www.interactivedata.de/\\\", \\\"start_date\\\": \\\"2011-08-01\\\", \\\"text\\\": \\\"<p>Interactive Data Managed Solutions bietet Finanzdaten f\\\\u00fcr Web-Portale und Offline-Clients in allen m\\\\u00f6glichen Granulanit\\\\u00e4ten und f\\\\u00fcr alle nur erdenklichen B\\\\u00f6rsenpl\\\\u00e4tze an. Meine Aufgabe war es w\\\\u00e4hrend meines knappen Jahres in dieser Firma den laufenden Betrieb sicherzustellen, das Incident Management zu koordinieren und Deployments auszul\\\\u00f6sen und zu \\\\u00fcberwachen. Um es kurz zu machen: manchmal muss man einen Job mal machen, nur um festzustellen dass es nicht der Richtige ist.</p>\\\", \\\"name\\\": \\\"Interactive Data Managed Solutions\\\", \\\"end_date\\\": \\\"2012-06-30\\\"}, {\\\"url\\\": \\\"http://www.ncag.ch\\\", \\\"start_date\\\": \\\"2007-12-01\\\", \\\"text\\\": \\\"<p>Die Neue Chemigraphie AG (kurz n c ag) ist im Bereich Druckvorstufe / Publishing t\\\\u00e4tig und war Ende 2007 auf der Suche nach Verst\\\\u00e4rkung f\\\\u00fcr ihre Web-Abteilung. Ich durfte w\\\\u00e4hrend knapp 4 Jahren als Web-Entwickler an diversen, sehr spannenden Projekten mitarbeiten und gelangte ganz nebenbei zum ersten Mal mit C# sowie node.js in Kontakt. Diese Zeit macht mir endg\\\\u00fcltig klar: meine Leidenschaft liegt in der Web-Entwicklung.</p>\\\", \\\"name\\\": \\\"neue chemigraphie AG\\\", \\\"end_date\\\": \\\"2011-06-30\\\"}, {\\\"url\\\": \\\"http://www.mediatower.ch\\\", \\\"start_date\\\": \\\"2003-08-01\\\", \\\"text\\\": \\\"<p>Direkt nach meiner Ausbildung zum Informatiker arbeitete ich zuerst ca. 1 Jahr f\\\\u00fcr die Agentur mediatower als Freelancer auf PHP/Typo3, danach gr\\\\u00fcndete ich gemeinsam mit einem Freund eine Firma, spezialisiert auf automatisiertes G\\\\u00fcnstig-Hosting und PHP-Auftragsarbeiten.</p>\\\", \\\"name\\\": \\\"selbstst\\\\u00e4ndig/Freelancer\\\", \\\"end_date\\\": \\\"2007-11-30\\\"}]}, {\\\"type\\\": \\\"heading\\\", \\\"value\\\": \\\"Was kann der Sch\\\\u00e4rmu denn so?\\\"}, {\\\"type\\\": \\\"paragraph\\\", \\\"value\\\": \\\"<p>W\\\\u00e4hrend dieser Stationen konnte ich mir ein breites Wissen im Umfeld der Web-Entwicklung aneignen. Angefangen hat die Reise w\\\\u00e4hrend der Ausbildung mit PHP 4, was sich auch f\\\\u00fcr die n\\\\u00e4chsten 6 Jahre als Umfeld meiner Wahl herausstellte (auch mit diversen CMS-Systemen, haupts\\\\u00e4chlich jedoch Custom-Development). Mit dem Job-Antritt bei der n c ag (nota bene als PHP-Entwickler) ver\\\\u00e4nderte sich mein technischer Fokus abrupt: ich \\\\u00fcbernahm den Betrieb und die Weiterentwicklung f\\\\u00fcr eine C#-Applikation! Von da aus war der Schritt zu ASP.NET WebForms/MVC und WebAPI kein grosser und nur ein logischer. Die\\\\u00a0darauf folgende\\\\u00a0Zeit bei\\\\u00a0der Maxomedia war ebenfalls durch diese Technologien gepr\\\\u00e4gt und gab mir die M\\\\u00f6glichkeit zur Weiterentwicklung und Vertiefung in diesen (und vielen anderen Themen). Und nun sitze ich hier und entwickle ich meine pers\\\\u00f6nliche Website auf dem CMS <a href=\\\\\\\"http://wagtail.io\\\\\\\">Wagtail</a>, einem Python/Django-basierenden CMS :)</p>\\\"}, {\\\"type\\\": \\\"skills\\\", \\\"value\\\": [{\\\"value\\\": \\\"85\\\", \\\"name\\\": \\\"ASP.NET WebAPI2\\\"}, {\\\"value\\\": \\\"80\\\", \\\"name\\\": \\\"ASP.NET MVC\\\"}, {\\\"value\\\": \\\"80\\\", \\\"name\\\": \\\"C#\\\"}, {\\\"value\\\": \\\"65\\\", \\\"name\\\": \\\"AngularJS/React/jQuery\\\"}, {\\\"value\\\": \\\"65\\\", \\\"name\\\": \\\"node.js\\\"}, {\\\"value\\\": \\\"50\\\", \\\"name\\\": \\\"PHP\\\"}, {\\\"value\\\": \\\"30\\\", \\\"name\\\": \\\"Python/Django\\\"}]}, {\\\"type\\\": \\\"heading\\\", \\\"value\\\": \\\"Und was hat er damit alles angestellt?\\\"}, {\\\"type\\\": \\\"paragraph\\\", \\\"value\\\": \\\"<p>Eine kleine Auswahl der letzten Projekte findest du direkt hier, die komplette \\\\u00dcbersicht ist <a id=\\\\\\\"5\\\\\\\" linktype=\\\\\\\"page\\\\\\\">hier</a> zu finden.</p>\\\"}]\", \"seo_title\": \"\", \"search_description\": \"\", \"content_type\": 2, \"url_path\": \"/home/\", \"numchild\": 1, \"latest_revision_created_at\": \"2016-06-16T17:15:03.221Z\", \"slug\": \"home\", \"locked\": false, \"owner\": null, \"show_in_menus\": false, \"go_live_at\": null, \"portrait_image\": 5, \"lead\": \"Web-Entwickler seit Frontpage noch was Gutes und selfhtml.de besser als Google war.\", \"first_published_at\": \"2016-06-13T11:07:56.441Z\", \"pk\": 3, \"path\": \"00010001\", \"title\": \"Homepage\", \"depth\": 2, \"heading\": \"Hallo, ich bin Sch\\u00e4rmu.\", \"expired\": false, \"has_unpublished_changes\": false}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 32,
+    "fields": {
+        "page": 3,
+        "submitted_for_moderation": false,
+        "created_at": "2016-06-16T18:54:37.192Z",
+        "user": [
+            "admin"
+        ],
+        "content_json": "{\"url_stackoverflow\": \"http://stackoverflow.com/users/221217/schaermu\", \"pk\": 3, \"url_path\": \"/home/\", \"url_github\": \"https://github.com/schaermu\", \"depth\": 2, \"slug\": \"home\", \"body\": \"[{\\\"type\\\": \\\"paragraph\\\", \\\"value\\\": \\\"<p>Ich arbeite seit ca. 2002/2003 als Software-Entwickler im Web-Umfeld mit unterschiedlichsten Technologien, Frameworks und Plattformen. H\\\\u00f6rt sich nach einer 08/15 Geschichte an? Ist es aber nicht. Da ich die klassische Software-Entwicklung (3 Monate spezifizieren, 4 Monate diskutieren, 6 Monate Testszenarien entwickeln und 12 Monate entwickeln) immer als relativ langweilig empfand, entschloss ich mich zu einer eher atypischen Karriere:</p>\\\"}, {\\\"type\\\": \\\"career\\\", \\\"value\\\": [{\\\"start_date\\\": \\\"2012-07-02\\\", \\\"name\\\": \\\"Maxomedia AG\\\", \\\"url\\\": \\\"https://www.maxomedia.ch\\\", \\\"end_date\\\": \\\"2016-07-31\\\", \\\"text\\\": \\\"<p>Als Crossmedia-Agentur versteht sich die Maxomedia als Integrator von klassischer Werbung wie TV- / Radio-Spots, Plakaten, Inseraten und allen digitalen Kan\\\\u00e4len von Social Media bis Apps und Plattformen. Bereits nach dem Vorstellungsgespr\\\\u00e4ch hat es hier Klick gemacht: das junge Team, die in der Luft liegende Kreativit\\\\u00e4t und die Attit\\\\u00fcde, dass technisch nichts unm\\\\u00f6glich ist haben mich sofort in Ihren Bann gezogen. Die Projekte waren so divers wie angenommen und begannen mit kleinsten Microsite's oder Kampagnen-begleitenden Websites und h\\\\u00f6rten auf bei Plattformen f\\\\u00fcr mehrere 100'000 Benutzer und Apps mit t\\\\u00e4glich bis zu 20'000 Unique-Usern.</p>\\\"}, {\\\"start_date\\\": \\\"2011-08-01\\\", \\\"name\\\": \\\"Interactive Data Managed Solutions\\\", \\\"url\\\": \\\"http://www.interactivedata.de/\\\", \\\"end_date\\\": \\\"2012-06-30\\\", \\\"text\\\": \\\"<p>Interactive Data Managed Solutions bietet Finanzdaten f\\\\u00fcr Web-Portale und Offline-Clients in allen m\\\\u00f6glichen Granulanit\\\\u00e4ten und f\\\\u00fcr alle nur erdenklichen B\\\\u00f6rsenpl\\\\u00e4tze an. Meine Aufgabe war es w\\\\u00e4hrend meines knappen Jahres in dieser Firma den laufenden Betrieb sicherzustellen, das Incident Management zu koordinieren und Deployments auszul\\\\u00f6sen und zu \\\\u00fcberwachen. Um es kurz zu machen: manchmal muss man einen Job mal machen, nur um festzustellen dass es nicht der Richtige ist.</p>\\\"}, {\\\"start_date\\\": \\\"2007-12-01\\\", \\\"name\\\": \\\"neue chemigraphie AG\\\", \\\"url\\\": \\\"http://www.ncag.ch\\\", \\\"end_date\\\": \\\"2011-06-30\\\", \\\"text\\\": \\\"<p>Die Neue Chemigraphie AG (kurz n c ag) ist im Bereich Druckvorstufe / Publishing t\\\\u00e4tig und war Ende 2007 auf der Suche nach Verst\\\\u00e4rkung f\\\\u00fcr ihre Web-Abteilung. Ich durfte w\\\\u00e4hrend knapp 4 Jahren als Web-Entwickler an diversen, sehr spannenden Projekten mitarbeiten und gelangte ganz nebenbei zum ersten Mal mit C# sowie node.js in Kontakt. Diese Zeit macht mir endg\\\\u00fcltig klar: meine Leidenschaft liegt in der Web-Entwicklung.</p>\\\"}, {\\\"start_date\\\": \\\"2003-08-01\\\", \\\"name\\\": \\\"selbstst\\\\u00e4ndig/Freelancer\\\", \\\"url\\\": \\\"http://www.mediatower.ch\\\", \\\"end_date\\\": \\\"2007-11-30\\\", \\\"text\\\": \\\"<p>Direkt nach meiner Ausbildung zum Informatiker arbeitete ich zuerst ca. 1 Jahr f\\\\u00fcr die Agentur mediatower als Freelancer auf PHP/Typo3, danach gr\\\\u00fcndete ich gemeinsam mit einem Freund eine Firma, spezialisiert auf automatisiertes G\\\\u00fcnstig-Hosting und PHP-Auftragsarbeiten.</p>\\\"}]}, {\\\"type\\\": \\\"heading\\\", \\\"value\\\": \\\"Was kann der Sch\\\\u00e4rmu denn so?\\\"}, {\\\"type\\\": \\\"paragraph\\\", \\\"value\\\": \\\"<p>W\\\\u00e4hrend dieser Stationen konnte ich mir ein breites Wissen im Umfeld der Web-Entwicklung aneignen. Angefangen hat die Reise w\\\\u00e4hrend der Ausbildung mit PHP 4, was sich auch f\\\\u00fcr die n\\\\u00e4chsten 6 Jahre als Umfeld meiner Wahl herausstellte (auch mit diversen CMS-Systemen, haupts\\\\u00e4chlich jedoch Custom-Development). Mit dem Job-Antritt bei der n c ag (nota bene als PHP-Entwickler) ver\\\\u00e4nderte sich mein technischer Fokus abrupt: ich \\\\u00fcbernahm den Betrieb und die Weiterentwicklung f\\\\u00fcr eine C#-Applikation! Von da aus war der Schritt zu ASP.NET WebForms/MVC und WebAPI kein grosser und nur ein logischer. Die\\\\u00a0darauf folgende\\\\u00a0Zeit bei\\\\u00a0der Maxomedia war ebenfalls durch diese Technologien gepr\\\\u00e4gt und gab mir die M\\\\u00f6glichkeit zur Weiterentwicklung und Vertiefung in diesen (und vielen anderen Themen). Und nun sitze ich hier und entwickle ich meine pers\\\\u00f6nliche Website auf dem CMS <a href=\\\\\\\"http://wagtail.io\\\\\\\">Wagtail</a>, einem Python/Django-basierenden CMS :)</p>\\\"}, {\\\"type\\\": \\\"skills\\\", \\\"value\\\": [{\\\"name\\\": \\\"ASP.NET WebAPI2\\\", \\\"value\\\": \\\"85\\\"}, {\\\"name\\\": \\\"ASP.NET MVC\\\", \\\"value\\\": \\\"80\\\"}, {\\\"name\\\": \\\"C#\\\", \\\"value\\\": \\\"80\\\"}, {\\\"name\\\": \\\"AngularJS/React/jQuery\\\", \\\"value\\\": \\\"65\\\"}, {\\\"name\\\": \\\"node.js\\\", \\\"value\\\": \\\"65\\\"}, {\\\"name\\\": \\\"PHP\\\", \\\"value\\\": \\\"50\\\"}, {\\\"name\\\": \\\"Python/Django\\\", \\\"value\\\": \\\"30\\\"}]}, {\\\"type\\\": \\\"heading\\\", \\\"value\\\": \\\"Und was hat er damit alles angestellt?\\\"}, {\\\"type\\\": \\\"paragraph\\\", \\\"value\\\": \\\"<p>Eine kleine Auswahl der letzten Projekte findest du direkt hier, die komplette \\\\u00dcbersicht ist <a id=\\\\\\\"5\\\\\\\" linktype=\\\\\\\"page\\\\\\\">hier</a> zu finden.</p>\\\"}]\", \"search_description\": \"\", \"show_in_menus\": false, \"title\": \"Homepage\", \"content_type\": 2, \"live\": true, \"heading\": \"Hallo, ich bin Sch\\u00e4rmu.\", \"numchild\": 1, \"first_published_at\": \"2016-06-13T11:07:56.441Z\", \"portrait_image\": 5, \"expired\": false, \"locked\": false, \"go_live_at\": null, \"lead\": \"Web-Entwickler seit Frontpage noch was Gutes und selfhtml.de besser als Google war.\", \"owner\": null, \"latest_revision_created_at\": \"2016-06-16T17:20:21.241Z\", \"seo_title\": \"\", \"has_unpublished_changes\": false, \"expire_at\": null, \"url_linkedin\": \"https://www.linkedin.com/in/stefanschaermeli\", \"path\": \"00010001\"}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 33,
+    "fields": {
+        "page": 5,
+        "submitted_for_moderation": false,
+        "created_at": "2016-06-16T20:05:54.390Z",
+        "user": [
+            "admin"
+        ],
+        "content_json": "{\"seo_title\": \"\", \"pk\": 5, \"live\": true, \"first_published_at\": \"2016-06-14T10:10:18.855Z\", \"owner\": 1, \"show_in_menus\": false, \"url_path\": \"/home/projekte/\", \"has_unpublished_changes\": false, \"locked\": false, \"expired\": false, \"numchild\": 1, \"title\": \"Projekte\", \"slug\": \"projekte\", \"go_live_at\": null, \"path\": \"000100010002\", \"search_description\": \"\", \"intro\": \"<p>Das Untenstehende ist nur eine Auswahl an Projekten, welche ich in der Vergangenheit umgesetzt habe. Kleinere Lab-Basteleien oder OpenSource-Beteiligungen sind in meinem GitHub-Profil zu finden.</p>\", \"expire_at\": null, \"depth\": 3, \"latest_revision_created_at\": \"2016-06-14T10:10:18.468Z\", \"content_type\": 30}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 34,
+    "fields": {
+        "page": 3,
+        "submitted_for_moderation": false,
+        "created_at": "2016-06-16T20:06:34.432Z",
+        "user": [
+            "admin"
+        ],
+        "content_json": "{\"live\": true, \"heading\": \"Hallo, ich bin Sch\\u00e4rmu.\", \"slug\": \"home\", \"go_live_at\": null, \"path\": \"00010001\", \"depth\": 2, \"locked\": false, \"body\": \"[{\\\"type\\\": \\\"paragraph\\\", \\\"value\\\": \\\"<p>Ich arbeite seit ca. 2002/2003 als Software-Entwickler im Web-Umfeld mit unterschiedlichsten Technologien, Frameworks und Plattformen. H\\\\u00f6rt sich nach einer 08/15 Geschichte an? Ist es aber nicht. Da ich die klassische Software-Entwicklung (3 Monate spezifizieren, 4 Monate diskutieren, 6 Monate Testszenarien entwickeln und 12 Monate entwickeln) immer als relativ langweilig empfand, entschloss ich mich zu einer eher atypischen Karriere:</p>\\\"}, {\\\"type\\\": \\\"career\\\", \\\"value\\\": [{\\\"end_date\\\": \\\"2016-07-31\\\", \\\"start_date\\\": \\\"2012-07-02\\\", \\\"text\\\": \\\"<p>Als Crossmedia-Agentur versteht sich die Maxomedia als Integrator von klassischer Werbung wie TV- / Radio-Spots, Plakaten, Inseraten und allen digitalen Kan\\\\u00e4len von Social Media bis Apps und Plattformen. Bereits nach dem Vorstellungsgespr\\\\u00e4ch hat es hier Klick gemacht: das junge Team, die in der Luft liegende Kreativit\\\\u00e4t und die Attit\\\\u00fcde, dass technisch nichts unm\\\\u00f6glich ist haben mich sofort in Ihren Bann gezogen. Die Projekte waren so divers wie angenommen und begannen mit kleinsten Microsite's oder Kampagnen-begleitenden Websites und h\\\\u00f6rten auf bei Plattformen f\\\\u00fcr mehrere 100'000 Benutzer und Apps mit t\\\\u00e4glich bis zu 20'000 Unique-Usern.</p>\\\", \\\"name\\\": \\\"Maxomedia AG\\\", \\\"url\\\": \\\"https://www.maxomedia.ch\\\"}, {\\\"end_date\\\": \\\"2012-06-30\\\", \\\"start_date\\\": \\\"2011-08-01\\\", \\\"text\\\": \\\"<p>Interactive Data Managed Solutions bietet Finanzdaten f\\\\u00fcr Web-Portale und Offline-Clients in allen m\\\\u00f6glichen Granulanit\\\\u00e4ten und f\\\\u00fcr alle nur erdenklichen B\\\\u00f6rsenpl\\\\u00e4tze an. Meine Aufgabe war es w\\\\u00e4hrend meines knappen Jahres in dieser Firma den laufenden Betrieb sicherzustellen, das Incident Management zu koordinieren und Deployments auszul\\\\u00f6sen und zu \\\\u00fcberwachen. Um es kurz zu machen: manchmal muss man einen Job mal machen, nur um festzustellen dass es nicht der Richtige ist.</p>\\\", \\\"name\\\": \\\"Interactive Data Managed Solutions\\\", \\\"url\\\": \\\"http://www.interactivedata.de/\\\"}, {\\\"end_date\\\": \\\"2011-06-30\\\", \\\"start_date\\\": \\\"2007-12-01\\\", \\\"text\\\": \\\"<p>Die Neue Chemigraphie AG (kurz n c ag) ist im Bereich Druckvorstufe / Publishing t\\\\u00e4tig und war Ende 2007 auf der Suche nach Verst\\\\u00e4rkung f\\\\u00fcr ihre Web-Abteilung. Ich durfte w\\\\u00e4hrend knapp 4 Jahren als Web-Entwickler an diversen, sehr spannenden Projekten mitarbeiten und gelangte ganz nebenbei zum ersten Mal mit C# sowie node.js in Kontakt. Diese Zeit macht mir endg\\\\u00fcltig klar: meine Leidenschaft liegt in der Web-Entwicklung.</p>\\\", \\\"name\\\": \\\"neue chemigraphie AG\\\", \\\"url\\\": \\\"http://www.ncag.ch\\\"}, {\\\"end_date\\\": \\\"2007-11-30\\\", \\\"start_date\\\": \\\"2003-08-01\\\", \\\"text\\\": \\\"<p>Direkt nach meiner Ausbildung zum Informatiker arbeitete ich zuerst ca. 1 Jahr f\\\\u00fcr die Agentur mediatower als Freelancer auf PHP/Typo3, danach gr\\\\u00fcndete ich gemeinsam mit einem Freund eine Firma, spezialisiert auf automatisiertes G\\\\u00fcnstig-Hosting und PHP-Auftragsarbeiten.</p>\\\", \\\"name\\\": \\\"selbstst\\\\u00e4ndig/Freelancer\\\", \\\"url\\\": \\\"http://www.mediatower.ch\\\"}]}, {\\\"type\\\": \\\"heading\\\", \\\"value\\\": \\\"Was kann der Sch\\\\u00e4rmu denn so?\\\"}, {\\\"type\\\": \\\"paragraph\\\", \\\"value\\\": \\\"<p>W\\\\u00e4hrend dieser Stationen konnte ich mir ein breites Wissen im Umfeld der Web-Entwicklung aneignen. Angefangen hat die Reise w\\\\u00e4hrend der Ausbildung mit PHP 4, was sich auch f\\\\u00fcr die n\\\\u00e4chsten 6 Jahre als Umfeld meiner Wahl herausstellte (auch mit diversen CMS-Systemen, haupts\\\\u00e4chlich jedoch Custom-Development). Mit dem Job-Antritt bei der n c ag (nota bene als PHP-Entwickler) ver\\\\u00e4nderte sich mein technischer Fokus abrupt: ich \\\\u00fcbernahm den Betrieb und die Weiterentwicklung f\\\\u00fcr eine C#-Applikation! Von da aus war der Schritt zu ASP.NET WebForms/MVC und WebAPI kein grosser und nur ein logischer. Die\\\\u00a0darauf folgende\\\\u00a0Zeit bei\\\\u00a0der Maxomedia war ebenfalls durch diese Technologien gepr\\\\u00e4gt und gab mir die M\\\\u00f6glichkeit zur Weiterentwicklung und Vertiefung in diesen (und vielen anderen Themen). Und nun sitze ich hier und entwickle ich meine pers\\\\u00f6nliche Website auf dem CMS <a href=\\\\\\\"http://wagtail.io\\\\\\\">Wagtail</a>, einem Python/Django-basierenden CMS :)</p>\\\"}, {\\\"type\\\": \\\"skills\\\", \\\"value\\\": [{\\\"name\\\": \\\"ASP.NET WebAPI2\\\", \\\"value\\\": \\\"85\\\"}, {\\\"name\\\": \\\"ASP.NET MVC\\\", \\\"value\\\": \\\"80\\\"}, {\\\"name\\\": \\\"C#\\\", \\\"value\\\": \\\"80\\\"}, {\\\"name\\\": \\\"AngularJS/React/jQuery\\\", \\\"value\\\": \\\"65\\\"}, {\\\"name\\\": \\\"node.js\\\", \\\"value\\\": \\\"65\\\"}, {\\\"name\\\": \\\"PHP\\\", \\\"value\\\": \\\"50\\\"}, {\\\"name\\\": \\\"Python/Django\\\", \\\"value\\\": \\\"30\\\"}]}, {\\\"type\\\": \\\"heading\\\", \\\"value\\\": \\\"Und was hat er damit alles angestellt?\\\"}, {\\\"type\\\": \\\"paragraph\\\", \\\"value\\\": \\\"<p>Eine kleine Auswahl der letzten Projekte findest du direkt hier, die komplette \\\\u00dcbersicht ist <a id=\\\\\\\"5\\\\\\\" linktype=\\\\\\\"page\\\\\\\">hier</a> zu finden.</p>\\\"}]\", \"latest_revision_created_at\": \"2016-06-16T18:54:37.192Z\", \"content_type\": 2, \"search_description\": \"\", \"pk\": 3, \"owner\": null, \"show_in_menus\": false, \"url_path\": \"/home/\", \"seo_title\": \"\", \"portrait_image\": 5, \"lead\": \"Web-Entwickler seit den Tagen als Frontpage noch was Gutes und selfhtml.de besser als Google war.\", \"expired\": false, \"numchild\": 1, \"title\": \"Homepage\", \"first_published_at\": \"2016-06-13T11:07:56.441Z\", \"expire_at\": null, \"has_unpublished_changes\": false}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 35,
+    "fields": {
+        "page": 5,
+        "submitted_for_moderation": false,
+        "created_at": "2016-06-16T20:27:33.559Z",
+        "user": [
+            "admin"
+        ],
+        "content_json": "{\"seo_title\": \"\", \"pk\": 5, \"live\": true, \"first_published_at\": \"2016-06-14T10:10:18.855Z\", \"owner\": 1, \"show_in_menus\": false, \"url_path\": \"/home/projekte/\", \"has_unpublished_changes\": false, \"locked\": false, \"expired\": false, \"numchild\": 1, \"title\": \"Projekte\", \"slug\": \"projekte\", \"go_live_at\": null, \"path\": \"000100010002\", \"search_description\": \"\", \"intro\": \"<p>Das Untenstehende ist nur eine Auswahl an Projekten, welche ich in der Vergangenheit umgesetzt habe. Kleinere Lab-Basteleien oder OpenSource-Beteiligungen sind in meinem GitHub-Profil zu finden.</p>\", \"expire_at\": null, \"depth\": 3, \"latest_revision_created_at\": \"2016-06-16T20:05:54.390Z\", \"content_type\": 30}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 36,
+    "fields": {
+        "page": 6,
+        "submitted_for_moderation": false,
+        "created_at": "2016-06-16T21:46:16.322Z",
+        "user": [
+            "admin"
+        ],
+        "content_json": "{\"latest_revision_created_at\": null, \"go_live_at\": null, \"search_description\": \"\", \"content_type\": 33, \"expired\": false, \"path\": \"000100010003\", \"subject\": \"[schaermu.ch] Kontakt-Formular\", \"pk\": 6, \"depth\": 3, \"to_address\": \"me@schaermu.ch\", \"locked\": false, \"title\": \"Kontaktier mich!\", \"intro\": \"<p>Du hast ne coole Idee f\\u00fcr ein Open-Source Projekt? Du findest ich sollte bei deinem Projekt mitmachen? Du willst mir ein lustiges GIF schicken? Schick mir ne E-Mail.</p>\", \"first_published_at\": null, \"show_in_menus\": false, \"form_fields\": [{\"page\": 6, \"required\": true, \"pk\": 1, \"default_value\": \"\", \"label\": \"Deine E-Mail Adresse\", \"choices\": \"\", \"sort_order\": 0, \"help_text\": \"\", \"field_type\": \"email\"}, {\"page\": 6, \"required\": true, \"pk\": 2, \"default_value\": \"\", \"label\": \"Deine Mitteilung\", \"choices\": \"\", \"sort_order\": 1, \"help_text\": \"\", \"field_type\": \"multiline\"}, {\"page\": 6, \"required\": false, \"pk\": 3, \"default_value\": \"\", \"label\": \"URL zu einem tollen GIF\", \"choices\": \"\", \"sort_order\": 2, \"help_text\": \"Nein, Upload gibts nicht. Wirklich nicht.\", \"field_type\": \"url\"}], \"has_unpublished_changes\": false, \"numchild\": 0, \"expire_at\": null, \"slug\": \"kontaktier-mich\", \"from_address\": \"noreply@schaermu.ch\", \"owner\": 1, \"thank_you_text\": \"<p>Danke f\\u00fcr deine Mitteilung, ich melde mich bei dir sobald ich Zeit hab meine Mails zu checken.</p>\", \"url_path\": \"/home/kontaktier-mich/\", \"seo_title\": \"\", \"live\": false}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 37,
+    "fields": {
+        "page": 6,
+        "submitted_for_moderation": false,
+        "created_at": "2016-06-16T21:46:21.180Z",
+        "user": [
+            "admin"
+        ],
+        "content_json": "{\"latest_revision_created_at\": \"2016-06-16T21:46:16.322Z\", \"go_live_at\": null, \"search_description\": \"\", \"content_type\": 33, \"expired\": false, \"path\": \"000100010003\", \"subject\": \"[schaermu.ch] Kontakt-Formular\", \"pk\": 6, \"depth\": 3, \"to_address\": \"me@schaermu.ch\", \"locked\": false, \"title\": \"Kontaktier mich!\", \"intro\": \"<p>Du hast ne coole Idee f\\u00fcr ein Open-Source Projekt? Du findest ich sollte bei deinem Projekt mitmachen? Du willst mir ein lustiges GIF schicken? Schick mir ne E-Mail.</p>\", \"first_published_at\": null, \"show_in_menus\": false, \"form_fields\": [{\"page\": null, \"required\": true, \"pk\": 1, \"default_value\": \"\", \"label\": \"Deine E-Mail Adresse\", \"choices\": \"\", \"sort_order\": 0, \"help_text\": \"\", \"field_type\": \"email\"}, {\"page\": null, \"required\": true, \"pk\": 2, \"default_value\": \"\", \"label\": \"Deine Mitteilung\", \"choices\": \"\", \"sort_order\": 1, \"help_text\": \"\", \"field_type\": \"multiline\"}, {\"page\": null, \"required\": false, \"pk\": 3, \"default_value\": \"\", \"label\": \"URL zu einem tollen GIF\", \"choices\": \"\", \"sort_order\": 2, \"help_text\": \"Nein, Upload gibts nicht. Wirklich nicht.\", \"field_type\": \"url\"}], \"has_unpublished_changes\": true, \"numchild\": 0, \"expire_at\": null, \"slug\": \"kontaktier-mich\", \"from_address\": \"noreply@schaermu.ch\", \"owner\": 1, \"thank_you_text\": \"<p>Danke f\\u00fcr deine Mitteilung, ich melde mich bei dir sobald ich Zeit hab meine Mails zu checken.</p>\", \"url_path\": \"/home/kontaktier-mich/\", \"seo_title\": \"\", \"live\": false}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 38,
+    "fields": {
+        "page": 6,
+        "submitted_for_moderation": false,
+        "created_at": "2016-06-16T22:18:28.647Z",
+        "user": [
+            "admin"
+        ],
+        "content_json": "{\"live\": true, \"path\": \"000100010003\", \"to_address\": \"me@schaermu.ch\", \"expire_at\": null, \"show_in_menus\": false, \"thank_you_text\": \"<p>Danke f\\u00fcr deine Mitteilung, ich melde mich bei dir sobald ich Zeit hab meine Mails zu checken.</p>\", \"latest_revision_created_at\": \"2016-06-16T21:46:21.180Z\", \"title\": \"Kontaktier mich!\", \"slug\": \"contact\", \"from_address\": \"noreply@schaermu.ch\", \"first_published_at\": \"2016-06-16T21:46:21.197Z\", \"depth\": 3, \"subject\": \"[schaermu.ch] Kontakt-Formular\", \"pk\": 6, \"numchild\": 0, \"form_fields\": [{\"pk\": 1, \"required\": true, \"help_text\": \"\", \"page\": 6, \"default_value\": \"\", \"choices\": \"\", \"sort_order\": 0, \"field_type\": \"email\", \"label\": \"Deine E-Mail Adresse\"}, {\"pk\": 2, \"required\": true, \"help_text\": \"\", \"page\": 6, \"default_value\": \"\", \"choices\": \"\", \"sort_order\": 1, \"field_type\": \"multiline\", \"label\": \"Deine Mitteilung\"}, {\"pk\": 3, \"required\": false, \"help_text\": \"Nein, Upload gibts nicht. Wirklich nicht.\", \"page\": 6, \"default_value\": \"\", \"choices\": \"\", \"sort_order\": 2, \"field_type\": \"url\", \"label\": \"URL zu einem tollen GIF\"}], \"intro\": \"<p>Du hast ne coole Idee f\\u00fcr ein Open-Source Projekt? Du findest ich sollte bei deinem Projekt mitmachen? Du willst mir ein lustiges GIF schicken? Schick mir ne E-Mail.</p>\", \"owner\": 1, \"has_unpublished_changes\": false, \"search_description\": \"\", \"locked\": false, \"go_live_at\": null, \"content_type\": 33, \"url_path\": \"/home/kontaktier-mich/\", \"expired\": false, \"seo_title\": \"\"}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 39,
+    "fields": {
+        "page": 5,
+        "submitted_for_moderation": false,
+        "created_at": "2016-06-16T22:18:43.131Z",
+        "user": [
+            "admin"
+        ],
+        "content_json": "{\"pk\": 5, \"path\": \"000100010002\", \"numchild\": 1, \"expire_at\": null, \"intro\": \"<p>Das Untenstehende ist nur eine Auswahl an Projekten, welche ich in der Vergangenheit umgesetzt habe. Kleinere Lab-Basteleien oder OpenSource-Beteiligungen sind in meinem GitHub-Profil zu finden.</p>\", \"show_in_menus\": false, \"expired\": false, \"has_unpublished_changes\": false, \"latest_revision_created_at\": \"2016-06-16T20:27:33.559Z\", \"title\": \"Projekte\", \"slug\": \"projects\", \"search_description\": \"\", \"locked\": false, \"first_published_at\": \"2016-06-14T10:10:18.855Z\", \"go_live_at\": null, \"content_type\": 30, \"live\": true, \"depth\": 3, \"url_path\": \"/home/projekte/\", \"owner\": 1, \"seo_title\": \"\"}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 40,
+    "fields": {
+        "page": 6,
+        "submitted_for_moderation": false,
+        "created_at": "2016-06-16T22:37:26.760Z",
+        "user": [
+            "admin"
+        ],
+        "content_json": "{\"depth\": 3, \"content_type\": 33, \"intro\": \"Du hast ne coole Idee f\\u00fcr ein Open-Source Projekt? Du findest ich sollte bei deinem Projekt mitmachen? Du willst mir ein lustiges GIF schicken? Oder du findest mich einfach nur nett? Schick mir ne E-Mail.\", \"expire_at\": null, \"show_in_menus\": false, \"subject\": \"[schaermu.ch] Kontakt-Formular\", \"from_address\": \"noreply@schaermu.ch\", \"seo_title\": \"\", \"locked\": false, \"pk\": 6, \"to_address\": \"me@schaermu.ch\", \"slug\": \"contact\", \"go_live_at\": null, \"numchild\": 0, \"first_published_at\": \"2016-06-16T21:46:21.197Z\", \"live\": true, \"thank_you_text\": \"Danke f\\u00fcr deine Mitteilung, ich melde mich bei dir sobald meine Mails das n\\u00e4chste mal auf interessanten Spam kontrolliere.\", \"owner\": 1, \"url_path\": \"/home/contact/\", \"path\": \"000100010003\", \"search_description\": \"\", \"has_unpublished_changes\": false, \"expired\": false, \"form_fields\": [{\"sort_order\": 0, \"required\": true, \"field_type\": \"email\", \"choices\": \"\", \"page\": 6, \"help_text\": \"\", \"default_value\": \"\", \"pk\": 1, \"label\": \"Deine E-Mail Adresse\"}, {\"sort_order\": 1, \"required\": true, \"field_type\": \"multiline\", \"choices\": \"\", \"page\": 6, \"help_text\": \"\", \"default_value\": \"\", \"pk\": 2, \"label\": \"Deine Mitteilung\"}, {\"sort_order\": 2, \"required\": false, \"field_type\": \"url\", \"choices\": \"\", \"page\": 6, \"help_text\": \"Nein, Upload gibts nicht. Wirklich nicht.\", \"default_value\": \"\", \"pk\": 3, \"label\": \"URL zu einem tollen GIF\"}], \"thank_you_head\": \"Merci viumau!\", \"latest_revision_created_at\": \"2016-06-16T22:18:28.647Z\", \"title\": \"Kontaktier mich!\"}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 41,
+    "fields": {
+        "page": 6,
+        "submitted_for_moderation": false,
+        "created_at": "2016-06-16T22:49:51.117Z",
+        "user": [
+            "admin"
+        ],
+        "content_json": "{\"depth\": 3, \"content_type\": 33, \"intro\": \"Du hast ne coole Idee f\\u00fcr ein Open-Source Projekt? Du findest ich sollte bei deinem Projekt mitmachen? Du willst mir ein lustiges GIF schicken? Oder du findest mich einfach nur nett? Schick mir ne E-Mail.\", \"expire_at\": null, \"show_in_menus\": false, \"subject\": \"[schaermu.ch] Kontakt-Formular\", \"from_address\": \"noreply@schaermu.ch\", \"seo_title\": \"\", \"locked\": false, \"pk\": 6, \"to_address\": \"me@schaermu.ch\", \"slug\": \"contact\", \"go_live_at\": null, \"numchild\": 0, \"first_published_at\": \"2016-06-16T21:46:21.197Z\", \"live\": true, \"thank_you_text\": \"Danke f\\u00fcr deine Mitteilung, ich melde mich bei dir sobald meine Mails das n\\u00e4chste mal auf interessanten Spam kontrolliere.\", \"owner\": 1, \"url_path\": \"/home/contact/\", \"path\": \"000100010003\", \"search_description\": \"\", \"has_unpublished_changes\": false, \"expired\": false, \"form_fields\": [{\"sort_order\": 0, \"required\": true, \"field_type\": \"email\", \"choices\": \"\", \"page\": 6, \"help_text\": \"\", \"default_value\": \"\", \"pk\": 1, \"label\": \"Deine E-Mail Adresse\"}, {\"sort_order\": 1, \"required\": true, \"field_type\": \"multiline\", \"choices\": \"\", \"page\": 6, \"help_text\": \"\", \"default_value\": \"\", \"pk\": 2, \"label\": \"Deine Mitteilung\"}, {\"sort_order\": 2, \"required\": false, \"field_type\": \"url\", \"choices\": \"\", \"page\": 6, \"help_text\": \"Nein, Upload gibts nicht. Wirklich nicht.\", \"default_value\": \"\", \"pk\": 3, \"label\": \"URL zu einem tollen GIF\"}], \"thank_you_head\": \"Merci viumau!\", \"latest_revision_created_at\": \"2016-06-16T22:37:26.760Z\", \"title\": \"Kontaktier mich!\"}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 42,
+    "fields": {
+        "page": 7,
+        "submitted_for_moderation": false,
+        "created_at": "2016-06-17T08:21:42.904Z",
+        "user": [
+            "admin"
+        ],
+        "content_json": "{\"search_description\": \"\", \"tagged_items\": [], \"show_in_menus\": false, \"first_published_at\": null, \"seo_title\": \"\", \"owner\": 1, \"expire_at\": null, \"pk\": 7, \"body\": \"\", \"depth\": 4, \"locked\": false, \"lead\": \"Der Verein \\u00f6ffentlicher Verkehr befragt zwecks Strecken- und Fahrplanoptimierung jedes Jahr eine zuf\\u00e4llige Selektion aus GA-Inhabern zu Ihrem Fahrverhalten. Ich durfte dieses Projekt aus technischer Sicht umsetzen und betreuen.\", \"project_date\": \"2016-05-01\", \"has_unpublished_changes\": false, \"slug\": \"voev-fragebogen-2016\", \"latest_revision_created_at\": null, \"go_live_at\": null, \"main_image\": null, \"content_type\": 28, \"expired\": false, \"title\": \"VOEV Fragebogen 2016\", \"numchild\": 0, \"url_path\": \"/home/projects/voev-fragebogen-2016/\", \"path\": \"0001000100020002\", \"name\": \"VOEV Fragebogen 2016\", \"live\": true}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 43,
+    "fields": {
+        "page": 7,
+        "submitted_for_moderation": false,
+        "created_at": "2016-06-17T08:42:05.970Z",
+        "user": [
+            "admin"
+        ],
+        "content_json": "{\"search_description\": \"\", \"tagged_items\": [], \"show_in_menus\": false, \"first_published_at\": \"2016-06-17T08:21:42.924Z\", \"seo_title\": \"\", \"owner\": 1, \"expire_at\": null, \"pk\": 7, \"body\": \"\", \"depth\": 4, \"locked\": false, \"lead\": \"Der Verein \\u00f6ffentlicher Verkehr befragt zwecks Strecken- und Fahrplanoptimierung jedes Jahr eine zuf\\u00e4llige Selektion aus GA-Inhabern zu Ihrem Fahrverhalten. Ich durfte dieses Projekt aus technischer Sicht umsetzen und betreuen.\", \"project_date\": \"2016-05-01\", \"has_unpublished_changes\": false, \"slug\": \"voev-fragebogen-2016\", \"latest_revision_created_at\": \"2016-06-17T08:21:42.904Z\", \"go_live_at\": null, \"main_image\": null, \"content_type\": 28, \"expired\": false, \"title\": \"VOEV Fragebogen\", \"numchild\": 0, \"url_path\": \"/home/projects/voev-fragebogen-2016/\", \"path\": \"0001000100020002\", \"name\": \"VOEV Fragebogen 2016\", \"live\": true}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 44,
+    "fields": {
+        "page": 4,
+        "submitted_for_moderation": false,
+        "created_at": "2016-06-17T08:42:15.583Z",
+        "user": [
+            "admin"
+        ],
+        "content_json": "{\"search_description\": \"\", \"tagged_items\": [{\"content_object\": 4, \"tag\": 1, \"pk\": null}, {\"content_object\": 4, \"tag\": 2, \"pk\": null}, {\"content_object\": 4, \"tag\": 3, \"pk\": null}, {\"content_object\": 4, \"tag\": 4, \"pk\": null}], \"show_in_menus\": false, \"first_published_at\": \"2016-06-13T14:47:11.771Z\", \"seo_title\": \"\", \"owner\": 1, \"expire_at\": null, \"pk\": 4, \"body\": \"<p>Blubber blah</p>\", \"depth\": 4, \"locked\": false, \"lead\": \"\\u00e4be ja\", \"project_date\": \"2016-06-01\", \"has_unpublished_changes\": false, \"slug\": \"rag-interface-map-api\", \"latest_revision_created_at\": \"2016-06-13T15:11:49.068Z\", \"go_live_at\": null, \"main_image\": null, \"content_type\": 28, \"expired\": false, \"title\": \"RAG API\", \"numchild\": 0, \"url_path\": \"/home/projects/rag-interface-map-api/\", \"path\": \"0001000100020001\", \"name\": \"RAG Interface & Map API\", \"live\": true}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 45,
+    "fields": {
+        "page": 8,
+        "submitted_for_moderation": false,
+        "created_at": "2016-06-17T08:46:35.992Z",
+        "user": [
+            "admin"
+        ],
+        "content_json": "{\"lead\": \"Der neue Webauftritt f\\u00fcr Maxomedia diente neben der Abl\\u00f6sung einer schon leicht angestaubten Website auch als Versuchslab f\\u00fcr eine neue Art Kentico-Sites zu implementieren.\", \"search_description\": \"\", \"url_path\": \"/home/projects/maxomedia/\", \"body\": \"\", \"show_in_menus\": false, \"owner\": 1, \"title\": \"Maxomedia\", \"go_live_at\": null, \"depth\": 4, \"project_date\": \"2016-04-01\", \"tagged_items\": [], \"has_unpublished_changes\": false, \"expire_at\": null, \"live\": true, \"locked\": false, \"path\": \"0001000100020003\", \"content_type\": 28, \"main_image\": null, \"expired\": false, \"slug\": \"maxomedia\", \"pk\": 8, \"latest_revision_created_at\": null, \"seo_title\": \"\", \"first_published_at\": null, \"numchild\": 0}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 46,
+    "fields": {
+        "page": 9,
+        "submitted_for_moderation": false,
+        "created_at": "2016-06-17T08:47:38.486Z",
+        "user": [
+            "admin"
+        ],
+        "content_json": "{\"lead\": \"F\\u00fcr die Berner SAP-Consulting Firma NOVO Business Consultants durften wir die neue Corporate Website gestalten.\", \"search_description\": \"\", \"url_path\": \"/home/projects/novo/\", \"body\": \"\", \"show_in_menus\": false, \"owner\": 1, \"title\": \"NOVO\", \"go_live_at\": null, \"depth\": 4, \"project_date\": \"2015-08-01\", \"tagged_items\": [], \"has_unpublished_changes\": false, \"expire_at\": null, \"live\": true, \"locked\": false, \"path\": \"0001000100020004\", \"content_type\": 28, \"main_image\": null, \"expired\": false, \"slug\": \"novo\", \"pk\": 9, \"latest_revision_created_at\": null, \"seo_title\": \"\", \"first_published_at\": null, \"numchild\": 0}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 47,
+    "fields": {
+        "page": 10,
+        "submitted_for_moderation": false,
+        "created_at": "2016-06-17T08:50:02.771Z",
+        "user": [
+            "admin"
+        ],
+        "content_json": "{\"lead\": \"Die Jugendplattform der SBB Gleis7 wurde Ende 2014 einem kompletten Redesign unterzogen, Backend sowie Frontend. Die Plattform wurde dabei auf den aktuellsten Microsoft-Technologiestack migriert (zu dieser Zeit ASP.NET MVC 4).\", \"search_description\": \"\", \"url_path\": \"/home/projects/gleis7/\", \"body\": \"\", \"show_in_menus\": false, \"owner\": 1, \"title\": \"Gleis7\", \"go_live_at\": null, \"depth\": 4, \"project_date\": \"2015-02-01\", \"tagged_items\": [], \"has_unpublished_changes\": false, \"expire_at\": null, \"live\": true, \"locked\": false, \"path\": \"0001000100020005\", \"content_type\": 28, \"main_image\": null, \"expired\": false, \"slug\": \"gleis7\", \"pk\": 10, \"latest_revision_created_at\": null, \"seo_title\": \"\", \"first_published_at\": null, \"numchild\": 0}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 48,
+    "fields": {
+        "page": 11,
+        "submitted_for_moderation": false,
+        "created_at": "2016-06-17T09:20:51.950Z",
+        "user": [
+            "admin"
+        ],
+        "content_json": "{\"lead\": \"F\\u00fcr die SBB durften wir w\\u00e4hrend knapp 8 Jahren die Bonus-Plattform MobilBonus betreuen. Auf der Plattform waren zu Spitzenzeiten knapp 450'000 User registriert und es wurden rund 320'000 Personen monatlich personalisiert per Newsletter angeschrieben.\", \"search_description\": \"\", \"url_path\": \"/home/projects/mobilbonus/\", \"body\": \"\", \"show_in_menus\": false, \"owner\": 1, \"title\": \"MobilBonus\", \"go_live_at\": null, \"depth\": 4, \"project_date\": \"2012-07-02\", \"tagged_items\": [], \"has_unpublished_changes\": false, \"expire_at\": null, \"live\": true, \"locked\": false, \"path\": \"0001000100020006\", \"content_type\": 28, \"main_image\": null, \"expired\": false, \"slug\": \"mobilbonus\", \"pk\": 11, \"latest_revision_created_at\": null, \"seo_title\": \"\", \"first_published_at\": null, \"numchild\": 0}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 49,
+    "fields": {
+        "page": 12,
+        "submitted_for_moderation": false,
+        "created_at": "2016-06-17T09:22:54.421Z",
+        "user": [
+            "admin"
+        ],
+        "content_json": "{\"lead\": \"F\\u00fcr die beiden SBB Apps Gleis7 und MobilBonus durfte ich die jeweiligen Schnittstellen End2End betreuen (Design, Architektur, Implementierung, Betrieb).\", \"search_description\": \"\", \"url_path\": \"/home/projects/mobilbonusgleis7-api/\", \"body\": \"\", \"show_in_menus\": false, \"owner\": 1, \"title\": \"MobilBonus/Gleis7 API\", \"go_live_at\": null, \"depth\": 4, \"project_date\": \"2015-08-01\", \"tagged_items\": [], \"has_unpublished_changes\": false, \"expire_at\": null, \"live\": true, \"locked\": false, \"path\": \"0001000100020007\", \"content_type\": 28, \"main_image\": null, \"expired\": false, \"slug\": \"mobilbonusgleis7-api\", \"pk\": 12, \"latest_revision_created_at\": null, \"seo_title\": \"\", \"first_published_at\": null, \"numchild\": 0}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 51,
+    "fields": {
+        "page": 14,
+        "submitted_for_moderation": false,
+        "created_at": "2016-06-17T11:05:25.290Z",
+        "user": [
+            "admin"
+        ],
+        "content_json": "{\"project_date\": \"2014-09-01\", \"locked\": false, \"owner\": 1, \"has_unpublished_changes\": false, \"tagged_items\": [], \"expired\": false, \"path\": \"0001000100020008\", \"content_type\": 28, \"pk\": 14, \"first_published_at\": null, \"url_path\": \"/home/projects/sbb-e-shift/\", \"numchild\": 0, \"title\": \"SBB E-Shift\", \"go_live_at\": null, \"expire_at\": null, \"show_in_menus\": false, \"search_description\": \"\", \"live\": false, \"slug\": \"sbb-e-shift\", \"body\": \"[]\", \"seo_title\": \"\", \"depth\": 4, \"main_image\": null, \"lead\": \"Das Ziel der E-Shift Kampagne ist es, den SBB TicketShop (online & mobile) zu bewerben und die Kunden auf diese Plattformen zu \\\"shiften\\\" Dazu wurde eine mehrj\\u00e4hrige Kampagne aufgegleist, welche heute noch l\\u00e4uft.\", \"latest_revision_created_at\": null}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 52,
+    "fields": {
+        "page": 14,
+        "submitted_for_moderation": false,
+        "created_at": "2016-06-17T11:11:26.377Z",
+        "user": [
+            "admin"
+        ],
+        "content_json": "{\"pk\": 14, \"body\": \"[{\\\"type\\\": \\\"heading\\\", \\\"value\\\": \\\"Worum geht's?\\\"}]\", \"first_published_at\": null, \"expired\": false, \"numchild\": 0, \"main_image\": null, \"seo_title\": \"\", \"expire_at\": null, \"has_unpublished_changes\": true, \"slug\": \"sbb-e-shift\", \"depth\": 4, \"title\": \"SBB E-Shift\", \"project_date\": \"2014-09-01\", \"live\": false, \"search_description\": \"\", \"locked\": false, \"content_type\": 28, \"lead\": \"Das Ziel der E-Shift Kampagne ist es, den SBB TicketShop (online & mobile) zu bewerben und die Kunden auf diese Plattformen zu \\\"shiften\\\" Dazu wurde eine mehrj\\u00e4hrige Kampagne aufgegleist, welche heute noch l\\u00e4uft.\", \"path\": \"0001000100020008\", \"latest_revision_created_at\": \"2016-06-17T11:05:25.290Z\", \"url_path\": \"/home/projects/sbb-e-shift/\", \"tagged_items\": [], \"owner\": 1, \"show_in_menus\": false, \"go_live_at\": null}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.pagerevision",
+    "pk": 53,
+    "fields": {
+        "page": 8,
+        "submitted_for_moderation": false,
+        "created_at": "2016-06-17T11:13:24.985Z",
+        "user": [
+            "admin"
+        ],
+        "content_json": "{\"pk\": 8, \"body\": \"[{\\\"type\\\": \\\"heading\\\", \\\"value\\\": \\\"Worum geht's?\\\"}, {\\\"type\\\": \\\"paragraph\\\", \\\"value\\\": \\\"<p>\\\\\\\"Wer rastet, der rostet.\\\\\\\" - Getreu diesem Motto war es nach knapp 3 Jahren an der Zeit der Agentur einen zeitgem\\\\u00e4sseren und visuell spannenderen digitalen Auftritt zu spendieren. Standesgem\\\\u00e4ss wurde von Konzeption \\\\u00fcber UX/Interaction Design bis hin zur Umsetzung alles im eigenen Hause umgesetzt.</p>\\\"}]\", \"first_published_at\": \"2016-06-17T08:46:36.010Z\", \"expired\": false, \"numchild\": 0, \"main_image\": null, \"seo_title\": \"\", \"expire_at\": null, \"has_unpublished_changes\": false, \"slug\": \"maxomedia\", \"depth\": 4, \"title\": \"Maxomedia\", \"project_date\": \"2016-04-01\", \"live\": true, \"search_description\": \"\", \"locked\": false, \"content_type\": 28, \"lead\": \"Der neue Webauftritt f\\u00fcr Maxomedia diente neben der Abl\\u00f6sung einer schon leicht angestaubten Website auch als Versuchslab f\\u00fcr eine neue Art Kentico-Sites zu implementieren.\", \"path\": \"0001000100020003\", \"latest_revision_created_at\": \"2016-06-17T08:46:35.992Z\", \"url_path\": \"/home/projects/maxomedia/\", \"tagged_items\": [], \"owner\": 1, \"show_in_menus\": false, \"go_live_at\": null}",
+        "approved_go_live_at": null
+    }
+},
+{
+    "model": "wagtailcore.page",
+    "pk": 1,
+    "fields": {
+        "path": "0001",
+        "depth": 1,
+        "numchild": 1,
+        "title": "Root",
+        "slug": "root",
+        "content_type": [
+            "wagtailcore",
+            "page"
+        ],
+        "live": true,
+        "has_unpublished_changes": false,
+        "url_path": "/",
+        "owner": null,
+        "seo_title": "",
+        "show_in_menus": false,
+        "search_description": "",
+        "go_live_at": null,
+        "expire_at": null,
+        "expired": false,
+        "locked": false,
+        "first_published_at": null,
+        "latest_revision_created_at": null
+    }
+},
+{
+    "model": "wagtailcore.page",
+    "pk": 3,
+    "fields": {
+        "path": "00010001",
+        "depth": 2,
+        "numchild": 2,
+        "title": "Homepage",
+        "slug": "home",
+        "content_type": [
+            "home",
+            "homepage"
+        ],
+        "live": true,
+        "has_unpublished_changes": false,
+        "url_path": "/home/",
+        "owner": null,
+        "seo_title": "",
+        "show_in_menus": false,
+        "search_description": "",
+        "go_live_at": null,
+        "expire_at": null,
+        "expired": false,
+        "locked": false,
+        "first_published_at": "2016-06-13T11:07:56.441Z",
+        "latest_revision_created_at": "2016-06-16T20:06:34.432Z"
+    }
+},
+{
+    "model": "wagtailcore.page",
+    "pk": 4,
+    "fields": {
+        "path": "0001000100020001",
+        "depth": 4,
+        "numchild": 0,
+        "title": "RAG API",
+        "slug": "rag-interface-map-api",
+        "content_type": [
+            "projects",
+            "projectpage"
+        ],
+        "live": true,
+        "has_unpublished_changes": false,
+        "url_path": "/home/projects/rag-interface-map-api/",
+        "owner": [
+            "admin"
+        ],
+        "seo_title": "",
+        "show_in_menus": false,
+        "search_description": "",
+        "go_live_at": null,
+        "expire_at": null,
+        "expired": false,
+        "locked": false,
+        "first_published_at": "2016-06-13T14:47:11.771Z",
+        "latest_revision_created_at": "2016-06-17T08:42:15.583Z"
+    }
+},
+{
+    "model": "wagtailcore.page",
+    "pk": 5,
+    "fields": {
+        "path": "000100010002",
+        "depth": 3,
+        "numchild": 8,
+        "title": "Projekte",
+        "slug": "projects",
+        "content_type": [
+            "projects",
+            "projectindexpage"
+        ],
+        "live": true,
+        "has_unpublished_changes": false,
+        "url_path": "/home/projects/",
+        "owner": [
+            "admin"
+        ],
+        "seo_title": "",
+        "show_in_menus": false,
+        "search_description": "",
+        "go_live_at": null,
+        "expire_at": null,
+        "expired": false,
+        "locked": false,
+        "first_published_at": "2016-06-14T10:10:18.855Z",
+        "latest_revision_created_at": "2016-06-16T22:18:43.131Z"
+    }
+},
+{
+    "model": "wagtailcore.page",
+    "pk": 6,
+    "fields": {
+        "path": "000100010003",
+        "depth": 3,
+        "numchild": 0,
+        "title": "Kontaktier mich!",
+        "slug": "contact",
+        "content_type": [
+            "contact",
+            "contactformpage"
+        ],
+        "live": true,
+        "has_unpublished_changes": false,
+        "url_path": "/home/contact/",
+        "owner": [
+            "admin"
+        ],
+        "seo_title": "",
+        "show_in_menus": false,
+        "search_description": "",
+        "go_live_at": null,
+        "expire_at": null,
+        "expired": false,
+        "locked": false,
+        "first_published_at": "2016-06-16T21:46:21.197Z",
+        "latest_revision_created_at": "2016-06-16T22:49:51.117Z"
+    }
+},
+{
+    "model": "wagtailcore.page",
+    "pk": 7,
+    "fields": {
+        "path": "0001000100020002",
+        "depth": 4,
+        "numchild": 0,
+        "title": "VOEV Fragebogen",
+        "slug": "voev-fragebogen-2016",
+        "content_type": [
+            "projects",
+            "projectpage"
+        ],
+        "live": true,
+        "has_unpublished_changes": false,
+        "url_path": "/home/projects/voev-fragebogen-2016/",
+        "owner": [
+            "admin"
+        ],
+        "seo_title": "",
+        "show_in_menus": false,
+        "search_description": "",
+        "go_live_at": null,
+        "expire_at": null,
+        "expired": false,
+        "locked": false,
+        "first_published_at": "2016-06-17T08:21:42.924Z",
+        "latest_revision_created_at": "2016-06-17T08:42:05.970Z"
+    }
+},
+{
+    "model": "wagtailcore.page",
+    "pk": 8,
+    "fields": {
+        "path": "0001000100020003",
+        "depth": 4,
+        "numchild": 0,
+        "title": "Maxomedia",
+        "slug": "maxomedia",
+        "content_type": [
+            "projects",
+            "projectpage"
+        ],
+        "live": true,
+        "has_unpublished_changes": false,
+        "url_path": "/home/projects/maxomedia/",
+        "owner": [
+            "admin"
+        ],
+        "seo_title": "",
+        "show_in_menus": false,
+        "search_description": "",
+        "go_live_at": null,
+        "expire_at": null,
+        "expired": false,
+        "locked": false,
+        "first_published_at": "2016-06-17T08:46:36.010Z",
+        "latest_revision_created_at": "2016-06-17T11:13:24.985Z"
+    }
+},
+{
+    "model": "wagtailcore.page",
+    "pk": 9,
+    "fields": {
+        "path": "0001000100020004",
+        "depth": 4,
+        "numchild": 0,
+        "title": "NOVO",
+        "slug": "novo",
+        "content_type": [
+            "projects",
+            "projectpage"
+        ],
+        "live": true,
+        "has_unpublished_changes": false,
+        "url_path": "/home/projects/novo/",
+        "owner": [
+            "admin"
+        ],
+        "seo_title": "",
+        "show_in_menus": false,
+        "search_description": "",
+        "go_live_at": null,
+        "expire_at": null,
+        "expired": false,
+        "locked": false,
+        "first_published_at": "2016-06-17T08:47:38.504Z",
+        "latest_revision_created_at": "2016-06-17T08:47:38.486Z"
+    }
+},
+{
+    "model": "wagtailcore.page",
+    "pk": 10,
+    "fields": {
+        "path": "0001000100020005",
+        "depth": 4,
+        "numchild": 0,
+        "title": "Gleis7",
+        "slug": "gleis7",
+        "content_type": [
+            "projects",
+            "projectpage"
+        ],
+        "live": true,
+        "has_unpublished_changes": false,
+        "url_path": "/home/projects/gleis7/",
+        "owner": [
+            "admin"
+        ],
+        "seo_title": "",
+        "show_in_menus": false,
+        "search_description": "",
+        "go_live_at": null,
+        "expire_at": null,
+        "expired": false,
+        "locked": false,
+        "first_published_at": "2016-06-17T08:50:02.790Z",
+        "latest_revision_created_at": "2016-06-17T08:50:02.771Z"
+    }
+},
+{
+    "model": "wagtailcore.page",
+    "pk": 11,
+    "fields": {
+        "path": "0001000100020006",
+        "depth": 4,
+        "numchild": 0,
+        "title": "MobilBonus",
+        "slug": "mobilbonus",
+        "content_type": [
+            "projects",
+            "projectpage"
+        ],
+        "live": true,
+        "has_unpublished_changes": false,
+        "url_path": "/home/projects/mobilbonus/",
+        "owner": [
+            "admin"
+        ],
+        "seo_title": "",
+        "show_in_menus": false,
+        "search_description": "",
+        "go_live_at": null,
+        "expire_at": null,
+        "expired": false,
+        "locked": false,
+        "first_published_at": "2016-06-17T09:20:51.967Z",
+        "latest_revision_created_at": "2016-06-17T09:20:51.950Z"
+    }
+},
+{
+    "model": "wagtailcore.page",
+    "pk": 12,
+    "fields": {
+        "path": "0001000100020007",
+        "depth": 4,
+        "numchild": 0,
+        "title": "MobilBonus/Gleis7 API",
+        "slug": "mobilbonusgleis7-api",
+        "content_type": [
+            "projects",
+            "projectpage"
+        ],
+        "live": true,
+        "has_unpublished_changes": false,
+        "url_path": "/home/projects/mobilbonusgleis7-api/",
+        "owner": [
+            "admin"
+        ],
+        "seo_title": "",
+        "show_in_menus": false,
+        "search_description": "",
+        "go_live_at": null,
+        "expire_at": null,
+        "expired": false,
+        "locked": false,
+        "first_published_at": "2016-06-17T09:22:54.440Z",
+        "latest_revision_created_at": "2016-06-17T09:22:54.421Z"
+    }
+},
+{
+    "model": "wagtailcore.page",
+    "pk": 14,
+    "fields": {
+        "path": "0001000100020008",
+        "depth": 4,
+        "numchild": 0,
+        "title": "SBB E-Shift",
+        "slug": "sbb-e-shift",
+        "content_type": [
+            "projects",
+            "projectpage"
+        ],
+        "live": true,
+        "has_unpublished_changes": false,
+        "url_path": "/home/projects/sbb-e-shift/",
+        "owner": [
+            "admin"
+        ],
+        "seo_title": "",
+        "show_in_menus": false,
+        "search_description": "",
+        "go_live_at": null,
+        "expire_at": null,
+        "expired": false,
+        "locked": false,
+        "first_published_at": "2016-06-17T11:11:26.400Z",
+        "latest_revision_created_at": "2016-06-17T11:11:26.377Z"
+    }
+},
+{
+    "model": "wagtailimages.image",
+    "pk": 5,
+    "fields": {
+        "collection": 1,
+        "title": "portrait-square",
+        "file": "original_images/portrait-square.jpg",
+        "width": 960,
+        "height": 959,
+        "created_at": "2016-06-16T08:30:36.513Z",
+        "uploaded_by_user": [
+            "admin"
+        ],
+        "focal_point_x": null,
+        "focal_point_y": null,
+        "focal_point_width": null,
+        "focal_point_height": null,
+        "file_size": 196398
+    }
+},
+{
+    "model": "contact.contactformpage",
+    "pk": 6,
+    "fields": {
+        "to_address": "me@schaermu.ch",
+        "from_address": "noreply@schaermu.ch",
+        "subject": "[schaermu.ch] Kontakt-Formular",
+        "intro": "Du hast ne coole Idee f\u00fcr ein Open-Source Projekt? Du findest ich sollte bei deinem Projekt mitmachen? Du willst mir ein lustiges GIF schicken? Oder du findest mich einfach nur nett? Schick mir ne E-Mail.",
+        "thank_you_head": "Merci viumau!",
+        "thank_you_text": "Danke f\u00fcr deine Mitteilung, ich melde mich bei dir sobald meine Mails das n\u00e4chste mal auf interessanten Spam kontrolliere."
+    }
+},
+{
+    "model": "projects.projectpage",
+    "pk": 4,
+    "fields": {
+        "main_image": null,
+        "project_date": "2016-06-01",
+        "lead": "\u00e4be ja",
+        "body": "<p>Blubber blah</p>"
+    }
+},
+{
+    "model": "projects.projectpage",
+    "pk": 7,
+    "fields": {
+        "main_image": null,
+        "project_date": "2016-05-01",
+        "lead": "Der Verein \u00f6ffentlicher Verkehr befragt zwecks Strecken- und Fahrplanoptimierung jedes Jahr eine zuf\u00e4llige Selektion aus GA-Inhabern zu Ihrem Fahrverhalten. Ich durfte dieses Projekt aus technischer Sicht umsetzen und betreuen.",
+        "body": "[]"
+    }
+},
+{
+    "model": "projects.projectpage",
+    "pk": 8,
+    "fields": {
+        "main_image": null,
+        "project_date": "2016-04-01",
+        "lead": "Der neue Webauftritt f\u00fcr Maxomedia diente neben der Abl\u00f6sung einer schon leicht angestaubten Website auch als Versuchslab f\u00fcr eine neue Art Kentico-Sites zu implementieren.",
+        "body": "[{\"type\": \"heading\", \"value\": \"Worum geht's?\"}, {\"type\": \"paragraph\", \"value\": \"<p>\\\"Wer rastet, der rostet.\\\" - Getreu diesem Motto war es nach knapp 3 Jahren an der Zeit der Agentur einen zeitgem\\u00e4sseren und visuell spannenderen digitalen Auftritt zu spendieren. Standesgem\\u00e4ss wurde von Konzeption \\u00fcber UX/Interaction Design bis hin zur Umsetzung alles im eigenen Hause umgesetzt.</p>\"}]"
+    }
+},
+{
+    "model": "projects.projectpage",
+    "pk": 9,
+    "fields": {
+        "main_image": null,
+        "project_date": "2015-08-01",
+        "lead": "F\u00fcr die Berner SAP-Consulting Firma NOVO Business Consultants durften wir die neue Corporate Website gestalten.",
+        "body": "[]"
+    }
+},
+{
+    "model": "projects.projectpage",
+    "pk": 10,
+    "fields": {
+        "main_image": null,
+        "project_date": "2015-02-01",
+        "lead": "Die Jugendplattform der SBB Gleis7 wurde Ende 2014 einem kompletten Redesign unterzogen, Backend sowie Frontend. Die Plattform wurde dabei auf den aktuellsten Microsoft-Technologiestack migriert (zu dieser Zeit ASP.NET MVC 4).",
+        "body": "[]"
+    }
+},
+{
+    "model": "projects.projectpage",
+    "pk": 11,
+    "fields": {
+        "main_image": null,
+        "project_date": "2012-07-02",
+        "lead": "F\u00fcr die SBB durften wir w\u00e4hrend knapp 8 Jahren die Bonus-Plattform MobilBonus betreuen. Auf der Plattform waren zu Spitzenzeiten knapp 450'000 User registriert und es wurden rund 320'000 Personen monatlich personalisiert per Newsletter angeschrieben.",
+        "body": "[]"
+    }
+},
+{
+    "model": "projects.projectpage",
+    "pk": 12,
+    "fields": {
+        "main_image": null,
+        "project_date": "2015-08-01",
+        "lead": "F\u00fcr die beiden SBB Apps Gleis7 und MobilBonus durfte ich die jeweiligen Schnittstellen End2End betreuen (Design, Architektur, Implementierung, Betrieb).",
+        "body": "[]"
+    }
+},
+{
+    "model": "projects.projectpage",
+    "pk": 14,
+    "fields": {
+        "main_image": null,
+        "project_date": "2014-09-01",
+        "lead": "Das Ziel der E-Shift Kampagne ist es, den SBB TicketShop (online & mobile) zu bewerben und die Kunden auf diese Plattformen zu \"shiften\" Dazu wurde eine mehrj\u00e4hrige Kampagne aufgegleist, welche heute noch l\u00e4uft.",
+        "body": "[{\"type\": \"heading\", \"value\": \"Worum geht's?\"}]"
+    }
+},
+{
+    "model": "projects.projectindexpage",
+    "pk": 5,
+    "fields": {
+        "intro": "<p>Das Untenstehende ist nur eine Auswahl an Projekten, welche ich in der Vergangenheit umgesetzt habe. Kleinere Lab-Basteleien oder OpenSource-Beteiligungen sind in meinem GitHub-Profil zu finden.</p>"
+    }
+},
+{
+    "model": "home.homepage",
+    "pk": 3,
+    "fields": {
+        "heading": "Hallo, ich bin Sch\u00e4rmu.",
+        "lead": "Web-Entwickler seit den Tagen als Frontpage noch was Gutes und selfhtml.de besser als Google war.",
+        "portrait_image": 5,
+        "body": "[{\"type\": \"paragraph\", \"value\": \"<p>Ich arbeite seit ca. 2002/2003 als Software-Entwickler im Web-Umfeld mit unterschiedlichsten Technologien, Frameworks und Plattformen. H\\u00f6rt sich nach einer 08/15 Geschichte an? Ist es aber nicht. Da ich die klassische Software-Entwicklung (3 Monate spezifizieren, 4 Monate diskutieren, 6 Monate Testszenarien entwickeln und 12 Monate entwickeln) immer als relativ langweilig empfand, entschloss ich mich zu einer eher atypischen Karriere:</p>\"}, {\"type\": \"career\", \"value\": [{\"text\": \"<p>Als Crossmedia-Agentur versteht sich die Maxomedia als Integrator von klassischer Werbung wie TV- / Radio-Spots, Plakaten, Inseraten und allen digitalen Kan\\u00e4len von Social Media bis Apps und Plattformen. Bereits nach dem Vorstellungsgespr\\u00e4ch hat es hier Klick gemacht: das junge Team, die in der Luft liegende Kreativit\\u00e4t und die Attit\\u00fcde, dass technisch nichts unm\\u00f6glich ist haben mich sofort in Ihren Bann gezogen. Die Projekte waren so divers wie angenommen und begannen mit kleinsten Microsite's oder Kampagnen-begleitenden Websites und h\\u00f6rten auf bei Plattformen f\\u00fcr mehrere 100'000 Benutzer und Apps mit t\\u00e4glich bis zu 20'000 Unique-Usern.</p>\", \"name\": \"Maxomedia AG\", \"start_date\": \"2012-07-02\", \"end_date\": \"2016-07-31\", \"url\": \"https://www.maxomedia.ch\"}, {\"text\": \"<p>Interactive Data Managed Solutions bietet Finanzdaten f\\u00fcr Web-Portale und Offline-Clients in allen m\\u00f6glichen Granulanit\\u00e4ten und f\\u00fcr alle nur erdenklichen B\\u00f6rsenpl\\u00e4tze an. Meine Aufgabe war es w\\u00e4hrend meines knappen Jahres in dieser Firma den laufenden Betrieb sicherzustellen, das Incident Management zu koordinieren und Deployments auszul\\u00f6sen und zu \\u00fcberwachen. Um es kurz zu machen: manchmal muss man einen Job mal machen, nur um festzustellen dass es nicht der Richtige ist.</p>\", \"name\": \"Interactive Data Managed Solutions\", \"start_date\": \"2011-08-01\", \"end_date\": \"2012-06-30\", \"url\": \"http://www.interactivedata.de/\"}, {\"text\": \"<p>Die Neue Chemigraphie AG (kurz n c ag) ist im Bereich Druckvorstufe / Publishing t\\u00e4tig und war Ende 2007 auf der Suche nach Verst\\u00e4rkung f\\u00fcr ihre Web-Abteilung. Ich durfte w\\u00e4hrend knapp 4 Jahren als Web-Entwickler an diversen, sehr spannenden Projekten mitarbeiten und gelangte ganz nebenbei zum ersten Mal mit C# sowie node.js in Kontakt. Diese Zeit macht mir endg\\u00fcltig klar: meine Leidenschaft liegt in der Web-Entwicklung.</p>\", \"name\": \"neue chemigraphie AG\", \"start_date\": \"2007-12-01\", \"end_date\": \"2011-06-30\", \"url\": \"http://www.ncag.ch\"}, {\"text\": \"<p>Direkt nach meiner Ausbildung zum Informatiker arbeitete ich zuerst ca. 1 Jahr f\\u00fcr die Agentur mediatower als Freelancer auf PHP/Typo3, danach gr\\u00fcndete ich gemeinsam mit einem Freund eine Firma, spezialisiert auf automatisiertes G\\u00fcnstig-Hosting und PHP-Auftragsarbeiten.</p>\", \"name\": \"selbstst\\u00e4ndig/Freelancer\", \"start_date\": \"2003-08-01\", \"end_date\": \"2007-11-30\", \"url\": \"http://www.mediatower.ch\"}]}, {\"type\": \"heading\", \"value\": \"Was kann der Sch\\u00e4rmu denn so?\"}, {\"type\": \"paragraph\", \"value\": \"<p>W\\u00e4hrend dieser Stationen konnte ich mir ein breites Wissen im Umfeld der Web-Entwicklung aneignen. Angefangen hat die Reise w\\u00e4hrend der Ausbildung mit PHP 4, was sich auch f\\u00fcr die n\\u00e4chsten 6 Jahre als Umfeld meiner Wahl herausstellte (auch mit diversen CMS-Systemen, haupts\\u00e4chlich jedoch Custom-Development). Mit dem Job-Antritt bei der n c ag (nota bene als PHP-Entwickler) ver\\u00e4nderte sich mein technischer Fokus abrupt: ich \\u00fcbernahm den Betrieb und die Weiterentwicklung f\\u00fcr eine C#-Applikation! Von da aus war der Schritt zu ASP.NET WebForms/MVC und WebAPI kein grosser und nur ein logischer. Die\\u00a0darauf folgende\\u00a0Zeit bei\\u00a0der Maxomedia war ebenfalls durch diese Technologien gepr\\u00e4gt und gab mir die M\\u00f6glichkeit zur Weiterentwicklung und Vertiefung in diesen (und vielen anderen Themen). Und nun sitze ich hier und entwickle ich meine pers\\u00f6nliche Website auf dem CMS <a href=\\\"http://wagtail.io\\\">Wagtail</a>, einem Python/Django-basierenden CMS :)</p>\"}, {\"type\": \"skills\", \"value\": [{\"name\": \"ASP.NET WebAPI2\", \"value\": \"85\"}, {\"name\": \"ASP.NET MVC\", \"value\": \"80\"}, {\"name\": \"C#\", \"value\": \"80\"}, {\"name\": \"AngularJS/React/jQuery\", \"value\": \"65\"}, {\"name\": \"node.js\", \"value\": \"65\"}, {\"name\": \"PHP\", \"value\": \"50\"}, {\"name\": \"Python/Django\", \"value\": \"30\"}]}, {\"type\": \"heading\", \"value\": \"Und was hat er damit alles angestellt?\"}, {\"type\": \"paragraph\", \"value\": \"<p>Eine kleine Auswahl der letzten Projekte findest du direkt hier, die komplette \\u00dcbersicht ist <a id=\\\"5\\\" linktype=\\\"page\\\">hier</a> zu finden.</p>\"}]"
+    }
+}
+]
