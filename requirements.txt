@@ -8,6 +8,7 @@ django-bootstrap3==7.0.1
 django-htmlmin==0.9.1
 django-modelcluster==2.0
 django-taggit==0.18.3
+django-taggit-templatetags2==1.5.1
 django-toolbelt==0.0.1
 django-treebeard==4.0.1
 djangorestframework==3.3.3

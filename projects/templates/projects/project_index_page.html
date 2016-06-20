@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% load static wagtailcore_tags wagtailimages_tags %}
+{% load static wagtailcore_tags wagtailimages_tags common_tags %}
 
 {% block body_class %}projects{% endblock %}
 
@@ -23,6 +23,9 @@ $(function() {
 {% block content %}
   <h1>{{ page.title }}</h1>
   {{ page.intro|richtext }}
+
+  {% project_filter page total_items %}
+
   <div class="grid">
     <div class="grid-sizer"></div>
     <div class="gutter-sizer"></div>

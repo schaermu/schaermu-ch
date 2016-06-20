@@ -1,5 +1,6 @@
 from django.template.defaulttags import register
 
+from projects.models import ProjectPageTag
 from common.models import *
 
 register = template.Library()
@@ -35,4 +36,13 @@ def menu_items(context, parent, calling_page=None):
         'parent': parent,
         'children': menuitems,
         'request': context['request'],
+    }
+
+
+@register.inclusion_tag('tags/project_filter.html', takes_context=True)
+def project_filter(context, page, total_items):
+    return {
+        'page': page,
+        'total_items': total_items,
+        'request': context['request']
     }

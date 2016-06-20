@@ -1,0 +1,13 @@
+{% load static wagtailcore_tags wagtailroutablepage_tags taggit_templatetags2_tags %}
+
+{% get_taglist as tags for 'projects.ProjectPage' %}
+<ul>
+  <li>
+    <a href="{% routablepageurl page "base" %}">Alle</a> ({{ total_items }})
+  </li>
+  {% for tag in tags %}
+  <li>
+    <a href="{% routablepageurl page "filter" tag.name %}">{{tag|capfirst}}</a> ({{tag.num_times}})
+  </li>
+  {% endfor %}
+</ul>

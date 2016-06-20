@@ -1,6 +1,7 @@
 import datetime
 from django.db import models
 from django.utils import timezone, text
+from django.template.response import TemplateResponse
 
 from wagtail.wagtailcore.models import Page
 from wagtail.wagtailcore.fields import RichTextField, StreamField
@@ -13,6 +14,7 @@ from wagtail.wagtailsearch import index
 
 from modelcluster.fields import ParentalKey
 from modelcluster.contrib.taggit import ClusterTaggableManager
+from wagtail.contrib.wagtailroutablepage.models import RoutablePageMixin, route
 from taggit.models import TaggedItemBase
 
 
@@ -21,7 +23,7 @@ class ProjectPageTag(TaggedItemBase):
                                  related_name='tagged_items')
 
 
-class ProjectIndexPage(Page):
+class ProjectIndexPage(RoutablePageMixin, Page):
     intro = RichTextField(blank=True)
 
     content_panels = Page.content_panels + [
@@ -38,13 +40,42 @@ class ProjectIndexPage(Page):
         parent.add_child(instance=project_idx)
         return project_idx
 
-    def get_context(self, request):
+    @route(r'^$')
+    def base(self, request):
+        """
+        Index view with all projects
+        """
         context = super(ProjectIndexPage, self).get_context(request)
-
-        # Add extra variables and return the updated context
-        context['projects'] = ProjectPage.objects.child_of(self) \
+        projects = ProjectPage.objects.child_of(self) \
             .order_by('-project_date').live()
-        return context
+        context['projects'] = projects
+        context['total_items'] = len(projects)
+
+        return TemplateResponse(
+          request,
+          self.get_template(request),
+          context
+        )
+
+    @route(r'^t/(.+)/$', name='filter')
+    def filtered_projects(self, request, tag):
+        """
+        View function for filtered projects view
+        """
+        context = super(ProjectIndexPage, self).get_context(request)
+        projects = ProjectPage.objects.child_of(self) \
+            .order_by('-project_date').filter(
+                tags__name__in=[tag]
+            ).distinct().live()
+        context['projects'] = projects
+        context['total_items'] = ProjectPage.objects.child_of(self) \
+            .live().count()
+
+        return TemplateResponse(
+          request,
+          self.get_template(request),
+          context
+        )
 
 
 class ProjectPage(Page):
