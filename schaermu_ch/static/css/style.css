@@ -3032,6 +3032,42 @@ tbody.collapse.in {
   border-bottom-right-radius: 3px;
   border-top-right-radius: 3px; }
 
+.badge {
+  display: inline-block;
+  min-width: 10px;
+  padding: 3px 7px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #fff;
+  line-height: 1;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-align: center;
+  background-color: #777777;
+  border-radius: 10px; }
+  .badge:empty {
+    display: none; }
+  .btn .badge {
+    position: relative;
+    top: -1px; }
+  .btn-xs .badge, .btn-group-xs > .btn .badge, .btn-group-xs > .btn .badge {
+    top: 0;
+    padding: 1px 5px; }
+  .list-group-item.active > .badge, .nav-pills > .active > a > .badge {
+    color: #ef5353;
+    background-color: #fff; }
+  .list-group-item > .badge {
+    float: right; }
+  .list-group-item > .badge + .badge {
+    margin-right: 5px; }
+  .nav-pills > li > a > .badge {
+    margin-left: 3px; }
+
+a.badge:hover, a.badge:focus {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer; }
+
 @-webkit-keyframes progress-bar-stripes {
   from {
     background-position: 40px 0; }
@@ -6911,6 +6947,19 @@ body.home .latest-projects a {
   body.home .latest-projects {
     font-size: 12px; } }
 
+body.projects .project-filter {
+  margin-top: 2em;
+  margin-bottom: 2em; }
+  @media (min-width: 768px) {
+    body.projects .project-filter {
+      display: flex;
+      justify-content: center; } }
+  body.projects .project-filter li {
+    background-color: #eeeeee;
+    margin: 5px 0;
+    margin-right: 5px; }
+  body.projects .project-filter a {
+    padding: 8px 8px; }
 body.projects .rich-text > p {
   margin-bottom: 25px;
   font-size: 17px;

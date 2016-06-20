@@ -70,6 +70,7 @@ class ProjectIndexPage(RoutablePageMixin, Page):
         context['projects'] = projects
         context['total_items'] = ProjectPage.objects.child_of(self) \
             .live().count()
+        context['current_tag'] = tag
 
         return TemplateResponse(
           request,

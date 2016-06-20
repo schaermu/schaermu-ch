@@ -40,9 +40,10 @@ def menu_items(context, parent, calling_page=None):
 
 
 @register.inclusion_tag('tags/project_filter.html', takes_context=True)
-def project_filter(context, page, total_items):
+def project_filter(context, page, total_items, current_tag):
     return {
         'page': page,
         'total_items': total_items,
+        'current_tag': current_tag,
         'request': context['request']
     }
