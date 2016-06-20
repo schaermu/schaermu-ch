@@ -1,0 +1,13 @@
+{% load static wagtailcore_tags wagtailroutablepage_tags taggit_templatetags2_tags %}
+
+{% get_taglist as tags for 'projects.ProjectPage' %}
+<ul class="nav nav-pills project-filter" role="tablist">
+  <li role="presentation" class="{% if current_tag == '' %}active{% endif %}">
+    <a href="{% routablepageurl page "base" %}">Alle <span class="badge">{{ total_items }}</span></a>
+  </li>
+  {% for tag in tags %}
+  <li role="presentation" class="{% if current_tag == tag.name %}active{% endif %}">
+    <a href="{% routablepageurl page "filter" tag.name %}">{{tag|capfirst}} <span class="badge">{{tag.num_times}}</span></a>
+  </li>
+  {% endfor %}
+</ul>

@@ -33,6 +33,7 @@ INSTALLED_APPS = [
     'common',
     'bootstrap3',
     'anymail',
+    'taggit_templatetags2',
 
     'wagtail.wagtailforms',
     'wagtail.wagtailredirects',
@@ -45,6 +46,7 @@ INSTALLED_APPS = [
     'wagtail.wagtailsearch',
     'wagtail.wagtailadmin',
     'wagtail.wagtailcore',
+    'wagtail.contrib.wagtailroutablepage',
 
     'modelcluster',
     'taggit',

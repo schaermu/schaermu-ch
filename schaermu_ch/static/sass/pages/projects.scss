@@ -1,4 +1,24 @@
 body.projects {
+  .project-filter {
+    margin-top: 2em;
+    margin-bottom: 2em;
+
+    @media (min-width: $screen-sm-min) {
+      display: flex;
+      justify-content: center;
+    }
+
+    li {
+      background-color: $gray-lighter;
+      margin: 5px 0;
+      margin-right: 5px;
+    }
+
+    a {
+      padding: 8px 8px;
+    }
+  }
+
   .rich-text > p {
     margin-bottom: $line-height-computed;
     font-size: floor(($font-size-base * 1.15));
