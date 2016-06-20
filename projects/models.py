@@ -28,6 +28,8 @@ class ProjectIndexPage(Page):
         FieldPanel('intro', classname="full")
     ]
 
+    subpage_types = ['projects.ProjectPage']
+
     def create_test(title, intro, parent=None):
         if (parent is None):
             parent = Page.get_first_root_node()
@@ -70,6 +72,8 @@ class ProjectPage(Page):
     parent_page_types = [
         'projects.ProjectIndexPage',
     ]
+
+    subpage_types = []
 
     search_fields = Page.search_fields + [
         index.SearchField('lead'),

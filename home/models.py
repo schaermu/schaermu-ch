@@ -62,6 +62,8 @@ class HomePage(Page):
         StreamFieldPanel('body'),
     ]
 
+    subpage_types = ['projects.ProjectIndexPage', 'contact.ContactFormPage']
+
     def get_context(self, request):
         context = super(HomePage, self).get_context(request)
 
