@@ -3,11 +3,6 @@ body.projects {
     margin-top: 2em;
     margin-bottom: 2em;
 
-    @media (min-width: $screen-sm-min) {
-      display: flex;
-      justify-content: center;
-    }
-
     li {
       background-color: $gray-lighter;
       margin: 5px 0;

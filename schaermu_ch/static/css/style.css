@@ -6950,10 +6950,6 @@ body.home .latest-projects a {
 body.projects .project-filter {
   margin-top: 2em;
   margin-bottom: 2em; }
-  @media (min-width: 768px) {
-    body.projects .project-filter {
-      display: flex;
-      justify-content: center; } }
   body.projects .project-filter li {
     background-color: #eeeeee;
     margin: 5px 0;
