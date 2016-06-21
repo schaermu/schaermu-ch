@@ -6939,6 +6939,8 @@ body.home .skills {
   margin-bottom: 4em; }
   body.home .skills .progress {
     border-radius: 0px; }
+body.home .latest-projects .panel {
+  max-width: 300px; }
 body.home .latest-projects .panel-body {
   padding: 0; }
 body.home .latest-projects a {
@@ -6956,6 +6958,25 @@ body.projects .project-filter {
     margin-right: 5px; }
   body.projects .project-filter a {
     padding: 8px 8px; }
+body.projects .masonry,
+body.projects .masonry .masonry-brick {
+  -webkit-transition-duration: 0.7s;
+  -moz-transition-duration: 0.7s;
+  -ms-transition-duration: 0.7s;
+  -o-transition-duration: 0.7s;
+  transition-duration: 0.7s; }
+body.projects .masonry {
+  -webkit-transition-property: height, width;
+  -moz-transition-property: height, width;
+  -ms-transition-property: height, width;
+  -o-transition-property: height, width;
+  transition-property: height, width; }
+body.projects .masonry .masonry-brick {
+  -webkit-transition-property: left, right, top;
+  -moz-transition-property: left, right, top;
+  -ms-transition-property: left, right, top;
+  -o-transition-property: left, right, top;
+  transition-property: left, right, top; }
 body.projects .rich-text > p {
   margin-bottom: 25px;
   font-size: 17px;
@@ -6966,15 +6987,14 @@ body.projects .rich-text > p {
       font-size: 22.5px; } }
 
 body.project-detail .header {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   min-height: 20em;
   margin-top: 5em;
   padding: 2em;
   position: absolute;
   left: 0;
   width: 100%; }
+  body.project-detail .header .lead {
+    color: #222222; }
 body.project-detail .content {
   margin-top: 450px;
   margin-top: 45vh; }

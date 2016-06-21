@@ -1,20 +1,38 @@
 {% extends "base.html" %}
-
 {% load wagtailcore_tags wagtailimages_tags %}
+
+{% block extra_css %}
+  {% image page.main_image width-980 as main_image %}
+  <style>
+    .header::after {
+      content: "";
+      background: url({{ main_image.url }});
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      opacity: 0.3;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      z-index: -1;
+    }
+  </style>
+{% endblock %}
 
 {% block body_class %}project-detail{% endblock %}
 
 {% block content %}
   {% if page.main_image %}
-  {% image page.main_image width-980 as main_image %}
-  <section class="header" style="background-image url('{{ main_image }}');">
+  <section class="header">
   {% else %}
   <section class="header" style="background-image: url(http://placehold.it/980x350);">
   {% endif %}
     <div class="container">
       <div class="row">
         <h1>{{ page.title }}</h1>
-        <p class="meta">{{ page.project_date }}</p>
+        <p class="meta">{{ page.project_date|date:"F Y" }}</p>
         <p class="lead">{{ page.lead }}</div>
       </div>
     </div>

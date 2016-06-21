@@ -1,5 +1,14 @@
 @import 'variable_override';
 
+@mixin transition-property($args...) {
+  -webkit-transition-property: $args;
+  -moz-transition-property: $args;
+  -ms-transition-property: $args;
+  -o-transition-property: $args;
+  transition-property: $args;
+}
+
+
 // import modules
 @import 'modules/timeline';
 @import 'modules/grid';
