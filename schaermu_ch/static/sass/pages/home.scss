@@ -27,6 +27,10 @@ body.home {
     }
   }
 
+  .rich-text > p {
+    font-size: ($font-size-base * 1.1)
+  }
+
   .career {
     margin-bottom: 4em;
     > p {
@@ -47,22 +51,6 @@ body.home {
     margin-bottom: 4em;
     .progress {
       border-radius: 0px;
-    }
-  }
-
-  .latest-projects {
-    .panel {
-      max-width: 300px;
-    }
-    .panel-body {
-      padding: 0;
-    }
-    a {
-      text-decoration: none;
-    }
-
-    @media screen and (max-width: $screen-xs) {
-      font-size: $font-size-base * 0.8;
     }
   }
 }

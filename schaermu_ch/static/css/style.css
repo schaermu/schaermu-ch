@@ -6182,11 +6182,10 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
     display: block;
     float: none !important;
-    width: 200px;
     margin: 0 auto;
     text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 20px;
+    letter-spacing: 6px;
+    font-size: 16px;
     font-family: "Montserrat", arial, sans-serif;
     color: #000; }
     #fh5co-header .navbar-brand:hover {
@@ -6975,6 +6974,8 @@ body.home .heading {
     padding-right: 0; }
     body.home .heading .portrait img {
       border-radius: 170px; }
+body.home .rich-text > p {
+  font-size: 16.5px; }
 body.home .career {
   margin-bottom: 4em; }
   body.home .career > p {
@@ -6989,15 +6990,6 @@ body.home .skills {
   margin-bottom: 4em; }
   body.home .skills .progress {
     border-radius: 0px; }
-body.home .latest-projects .panel {
-  max-width: 300px; }
-body.home .latest-projects .panel-body {
-  padding: 0; }
-body.home .latest-projects a {
-  text-decoration: none; }
-@media screen and (max-width: 480px) {
-  body.home .latest-projects {
-    font-size: 12px; } }
 
 body.projects .project-filter {
   margin-top: 2em;
