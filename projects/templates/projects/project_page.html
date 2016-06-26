@@ -1,11 +1,16 @@
 {% extends "base.html" %}
-{% load wagtailcore_tags wagtailimages_tags %}
+{% load wagtailcore_tags wagtailimages_tags taggit_templatetags2_tags %}
+{% load wagtailroutablepage_tags  %}
 
 {% block extra_css %}
   {% image page.main_image width-980 as main_image %}
   <style>
-    .header::after {
+    .header .bg::after {
+      {% if page.main_image %}
       background: url({{ main_image.url }});
+      {% else %}
+      background: url(http://placehold.it/980x350);
+      {% endif %}
     }
   </style>
 {% endblock %}
@@ -13,28 +18,30 @@
 {% block body_class %}project-detail{% endblock %}
 
 {% block content %}
-  {% if page.main_image %}
   <section class="header">
-  {% else %}
-  <section class="header" style="background-image: url(http://placehold.it/980x350);">
-  {% endif %}
-    <div class="container">
-      <div class="row">
-        <h1>{{ page.title }}</h1>
-        <span class="badge">{{ page.project_date|date:"F Y" }}</span>
-        <p class="lead">{{ page.lead }}</div>
-      </div>
+      <div class="bg"></div>
+      <h1>{{ page.title }}</h1>
+      <span class="badge">{{ page.project_date|date:"F Y" }}</span>
+      {{ page.lead|richtext }}
+  </section>
+
+  <section class="skills">
+    {% get_taglist as skill_tags for 'projects.ProjectPage:skill_tags' %}
+    {% for skill in skill_tags %}
+    <h4><a href="{% routablepageurl page.get_parent.specific "skilltag" skill.name %}">
+        <span class="label label-primary">{{ skill.name }}</span>
+    </a></h4>
+    {% endfor %}
+  </section>
+
+  <section class="content row">
+    <div class="col-md-6">
+      <h2>Briefing</h2>
+      {{ page.column1|richtext }}
+    </div>
+    <div class="col-md-6">
+      <h2>Lösungsansatz</h2>
+      {{ page.column2|richtext }}
     </div>
   </section>
-  <div class="container">
-    <section class="content row">
-      {% for block in page.body %}
-        {% if block.block_type == 'heading' %}
-          <h4>{{ block }}</h4>
-        {% else %}
-          {{ block }}
-        {% endif %}
-      {% endfor %}
-    </section>
-  </div>
 {% endblock %}

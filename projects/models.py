@@ -23,6 +23,11 @@ class ProjectPageTag(TaggedItemBase):
                                  related_name='tagged_items')
 
 
+class SkillTag(TaggedItemBase):
+    content_object = ParentalKey('projects.ProjectPage',
+                                 related_name='skill_items')
+
+
 class ProjectIndexPage(RoutablePageMixin, Page):
     intro = RichTextField(blank=True)
 
@@ -50,6 +55,26 @@ class ProjectIndexPage(RoutablePageMixin, Page):
             .order_by('-project_date').live()
         context['projects'] = projects
         context['total_items'] = len(projects)
+
+        return TemplateResponse(
+          request,
+          self.get_template(request),
+          context
+        )
+
+    @route(r'^s/(.+)/$', name='skilltag')
+    def tagged_projects(self, request, tag):
+        """
+        View function for filtered projects view
+        """
+        context = super(ProjectIndexPage, self).get_context(request)
+        projects = ProjectPage.objects.child_of(self) \
+            .order_by('-project_date').filter(
+                skill_tags__name__in=[tag]
+            ).distinct().live()
+        context['projects'] = projects
+        context['total_items'] = ProjectPage.objects.child_of(self) \
+            .live().count()
 
         return TemplateResponse(
           request,
@@ -88,18 +113,13 @@ class ProjectPage(Page):
         related_name='+'
     )
     project_date = models.DateField("Projektdatum")
-    lead = models.CharField(max_length=250)
+    lead = RichTextField(blank=True)
     tags = ClusterTaggableManager(through=ProjectPageTag, blank=True)
-    body = StreamField([
-        ('heading', blocks.CharBlock(classname='full title', label='Titel',
-                                     icon='title')),
-        ('paragraph', blocks.RichTextBlock(label='Absatz')),
-        ('image', ImageChooserBlock(label='Bild')),
-        ('gallery', blocks.ListBlock(ImageChooserBlock(label='Bild'),
-                                     label='Bildgalerie',
-                                     template='blocks/gallery.html',
-                                     icon='grip'))
-    ])
+    tags.rel.related_name = '+'
+    skill_tags = ClusterTaggableManager(through=SkillTag, blank=True)
+    skill_tags.rel.related_name = '+'
+    column1 = RichTextField('Spalte 1 (Briefing)', blank=True)
+    column2 = RichTextField('Spalte 2 (Lösungsansatz)', blank=True)
 
     parent_page_types = [
         'projects.ProjectIndexPage',
@@ -109,7 +129,8 @@ class ProjectPage(Page):
 
     search_fields = Page.search_fields + [
         index.SearchField('lead'),
-        index.SearchField('body'),
+        index.SearchField('column1'),
+        index.SearchField('column2'),
     ]
 
     promote_panels = Page.promote_panels + [
@@ -120,7 +141,11 @@ class ProjectPage(Page):
         FieldPanel('project_date'),
         ImageChooserPanel('main_image'),
         FieldPanel('lead'),
-        StreamFieldPanel('body')
+        FieldPanel('skill_tags'),
+        MultiFieldPanel([
+            FieldPanel('column1', classname='full'),
+            FieldPanel('column2', classname='full'),
+        ], 'Inhalt')
     ]
 
     def get_latest(limit=4):
