@@ -8,6 +8,20 @@ body.project-detail {
     left: 0;
     width: 100%;
 
+    &::after {
+      content: "";
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      opacity: 0.3;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      z-index: -1;
+    }
+
     .lead {
       color: $gray-darker;
     }

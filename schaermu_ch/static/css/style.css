@@ -6993,6 +6993,18 @@ body.project-detail .header {
   position: absolute;
   left: 0;
   width: 100%; }
+  body.project-detail .header::after {
+    content: "";
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1; }
   body.project-detail .header .lead {
     color: #222222; }
 body.project-detail .content {
