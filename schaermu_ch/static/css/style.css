@@ -6941,9 +6941,7 @@ a > img.fh5co-align-center {
     height: 100px;
     -webkit-line-clamp: 4; } }
 .grid .grid-sizer {
-  width: 49%; }
-.grid .gutter-sizer {
-  width: 2%; }
+  width: 50%; }
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (color: 8) and (device-aspect-ratio: 375 / 667) {
   .grid .grid-item img {
     width: 160px; } }
