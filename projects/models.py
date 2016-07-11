@@ -118,7 +118,7 @@ class ProjectPage(Page):
     tags.rel.related_name = '+'
     skill_tags = ClusterTaggableManager(through=SkillTag, blank=True)
     skill_tags.rel.related_name = '+'
-    project_url = models.CharField(max_length=250, default='')
+    project_url = models.CharField(max_length=250, default='', blank=True)
     column1 = RichTextField('Spalte 1 (Briefing)', blank=True)
     column2 = RichTextField('Spalte 2 (Lösungsansatz)', blank=True)
 
