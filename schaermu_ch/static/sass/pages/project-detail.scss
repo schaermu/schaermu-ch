@@ -10,6 +10,31 @@ body.project-detail {
     h4 {
       display: inline-block;
     }
+
+    h4.project-url {
+      float: right;
+      a {
+        text-decoration: none;
+        color: $brand-white;
+      }
+
+      @media screen and (max-width: $screen-sm-min) {
+        span.label {
+          position: fixed;
+          top: 15em;
+          right: 0em;
+          padding: 0.5em;
+          font-size: 1em;
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+
+          &:before {
+    			  @include fa-icon;
+    			  content: $fa-var-link;
+          }
+        }
+      }
+    }
   }
 
   .header {

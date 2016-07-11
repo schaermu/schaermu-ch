@@ -7024,6 +7024,28 @@ body.project-detail .content .rich-text > p {
   font-size: 16.5px; }
 body.project-detail .skills h4 {
   display: inline-block; }
+body.project-detail .skills h4.project-url {
+  float: right; }
+  body.project-detail .skills h4.project-url a {
+    text-decoration: none;
+    color: #fff; }
+  @media screen and (max-width: 768px) {
+    body.project-detail .skills h4.project-url span.label {
+      position: fixed;
+      top: 15em;
+      right: 0em;
+      padding: 0.5em;
+      font-size: 1em;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0; }
+      body.project-detail .skills h4.project-url span.label:before {
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        content: ""; } }
 body.project-detail .header .bg {
   position: absolute;
   top: 8em;

@@ -26,12 +26,20 @@
   </section>
 
   <section class="skills">
-    {% get_taglist as skill_tags for 'projects.ProjectPage:skill_tags' %}
-    {% for skill in skill_tags %}
+    {% for skill in page.skill_tags.all %}
     <h4><a href="{% routablepageurl page.get_parent.specific "skilltag" skill.name %}">
         <span class="label label-primary">{{ skill.name }}</span>
     </a></h4>
     {% endfor %}
+    {% if page.project_url %}
+    <h4 class="project-url">
+      <a href="{{ page.project_url }}" target="_blank">
+        <span class="label label-info">
+          <span class="hidden-xs">Projekt-URL</span>
+        </span>
+      </a>
+    </span></h4>
+    {% endif %}
   </section>
 
   <section class="content row">

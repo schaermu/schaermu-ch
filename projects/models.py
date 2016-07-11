@@ -118,6 +118,7 @@ class ProjectPage(Page):
     tags.rel.related_name = '+'
     skill_tags = ClusterTaggableManager(through=SkillTag, blank=True)
     skill_tags.rel.related_name = '+'
+    project_url = models.CharField(max_length=250, default='')
     column1 = RichTextField('Spalte 1 (Briefing)', blank=True)
     column2 = RichTextField('Spalte 2 (Lösungsansatz)', blank=True)
 
@@ -141,6 +142,7 @@ class ProjectPage(Page):
         FieldPanel('project_date'),
         ImageChooserPanel('main_image'),
         FieldPanel('lead'),
+        FieldPanel('project_url'),
         FieldPanel('skill_tags'),
         MultiFieldPanel([
             FieldPanel('column1', classname='full'),
