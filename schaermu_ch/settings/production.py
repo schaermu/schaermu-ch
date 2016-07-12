@@ -42,8 +42,8 @@ AWS_S3_BUCKET_AUTH = False
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 DEFAULT_FILE_STORAGE = 'schaermu_ch.s3utils.StaticRootS3BotoStorage'
 
-S3_URL = 'http://s3.amazonaws.com/%s' % AWS_S3_BUCKET_NAME
-MEDIA_URL = S3_URL + MEDIA_ROOT
+S3_URL = 'https://s3.%s.amazonaws.com/%s' % AWS_REGION AWS_S3_BUCKET_NAME
+MEDIA_URL = S3_URL + MEDIA_ROOT + '/'
 
 COMPRESS_OFFLINE = True
 COMPRESS_CSS_FILTERS = [
