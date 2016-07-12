@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     'bootstrap3',
     'anymail',
     'taggit_templatetags2',
+    'storages',
 
     'wagtail.wagtailforms',
     'wagtail.wagtailredirects',
