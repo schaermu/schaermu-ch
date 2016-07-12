@@ -1,4 +1,4 @@
-{% load wagtailcore_tags wagtailimages_tags %}
+{% load wagtailcore_tags wagtailimages_tags common_tags %}
 
 <div class="row">
   <div class="col-sm-3">
@@ -6,8 +6,8 @@
   </div>
   <div class="col-sm-9">
     <div class="progress">
-      <div class="progress-bar" role="progressbar" aria-valuenow="{{ value.value }}" aria-valuemin="0" aria-valuemax="100" style="width: {{value.value}}%;">
-        {{ value.value }}%
+      <div class="progress-bar" role="progressbar" aria-valuenow="{{ value.value }}" aria-valuemin="0" aria-valuemax="10" style="width: {{value.value|multiply:"10"}}%;">
+        {{ value.value }} / 10
       </div>
     </div>
   </div>

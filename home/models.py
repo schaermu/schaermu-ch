@@ -27,7 +27,7 @@ class CareerItemBlock(blocks.StructBlock):
 
 class SkillItemBlock(blocks.StructBlock):
     name = blocks.CharBlock(max_length=50, default='', label='Bezeichnung')
-    value = blocks.CharBlock(max_length=3, default=0, label='Wert in %')
+    value = blocks.CharBlock(max_length=3, default=0, label='Wert (x/10)')
 
     class Meta:
         template = 'blocks/skill_item.html'

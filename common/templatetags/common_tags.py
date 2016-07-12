@@ -11,6 +11,14 @@ def svalue(structvalue, key):
     return structvalue[key]
 
 
+@register.filter
+def multiply(value, arg):
+    try:
+        return int(value)*int(arg)
+    except:
+        return 0
+
+
 @register.assignment_tag(takes_context=True)
 def get_site_root(context):
     return context['request'].site.root_page
