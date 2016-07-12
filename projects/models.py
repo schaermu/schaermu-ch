@@ -1,6 +1,7 @@
 import datetime
 from django.db import models
 from django.utils import timezone, text
+from django.template.response import TemplateResponse
 
 from wagtail.wagtailcore.models import Page
 from wagtail.wagtailcore.fields import RichTextField, StreamField
@@ -13,6 +14,7 @@ from wagtail.wagtailsearch import index
 
 from modelcluster.fields import ParentalKey
 from modelcluster.contrib.taggit import ClusterTaggableManager
+from wagtail.contrib.wagtailroutablepage.models import RoutablePageMixin, route
 from taggit.models import TaggedItemBase
 
 
@@ -21,27 +23,85 @@ class ProjectPageTag(TaggedItemBase):
                                  related_name='tagged_items')
 
 
-class ProjectIndexPage(Page):
+class SkillTag(TaggedItemBase):
+    content_object = ParentalKey('projects.ProjectPage',
+                                 related_name='skill_items')
+
+
+class ProjectIndexPage(RoutablePageMixin, Page):
     intro = RichTextField(blank=True)
 
     content_panels = Page.content_panels + [
         FieldPanel('intro', classname="full")
     ]
 
-    def create_test(title, intro):
-        parent_page = Page.get_first_root_node()
+    subpage_types = ['projects.ProjectPage']
+
+    def create_test(title, intro, parent=None):
+        if (parent is None):
+            parent = Page.get_first_root_node()
         project_idx = ProjectIndexPage(title=title, intro=intro,
                                        slug=text.slugify(title))
-        parent_page.add_child(instance=project_idx)
+        parent.add_child(instance=project_idx)
         return project_idx
 
-    def get_context(self, request):
+    @route(r'^$')
+    def base(self, request):
+        """
+        Index view with all projects
+        """
         context = super(ProjectIndexPage, self).get_context(request)
-
-        # Add extra variables and return the updated context
-        context['projects'] = ProjectPage.objects.child_of(self) \
+        projects = ProjectPage.objects.child_of(self) \
             .order_by('-project_date').live()
-        return context
+        context['projects'] = projects
+        context['total_items'] = len(projects)
+
+        return TemplateResponse(
+          request,
+          self.get_template(request),
+          context
+        )
+
+    @route(r'^s/(.+)/$', name='skilltag')
+    def tagged_projects(self, request, tag):
+        """
+        View function for filtered projects view
+        """
+        context = super(ProjectIndexPage, self).get_context(request)
+        projects = ProjectPage.objects.child_of(self) \
+            .order_by('-project_date').filter(
+                skill_tags__name__in=[tag]
+            ).distinct().live()
+        context['projects'] = projects
+        context['total_items'] = ProjectPage.objects.child_of(self) \
+            .live().count()
+
+        return TemplateResponse(
+          request,
+          self.get_template(request),
+          context
+        )
+
+    @route(r'^t/(.+)/$', name='filter')
+    def filtered_projects(self, request, tag):
+        """
+        View function for filtered projects view
+        """
+        context = super(ProjectIndexPage, self).get_context(request)
+        projects = ProjectPage.objects.child_of(self) \
+            .order_by('-project_date').filter(
+                tags__name__in=[tag]
+            ).distinct().live()
+        context['projects'] = projects
+        context['total_items'] = ProjectPage.objects.child_of(self) \
+            .live().count()
+        context['current_tag'] = tag
+
+        return TemplateResponse(
+          request,
+          self.get_template(request),
+          context
+        )
 
 
 class ProjectPage(Page):
@@ -53,26 +113,25 @@ class ProjectPage(Page):
         related_name='+'
     )
     project_date = models.DateField("Projektdatum")
-    lead = models.CharField(max_length=250)
+    lead = RichTextField(blank=True)
     tags = ClusterTaggableManager(through=ProjectPageTag, blank=True)
-    body = StreamField([
-        ('heading', blocks.CharBlock(classname='full title', label='Titel',
-                                     icon='title')),
-        ('paragraph', blocks.RichTextBlock(label='Absatz')),
-        ('image', ImageChooserBlock(label='Bild')),
-        ('gallery', blocks.ListBlock(ImageChooserBlock(label='Bild'),
-                                     label='Bildgalerie',
-                                     template='blocks/gallery.html',
-                                     icon='grip'))
-    ])
+    tags.rel.related_name = '+'
+    skill_tags = ClusterTaggableManager(through=SkillTag, blank=True)
+    skill_tags.rel.related_name = '+'
+    project_url = models.CharField(max_length=250, default='', blank=True)
+    column1 = RichTextField('Spalte 1 (Briefing)', blank=True)
+    column2 = RichTextField('Spalte 2 (Lösungsansatz)', blank=True)
 
     parent_page_types = [
         'projects.ProjectIndexPage',
     ]
 
+    subpage_types = []
+
     search_fields = Page.search_fields + [
         index.SearchField('lead'),
-        index.SearchField('body'),
+        index.SearchField('column1'),
+        index.SearchField('column2'),
     ]
 
     promote_panels = Page.promote_panels + [
@@ -83,7 +142,12 @@ class ProjectPage(Page):
         FieldPanel('project_date'),
         ImageChooserPanel('main_image'),
         FieldPanel('lead'),
-        StreamFieldPanel('body')
+        FieldPanel('project_url'),
+        FieldPanel('skill_tags'),
+        MultiFieldPanel([
+            FieldPanel('column1', classname='full'),
+            FieldPanel('column2', classname='full'),
+        ], 'Inhalt')
     ]
 
     def get_latest(limit=4):

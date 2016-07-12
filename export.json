@@ -1,0 +1,2199 @@
+[
+{
+  "model": "projects.projectpagetag",
+  "pk": 14,
+  "fields": {
+    "tag": 10,
+    "content_object": 11
+  }
+},
+{
+  "model": "projects.projectpagetag",
+  "pk": 18,
+  "fields": {
+    "tag": 10,
+    "content_object": 4
+  }
+},
+{
+  "model": "projects.projectpagetag",
+  "pk": 28,
+  "fields": {
+    "tag": 12,
+    "content_object": 14
+  }
+},
+{
+  "model": "projects.projectpagetag",
+  "pk": 46,
+  "fields": {
+    "tag": 14,
+    "content_object": 21
+  }
+},
+{
+  "model": "projects.projectpagetag",
+  "pk": 47,
+  "fields": {
+    "tag": 10,
+    "content_object": 7
+  }
+},
+{
+  "model": "projects.projectpagetag",
+  "pk": 50,
+  "fields": {
+    "tag": 8,
+    "content_object": 8
+  }
+},
+{
+  "model": "projects.projectpagetag",
+  "pk": 51,
+  "fields": {
+    "tag": 7,
+    "content_object": 8
+  }
+},
+{
+  "model": "projects.projectpagetag",
+  "pk": 52,
+  "fields": {
+    "tag": 8,
+    "content_object": 9
+  }
+},
+{
+  "model": "projects.projectpagetag",
+  "pk": 53,
+  "fields": {
+    "tag": 7,
+    "content_object": 9
+  }
+},
+{
+  "model": "projects.projectpagetag",
+  "pk": 54,
+  "fields": {
+    "tag": 10,
+    "content_object": 10
+  }
+},
+{
+  "model": "projects.projectpagetag",
+  "pk": 55,
+  "fields": {
+    "tag": 10,
+    "content_object": 12
+  }
+},
+{
+  "model": "projects.projectpagetag",
+  "pk": 56,
+  "fields": {
+    "tag": 6,
+    "content_object": 12
+  }
+},
+{
+  "model": "projects.projectpagetag",
+  "pk": 59,
+  "fields": {
+    "tag": 13,
+    "content_object": 15
+  }
+},
+{
+  "model": "projects.skilltag",
+  "pk": 13,
+  "fields": {
+    "tag": 24,
+    "content_object": 21
+  }
+},
+{
+  "model": "projects.skilltag",
+  "pk": 14,
+  "fields": {
+    "tag": 25,
+    "content_object": 21
+  }
+},
+{
+  "model": "projects.skilltag",
+  "pk": 15,
+  "fields": {
+    "tag": 21,
+    "content_object": 21
+  }
+},
+{
+  "model": "projects.skilltag",
+  "pk": 16,
+  "fields": {
+    "tag": 19,
+    "content_object": 7
+  }
+},
+{
+  "model": "projects.skilltag",
+  "pk": 17,
+  "fields": {
+    "tag": 21,
+    "content_object": 7
+  }
+},
+{
+  "model": "projects.skilltag",
+  "pk": 18,
+  "fields": {
+    "tag": 23,
+    "content_object": 7
+  }
+},
+{
+  "model": "projects.skilltag",
+  "pk": 22,
+  "fields": {
+    "tag": 27,
+    "content_object": 8
+  }
+},
+{
+  "model": "projects.skilltag",
+  "pk": 23,
+  "fields": {
+    "tag": 28,
+    "content_object": 8
+  }
+},
+{
+  "model": "projects.skilltag",
+  "pk": 24,
+  "fields": {
+    "tag": 29,
+    "content_object": 8
+  }
+},
+{
+  "model": "projects.skilltag",
+  "pk": 25,
+  "fields": {
+    "tag": 28,
+    "content_object": 9
+  }
+},
+{
+  "model": "projects.skilltag",
+  "pk": 26,
+  "fields": {
+    "tag": 17,
+    "content_object": 10
+  }
+},
+{
+  "model": "projects.skilltag",
+  "pk": 27,
+  "fields": {
+    "tag": 4,
+    "content_object": 10
+  }
+},
+{
+  "model": "projects.skilltag",
+  "pk": 28,
+  "fields": {
+    "tag": 30,
+    "content_object": 10
+  }
+},
+{
+  "model": "projects.skilltag",
+  "pk": 29,
+  "fields": {
+    "tag": 4,
+    "content_object": 12
+  }
+},
+{
+  "model": "projects.skilltag",
+  "pk": 36,
+  "fields": {
+    "tag": 32,
+    "content_object": 15
+  }
+},
+{
+  "model": "projects.skilltag",
+  "pk": 37,
+  "fields": {
+    "tag": 4,
+    "content_object": 15
+  }
+},
+{
+  "model": "projects.skilltag",
+  "pk": 38,
+  "fields": {
+    "tag": 31,
+    "content_object": 15
+  }
+},
+{
+  "model": "contact.formfield",
+  "pk": 1,
+  "fields": {
+    "sort_order": 0,
+    "label": "Deine E-Mail Adresse",
+    "field_type": "email",
+    "required": true,
+    "choices": "",
+    "default_value": "",
+    "help_text": "",
+    "page": 6
+  }
+},
+{
+  "model": "contact.formfield",
+  "pk": 2,
+  "fields": {
+    "sort_order": 1,
+    "label": "Deine Mitteilung",
+    "field_type": "multiline",
+    "required": true,
+    "choices": "",
+    "default_value": "",
+    "help_text": "",
+    "page": 6
+  }
+},
+{
+  "model": "contact.formfield",
+  "pk": 3,
+  "fields": {
+    "sort_order": 2,
+    "label": "URL zu einem tollen GIF",
+    "field_type": "url",
+    "required": false,
+    "choices": "",
+    "default_value": "",
+    "help_text": "Nein, Upload gibts nicht. Wirklich nicht.",
+    "page": 6
+  }
+},
+{
+  "model": "common.sociallink",
+  "pk": 1,
+  "fields": {
+    "url": "http://stackoverflow.com/users/221217/schaermu",
+    "icon": "stack-overflow"
+  }
+},
+{
+  "model": "common.sociallink",
+  "pk": 2,
+  "fields": {
+    "url": "https://www.linkedin.com/in/stefanschaermeli",
+    "icon": "linkedin"
+  }
+},
+{
+  "model": "common.sociallink",
+  "pk": 3,
+  "fields": {
+    "url": "https://github.com/schaermu",
+    "icon": "github"
+  }
+},
+{
+  "model": "wagtailimages.filter",
+  "pk": 1,
+  "fields": {
+    "spec": "max-165x165"
+  }
+},
+{
+  "model": "wagtailimages.filter",
+  "pk": 2,
+  "fields": {
+    "spec": "width-400"
+  }
+},
+{
+  "model": "wagtailimages.filter",
+  "pk": 3,
+  "fields": {
+    "spec": "max-800x600"
+  }
+},
+{
+  "model": "wagtailimages.filter",
+  "pk": 4,
+  "fields": {
+    "spec": "width-500"
+  }
+},
+{
+  "model": "wagtailimages.filter",
+  "pk": 5,
+  "fields": {
+    "spec": "width-64"
+  }
+},
+{
+  "model": "wagtailimages.filter",
+  "pk": 6,
+  "fields": {
+    "spec": "width-64|media-object"
+  }
+},
+{
+  "model": "wagtailimages.filter",
+  "pk": 7,
+  "fields": {
+    "spec": "fill-64x64"
+  }
+},
+{
+  "model": "wagtailimages.filter",
+  "pk": 8,
+  "fields": {
+    "spec": "min-64x64"
+  }
+},
+{
+  "model": "wagtailimages.filter",
+  "pk": 9,
+  "fields": {
+    "spec": "max-64x64"
+  }
+},
+{
+  "model": "wagtailimages.filter",
+  "pk": 10,
+  "fields": {
+    "spec": "original"
+  }
+},
+{
+  "model": "wagtailimages.filter",
+  "pk": 11,
+  "fields": {
+    "spec": "width-180"
+  }
+},
+{
+  "model": "wagtailimages.filter",
+  "pk": 12,
+  "fields": {
+    "spec": "width-300"
+  }
+},
+{
+  "model": "wagtailimages.filter",
+  "pk": 13,
+  "fields": {
+    "spec": "fill-180x180"
+  }
+},
+{
+  "model": "wagtailimages.filter",
+  "pk": 14,
+  "fields": {
+    "spec": "width-980"
+  }
+},
+{
+  "model": "wagtailimages.filter",
+  "pk": 15,
+  "fields": {
+    "spec": "fill-300x300"
+  }
+},
+{
+  "model": "wagtailimages.rendition",
+  "pk": 30,
+  "fields": {
+    "filter": 1,
+    "file": "images/portrait-square.max-165x165.jpg",
+    "width": 165,
+    "height": 164,
+    "focal_point_key": "",
+    "image": 5
+  }
+},
+{
+  "model": "wagtailimages.rendition",
+  "pk": 31,
+  "fields": {
+    "filter": 11,
+    "file": "images/portrait-square.width-180.jpg",
+    "width": 180,
+    "height": 179,
+    "focal_point_key": "",
+    "image": 5
+  }
+},
+{
+  "model": "wagtailimages.rendition",
+  "pk": 35,
+  "fields": {
+    "filter": 1,
+    "file": "images/h_sbb_swisspass.max-165x165.jpg",
+    "width": 165,
+    "height": 103,
+    "focal_point_key": "",
+    "image": 10
+  }
+},
+{
+  "model": "wagtailimages.rendition",
+  "pk": 36,
+  "fields": {
+    "filter": 1,
+    "file": "images/s_sbb_gleis7redesign_02.max-165x165.jpg",
+    "width": 165,
+    "height": 92,
+    "focal_point_key": "",
+    "image": 9
+  }
+},
+{
+  "model": "wagtailimages.rendition",
+  "pk": 37,
+  "fields": {
+    "filter": 1,
+    "file": "images/h_sbb_gleis7entertrainmentapp.max-165x165.jpg",
+    "width": 165,
+    "height": 103,
+    "focal_point_key": "",
+    "image": 7
+  }
+},
+{
+  "model": "wagtailimages.rendition",
+  "pk": 45,
+  "fields": {
+    "filter": 10,
+    "file": "images/h_sbb_swisspass.original.jpg",
+    "width": 2500,
+    "height": 1562,
+    "focal_point_key": "",
+    "image": 10
+  }
+},
+{
+  "model": "wagtailimages.rendition",
+  "pk": 46,
+  "fields": {
+    "filter": 3,
+    "file": "images/h_sbb_swisspass.max-800x600.jpg",
+    "width": 800,
+    "height": 499,
+    "focal_point_key": "",
+    "image": 10
+  }
+},
+{
+  "model": "wagtailimages.rendition",
+  "pk": 47,
+  "fields": {
+    "filter": 10,
+    "file": "images/s_sbb_gleis7redesign_02.original.jpg",
+    "width": 2500,
+    "height": 1406,
+    "focal_point_key": "",
+    "image": 9
+  }
+},
+{
+  "model": "wagtailimages.rendition",
+  "pk": 48,
+  "fields": {
+    "filter": 3,
+    "file": "images/s_sbb_gleis7redesign_02.max-800x600.jpg",
+    "width": 800,
+    "height": 449,
+    "focal_point_key": "",
+    "image": 9
+  }
+},
+{
+  "model": "wagtailimages.rendition",
+  "pk": 49,
+  "fields": {
+    "filter": 10,
+    "file": "images/h_sbb_gleis7entertrainmentapp.original.jpg",
+    "width": 2500,
+    "height": 1563,
+    "focal_point_key": "",
+    "image": 7
+  }
+},
+{
+  "model": "wagtailimages.rendition",
+  "pk": 50,
+  "fields": {
+    "filter": 3,
+    "file": "images/h_sbb_gleis7entertrainmentapp.max-800x600.jpg",
+    "width": 800,
+    "height": 500,
+    "focal_point_key": "",
+    "image": 7
+  }
+},
+{
+  "model": "wagtailimages.rendition",
+  "pk": 54,
+  "fields": {
+    "filter": 13,
+    "file": "images/h_sbb_swisspass.bd0fad33.fill-180x180.jpg",
+    "width": 180,
+    "height": 180,
+    "focal_point_key": "bd0fad33",
+    "image": 10
+  }
+},
+{
+  "model": "wagtailimages.rendition",
+  "pk": 55,
+  "fields": {
+    "filter": 13,
+    "file": "images/h_sbb_gleis7entertrainmentapp.720d9067.fill-180x180.jpg",
+    "width": 180,
+    "height": 180,
+    "focal_point_key": "720d9067",
+    "image": 7
+  }
+},
+{
+  "model": "wagtailimages.rendition",
+  "pk": 56,
+  "fields": {
+    "filter": 13,
+    "file": "images/s_sbb_gleis7redesign_02.965a70ae.fill-180x180.jpg",
+    "width": 180,
+    "height": 180,
+    "focal_point_key": "965a70ae",
+    "image": 9
+  }
+},
+{
+  "model": "wagtailimages.rendition",
+  "pk": 63,
+  "fields": {
+    "filter": 1,
+    "file": "images/h_maxomedia-ch.max-165x165.png",
+    "width": 165,
+    "height": 110,
+    "focal_point_key": "",
+    "image": 16
+  }
+},
+{
+  "model": "wagtailimages.rendition",
+  "pk": 64,
+  "fields": {
+    "filter": 1,
+    "file": "images/h_novo-bc-ch.max-165x165.png",
+    "width": 165,
+    "height": 109,
+    "focal_point_key": "",
+    "image": 15
+  }
+},
+{
+  "model": "wagtailimages.rendition",
+  "pk": 65,
+  "fields": {
+    "filter": 1,
+    "file": "images/h_voev-fragebogen.max-165x165.png",
+    "width": 165,
+    "height": 110,
+    "focal_point_key": "",
+    "image": 14
+  }
+},
+{
+  "model": "wagtailimages.rendition",
+  "pk": 66,
+  "fields": {
+    "filter": 10,
+    "file": "images/h_maxomedia-ch.original.png",
+    "width": 1920,
+    "height": 1280,
+    "focal_point_key": "",
+    "image": 16
+  }
+},
+{
+  "model": "wagtailimages.rendition",
+  "pk": 67,
+  "fields": {
+    "filter": 3,
+    "file": "images/h_maxomedia-ch.max-800x600.png",
+    "width": 800,
+    "height": 533,
+    "focal_point_key": "",
+    "image": 16
+  }
+},
+{
+  "model": "wagtailimages.rendition",
+  "pk": 68,
+  "fields": {
+    "filter": 10,
+    "file": "images/h_novo-bc-ch.original.png",
+    "width": 1920,
+    "height": 1275,
+    "focal_point_key": "",
+    "image": 15
+  }
+},
+{
+  "model": "wagtailimages.rendition",
+  "pk": 69,
+  "fields": {
+    "filter": 3,
+    "file": "images/h_novo-bc-ch.max-800x600.png",
+    "width": 800,
+    "height": 531,
+    "focal_point_key": "",
+    "image": 15
+  }
+},
+{
+  "model": "wagtailimages.rendition",
+  "pk": 70,
+  "fields": {
+    "filter": 10,
+    "file": "images/h_voev-fragebogen.original.png",
+    "width": 1920,
+    "height": 1280,
+    "focal_point_key": "",
+    "image": 14
+  }
+},
+{
+  "model": "wagtailimages.rendition",
+  "pk": 71,
+  "fields": {
+    "filter": 3,
+    "file": "images/h_voev-fragebogen.max-800x600.png",
+    "width": 800,
+    "height": 533,
+    "focal_point_key": "",
+    "image": 14
+  }
+},
+{
+  "model": "wagtailimages.rendition",
+  "pk": 72,
+  "fields": {
+    "filter": 13,
+    "file": "images/h_voev-fragebogen.0d9a2d52.fill-180x180.png",
+    "width": 180,
+    "height": 180,
+    "focal_point_key": "0d9a2d52",
+    "image": 14
+  }
+},
+{
+  "model": "wagtailimages.rendition",
+  "pk": 73,
+  "fields": {
+    "filter": 13,
+    "file": "images/h_maxomedia-ch.a93ec811.fill-180x180.png",
+    "width": 180,
+    "height": 180,
+    "focal_point_key": "a93ec811",
+    "image": 16
+  }
+},
+{
+  "model": "wagtailimages.rendition",
+  "pk": 74,
+  "fields": {
+    "filter": 13,
+    "file": "images/h_novo-bc-ch.d1390057.fill-180x180.png",
+    "width": 180,
+    "height": 180,
+    "focal_point_key": "d1390057",
+    "image": 15
+  }
+},
+{
+  "model": "wagtailimages.rendition",
+  "pk": 76,
+  "fields": {
+    "filter": 14,
+    "file": "images/h_voev-fragebogen.width-980.png",
+    "width": 980,
+    "height": 653,
+    "focal_point_key": "",
+    "image": 14
+  }
+},
+{
+  "model": "wagtailimages.rendition",
+  "pk": 77,
+  "fields": {
+    "filter": 14,
+    "file": "images/h_sbb_swisspass.width-980.jpg",
+    "width": 980,
+    "height": 612,
+    "focal_point_key": "",
+    "image": 10
+  }
+},
+{
+  "model": "wagtailimages.rendition",
+  "pk": 78,
+  "fields": {
+    "filter": 14,
+    "file": "images/h_maxomedia-ch.width-980.png",
+    "width": 980,
+    "height": 653,
+    "focal_point_key": "",
+    "image": 16
+  }
+},
+{
+  "model": "wagtailimages.rendition",
+  "pk": 81,
+  "fields": {
+    "filter": 14,
+    "file": "images/h_sbb_gleis7entertrainmentapp.width-980.jpg",
+    "width": 980,
+    "height": 612,
+    "focal_point_key": "",
+    "image": 7
+  }
+},
+{
+  "model": "wagtailimages.rendition",
+  "pk": 83,
+  "fields": {
+    "filter": 12,
+    "file": "images/h_voev-fragebogen.width-300.png",
+    "width": 300,
+    "height": 200,
+    "focal_point_key": "",
+    "image": 14
+  }
+},
+{
+  "model": "wagtailimages.rendition",
+  "pk": 84,
+  "fields": {
+    "filter": 12,
+    "file": "images/h_maxomedia-ch.width-300.png",
+    "width": 300,
+    "height": 200,
+    "focal_point_key": "",
+    "image": 16
+  }
+},
+{
+  "model": "wagtailimages.rendition",
+  "pk": 86,
+  "fields": {
+    "filter": 12,
+    "file": "images/h_sbb_gleis7entertrainmentapp.width-300.jpg",
+    "width": 300,
+    "height": 187,
+    "focal_point_key": "",
+    "image": 7
+  }
+},
+{
+  "model": "wagtailimages.rendition",
+  "pk": 87,
+  "fields": {
+    "filter": 15,
+    "file": "images/h_voev-fragebogen.0d9a2d52.fill-300x300.png",
+    "width": 300,
+    "height": 300,
+    "focal_point_key": "0d9a2d52",
+    "image": 14
+  }
+},
+{
+  "model": "wagtailimages.rendition",
+  "pk": 88,
+  "fields": {
+    "filter": 15,
+    "file": "images/h_maxomedia-ch.a93ec811.fill-300x300.png",
+    "width": 300,
+    "height": 300,
+    "focal_point_key": "a93ec811",
+    "image": 16
+  }
+},
+{
+  "model": "wagtailimages.rendition",
+  "pk": 90,
+  "fields": {
+    "filter": 15,
+    "file": "images/h_sbb_gleis7entertrainmentapp.720d9067.fill-300x300.jpg",
+    "width": 300,
+    "height": 300,
+    "focal_point_key": "720d9067",
+    "image": 7
+  }
+},
+{
+  "model": "wagtailimages.rendition",
+  "pk": 95,
+  "fields": {
+    "filter": 14,
+    "file": "images/h_novo-bc-ch.width-980.png",
+    "width": 980,
+    "height": 650,
+    "focal_point_key": "",
+    "image": 15
+  }
+},
+{
+  "model": "wagtailimages.rendition",
+  "pk": 96,
+  "fields": {
+    "filter": 14,
+    "file": "images/s_sbb_gleis7redesign_02.width-980.jpg",
+    "width": 980,
+    "height": 551,
+    "focal_point_key": "",
+    "image": 9
+  }
+},
+{
+  "model": "wagtailimages.rendition",
+  "pk": 99,
+  "fields": {
+    "filter": 1,
+    "file": "images/h_fluent-ffmpeg.max-165x165.jpg",
+    "width": 165,
+    "height": 110,
+    "focal_point_key": "",
+    "image": 17
+  }
+},
+{
+  "model": "wagtailimages.rendition",
+  "pk": 100,
+  "fields": {
+    "filter": 10,
+    "file": "images/h_fluent-ffmpeg.original.jpg",
+    "width": 1920,
+    "height": 1280,
+    "focal_point_key": "",
+    "image": 17
+  }
+},
+{
+  "model": "wagtailimages.rendition",
+  "pk": 101,
+  "fields": {
+    "filter": 3,
+    "file": "images/h_fluent-ffmpeg.max-800x600.jpg",
+    "width": 800,
+    "height": 533,
+    "focal_point_key": "",
+    "image": 17
+  }
+},
+{
+  "model": "wagtailimages.rendition",
+  "pk": 102,
+  "fields": {
+    "filter": 13,
+    "file": "images/h_fluent-ffmpeg.2e16d0ba.fill-180x180.jpg",
+    "width": 180,
+    "height": 180,
+    "focal_point_key": "2e16d0ba",
+    "image": 17
+  }
+},
+{
+  "model": "wagtailimages.rendition",
+  "pk": 103,
+  "fields": {
+    "filter": 14,
+    "file": "images/h_fluent-ffmpeg.width-980.jpg",
+    "width": 980,
+    "height": 653,
+    "focal_point_key": "",
+    "image": 17
+  }
+},
+{
+  "model": "wagtailcore.site",
+  "pk": 2,
+  "fields": {
+    "hostname": "localhost",
+    "port": 80,
+    "site_name": "schaermu.ch",
+    "root_page": 3,
+    "is_default_site": true
+  }
+},
+{
+  "model": "wagtailcore.pageviewrestriction",
+  "pk": 1,
+  "fields": {
+    "page": 3,
+    "password": "pulppulp"
+  }
+},
+{
+  "model": "wagtailcore.collection",
+  "pk": 1,
+  "fields": {
+    "path": "0001",
+    "depth": 1,
+    "numchild": 0,
+    "name": "Root"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 1,
+  "fields": {
+    "name": "c#",
+    "slug": "c"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 2,
+  "fields": {
+    "name": "asp.net",
+    "slug": "aspnet"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 3,
+  "fields": {
+    "name": "soa",
+    "slug": "soa"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 4,
+  "fields": {
+    "name": "webapi",
+    "slug": "webapi"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 5,
+  "fields": {
+    "name": "platform",
+    "slug": "platform"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 6,
+  "fields": {
+    "name": "api",
+    "slug": "api"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 7,
+  "fields": {
+    "name": "cms",
+    "slug": "cms"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 8,
+  "fields": {
+    "name": "corporate",
+    "slug": "corporate"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 9,
+  "fields": {
+    "name": "campaign",
+    "slug": "campaign"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 10,
+  "fields": {
+    "name": "plattform",
+    "slug": "plattform"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 11,
+  "fields": {
+    "name": "produkt",
+    "slug": "produkt"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 12,
+  "fields": {
+    "name": "kampagne",
+    "slug": "kampagne"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 13,
+  "fields": {
+    "name": "backend",
+    "slug": "backend"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 14,
+  "fields": {
+    "name": "open-source",
+    "slug": "open-source"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 15,
+  "fields": {
+    "name": "MSSQL",
+    "slug": "mssql"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 16,
+  "fields": {
+    "name": "JavaScript",
+    "slug": "javascript"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 17,
+  "fields": {
+    "name": "ASP.NET-MVC",
+    "slug": "aspnet-mvc"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 19,
+  "fields": {
+    "name": "aspnet-mvc",
+    "slug": "aspnet-mvc_1"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 21,
+  "fields": {
+    "name": "javascript",
+    "slug": "javascript_1"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 23,
+  "fields": {
+    "name": "mssql",
+    "slug": "mssql_1"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 24,
+  "fields": {
+    "name": "ffmpeg",
+    "slug": "ffmpeg"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 25,
+  "fields": {
+    "name": "node-js",
+    "slug": "node-js"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 27,
+  "fields": {
+    "name": "asp.net-mvc",
+    "slug": "aspnet-mvc_2"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 28,
+  "fields": {
+    "name": "kentico",
+    "slug": "kentico"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 29,
+  "fields": {
+    "name": "react",
+    "slug": "react"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 30,
+  "fields": {
+    "name": "angular-js",
+    "slug": "angular-js"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 31,
+  "fields": {
+    "name": "windows-service",
+    "slug": "windows-service"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 32,
+  "fields": {
+    "name": "msmq",
+    "slug": "msmq"
+  }
+},
+{
+  "model": "auth.group",
+  "pk": 1,
+  "fields": {
+    "name": "Moderators",
+    "permissions": [
+      [
+        "access_admin",
+        "wagtailadmin",
+        "admin"
+      ],
+      [
+        "add_document",
+        "wagtaildocs",
+        "document"
+      ],
+      [
+        "change_document",
+        "wagtaildocs",
+        "document"
+      ],
+      [
+        "delete_document",
+        "wagtaildocs",
+        "document"
+      ],
+      [
+        "add_image",
+        "wagtailimages",
+        "image"
+      ],
+      [
+        "change_image",
+        "wagtailimages",
+        "image"
+      ],
+      [
+        "delete_image",
+        "wagtailimages",
+        "image"
+      ]
+    ]
+  }
+},
+{
+  "model": "auth.group",
+  "pk": 2,
+  "fields": {
+    "name": "Editors",
+    "permissions": [
+      [
+        "access_admin",
+        "wagtailadmin",
+        "admin"
+      ],
+      [
+        "add_document",
+        "wagtaildocs",
+        "document"
+      ],
+      [
+        "change_document",
+        "wagtaildocs",
+        "document"
+      ],
+      [
+        "delete_document",
+        "wagtaildocs",
+        "document"
+      ],
+      [
+        "add_image",
+        "wagtailimages",
+        "image"
+      ],
+      [
+        "change_image",
+        "wagtailimages",
+        "image"
+      ],
+      [
+        "delete_image",
+        "wagtailimages",
+        "image"
+      ]
+    ]
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$24000$c3ERDJbvytv6$JtiOxhnQjDJRu4Ac5cXLXqdmEHB85S2jMwtsqTpZzlc=",
+    "last_login": "2016-07-12T14:33:41.795Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "schaermu@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2016-06-12T11:43:00.304Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "wagtailcore.groupcollectionpermission",
+  "pk": 1,
+  "fields": {
+    "group": [
+      "Moderators"
+    ],
+    "collection": 1,
+    "permission": [
+      "add_document",
+      "wagtaildocs",
+      "document"
+    ]
+  }
+},
+{
+  "model": "wagtailcore.groupcollectionpermission",
+  "pk": 2,
+  "fields": {
+    "group": [
+      "Editors"
+    ],
+    "collection": 1,
+    "permission": [
+      "add_document",
+      "wagtaildocs",
+      "document"
+    ]
+  }
+},
+{
+  "model": "wagtailcore.groupcollectionpermission",
+  "pk": 3,
+  "fields": {
+    "group": [
+      "Moderators"
+    ],
+    "collection": 1,
+    "permission": [
+      "change_document",
+      "wagtaildocs",
+      "document"
+    ]
+  }
+},
+{
+  "model": "wagtailcore.groupcollectionpermission",
+  "pk": 4,
+  "fields": {
+    "group": [
+      "Editors"
+    ],
+    "collection": 1,
+    "permission": [
+      "change_document",
+      "wagtaildocs",
+      "document"
+    ]
+  }
+},
+{
+  "model": "wagtailcore.groupcollectionpermission",
+  "pk": 5,
+  "fields": {
+    "group": [
+      "Moderators"
+    ],
+    "collection": 1,
+    "permission": [
+      "add_image",
+      "wagtailimages",
+      "image"
+    ]
+  }
+},
+{
+  "model": "wagtailcore.groupcollectionpermission",
+  "pk": 6,
+  "fields": {
+    "group": [
+      "Editors"
+    ],
+    "collection": 1,
+    "permission": [
+      "add_image",
+      "wagtailimages",
+      "image"
+    ]
+  }
+},
+{
+  "model": "wagtailcore.groupcollectionpermission",
+  "pk": 7,
+  "fields": {
+    "group": [
+      "Moderators"
+    ],
+    "collection": 1,
+    "permission": [
+      "change_image",
+      "wagtailimages",
+      "image"
+    ]
+  }
+},
+{
+  "model": "wagtailcore.groupcollectionpermission",
+  "pk": 8,
+  "fields": {
+    "group": [
+      "Editors"
+    ],
+    "collection": 1,
+    "permission": [
+      "change_image",
+      "wagtailimages",
+      "image"
+    ]
+  }
+},
+{
+  "model": "wagtailcore.grouppagepermission",
+  "pk": 1,
+  "fields": {
+    "group": [
+      "Moderators"
+    ],
+    "page": 1,
+    "permission_type": "add"
+  }
+},
+{
+  "model": "wagtailcore.grouppagepermission",
+  "pk": 2,
+  "fields": {
+    "group": [
+      "Moderators"
+    ],
+    "page": 1,
+    "permission_type": "edit"
+  }
+},
+{
+  "model": "wagtailcore.grouppagepermission",
+  "pk": 3,
+  "fields": {
+    "group": [
+      "Moderators"
+    ],
+    "page": 1,
+    "permission_type": "publish"
+  }
+},
+{
+  "model": "wagtailcore.grouppagepermission",
+  "pk": 4,
+  "fields": {
+    "group": [
+      "Editors"
+    ],
+    "page": 1,
+    "permission_type": "add"
+  }
+},
+{
+  "model": "wagtailcore.grouppagepermission",
+  "pk": 5,
+  "fields": {
+    "group": [
+      "Editors"
+    ],
+    "page": 1,
+    "permission_type": "edit"
+  }
+},
+{
+  "model": "wagtailcore.grouppagepermission",
+  "pk": 6,
+  "fields": {
+    "group": [
+      "Moderators"
+    ],
+    "page": 1,
+    "permission_type": "lock"
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 1,
+  "fields": {
+    "path": "0001",
+    "depth": 1,
+    "numchild": 1,
+    "title": "Root",
+    "slug": "root",
+    "content_type": [
+      "wagtailcore",
+      "page"
+    ],
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/",
+    "owner": null,
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": null,
+    "latest_revision_created_at": null
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 3,
+  "fields": {
+    "path": "00010001",
+    "depth": 2,
+    "numchild": 2,
+    "title": "Homepage",
+    "slug": "home",
+    "content_type": [
+      "home",
+      "homepage"
+    ],
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/home/",
+    "owner": null,
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": "2016-06-13T11:07:56.441Z",
+    "latest_revision_created_at": "2016-07-12T14:17:37.388Z"
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 4,
+  "fields": {
+    "path": "0001000100020001",
+    "depth": 4,
+    "numchild": 0,
+    "title": "RAG API",
+    "slug": "rag-interface-map-api",
+    "content_type": [
+      "projects",
+      "projectpage"
+    ],
+    "live": false,
+    "has_unpublished_changes": true,
+    "url_path": "/home/projects/rag-interface-map-api/",
+    "owner": [
+      "admin"
+    ],
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": "2016-06-13T14:47:11.771Z",
+    "latest_revision_created_at": "2016-06-20T19:06:55.718Z"
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 5,
+  "fields": {
+    "path": "000100010002",
+    "depth": 3,
+    "numchild": 10,
+    "title": "Projekte",
+    "slug": "projects",
+    "content_type": [
+      "projects",
+      "projectindexpage"
+    ],
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/home/projects/",
+    "owner": [
+      "admin"
+    ],
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": "2016-06-14T10:10:18.855Z",
+    "latest_revision_created_at": "2016-06-16T22:18:43.131Z"
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 6,
+  "fields": {
+    "path": "000100010003",
+    "depth": 3,
+    "numchild": 0,
+    "title": "Kontaktier mich!",
+    "slug": "contact",
+    "content_type": [
+      "contact",
+      "contactformpage"
+    ],
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/home/contact/",
+    "owner": [
+      "admin"
+    ],
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": "2016-06-16T21:46:21.197Z",
+    "latest_revision_created_at": "2016-06-16T22:49:51.117Z"
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 7,
+  "fields": {
+    "path": "0001000100020002",
+    "depth": 4,
+    "numchild": 0,
+    "title": "VOEV Online-Befragung",
+    "slug": "voev-fragebogen-2016",
+    "content_type": [
+      "projects",
+      "projectpage"
+    ],
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/home/projects/voev-fragebogen-2016/",
+    "owner": [
+      "admin"
+    ],
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": "2016-06-17T08:21:42.924Z",
+    "latest_revision_created_at": "2016-07-11T19:32:54.103Z"
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 8,
+  "fields": {
+    "path": "0001000100020003",
+    "depth": 4,
+    "numchild": 0,
+    "title": "Maxomedia",
+    "slug": "maxomedia",
+    "content_type": [
+      "projects",
+      "projectpage"
+    ],
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/home/projects/maxomedia/",
+    "owner": [
+      "admin"
+    ],
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": "2016-06-17T08:46:36.010Z",
+    "latest_revision_created_at": "2016-07-12T14:45:12.117Z"
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 9,
+  "fields": {
+    "path": "0001000100020004",
+    "depth": 4,
+    "numchild": 0,
+    "title": "NOVO",
+    "slug": "novo",
+    "content_type": [
+      "projects",
+      "projectpage"
+    ],
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/home/projects/novo/",
+    "owner": [
+      "admin"
+    ],
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": "2016-06-17T08:47:38.504Z",
+    "latest_revision_created_at": "2016-07-12T14:56:12.741Z"
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 10,
+  "fields": {
+    "path": "0001000100020005",
+    "depth": 4,
+    "numchild": 0,
+    "title": "Gleis7.ch",
+    "slug": "gleis7",
+    "content_type": [
+      "projects",
+      "projectpage"
+    ],
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/home/projects/gleis7/",
+    "owner": [
+      "admin"
+    ],
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": "2016-06-17T08:50:02.790Z",
+    "latest_revision_created_at": "2016-07-12T15:07:53.891Z"
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 11,
+  "fields": {
+    "path": "0001000100020006",
+    "depth": 4,
+    "numchild": 0,
+    "title": "MobilBonus",
+    "slug": "mobilbonus",
+    "content_type": [
+      "projects",
+      "projectpage"
+    ],
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/home/projects/mobilbonus/",
+    "owner": [
+      "admin"
+    ],
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": "2016-06-17T09:20:51.967Z",
+    "latest_revision_created_at": "2016-06-20T18:25:36.537Z"
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 12,
+  "fields": {
+    "path": "0001000100020007",
+    "depth": 4,
+    "numchild": 0,
+    "title": "MobilBonus & Gleis7 API",
+    "slug": "mobilbonus-gleis7-api",
+    "content_type": [
+      "projects",
+      "projectpage"
+    ],
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/home/projects/mobilbonus-gleis7-api/",
+    "owner": [
+      "admin"
+    ],
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": "2016-06-17T09:22:54.440Z",
+    "latest_revision_created_at": "2016-07-12T15:29:21.601Z"
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 14,
+  "fields": {
+    "path": "0001000100020008",
+    "depth": 4,
+    "numchild": 0,
+    "title": "SBB E-Shift",
+    "slug": "sbb-e-shift",
+    "content_type": [
+      "projects",
+      "projectpage"
+    ],
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/home/projects/sbb-e-shift/",
+    "owner": [
+      "admin"
+    ],
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": "2016-06-17T11:11:26.400Z",
+    "latest_revision_created_at": "2016-06-21T11:25:34.461Z"
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 15,
+  "fields": {
+    "path": "0001000100020009",
+    "depth": 4,
+    "numchild": 0,
+    "title": "SwissPass",
+    "slug": "swisspass-basisdialog",
+    "content_type": [
+      "projects",
+      "projectpage"
+    ],
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/home/projects/swisspass-basisdialog/",
+    "owner": [
+      "admin"
+    ],
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": "2016-06-21T07:34:14.394Z",
+    "latest_revision_created_at": "2016-07-12T16:02:17.588Z"
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 21,
+  "fields": {
+    "path": "000100010002000F",
+    "depth": 4,
+    "numchild": 0,
+    "title": "fluent-ffmpeg",
+    "slug": "fluent-ffmpeg",
+    "content_type": [
+      "projects",
+      "projectpage"
+    ],
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/home/projects/fluent-ffmpeg/",
+    "owner": [
+      "admin"
+    ],
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": "2016-06-21T07:47:21.540Z",
+    "latest_revision_created_at": "2016-07-11T19:11:41.006Z"
+  }
+},
+{
+  "model": "wagtailimages.image",
+  "pk": 5,
+  "fields": {
+    "collection": 1,
+    "title": "portrait-square",
+    "file": "original_images/portrait-square.jpg",
+    "width": 960,
+    "height": 959,
+    "created_at": "2016-06-16T08:30:36.513Z",
+    "uploaded_by_user": [
+      "admin"
+    ],
+    "focal_point_x": null,
+    "focal_point_y": null,
+    "focal_point_width": null,
+    "focal_point_height": null,
+    "file_size": 196398
+  }
+},
+{
+  "model": "wagtailimages.image",
+  "pk": 7,
+  "fields": {
+    "collection": 1,
+    "title": "h_sbb_gleis7entertrainmentapp.jpg",
+    "file": "original_images/h_sbb_gleis7entertrainmentapp.jpg",
+    "width": 2500,
+    "height": 1563,
+    "created_at": "2016-06-21T11:22:00.554Z",
+    "uploaded_by_user": [
+      "admin"
+    ],
+    "focal_point_x": 1269,
+    "focal_point_y": 669,
+    "focal_point_width": 1350,
+    "focal_point_height": 1198,
+    "file_size": 824128
+  }
+},
+{
+  "model": "wagtailimages.image",
+  "pk": 9,
+  "fields": {
+    "collection": 1,
+    "title": "s_sbb_gleis7redesign_02.jpg",
+    "file": "original_images/s_sbb_gleis7redesign_02.jpg",
+    "width": 2500,
+    "height": 1406,
+    "created_at": "2016-06-21T11:22:26.115Z",
+    "uploaded_by_user": [
+      "admin"
+    ],
+    "focal_point_x": 1252,
+    "focal_point_y": 727,
+    "focal_point_width": 1917,
+    "focal_point_height": 1302,
+    "file_size": 572010
+  }
+},
+{
+  "model": "wagtailimages.image",
+  "pk": 10,
+  "fields": {
+    "collection": 1,
+    "title": "h_sbb_swisspass.jpg",
+    "file": "original_images/h_sbb_swisspass.jpg",
+    "width": 2500,
+    "height": 1562,
+    "created_at": "2016-06-21T11:22:44.011Z",
+    "uploaded_by_user": [
+      "admin"
+    ],
+    "focal_point_x": 1549,
+    "focal_point_y": 639,
+    "focal_point_width": 1443,
+    "focal_point_height": 1234,
+    "file_size": 2092271
+  }
+},
+{
+  "model": "wagtailimages.image",
+  "pk": 14,
+  "fields": {
+    "collection": 1,
+    "title": "h_voev-fragebogen.png",
+    "file": "original_images/h_voev-fragebogen.png",
+    "width": 1920,
+    "height": 1280,
+    "created_at": "2016-06-21T12:02:31.596Z",
+    "uploaded_by_user": [
+      "admin"
+    ],
+    "focal_point_x": 1246,
+    "focal_point_y": 573,
+    "focal_point_width": 1346,
+    "focal_point_height": 1062,
+    "file_size": 3306272
+  }
+},
+{
+  "model": "wagtailimages.image",
+  "pk": 15,
+  "fields": {
+    "collection": 1,
+    "title": "h_novo-bc-ch.png",
+    "file": "original_images/h_novo-bc-ch.png",
+    "width": 1920,
+    "height": 1275,
+    "created_at": "2016-06-21T12:02:38.313Z",
+    "uploaded_by_user": [
+      "admin"
+    ],
+    "focal_point_x": 740,
+    "focal_point_y": 572,
+    "focal_point_width": 1363,
+    "focal_point_height": 1095,
+    "file_size": 2908225
+  }
+},
+{
+  "model": "wagtailimages.image",
+  "pk": 16,
+  "fields": {
+    "collection": 1,
+    "title": "h_maxomedia-ch.png",
+    "file": "original_images/h_maxomedia-ch.png",
+    "width": 1920,
+    "height": 1280,
+    "created_at": "2016-06-21T12:02:43.588Z",
+    "uploaded_by_user": [
+      "admin"
+    ],
+    "focal_point_x": 828,
+    "focal_point_y": 631,
+    "focal_point_width": 1171,
+    "focal_point_height": 1263,
+    "file_size": 2788970
+  }
+},
+{
+  "model": "wagtailimages.image",
+  "pk": 17,
+  "fields": {
+    "collection": 1,
+    "title": "h_fluent-ffmpeg.jpg",
+    "file": "original_images/h_fluent-ffmpeg.jpg",
+    "width": 1920,
+    "height": 1280,
+    "created_at": "2016-06-21T12:51:11.538Z",
+    "uploaded_by_user": [
+      "admin"
+    ],
+    "focal_point_x": null,
+    "focal_point_y": null,
+    "focal_point_width": null,
+    "focal_point_height": null,
+    "file_size": 113842
+  }
+},
+{
+  "model": "contact.contactformpage",
+  "pk": 6,
+  "fields": {
+    "to_address": "me@schaermu.ch",
+    "from_address": "noreply@schaermu.ch",
+    "subject": "[schaermu.ch] Kontakt-Formular",
+    "intro": "Du hast ne coole Idee f\u00fcr ein Open-Source Projekt? Du findest ich sollte bei deinem Projekt mitmachen? Du willst mir ein lustiges GIF schicken? Oder du findest mich einfach nur nett? Schick mir ne E-Mail.",
+    "thank_you_head": "Merci viumau!",
+    "thank_you_text": "Danke f\u00fcr deine Mitteilung, ich melde mich bei dir sobald meine Mails das n\u00e4chste mal auf interessanten Spam kontrolliere."
+  }
+},
+{
+  "model": "projects.projectpage",
+  "pk": 4,
+  "fields": {
+    "main_image": null,
+    "project_date": "2016-06-01",
+    "lead": "\u00e4be ja",
+    "project_url": "",
+    "column1": "",
+    "column2": ""
+  }
+},
+{
+  "model": "projects.projectpage",
+  "pk": 7,
+  "fields": {
+    "main_image": 14,
+    "project_date": "2016-05-01",
+    "lead": "<p>Der Verein \u00f6ffentlicher Verkehr befragt zwecks Strecken- und Fahrplanoptimierung jedes Jahr eine zuf\u00e4llige Selektion aus GA-Inhabern zu Ihrem Fahrverhalten. Im 21. Jahrhundert muss eine solche Befragung nat\u00fcrlich auch online und vor allem mobile problemlos durchf\u00fchrbar sein.</p>",
+    "project_url": "https://fragebogen.voev.ch/",
+    "column1": "<p>Bereits seit 2008 befragt der Verein \u00f6ffentlicher Verkehr verschiedene Abonnement-Inhaber zu ihrem jeweiligen Fahrverhalten. Diese Befragungsplattform wurde bereits durch Maxomedia implementiert und betrieben, jedoch war es nach 8 Jahren h\u00f6chste Zeit f\u00fcr eine Abl\u00f6sung. Insbesondere der Mobile-Tauglichkeit sowie dem Administrations-Interface sollten bei der Neuumsetzung besondere Aufmerksamkeit geschenkt werden.</p>",
+    "column2": "<p>Da wir im Jahr 2014 bereits eine Befragung f\u00fcr Rekruten mit Marschbefehl implementiert hatten wurde entschieden, das (bereits abgenommene und durch User-Tests verifizierte) existierende Frontend gr\u00f6sstenteils zu \u00fcbernehmen. F\u00fcr das Administrations-Interface wurde Bootstrap eingesetzt, es war also haupts\u00e4chlich ein Backend-Projekt auf ASP.NET MVC 5 und MSSQL-Server. F\u00fcr den automatischen Mailversand sowie die vollautomatisierten Daten-Exports wurde die Library <a href=\"http://hangfire.io\">HangFire</a> eingesetzt, mit welcher in der Vergangenheit bereits sehr gute Erfahrungen gemacht wurden.</p>"
+  }
+},
+{
+  "model": "projects.projectpage",
+  "pk": 8,
+  "fields": {
+    "main_image": 16,
+    "project_date": "2016-04-01",
+    "lead": "<p>Der neue Webauftritt f\u00fcr Maxomedia diente neben der Abl\u00f6sung einer \nschon leicht angestaubten Website auch als Versuchslab f\u00fcr eine neue Art\n Kentico-Sites zu implementieren.</p>",
+    "project_url": "https://www.maxomedia.ch",
+    "column1": "<p>Die damalige Website der Agentur datierte auf das Jahr 2012, was in Internet-Terminologie mit \"uralt\" gleichzustellen ist. Aus diesem Grund wurde der Entscheid gef\u00e4llt, die Seite komplett neu zu implementieren (von Grund auf, nicht einfach neu streichen). Die Anspr\u00fcche waren inhaltlich und technologisch relativ hoch, wollte man doch eine Visitenkarte f\u00fcr das eigene K\u00f6nnen abliefern:<br/></p><ul><li>Visuell ansprechend und modern<br/></li><li>Optmiert f\u00fcr alle Viewports</li><li>Performance</li><li>Einfache Content-Pflege<br/></li></ul>",
+    "column2": "<p>Da die alte Seite bereits auf Kentico basierte und das interne Komm-Team damit bereits umzugehen wusste, entschieden wir uns erneut f\u00fcr diese Plattform (jedoch in der aktuellsten Version). Jedoch sollte dieses Projekt auch f\u00fcr die Technik einen gewissen Research- und Experimentier-Charakter haben, weswegen wir uns f\u00fcr einen 2-schienigen Ansatz entschieden: das CMS und die Auslieferung der erfassten Inhalte werden komplett getrennt.</p><p>Die Herausforderung lag dadurch auch eher im Bereich der korrekten und effizienten Anbindung der Kentico API als wie sonst im Implementieren der Dokument-Typen und der entsprechenden Render-Templates. Mittels einer eigenen Mapping-Schicht auf Basis von Annotations und Reflection konnte das MVC-Frontend quasi direkt auf die Dokument-Typen in Kentco gemapped werden, so waren die Daten aus dem CMS transparent im Frontend verf\u00fcgbar.</p><p>Eine zus\u00e4tzliche Challenge war die Implementierung der verschiedenen Grids (Projekte, Blog, Team, Mini-Blog-Feed im Footer, etc.), welche alle auf derselben React-Implementierung basieren. Auch React war eine v\u00f6llig neue, uns unbekannte Technologie, wusste jedoch zu begeistern.<br/></p>"
+  }
+},
+{
+  "model": "projects.projectpage",
+  "pk": 9,
+  "fields": {
+    "main_image": 15,
+    "project_date": "2015-08-01",
+    "lead": "<p>F\u00fcr die Berner SAP-Consulting Firma NOVO Business Consultants durfte ich mit der Maxomedia die neue Corporate Website umsetzen.</p>",
+    "project_url": "https://www.novo-bc.ch",
+    "column1": "<p>Im Rahmen einer Abl\u00f6sung des alten (nicht mobile-tauglichen) Internet-Auftritts wurden wir von NOVO mit der Umsetzung einer neuen, modernen Responsive-Website betraut. Visuell / konzeptionell sollte die Seite mit schlichtem Design, grossfl\u00e4chigen Bild-Elementen sowie einer verst\u00e4ndlichen und logischen Informations-Architektur aufwarten.</p><p>Die technischen Anforderungen waren eher \u00fcberschaubar, jedoch war das komplett auf Tagging basierende Teaser-System eine gewisse Challenge. Die Idee dahinter ist, dass ein globaler Teaser-Pool verwaltet werden kann welcher \u00fcber das Matching der Tags auf den einzelnen Inhalts-Seiten visualisiert wird.<br/></p>",
+    "column2": "<p>Als Plattform entschieden wir uns f\u00fcr Kentico, jedoch wichen wir bei der Implementierung zu einem gewissen Grad von den bisher gewohnten, sehr Code-lastigen Integrationen ab. Ziel des Projekts war es unter anderem auch herauszufinden, wie weit wir mit den Kentico-Bordmitteln kamen (Transformations, Document-Types, Templates etc.) ohne die Probleme direkt mit selbst entwickelten WebControls anzugehen.</p><p>Es stellte sich relativ schnell heraus, dass gewisse Dinge schlichtweg NUR mit eigenen Implementierungen m\u00f6glich sind (asynchrone Feeds, Suchengine mit Custom PDF-Indexing, Tag-Matching auf Inhalts-Seiten etc.). Auf der anderen Seite war es uns aber auch m\u00f6glich, viele der fr\u00fcher manuell implementierten Rendering-Themen \u00fcber CMS-Funktionalit\u00e4t abzuhandeln, wodurch das Ziel \"Separation of Concerns\" doch merklich n\u00e4her r\u00fcckte.<br/></p>"
+  }
+},
+{
+  "model": "projects.projectpage",
+  "pk": 10,
+  "fields": {
+    "main_image": 9,
+    "project_date": "2015-02-01",
+    "lead": "<p>Gleis7.ch, die Jugendplattform der SBB, wurde Ende 2014 einem kompletten \nRedesign unterzogen, Backend sowie Frontend. Die Plattform wurde dabei auch \nauf den aktuellsten Microsoft-Technologiestack migriert.</p>",
+    "project_url": "http://www.gleis7.ch",
+    "column1": "<p>Die Plattform gleis7.ch war bereits in die Jahre gekommen und entsprach nicht mehr dem Zeitgeist. Vor allem die komplett fehlende Mobile-Tauglichkeit stellte f\u00fcr den Kunden aufgrund der Zielgruppe ein grosses Problem dar.<br/></p><p>Der initiale Gedanke war ein sog. \"Soft-Redesign\", sprich es sollte nur das Frontend responsive neu implementiert werden. Relativ schnell wurde klar, dass das so nicht m\u00f6glich sein w\u00fcrde und der Impact aufs Backend viel gr\u00f6sser ausfallen w\u00fcrde als angenommen.</p><p>Deswegen wurde der Scope des Projekts auch auf das Backend ausgeweitet und erlaubte uns damit, gewisse \"Technical Debts\" aus der Vergangenheit gleich mitzubeheben und den Wartungsaufwand entsprechend zu reduzieren. Da eine komplette Neu-Implementierung inklusive Datenbank-Architektur zeitlich nicht in Frage kam, wurde auf der bestehenden Datenstruktur aufgebaut.<br/></p>",
+    "column2": "<p>Zu Beginn des Projekts wurde kurz dar\u00fcber nachgedacht, eine CMS-Plattform einzusetzen (z.B. Kentico). Aufgrund der vielen Inhalts-Seiten und der hierarchischen Inhalts-Struktur schien das naheliegend zu sein, der Gedanke wurde jedoch verworfen (zuviel Business-Logik und externe Services involviert).</p><p>Damit die Inhalte und die URL-Struktur mehrsprachig und komfortabel administriert werden konnten, wurde ein eigenes Administrations-Interface auf Bootstrap-Basis implementiert. Dieses Interface erlaubt es den Content-Editoren neue Inhalte und Navigations-Punkte, Wettbewerbe oder Teaser auf einfache Art zu erfassen und zu verkn\u00fcpfen.</p><p>Technologisch basiert die Webseite auf ASP.NET MVC, WebAPI sowie Angular.JS (f\u00fcr den Shop und die Entertrainment-Visualisierungen). Ein zus\u00e4tzliches Novum f\u00fcr dieses Projekt war der erstmalige Einsatz von Lucene als Search-Index f\u00fcr die Inhalts-Seiten sowie die Shop-Produkte.<br/></p>"
+  }
+},
+{
+  "model": "projects.projectpage",
+  "pk": 11,
+  "fields": {
+    "main_image": null,
+    "project_date": "2012-07-02",
+    "lead": "F\u00fcr die SBB durften wir w\u00e4hrend knapp 8 Jahren die Bonus-Plattform MobilBonus betreuen. Auf der Plattform waren zu Spitzenzeiten knapp 450'000 User registriert und es wurden rund 320'000 Personen monatlich personalisiert per Newsletter angeschrieben.",
+    "project_url": "",
+    "column1": "",
+    "column2": ""
+  }
+},
+{
+  "model": "projects.projectpage",
+  "pk": 12,
+  "fields": {
+    "main_image": 7,
+    "project_date": "2015-08-01",
+    "lead": "<p>F\u00fcr die beiden SBB Apps Gleis7 und MobilBonus durfte ich die \njeweiligen Schnittstellen End2End betreuen (Design, Architektur, \nImplementierung, Betrieb).</p>",
+    "project_url": "",
+    "column1": "<p>Die Anforderungen an die Schnittstelle wurden gemeinsam mit unserem Implementierungs-Partner f\u00fcr die Apps definiert, es waren also von Beginn weg sehr technische Definitionen. Da die Apps technologisch auf derselben Code-Base basierten, konnten auch die beiden Schnittstellen viele Funktionalit\u00e4ten teilen, einzig die Terminologie war eine andere.</p>",
+    "column2": "<p>F\u00fcr mich war dies das erste \"API-only\" Projekt ohne jegliches Frontend, \nwas auch einiges an Desk-Research bez\u00fcglich Authentifizierung, \nBest Practice etc. bedeutete. Die API war jedoch weit entfernt von einer\n REST-API, es waren nur sehr limitierte Daten-Manipulationen m\u00f6glich. \nAus diesem Grund entschieden wir uns f\u00fcr eine eher klassische \nSOAP-Architektur (Method-Calls), jedoch auf JSON-Basis.</p><p>Als externe Abh\u00e4ngigkeit gab es einen Service von den SBB zu beachten, welcher uns auf Basis einiger Identifikations-Merkmale die kompletten Kundendaten sowie die entsprechenden Angaben zum aktuellen Abonnement zur\u00fccklieferte.<br/></p><p>Da die API ein reiner Backend-Layer war (vorgeschaltet war eine Frontend-API welche direkt durch die App aufgerufen wurde), war im Bereich Caching nach den ersten Testl\u00e4ufen nichts vorgesehen. Als wir jedoch mit der MobilBonus-App starteten, wurden die Requests f\u00fcr eine Abonnements-Validierung nicht mehr tragbar (weder performance- noch timing-technisch); wir reagierten innerhalb von weniger Stunden mit einer Migration in die Cloud (Azure) sowie einem stabilen Caching-Layer. Lesson learned: Caching ist selten bis nie ein Overhead, kann im Ernstfall aber wahnsinnig viele Nerven schonen.<br/></p>"
+  }
+},
+{
+  "model": "projects.projectpage",
+  "pk": 14,
+  "fields": {
+    "main_image": null,
+    "project_date": "2014-09-01",
+    "lead": "Das Ziel der E-Shift Kampagne ist es, den SBB TicketShop (online & mobile) zu bewerben und die Kunden auf diese Plattformen zu \"shiften\" Dazu wurde eine mehrj\u00e4hrige Kampagne aufgegleist, welche heute noch l\u00e4uft.",
+    "project_url": "",
+    "column1": "",
+    "column2": ""
+  }
+},
+{
+  "model": "projects.projectpage",
+  "pk": 15,
+  "fields": {
+    "main_image": 10,
+    "project_date": "2015-08-01",
+    "lead": "<p>Die SBB lancierte im Sommer 2015 ihr neues Produkt \"SwissPass\". Mit der Maxomedia durfte ich zum einen die Umsetzung des Einf\u00fchrungsmailings und zum anderen den elektronischen Versand der Kunden-Kommunikation betreuen.<br/></p>",
+    "project_url": "",
+    "column1": "<p>Bereits beim Briefing war klar, dass wir hier ein komplettes Toolset f\u00fcr stream-basierenden, automatisierten Mailversand umsetzen werden. Dies hatte vor allem 2 Gr\u00fcnde:</p><ul><li>Es war bereits klar, dass die SBB noch weitere Versand-Streams anbinden m\u00f6chte</li><li>F\u00fcr die Maxomedia war es eine M\u00f6glichkeit, ein Standard-Produkt aufzubauen</li></ul><p>Entsprechend viel Zeit wurde also auch in die Bereiche Architektur und Analyse gesteckt, jedoch war auch die Implementierung nicht ohne gewisse Stolpersteine zu meistern.<br/></p>",
+    "column2": "<p>Der technologische L\u00f6sungsansatz basierte auf mehreren Teilkomponenten:</p><ul><li>Windows Konsolen-Applikationen f\u00fcr die Imports (pro Input-Stream 1 Importer)</li><li>2 Windows-Services f\u00fcr die Template-Verarbeitung sowie den E-Mail Versand</li><li>Ein WebAPI-Projekt f\u00fcr die Reporting-Callbacks des E-Mail Providers</li><li>Ein MVC-Projekt f\u00fcr die Auswertung der Versand-Daten</li></ul><p>Die Kommunikation zwischen den einzelnen Schichten Import, Processing und Versand geschieht \u00fcber MSMQ (Microsoft Message Queuing). Der Entscheid f\u00fcr MSMQ war ein trivialer: es ist \u00fcberall bereits vorhanden oder kann einfach nachinstalliert werden und es ist \"battle-proven\". Die beiden Windows-Services f\u00fcr die Template-Verarbeitung und den Versand wurden mithilfe von TopShelf implementiert, eine Library welche viele komische Eigenheiten des Windows-Service Managements vereinfacht.</p><p>Als Versand-Provider entschieden wir uns nach eingehender Evaluation f\u00fcr Mandrill (mittlerweilen integriert in MailChimp), dies vor allem aufgrund der Stabilit\u00e4t und des Pricings.</p><p>Zu Reporting-Zwecken wurden in Mandrill sog. WebHooks eingerichtet, welche min\u00fctlich alle Events (Mail ge\u00f6ffnet, Link geklickt, Bouncer etc.) im Batch auf einen Endpoint im WebAPI-Projekt schicken. Da dieser Endpoint unter gar keinen Umst\u00e4nden locked sein darf, triggert er lediglich einen Database-Insert und registriert via HangFire einen Background-Job. Dieser Job erledigt die eigentliche Aggregations-Arbeit und verkn\u00fcpft den eingehenden Mandrill-Event mit dem verschickten Mailing.</p><p>Dies erm\u00f6glicht es uns, eine E-Mail von Anfang bis Ende nachvollziehen zu k\u00f6nnen, vom Import bis zum ge\u00f6ffneten Mail oder dem geklickten Link.<br/></p>"
+  }
+},
+{
+  "model": "projects.projectpage",
+  "pk": 21,
+  "fields": {
+    "main_image": 17,
+    "project_date": "2011-04-10",
+    "lead": "<p>node.js Fluent API f\u00fcr die Media-Conversion Library FFMPEG.</p>",
+    "project_url": "https://github.com/fluent-ffmpeg/node-fluent-ffmpeg",
+    "column1": "<p>Im Rahmen einer eines Projekts f\u00fcr die Firma n c ag kam ich zum ersten Mal in Ber\u00fchrung mit dem Open-Source Toolset FFMPEG. Begeistert von den gebotenen M\u00f6glichkeiten und gerade frisch mit node.js 0.4 angefangen war die Idee geboren: eine Open-Source Library, welche die Verwendung der komplexen CLI von FFMPEG f\u00fcr node.js Applikationen brauchbar macht.</p><p>Die von Anfang an definierten Ziele f\u00fcr die Library waren die folgenden:</p><p></p><p></p><p></p><p></p><ul><li>Die API soll komplett chainable sein (\"fluent\")</li><li>Alle Inputs und Outputs sollen komplett stream-basierend sein um ein Maximum an Flexibilit\u00e4t zu gew\u00e4hrleisten</li><li>Die Library soll on-the-fly Streaming von Video-Umwandlungen via\u00a0<a href=\"http://expressjs.com/\">express</a>\u00a0erm\u00f6glichen.</li></ul>",
+    "column2": "<p>Das erste Ziel war durch eine Adaption des Command-Patterns sehr einfach zu erreichen, die zweite Anforderung war da schon ein bisschen schwieriger. Die Schwierigkeiten traten vor allem wegen des z.T. relativ merkw\u00fcrdigen Stream-Handlings und den process-Funktionen\u00a0der damaligen node.js Versionen. Aber wie so oft in der Entwicklung: Hartn\u00e4ckigkeit zahlt sich aus, so auch in diesem Fall.\u00a0Dadurch, dass nun alles komplett stream-basiert war, stellte die Anforderung bez\u00fcglich on-the-fly Streaming durch express ebenfalls kein Problem mehr dar.</p><p>Um die Implementierung gegen Regressionen abzusichern, wurde die komplette Library mit Unit- und Integration-Tests abgedeckt (Code-Coverage 90-95%).</p><p>Durch Zeitmangel meinerseits habe ich das Projekt im Jahr 2012 in eine GitHub-Organisation ausgelagert und 2 der aktivsten Contributors zu Admins dieser Org ernannt. Seither beobachte ich das Projekt eher passiv, m\u00f6chte jedoch in naher Zukunft einen kompletten TypeScript-Port in Angriff nehmen.</p>"
+  }
+},
+{
+  "model": "projects.projectindexpage",
+  "pk": 5,
+  "fields": {
+    "intro": "<p>Das Untenstehende ist nur eine Auswahl an Projekten, welche ich in der Vergangenheit umgesetzt habe. Kleinere Lab-Basteleien oder OpenSource-Beteiligungen sind in meinem GitHub-Profil zu finden.</p>"
+  }
+},
+{
+  "model": "home.homepage",
+  "pk": 3,
+  "fields": {
+    "heading": "Hallo, ich bin Sch\u00e4rmu.",
+    "lead": "Web-Entwickler seit den Tagen als Frontpage-Counter noch cool und selfhtml.de besser als Google war.",
+    "portrait_image": 5,
+    "body": "[{\"type\": \"paragraph\", \"value\": \"<p>Ich arbeite seit ca. 2002/2003 als Software-Entwickler im Web-Umfeld mit unterschiedlichsten Technologien, Frameworks und Plattformen. H\\u00f6rt sich nach einer 08/15 Geschichte an? Ist es aber nicht. Da ich die klassische Software-Entwicklung (3 Monate spezifizieren, 4 Monate diskutieren, 6 Monate Testszenarien entwickeln und 12 Monate entwickeln) immer als relativ langweilig empfand, entschloss ich mich zu einer eher atypischen Karriere:</p>\"}, {\"type\": \"career\", \"value\": [{\"url\": \"https://www.maxomedia.ch\", \"text\": \"<p>Als Crossmedia-Agentur versteht sich die Maxomedia als Integrator von klassischer Werbung wie TV- / Radio-Spots, Plakaten, Inseraten und allen digitalen Kan\\u00e4len von Social Media bis Apps und Plattformen. Bereits nach dem Vorstellungsgespr\\u00e4ch hat es hier Klick gemacht: das junge Team, die in der Luft liegende Kreativit\\u00e4t und die Attit\\u00fcde, dass technisch nichts unm\\u00f6glich ist haben mich sofort in Ihren Bann gezogen. Die Projekte waren so divers wie angenommen und begannen mit kleinsten Microsite's oder Kampagnen-begleitenden Websites und h\\u00f6rten auf bei Plattformen f\\u00fcr mehrere 100'000 Benutzer und Apps mit t\\u00e4glich bis zu 20'000 Unique-Usern.</p>\", \"end_date\": \"2016-07-31\", \"start_date\": \"2012-07-02\", \"name\": \"Maxomedia AG\"}, {\"url\": \"http://www.interactivedata.de/\", \"text\": \"<p>Interactive Data Managed Solutions bietet Finanzdaten f\\u00fcr Web-Portale und Offline-Clients in allen m\\u00f6glichen Granulanit\\u00e4ten und f\\u00fcr alle nur erdenklichen B\\u00f6rsenpl\\u00e4tze an. Meine Aufgabe war es w\\u00e4hrend meines knappen Jahres in dieser Firma den laufenden Betrieb sicherzustellen, das Incident Management zu koordinieren und Deployments auszul\\u00f6sen und zu \\u00fcberwachen. Um es kurz zu machen: manchmal muss man einen Job mal machen, nur um festzustellen dass es nicht der Richtige ist.</p>\", \"end_date\": \"2012-06-30\", \"start_date\": \"2011-08-01\", \"name\": \"Interactive Data Managed Solutions\"}, {\"url\": \"http://www.ncag.ch\", \"text\": \"<p>Die Neue Chemigraphie AG (kurz n c ag) ist im Bereich Druckvorstufe / Publishing t\\u00e4tig und war Ende 2007 auf der Suche nach Verst\\u00e4rkung f\\u00fcr ihre Web-Abteilung. Ich durfte w\\u00e4hrend knapp 4 Jahren als Web-Entwickler an diversen, sehr spannenden Projekten mitarbeiten und gelangte ganz nebenbei zum ersten Mal mit C# sowie node.js in Kontakt. Diese Zeit macht mir endg\\u00fcltig klar: meine Leidenschaft liegt in der Web-Entwicklung.</p>\", \"end_date\": \"2011-06-30\", \"start_date\": \"2007-12-01\", \"name\": \"neue chemigraphie AG\"}, {\"url\": \"http://www.mediatower.ch\", \"text\": \"<p>Direkt nach meiner Ausbildung zum Informatiker arbeitete ich zuerst ca. 1 Jahr f\\u00fcr die Agentur mediatower als Freelancer auf PHP/Typo3, danach gr\\u00fcndete ich gemeinsam mit einem Freund eine Firma, spezialisiert auf automatisiertes G\\u00fcnstig-Hosting und PHP-Auftragsarbeiten.</p>\", \"end_date\": \"2007-11-30\", \"start_date\": \"2003-08-01\", \"name\": \"selbstst\\u00e4ndig/Freelancer\"}]}, {\"type\": \"heading\", \"value\": \"Was kann der Sch\\u00e4rmu denn so?\"}, {\"type\": \"paragraph\", \"value\": \"<p>W\\u00e4hrend dieser Stationen konnte ich mir ein breites Wissen im Umfeld der Web-Entwicklung aneignen. Angefangen hat die Reise w\\u00e4hrend der Ausbildung mit PHP 4, was sich auch f\\u00fcr die n\\u00e4chsten 6 Jahre als Umfeld meiner Wahl herausstellte (auch mit diversen CMS-Systemen, haupts\\u00e4chlich jedoch Custom-Development). Mit dem Job-Antritt bei der n c ag (nota bene als PHP-Entwickler) ver\\u00e4nderte sich mein technischer Fokus abrupt: ich \\u00fcbernahm den Betrieb und die Weiterentwicklung f\\u00fcr eine C#-Applikation! Von da aus war der Schritt zu ASP.NET WebForms/MVC und WebAPI kein grosser und nur ein logischer. Die\\u00a0darauf folgende\\u00a0Zeit bei\\u00a0der Maxomedia war ebenfalls durch diese Technologien gepr\\u00e4gt und gab mir die M\\u00f6glichkeit zur Weiterentwicklung und Vertiefung in diesen (und vielen anderen Themen). Und nun sitze ich hier und entwickle meine pers\\u00f6nliche Website auf dem CMS <a href=\\\"http://wagtail.io\\\">Wagtail</a>, einem Python/Django-basierenden CMS :)</p>\"}, {\"type\": \"skills\", \"value\": [{\"name\": \"ASP.NET WebAPI2\", \"value\": \"8\"}, {\"name\": \"ASP.NET MVC\", \"value\": \"8\"}, {\"name\": \"C#\", \"value\": \"8\"}, {\"name\": \"AngularJS/React/jQuery\", \"value\": \"6\"}, {\"name\": \"HTML5/CSS3\", \"value\": \"6\"}, {\"name\": \"node.js\", \"value\": \"5\"}, {\"name\": \"PHP\", \"value\": \"4\"}, {\"name\": \"Python/Django\", \"value\": \"3\"}]}, {\"type\": \"heading\", \"value\": \"Und was hat er damit alles angestellt?\"}, {\"type\": \"paragraph\", \"value\": \"<p>Eine kleine Auswahl der letzten Projekte findest du direkt hier, die komplette \\u00dcbersicht ist <a id=\\\"5\\\" linktype=\\\"page\\\">hier</a> zu finden.</p>\"}]"
+  }
+}
+]

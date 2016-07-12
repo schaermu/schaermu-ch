@@ -27,7 +27,7 @@ class CareerItemBlock(blocks.StructBlock):
 
 class SkillItemBlock(blocks.StructBlock):
     name = blocks.CharBlock(max_length=50, default='', label='Bezeichnung')
-    value = blocks.CharBlock(max_length=3, default=0, label='Wert in %')
+    value = blocks.CharBlock(max_length=3, default=0, label='Wert (x/10)')
 
     class Meta:
         template = 'blocks/skill_item.html'
@@ -62,15 +62,18 @@ class HomePage(Page):
         StreamFieldPanel('body'),
     ]
 
+    subpage_types = ['projects.ProjectIndexPage', 'contact.ContactFormPage']
+
     def get_context(self, request):
         context = super(HomePage, self).get_context(request)
 
         context['latest_projects'] = ProjectPage.get_latest()
         return context
 
-    def create_test(title, lead):
-        parent_page = Page.get_first_root_node()
+    def create_test(title, lead, parent=None):
+        if (parent is None):
+            parent = Page.get_first_root_node()
         home = HomePage(heading=title, title=title, lead=lead,
                         slug=text.slugify(title))
-        parent_page.add_child(instance=home)
+        parent.add_child(instance=home)
         return home

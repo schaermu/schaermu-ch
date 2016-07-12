@@ -1,8 +1,21 @@
 {% extends "base.html" %}
 
-{% load wagtailcore_tags wagtailimages_tags %}
+{% load static wagtailcore_tags wagtailimages_tags %}
 
 {% block body_class %}home{% endblock %}
+
+{% block extra_js %}
+<script src="{% static 'js/masonry.pkgd.min.js' %}"></script>
+<script>
+$(function() {
+  $('.grid').masonry({
+    itemSelector: '.grid-item',
+    columnWidth: '.grid-sizer',
+    percentPosition: true,
+  });
+});
+</script>
+{% endblock %}
 
 {% block content %}
 
@@ -30,21 +43,18 @@
 {% endfor %}
 
 <section class="latest-projects">
-  <div class="row">
+  <div class="grid">
+    <div class="grid-sizer"></div>
     {% for project in latest_projects %}
-    <div class="col-xs-6 col-md-3">
-      <a href="{% pageurl project %}">
-        <div class="panel panel-default">
-          <div class="panel-body">
-            {% if project.main_image %}
-              {% image project.main_image width-300 class='img-responsive' %}
-            {% else %}
-              <img src="http://placehold.it/300x300" class="img-responsive" />
-            {% endif %}
-          </div>
-          <div class="panel-footer">{{ project.title }}</div>
-        </div>
-      </a>
+    <div class="grid-item">
+        <a href="{% pageurl project %}">
+          {% if project.main_image %}
+            {% image project.main_image fill-180x180 %}
+          {% else %}
+            <img src="http://placehold.it/180x180" />
+          {% endif %}
+        </a>
+        <p class="text-center">{{ project.title }}</p>
     </div>
     {% endfor %}
   </div>

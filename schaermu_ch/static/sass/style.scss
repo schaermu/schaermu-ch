@@ -295,11 +295,10 @@ h1, h2, h3, h4, h5, h6 {
 		font-weight: bold;
 		display: block;
 		float: none!important;
-		width: 200px;
 		margin: 0 auto;
 		text-transform: uppercase;
-		letter-spacing: 2px;
-		font-size: 20px;
+		letter-spacing: 6px;
+		font-size: 16px;
 		font-family: $font-monsterrat;
 		color: $brand-black;
 		&:hover {

@@ -1,19 +1,82 @@
 // project details
 body.project-detail {
-  .header {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    min-height: 20em;
-    margin-top: 5em;
-    padding: 2em;
-    position: absolute;
-    left: 0;
-    width: 100%;
+  .content {
+    .rich-text > p {
+      font-size: ($font-size-base * 1.1)
+    }
   }
 
-  .content {
-    margin-top: 450px;
-    margin-top: 45vh;
+  .skills {
+    h4 {
+      display: inline-block;
+    }
+
+    h4.project-url {
+      float: right;
+      a {
+        text-decoration: none;
+        color: $brand-white;
+      }
+
+      @media screen and (max-width: $screen-sm-min) {
+        span.label {
+          position: fixed;
+          top: 15em;
+          right: 0em;
+          padding: 0.5em;
+          font-size: 1em;
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+
+          &:before {
+    			  @include fa-icon;
+    			  content: $fa-var-link;
+          }
+        }
+      }
+    }
+  }
+
+  .header {
+
+    .bg {
+      position: absolute;
+      top: 8em;
+      min-height: 20em;
+      width: 100%;
+      left: 0;
+
+      @media screen and (max-width: $screen-xs) {
+        min-height: 25em;
+        top: 7em;
+      }
+
+      &::after {
+        content: "";
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        opacity: 0.3;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+      }
+    }
+
+    .rich-text {
+      min-height: 10em;
+      color: $gray-darker;
+
+      @media screen and (max-width: $screen-xs) {
+        min-height: 16em;
+      }
+
+      p {
+        @include lead-text()
+      }
+    }
   }
 }

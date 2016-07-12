@@ -1,12 +1,37 @@
 body.projects {
-  .rich-text > p {
-    margin-bottom: $line-height-computed;
-    font-size: floor(($font-size-base * 1.15));
-    font-weight: 300;
-    line-height: 1.4;
+  .project-filter {
+    margin-top: 2em;
+    margin-bottom: 2em;
 
-    @media (min-width: $screen-sm-min) {
-      font-size: ($font-size-base * 1.5);
+    li {
+      background-color: $gray-lighter;
+      margin: 5px 0;
+      margin-right: 5px;
     }
+
+    a {
+      padding: 8px 8px;
+    }
+  }
+
+  .masonry,
+  .masonry .masonry-brick {
+    -webkit-transition-duration: 0.7s;
+       -moz-transition-duration: 0.7s;
+        -ms-transition-duration: 0.7s;
+         -o-transition-duration: 0.7s;
+            transition-duration: 0.7s;
+  }
+
+  .masonry {
+    @include transition-property(height, width);
+  }
+
+  .masonry .masonry-brick {
+    @include transition-property(left, right, top);
+  }
+
+  .rich-text > p {
+    
   }
 }
