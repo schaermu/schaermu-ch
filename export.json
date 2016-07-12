@@ -436,42 +436,6 @@
 },
 {
   "model": "wagtailimages.rendition",
-  "pk": 32,
-  "fields": {
-    "filter": 1,
-    "file": "images/s_sbb_unterwegszuhause_02.max-165x165.jpg",
-    "width": 165,
-    "height": 92,
-    "focal_point_key": "",
-    "image": 13
-  }
-},
-{
-  "model": "wagtailimages.rendition",
-  "pk": 33,
-  "fields": {
-    "filter": 1,
-    "file": "images/s_postfinance_tourdepostfinance_03.max-165x165.jpg",
-    "width": 165,
-    "height": 92,
-    "focal_point_key": "",
-    "image": 12
-  }
-},
-{
-  "model": "wagtailimages.rendition",
-  "pk": 34,
-  "fields": {
-    "filter": 1,
-    "file": "images/h_swisscom_mycloud_1.max-165x165.jpg",
-    "width": 165,
-    "height": 103,
-    "focal_point_key": "",
-    "image": 11
-  }
-},
-{
-  "model": "wagtailimages.rendition",
   "pk": 35,
   "fields": {
     "filter": 1,
@@ -504,90 +468,6 @@
     "height": 103,
     "focal_point_key": "",
     "image": 7
-  }
-},
-{
-  "model": "wagtailimages.rendition",
-  "pk": 38,
-  "fields": {
-    "filter": 1,
-    "file": "images/h_sbb_einfacherklart.max-165x165.jpg",
-    "width": 165,
-    "height": 103,
-    "focal_point_key": "",
-    "image": 6
-  }
-},
-{
-  "model": "wagtailimages.rendition",
-  "pk": 39,
-  "fields": {
-    "filter": 10,
-    "file": "images/s_sbb_unterwegszuhause_02.original.jpg",
-    "width": 2500,
-    "height": 1406,
-    "focal_point_key": "",
-    "image": 13
-  }
-},
-{
-  "model": "wagtailimages.rendition",
-  "pk": 40,
-  "fields": {
-    "filter": 3,
-    "file": "images/s_sbb_unterwegszuhause_02.max-800x600.jpg",
-    "width": 800,
-    "height": 449,
-    "focal_point_key": "",
-    "image": 13
-  }
-},
-{
-  "model": "wagtailimages.rendition",
-  "pk": 41,
-  "fields": {
-    "filter": 10,
-    "file": "images/s_postfinance_tourdepostfinance_03.original.jpg",
-    "width": 2500,
-    "height": 1406,
-    "focal_point_key": "",
-    "image": 12
-  }
-},
-{
-  "model": "wagtailimages.rendition",
-  "pk": 42,
-  "fields": {
-    "filter": 3,
-    "file": "images/s_postfinance_tourdepostfinance_03.max-800x600.jpg",
-    "width": 800,
-    "height": 449,
-    "focal_point_key": "",
-    "image": 12
-  }
-},
-{
-  "model": "wagtailimages.rendition",
-  "pk": 43,
-  "fields": {
-    "filter": 10,
-    "file": "images/h_swisscom_mycloud_1.original.jpg",
-    "width": 2500,
-    "height": 1562,
-    "focal_point_key": "",
-    "image": 11
-  }
-},
-{
-  "model": "wagtailimages.rendition",
-  "pk": 44,
-  "fields": {
-    "filter": 3,
-    "file": "images/h_swisscom_mycloud_1.max-800x600.jpg",
-    "width": 800,
-    "height": 499,
-    "focal_point_key": "",
-    "image": 11
   }
 },
 {
@@ -664,42 +544,6 @@
 },
 {
   "model": "wagtailimages.rendition",
-  "pk": 51,
-  "fields": {
-    "filter": 10,
-    "file": "images/h_sbb_einfacherklart.original.jpg",
-    "width": 2500,
-    "height": 1563,
-    "focal_point_key": "",
-    "image": 6
-  }
-},
-{
-  "model": "wagtailimages.rendition",
-  "pk": 52,
-  "fields": {
-    "filter": 3,
-    "file": "images/h_sbb_einfacherklart.max-800x600.jpg",
-    "width": 800,
-    "height": 500,
-    "focal_point_key": "",
-    "image": 6
-  }
-},
-{
-  "model": "wagtailimages.rendition",
-  "pk": 53,
-  "fields": {
-    "filter": 13,
-    "file": "images/h_swisscom_mycloud_1.665dd3b5.fill-180x180.jpg",
-    "width": 180,
-    "height": 180,
-    "focal_point_key": "665dd3b5",
-    "image": 11
-  }
-},
-{
-  "model": "wagtailimages.rendition",
   "pk": 54,
   "fields": {
     "filter": 13,
@@ -732,78 +576,6 @@
     "height": 180,
     "focal_point_key": "965a70ae",
     "image": 9
-  }
-},
-{
-  "model": "wagtailimages.rendition",
-  "pk": 57,
-  "fields": {
-    "filter": 13,
-    "file": "images/h_sbb_einfacherklart.d6e2b54b.fill-180x180.jpg",
-    "width": 180,
-    "height": 180,
-    "focal_point_key": "d6e2b54b",
-    "image": 6
-  }
-},
-{
-  "model": "wagtailimages.rendition",
-  "pk": 58,
-  "fields": {
-    "filter": 13,
-    "file": "images/s_postfinance_tourdepostfinance_03.0d69468d.fill-180x180.jpg",
-    "width": 180,
-    "height": 180,
-    "focal_point_key": "0d69468d",
-    "image": 12
-  }
-},
-{
-  "model": "wagtailimages.rendition",
-  "pk": 59,
-  "fields": {
-    "filter": 13,
-    "file": "images/s_sbb_unterwegszuhause_02.82f7d212.fill-180x180.jpg",
-    "width": 180,
-    "height": 180,
-    "focal_point_key": "82f7d212",
-    "image": 13
-  }
-},
-{
-  "model": "wagtailimages.rendition",
-  "pk": 60,
-  "fields": {
-    "filter": 13,
-    "file": "images/s_sbb_unterwegszuhause_02.1f571a8c.fill-180x180.jpg",
-    "width": 180,
-    "height": 180,
-    "focal_point_key": "1f571a8c",
-    "image": 13
-  }
-},
-{
-  "model": "wagtailimages.rendition",
-  "pk": 61,
-  "fields": {
-    "filter": 13,
-    "file": "images/s_sbb_unterwegszuhause_02.2227050b.fill-180x180.jpg",
-    "width": 180,
-    "height": 180,
-    "focal_point_key": "2227050b",
-    "image": 13
-  }
-},
-{
-  "model": "wagtailimages.rendition",
-  "pk": 62,
-  "fields": {
-    "filter": 13,
-    "file": "images/s_sbb_unterwegszuhause_02.506e109f.fill-180x180.jpg",
-    "width": 180,
-    "height": 180,
-    "focal_point_key": "506e109f",
-    "image": 13
   }
 },
 {
@@ -952,18 +724,6 @@
 },
 {
   "model": "wagtailimages.rendition",
-  "pk": 75,
-  "fields": {
-    "filter": 14,
-    "file": "images/s_sbb_unterwegszuhause_02.width-980.jpg",
-    "width": 980,
-    "height": 551,
-    "focal_point_key": "",
-    "image": 13
-  }
-},
-{
-  "model": "wagtailimages.rendition",
   "pk": 76,
   "fields": {
     "filter": 14,
@@ -1000,30 +760,6 @@
 },
 {
   "model": "wagtailimages.rendition",
-  "pk": 79,
-  "fields": {
-    "filter": 14,
-    "file": "images/s_postfinance_tourdepostfinance_03.width-980.jpg",
-    "width": 980,
-    "height": 551,
-    "focal_point_key": "",
-    "image": 12
-  }
-},
-{
-  "model": "wagtailimages.rendition",
-  "pk": 80,
-  "fields": {
-    "filter": 14,
-    "file": "images/h_swisscom_mycloud_1.width-980.jpg",
-    "width": 980,
-    "height": 612,
-    "focal_point_key": "",
-    "image": 11
-  }
-},
-{
-  "model": "wagtailimages.rendition",
   "pk": 81,
   "fields": {
     "filter": 14,
@@ -1032,18 +768,6 @@
     "height": 612,
     "focal_point_key": "",
     "image": 7
-  }
-},
-{
-  "model": "wagtailimages.rendition",
-  "pk": 82,
-  "fields": {
-    "filter": 14,
-    "file": "images/h_sbb_einfacherklart.width-980.jpg",
-    "width": 980,
-    "height": 612,
-    "focal_point_key": "",
-    "image": 6
   }
 },
 {
@@ -1068,18 +792,6 @@
     "height": 200,
     "focal_point_key": "",
     "image": 16
-  }
-},
-{
-  "model": "wagtailimages.rendition",
-  "pk": 85,
-  "fields": {
-    "filter": 12,
-    "file": "images/h_swisscom_mycloud_1.width-300.jpg",
-    "width": 300,
-    "height": 187,
-    "focal_point_key": "",
-    "image": 11
   }
 },
 {
@@ -1120,18 +832,6 @@
 },
 {
   "model": "wagtailimages.rendition",
-  "pk": 89,
-  "fields": {
-    "filter": 15,
-    "file": "images/h_swisscom_mycloud_1.665dd3b5.fill-300x300.jpg",
-    "width": 300,
-    "height": 300,
-    "focal_point_key": "665dd3b5",
-    "image": 11
-  }
-},
-{
-  "model": "wagtailimages.rendition",
   "pk": 90,
   "fields": {
     "filter": 15,
@@ -1140,18 +840,6 @@
     "height": 300,
     "focal_point_key": "720d9067",
     "image": 7
-  }
-},
-{
-  "model": "wagtailimages.rendition",
-  "pk": 94,
-  "fields": {
-    "filter": 13,
-    "file": "images/s_sbb_unterwegszuhause_02.1b2e0b24.fill-180x180.jpg",
-    "width": 180,
-    "height": 180,
-    "focal_point_key": "1b2e0b24",
-    "image": 13
   }
 },
 {
@@ -2221,26 +1909,6 @@
 },
 {
   "model": "wagtailimages.image",
-  "pk": 6,
-  "fields": {
-    "collection": 1,
-    "title": "h_sbb_einfacherklart.jpg",
-    "file": "original_images/h_sbb_einfacherklart.jpg",
-    "width": 2500,
-    "height": 1563,
-    "created_at": "2016-06-21T11:21:43.768Z",
-    "uploaded_by_user": [
-      "admin"
-    ],
-    "focal_point_x": 1467,
-    "focal_point_y": 955,
-    "focal_point_width": 1617,
-    "focal_point_height": 1116,
-    "file_size": 1964856
-  }
-},
-{
-  "model": "wagtailimages.image",
   "pk": 7,
   "fields": {
     "collection": 1,
@@ -2297,66 +1965,6 @@
     "focal_point_width": 1443,
     "focal_point_height": 1234,
     "file_size": 2092271
-  }
-},
-{
-  "model": "wagtailimages.image",
-  "pk": 11,
-  "fields": {
-    "collection": 1,
-    "title": "h_swisscom_mycloud_1.jpg",
-    "file": "original_images/h_swisscom_mycloud_1.jpg",
-    "width": 2500,
-    "height": 1562,
-    "created_at": "2016-06-21T11:22:56.062Z",
-    "uploaded_by_user": [
-      "admin"
-    ],
-    "focal_point_x": 1432,
-    "focal_point_y": 841,
-    "focal_point_width": 1514,
-    "focal_point_height": 1070,
-    "file_size": 1413982
-  }
-},
-{
-  "model": "wagtailimages.image",
-  "pk": 12,
-  "fields": {
-    "collection": 1,
-    "title": "s_postfinance_tourdepostfinance_03.jpg",
-    "file": "original_images/s_postfinance_tourdepostfinance_03.jpg",
-    "width": 2500,
-    "height": 1406,
-    "created_at": "2016-06-21T11:23:11.785Z",
-    "uploaded_by_user": [
-      "admin"
-    ],
-    "focal_point_x": 1304,
-    "focal_point_y": 700,
-    "focal_point_width": 1094,
-    "focal_point_height": 1313,
-    "file_size": 1417066
-  }
-},
-{
-  "model": "wagtailimages.image",
-  "pk": 13,
-  "fields": {
-    "collection": 1,
-    "title": "s_sbb_unterwegszuhause_02.jpg",
-    "file": "original_images/s_sbb_unterwegszuhause_02.jpg",
-    "width": 2500,
-    "height": 1406,
-    "created_at": "2016-06-21T11:23:21.364Z",
-    "uploaded_by_user": [
-      "admin"
-    ],
-    "focal_point_x": 1135,
-    "focal_point_y": 667,
-    "focal_point_width": 1726,
-    "focal_point_height": 1335,
-    "file_size": 2348922
   }
 },
 {
@@ -2539,7 +2147,7 @@
   "model": "projects.projectpage",
   "pk": 14,
   "fields": {
-    "main_image": 6,
+    "main_image": null,
     "project_date": "2014-09-01",
     "lead": "Das Ziel der E-Shift Kampagne ist es, den SBB TicketShop (online & mobile) zu bewerben und die Kunden auf diese Plattformen zu \"shiften\" Dazu wurde eine mehrj\u00e4hrige Kampagne aufgegleist, welche heute noch l\u00e4uft.",
     "project_url": "",
@@ -2585,7 +2193,7 @@
     "heading": "Hallo, ich bin Sch\u00e4rmu.",
     "lead": "Web-Entwickler seit den Tagen als Frontpage-Counter noch cool und selfhtml.de besser als Google war.",
     "portrait_image": 5,
-    "body": "[{\"type\": \"paragraph\", \"value\": \"<p>Ich arbeite seit ca. 2002/2003 als Software-Entwickler im Web-Umfeld mit unterschiedlichsten Technologien, Frameworks und Plattformen. H\\u00f6rt sich nach einer 08/15 Geschichte an? Ist es aber nicht. Da ich die klassische Software-Entwicklung (3 Monate spezifizieren, 4 Monate diskutieren, 6 Monate Testszenarien entwickeln und 12 Monate entwickeln) immer als relativ langweilig empfand, entschloss ich mich zu einer eher atypischen Karriere:</p>\"}, {\"type\": \"career\", \"value\": [{\"name\": \"Maxomedia AG\", \"text\": \"<p>Als Crossmedia-Agentur versteht sich die Maxomedia als Integrator von klassischer Werbung wie TV- / Radio-Spots, Plakaten, Inseraten und allen digitalen Kan\\u00e4len von Social Media bis Apps und Plattformen. Bereits nach dem Vorstellungsgespr\\u00e4ch hat es hier Klick gemacht: das junge Team, die in der Luft liegende Kreativit\\u00e4t und die Attit\\u00fcde, dass technisch nichts unm\\u00f6glich ist haben mich sofort in Ihren Bann gezogen. Die Projekte waren so divers wie angenommen und begannen mit kleinsten Microsite's oder Kampagnen-begleitenden Websites und h\\u00f6rten auf bei Plattformen f\\u00fcr mehrere 100'000 Benutzer und Apps mit t\\u00e4glich bis zu 20'000 Unique-Usern.</p>\", \"start_date\": \"2012-07-02\", \"end_date\": \"2016-07-31\", \"url\": \"https://www.maxomedia.ch\"}, {\"name\": \"Interactive Data Managed Solutions\", \"text\": \"<p>Interactive Data Managed Solutions bietet Finanzdaten f\\u00fcr Web-Portale und Offline-Clients in allen m\\u00f6glichen Granulanit\\u00e4ten und f\\u00fcr alle nur erdenklichen B\\u00f6rsenpl\\u00e4tze an. Meine Aufgabe war es w\\u00e4hrend meines knappen Jahres in dieser Firma den laufenden Betrieb sicherzustellen, das Incident Management zu koordinieren und Deployments auszul\\u00f6sen und zu \\u00fcberwachen. Um es kurz zu machen: manchmal muss man einen Job mal machen, nur um festzustellen dass es nicht der Richtige ist.</p>\", \"start_date\": \"2011-08-01\", \"end_date\": \"2012-06-30\", \"url\": \"http://www.interactivedata.de/\"}, {\"name\": \"neue chemigraphie AG\", \"text\": \"<p>Die Neue Chemigraphie AG (kurz n c ag) ist im Bereich Druckvorstufe / Publishing t\\u00e4tig und war Ende 2007 auf der Suche nach Verst\\u00e4rkung f\\u00fcr ihre Web-Abteilung. Ich durfte w\\u00e4hrend knapp 4 Jahren als Web-Entwickler an diversen, sehr spannenden Projekten mitarbeiten und gelangte ganz nebenbei zum ersten Mal mit C# sowie node.js in Kontakt. Diese Zeit macht mir endg\\u00fcltig klar: meine Leidenschaft liegt in der Web-Entwicklung.</p>\", \"start_date\": \"2007-12-01\", \"end_date\": \"2011-06-30\", \"url\": \"http://www.ncag.ch\"}, {\"name\": \"selbstst\\u00e4ndig/Freelancer\", \"text\": \"<p>Direkt nach meiner Ausbildung zum Informatiker arbeitete ich zuerst ca. 1 Jahr f\\u00fcr die Agentur mediatower als Freelancer auf PHP/Typo3, danach gr\\u00fcndete ich gemeinsam mit einem Freund eine Firma, spezialisiert auf automatisiertes G\\u00fcnstig-Hosting und PHP-Auftragsarbeiten.</p>\", \"start_date\": \"2003-08-01\", \"end_date\": \"2007-11-30\", \"url\": \"http://www.mediatower.ch\"}]}, {\"type\": \"heading\", \"value\": \"Was kann der Sch\\u00e4rmu denn so?\"}, {\"type\": \"paragraph\", \"value\": \"<p>W\\u00e4hrend dieser Stationen konnte ich mir ein breites Wissen im Umfeld der Web-Entwicklung aneignen. Angefangen hat die Reise w\\u00e4hrend der Ausbildung mit PHP 4, was sich auch f\\u00fcr die n\\u00e4chsten 6 Jahre als Umfeld meiner Wahl herausstellte (auch mit diversen CMS-Systemen, haupts\\u00e4chlich jedoch Custom-Development). Mit dem Job-Antritt bei der n c ag (nota bene als PHP-Entwickler) ver\\u00e4nderte sich mein technischer Fokus abrupt: ich \\u00fcbernahm den Betrieb und die Weiterentwicklung f\\u00fcr eine C#-Applikation! Von da aus war der Schritt zu ASP.NET WebForms/MVC und WebAPI kein grosser und nur ein logischer. Die\\u00a0darauf folgende\\u00a0Zeit bei\\u00a0der Maxomedia war ebenfalls durch diese Technologien gepr\\u00e4gt und gab mir die M\\u00f6glichkeit zur Weiterentwicklung und Vertiefung in diesen (und vielen anderen Themen). Und nun sitze ich hier und entwickle meine pers\\u00f6nliche Website auf dem CMS <a href=\\\"http://wagtail.io\\\">Wagtail</a>, einem Python/Django-basierenden CMS :)</p>\"}, {\"type\": \"skills\", \"value\": [{\"name\": \"ASP.NET WebAPI2\", \"value\": \"8\"}, {\"name\": \"ASP.NET MVC\", \"value\": \"8\"}, {\"name\": \"C#\", \"value\": \"8\"}, {\"name\": \"AngularJS/React/jQuery\", \"value\": \"6\"}, {\"name\": \"HTML5/CSS3\", \"value\": \"6\"}, {\"name\": \"node.js\", \"value\": \"5\"}, {\"name\": \"PHP\", \"value\": \"4\"}, {\"name\": \"Python/Django\", \"value\": \"3\"}]}, {\"type\": \"heading\", \"value\": \"Und was hat er damit alles angestellt?\"}, {\"type\": \"paragraph\", \"value\": \"<p>Eine kleine Auswahl der letzten Projekte findest du direkt hier, die komplette \\u00dcbersicht ist <a id=\\\"5\\\" linktype=\\\"page\\\">hier</a> zu finden.</p>\"}]"
+    "body": "[{\"type\": \"paragraph\", \"value\": \"<p>Ich arbeite seit ca. 2002/2003 als Software-Entwickler im Web-Umfeld mit unterschiedlichsten Technologien, Frameworks und Plattformen. H\\u00f6rt sich nach einer 08/15 Geschichte an? Ist es aber nicht. Da ich die klassische Software-Entwicklung (3 Monate spezifizieren, 4 Monate diskutieren, 6 Monate Testszenarien entwickeln und 12 Monate entwickeln) immer als relativ langweilig empfand, entschloss ich mich zu einer eher atypischen Karriere:</p>\"}, {\"type\": \"career\", \"value\": [{\"url\": \"https://www.maxomedia.ch\", \"text\": \"<p>Als Crossmedia-Agentur versteht sich die Maxomedia als Integrator von klassischer Werbung wie TV- / Radio-Spots, Plakaten, Inseraten und allen digitalen Kan\\u00e4len von Social Media bis Apps und Plattformen. Bereits nach dem Vorstellungsgespr\\u00e4ch hat es hier Klick gemacht: das junge Team, die in der Luft liegende Kreativit\\u00e4t und die Attit\\u00fcde, dass technisch nichts unm\\u00f6glich ist haben mich sofort in Ihren Bann gezogen. Die Projekte waren so divers wie angenommen und begannen mit kleinsten Microsite's oder Kampagnen-begleitenden Websites und h\\u00f6rten auf bei Plattformen f\\u00fcr mehrere 100'000 Benutzer und Apps mit t\\u00e4glich bis zu 20'000 Unique-Usern.</p>\", \"end_date\": \"2016-07-31\", \"start_date\": \"2012-07-02\", \"name\": \"Maxomedia AG\"}, {\"url\": \"http://www.interactivedata.de/\", \"text\": \"<p>Interactive Data Managed Solutions bietet Finanzdaten f\\u00fcr Web-Portale und Offline-Clients in allen m\\u00f6glichen Granulanit\\u00e4ten und f\\u00fcr alle nur erdenklichen B\\u00f6rsenpl\\u00e4tze an. Meine Aufgabe war es w\\u00e4hrend meines knappen Jahres in dieser Firma den laufenden Betrieb sicherzustellen, das Incident Management zu koordinieren und Deployments auszul\\u00f6sen und zu \\u00fcberwachen. Um es kurz zu machen: manchmal muss man einen Job mal machen, nur um festzustellen dass es nicht der Richtige ist.</p>\", \"end_date\": \"2012-06-30\", \"start_date\": \"2011-08-01\", \"name\": \"Interactive Data Managed Solutions\"}, {\"url\": \"http://www.ncag.ch\", \"text\": \"<p>Die Neue Chemigraphie AG (kurz n c ag) ist im Bereich Druckvorstufe / Publishing t\\u00e4tig und war Ende 2007 auf der Suche nach Verst\\u00e4rkung f\\u00fcr ihre Web-Abteilung. Ich durfte w\\u00e4hrend knapp 4 Jahren als Web-Entwickler an diversen, sehr spannenden Projekten mitarbeiten und gelangte ganz nebenbei zum ersten Mal mit C# sowie node.js in Kontakt. Diese Zeit macht mir endg\\u00fcltig klar: meine Leidenschaft liegt in der Web-Entwicklung.</p>\", \"end_date\": \"2011-06-30\", \"start_date\": \"2007-12-01\", \"name\": \"neue chemigraphie AG\"}, {\"url\": \"http://www.mediatower.ch\", \"text\": \"<p>Direkt nach meiner Ausbildung zum Informatiker arbeitete ich zuerst ca. 1 Jahr f\\u00fcr die Agentur mediatower als Freelancer auf PHP/Typo3, danach gr\\u00fcndete ich gemeinsam mit einem Freund eine Firma, spezialisiert auf automatisiertes G\\u00fcnstig-Hosting und PHP-Auftragsarbeiten.</p>\", \"end_date\": \"2007-11-30\", \"start_date\": \"2003-08-01\", \"name\": \"selbstst\\u00e4ndig/Freelancer\"}]}, {\"type\": \"heading\", \"value\": \"Was kann der Sch\\u00e4rmu denn so?\"}, {\"type\": \"paragraph\", \"value\": \"<p>W\\u00e4hrend dieser Stationen konnte ich mir ein breites Wissen im Umfeld der Web-Entwicklung aneignen. Angefangen hat die Reise w\\u00e4hrend der Ausbildung mit PHP 4, was sich auch f\\u00fcr die n\\u00e4chsten 6 Jahre als Umfeld meiner Wahl herausstellte (auch mit diversen CMS-Systemen, haupts\\u00e4chlich jedoch Custom-Development). Mit dem Job-Antritt bei der n c ag (nota bene als PHP-Entwickler) ver\\u00e4nderte sich mein technischer Fokus abrupt: ich \\u00fcbernahm den Betrieb und die Weiterentwicklung f\\u00fcr eine C#-Applikation! Von da aus war der Schritt zu ASP.NET WebForms/MVC und WebAPI kein grosser und nur ein logischer. Die\\u00a0darauf folgende\\u00a0Zeit bei\\u00a0der Maxomedia war ebenfalls durch diese Technologien gepr\\u00e4gt und gab mir die M\\u00f6glichkeit zur Weiterentwicklung und Vertiefung in diesen (und vielen anderen Themen). Und nun sitze ich hier und entwickle meine pers\\u00f6nliche Website auf dem CMS <a href=\\\"http://wagtail.io\\\">Wagtail</a>, einem Python/Django-basierenden CMS :)</p>\"}, {\"type\": \"skills\", \"value\": [{\"name\": \"ASP.NET WebAPI2\", \"value\": \"8\"}, {\"name\": \"ASP.NET MVC\", \"value\": \"8\"}, {\"name\": \"C#\", \"value\": \"8\"}, {\"name\": \"AngularJS/React/jQuery\", \"value\": \"6\"}, {\"name\": \"HTML5/CSS3\", \"value\": \"6\"}, {\"name\": \"node.js\", \"value\": \"5\"}, {\"name\": \"PHP\", \"value\": \"4\"}, {\"name\": \"Python/Django\", \"value\": \"3\"}]}, {\"type\": \"heading\", \"value\": \"Und was hat er damit alles angestellt?\"}, {\"type\": \"paragraph\", \"value\": \"<p>Eine kleine Auswahl der letzten Projekte findest du direkt hier, die komplette \\u00dcbersicht ist <a id=\\\"5\\\" linktype=\\\"page\\\">hier</a> zu finden.</p>\"}]"
   }
 }
 ]
