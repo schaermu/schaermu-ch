@@ -46,7 +46,6 @@ coverage.xml
 # Django/wagtail stuff:
 *.log
 *.pot
-media/
 .sass-cache/
 
 # Sphinx documentation
