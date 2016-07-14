@@ -47,6 +47,7 @@ coverage.xml
 *.log
 *.pot
 .sass-cache/
+static/
 
 # Sphinx documentation
 docs/_build/
