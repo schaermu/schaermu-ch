@@ -25,55 +25,15 @@
 },
 {
   "model": "projects.projectpagetag",
-  "pk": 46,
+  "pk": 60,
   "fields": {
-    "tag": 14,
-    "content_object": 21
+    "tag": 13,
+    "content_object": 15
   }
 },
 {
   "model": "projects.projectpagetag",
-  "pk": 47,
-  "fields": {
-    "tag": 10,
-    "content_object": 7
-  }
-},
-{
-  "model": "projects.projectpagetag",
-  "pk": 50,
-  "fields": {
-    "tag": 8,
-    "content_object": 8
-  }
-},
-{
-  "model": "projects.projectpagetag",
-  "pk": 51,
-  "fields": {
-    "tag": 7,
-    "content_object": 8
-  }
-},
-{
-  "model": "projects.projectpagetag",
-  "pk": 52,
-  "fields": {
-    "tag": 8,
-    "content_object": 9
-  }
-},
-{
-  "model": "projects.projectpagetag",
-  "pk": 53,
-  "fields": {
-    "tag": 7,
-    "content_object": 9
-  }
-},
-{
-  "model": "projects.projectpagetag",
-  "pk": 54,
+  "pk": 63,
   "fields": {
     "tag": 10,
     "content_object": 10
@@ -81,7 +41,7 @@
 },
 {
   "model": "projects.projectpagetag",
-  "pk": 55,
+  "pk": 64,
   "fields": {
     "tag": 10,
     "content_object": 12
@@ -89,7 +49,7 @@
 },
 {
   "model": "projects.projectpagetag",
-  "pk": 56,
+  "pk": 65,
   "fields": {
     "tag": 6,
     "content_object": 12
@@ -97,127 +57,55 @@
 },
 {
   "model": "projects.projectpagetag",
-  "pk": 59,
+  "pk": 66,
   "fields": {
-    "tag": 13,
-    "content_object": 15
-  }
-},
-{
-  "model": "projects.skilltag",
-  "pk": 13,
-  "fields": {
-    "tag": 24,
-    "content_object": 21
-  }
-},
-{
-  "model": "projects.skilltag",
-  "pk": 14,
-  "fields": {
-    "tag": 25,
-    "content_object": 21
-  }
-},
-{
-  "model": "projects.skilltag",
-  "pk": 15,
-  "fields": {
-    "tag": 21,
-    "content_object": 21
-  }
-},
-{
-  "model": "projects.skilltag",
-  "pk": 16,
-  "fields": {
-    "tag": 19,
-    "content_object": 7
-  }
-},
-{
-  "model": "projects.skilltag",
-  "pk": 17,
-  "fields": {
-    "tag": 21,
-    "content_object": 7
-  }
-},
-{
-  "model": "projects.skilltag",
-  "pk": 18,
-  "fields": {
-    "tag": 23,
-    "content_object": 7
-  }
-},
-{
-  "model": "projects.skilltag",
-  "pk": 22,
-  "fields": {
-    "tag": 27,
-    "content_object": 8
-  }
-},
-{
-  "model": "projects.skilltag",
-  "pk": 23,
-  "fields": {
-    "tag": 28,
-    "content_object": 8
-  }
-},
-{
-  "model": "projects.skilltag",
-  "pk": 24,
-  "fields": {
-    "tag": 29,
-    "content_object": 8
-  }
-},
-{
-  "model": "projects.skilltag",
-  "pk": 25,
-  "fields": {
-    "tag": 28,
+    "tag": 8,
     "content_object": 9
   }
 },
 {
-  "model": "projects.skilltag",
-  "pk": 26,
+  "model": "projects.projectpagetag",
+  "pk": 67,
   "fields": {
-    "tag": 17,
-    "content_object": 10
+    "tag": 7,
+    "content_object": 9
+  }
+},
+{
+  "model": "projects.projectpagetag",
+  "pk": 68,
+  "fields": {
+    "tag": 8,
+    "content_object": 8
+  }
+},
+{
+  "model": "projects.projectpagetag",
+  "pk": 69,
+  "fields": {
+    "tag": 7,
+    "content_object": 8
+  }
+},
+{
+  "model": "projects.projectpagetag",
+  "pk": 70,
+  "fields": {
+    "tag": 10,
+    "content_object": 7
+  }
+},
+{
+  "model": "projects.projectpagetag",
+  "pk": 71,
+  "fields": {
+    "tag": 14,
+    "content_object": 21
   }
 },
 {
   "model": "projects.skilltag",
-  "pk": 27,
-  "fields": {
-    "tag": 4,
-    "content_object": 10
-  }
-},
-{
-  "model": "projects.skilltag",
-  "pk": 28,
-  "fields": {
-    "tag": 30,
-    "content_object": 10
-  }
-},
-{
-  "model": "projects.skilltag",
-  "pk": 29,
-  "fields": {
-    "tag": 4,
-    "content_object": 12
-  }
-},
-{
-  "model": "projects.skilltag",
-  "pk": 36,
+  "pk": 39,
   "fields": {
     "tag": 32,
     "content_object": 15
@@ -225,7 +113,7 @@
 },
 {
   "model": "projects.skilltag",
-  "pk": 37,
+  "pk": 40,
   "fields": {
     "tag": 4,
     "content_object": 15
@@ -233,10 +121,122 @@
 },
 {
   "model": "projects.skilltag",
-  "pk": 38,
+  "pk": 41,
   "fields": {
     "tag": 31,
     "content_object": 15
+  }
+},
+{
+  "model": "projects.skilltag",
+  "pk": 43,
+  "fields": {
+    "tag": 17,
+    "content_object": 10
+  }
+},
+{
+  "model": "projects.skilltag",
+  "pk": 44,
+  "fields": {
+    "tag": 4,
+    "content_object": 10
+  }
+},
+{
+  "model": "projects.skilltag",
+  "pk": 45,
+  "fields": {
+    "tag": 30,
+    "content_object": 10
+  }
+},
+{
+  "model": "projects.skilltag",
+  "pk": 46,
+  "fields": {
+    "tag": 4,
+    "content_object": 12
+  }
+},
+{
+  "model": "projects.skilltag",
+  "pk": 47,
+  "fields": {
+    "tag": 28,
+    "content_object": 9
+  }
+},
+{
+  "model": "projects.skilltag",
+  "pk": 48,
+  "fields": {
+    "tag": 27,
+    "content_object": 8
+  }
+},
+{
+  "model": "projects.skilltag",
+  "pk": 49,
+  "fields": {
+    "tag": 28,
+    "content_object": 8
+  }
+},
+{
+  "model": "projects.skilltag",
+  "pk": 50,
+  "fields": {
+    "tag": 29,
+    "content_object": 8
+  }
+},
+{
+  "model": "projects.skilltag",
+  "pk": 51,
+  "fields": {
+    "tag": 19,
+    "content_object": 7
+  }
+},
+{
+  "model": "projects.skilltag",
+  "pk": 52,
+  "fields": {
+    "tag": 21,
+    "content_object": 7
+  }
+},
+{
+  "model": "projects.skilltag",
+  "pk": 53,
+  "fields": {
+    "tag": 23,
+    "content_object": 7
+  }
+},
+{
+  "model": "projects.skilltag",
+  "pk": 54,
+  "fields": {
+    "tag": 24,
+    "content_object": 21
+  }
+},
+{
+  "model": "projects.skilltag",
+  "pk": 55,
+  "fields": {
+    "tag": 25,
+    "content_object": 21
+  }
+},
+{
+  "model": "projects.skilltag",
+  "pk": 56,
+  "fields": {
+    "tag": 21,
+    "content_object": 21
   }
 },
 {
@@ -412,518 +412,98 @@
 },
 {
   "model": "wagtailimages.rendition",
-  "pk": 30,
-  "fields": {
-    "filter": 1,
-    "file": "images/portrait-square.max-165x165.jpg",
-    "width": 165,
-    "height": 164,
-    "focal_point_key": "",
-    "image": 5
-  }
-},
-{
-  "model": "wagtailimages.rendition",
-  "pk": 31,
-  "fields": {
-    "filter": 11,
-    "file": "images/portrait-square.width-180.jpg",
-    "width": 180,
-    "height": 179,
-    "focal_point_key": "",
-    "image": 5
-  }
-},
-{
-  "model": "wagtailimages.rendition",
-  "pk": 35,
-  "fields": {
-    "filter": 1,
-    "file": "images/h_sbb_swisspass.max-165x165.jpg",
-    "width": 165,
-    "height": 103,
-    "focal_point_key": "",
-    "image": 10
-  }
-},
-{
-  "model": "wagtailimages.rendition",
-  "pk": 36,
-  "fields": {
-    "filter": 1,
-    "file": "images/s_sbb_gleis7redesign_02.max-165x165.jpg",
-    "width": 165,
-    "height": 92,
-    "focal_point_key": "",
-    "image": 9
-  }
-},
-{
-  "model": "wagtailimages.rendition",
-  "pk": 37,
-  "fields": {
-    "filter": 1,
-    "file": "images/h_sbb_gleis7entertrainmentapp.max-165x165.jpg",
-    "width": 165,
-    "height": 103,
-    "focal_point_key": "",
-    "image": 7
-  }
-},
-{
-  "model": "wagtailimages.rendition",
-  "pk": 45,
-  "fields": {
-    "filter": 10,
-    "file": "images/h_sbb_swisspass.original.jpg",
-    "width": 2500,
-    "height": 1562,
-    "focal_point_key": "",
-    "image": 10
-  }
-},
-{
-  "model": "wagtailimages.rendition",
-  "pk": 46,
-  "fields": {
-    "filter": 3,
-    "file": "images/h_sbb_swisspass.max-800x600.jpg",
-    "width": 800,
-    "height": 499,
-    "focal_point_key": "",
-    "image": 10
-  }
-},
-{
-  "model": "wagtailimages.rendition",
-  "pk": 47,
-  "fields": {
-    "filter": 10,
-    "file": "images/s_sbb_gleis7redesign_02.original.jpg",
-    "width": 2500,
-    "height": 1406,
-    "focal_point_key": "",
-    "image": 9
-  }
-},
-{
-  "model": "wagtailimages.rendition",
-  "pk": 48,
-  "fields": {
-    "filter": 3,
-    "file": "images/s_sbb_gleis7redesign_02.max-800x600.jpg",
-    "width": 800,
-    "height": 449,
-    "focal_point_key": "",
-    "image": 9
-  }
-},
-{
-  "model": "wagtailimages.rendition",
-  "pk": 49,
-  "fields": {
-    "filter": 10,
-    "file": "images/h_sbb_gleis7entertrainmentapp.original.jpg",
-    "width": 2500,
-    "height": 1563,
-    "focal_point_key": "",
-    "image": 7
-  }
-},
-{
-  "model": "wagtailimages.rendition",
-  "pk": 50,
-  "fields": {
-    "filter": 3,
-    "file": "images/h_sbb_gleis7entertrainmentapp.max-800x600.jpg",
-    "width": 800,
-    "height": 500,
-    "focal_point_key": "",
-    "image": 7
-  }
-},
-{
-  "model": "wagtailimages.rendition",
-  "pk": 54,
-  "fields": {
-    "filter": 13,
-    "file": "images/h_sbb_swisspass.bd0fad33.fill-180x180.jpg",
-    "width": 180,
-    "height": 180,
-    "focal_point_key": "bd0fad33",
-    "image": 10
-  }
-},
-{
-  "model": "wagtailimages.rendition",
-  "pk": 55,
-  "fields": {
-    "filter": 13,
-    "file": "images/h_sbb_gleis7entertrainmentapp.720d9067.fill-180x180.jpg",
-    "width": 180,
-    "height": 180,
-    "focal_point_key": "720d9067",
-    "image": 7
-  }
-},
-{
-  "model": "wagtailimages.rendition",
-  "pk": 56,
-  "fields": {
-    "filter": 13,
-    "file": "images/s_sbb_gleis7redesign_02.965a70ae.fill-180x180.jpg",
-    "width": 180,
-    "height": 180,
-    "focal_point_key": "965a70ae",
-    "image": 9
-  }
-},
-{
-  "model": "wagtailimages.rendition",
-  "pk": 63,
-  "fields": {
-    "filter": 1,
-    "file": "images/h_maxomedia-ch.max-165x165.png",
-    "width": 165,
-    "height": 110,
-    "focal_point_key": "",
-    "image": 16
-  }
-},
-{
-  "model": "wagtailimages.rendition",
-  "pk": 64,
-  "fields": {
-    "filter": 1,
-    "file": "images/h_novo-bc-ch.max-165x165.png",
-    "width": 165,
-    "height": 109,
-    "focal_point_key": "",
-    "image": 15
-  }
-},
-{
-  "model": "wagtailimages.rendition",
-  "pk": 65,
+  "pk": 106,
   "fields": {
     "filter": 1,
     "file": "images/h_voev-fragebogen.max-165x165.png",
     "width": 165,
     "height": 110,
     "focal_point_key": "",
-    "image": 14
+    "image": 25
   }
 },
 {
   "model": "wagtailimages.rendition",
-  "pk": 66,
+  "pk": 107,
   "fields": {
-    "filter": 10,
-    "file": "images/h_maxomedia-ch.original.png",
-    "width": 1920,
-    "height": 1280,
+    "filter": 1,
+    "file": "images/h_sbb_swisspass.max-165x165.jpg",
+    "width": 165,
+    "height": 103,
     "focal_point_key": "",
-    "image": 16
+    "image": 24
   }
 },
 {
   "model": "wagtailimages.rendition",
-  "pk": 67,
+  "pk": 108,
   "fields": {
-    "filter": 3,
-    "file": "images/h_maxomedia-ch.max-800x600.png",
-    "width": 800,
-    "height": 533,
+    "filter": 1,
+    "file": "images/h_novo-bc-ch.max-165x165.png",
+    "width": 165,
+    "height": 109,
     "focal_point_key": "",
-    "image": 16
+    "image": 23
   }
 },
 {
   "model": "wagtailimages.rendition",
-  "pk": 68,
+  "pk": 109,
   "fields": {
-    "filter": 10,
-    "file": "images/h_novo-bc-ch.original.png",
-    "width": 1920,
-    "height": 1275,
+    "filter": 1,
+    "file": "images/h_maxomedia-ch.max-165x165.png",
+    "width": 165,
+    "height": 110,
     "focal_point_key": "",
-    "image": 15
+    "image": 22
   }
 },
 {
   "model": "wagtailimages.rendition",
-  "pk": 69,
+  "pk": 110,
   "fields": {
-    "filter": 3,
-    "file": "images/h_novo-bc-ch.max-800x600.png",
-    "width": 800,
-    "height": 531,
+    "filter": 1,
+    "file": "images/s_sbb_gleis7redesign_02.max-165x165.jpg",
+    "width": 165,
+    "height": 92,
     "focal_point_key": "",
-    "image": 15
+    "image": 21
   }
 },
 {
   "model": "wagtailimages.rendition",
-  "pk": 70,
+  "pk": 111,
   "fields": {
-    "filter": 10,
-    "file": "images/h_voev-fragebogen.original.png",
-    "width": 1920,
-    "height": 1280,
+    "filter": 1,
+    "file": "images/h_sbb_gleis7entertrainmentapp.max-165x165.jpg",
+    "width": 165,
+    "height": 103,
     "focal_point_key": "",
-    "image": 14
+    "image": 20
   }
 },
 {
   "model": "wagtailimages.rendition",
-  "pk": 71,
-  "fields": {
-    "filter": 3,
-    "file": "images/h_voev-fragebogen.max-800x600.png",
-    "width": 800,
-    "height": 533,
-    "focal_point_key": "",
-    "image": 14
-  }
-},
-{
-  "model": "wagtailimages.rendition",
-  "pk": 72,
-  "fields": {
-    "filter": 13,
-    "file": "images/h_voev-fragebogen.0d9a2d52.fill-180x180.png",
-    "width": 180,
-    "height": 180,
-    "focal_point_key": "0d9a2d52",
-    "image": 14
-  }
-},
-{
-  "model": "wagtailimages.rendition",
-  "pk": 73,
-  "fields": {
-    "filter": 13,
-    "file": "images/h_maxomedia-ch.a93ec811.fill-180x180.png",
-    "width": 180,
-    "height": 180,
-    "focal_point_key": "a93ec811",
-    "image": 16
-  }
-},
-{
-  "model": "wagtailimages.rendition",
-  "pk": 74,
-  "fields": {
-    "filter": 13,
-    "file": "images/h_novo-bc-ch.d1390057.fill-180x180.png",
-    "width": 180,
-    "height": 180,
-    "focal_point_key": "d1390057",
-    "image": 15
-  }
-},
-{
-  "model": "wagtailimages.rendition",
-  "pk": 76,
-  "fields": {
-    "filter": 14,
-    "file": "images/h_voev-fragebogen.width-980.png",
-    "width": 980,
-    "height": 653,
-    "focal_point_key": "",
-    "image": 14
-  }
-},
-{
-  "model": "wagtailimages.rendition",
-  "pk": 77,
-  "fields": {
-    "filter": 14,
-    "file": "images/h_sbb_swisspass.width-980.jpg",
-    "width": 980,
-    "height": 612,
-    "focal_point_key": "",
-    "image": 10
-  }
-},
-{
-  "model": "wagtailimages.rendition",
-  "pk": 78,
-  "fields": {
-    "filter": 14,
-    "file": "images/h_maxomedia-ch.width-980.png",
-    "width": 980,
-    "height": 653,
-    "focal_point_key": "",
-    "image": 16
-  }
-},
-{
-  "model": "wagtailimages.rendition",
-  "pk": 81,
-  "fields": {
-    "filter": 14,
-    "file": "images/h_sbb_gleis7entertrainmentapp.width-980.jpg",
-    "width": 980,
-    "height": 612,
-    "focal_point_key": "",
-    "image": 7
-  }
-},
-{
-  "model": "wagtailimages.rendition",
-  "pk": 83,
-  "fields": {
-    "filter": 12,
-    "file": "images/h_voev-fragebogen.width-300.png",
-    "width": 300,
-    "height": 200,
-    "focal_point_key": "",
-    "image": 14
-  }
-},
-{
-  "model": "wagtailimages.rendition",
-  "pk": 84,
-  "fields": {
-    "filter": 12,
-    "file": "images/h_maxomedia-ch.width-300.png",
-    "width": 300,
-    "height": 200,
-    "focal_point_key": "",
-    "image": 16
-  }
-},
-{
-  "model": "wagtailimages.rendition",
-  "pk": 86,
-  "fields": {
-    "filter": 12,
-    "file": "images/h_sbb_gleis7entertrainmentapp.width-300.jpg",
-    "width": 300,
-    "height": 187,
-    "focal_point_key": "",
-    "image": 7
-  }
-},
-{
-  "model": "wagtailimages.rendition",
-  "pk": 87,
-  "fields": {
-    "filter": 15,
-    "file": "images/h_voev-fragebogen.0d9a2d52.fill-300x300.png",
-    "width": 300,
-    "height": 300,
-    "focal_point_key": "0d9a2d52",
-    "image": 14
-  }
-},
-{
-  "model": "wagtailimages.rendition",
-  "pk": 88,
-  "fields": {
-    "filter": 15,
-    "file": "images/h_maxomedia-ch.a93ec811.fill-300x300.png",
-    "width": 300,
-    "height": 300,
-    "focal_point_key": "a93ec811",
-    "image": 16
-  }
-},
-{
-  "model": "wagtailimages.rendition",
-  "pk": 90,
-  "fields": {
-    "filter": 15,
-    "file": "images/h_sbb_gleis7entertrainmentapp.720d9067.fill-300x300.jpg",
-    "width": 300,
-    "height": 300,
-    "focal_point_key": "720d9067",
-    "image": 7
-  }
-},
-{
-  "model": "wagtailimages.rendition",
-  "pk": 95,
-  "fields": {
-    "filter": 14,
-    "file": "images/h_novo-bc-ch.width-980.png",
-    "width": 980,
-    "height": 650,
-    "focal_point_key": "",
-    "image": 15
-  }
-},
-{
-  "model": "wagtailimages.rendition",
-  "pk": 96,
-  "fields": {
-    "filter": 14,
-    "file": "images/s_sbb_gleis7redesign_02.width-980.jpg",
-    "width": 980,
-    "height": 551,
-    "focal_point_key": "",
-    "image": 9
-  }
-},
-{
-  "model": "wagtailimages.rendition",
-  "pk": 99,
+  "pk": 116,
   "fields": {
     "filter": 1,
     "file": "images/h_fluent-ffmpeg.max-165x165.jpg",
     "width": 165,
     "height": 110,
     "focal_point_key": "",
-    "image": 17
+    "image": 26
   }
 },
 {
   "model": "wagtailimages.rendition",
-  "pk": 100,
+  "pk": 117,
   "fields": {
-    "filter": 10,
-    "file": "images/h_fluent-ffmpeg.original.jpg",
-    "width": 1920,
-    "height": 1280,
+    "filter": 1,
+    "file": "images/portrait-square.max-165x165.jpg",
+    "width": 165,
+    "height": 164,
     "focal_point_key": "",
-    "image": 17
-  }
-},
-{
-  "model": "wagtailimages.rendition",
-  "pk": 101,
-  "fields": {
-    "filter": 3,
-    "file": "images/h_fluent-ffmpeg.max-800x600.jpg",
-    "width": 800,
-    "height": 533,
-    "focal_point_key": "",
-    "image": 17
-  }
-},
-{
-  "model": "wagtailimages.rendition",
-  "pk": 102,
-  "fields": {
-    "filter": 13,
-    "file": "images/h_fluent-ffmpeg.2e16d0ba.fill-180x180.jpg",
-    "width": 180,
-    "height": 180,
-    "focal_point_key": "2e16d0ba",
-    "image": 17
-  }
-},
-{
-  "model": "wagtailimages.rendition",
-  "pk": 103,
-  "fields": {
-    "filter": 14,
-    "file": "images/h_fluent-ffmpeg.width-980.jpg",
-    "width": 980,
-    "height": 653,
-    "focal_point_key": "",
-    "image": 17
+    "image": 27
   }
 },
 {
@@ -1524,7 +1104,7 @@
     "expired": false,
     "locked": false,
     "first_published_at": "2016-06-13T11:07:56.441Z",
-    "latest_revision_created_at": "2016-07-12T14:17:37.388Z"
+    "latest_revision_created_at": "2016-07-14T09:50:41.218Z"
   }
 },
 {
@@ -1644,7 +1224,7 @@
     "expired": false,
     "locked": false,
     "first_published_at": "2016-06-17T08:21:42.924Z",
-    "latest_revision_created_at": "2016-07-11T19:32:54.103Z"
+    "latest_revision_created_at": "2016-07-14T09:52:16.002Z"
   }
 },
 {
@@ -1674,7 +1254,7 @@
     "expired": false,
     "locked": false,
     "first_published_at": "2016-06-17T08:46:36.010Z",
-    "latest_revision_created_at": "2016-07-12T14:45:12.117Z"
+    "latest_revision_created_at": "2016-07-14T09:52:04.398Z"
   }
 },
 {
@@ -1704,7 +1284,7 @@
     "expired": false,
     "locked": false,
     "first_published_at": "2016-06-17T08:47:38.504Z",
-    "latest_revision_created_at": "2016-07-12T14:56:12.741Z"
+    "latest_revision_created_at": "2016-07-14T09:51:54.770Z"
   }
 },
 {
@@ -1734,7 +1314,7 @@
     "expired": false,
     "locked": false,
     "first_published_at": "2016-06-17T08:50:02.790Z",
-    "latest_revision_created_at": "2016-07-12T15:07:53.891Z"
+    "latest_revision_created_at": "2016-07-14T09:51:26.275Z"
   }
 },
 {
@@ -1794,7 +1374,7 @@
     "expired": false,
     "locked": false,
     "first_published_at": "2016-06-17T09:22:54.440Z",
-    "latest_revision_created_at": "2016-07-12T15:29:21.601Z"
+    "latest_revision_created_at": "2016-07-14T09:51:37.876Z"
   }
 },
 {
@@ -1854,7 +1434,7 @@
     "expired": false,
     "locked": false,
     "first_published_at": "2016-06-21T07:34:14.394Z",
-    "latest_revision_created_at": "2016-07-12T16:02:17.588Z"
+    "latest_revision_created_at": "2016-07-14T09:50:57.596Z"
   }
 },
 {
@@ -1884,19 +1464,19 @@
     "expired": false,
     "locked": false,
     "first_published_at": "2016-06-21T07:47:21.540Z",
-    "latest_revision_created_at": "2016-07-11T19:11:41.006Z"
+    "latest_revision_created_at": "2016-07-14T09:52:31.054Z"
   }
 },
 {
   "model": "wagtailimages.image",
-  "pk": 5,
+  "pk": 20,
   "fields": {
     "collection": 1,
-    "title": "portrait-square",
-    "file": "original_images/portrait-square.jpg",
-    "width": 960,
-    "height": 959,
-    "created_at": "2016-06-16T08:30:36.513Z",
+    "title": "h_sbb_gleis7entertrainmentapp.jpg",
+    "file": "original_images/h_sbb_gleis7entertrainmentapp.jpg",
+    "width": 2500,
+    "height": 1563,
+    "created_at": "2016-07-14T09:48:02.295Z",
     "uploaded_by_user": [
       "admin"
     ],
@@ -1904,139 +1484,119 @@
     "focal_point_y": null,
     "focal_point_width": null,
     "focal_point_height": null,
-    "file_size": 196398
-  }
-},
-{
-  "model": "wagtailimages.image",
-  "pk": 7,
-  "fields": {
-    "collection": 1,
-    "title": "h_sbb_gleis7entertrainmentapp.jpg",
-    "file": "original_images/h_sbb_gleis7entertrainmentapp.jpg",
-    "width": 2500,
-    "height": 1563,
-    "created_at": "2016-06-21T11:22:00.554Z",
-    "uploaded_by_user": [
-      "admin"
-    ],
-    "focal_point_x": 1269,
-    "focal_point_y": 669,
-    "focal_point_width": 1350,
-    "focal_point_height": 1198,
     "file_size": 824128
   }
 },
 {
   "model": "wagtailimages.image",
-  "pk": 9,
+  "pk": 21,
   "fields": {
     "collection": 1,
     "title": "s_sbb_gleis7redesign_02.jpg",
     "file": "original_images/s_sbb_gleis7redesign_02.jpg",
     "width": 2500,
     "height": 1406,
-    "created_at": "2016-06-21T11:22:26.115Z",
+    "created_at": "2016-07-14T09:48:08.775Z",
     "uploaded_by_user": [
       "admin"
     ],
-    "focal_point_x": 1252,
-    "focal_point_y": 727,
-    "focal_point_width": 1917,
-    "focal_point_height": 1302,
+    "focal_point_x": null,
+    "focal_point_y": null,
+    "focal_point_width": null,
+    "focal_point_height": null,
     "file_size": 572010
   }
 },
 {
   "model": "wagtailimages.image",
-  "pk": 10,
-  "fields": {
-    "collection": 1,
-    "title": "h_sbb_swisspass.jpg",
-    "file": "original_images/h_sbb_swisspass.jpg",
-    "width": 2500,
-    "height": 1562,
-    "created_at": "2016-06-21T11:22:44.011Z",
-    "uploaded_by_user": [
-      "admin"
-    ],
-    "focal_point_x": 1549,
-    "focal_point_y": 639,
-    "focal_point_width": 1443,
-    "focal_point_height": 1234,
-    "file_size": 2092271
-  }
-},
-{
-  "model": "wagtailimages.image",
-  "pk": 14,
-  "fields": {
-    "collection": 1,
-    "title": "h_voev-fragebogen.png",
-    "file": "original_images/h_voev-fragebogen.png",
-    "width": 1920,
-    "height": 1280,
-    "created_at": "2016-06-21T12:02:31.596Z",
-    "uploaded_by_user": [
-      "admin"
-    ],
-    "focal_point_x": 1246,
-    "focal_point_y": 573,
-    "focal_point_width": 1346,
-    "focal_point_height": 1062,
-    "file_size": 3306272
-  }
-},
-{
-  "model": "wagtailimages.image",
-  "pk": 15,
-  "fields": {
-    "collection": 1,
-    "title": "h_novo-bc-ch.png",
-    "file": "original_images/h_novo-bc-ch.png",
-    "width": 1920,
-    "height": 1275,
-    "created_at": "2016-06-21T12:02:38.313Z",
-    "uploaded_by_user": [
-      "admin"
-    ],
-    "focal_point_x": 740,
-    "focal_point_y": 572,
-    "focal_point_width": 1363,
-    "focal_point_height": 1095,
-    "file_size": 2908225
-  }
-},
-{
-  "model": "wagtailimages.image",
-  "pk": 16,
+  "pk": 22,
   "fields": {
     "collection": 1,
     "title": "h_maxomedia-ch.png",
     "file": "original_images/h_maxomedia-ch.png",
     "width": 1920,
     "height": 1280,
-    "created_at": "2016-06-21T12:02:43.588Z",
+    "created_at": "2016-07-14T09:48:28.324Z",
     "uploaded_by_user": [
       "admin"
     ],
-    "focal_point_x": 828,
-    "focal_point_y": 631,
-    "focal_point_width": 1171,
-    "focal_point_height": 1263,
+    "focal_point_x": null,
+    "focal_point_y": null,
+    "focal_point_width": null,
+    "focal_point_height": null,
     "file_size": 2788970
   }
 },
 {
   "model": "wagtailimages.image",
-  "pk": 17,
+  "pk": 23,
+  "fields": {
+    "collection": 1,
+    "title": "h_novo-bc-ch.png",
+    "file": "original_images/h_novo-bc-ch.png",
+    "width": 1920,
+    "height": 1275,
+    "created_at": "2016-07-14T09:48:31.847Z",
+    "uploaded_by_user": [
+      "admin"
+    ],
+    "focal_point_x": null,
+    "focal_point_y": null,
+    "focal_point_width": null,
+    "focal_point_height": null,
+    "file_size": 2908225
+  }
+},
+{
+  "model": "wagtailimages.image",
+  "pk": 24,
+  "fields": {
+    "collection": 1,
+    "title": "h_sbb_swisspass.jpg",
+    "file": "original_images/h_sbb_swisspass.jpg",
+    "width": 2500,
+    "height": 1562,
+    "created_at": "2016-07-14T09:48:43.161Z",
+    "uploaded_by_user": [
+      "admin"
+    ],
+    "focal_point_x": null,
+    "focal_point_y": null,
+    "focal_point_width": null,
+    "focal_point_height": null,
+    "file_size": 2092271
+  }
+},
+{
+  "model": "wagtailimages.image",
+  "pk": 25,
+  "fields": {
+    "collection": 1,
+    "title": "h_voev-fragebogen.png",
+    "file": "original_images/h_voev-fragebogen.png",
+    "width": 1920,
+    "height": 1280,
+    "created_at": "2016-07-14T09:48:48.324Z",
+    "uploaded_by_user": [
+      "admin"
+    ],
+    "focal_point_x": null,
+    "focal_point_y": null,
+    "focal_point_width": null,
+    "focal_point_height": null,
+    "file_size": 3306272
+  }
+},
+{
+  "model": "wagtailimages.image",
+  "pk": 26,
   "fields": {
     "collection": 1,
     "title": "h_fluent-ffmpeg.jpg",
     "file": "original_images/h_fluent-ffmpeg.jpg",
     "width": 1920,
     "height": 1280,
-    "created_at": "2016-06-21T12:51:11.538Z",
+    "created_at": "2016-07-14T09:49:56.167Z",
     "uploaded_by_user": [
       "admin"
     ],
@@ -2045,6 +1605,26 @@
     "focal_point_width": null,
     "focal_point_height": null,
     "file_size": 113842
+  }
+},
+{
+  "model": "wagtailimages.image",
+  "pk": 27,
+  "fields": {
+    "collection": 1,
+    "title": "portrait-square.jpg",
+    "file": "original_images/portrait-square.jpg",
+    "width": 960,
+    "height": 959,
+    "created_at": "2016-07-14T09:50:19.808Z",
+    "uploaded_by_user": [
+      "admin"
+    ],
+    "focal_point_x": null,
+    "focal_point_y": null,
+    "focal_point_width": null,
+    "focal_point_height": null,
+    "file_size": 196398
   }
 },
 {
@@ -2075,7 +1655,7 @@
   "model": "projects.projectpage",
   "pk": 7,
   "fields": {
-    "main_image": 14,
+    "main_image": 25,
     "project_date": "2016-05-01",
     "lead": "<p>Der Verein \u00f6ffentlicher Verkehr befragt zwecks Strecken- und Fahrplanoptimierung jedes Jahr eine zuf\u00e4llige Selektion aus GA-Inhabern zu Ihrem Fahrverhalten. Im 21. Jahrhundert muss eine solche Befragung nat\u00fcrlich auch online und vor allem mobile problemlos durchf\u00fchrbar sein.</p>",
     "project_url": "https://fragebogen.voev.ch/",
@@ -2087,7 +1667,7 @@
   "model": "projects.projectpage",
   "pk": 8,
   "fields": {
-    "main_image": 16,
+    "main_image": 22,
     "project_date": "2016-04-01",
     "lead": "<p>Der neue Webauftritt f\u00fcr Maxomedia diente neben der Abl\u00f6sung einer \nschon leicht angestaubten Website auch als Versuchslab f\u00fcr eine neue Art\n Kentico-Sites zu implementieren.</p>",
     "project_url": "https://www.maxomedia.ch",
@@ -2099,7 +1679,7 @@
   "model": "projects.projectpage",
   "pk": 9,
   "fields": {
-    "main_image": 15,
+    "main_image": 23,
     "project_date": "2015-08-01",
     "lead": "<p>F\u00fcr die Berner SAP-Consulting Firma NOVO Business Consultants durfte ich mit der Maxomedia die neue Corporate Website umsetzen.</p>",
     "project_url": "https://www.novo-bc.ch",
@@ -2111,7 +1691,7 @@
   "model": "projects.projectpage",
   "pk": 10,
   "fields": {
-    "main_image": 9,
+    "main_image": 21,
     "project_date": "2015-02-01",
     "lead": "<p>Gleis7.ch, die Jugendplattform der SBB, wurde Ende 2014 einem kompletten \nRedesign unterzogen, Backend sowie Frontend. Die Plattform wurde dabei auch \nauf den aktuellsten Microsoft-Technologiestack migriert.</p>",
     "project_url": "http://www.gleis7.ch",
@@ -2135,7 +1715,7 @@
   "model": "projects.projectpage",
   "pk": 12,
   "fields": {
-    "main_image": 7,
+    "main_image": 20,
     "project_date": "2015-08-01",
     "lead": "<p>F\u00fcr die beiden SBB Apps Gleis7 und MobilBonus durfte ich die \njeweiligen Schnittstellen End2End betreuen (Design, Architektur, \nImplementierung, Betrieb).</p>",
     "project_url": "",
@@ -2159,7 +1739,7 @@
   "model": "projects.projectpage",
   "pk": 15,
   "fields": {
-    "main_image": 10,
+    "main_image": 24,
     "project_date": "2015-08-01",
     "lead": "<p>Die SBB lancierte im Sommer 2015 ihr neues Produkt \"SwissPass\". Mit der Maxomedia durfte ich zum einen die Umsetzung des Einf\u00fchrungsmailings und zum anderen den elektronischen Versand der Kunden-Kommunikation betreuen.<br/></p>",
     "project_url": "",
@@ -2171,7 +1751,7 @@
   "model": "projects.projectpage",
   "pk": 21,
   "fields": {
-    "main_image": 17,
+    "main_image": 26,
     "project_date": "2011-04-10",
     "lead": "<p>node.js Fluent API f\u00fcr die Media-Conversion Library FFMPEG.</p>",
     "project_url": "https://github.com/fluent-ffmpeg/node-fluent-ffmpeg",
@@ -2192,8 +1772,8 @@
   "fields": {
     "heading": "Hallo, ich bin Sch\u00e4rmu.",
     "lead": "Web-Entwickler seit den Tagen als Frontpage-Counter noch cool und selfhtml.de besser als Google war.",
-    "portrait_image": 5,
-    "body": "[{\"type\": \"paragraph\", \"value\": \"<p>Ich arbeite seit ca. 2002/2003 als Software-Entwickler im Web-Umfeld mit unterschiedlichsten Technologien, Frameworks und Plattformen. H\\u00f6rt sich nach einer 08/15 Geschichte an? Ist es aber nicht. Da ich die klassische Software-Entwicklung (3 Monate spezifizieren, 4 Monate diskutieren, 6 Monate Testszenarien entwickeln und 12 Monate entwickeln) immer als relativ langweilig empfand, entschloss ich mich zu einer eher atypischen Karriere:</p>\"}, {\"type\": \"career\", \"value\": [{\"url\": \"https://www.maxomedia.ch\", \"text\": \"<p>Als Crossmedia-Agentur versteht sich die Maxomedia als Integrator von klassischer Werbung wie TV- / Radio-Spots, Plakaten, Inseraten und allen digitalen Kan\\u00e4len von Social Media bis Apps und Plattformen. Bereits nach dem Vorstellungsgespr\\u00e4ch hat es hier Klick gemacht: das junge Team, die in der Luft liegende Kreativit\\u00e4t und die Attit\\u00fcde, dass technisch nichts unm\\u00f6glich ist haben mich sofort in Ihren Bann gezogen. Die Projekte waren so divers wie angenommen und begannen mit kleinsten Microsite's oder Kampagnen-begleitenden Websites und h\\u00f6rten auf bei Plattformen f\\u00fcr mehrere 100'000 Benutzer und Apps mit t\\u00e4glich bis zu 20'000 Unique-Usern.</p>\", \"end_date\": \"2016-07-31\", \"start_date\": \"2012-07-02\", \"name\": \"Maxomedia AG\"}, {\"url\": \"http://www.interactivedata.de/\", \"text\": \"<p>Interactive Data Managed Solutions bietet Finanzdaten f\\u00fcr Web-Portale und Offline-Clients in allen m\\u00f6glichen Granulanit\\u00e4ten und f\\u00fcr alle nur erdenklichen B\\u00f6rsenpl\\u00e4tze an. Meine Aufgabe war es w\\u00e4hrend meines knappen Jahres in dieser Firma den laufenden Betrieb sicherzustellen, das Incident Management zu koordinieren und Deployments auszul\\u00f6sen und zu \\u00fcberwachen. Um es kurz zu machen: manchmal muss man einen Job mal machen, nur um festzustellen dass es nicht der Richtige ist.</p>\", \"end_date\": \"2012-06-30\", \"start_date\": \"2011-08-01\", \"name\": \"Interactive Data Managed Solutions\"}, {\"url\": \"http://www.ncag.ch\", \"text\": \"<p>Die Neue Chemigraphie AG (kurz n c ag) ist im Bereich Druckvorstufe / Publishing t\\u00e4tig und war Ende 2007 auf der Suche nach Verst\\u00e4rkung f\\u00fcr ihre Web-Abteilung. Ich durfte w\\u00e4hrend knapp 4 Jahren als Web-Entwickler an diversen, sehr spannenden Projekten mitarbeiten und gelangte ganz nebenbei zum ersten Mal mit C# sowie node.js in Kontakt. Diese Zeit macht mir endg\\u00fcltig klar: meine Leidenschaft liegt in der Web-Entwicklung.</p>\", \"end_date\": \"2011-06-30\", \"start_date\": \"2007-12-01\", \"name\": \"neue chemigraphie AG\"}, {\"url\": \"http://www.mediatower.ch\", \"text\": \"<p>Direkt nach meiner Ausbildung zum Informatiker arbeitete ich zuerst ca. 1 Jahr f\\u00fcr die Agentur mediatower als Freelancer auf PHP/Typo3, danach gr\\u00fcndete ich gemeinsam mit einem Freund eine Firma, spezialisiert auf automatisiertes G\\u00fcnstig-Hosting und PHP-Auftragsarbeiten.</p>\", \"end_date\": \"2007-11-30\", \"start_date\": \"2003-08-01\", \"name\": \"selbstst\\u00e4ndig/Freelancer\"}]}, {\"type\": \"heading\", \"value\": \"Was kann der Sch\\u00e4rmu denn so?\"}, {\"type\": \"paragraph\", \"value\": \"<p>W\\u00e4hrend dieser Stationen konnte ich mir ein breites Wissen im Umfeld der Web-Entwicklung aneignen. Angefangen hat die Reise w\\u00e4hrend der Ausbildung mit PHP 4, was sich auch f\\u00fcr die n\\u00e4chsten 6 Jahre als Umfeld meiner Wahl herausstellte (auch mit diversen CMS-Systemen, haupts\\u00e4chlich jedoch Custom-Development). Mit dem Job-Antritt bei der n c ag (nota bene als PHP-Entwickler) ver\\u00e4nderte sich mein technischer Fokus abrupt: ich \\u00fcbernahm den Betrieb und die Weiterentwicklung f\\u00fcr eine C#-Applikation! Von da aus war der Schritt zu ASP.NET WebForms/MVC und WebAPI kein grosser und nur ein logischer. Die\\u00a0darauf folgende\\u00a0Zeit bei\\u00a0der Maxomedia war ebenfalls durch diese Technologien gepr\\u00e4gt und gab mir die M\\u00f6glichkeit zur Weiterentwicklung und Vertiefung in diesen (und vielen anderen Themen). Und nun sitze ich hier und entwickle meine pers\\u00f6nliche Website auf dem CMS <a href=\\\"http://wagtail.io\\\">Wagtail</a>, einem Python/Django-basierenden CMS :)</p>\"}, {\"type\": \"skills\", \"value\": [{\"name\": \"ASP.NET WebAPI2\", \"value\": \"8\"}, {\"name\": \"ASP.NET MVC\", \"value\": \"8\"}, {\"name\": \"C#\", \"value\": \"8\"}, {\"name\": \"AngularJS/React/jQuery\", \"value\": \"6\"}, {\"name\": \"HTML5/CSS3\", \"value\": \"6\"}, {\"name\": \"node.js\", \"value\": \"5\"}, {\"name\": \"PHP\", \"value\": \"4\"}, {\"name\": \"Python/Django\", \"value\": \"3\"}]}, {\"type\": \"heading\", \"value\": \"Und was hat er damit alles angestellt?\"}, {\"type\": \"paragraph\", \"value\": \"<p>Eine kleine Auswahl der letzten Projekte findest du direkt hier, die komplette \\u00dcbersicht ist <a id=\\\"5\\\" linktype=\\\"page\\\">hier</a> zu finden.</p>\"}]"
+    "portrait_image": 27,
+    "body": "[{\"type\": \"paragraph\", \"value\": \"<p>Ich arbeite seit ca. 2002/2003 als Software-Entwickler im Web-Umfeld mit unterschiedlichsten Technologien, Frameworks und Plattformen. H\\u00f6rt sich nach einer 08/15 Geschichte an? Ist es aber nicht. Da ich die klassische Software-Entwicklung (3 Monate spezifizieren, 4 Monate diskutieren, 6 Monate Testszenarien entwickeln und 12 Monate entwickeln) immer als relativ langweilig empfand, entschloss ich mich zu einer eher atypischen Karriere:</p>\"}, {\"type\": \"career\", \"value\": [{\"name\": \"Maxomedia AG\", \"start_date\": \"2012-07-02\", \"text\": \"<p>Als Crossmedia-Agentur versteht sich die Maxomedia als Integrator von klassischer Werbung wie TV- / Radio-Spots, Plakaten, Inseraten und allen digitalen Kan\\u00e4len von Social Media bis Apps und Plattformen. Bereits nach dem Vorstellungsgespr\\u00e4ch hat es hier Klick gemacht: das junge Team, die in der Luft liegende Kreativit\\u00e4t und die Attit\\u00fcde, dass technisch nichts unm\\u00f6glich ist haben mich sofort in Ihren Bann gezogen. Die Projekte waren so divers wie angenommen und begannen mit kleinsten Microsite's oder Kampagnen-begleitenden Websites und h\\u00f6rten auf bei Plattformen f\\u00fcr mehrere 100'000 Benutzer und Apps mit t\\u00e4glich bis zu 20'000 Unique-Usern.</p>\", \"end_date\": \"2016-07-31\", \"url\": \"https://www.maxomedia.ch\"}, {\"name\": \"Interactive Data Managed Solutions\", \"start_date\": \"2011-08-01\", \"text\": \"<p>Interactive Data Managed Solutions bietet Finanzdaten f\\u00fcr Web-Portale und Offline-Clients in allen m\\u00f6glichen Granulanit\\u00e4ten und f\\u00fcr alle nur erdenklichen B\\u00f6rsenpl\\u00e4tze an. Meine Aufgabe war es w\\u00e4hrend meines knappen Jahres in dieser Firma den laufenden Betrieb sicherzustellen, das Incident Management zu koordinieren und Deployments auszul\\u00f6sen und zu \\u00fcberwachen. Um es kurz zu machen: manchmal muss man einen Job mal machen, nur um festzustellen dass es nicht der Richtige ist.</p>\", \"end_date\": \"2012-06-30\", \"url\": \"http://www.interactivedata.de/\"}, {\"name\": \"neue chemigraphie AG\", \"start_date\": \"2007-12-01\", \"text\": \"<p>Die Neue Chemigraphie AG (kurz n c ag) ist im Bereich Druckvorstufe / Publishing t\\u00e4tig und war Ende 2007 auf der Suche nach Verst\\u00e4rkung f\\u00fcr ihre Web-Abteilung. Ich durfte w\\u00e4hrend knapp 4 Jahren als Web-Entwickler an diversen, sehr spannenden Projekten mitarbeiten und gelangte ganz nebenbei zum ersten Mal mit C# sowie node.js in Kontakt. Diese Zeit macht mir endg\\u00fcltig klar: meine Leidenschaft liegt in der Web-Entwicklung.</p>\", \"end_date\": \"2011-06-30\", \"url\": \"http://www.ncag.ch\"}, {\"name\": \"selbstst\\u00e4ndig/Freelancer\", \"start_date\": \"2003-08-01\", \"text\": \"<p>Direkt nach meiner Ausbildung zum Informatiker arbeitete ich zuerst ca. 1 Jahr f\\u00fcr die Agentur mediatower als Freelancer auf PHP/Typo3, danach gr\\u00fcndete ich gemeinsam mit einem Freund eine Firma, spezialisiert auf automatisiertes G\\u00fcnstig-Hosting und PHP-Auftragsarbeiten.</p>\", \"end_date\": \"2007-11-30\", \"url\": \"http://www.mediatower.ch\"}]}, {\"type\": \"heading\", \"value\": \"Was kann der Sch\\u00e4rmu denn so?\"}, {\"type\": \"paragraph\", \"value\": \"<p>W\\u00e4hrend dieser Stationen konnte ich mir ein breites Wissen im Umfeld der Web-Entwicklung aneignen. Angefangen hat die Reise w\\u00e4hrend der Ausbildung mit PHP 4, was sich auch f\\u00fcr die n\\u00e4chsten 6 Jahre als Umfeld meiner Wahl herausstellte (auch mit diversen CMS-Systemen, haupts\\u00e4chlich jedoch Custom-Development). Mit dem Job-Antritt bei der n c ag (nota bene als PHP-Entwickler) ver\\u00e4nderte sich mein technischer Fokus abrupt: ich \\u00fcbernahm den Betrieb und die Weiterentwicklung f\\u00fcr eine C#-Applikation! Von da aus war der Schritt zu ASP.NET WebForms/MVC und WebAPI kein grosser und nur ein logischer. Die\\u00a0darauf folgende\\u00a0Zeit bei\\u00a0der Maxomedia war ebenfalls durch diese Technologien gepr\\u00e4gt und gab mir die M\\u00f6glichkeit zur Weiterentwicklung und Vertiefung in diesen (und vielen anderen Themen). Und nun sitze ich hier und entwickle meine pers\\u00f6nliche Website auf dem CMS <a href=\\\"http://wagtail.io\\\">Wagtail</a>, einem Python/Django-basierenden CMS :)</p>\"}, {\"type\": \"skills\", \"value\": [{\"name\": \"ASP.NET WebAPI2\", \"value\": \"8\"}, {\"name\": \"ASP.NET MVC\", \"value\": \"8\"}, {\"name\": \"C#\", \"value\": \"8\"}, {\"name\": \"AngularJS/React/jQuery\", \"value\": \"6\"}, {\"name\": \"HTML5/CSS3\", \"value\": \"6\"}, {\"name\": \"node.js\", \"value\": \"5\"}, {\"name\": \"PHP\", \"value\": \"4\"}, {\"name\": \"Python/Django\", \"value\": \"3\"}]}, {\"type\": \"heading\", \"value\": \"Und was hat er damit alles angestellt?\"}, {\"type\": \"paragraph\", \"value\": \"<p>Eine kleine Auswahl der letzten Projekte findest du direkt hier, die komplette \\u00dcbersicht ist <a id=\\\"5\\\" linktype=\\\"page\\\">hier</a> zu finden.</p>\"}]"
   }
 }
 ]
