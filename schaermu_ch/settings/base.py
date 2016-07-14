@@ -16,6 +16,7 @@ from __future__ import absolute_import, unicode_literals
 import os
 import sys
 
+env = os.environ.copy()
 PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE_DIR = os.path.dirname(PROJECT_DIR)
 
@@ -140,6 +141,15 @@ STATIC_URL = '/static/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
+AWS_REGION = 'eu-west-1'
+AWS_ACCESS_KEY_ID = env['AWS_ACCESS_KEY_ID']
+AWS_SECRET_ACCESS_KEY = env['AWS_SECRET_ACCESS_KEY']
+AWS_STORAGE_BUCKET_NAME = env['S3_BUCKET']
+AWS_S3_HOST = "s3-{0}.amazonaws.com".format(AWS_REGION)
+
+DEFAULT_FILE_STORAGE = 'schaermu_ch.s3utils.MediaStorage'
+S3_URL = "https://{0}/{1}".format(AWS_S3_HOST, AWS_STORAGE_BUCKET_NAME)
+MEDIA_URL = S3_URL + '/media/'
 
 # Wagtail settings
 
