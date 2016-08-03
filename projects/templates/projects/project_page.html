@@ -7,7 +7,7 @@
   <style>
     .header .bg::after {
       {% if page.main_image %}
-      background: url({{ main_image.url }});
+      background: url({{ main_image.url|safe }});
       {% else %}
       background: url(https://placehold.it/980x350);
       {% endif %}
