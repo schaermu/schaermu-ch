@@ -6914,16 +6914,30 @@ a > img.fh5co-align-center {
   display: block;
   display: -webkit-box;
   max-width: 100%;
-  min-height: 200px;
   margin: 0 auto;
+  min-height: 200px;
   -webkit-line-clamp: 8;
   -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis; }
+  overflow: hidden; }
+  .timeline-body p::after {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: '\f078';
+    position: absolute;
+    bottom: 39px;
+    right: 6px;
+    font-size: 14px;
+    color: #ef5353; }
   .timeline-body p.show {
     text-overflow: auto;
     overflow: auto;
     -webkit-line-clamp: auto; }
+    .timeline-body p.show::after {
+      content: '\f077'; }
 
 .timeline {
   margin: 10px 0 0 0; }
@@ -6938,7 +6952,10 @@ a > img.fh5co-align-center {
 @media screen and (max-width: 768px) {
   .timeline-body p {
     height: 100px;
-    -webkit-line-clamp: 4; } }
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: initial; }
+    .timeline-body p.show {
+      height: auto; } }
 .grid .grid-sizer {
   width: 50%; }
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (color: 8) and (device-aspect-ratio: 375 / 667) {
