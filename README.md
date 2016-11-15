@@ -12,3 +12,5 @@ My wagtail-based personal website. Awesome.
 9. ./manage.py loaddata export.json
 10. ./manage.py runserver
 11. Browse http://localhost:8000/
+
+Deployment is automatic using a git-hook in Heroku (master branch).
