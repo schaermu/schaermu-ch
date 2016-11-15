@@ -18,7 +18,7 @@ class CareerItemBlock(blocks.StructBlock):
     url = blocks.URLBlock(max_length=250, default='', label='URL')
     name = blocks.CharBlock(max_length=150, default='', label='Firma')
     start_date = blocks.DateBlock(label='Datum Antritt')
-    end_date = blocks.DateBlock(label='Datum Austritt')
+    end_date = blocks.DateBlock(label='Datum Austritt', required=False)
     text = blocks.RichTextBlock(label='Beschreibung')
 
     class Meta:
