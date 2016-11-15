@@ -1,3 +1,3 @@
 #!/bin/sh
-TEST_DB=sqlite ptw --onpass "osascript -e \"display notification \\\"Tests passed!\\\" with title \\\"schaermu-ch\\\"\""
+TEST_DB=sqlite AWS_ACCESS_KEY_ID=foobar AWS_SECRET_ACCESS_KEY=foobar S3_BUCKET=schaermuch ptw --onpass "osascript -e \"display notification \\\"Tests passed!\\\" with title \\\"schaermu-ch\\\"\""
   --onfail "osascript -e \"display notification \\\"Tests failed!\\\" with title \\\"schaermu-ch\\\"\""
