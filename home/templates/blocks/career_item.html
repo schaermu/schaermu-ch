@@ -8,6 +8,12 @@
         {{ value.text.source|safe }}
     </div>
     <div class="timeline-footer">
-        <p class="text-right">{{ value.start_date|date:'M/Y' }} - {{ value.end_date|date:'M/Y' }}</p>
+        <p class="text-right">{{ value.start_date|date:'M/Y' }} -
+          {% if value.end_date %}
+           {{ value.end_date|date:'M/Y' }}
+          {% else %}
+            heute
+          {% endif %}
+        </p>
     </div>
 </div>
