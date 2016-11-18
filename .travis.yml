@@ -10,6 +10,7 @@ before_script:
   - export AWS_ACCESS_KEY_ID=foobar
   - export AWS_SECRET_ACCESS_KEY=foobar
   - export S3_BUCKET=schaermuch
+  - export GOOGLE_SERVICE_PRIVATE_KEY=foobar
 install:
   - if [[ $DB == postgres ]]; then pip install -q psycopg2; fi
   - pip install -q -r requirements.txt
