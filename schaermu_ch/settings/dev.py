@@ -10,8 +10,6 @@ SECRET_KEY = '1do7a%$r^^*e3%44@21gt9$j27bsg$^^=vtvmpc@ul-9bbt%bo'
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
-GA_KEY_FILEPATH = '.google-analytics_sa_key.json'
-
 try:
     from .local import *
 except ImportError:
