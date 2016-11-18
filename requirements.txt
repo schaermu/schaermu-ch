@@ -31,7 +31,7 @@ six==1.10.0
 static3==0.7.0
 Unidecode==0.4.19
 uritemplate==0.6
--e git+https://github.com/schaermu/wagalytics.git@e6c338db52bbcebb2fc97eabe5d99be240f5a93a#egg=wagalytics
+-e git+https://github.com/schaermu/wagalytics.git@feature/service-account-as-string#egg=wagalytics
 wagtail==1.7
 wagtailfontawesome==1.0.6
 webencodings==0.5
