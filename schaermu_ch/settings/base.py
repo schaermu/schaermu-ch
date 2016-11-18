@@ -36,6 +36,8 @@ INSTALLED_APPS = [
     'anymail',
     'taggit_templatetags2',
     'storages',
+    'wagalytics',
+    'wagtailfontawesome',
 
     'wagtail.wagtailforms',
     'wagtail.wagtailredirects',
@@ -154,6 +156,8 @@ AWS_S3_HOST = "s3-{0}.amazonaws.com".format(AWS_REGION)
 DEFAULT_FILE_STORAGE = 'schaermu_ch.s3utils.MediaStorage'
 S3_URL = "https://{0}/{1}".format(AWS_S3_HOST, AWS_STORAGE_BUCKET_NAME)
 MEDIA_URL = S3_URL + '/media/'
+
+GA_VIEW_ID = "ga:126922177"
 
 # Wagtail settings
 

@@ -14,16 +14,26 @@ django-taggit-templatetags2==1.5.1
 django-toolbelt==0.0.1
 django-treebeard==4.0.1
 djangorestframework==3.5.3
+google-api-python-client==1.5.0
 gunicorn==19.6.0
 html5lib==0.999999999
+httplib2==0.9.2
+oauth2client==2.2.0
 Pillow==3.4.2
 psycopg2==2.6.1
+pyasn1==0.1.9
+pyasn1-modules==0.0.8
 pytz==2016.7
 requests==2.10.0
+rsa==3.4.2
+simplejson==3.10.0
 six==1.10.0
 static3==0.7.0
 Unidecode==0.4.19
+uritemplate==0.6
+-e git+https://github.com/schaermu/wagalytics.git@e6c338db52bbcebb2fc97eabe5d99be240f5a93a#egg=wagalytics
 wagtail==1.7
+wagtailfontawesome==1.0.6
 webencodings==0.5
 whitenoise==3.2
 Willow==0.4
