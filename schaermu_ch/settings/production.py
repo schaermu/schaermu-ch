@@ -22,8 +22,6 @@ ANYMAIL = {
 EMAIL_BACKEND = "anymail.backends.mailgun.MailgunBackend"
 DEFAULT_FROM_EMAIL = "noreply@schaermu.ch"
 
-GA_KEY_CONTENT = env['GOOGLE_SERVICE_PRIVATE_KEY']
-
 SECURE_SSL_REDIRECT = True
 
 # Parse database configuration from $DATABASE_URL

@@ -158,6 +158,7 @@ S3_URL = "https://{0}/{1}".format(AWS_S3_HOST, AWS_STORAGE_BUCKET_NAME)
 MEDIA_URL = S3_URL + '/media/'
 
 GA_VIEW_ID = "ga:126922177"
+GA_KEY_CONTENT = env['GOOGLE_SERVICE_PRIVATE_KEY']
 
 # Wagtail settings
 
