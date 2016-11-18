@@ -141,6 +141,9 @@ STATICFILES_DIRS = [
     os.path.join(PROJECT_DIR, 'static'),
 ]
 
+SERVER_EMAIL = 'server@schaermu.ch'
+ADMINS = (('Stefan Schaermeli', 'info@schaermu.ch'))
+
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
 
