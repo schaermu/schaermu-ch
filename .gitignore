@@ -55,3 +55,4 @@ docs/_build/
 # MacOS
 .DS_Store
 .google-analytics_sa_key.json
+.python-version
