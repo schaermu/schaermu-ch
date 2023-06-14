@@ -1,8 +1,5 @@
----
----
-
 <div class="self-start">
-    <button id="themeToggle">
+    <button on:click={handleToggleClick}>
         <svg width="30px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
             <path
                 class="sun"
@@ -67,8 +64,4 @@
         const isDark = element.classList.contains("dark");
         localStorage.setItem("theme", isDark ? "dark" : "light");
     };
-
-    document
-        .getElementById("themeToggle")
-        .addEventListener("click", handleToggleClick);
 </script>

@@ -1,11 +1,11 @@
 ---
 import Navigation from "./Navigation.svelte";
-import ThemeIcon from './ThemeIcon.astro';
+import ThemeIcon from './ThemeIcon.svelte';
 ---
 
 <header>
     <nav class="flex flex-row">
         <Navigation client:only="svelte" />
-        <ThemeIcon />
+        <ThemeIcon client:only="svelte" />
     </nav>
 </header>
