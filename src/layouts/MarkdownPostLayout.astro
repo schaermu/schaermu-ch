@@ -4,15 +4,20 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 const { frontmatter } = Astro.props;
 ---
 <BaseLayout pageTitle={frontmatter.title}>
-    <p>Published on: {frontmatter.pubDate.slice(0,10)}</p>
-    <p>Written by {frontmatter.author}</p>
-
-    <div class="tags">
-        {frontmatter.tags.map((tag) => (
-            <p class="tag"><a href={`/tags/${tag}`}>{tag}</a></p>
-        ))}
+  <article class="flex flex-col sm:flex-row">
+    <div class="md:basis-1/4 sm:order-last">
+      <div class="tags">
+          {frontmatter.tags.map((tag: string) => (
+              <p class="tag"><a href={`/tags/${tag}`}>{tag}</a></p>
+          ))}
+      </div>
     </div>
-    <slot />
+    <div class="md:basis-3/4">
+      <p>Published on: {frontmatter.pubDate.slice(0,10)}</p>
+      <p>Written by {frontmatter.author}</p>
+      <slot />
+    </div>
+  </article>
 </BaseLayout>
 
 <style>
