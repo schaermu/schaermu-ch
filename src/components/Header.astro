@@ -1,13 +1,11 @@
 ---
-import Navigation from "./Navigation.astro";
-import Hamburger from "./Hamburger.astro";
+import Navigation from "./Navigation.svelte";
 import ThemeIcon from './ThemeIcon.astro';
 ---
 
 <header>
     <nav>
-        <Hamburger />
+        <Navigation client:only="svelte" />
         <ThemeIcon />
-        <Navigation />
     </nav>
 </header>
