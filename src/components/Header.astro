@@ -1,11 +1,32 @@
 ---
-import Navigation from "./Navigation.svelte";
-import ThemeIcon from './ThemeIcon.svelte';
+import Navigation from "./Navigation.astro";
+import SocialLink from "./SocialLink.astro";
+import ThemeIcon from "./ThemeIcon.svelte";
 ---
 
 <header>
-    <nav class="flex flex-row">
-        <Navigation client:only="svelte" />
-        <ThemeIcon client:only="svelte" />
-    </nav>
+    <Navigation />
+    <div
+        class="justify-self-end py-2 flex items-center content-center text-text-bold"
+    >
+        <SocialLink href="https://github.com/schaermu"
+            title="schaermu on GitHub"
+            color="blue" icon="fa-brands:github" />
+        <SocialLink href="https://stackoverflow.com/users/221217/schaermu"
+            title="schaermu on Stackoverflow"
+            color="yellow" icon="fa-brands:stack-overflow" />
+    </div>
+    <ThemeIcon client:only="svelte" />
 </header>
+
+<style>
+    header {
+        grid-area: header;
+        display: grid;
+        align-items: center;
+        grid-template-columns: minmax(0, 1fr) minmax(0, max-content) minmax(
+                0,
+                max-content
+            );
+    }
+</style>

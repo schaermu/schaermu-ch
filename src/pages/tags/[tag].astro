@@ -20,8 +20,10 @@ const { posts } = Astro.props;
 ---
 
 <BaseLayout pageTitle={tag}>
-    <p>Posts tagged with {tag}</p>
-    <ul>
-		{posts.map(post => <BlogListItem post={post} />)}
-	</ul>
+	<Fragment slot="main">
+        <p>Posts tagged with {tag}</p>
+        <ul>
+            {posts.map(post => <BlogListItem post={post} />)}
+        </ul>
+    </Fragment>
 </BaseLayout>
