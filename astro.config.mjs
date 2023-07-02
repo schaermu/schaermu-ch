@@ -9,7 +9,7 @@ export default defineConfig({
   integrations: [
     svelte(),
     tailwind({
-      config: { applyBaseStyles: false },
+      applyBaseStyles: false,
     }),
     icon({
       include: {
