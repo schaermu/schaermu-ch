@@ -13,4 +13,7 @@ export default defineConfig({
       'fa-solid': ["bars", "times"]
     }
   })],
+  experimental: {
+    assets: true,
+  }
 });

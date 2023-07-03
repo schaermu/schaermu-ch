@@ -1,10 +1,44 @@
 ---
-import BaseLayout from '@layouts/BaseLayout.astro';
-import FancyHeading from '@components/Elements/FancyHeading.astro';
-const pageTitle = 'the writings and musings of schaermu.';
+import BaseLayout from "@layouts/BaseLayout.astro";
+import FancyHeading from "@components/Elements/FancyHeading.astro";
+import Card from "@components/Elements/Card.astro";
+
+import blogCardImage from "~/assets/blog-card-teaser.jpg";
+import cvCardImage from "~/assets/cv-card-teaser.jpg";
+
+const pageTitle = "der bloggende schärmu";
 ---
+
 <BaseLayout pageTitle={pageTitle}>
   <Fragment slot="main">
     <FancyHeading color="blue">Willkommen!</FancyHeading>
+    <div class="flex flex-row mt-5">
+      <Card
+        classList={['basis-1/2', 'mx-2']}
+        image={{ src: blogCardImage, alt: "test", width: 800 }}
+        href="/blog"
+      >
+        <Fragment slot="title">Blog</Fragment>
+        <Fragment slot="text">
+          In meinem Blog schreibe ich über nerdiges Zeug wie Home-Lab,
+          Automatisierung, meine kleinen Hobby-Software-Projekte oder auch
+          allgemeines Zeug aus der Welt der Software-Entwicklung.
+        </Fragment>
+        <Fragment slot="link">Zu den Blogs</Fragment>
+      </Card>
+
+      <Card
+        classList={['basis-1/2', 'mx-2']}
+        image={{ src: cvCardImage, alt: "test", width: 800 }}
+        href="/cv"
+      >
+        <Fragment slot="title">CV</Fragment>
+        <Fragment slot="text">
+          Wenn du mehr über mich und meinen Werdegang erfahren willst, kannst du
+          dir in meinem CV anschauen was ich bisher so gemacht habe.
+        </Fragment>
+        <Fragment slot="link">Zum CV</Fragment>
+      </Card>
+    </div>
   </Fragment>
 </BaseLayout>
