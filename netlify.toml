@@ -1,0 +1,14 @@
+[build]
+command = "pnpm build"
+publish = "dist"
+
+[build.environment]
+CYPRESS_CACHE_FOLDER = "./node_modules/CypressBinary"
+TERM = "xterm"
+
+# run Cypress E2E tests
+[[plugins]]
+package = "netlify-plugin-cypress"
+
+[plugins.inputs]
+record = false

@@ -14,7 +14,7 @@ export default defineConfig({
     icon({
       include: {
         'fa-brands': ["github", "stack-overflow", "linkedin"],
-        'fa-solid':["*"],
+        'fa-solid':["bars", "times"],
       }
     }),
   ]
