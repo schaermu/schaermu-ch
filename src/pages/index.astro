@@ -1,9 +1,10 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import FancyHeading from '../components/Elements/FancyHeading.astro';
 const pageTitle = 'the writings and musings of schaermu.';
 ---
 <BaseLayout pageTitle={pageTitle}>
   <Fragment slot="main">
-    <h1>Welcome!</h1>
+    <FancyHeading color="blue">Willkommen!</FancyHeading>
   </Fragment>
 </BaseLayout>

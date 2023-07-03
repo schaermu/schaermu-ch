@@ -22,7 +22,6 @@ const { frontmatter } = Astro.props;
       </div>
       <div class="md:basis-3/4">
         <p>Published on: {frontmatter.pubDate.slice(0, 10)}</p>
-        <p>Written by {frontmatter.author}</p>
         <slot />
       </div>
     </article>
