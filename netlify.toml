@@ -11,6 +11,4 @@ TERM = "xterm"
 package = "netlify-plugin-cypress"
 
 [plugins.inputs]
-# skip the default tests before the deploy
-skip = true
 record = false
