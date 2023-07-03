@@ -5,10 +5,17 @@ publish = "dist"
 [build.environment]
 CYPRESS_CACHE_FOLDER = "./node_modules/CypressBinary"
 TERM = "xterm"
+CI = "1"
 
 # run Cypress E2E tests
 [[plugins]]
 package = "netlify-plugin-cypress"
 
+# don't test the deployed site
 [plugins.inputs]
-record = false
+enable = false
+
+# test and record run for local site
+[plugins.inputs.postBuild]
+enable = true
+record = true
