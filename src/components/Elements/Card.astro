@@ -1,0 +1,48 @@
+---
+import { Image } from "astro:assets";
+
+export interface Props {
+    image?: {
+        src: ImageMetadata;
+        alt: string;
+        width: number;
+    };
+    href?: string;
+    classList?: string[];
+}
+
+const { image, href, classList = [] } = Astro.props;
+---
+
+<article
+    class:list={[
+        "flex flex-col bg-slate-100 border shadow-sm rounded-xl dark:bg-slate-800 dark:border-slate-700 dark:shadow-slate-700/[.7]",
+        ...classList,
+    ]}
+>
+    {
+        image && (
+            <Image
+                class="w-full h-auto rounded-t-xl"
+                src={image.src}
+                alt={image.alt}
+                width={image.width}
+            />
+        )
+    }
+    <div class="py-4 p-3 md:p-5 flex flex-col h-full">
+        <h2 class="text-lg font-bold text-slate-800 dark:text-slate-100">
+            <slot name="title" />
+        </h2>
+        <p class="mt-1 text-slate-800 dark:text-slate-400 h-full">
+            <slot name="text" />
+        </p>
+        {
+            href && (
+                <a class="mt-5 self-start gap-2 font-medium" href={href}>
+                    <slot name="link" />
+                </a>
+            )
+        }
+    </div>
+</article>
