@@ -12,30 +12,45 @@ const pageTitle = "der bloggende schärmu";
 <BaseLayout pageTitle={pageTitle}>
   <Fragment slot="main">
     <FancyHeading color="blue">Willkommen!</FancyHeading>
+    <p class="my-5">
+      Ich bin Schärmu und beschäftige mich seit über 20 Jahren mit
+      Software-Entwicklung, IT-Infrastruktur und Automatisierung. Im Zuge dieser
+      Jahre ist dies dies der gefühlt 9359. Versuch, eine aktiv gepflegte und
+      einigermassen saubere persönliche Webseite aufzubauen. Heute ist der
+      04.07.2023, das letzte Aktualisierungsdatum ist jeweils <a
+        href="https://github.com/schaermu/schaermu-ch/commits/main"
+        target="_blank">hier</a
+      > zu sehen. Time will tell.
+    </p>
+    <p>
+      Auf dieser Seite findet ihr exakt 3 Dinge: alles was ihr hier seht, einen
+      Blog sowie meinen Lebenslauf in digitaler Form.<br />
+      Und vielleicht mal ein Gästebuch. Aber das ist ein grosses Vielleicht.
+    </p>
     <div class="flex flex-row mt-5">
       <Card
-        classList={['basis-1/2', 'mx-2']}
+        classList={["basis-1/2", "mx-2"]}
         image={{ src: blogCardImage, alt: "test", width: 800 }}
         href="/blog"
       >
         <Fragment slot="title">Blog</Fragment>
         <Fragment slot="text">
           In meinem Blog schreibe ich über nerdiges Zeug wie Home-Lab,
-          Automatisierung, meine kleinen Hobby-Software-Projekte oder auch
-          allgemeines Zeug aus der Welt der Software-Entwicklung.
+          Automatisierung, meine kleinen Hobby-Software-Projekte oder über
+          allgemeines Zeug aus der Welt der IT.
         </Fragment>
         <Fragment slot="link">Zu den Blogs</Fragment>
       </Card>
 
       <Card
-        classList={['basis-1/2', 'mx-2']}
+        classList={["basis-1/2", "mx-2"]}
         image={{ src: cvCardImage, alt: "test", width: 800 }}
         href="/cv"
       >
         <Fragment slot="title">CV</Fragment>
         <Fragment slot="text">
-          Wenn du mehr über mich und meinen Werdegang erfahren willst, kannst du
-          dir in meinem CV anschauen was ich bisher so gemacht habe.
+          Falls dich interessiert was ich bisher so gemacht habe und für wen das
+          genau passiert ist, kannst du das hier nachlesen.
         </Fragment>
         <Fragment slot="link">Zum CV</Fragment>
       </Card>
