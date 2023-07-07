@@ -9,6 +9,9 @@ module.exports = {
 			fontFamily: {
 				'sans': ['Space Grotesk', ...defaultTheme.fontFamily.sans],
 			},
+			flexBasis: {
+				"1/2-gap-4": "calc(50% - (1/2 * 1rem))"
+			},
 			colors: {
 				transparent: "transparent",
 				current: "currentColor",
