@@ -4,6 +4,7 @@
 
 /* styles from https://github.com/flexdinesh/blogster/tree/main/themes/bubblegum */
 @layer base {
+
     /* light theme */
     .theme-schaermu {
         /* Custom #8AE6FB */
@@ -28,8 +29,8 @@
         /* black */
         --color-text-selection: 0 0 0;
 
-        /* white */
-        --color-bg-body: 255 255 255;
+        /* tailwind amber-50 */
+        --color-bg-body: 248 250 252;
         /* tailwind amber-100 #fef3c7 */
         --color-bg-code: 254 243 199;
         /* tailwind lime-200 #d9f99d */
