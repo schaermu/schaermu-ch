@@ -1,46 +1,39 @@
 ---
+import TagItem from "@components/Blog/TagItem.astro";
+import FancyHeading from "@components/Elements/FancyHeading.astro";
 import BaseLayout from "@layouts/BaseLayout.astro";
 
+import { format, formatDistanceToNow } from "date-fns";
+import de from "date-fns/locale/de/index.js";
+
 const { frontmatter } = Astro.props;
+
+const readableDate = formatDistanceToNow(new Date(frontmatter.pubDate), {
+  locale: de,
+  addSuffix: true,
+});
+const exactDate = format(new Date(frontmatter.pubDate), "dd.MM.yyyy", {
+  locale: de,
+});
 ---
 
 <BaseLayout pageTitle={frontmatter.title}>
   <Fragment slot="main">
-    <article class="flex flex-col sm:flex-row">
-      <div class="md:basis-1/4 sm:order-last">
+    <article class="flex prose prose-schaermu flex-col sm:flex-row">
+      <div class="md:basis-3/4">
+        <FancyHeading color="blue">{frontmatter.title}</FancyHeading>
+        <small class="block w-full text-center my-5"
+          >Veröffentlicht {readableDate} (am {exactDate})</small
+        >
         <div class="tags">
           {
             frontmatter.tags.map((tag: string) => (
-              <p class="tag">
-                <a class="unset animated-link" href={`/blog/tags/${tag}`}>
-                  {tag}
-                </a>
-              </p>
+              <TagItem label={tag} href={`/blog/tags/${tag}`} />
             ))
           }
         </div>
-      </div>
-      <div class="md:basis-3/4">
-        <p>Published on: {frontmatter.pubDate.slice(0, 10)}</p>
         <slot />
       </div>
     </article>
   </Fragment>
 </BaseLayout>
-
-<style>
-  .tags {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
-  }
-
-  .tag {
-    margin: 0.25em;
-    border: dotted 1px #a1a1a1;
-    border-radius: 0.5em;
-    padding: 0.5em 1em;
-    font-size: 1.15em;
-    background-color: #f8fcfd;
-  }
-</style>

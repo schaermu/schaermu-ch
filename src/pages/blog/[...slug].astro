@@ -13,11 +13,8 @@ export async function getStaticPaths() {
 
 const { slug } = Astro.params;
 const page = Astro.props;
-const formattedDate = page.data.pubDate.toLocaleString("de");
 
 const { Content } = await page.render();
 ---
 
-<h1>{page.data.title}</h1>
-<p>{formattedDate}</p>
 <Content />
