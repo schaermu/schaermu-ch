@@ -1,10 +1,8 @@
 ---
 import { getCollection } from "astro:content";
-import { formatDistanceToNow, format } from "date-fns";
-import { de } from "date-fns/locale";
 
 import BaseLayout from "@layouts/BaseLayout.astro";
-import Card from "@components/Elements/Card.astro";
+import BlogList from "@components/Blog/BlogList.astro";
 import FancyHeading from "@components/Elements/FancyHeading.astro";
 
 const allPosts = await getCollection("blog");
@@ -14,47 +12,6 @@ const pageTitle = "der bloggende schärmu";
 <BaseLayout pageTitle={pageTitle}>
 	<Fragment slot="main">
 		<FancyHeading color="blue">Schärmu's Blog</FancyHeading>
-		<div class="flex flex-col gap-4 md:flex-row md:flex-wrap mt-5">
-			{
-				allPosts
-					.sort((a, b) => {
-						if (a.data.pubDate > b.data.pubDate) {
-							return -1;
-						}
-						if (a.data.pubDate < b.data.pubDate) {
-							return 1;
-						}
-						return 0;
-					})
-					.map((post) => (
-						<Card
-							classList={["md:basis-1/2-gap-4"]}
-							image={{
-								src: post.data.cover,
-								alt: post.data.coverAlt,
-								width: 800,
-							}}
-							href={`/blog/${post.slug}`}
-						>
-							<Fragment slot="title">{post.data.title}</Fragment>
-							<small
-								slot="post-title"
-								title={format(post.data.pubDate, "dd.MM.yyyy", {
-									locale: de,
-								})}
-							>
-								{formatDistanceToNow(post.data.pubDate, {
-									locale: de,
-									addSuffix: true,
-								})}
-							</small>
-							<Fragment slot="text">
-								{post.data.description}
-							</Fragment>
-							<Fragment slot="link">Zum Post</Fragment>
-						</Card>
-					))
-			}
-		</div>
+		<BlogList posts={allPosts} />
 	</Fragment>
 </BaseLayout>
