@@ -2,20 +2,16 @@
 import { getCollection } from "astro:content";
 
 import BaseLayout from "@layouts/BaseLayout.astro";
-import BlogListItem from "@components/Blog/BlogListItem.astro";
+import BlogList from "@components/Blog/BlogList.astro";
+import FancyHeading from "@components/Elements/FancyHeading.astro";
 
 const allPosts = await getCollection("blog");
-const pageTitle = "Thy writing be goode!";
+const pageTitle = "der bloggende schärmu";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
 	<Fragment slot="main">
-		<ul>
-			{
-				allPosts.map((post) => (
-					<BlogListItem title={post.data.title} href={post.slug} />
-				))
-			}
-		</ul>
+		<FancyHeading color="blue">Schärmu's Blog</FancyHeading>
+		<BlogList posts={allPosts} />
 	</Fragment>
 </BaseLayout>

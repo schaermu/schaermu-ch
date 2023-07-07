@@ -3,7 +3,7 @@ import { Image } from "astro:assets";
 
 export interface Props {
     image?: {
-        src: ImageMetadata;
+        src: any;
         alt: string;
         width: number;
     };
@@ -21,19 +21,31 @@ const { image, href, classList = [] } = Astro.props;
     ]}
 >
     {
-        image && (
-            <Image
-                class="w-full h-auto rounded-t-xl"
-                src={image.src}
-                alt={image.alt}
-                width={image.width}
-            />
+        image && href ? (
+            <a class="border-none" href={href}>
+                <Image
+                    class="w-full h-auto rounded-t-xl"
+                    src={image.src}
+                    alt={image.alt}
+                    width={image.width}
+                />
+            </a>
+        ) : (
+            image && (
+                <Image
+                    class="w-full h-auto rounded-t-xl"
+                    src={image.src}
+                    alt={image.alt}
+                    width={image.width}
+                />
+            )
         )
     }
     <div class="py-4 p-3 md:p-5 flex flex-col h-full">
         <h2 class="text-lg font-bold text-slate-800 dark:text-slate-100">
             <slot name="title" />
         </h2>
+        <slot name="post-title" />
         <p class="mt-1 text-slate-800 dark:text-slate-400 h-full">
             <slot name="text" />
         </p>

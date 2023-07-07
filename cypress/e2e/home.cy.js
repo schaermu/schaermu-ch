@@ -2,7 +2,7 @@ describe('home page', () => {
     it('has correct titles', () => {
         cy.visit('/');
 
-        cy.title().should('eq', 'der bloggende schärmu');
+        cy.title().should('eq', 'der begrüssende schärmu');
         cy.get('h1').should('contain.text', 'Willkommen!');
     });
 
