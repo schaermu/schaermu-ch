@@ -1,8 +1,9 @@
 ---
 import { getCollection } from "astro:content";
 
-import BlogListItem from "@components/Blog/BlogListItem.astro";
 import BaseLayout from "@layouts/BaseLayout.astro";
+import BlogList from "@components/Blog/BlogList.astro";
+import FancyHeading from "@components/Elements/FancyHeading.astro";
 
 export async function getStaticPaths() {
     const allPosts = await getCollection("blog");
@@ -27,13 +28,7 @@ const { posts } = Astro.props;
 
 <BaseLayout pageTitle={tag}>
     <Fragment slot="main">
-        <p>Posts tagged with {tag}</p>
-        <ul>
-            {
-                posts.map((post) => (
-                    <BlogListItem title={post.data.title} href={post.slug} />
-                ))
-            }
-        </ul>
+        <FancyHeading color="blue">Posts in «{tag}»</FancyHeading>
+        <BlogList posts={posts} />
     </Fragment>
 </BaseLayout>
