@@ -14,7 +14,7 @@ export interface Props {
 const { image, href, classList = [] } = Astro.props;
 ---
 
-<div
+<article
     class:list={[
         "flex flex-col bg-slate-100 border shadow-sm rounded-xl dark:bg-slate-800 dark:border-slate-700 dark:shadow-slate-700/[.7]",
         ...classList,
@@ -31,9 +31,9 @@ const { image, href, classList = [] } = Astro.props;
         )
     }
     <div class="py-4 p-3 md:p-5 flex flex-col h-full">
-        <h3 class="text-lg font-bold text-slate-800 dark:text-slate-100">
+        <h2 class="text-lg font-bold text-slate-800 dark:text-slate-100">
             <slot name="title" />
-        </h3>
+        </h2>
         <p class="mt-1 text-slate-800 dark:text-slate-400 h-full">
             <slot name="text" />
         </p>
@@ -45,4 +45,4 @@ const { image, href, classList = [] } = Astro.props;
             )
         }
     </div>
-</div>
+</article>
