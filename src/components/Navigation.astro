@@ -1,6 +1,6 @@
 ---
 import NavLink from "./NavLink.astro";
-import { Icon } from 'astro-icon/components'
+import { Icon } from "astro-icon/components";
 
 const navLinks = [
     { label: "Home", href: "/" },
@@ -25,7 +25,11 @@ const navLinks = [
     </nav>
     <nav class="md:hidden">
         <button id="mobile-menu-open">
-            <Icon name="fa-solid:bars" title="Open mobile menu" aria-hidden={true} />
+            <Icon
+                name="fa-solid:bars"
+                title="Open mobile menu"
+                aria-hidden={true}
+            />
             <span class="sr-only">Open mobile menu</span>
         </button>
         <section
@@ -37,7 +41,11 @@ const navLinks = [
                     id="mobile-menu-close"
                     class="px-6 h-[5rem] text-lg xml-[1px]"
                 >
-                    <Icon name="fa-solid:times" title="Close mobile menu" aria-hidden={true} />
+                    <Icon
+                        name="fa-solid:times"
+                        title="Close mobile menu"
+                        aria-hidden={true}
+                    />
                     <span class="sr-only">Close mobile menu</span>
                 </button>
                 <ul

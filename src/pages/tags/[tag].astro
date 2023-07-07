@@ -29,7 +29,11 @@ const { posts } = Astro.props;
     <Fragment slot="main">
         <p>Posts tagged with {tag}</p>
         <ul>
-            {posts.map((post) => <BlogListItem title={post.data.title} href={post.slug} />)}
+            {
+                posts.map((post) => (
+                    <BlogListItem title={post.data.title} href={post.slug} />
+                ))
+            }
         </ul>
     </Fragment>
 </BaseLayout>

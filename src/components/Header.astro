@@ -9,12 +9,18 @@ import ThemeIcon from "./ThemeIcon.svelte";
     <div
         class="justify-self-end py-2 flex items-center content-center text-text-bold"
     >
-        <SocialLink href="https://github.com/schaermu"
+        <SocialLink
+            href="https://github.com/schaermu"
             title="schaermu on GitHub"
-            color="blue" icon="fa-brands:github" />
-        <SocialLink href="https://stackoverflow.com/users/221217/schaermu"
+            color="blue"
+            icon="fa-brands:github"
+        />
+        <SocialLink
+            href="https://stackoverflow.com/users/221217/schaermu"
             title="schaermu on Stackoverflow"
-            color="yellow" icon="fa-brands:stack-overflow" />
+            color="yellow"
+            icon="fa-brands:stack-overflow"
+        />
     </div>
     <ThemeIcon client:only="svelte" />
 </header>
