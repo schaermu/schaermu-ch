@@ -1,9 +1,22 @@
 ---
-const { label, href } = Astro.props;
+export interface Props {
+    label: string;
+    href: string;
+    highlightColor?: string;
+    classList?: string[];
+}
+
+const { label, href, highlightColor = "blue", classList = [] } = Astro.props;
 ---
 
-<span
-    class="inline-block whitespace-nowrap rounded-[0.27rem] bg-primary-100 px-[0.65em] pb-[0.25em] pt-[0.35em] text-center align-baseline text-[0.75em] font-bold leading-none text-primary-700"
->
-    <a class="unset" href={href}>{label}</a>
-</span>
+<a class="unset" href={href}>
+    <span
+        class:list={[
+            "inline-flex items-center p-2 px-3 rounded-full text-xs font-medium border-2 border-transparent bg-slate-200 dark:text-white dark:bg-slate-700",
+            `hover:border-primary-${highlightColor}`,
+            ...classList,
+        ]}
+    >
+        {label}
+    </span>
+</a>

@@ -19,21 +19,25 @@ const exactDate = format(new Date(frontmatter.pubDate), "dd.MM.yyyy", {
 
 <BaseLayout pageTitle={frontmatter.title}>
   <Fragment slot="main">
-    <article class="flex prose prose-schaermu flex-col sm:flex-row">
-      <div class="md:basis-3/4">
-        <FancyHeading color="blue">{frontmatter.title}</FancyHeading>
-        <small class="block w-full text-center my-5"
-          >Veröffentlicht {readableDate} (am {exactDate})</small
-        >
-        <div class="tags">
-          {
-            frontmatter.tags.map((tag: string) => (
-              <TagItem label={tag} href={`/blog/tags/${tag}`} />
-            ))
-          }
-        </div>
-        <slot />
+    <article class="prose prose-schaermu">
+      <FancyHeading color="blue" classList={["mb-2"]}>
+        {frontmatter.title}
+      </FancyHeading>
+      <small class="block w-full text-center text-slate-500 dark:text-slate-400"
+        >Veröffentlicht {readableDate} (am {exactDate})</small
+      >
+      <div class="not-prose mt-10">
+        {
+          frontmatter.tags.map((tag: string) => (
+            <TagItem
+              classList={["gap-2"]}
+              label={tag}
+              href={`/blog/tags/${tag}`}
+            />
+          ))
+        }
       </div>
+      <slot />
     </article>
   </Fragment>
 </BaseLayout>
