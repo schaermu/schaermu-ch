@@ -1,42 +1,12 @@
 ---
-import TagItem from "@components/Blog/TagItem.astro";
-import FancyHeading from "@components/Elements/FancyHeading.astro";
 import BaseLayout from "@layouts/BaseLayout.astro";
 
-import { format, formatDistanceToNow } from "date-fns";
-import de from "date-fns/locale/de/index.js";
-
 const { frontmatter } = Astro.props;
-
-const readableDate = formatDistanceToNow(new Date(frontmatter.pubDate), {
-  locale: de,
-  addSuffix: true,
-});
-const exactDate = format(new Date(frontmatter.pubDate), "dd.MM.yyyy", {
-  locale: de,
-});
 ---
 
 <BaseLayout pageTitle={frontmatter.title}>
   <Fragment slot="main">
     <article class="prose prose-schaermu">
-      <FancyHeading color="blue" classList={["mb-2"]}>
-        {frontmatter.title}
-      </FancyHeading>
-      <small class="block w-full text-center text-slate-500 dark:text-slate-400"
-        >Veröffentlicht {readableDate} (am {exactDate})</small
-      >
-      <div class="not-prose mt-10">
-        {
-          frontmatter.tags.map((tag: string) => (
-            <TagItem
-              classList={["gap-2"]}
-              label={tag}
-              href={`/blog/tags/${tag}`}
-            />
-          ))
-        }
-      </div>
       <slot />
     </article>
   </Fragment>

@@ -1,5 +1,13 @@
 ---
+import MarkdownPostLayout from "@layouts/MarkdownPostLayout.astro";
 import { getCollection } from "astro:content";
+import { read } from "../../lib/markdoc/utils";
+import PostRenderer from "@components/Renderer/PostRenderer.astro";
+import TagItem from "@components/Blog/TagItem.astro";
+import FancyHeading from "@components/Elements/FancyHeading.astro";
+
+import { format, formatDistanceToNow } from "date-fns";
+import de from "date-fns/locale/de/index.js";
 
 export async function getStaticPaths() {
   const pages = await getCollection("blog");
@@ -11,10 +19,33 @@ export async function getStaticPaths() {
   return paths;
 }
 
-const { slug } = Astro.params;
 const page = Astro.props;
+const { content } = await read({
+  slug: page.slug,
+});
 
-const { Content } = await page.render();
+const readableDate = formatDistanceToNow(new Date(page.data.pubDate), {
+  locale: de,
+  addSuffix: true,
+});
+const exactDate = format(new Date(page.data.pubDate), "dd.MM.yyyy", {
+  locale: de,
+});
 ---
 
-<Content />
+<MarkdownPostLayout frontmatter={page.data}>
+  <FancyHeading color="blue" classList={["mb-2"]}>
+    {page.data.title}
+  </FancyHeading>
+  <small class="block w-full text-center text-slate-500 dark:text-slate-400"
+    >Veröffentlicht {readableDate} ({exactDate})</small
+  >
+  <div class="not-prose mt-10">
+    {
+      page.data.tags.map((tag: string) => (
+        <TagItem classList={["gap-2"]} label={tag} href={`/blog/tags/${tag}`} />
+      ))
+    }
+  </div>
+  <PostRenderer content={content} />
+</MarkdownPostLayout>
