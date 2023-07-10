@@ -1,0 +1,35 @@
+---
+import { MarkdocRenderer } from "astro-markdoc-renderer";
+import type { Content } from "astro-markdoc-renderer";
+import YouTubeEmbed from "./YouTubeEmbed.astro";
+import TweetEmbed from "./TweetEmbed.astro";
+import CodeBlock from "./CodeBlock.astro";
+import Heading from "./Heading.astro";
+
+type Props = {
+    content: Content;
+};
+
+const { content } = Astro.props;
+
+const components = {
+    Heading: {
+        Component: Heading,
+        props: {},
+    },
+    CodeBlock: {
+        Component: CodeBlock,
+        props: {},
+    },
+    YouTubeEmbed: {
+        Component: YouTubeEmbed,
+        props: {},
+    },
+    TweetEmbed: {
+        Component: TweetEmbed,
+        props: {},
+    },
+};
+---
+
+<MarkdocRenderer content={content} components={components} />

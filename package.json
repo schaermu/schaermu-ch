@@ -11,16 +11,20 @@
     "test:e2e": "npx cypress run"
   },
   "dependencies": {
+    "@astrojs/prism": "^2.1.2",
     "@astrojs/rss": "^2.4.3",
     "@astrojs/svelte": "^3.0.0",
     "@astrojs/tailwind": "^4.0.0",
     "@fontsource/space-grotesk": "^5.0.3",
     "@iconify-json/fa-brands": "^1.1.4",
     "@iconify-json/fa-solid": "^1.1.4",
+    "@markdoc/markdoc": "^0.3.0",
     "@tailwindcss/typography": "^0.5.9",
     "astro": "^2.6.4",
     "astro-icon": "1.0.0-next.2",
+    "astro-markdoc-renderer": "0.0.1-alpha.1",
     "date-fns": "^2.30.0",
+    "slugify": "^1.6.6",
     "svelte": "^4.0.0",
     "tailwindcss": "^3.3.2"
   },
