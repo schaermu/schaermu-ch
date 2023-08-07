@@ -9,6 +9,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
+        with:
+          lfs: true
 
       - name: Use pnpm 8.x
         uses: pnpm/action-setup@v2
