@@ -44,6 +44,9 @@ dependencies:
   date-fns:
     specifier: ^2.30.0
     version: 2.30.0
+  preline:
+    specifier: ^1.9.0
+    version: 1.9.0
   slugify:
     specifier: ^1.6.6
     version: 1.6.6
@@ -854,6 +857,10 @@ packages:
       open: 9.1.0
       picocolors: 1.0.0
       tslib: 2.5.3
+    dev: false
+
+  /@popperjs/core@2.11.8:
+    resolution: {integrity: sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==}
     dev: false
 
   /@sindresorhus/is@2.1.1:
@@ -4754,6 +4761,12 @@ packages:
       find-yarn-workspace-root2: 1.2.16
       path-exists: 4.0.0
       which-pm: 2.0.0
+    dev: false
+
+  /preline@1.9.0:
+    resolution: {integrity: sha512-zvOexsDBood9gBAQYSwz7iY8TaomtRD0/qxvCnJl3caq5pif6frl8Oe4b4DsxHHD3Clzl4I5RmVKTq9XjMvNJA==}
+    dependencies:
+      '@popperjs/core': 2.11.8
     dev: false
 
   /prettier-plugin-astro@0.9.1:
