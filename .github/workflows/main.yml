@@ -4,13 +4,16 @@ on:
   push:
 
 jobs:
-  test-deploy:
+  test:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
         with:
           lfs: true
+      
+      - name: Checkout LFS objects
+        run: git lfs checkout
 
       - name: Use pnpm 8.x
         uses: pnpm/action-setup@v2
@@ -34,12 +37,14 @@ jobs:
           start: pnpm preview
           wait-on: "http://localhost:3000"
 
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
       - name: Build site
-        if: github.ref == 'refs/heads/main'
         run: pnpm build
 
       - name: Deploy to Netlify
-        if: github.ref == 'refs/heads/main'
         uses: South-Paw/action-netlify-cli@1.0.1
         id: netlify
         with:
