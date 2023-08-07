@@ -1,0 +1,56 @@
+name: Test & Deploy
+
+on:
+  push:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Use pnpm 8.x
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
+          run_install: false
+
+      - name: Use Node.js 18.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+          cache: 'pnpm'
+      
+      - run: pnpm install
+      - run: pnpm test:e2e
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Use pnpm 8.x
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
+          run_install: false
+
+      - name: Use Node.js 18.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+          cache: 'pnpm'
+
+      - run: pnpm install
+      - run: pnpm build
+
+      - name: Deploy to netlify
+        uses: netlify/actions/cli@master
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        with:
+          args: deploy --dir=dist --prod
+          secrets: '["NETLIFY_AUTH_TOKEN", "NETLIFY_SITE_ID"]'
