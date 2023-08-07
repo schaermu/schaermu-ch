@@ -1242,6 +1242,7 @@ packages:
 
   /@types/node@16.18.39:
     resolution: {integrity: sha512-8q9ZexmdYYyc5/cfujaXb4YOucpQxAV4RMG0himLyDUOEr8Mr79VrqsFI+cQ2M2h89YIuy95lbxuYjxT4Hk4kQ==}
+    dev: true
 
   /@types/node@20.4.8:
     resolution: {integrity: sha512-0mHckf6D2DiIAzh8fM8f3HQCvMKDpK94YQ0DSVkfWTG9BZleYIWudw9cJxX8oCk9bM+vAkDyujDV6dmKHbvQpg==}
@@ -1287,7 +1288,7 @@ packages:
     resolution: {integrity: sha512-Cn6WYCm0tXv8p6k+A8PvbDG763EDpBoTzHdA+Q/MF6H3sapGjCm9NzoaJncJS9tUKSuCoDs9XHxYYsQDgxR6kw==}
     requiresBuild: true
     dependencies:
-      '@types/node': 16.18.39
+      '@types/node': 20.4.8
     optional: true
 
   /@vscode/emmet-helper@2.9.2:
@@ -3163,7 +3164,7 @@ packages:
     dependencies:
       '@tootallnate/once': 1.1.2
       agent-base: 6.0.2
-      debug: 4.1.1
+      debug: 4.3.4(supports-color@8.1.1)
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -3581,7 +3582,7 @@ packages:
   /koa-route@3.2.0:
     resolution: {integrity: sha512-8FsuWw/L+CUWJfpgN6vrlYUDNTheEinG8Zkm97GyuLJNyWjCVUs9p10Ih3jTIWwmDVQcz6827l0RKadAS5ibqA==}
     dependencies:
-      debug: 4.1.1
+      debug: 4.3.4(supports-color@8.1.1)
       methods: 1.1.2
       path-to-regexp: 1.8.0
     transitivePeerDependencies:
@@ -3592,7 +3593,7 @@ packages:
     resolution: {integrity: sha512-tmcyQ/wXXuxpDxyNXv5yNNkdAMdFRqwtegBXUaowiQzUKqJehttS0x2j0eOZDQAyloAth5w6wwBImnFzkUz3pQ==}
     engines: {node: '>= 8'}
     dependencies:
-      debug: 4.1.1
+      debug: 4.3.4(supports-color@8.1.1)
       http-errors: 1.8.1
       resolve-path: 1.4.0
     transitivePeerDependencies:
