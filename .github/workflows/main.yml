@@ -1,0 +1,54 @@
+name: Test & Deploy
+
+on:
+  push:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          lfs: true
+      
+      - name: Checkout LFS objects
+        run: git lfs checkout
+
+      - name: Use pnpm 8.x
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
+          run_install: false
+
+      - name: Use Node.js 18.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+          cache: 'pnpm'
+      
+      - run: pnpm install
+      
+      - name: Cypress run
+        uses: cypress-io/github-action@v5
+        with:
+          browser: chrome
+          build: pnpm build
+          start: pnpm preview
+          wait-on: "http://[::1]:3000"
+
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build site
+        run: pnpm build
+
+      - name: Deploy to Netlify
+        uses: South-Paw/action-netlify-cli@1.0.1
+        id: netlify
+        with:
+          args: deploy --json --prod --dir './dist' --message 'production [${{ github.sha }}]'
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
