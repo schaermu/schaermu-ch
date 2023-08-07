@@ -15,7 +15,8 @@ package = "netlify-plugin-cypress"
 [plugins.inputs]
 enable = false
 
-# test and record run for local site
-[plugins.inputs.postBuild]
+[plugins.inputs.preBuild]
 enable = true
-record = true
+start = 'pnpm dev'
+wait-on = 'http://localhost:3000'
+wait-on-timeout = '30'            # seconds
