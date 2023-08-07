@@ -4,7 +4,7 @@ on:
   push:
 
 jobs:
-  test:
+  test-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -23,30 +23,21 @@ jobs:
           cache: 'pnpm'
       
       - run: pnpm install
-      - run: pnpm test:e2e
-  deploy:
-    if: github.ref == 'refs/heads/main'
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-
-      - name: Use pnpm 8.x
-        uses: pnpm/action-setup@v2
+      
+      - name: Cypress run
+        uses: cypress-io/github-action@v3
         with:
-          version: 8
-          run_install: false
+          browser: chrome
+          build: pnpm build
+          start: pnpm preview
+          wait-on: "http://localhost:3000"
 
-      - name: Use Node.js 18.x
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18.x
-          cache: 'pnpm'
+      - name: Build site
+        if: github.ref == 'refs/heads/main'
+        run: pnpm build
 
-      - run: pnpm install
-      - run: pnpm build
-
-      - name: Deploy to netlify
+      - name: Deploy to Netlify
+        if: github.ref == 'refs/heads/main'
         uses: netlify/actions/cli@master
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
