@@ -35,7 +35,7 @@ jobs:
           browser: chrome
           build: pnpm build
           start: pnpm preview
-          wait-on: "http://localhost:3000"
+          wait-on: "http://[::1]:3000"
 
   deploy:
     if: github.ref == 'refs/heads/main'
