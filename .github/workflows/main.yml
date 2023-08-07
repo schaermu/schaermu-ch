@@ -25,7 +25,7 @@ jobs:
       - run: pnpm install
       
       - name: Cypress run
-        uses: cypress-io/github-action@v3
+        uses: cypress-io/github-action@v5
         with:
           browser: chrome
           build: pnpm build
@@ -38,10 +38,10 @@ jobs:
 
       - name: Deploy to Netlify
         if: github.ref == 'refs/heads/main'
-        uses: netlify/actions/cli@master
+        uses: South-Paw/action-netlify-cli@1.0.1
+        id: netlify
+        with:
+          args: deploy --json --prod --dir './dist' --message 'production [${{ github.sha }}]'
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-        with:
-          args: deploy --dir=dist --prod
-          secrets: '["NETLIFY_AUTH_TOKEN", "NETLIFY_SITE_ID"]'
