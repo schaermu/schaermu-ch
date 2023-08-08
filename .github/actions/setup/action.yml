@@ -1,15 +1,12 @@
 name: "Setup node/pnpm and install dependencies"
 description: "Sets up Node.js, pnpm and all dependencies"
-inputs:
-  node-version:
-    required: true
-    description: "The node version to use"
-  pnpm-version:
-    required: true
-    description: "The pnpm version to use"
 runs:
   using: "composite"
   steps:
+    - name: Read .tool-versions
+      uses: marocchino/tool-versions-action@v1
+      id: versions
+
     - name: Checkout LFS objects
       shell: bash
       run: git lfs checkout
@@ -17,13 +14,13 @@ runs:
     - name: Use pnpm 8.x
       uses: pnpm/action-setup@v2
       with:
-        version: ${{ inputs.pnpm-version }}
+        version: ${{ steps.versions.outputs.pnpm }}
         run_install: false
 
     - name: Use Node.js 18.x
       uses: actions/setup-node@v3
       with:
-        node-version: ${{ inputs.node-version }}
+        node-version: ${{ steps.versions.outputs.nodejs }}
         cache: "pnpm"
 
     - name: Install NPM dependencies
