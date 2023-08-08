@@ -1,0 +1,33 @@
+name: "Setup node/pnpm and install dependencies"
+description: "Sets up Node.js, pnpm and all dependencies"
+inputs:
+  node-version:
+    required: true
+    description: "The node version to use"
+  pnpm-version:
+    required: true
+    description: "The pnpm version to use"
+runs:
+  using: "composite"
+  steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+      with:
+        lfs: true
+
+    - name: Checkout LFS objects
+      run: git lfs checkout
+
+    - name: Use pnpm 8.x
+      uses: pnpm/action-setup@v2
+      with:
+        version: ${{ inputs.pnpm-version }}
+        run_install: false
+
+    - name: Use Node.js 18.x
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ inputs.node-version }}
+        cache: "pnpm"
+
+    - run: pnpm install
