@@ -11,6 +11,7 @@ runs:
   using: "composite"
   steps:
     - name: Checkout LFS objects
+      shell: bash
       run: git lfs checkout
 
     - name: Use pnpm 8.x
@@ -25,4 +26,6 @@ runs:
         node-version: ${{ inputs.node-version }}
         cache: "pnpm"
 
-    - run: pnpm install
+    - name: Install NPM dependencies
+      shell: bash
+      run: pnpm install
