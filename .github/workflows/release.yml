@@ -24,7 +24,6 @@ jobs:
         with:
             no-lfs: true
 
-      - run: pnpm install
       - run: pnpm run release
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.CI_GITHUB_TOKEN }}
