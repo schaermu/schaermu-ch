@@ -13,7 +13,8 @@
         }
     },
     "git": {
-        "commitMessage": "chore: release ${version} [skip ci]"
+        "requireBranch": "main",
+        "commitMessage": "chore: release ${version}"
     },
     "npm": {
         "publish": false
