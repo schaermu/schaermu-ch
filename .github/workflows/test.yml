@@ -13,7 +13,8 @@ jobs:
         with:
           lfs: true
 
-      - id: setup
+      - name: Setup toolchain
+        id: setup
         uses: ./.github/actions/setup
 
       - name: Cypress run

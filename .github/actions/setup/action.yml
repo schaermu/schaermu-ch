@@ -1,13 +1,21 @@
 name: "Setup node/pnpm and install dependencies"
 description: "Sets up Node.js, pnpm and all dependencies"
+
+inputs:
+  no-lfs:
+    description: "Skip LFS checkout"
+    required: false
+    default: "false"
+
 runs:
-  using: "composite"
+  using: composite
   steps:
     - name: Read .tool-versions
       uses: marocchino/tool-versions-action@v1
       id: versions
 
     - name: Checkout LFS objects
+      if: ${{ inputs.no-lfs != 'false' }}
       shell: bash
       run: git lfs checkout
 
