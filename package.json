@@ -8,7 +8,22 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "test:e2e": "npx cypress run"
+    "test:e2e": "npx cypress run",
+    "release": "release-it"
+  },
+  "release-it": {
+    "plugins": {
+      "@csmith/release-it-calver-plugin": {
+        "format": "yyyy.mm.minor",
+        "increment": "calendar.minor"
+      }
+    },
+    "npm": {
+      "publish": false
+    },
+    "github": {
+      "release": true
+    }
   },
   "dependencies": {
     "@astrojs/prism": "^2.1.2",
@@ -30,6 +45,8 @@
     "tailwindcss": "^3.3.3"
   },
   "devDependencies": {
-    "cypress": "^12.17.3"
+    "@csmith/release-it-calver-plugin": "^2023.8.0",
+    "cypress": "^12.17.3",
+    "release-it": "^16.1.5"
   }
 }
