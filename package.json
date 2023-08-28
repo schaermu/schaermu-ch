@@ -1,7 +1,7 @@
 {
   "name": "schaermu-ch",
   "type": "module",
-  "version": "0.0.1",
+  "version": "2023.8.0",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -10,24 +10,6 @@
     "astro": "astro",
     "test:e2e": "npx cypress run",
     "release": "release-it"
-  },
-  "release-it": {
-    "plugins": {
-      "@csmith/release-it-calver-plugin": {
-        "format": "yyyy.mm.minor",
-        "increment": "calendar.minor"
-      }
-    },
-    "git": {
-      "commitMessage": "chore: release v${version}"
-    },
-    "npm": {
-      "publish": false,
-      "ignoreVersion": true
-    },
-    "github": {
-      "release": true
-    }
   },
   "dependencies": {
     "@astrojs/prism": "^2.1.2",

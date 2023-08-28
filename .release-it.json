@@ -1,0 +1,15 @@
+{
+    "plugins": {
+        "@csmith/release-it-calver-plugin": {
+            "format": "yyyy.mm.minor",
+            "increment": "calendar.minor"
+        }
+    },
+    "git": {
+        "requireCleanWorkingDir": false,
+        "commitMessage": "chore: release ${version} [skip ci]"
+    },
+    "npm": {
+        "publish": false
+    }
+}
