@@ -1,5 +1,12 @@
 # Changelog
 
+## [2023.8.2](https://github.com/schaermu/schaermu-ch/compare/2023.8.1...2023.8.2) (2023-08-28)
+
+
+### Bug Fixes
+
+* **cicd:** adds constraint for release commit message to release workflow ([67e99a0](https://github.com/schaermu/schaermu-ch/commit/67e99a07e36b316d563844f5a566e760dbe3584c))
+
 ## 2023.8.1 (2023-08-28)
 
 
