@@ -15,7 +15,7 @@ runs:
       id: versions
 
     - name: Checkout LFS objects
-      if: ${{ !fromJSON(env.context).no-lfs }}
+      if: ${{ inputs.no-lfs != 'false' }}
       shell: bash
       run: git lfs checkout
 
