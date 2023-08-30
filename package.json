@@ -21,7 +21,7 @@
     "@iconify-json/fa-solid": "^1.1.5",
     "@markdoc/markdoc": "^0.3.0",
     "@tailwindcss/typography": "^0.5.9",
-    "astro": "^2.10.1",
+    "astro": "^3.0.0",
     "astro-icon": "1.0.0-next.2",
     "astro-markdoc-renderer": "0.0.1-alpha.1",
     "date-fns": "^2.30.0",
