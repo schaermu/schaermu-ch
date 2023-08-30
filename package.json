@@ -14,7 +14,7 @@
   "dependencies": {
     "@astrojs/prism": "^3.0.0",
     "@astrojs/rss": "^3.0.0",
-    "@astrojs/svelte": "^3.1.0",
+    "@astrojs/svelte": "^4.0.0",
     "@astrojs/tailwind": "^5.0.0",
     "@fontsource/space-grotesk": "^5.0.8",
     "@iconify-json/fa-brands": "^1.1.5",
