@@ -8,7 +8,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "test:e2e": "npx cypress run",
+    "test:e2e": "npx playwright test",
     "release": "release-it"
   },
   "dependencies": {
