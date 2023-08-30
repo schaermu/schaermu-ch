@@ -6,6 +6,7 @@ on:
 
 jobs:
   test:
+    timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -17,10 +18,15 @@ jobs:
         id: setup
         uses: ./.github/actions/setup
 
-      - name: Cypress run
-        uses: cypress-io/github-action@v5
+      - name: Install Playwright Browsers
+        run: pnpm exec playwright install --with-deps
+
+      - name: Run Playwright tests
+        run: pnpm exec playwright test
+
+      - uses: actions/upload-artifact@v3
+        if: always()
         with:
-          browser: chrome
-          build: pnpm build
-          start: pnpm preview
-          wait-on: "http://[::1]:3000"
+          name: playwright-report
+          path: playwright-report/
+          retention-days: 30
