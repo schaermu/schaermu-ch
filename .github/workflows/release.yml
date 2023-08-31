@@ -20,7 +20,5 @@ jobs:
       - name: Setup toolchain
         id: setup
         uses: ./.github/actions/setup
-        with:
-            no-lfs: true
 
       - run: pnpm run release
