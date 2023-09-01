@@ -10,6 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: mcr.microsoft.com/playwright:v1.37.0-jammy
+      options: "--ipc=host --init"
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -22,7 +23,7 @@ jobs:
         run: pnpm exec playwright install
 
       - name: Run Playwright tests
-        run: pnpm exec playwright test
+        run: HOME=/root pnpm exec playwright test
 
       - uses: actions/upload-artifact@v3
         if: always()
