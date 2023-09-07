@@ -3,6 +3,7 @@
     "astro-build.astro-vscode",
     "svelte.svelte-vscode",
     "bradlc.vscode-tailwindcss",
+    "ms-playwright.playwright",
   ],
   "unwantedRecommendations": []
 }
