@@ -11,12 +11,20 @@
   ],
   "packageRules": [
     {
-      "matchUpdateTypes": [
-        "minor",
-        "patch",
-        "pin",
-        "digest"
+      "matchFileNames": [
+        ".github/**"
       ],
+      "groupName": "github-action",
+      "schedule": "before 6am on Friday"
+    },
+    {
+      "matchFileNames": [
+        ".tool-versions"
+      ],
+      "groupName": "toolchain",
+      "schedule": "before 6am on Friday"
+    },
+    {
       "matchDepTypes": [
         "devDependencies"
       ],
