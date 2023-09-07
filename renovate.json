@@ -11,12 +11,18 @@
   ],
   "packageRules": [
     {
-      "matchUpdateTypes": [
-        "minor",
-        "patch",
-        "pin",
-        "digest"
+      "matchFileNames": [
+        ".github/**"
       ],
+      "groupName": "github-action"
+    },
+    {
+      "matchFileNames": [
+        ".tool-versions"
+      ],
+      "groupName": "toolchain"
+    },
+    {
       "matchDepTypes": [
         "devDependencies"
       ],
