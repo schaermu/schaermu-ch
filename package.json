@@ -34,6 +34,6 @@
     "@csmith/release-it-calver-plugin": "^2023.8.0",
     "@playwright/test": "^1.37.1",
     "@release-it/conventional-changelog": "^8.0.0",
-    "release-it": "^16.1.5"
+    "release-it": "^17.0.0"
   }
 }
