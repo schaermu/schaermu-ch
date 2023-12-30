@@ -12,22 +12,35 @@
   ],
   "packageRules": [
     {
-      "groupName": "AstroJS",
+      "groupName": "astro-js",
       "matchPackagePrefixes": [
         "@astrojs/",
         "astro"
       ]
     },
     {
-      "matchFileNames": [
-        ".github/**"
-      ],
-      "groupName": "github-action",
-      "schedule": "before 6am on Friday"
+      "groupName": "release-it",
+      "matchPackagePrefixes": [
+        "@release-it/",
+        "release-it"
+      ]
+    },
+    {
+      "groupName": "iconify",
+      "matchPackagePrefixes": [
+        "@iconify-json/"
+      ]
+    },
+    {
+      "groupName": "fontsource",
+      "matchPackagePrefixes": [
+        "@fontsource/"
+      ]
     },
     {
       "matchFileNames": [
-        ".tool-versions"
+        ".tool-versions",
+        ".github/**"
       ],
       "groupName": "toolchain",
       "schedule": "before 6am on Friday"
