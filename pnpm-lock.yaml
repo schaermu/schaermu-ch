@@ -21,11 +21,11 @@ dependencies:
     specifier: 5.0.8
     version: 5.0.8
   '@iconify-json/fa-brands':
-    specifier: 1.1.5
-    version: 1.1.5
+    specifier: 1.1.8
+    version: 1.1.8
   '@iconify-json/fa-solid':
-    specifier: 1.1.5
-    version: 1.1.5
+    specifier: 1.1.8
+    version: 1.1.8
   '@markdoc/markdoc':
     specifier: 0.4.0
     version: 0.4.0
@@ -665,14 +665,14 @@ packages:
     resolution: {integrity: sha512-trnsAYxU3xnS1gPHPyU961coFyLkh4gAD/0zQ5mymY4yOZ+CYvsPqUbOFSw0aDM4y0tV7tiFxL/1XfXPNC6IPg==}
     dev: true
 
-  /@iconify-json/fa-brands@1.1.5:
-    resolution: {integrity: sha512-sXxGoXEsHMZrUQYvzfmPBEuoqEIv/PqqtpW5vNqbHU8p9CiU718SV+JI26ARnypGmQjlK0pKHV7kUykIVD2X6w==}
+  /@iconify-json/fa-brands@1.1.8:
+    resolution: {integrity: sha512-0HVT1+7hDww2vTtGyX4maUyiEXDYd6CK57bOGJ3hc3fjmXpMI9QKdej21pPSv1jBZ2nGzTlg8WJ2yNtN88/lFQ==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: false
 
-  /@iconify-json/fa-solid@1.1.5:
-    resolution: {integrity: sha512-RFbnLeFn5fJeTnPe1avo1c1PAQKzLGC5SfAKQX6gVy1dsfsOa+zae9dTR6WnM9r+X1YgA+H7eZh+k03USbgNDQ==}
+  /@iconify-json/fa-solid@1.1.8:
+    resolution: {integrity: sha512-o1Z+pvz+bidq8lqXC8uOhBxlJ19NEH87TQ6JSXOQPQJ8zDIMpx2nbDFJjFtR5nTWQXLPRGEb0NO9NJAvalxeiw==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: false
