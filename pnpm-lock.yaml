@@ -45,8 +45,8 @@ dependencies:
     specifier: ^2.30.0
     version: 2.30.0
   preline:
-    specifier: ^1.9.0
-    version: 1.9.0
+    specifier: ^2.0.0
+    version: 2.0.3
   slugify:
     specifier: ^1.6.6
     version: 1.6.6
@@ -5306,8 +5306,8 @@ packages:
       which-pm: 2.0.0
     dev: false
 
-  /preline@1.9.0:
-    resolution: {integrity: sha512-zvOexsDBood9gBAQYSwz7iY8TaomtRD0/qxvCnJl3caq5pif6frl8Oe4b4DsxHHD3Clzl4I5RmVKTq9XjMvNJA==}
+  /preline@2.0.3:
+    resolution: {integrity: sha512-V/sLmRIHd23UCdvJNRKKszntgUqA0381erVzRpQ48NjjMOgI7DyFW4mr+lg387V0oeBc5Dx9Jxa5voppVoH9GA==}
     dependencies:
       '@popperjs/core': 2.11.8
     dev: false
