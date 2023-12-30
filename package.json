@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "@csmith/release-it-calver-plugin": "2023.9.0",
-    "@playwright/test": "1.38.1",
+    "@playwright/test": "1.40.1",
     "@release-it/conventional-changelog": "8.0.1",
     "release-it": "17.0.1"
   }
