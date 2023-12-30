@@ -19,8 +19,15 @@ jobs:
         id: setup
         uses: ./.github/actions/setup
 
+      - uses: actions/cache@v3
+        id: playwright-cache
+        with:
+          path: ~/.cache/ms-playwright
+          key: ${{ runner.os }}-playwright-${{ hashFiles('**/pnpm-lock.yaml') }}
+
       - name: Install Playwright Browsers
-        run: pnpm exec playwright install
+        run: npx playwright install --with-deps
+        if: steps.playwright-cache.outputs.cache-hit != 'true'
 
       - name: Run Playwright tests
         run: HOME=/root pnpm exec playwright test
