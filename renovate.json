@@ -1,7 +1,8 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:recommended"
+    "config:recommended",
+    ":pinAllExceptPeerDependencies"
   ],
   "lockFileMaintenance": {
     "enabled": true
@@ -10,6 +11,13 @@
     "pnpmDedupe"
   ],
   "packageRules": [
+    {
+      "groupName": "AstroJS",
+      "matchPackagePrefixes": [
+        "@astrojs/",
+        "astro"
+      ]
+    },
     {
       "matchFileNames": [
         ".github/**"
