@@ -1,5 +1,30 @@
 # Changelog
 
+## [2023.10.0](https://github.com/schaermu/schaermu-ch/compare/2023.9.0...2023.10.0) (2023-12-31)
+
+
+### Features
+
+* removes cv, re-wires home to blog ([28f01a0](https://github.com/schaermu/schaermu-ch/commit/28f01a09a0621fbdd7887ecb14477c2532c4d308))
+
+
+### Bug Fixes
+
+* date-fns v3 imports for locales ([5fafd6c](https://github.com/schaermu/schaermu-ch/commit/5fafd6cf1acaed4c6be783c56f334ae10210379d))
+* **deps:** pin dependencies ([365cc2d](https://github.com/schaermu/schaermu-ch/commit/365cc2d14d1b4535243e5857557a054dbd94c021))
+* **deps:** update astro-js ([2df07b8](https://github.com/schaermu/schaermu-ch/commit/2df07b8897b9b4adffc0a9cb2a29326959229f37))
+* **deps:** update dependency @astrojs/rss to v4 ([c4e307b](https://github.com/schaermu/schaermu-ch/commit/c4e307b626959d7d8c6b584e8cfa26789c3c43af))
+* **deps:** update dependency @astrojs/tailwind to v5.1.0 ([94c1687](https://github.com/schaermu/schaermu-ch/commit/94c168718d80108319462bd1c511e92845ea116f))
+* **deps:** update dependency @fontsource/space-grotesk to v5.0.16 ([b6c2dd0](https://github.com/schaermu/schaermu-ch/commit/b6c2dd065969ff1d3e94e1bf856716075cf0b3f6))
+* **deps:** update dependency @markdoc/markdoc to ^0.4.0 ([1bd55d7](https://github.com/schaermu/schaermu-ch/commit/1bd55d77b121538cd1b0a529c0f09574c89ac682))
+* **deps:** update dependency astro-icon to v1.0.1 ([b723979](https://github.com/schaermu/schaermu-ch/commit/b7239795218eb4b7559d1fa308f88ef4beb5add2))
+* **deps:** update dependency date-fns to v3 ([2d1cdfb](https://github.com/schaermu/schaermu-ch/commit/2d1cdfbbbd11571e4fb83e0b9e6aebaeecc23d07))
+* **deps:** update dependency preline to v2 ([9c694b8](https://github.com/schaermu/schaermu-ch/commit/9c694b8e4812b876df4281c29c88258b528a9742))
+* **deps:** update dependency svelte to v4.2.8 ([c9c710f](https://github.com/schaermu/schaermu-ch/commit/c9c710f357efe7a80bc5c7fa4160626a1d639cee))
+* **deps:** update dependency tailwindcss to v3.4.0 ([7936f0a](https://github.com/schaermu/schaermu-ch/commit/7936f0afd29dcd08a2047fb833a4442cb8cce522))
+* **deps:** update iconify to v1.1.8 ([871bdf3](https://github.com/schaermu/schaermu-ch/commit/871bdf33801f303da4fc50e1de91e58eac901461))
+* tests for home amended ([ea9a6e8](https://github.com/schaermu/schaermu-ch/commit/ea9a6e84c7576bd02bab4ebe4f7fe09e80d55f16))
+
 ## 2023.9.0 (2023-09-01)
 
 
