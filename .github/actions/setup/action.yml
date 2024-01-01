@@ -8,13 +8,13 @@ runs:
       uses: marocchino/tool-versions-action@v1
       id: versions
 
-    - name: Use pnpm 8.x
+    - name: Use pnpm ${{ steps.versions.outputs.pnpm }}
       uses: pnpm/action-setup@v2
       with:
         version: ${{ steps.versions.outputs.pnpm }}
         run_install: false
 
-    - name: Use Node.js 18.x
+    - name: Use Node.js ${{ steps.versions.outputs.nodejs }}
       uses: actions/setup-node@v4
       with:
         node-version: ${{ steps.versions.outputs.nodejs }}
