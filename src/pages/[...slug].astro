@@ -43,7 +43,7 @@ const exactDate = format(new Date(page.data.pubDate), "dd.MM.yyyy", {
   <div class="not-prose mt-10">
     {
       page.data.tags.map((tag: string) => (
-        <TagItem classList={["gap-2"]} label={tag} href={`/blog/tags/${tag}`} />
+        <TagItem classList={["gap-2"]} label={tag} href={`/tags/${tag}`} />
       ))
     }
   </div>
