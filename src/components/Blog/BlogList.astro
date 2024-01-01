@@ -1,5 +1,10 @@
 ---
+import type { CollectionEntry } from "astro:content";
 import BlogListItem from "./BlogListItem.astro";
+
+export interface Props {
+    posts: CollectionEntry<"blog">[];
+}
 
 const { posts } = Astro.props;
 ---

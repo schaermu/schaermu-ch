@@ -3,6 +3,11 @@ import { format, formatDistanceToNow } from "date-fns";
 import { de } from "date-fns/locale";
 
 import Card from "@components/Elements/Card.astro";
+import type { CollectionEntry } from "astro:content";
+
+export interface Props {
+    post: CollectionEntry<"blog">;
+}
 
 const { post } = Astro.props;
 ---
