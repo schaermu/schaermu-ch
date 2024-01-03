@@ -13,10 +13,10 @@ dependencies:
     version: 4.0.1
   '@astrojs/svelte':
     specifier: 5.0.3
-    version: 5.0.3(astro@4.0.8)(svelte@4.2.8)(typescript@5.2.2)(vite@5.0.10)
+    version: 5.0.3(astro@4.0.9)(svelte@4.2.8)(typescript@5.2.2)(vite@5.0.10)
   '@astrojs/tailwind':
     specifier: 5.1.0
-    version: 5.1.0(astro@4.0.8)(tailwindcss@3.4.0)
+    version: 5.1.0(astro@4.0.9)(tailwindcss@3.4.0)
   '@fontsource/space-grotesk':
     specifier: 5.0.16
     version: 5.0.16
@@ -33,11 +33,11 @@ dependencies:
     specifier: 0.5.10
     version: 0.5.10(tailwindcss@3.4.0)
   astro:
-    specifier: 4.0.8
-    version: 4.0.8(typescript@5.2.2)
+    specifier: 4.0.9
+    version: 4.0.9(typescript@5.2.2)
   astro-icon:
-    specifier: 1.0.1
-    version: 1.0.1
+    specifier: 1.0.2
+    version: 1.0.2
   astro-markdoc-renderer:
     specifier: 0.0.1-alpha.1
     version: 0.0.1-alpha.1
@@ -140,7 +140,7 @@ packages:
       kleur: 4.1.5
     dev: false
 
-  /@astrojs/svelte@5.0.3(astro@4.0.8)(svelte@4.2.8)(typescript@5.2.2)(vite@5.0.10):
+  /@astrojs/svelte@5.0.3(astro@4.0.9)(svelte@4.2.8)(typescript@5.2.2)(vite@5.0.10):
     resolution: {integrity: sha512-6TUBRUxmsEczKPBT6oDUAfvzuFCmITuhZfKPT5ZtOOyj9XOVnEnj/Iobd3ajKUbpWNYX7qZVAd1KMkmJc1Nhsg==}
     engines: {node: '>=18.14.1'}
     peerDependencies:
@@ -148,7 +148,7 @@ packages:
       svelte: ^4.0.0 || ^5.0.0-next.1
     dependencies:
       '@sveltejs/vite-plugin-svelte': 3.0.1(svelte@4.2.8)(vite@5.0.10)
-      astro: 4.0.8(typescript@5.2.2)
+      astro: 4.0.9(typescript@5.2.2)
       svelte: 4.2.8
       svelte2tsx: 0.6.27(svelte@4.2.8)(typescript@5.2.2)
     transitivePeerDependencies:
@@ -157,13 +157,13 @@ packages:
       - vite
     dev: false
 
-  /@astrojs/tailwind@5.1.0(astro@4.0.8)(tailwindcss@3.4.0):
+  /@astrojs/tailwind@5.1.0(astro@4.0.9)(tailwindcss@3.4.0):
     resolution: {integrity: sha512-BJoCDKuWhU9FT2qYg+fr6Nfb3qP4ShtyjXGHKA/4mHN94z7BGcmauQK23iy+YH5qWvTnhqkd6mQPQ1yTZTe9Ig==}
     peerDependencies:
       astro: ^3.0.0 || ^4.0.0
       tailwindcss: ^3.0.24
     dependencies:
-      astro: 4.0.8(typescript@5.2.2)
+      astro: 4.0.9(typescript@5.2.2)
       autoprefixer: 10.4.16(postcss@8.4.32)
       postcss: 8.4.32
       postcss-load-config: 4.0.2(postcss@8.4.32)
@@ -1590,8 +1590,8 @@ packages:
       tslib: 2.6.2
     dev: true
 
-  /astro-icon@1.0.1:
-    resolution: {integrity: sha512-NtPyGeoSe/TJsGsea6T+8SDcW/wwZ7OIUq731DT7M6nw2B1p5BHuChiQI0bQvIIL79r48nMN7mQ8GBtwsDEucA==}
+  /astro-icon@1.0.2:
+    resolution: {integrity: sha512-MGgnjxHnI50bBWasBdt0pw/S9lWharfxhUv1sP2Vj1/KDaT/Cz35ZdlBgb4DKtfzQZREIJN2eQGqmVbvLq5p3w==}
     dependencies:
       '@iconify/tools': 3.0.5
       '@iconify/types': 2.0.0
@@ -1610,8 +1610,8 @@ packages:
       - react
     dev: false
 
-  /astro@4.0.8(typescript@5.2.2):
-    resolution: {integrity: sha512-LwbYUfdrfys5mtI6cA5V8UvPRUVVTRQ68uF1ylrEge6BkPcHHJ7qCYLNdjnNPxZDR9bWi1awILJESB6j+w0P4w==}
+  /astro@4.0.9(typescript@5.2.2):
+    resolution: {integrity: sha512-xQHapUGqdHQuaBDCYZxyVh5rvpgIUuulsEITl7bOQ6rRXwbQtoGc5gQ95dGV830PEpvyAGVhQ9pA8PIwfCMpeg==}
     engines: {node: '>=18.14.1', npm: '>=6.14.0'}
     hasBin: true
     dependencies:
