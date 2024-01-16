@@ -13,10 +13,10 @@ dependencies:
     version: 4.0.2
   '@astrojs/svelte':
     specifier: 5.0.3
-    version: 5.0.3(astro@4.1.2)(svelte@4.2.8)(typescript@5.2.2)(vite@5.0.10)
+    version: 5.0.3(astro@4.1.3)(svelte@4.2.8)(typescript@5.2.2)(vite@5.0.10)
   '@astrojs/tailwind':
     specifier: 5.1.0
-    version: 5.1.0(astro@4.1.2)(tailwindcss@3.4.1)
+    version: 5.1.0(astro@4.1.3)(tailwindcss@3.4.1)
   '@fontsource/space-grotesk':
     specifier: 5.0.16
     version: 5.0.16
@@ -33,8 +33,8 @@ dependencies:
     specifier: 0.5.10
     version: 0.5.10(tailwindcss@3.4.1)
   astro:
-    specifier: 4.1.2
-    version: 4.1.2(typescript@5.2.2)
+    specifier: 4.1.3
+    version: 4.1.3(typescript@5.2.2)
   astro-icon:
     specifier: 1.0.2
     version: 1.0.2
@@ -140,7 +140,7 @@ packages:
       kleur: 4.1.5
     dev: false
 
-  /@astrojs/svelte@5.0.3(astro@4.1.2)(svelte@4.2.8)(typescript@5.2.2)(vite@5.0.10):
+  /@astrojs/svelte@5.0.3(astro@4.1.3)(svelte@4.2.8)(typescript@5.2.2)(vite@5.0.10):
     resolution: {integrity: sha512-6TUBRUxmsEczKPBT6oDUAfvzuFCmITuhZfKPT5ZtOOyj9XOVnEnj/Iobd3ajKUbpWNYX7qZVAd1KMkmJc1Nhsg==}
     engines: {node: '>=18.14.1'}
     peerDependencies:
@@ -148,7 +148,7 @@ packages:
       svelte: ^4.0.0 || ^5.0.0-next.1
     dependencies:
       '@sveltejs/vite-plugin-svelte': 3.0.1(svelte@4.2.8)(vite@5.0.10)
-      astro: 4.1.2(typescript@5.2.2)
+      astro: 4.1.3(typescript@5.2.2)
       svelte: 4.2.8
       svelte2tsx: 0.6.27(svelte@4.2.8)(typescript@5.2.2)
     transitivePeerDependencies:
@@ -157,13 +157,13 @@ packages:
       - vite
     dev: false
 
-  /@astrojs/tailwind@5.1.0(astro@4.1.2)(tailwindcss@3.4.1):
+  /@astrojs/tailwind@5.1.0(astro@4.1.3)(tailwindcss@3.4.1):
     resolution: {integrity: sha512-BJoCDKuWhU9FT2qYg+fr6Nfb3qP4ShtyjXGHKA/4mHN94z7BGcmauQK23iy+YH5qWvTnhqkd6mQPQ1yTZTe9Ig==}
     peerDependencies:
       astro: ^3.0.0 || ^4.0.0
       tailwindcss: ^3.0.24
     dependencies:
-      astro: 4.1.2(typescript@5.2.2)
+      astro: 4.1.3(typescript@5.2.2)
       autoprefixer: 10.4.16(postcss@8.4.32)
       postcss: 8.4.32
       postcss-load-config: 4.0.2(postcss@8.4.32)
@@ -1414,8 +1414,8 @@ packages:
       - react
     dev: false
 
-  /astro@4.1.2(typescript@5.2.2):
-    resolution: {integrity: sha512-C/CrsIjRnRZYsLIBquAoTKj3ZPyGPVRByEcPMs6CrJLiHmcYnjpRMVd7oBFepU6772U1ZcXLy0zdxoRYjHFf5w==}
+  /astro@4.1.3(typescript@5.2.2):
+    resolution: {integrity: sha512-9i8l0mEnpAOAi9F3DMkHGaZ4q56TGtt71XaAxhPXAlhZrVR/6ruobCyYdYwL1Fo0ATpuGXdaod1I7FFxFMcQbw==}
     engines: {node: '>=18.14.1', npm: '>=6.14.0'}
     hasBin: true
     dependencies:
