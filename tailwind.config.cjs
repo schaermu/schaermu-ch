@@ -1,13 +1,11 @@
 /** @type {import('tailwindcss').Config} */
-import preline from 'preline/plugin.js'
-
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
 	content: [
 		'./public/**/*.astro',
 		'./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}',
-		'node_modules/preline/dist/*.js',
+		'./node_modules/preline/dist/*.js',
 	],
 	darkMode: "class",
 	theme: {
@@ -129,6 +127,6 @@ module.exports = {
 	}],
 	plugins: [
 		require('@tailwindcss/typography'),
-		preline,
+		require('preline/plugin'),
 	],
 }

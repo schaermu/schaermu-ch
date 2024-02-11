@@ -1,7 +1,7 @@
 ---
 title: 'Mein erster Post'
 pubDate: 2022-12-03
-description: 'This is the first post of my new Astro blog.'
+lead: 'This is the first post of my new Astro blog.'
 cover: './homelab_cover.jpg' 
 coverAlt: 'The full Astro logo.'
 tags: ["astro", "blogging", "learning in public"]
