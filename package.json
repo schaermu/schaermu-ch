@@ -9,7 +9,8 @@
     "preview": "astro preview",
     "astro": "astro",
     "test:e2e": "npx playwright test",
-    "release": "release-it"
+    "release": "release-it",
+    "openai": "node ./scripts/openai.js"
   },
   "dependencies": {
     "@astrojs/prism": "3.0.0",
@@ -34,6 +35,9 @@
     "@csmith/release-it-calver-plugin": "2023.12.0",
     "@playwright/test": "1.41.2",
     "@release-it/conventional-changelog": "8.0.1",
+    "commander": "^12.0.0",
+    "dotenv": "^16.4.2",
+    "openai": "^4.27.0",
     "release-it": "17.0.3"
   }
 }
