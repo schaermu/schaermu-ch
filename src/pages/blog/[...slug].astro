@@ -1,10 +1,12 @@
 ---
-import MarkdownPostLayout from "@layouts/MarkdownPostLayout.astro";
 import { getCollection } from "astro:content";
 import { read } from "@lib/markdoc/utils";
+
+import MarkdownPostLayout from "@layouts/MarkdownPostLayout.astro";
+
 import PostRenderer from "@components/Renderer/PostRenderer.astro";
-import TagItem from "@components/Blog/TagItem.astro";
 import FancyHeading from "@components/Elements/FancyHeading.astro";
+import TagItem from "@components/Blog/TagItem.astro";
 
 import { format, formatDistanceToNow } from "date-fns";
 import { de } from "date-fns/locale";

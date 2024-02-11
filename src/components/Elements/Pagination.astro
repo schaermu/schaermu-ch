@@ -1,0 +1,98 @@
+---
+import type { Page } from "astro";
+
+import { getPageNumbers } from "@lib/pagination";
+import Current from "./Pagination/Current.astro";
+import Ellipsis from "./Pagination/Ellipsis.astro";
+import Link from "./Pagination/Link.astro";
+import NavLink from "./Pagination/NavLink.astro";
+
+type Props = {
+    page: Page<any>;
+    urlPattern: string;
+    firstPageUrl?: string;
+    windowSize?: number;
+    showPrevNext?: boolean;
+    showFirstLast?: boolean;
+    previousLabel?: string;
+    nextLabel?: string;
+};
+
+const {
+    page,
+    urlPattern,
+    firstPageUrl,
+    windowSize = 5,
+    showPrevNext = true,
+    previousLabel = "Previous",
+    nextLabel = "Next",
+} = Astro.props;
+
+const pageNumbers = getPageNumbers(page, windowSize);
+const firstPageInRange = pageNumbers[0];
+const lastPageInRange = pageNumbers[pageNumbers.length - 1];
+const showFirst = pageNumbers[0] !== 1;
+const showLast = lastPageInRange !== page.lastPage;
+const previousUrl =
+    firstPageUrl && page.currentPage === 2 ? firstPageUrl : page.url.prev;
+---
+
+<nav aria-label="Page navigation example" class="mt-5 align-bottom">
+    <ul class="list-style-none flex unset justify-center">
+        {showPrevNext && <NavLink url={previousUrl} label={previousLabel} />}
+        {
+            showFirst && (
+                <li>
+                    <Link
+                        pageNumber={1}
+                        urlPattern={urlPattern}
+                        firstPageUrl={firstPageUrl}
+                    />
+                </li>
+            )
+        }
+        {
+            firstPageInRange && firstPageInRange > 2 && (
+                <li>
+                    <Ellipsis position="start" />
+                </li>
+            )
+        }
+        {
+            pageNumbers.map((pageNumber) => {
+                return (
+                    <li>
+                        {pageNumber === page.currentPage ? (
+                            <Current pageNumber={pageNumber} />
+                        ) : (
+                            <Link
+                                pageNumber={pageNumber}
+                                urlPattern={urlPattern}
+                                firstPageUrl={firstPageUrl}
+                            />
+                        )}
+                    </li>
+                );
+            })
+        }
+        {
+            lastPageInRange < page.lastPage - 1 && (
+                <li>
+                    <Ellipsis position="end" />
+                </li>
+            )
+        }
+        {
+            showLast && (
+                <li>
+                    <Link
+                        pageNumber={page.lastPage}
+                        urlPattern={urlPattern}
+                        firstPageUrl={firstPageUrl}
+                    />
+                </li>
+            )
+        }
+        {showPrevNext && <NavLink url={page.url.next} label={nextLabel} />}
+    </ul>
+</nav>

@@ -1,0 +1,32 @@
+---
+import type { Page } from "astro";
+import type { GetStaticPaths } from "astro";
+import { getCollection } from "astro:content";
+import type { CollectionEntry } from "astro:content";
+
+import BaseLayout from "@layouts/BaseLayout.astro";
+import BlogList from "@components/Blog/BlogList.astro";
+import FancyHeading from "@components/Elements/FancyHeading.astro";
+import Pagination from "@components/Elements/Pagination.astro";
+
+const pageTitle = "der bloggende schärmu";
+
+export const getStaticPaths = (async ({ paginate }) => {
+    const allPosts = await getCollection("blog");
+    return paginate(allPosts, { pageSize: 2 });
+}) satisfies GetStaticPaths;
+
+interface Props {
+    page: Page<CollectionEntry<"blog">>;
+}
+
+const { page } = Astro.props;
+---
+
+<BaseLayout pageTitle={pageTitle}>
+    <Fragment slot="main">
+        <FancyHeading color="blue">Schärmu's Blog</FancyHeading>
+        <BlogList posts={page.data} />
+        <Pagination page={page} urlPattern="/blog/{}" />
+    </Fragment>
+</BaseLayout>

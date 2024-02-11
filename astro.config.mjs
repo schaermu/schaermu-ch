@@ -5,6 +5,9 @@ import icon from "astro-icon";
 
 // https://astro.build/config
 export default defineConfig({
+  redirects: {
+    '/': '/blog/',
+  },
   server: { port: 3000 },
   image: {
     service: passthroughImageService(),
