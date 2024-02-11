@@ -1,0 +1,52 @@
+---
+import { format, formatDistanceToNow } from "date-fns";
+import { de } from "date-fns/locale";
+
+import type { CollectionEntry } from "astro:content";
+import { Image } from "astro:assets";
+
+export interface Props {
+    post: CollectionEntry<"blog">;
+}
+
+const { post } = Astro.props;
+
+const href = `/blog/${post.slug}`;
+---
+
+<article class:list={["flex flex-col mb-5"]}>
+    <a class="unset border-none" href={href}>
+        <Image
+            class="w-full h-auto rounded-xl"
+            src={post.data.cover}
+            alt={post.data.coverAlt}
+            width="800"
+        />
+    </a>
+    <div class="py-4 p-3 md:p-5 flex flex-col h-full">
+        <h2 class="text-lg font-bold text-slate-800 dark:text-slate-100">
+            {post.data.title}
+        </h2>
+        <small
+            slot="post-title"
+            title={format(post.data.pubDate, "dd.MM.yyyy", {
+                locale: de,
+            })}
+        >
+            {
+                formatDistanceToNow(post.data.pubDate, {
+                    locale: de,
+                    addSuffix: true,
+                })
+            }
+        </small>
+        <p class="mt-1 text-slate-800 dark:text-slate-400 h-full">
+            {post.data.lead}
+        </p>
+    </div>
+    <div class="flex flex-row-reverse">
+        <a class="self-start gap-2 font-medium justify-end" href={href}>
+            zum Post
+        </a>
+    </div>
+</article>

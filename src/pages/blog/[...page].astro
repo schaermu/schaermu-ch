@@ -27,6 +27,11 @@ const { page } = Astro.props;
     <Fragment slot="main">
         <FancyHeading color="blue">Schärmu's Blog</FancyHeading>
         <BlogList posts={page.data} />
-        <Pagination page={page} urlPattern="/blog/{}" />
+        <Pagination
+            page={page}
+            urlPattern="/blog/{}"
+            previousLabel="Zurück"
+            nextLabel="Weiter"
+        />
     </Fragment>
 </BaseLayout>
