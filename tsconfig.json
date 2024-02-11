@@ -1,7 +1,8 @@
 {
   "extends": "astro/tsconfigs/strict",
-  "verbatimModuleSyntax": true,
   "compilerOptions": {
+    "strictNullChecks": true,
+    "verbatimModuleSyntax": true,
     "baseUrl": ".",
     "paths": {
       "@components/*": [

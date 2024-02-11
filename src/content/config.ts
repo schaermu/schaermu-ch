@@ -1,10 +1,11 @@
 import { defineCollection, z } from 'astro:content';
 
 const blogCollection = defineCollection({
+    type: 'content',
     schema: ({ image }) => z.object({
         title: z.string(),
         pubDate: z.date(),
-        description: z.string().optional(),
+        lead: z.string().optional(),
         cover: image().refine((img) => img.width >= 1080, {
             message: "Cover image must be at least 1080 pixels wide!",
         }),
