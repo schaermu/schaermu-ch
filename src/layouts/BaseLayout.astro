@@ -20,6 +20,7 @@ const { pageTitle } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <meta name="theme-color" content="#ffffff" />
     <title>{pageTitle}</title>
+    <slot name="head" />
     <ThemeScript />
   </head>
   <body class="max-w-3xl mx-auto min-h-screen px-6 sm:px-8">

@@ -2,7 +2,7 @@ import * as fs from 'node:fs'
 
 import OpenAI from 'openai'
 
-export async function translate(source, target, language) {
+export async function translate(source, target, { language, dryRun }) {
     // load the post content from the file, extract original tags
     const fileContent = fs.readFileSync(source, 'utf8')
     const originalTags = fileContent.match(/tags: (.+)/g)
@@ -10,7 +10,7 @@ export async function translate(source, target, language) {
     // use OpenAI to translate the content
     const openai = new OpenAI()
     const response = await openai.chat.completions.create({
-        model: 'gpt-4-turbo-preview',
+        model: 'gpt-3.5-turbo-16k',
         messages: [
             { role: 'system', content: 'You are a text translator' },
             {

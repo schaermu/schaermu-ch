@@ -10,7 +10,14 @@ export default defineConfig({
   },
   server: { port: 3000 },
   image: {
-    service: passthroughImageService(),
+    domains: ['storage.schaermu.ch'],
+  },
+  i18n: {
+    locales: ['en', 'de'],
+    defaultLocale: 'de',
+    routing: {
+      prefixDefaultLocale: false
+    }
   },
   integrations: [svelte(), tailwind({
     applyBaseStyles: false
