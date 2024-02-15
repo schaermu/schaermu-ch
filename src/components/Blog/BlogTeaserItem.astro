@@ -3,7 +3,7 @@ import { format, formatDistanceToNow } from "date-fns";
 import { de } from "date-fns/locale";
 
 import type { CollectionEntry } from "astro:content";
-import { Image } from "astro:assets";
+import { Image, Picture } from "astro:assets";
 
 export interface Props {
     post: CollectionEntry<"blog">;
@@ -16,11 +16,15 @@ const href = `/blog/${post.slug}`;
 
 <article class:list={["flex flex-col mb-5"]}>
     <a class="unset border-none" href={href}>
-        <Image
+        <Picture
             class="w-full h-auto rounded-xl"
-            src={post.data.cover}
-            alt={post.data.coverAlt}
-            width="800"
+            formats={["webp", "avif"]}
+            widths={[400, 800, 1200]}
+            sizes="(max-width: 1200px) 100vw, 1200px"
+            src={post.data.cover.src}
+            alt={post.data.cover.alt}
+            width={800}
+            height={250}
         />
     </a>
     <div class="py-4 p-3 md:p-5 flex flex-col h-full">

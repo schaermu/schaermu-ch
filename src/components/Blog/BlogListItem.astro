@@ -15,9 +15,10 @@ const { post } = Astro.props;
 <Card
     classList={["md:basis-1/2-gap-4"]}
     image={{
-        src: post.data.cover,
-        alt: post.data.coverAlt,
+        src: post.data.cover.src,
+        alt: post.data.cover.alt,
         width: 800,
+        height: 400,
     }}
     href={`/blog/${post.slug}`}
 >

@@ -26,3 +26,6 @@ cypress/{videos,screenshots}
 /test-results/
 /playwright-report/
 /playwright/.cache/
+
+# temp images
+src/content/temp/

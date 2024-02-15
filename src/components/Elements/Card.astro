@@ -6,6 +6,7 @@ export interface Props {
         src: any;
         alt: string;
         width: number;
+        height: number;
     };
     href?: string;
     classList?: string[];
@@ -28,6 +29,7 @@ const { image, href, classList = [] } = Astro.props;
                     src={image.src}
                     alt={image.alt}
                     width={image.width}
+                    height={image.height}
                 />
             </a>
         ) : (
