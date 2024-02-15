@@ -1,13 +1,13 @@
 import * as fs from 'node:fs'
-import { basename, resolve } from 'node:path'
-import { finished } from 'node:stream/promises'
+import { resolve, parse } from 'node:path'
 import { Readable } from 'node:stream'
-
-import fm from 'front-matter'
-import { PutObjectCommand, S3Client } from "@aws-sdk/client-s3";
-import sharp from 'sharp'
+import { finished } from 'node:stream/promises';
 
 import OpenAI from 'openai'
+import { getUnixTime } from 'date-fns/getUnixTime';
+import fm from 'front-matter'
+import { PutObjectCommand, S3Client } from "@aws-sdk/client-s3";
+import { logger as log } from './openai.js'
 
 
 const imageTempFolder = "src/content/temp"
@@ -21,17 +21,32 @@ const getPost = (source) => {
     return { content: postContent, attributes }
 }
 
-const getTargetImagePath = (source, format = 'png') => {
-    const targetFileName = basename(source).replace('.md', `.${format}`)
-    return resolve(imageTempFolder, targetFileName)
+const getNewImagePath = (sourcePost) => {
+    const folderName = parse(sourcePost).name
+    const imageFolderPath = resolve(imageTempFolder, folderName)
+    if (!fs.existsSync(imageFolderPath)) {
+        fs.mkdirSync(imageFolderPath);
+    }
+    return resolve(imageFolderPath, getUnixTime(new Date()) + '.png')
+}
+
+const getLatestImage = (sourcePost) => {
+    const folderName = parse(sourcePost).name
+    const imageFolderPath = resolve(imageTempFolder, folderName)
+    const files = fs.readdirSync(imageFolderPath)
+        .map(function (v) {
+            return {
+                name: v,
+                time: fs.statSync(resolve(imageFolderPath, v)).mtime.getTime()
+            };
+        })
+        .sort(function (a, b) { return b.time - a.time; })
+        .map(function (v) { return v.name; });
+    return files.length > 0 ? resolve(imageFolderPath, files[0]) : ''
 }
 
 export async function storeImage(source, { dryRun }) {
-    const targetImage = getTargetImagePath(source, 'webp')
-    if (!fs.existsSync(targetImage)) {
-        throw new Error(`The image file does not exist: ${targetImage}`)
-    }
-
+    const targetImage = getLatestImage(source)
     const { content } = getPost(source)
 
     // create s3 client and upload image to cloudflare storage
@@ -45,36 +60,34 @@ export async function storeImage(source, { dryRun }) {
             },
         });
 
+        log.info(`Uploading latest image for ${source} to Cloudflare storage`)
         await S3.send(new PutObjectCommand({
             Bucket: process.env.CF_BUCKET,
-            Key: `blog/headers/${basename(targetImage)}`,
+            Key: `blog/${parse(source).name}/header.png`,
             Body: fs.readFileSync(targetImage),
-            ContentType: 'image/webp',
+            ContentType: 'image/png',
         }))
     }
 
     // replace cover in front matter with new image url
-    const cdnUrl = `${process.env.CF_BUCKET_BASE_URL}/blog/headers/${basename(targetImage)}`
+    const cdnUrl = `${process.env.CF_BUCKET_BASE_URL}/blog/${parse(source).name}/header.png`
     const newPostContent = content
-        .replace(/    src: .+/, `cover: ${cdnUrl}`)
+        .replace(/    src: .+/, `    src: ${cdnUrl}`)
     fs.writeFileSync(source, newPostContent, 'utf8')
+    log.info(`Updated post ${source} with new image ${cdnUrl}`)
 }
 
-export async function generateImage(source, { dryRun, force }) {
-    // generate proper target path, check image existence and remove if necessary
-    const targetFilePath = getTargetImagePath(source, 'webp')
-    if (!force && fs.existsSync(targetFilePath)) {
-        throw new Error(`The image file already exists: ${targetFilePath}, use --force to overwrite it`)
-    } else if (force) {
-        fs.rmSync(targetFilePath, { force: true })
-    }
+export async function generateImage(source, { dryRun }) {
+    // generate new target path
+    const targetFilePath = getNewImagePath(source)
 
     // load post and parse it's front matter to get some clues for image generation
     const { content, attributes } = getPost(source)
     const { cover, tags } = attributes
 
     // generate prompt and send it to DALL-E-3
-    const prompt = `Create a stylistic, yet simple header image for a blog post titled "${cover.promptInput}" with the following tags: ${tags.join(', ')}`
+    const prompt = `Create a stylistic, yet simple header image for a blog post. The broad topic is ${cover.promptInput} with the following tags: ${tags.join(', ')}`
+    log.info(`Generating image for prompt: ${prompt}`)
     if (!dryRun) {
         const openai = new OpenAI()
         const response = await openai.images.generate({
@@ -86,17 +99,17 @@ export async function generateImage(source, { dryRun, force }) {
             style: 'vivid'
         })
 
-        // store & convert image file locally for review
+        // store image file locally for review
         const imageRes = await fetch(response.data[0].url)
-        await sharp(await imageRes.arrayBuffer())
-            .webp({ lossless: true })
-            .toFile(targetFilePath);
+        const targetFs = fs.createWriteStream(targetFilePath, { flags: 'wx' })
+        await finished(Readable.fromWeb(imageRes.body).pipe(targetFs))
+        log.info(`Stored generated image at ${targetFilePath}`)
 
-        // set coverAlt to revised prompt in the post front matter
+        // set alt text to revised prompt in the post front matter
         const newPostContent = content
             .replace(/    alt: .+/, `    alt: "${response.data[0].revised_prompt}"`)
         fs.writeFileSync(source, newPostContent, 'utf8')
     } else {
-        console.log(`Generated prompt: ${prompt}`)
+        log.info(`Dry run, not generating and storing anything.`)
     }
 }
