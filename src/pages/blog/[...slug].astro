@@ -1,10 +1,9 @@
 ---
-import { getCollection } from "astro:content";
+import { getCollection, getEntryBySlug } from "astro:content";
 import { read } from "@lib/markdoc/utils";
 
 import MarkdownPostLayout from "@layouts/MarkdownPostLayout.astro";
 
-import PostRenderer from "@components/Renderer/PostRenderer.astro";
 import FancyHeading from "@components/Elements/FancyHeading.astro";
 import TagItem from "@components/Blog/TagItem.astro";
 
@@ -22,9 +21,9 @@ export async function getStaticPaths() {
 }
 
 const page = Astro.props;
-const { content } = await read({
-  slug: page.slug,
-});
+const entry = await getEntryBySlug("blog", page.slug);
+
+const { Content } = await entry.render();
 
 const readableDate = formatDistanceToNow(new Date(page.data.pubDate), {
   locale: de,
@@ -49,5 +48,6 @@ const exactDate = format(new Date(page.data.pubDate), "dd.MM.yyyy", {
       ))
     }
   </div>
-  <PostRenderer content={content} />
+  <p class="lead">{page.data.lead}</p>
+  <Content frontmatter={entry.data} />
 </MarkdownPostLayout>

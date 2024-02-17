@@ -1,6 +1,7 @@
-import { defineConfig, passthroughImageService } from 'astro/config';
+import { defineConfig } from 'astro/config';
 import svelte from "@astrojs/svelte";
 import tailwind from "@astrojs/tailwind";
+import markdoc from '@astrojs/markdoc';
 import icon from "astro-icon";
 
 // https://astro.build/config
@@ -12,14 +13,7 @@ export default defineConfig({
   image: {
     domains: ['storage.schaermu.ch'],
   },
-  i18n: {
-    locales: ['en', 'de'],
-    defaultLocale: 'de',
-    routing: {
-      prefixDefaultLocale: false
-    }
-  },
-  integrations: [svelte(), tailwind({
+  integrations: [markdoc(), svelte(), tailwind({
     applyBaseStyles: false
   }), icon({
     include: {
