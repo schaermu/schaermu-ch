@@ -1,11 +1,36 @@
 ---
-title: 'Aufbau eines Medienservers: Planung und Einrichtung'
+title: 'DIY Media Server: Planung und Einrichtung (Teil 1)'
 pubDate: 2022-12-03
-lead: "Im ersten Blogbeitrag dieser dreiteiligen Serie möchte ich auf den Grund für das Projekt und die ersten Schritte beim Aufbau eingehen. Zusätzlich werde ich die Überlegungen bezüglich Betriebssystem-Setup sowie der Storage-Verteilung etwas ausführlicher erklären."
+lead: "Der erste Blogpost dieser dreiteiligen Serie wird sich mit verschidenen Fragen rumschlagen: Was wird hier überhaupt gebaut? Wo liegen die Vorteile eines DIY-Systems? Warum tut man sich so was an? Und warum schreibt man dann sogar noch darüber? Die Antworten auf all diese Fragen (und noch ein bisschen mehr) könnt ihr im Teil 1 nachlesen."
 cover:
     promptInput: 'Planning, building and configuring a media server'
     src: https://storage.schaermu.ch/blog/media-server-phase1-planung-und-setup/header.png
     alt: "Design a detailed yet straightforward banner for a blog article, dealing with the process of planning, constructing, and setting up a media server. The image should contain discernible elements such as a server rack, a network map, and computer system components. Make sure to incorporate relevant text labels such as 'media server', 'computer', and 'network'. The color scheme should be technology-themed, utilizing cool colors like blues and grays for a professional and informative aura."
-tags: ["media server", "computer", "network"]
+tags: ["media server", "computer", "network", "self-hosting"]
 ---
-Some content
+# Raison d'&Ecirc;tre.
+Bevor ich mich mit den Themen Self-Hosting oder Media Center beschäftigt habe, stand bei mir im TV-Möbel jahrelang ein kleines NAS von QNAP, ein TS-251 mit 2x2TB Speicherplatz. Dank seines HDMI-Ausgangs, seiner Unscheinbarkeit und der Flexibilität durch die QNAP-Apps eignete es sich (vermeintlich) perfekt für diese Rolle.
+
+Als ich vor ca. 3 Jahren versuchte, auf diesem System einige Docker-Container für kleinere Services zum Laufen zu kriegen (vaultwarden, traefik und sonst noch was), stiess ich an die Grenzen des Systems. Zum einen war es schwierig, direkt mit der Docker-CLI zu arbeiten (ohne Umwege über das Klicki-Bunti-Interface von QNAP) und zum anderen kam das Gerät sehr schnell an seine Ressourcen-Grenzen. Dies lag an den zwei offensichtlichsten Gründen: eine Single-Core Celeron CPU und 4 GB RAM.
+
+Nach einer kurzen (und ernüchternden) Marktrecherche im NAS-Bereich mit Fokus auf Rechenleistung und Flexibilität war der Fall klar: Ich musste das Ding selbst bauen.
+
+# Wie baut man ein NAS?
+Ich habe in der Vergangenheit schon den einen oder anderen Desktop-Rechner zusammengeschraubt, jedoch noch nie einen "Special-Purpose" Rechner wie ein NAS/Media Server. Ich werde in diesem Post nicht auf alle Komponenten eingehen, nur das wirklich wichtige Zeug: Gehäuse, Mainboard/CPU und Harddisks.
+
+Beim Gehäuse habe ich mich für ein [Fractal Node 304](https://www.digitec.ch/de/s1/product/fractal-node-304-mini-itx-pc-gehaeuse-353234?supplier=406802) entschieden: dedizierte Festplatten-Käfige, Mini ITX Formfaktor und integrierte grosse (daher leise) Gehäuselüfter gestalteten diese Entscheidung sehr einfach.
+
+Da Performance einer der Hauptgründe war, weshalb ich mich für den DIY-Weg entschieden habe, dauerte die Entscheidung bzgl. Mainboard / CPU länger. Am Ende habe ich mich für das [ASRock J5040-ITX](https://www.digitec.ch/de/s1/product/asrock-j5040-bga-1090-intel-z590-mini-itx-mainboard-14065284?supplier=406802) entschieden, ein Board mit einer fest verlötetem Intel J5040 Quad-Core CPU, DDR4-Support und einem PCIe 2.0 Slot. Der PCIe-Slot ist wichtig, weil das Board nur 4 SATA3-Ports mitbringt, das Gehäuse jedoch ein Zuhause für bis zu 6 Harddisks bietet. Die fehlenden 2 Ports können ganz einfach mit einem Adapter (z.B. einem [Delock Host Bus Adapter 2 Port SATA PCIe](https://www.digitec.ch/de/s1/product/delock-host-bus-adapter-2-port-sata-pcie-storage-controller-13191725?supplier=406802)) nachgerüstet werden.
+
+Weil ich im alten NAS bereits 2x2TB verbaut hatte (was in meinem Fall als RAID-Storage für Dinge wie Fotos oder Musik völlig ausreichend ist), waren lediglich 4 Disks für den neuen Media-Storage fällig. Da liess ich mich nicht auf Experimente ein und entschied mich für 4 [WD Red Plus 4TB](https://www.digitec.ch/de/s1/product/wd-red-plus-4-tb-35-cmr-festplatte-14726161?supplier=406802) Laufwerke, welche angeblich speziell für den Betrieb in NAS-Systemen ausgelegt sind. Die Beurteilung, ob ich da Opfer des ausgeklügelten Marketings von Western Digital wurde oder nicht überlasse ich dem Leser.
+
+# Ready - Set...
+Beim Zusammenbau der Hardware fiel mir ein kleines, aber doch relativ wichtiges Detail auf: vor lauter Storage-Disks habe ich die System-Disk vergessen. Schlichtweg vergessen, dass da ja irgendwo noch ein Betriebssystem installiert werden sollte. Grossartig.
+
+Nach dem ersten Aufreger war die Lösung aber schnell gefunden, ohne dabei einen Kompromiss bezüglich Speicherkapazität einzugehen: ein USB3.0-20-Pin-Header-to-SATA-Adapter. Genau, Gesundheit.
+
+![USB3.0-20-Pin-Header-to-SATA-Adapter](https://storage.schaermu.ch/blog/media-server-phase1-planung-und-setup/usb-30-20-pin-header-to-sata-adapter.jpg)
+
+Mit diesem Zauberkabel und einer alten 500GB SSD stand dem endgültigen Zusammenbau nun nichts mehr im Wege. Auf die Front-Panel USB-Ports kann ich bei einem Server-Build problemlos verzichten, gemäss meinem Plan benötige ich sowieso nur 2 Ports. Mangels Platz innerhalb der Festplatten-Käfige war bei der Montage auch hier ein wenig Improvisations-Geschick gefragt:
+
+![Kabelbinder-montierte SSD als System-Drive](https://storage.schaermu.ch/blog/media-server-phase1-planung-und-setup/media-server-build-side.jpg)
