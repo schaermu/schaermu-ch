@@ -14,7 +14,8 @@ export default defineConfig({
     domains: ['storage.schaermu.ch'],
   },
   integrations: [markdoc(), svelte(), tailwind({
-    applyBaseStyles: false
+    applyBaseStyles: false,
+    nesting: true,
   }), icon({
     include: {
       'fa-brands': ["github", "stack-overflow", "linkedin"],
