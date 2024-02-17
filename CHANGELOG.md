@@ -1,5 +1,39 @@
 # Changelog
 
+## [2023.13.0](https://github.com/schaermu/schaermu-ch/compare/2023.12.0...2023.13.0) (2024-02-17)
+
+
+### Features
+
+* first post on media server ([7b918f1](https://github.com/schaermu/schaermu-ch/commit/7b918f1a3f6c5d90b3605a766171c2f7b0f3f3c2))
+* new blog index ([#86](https://github.com/schaermu/schaermu-ch/issues/86)) ([8c570ec](https://github.com/schaermu/schaermu-ch/commit/8c570ec02c4a57086e3a1d33ca5c57e502103e2d))
+* part 1 of media server series ([3dce1dd](https://github.com/schaermu/schaermu-ch/commit/3dce1ddbb806e219c2998e0a6384935063773db6))
+* removes legacy custom markdoc stuff, replace using astrojs integration. Replaces prism with shiki. ([#98](https://github.com/schaermu/schaermu-ch/issues/98)) ([9af8ac4](https://github.com/schaermu/schaermu-ch/commit/9af8ac4f031fd26043614ac897a8fdea0502abca))
+
+
+### Bug Fixes
+
+* **deps:** update astro-js ([f2c5237](https://github.com/schaermu/schaermu-ch/commit/f2c5237d754d2af44b296e58bd2b71e7690147fa))
+* **deps:** update astro-js ([f29be68](https://github.com/schaermu/schaermu-ch/commit/f29be68110b3f2efb359935b1095288f5893e699))
+* **deps:** update astro-js ([3781293](https://github.com/schaermu/schaermu-ch/commit/378129316304695a4490e331349f629c7c4d68ce))
+* **deps:** update astro-js ([b03c737](https://github.com/schaermu/schaermu-ch/commit/b03c7375c8f8d107e1eed9cf7e4a63d514bd2d16))
+* **deps:** update astro-js ([e6e4126](https://github.com/schaermu/schaermu-ch/commit/e6e412613b1fa42f685bd0005cb14240bc29fbfd))
+* **deps:** update astro-js ([cd7cd1b](https://github.com/schaermu/schaermu-ch/commit/cd7cd1b75df410378ca43542d655cb5118e12bce))
+* **deps:** update dependency astro to v4.1.1 ([b9cbf8a](https://github.com/schaermu/schaermu-ch/commit/b9cbf8aec670ac5e30a49020989003bca5d234b6))
+* **deps:** update dependency astro to v4.1.3 ([2bb4a43](https://github.com/schaermu/schaermu-ch/commit/2bb4a435a211fcc6427ab9886f4584e5fa346c80))
+* **deps:** update dependency astro to v4.2.1 ([e39a5ef](https://github.com/schaermu/schaermu-ch/commit/e39a5ef1c23ad48efe153b95e0dd251a55a4729b))
+* **deps:** update dependency astro to v4.3.1 ([0d935af](https://github.com/schaermu/schaermu-ch/commit/0d935afb4eec21ee0ec3523708bfd2039b3c0131))
+* **deps:** update dependency astro to v4.4.0 ([#87](https://github.com/schaermu/schaermu-ch/issues/87)) ([8f0f438](https://github.com/schaermu/schaermu-ch/commit/8f0f43841ecddefb4d94e1e563138169f6d5b6fd))
+* **deps:** update dependency date-fns to v3.1.0 ([55bc3a1](https://github.com/schaermu/schaermu-ch/commit/55bc3a1e21bdea3bbd2bc6ba98cbe01dbcc176cc))
+* **deps:** update dependency date-fns to v3.2.0 ([2e35a89](https://github.com/schaermu/schaermu-ch/commit/2e35a890a46e42c5e470c44f43c1baa700af8cf2))
+* **deps:** update dependency date-fns to v3.3.0 ([7a1c11b](https://github.com/schaermu/schaermu-ch/commit/7a1c11b3456df92b909b2367e13ed2b2fc169813))
+* **deps:** update dependency date-fns to v3.3.1 ([38ffd43](https://github.com/schaermu/schaermu-ch/commit/38ffd434a90d8859fdeb3f6d41d68235f89f5b2b))
+* **deps:** update dependency pino to v8.19.0 ([#97](https://github.com/schaermu/schaermu-ch/issues/97)) ([e233095](https://github.com/schaermu/schaermu-ch/commit/e2330958126ca927efca50e162680c60ab73569c))
+* **deps:** update dependency svelte to v4.2.10 ([074a963](https://github.com/schaermu/schaermu-ch/commit/074a96378c00520e897560d6537a5f3bc2fee1ca))
+* **deps:** update dependency svelte to v4.2.11 ([#92](https://github.com/schaermu/schaermu-ch/issues/92)) ([1b2b648](https://github.com/schaermu/schaermu-ch/commit/1b2b6489800d84b9240254f23de6fe7425d64f22))
+* **deps:** update dependency svelte to v4.2.9 ([1c13d35](https://github.com/schaermu/schaermu-ch/commit/1c13d350b77b15b9974d88f8037b3bea1726ed04))
+* **deps:** update dependency tailwindcss to v3.4.1 ([5dd2ffb](https://github.com/schaermu/schaermu-ch/commit/5dd2ffb017a3432599e58f4006376d4089af98b4))
+
 ## [2023.10.0](https://github.com/schaermu/schaermu-ch/compare/2023.9.0...2023.10.0) (2023-12-31)
 
 
