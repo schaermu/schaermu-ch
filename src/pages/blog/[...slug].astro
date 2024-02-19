@@ -1,6 +1,6 @@
 ---
 import { getCollection, getEntryBySlug } from "astro:content";
-import { read } from "@lib/markdoc/utils";
+import { Picture } from "astro:assets";
 
 import MarkdownPostLayout from "@layouts/MarkdownPostLayout.astro";
 
@@ -41,6 +41,16 @@ const exactDate = format(new Date(page.data.pubDate), "dd.MM.yyyy", {
   <small class="block w-full text-center text-slate-500 dark:text-slate-400"
     >Veröffentlicht {readableDate} ({exactDate})</small
   >
+  <Picture
+    class="w-full h-auto rounded-xl"
+    formats={["webp", "avif"]}
+    widths={[400, 800, 1200]}
+    sizes="(max-width: 1200px) 100vw, 1200px"
+    src={entry.data.cover.src}
+    alt={entry.data.cover.alt}
+    width={800}
+    height={250}
+  />
   <div class="not-prose mt-10">
     {
       page.data.tags.map((tag: string) => (
