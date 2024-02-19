@@ -1,7 +1,7 @@
 ---
 title: 'DIY Media Server: Planung und Einrichtung (Teil 1)'
-pubDate: 2022-12-03
-lead: "Der erste Blogpost dieser dreiteiligen Serie wird sich mit verschidenen Fragen rumschlagen: Was wird hier überhaupt gebaut? Wo liegen die Vorteile eines DIY-Systems? Warum tut man sich so was an? Und warum schreibt man dann sogar noch darüber? Die Antworten auf all diese Fragen (und noch ein bisschen mehr) könnt ihr im Teil 1 nachlesen."
+pubDate: 2024-02-17
+lead: "Der erste Blogpost dieser dreiteiligen Serie wird sich mit verschidenen Fragen rumschlagen: Was wird hier überhaupt gebaut? Wo liegen die Vorteile eines DIY-Systems? Warum tut man sich so was an? Die Antworten auf all diese Fragen (und noch ein bisschen mehr) könnt ihr im Teil 1 nachlesen."
 cover:
     promptInput: 'Planning, building and configuring a media server'
     src: https://storage.schaermu.ch/blog/media-server-phase1-planung-und-setup/header.png
@@ -24,7 +24,7 @@ Da Performance einer der Hauptgründe war, weshalb ich mich für den DIY-Weg ent
 
 Weil ich im alten NAS bereits 2x2TB verbaut hatte (was in meinem Fall als RAID-Storage für Dinge wie Fotos oder Musik völlig ausreichend ist), waren lediglich 4 Disks für den neuen Media-Storage fällig. Da liess ich mich nicht auf Experimente ein und entschied mich für 4 [WD Red Plus 4TB](https://www.digitec.ch/de/s1/product/wd-red-plus-4-tb-35-cmr-festplatte-14726161?supplier=406802) Laufwerke, welche angeblich speziell für den Betrieb in NAS-Systemen ausgelegt sind. Die Beurteilung, ob ich da Opfer des ausgeklügelten Marketings von Western Digital wurde oder nicht überlasse ich dem Leser.
 
-# Ready - Set...
+# Ready - Set...Oops...
 Beim Zusammenbau der Hardware fiel mir ein kleines, aber doch relativ wichtiges Detail auf: vor lauter Storage-Disks habe ich die System-Disk vergessen. Schlichtweg vergessen, dass da ja irgendwo noch ein Betriebssystem installiert werden sollte. Grossartig.
 
 Nach dem ersten Aufreger war die Lösung aber schnell gefunden, ohne dabei einen Kompromiss bezüglich Speicherkapazität einzugehen: ein USB3.0-20-Pin-Header-to-SATA-Adapter. Genau, Gesundheit.
@@ -43,8 +43,8 @@ Der Vollständigkeit halber seien hier noch die restlichen Komponenten aufgelist
 
 Zusätzlich habe ich noch ein paar herumliegende SATA-3 Kabel verbaut, nichts Spektakuläres. Und Kabelbinder. Viele Kabelbinder.
 
-# ... Go!
-Nachdem das Thema Hardware abgeschlossen war, musste ich mich erst mal zum Thema Betriebsystem und Festplatten-Setup schlau machen. Eine wahnsinnig hilfreiche Ressource war dabei der Installation Guide von [PerfectMediaServer.com](https://perfectmediaserver.com/03-installation/manual-install-ubuntu/#base-os-installation). Anstatt für Ubuntu habe ich mich für Debian entschieden, funktional ist da jedoch kein Unterschied.
+# Storage-Setup
+Nun, da das Thema Hardware abgeschlossen war, musste ich mich erst mal zum Thema Betriebsystem und Festplatten-Setup schlau machen. Eine wahnsinnig hilfreiche Ressource war dabei der Installation Guide von [PerfectMediaServer.com](https://perfectmediaserver.com/03-installation/manual-install-ubuntu/#base-os-installation). Anstatt für Ubuntu habe ich mich für Debian entschieden, funktional ist da jedoch kein Unterschied.
 
 Nachdem das Betriebssystem installiert und in seinen Grundzügen konfiguriert war (vor allem Dinge wie Public Key Authentication für SSH, SSH Standard-Port wechseln und fail2ban installieren), konnte ich mit dem Setup der Storage-Arrays beginnen. Da es sich beim grossen Array um brandneue Festplatten handelte, machte es Sinn diese zuerst einem sog. Burn-In-Ritual zu unterziehen. Dazu wird die Festplatte mit dem Linux-Tool `badblocks` auf korreupte Blöcke geprüft, ein sehr zeitintensiver und (für die Festplatte) stressiger Vorgang. Für meine 4 x 4TB dauerte der Vorgang (paralellisiert) knapp eine halbe Woche, rechnet hier also genügend Zeit ein. Vor allem wenn ihr mit grossen Disks (> 8TB) arbeiten möchtet kann dass schnell länger als eine Woche dauern.
 
@@ -84,6 +84,54 @@ Damit diese Storage-Arrays auch sauber und konsistent blieben, habe ich noch ein
 ```
 
 Zwecks Übersichtlichkeit habe ich an dieser Stelle das Monitoring dieser Jobs mit [healthchecks.io](https://healthchecks.io)-Webhooks ausgelassen, jedoch ist es sehr stark zu empfehlen (vor allem wenn du die [Laufzeiten](https://healthchecks.io/docs/measuring_script_run_time/) dieser Jobs messen willst).
+
+# Docker-Setup
+Im Internet geistert eine Unmenge an Guides zu Themen wie Self-Hosting, Homelab oder Media Server rum. Die meisten beschäftigen sich mit super-komplexen, Ansible-automatisierten Bare-Metal Kubernetes-Deployments, bei welchen die Dienste via ArgoCD vollautomatisiert auf Basis eines Git-Repos synchronisiert werden. Obwohl so was natürlich interessant sein kann, ging es mir primär darum einen Nutzen zu generieren und nicht die maximal mögliche Zeit mit Rumbasteln und Neu-deployen zu verbringen. Aus diesem und ein paar anderen Gründen (Erfahrung, Einfachheit) habe ich mich für ein vergleichsweise simples Deployment mit `docker` und `docker compose` entschieden.
+
+Bei der Installation von `docker` gibts eigentlich nur zwei Dinge zu beachten:
+1) Installiert das korrekte System-Package (`docker-ce` vom offiziellen Docker-Repository), sonst werdet ihr je nachdem lange auf Updates warten.
+2) Lasst Docker im rootless-Mode laufen, ihr reduziert dadurch das Potenzial für einen erfolgreichen Container-Escape erheblich.
+
+## Installation
+Zuerst werden mal alle notwendigen Voraussetzungen installiert:
+```shell
+$ sudo apt update && sudo apt install apt-transport-https ca-certificates curl gnupg2 software-properties-common
+```
+Im zweiten Schritt installieren wir den GPG-Key für das offizielle Docker-Repository und fügen selbiges hinzu:
+```shell
+$ curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
+$ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/debian $(lsb_release -cs) stable"
+$ sudo apt update
+```
+Nun installieren wir sowohl `docker` sowie alle notwendigen Voraussetzungen für einen rootless-Betrieb. Zusätzlich fügen wir unseren non-root User zur Gruppe `docker` hinzu, damit wir nicht alle docker-Befehle als Root-User ausführen müssen: 
+```shell
+$ sudo apt install docker-ce slirp4netns fuse-overlayfs dbus-user-session uidmap
+$ sudo usermod -aG docker ${USER}
+```
+## Konfiguration
+Bevor wir nun alles entsprechend konfigurieren müssen wir uns kurz neu auf dem Server einloggen (wegen der Installation von `dbus-user-session`). Ist dies erledigt, sollte erst mal kurz geprüft werden, ob `docker` läuft und wir mit unserem unprivilegierten User entsprechend docker-Befehle ausführen können:
+```shell
+$ sudo systemctl status docker
+● docker.service - Docker Application Container Engine
+   Loaded: loaded (/lib/systemd/system/docker.service; enabled; vendor preset: enabled)
+   Active: active (running)...
+$ docker info
+Client: Docker Engine - Community
+ Version:    25.0.3
+ Context:    default
+ Debug Mode: false
+ Plugins:
+  buildx: Docker Buildx (Docker Inc.)
+    Version:  v0.12.1
+    Path:     /usr/libexec/docker/cli-plugins/docker-buildx
+  compose: Docker Compose (Docker Inc.)
+    Version:  v2.24.5
+    Path:     /usr/libexec/docker/cli-plugins/docker-compose
+...
+```
+Sieht euer Output ähnlich aus, ist alles in Ordnung und wir können die Installation weiterführen. Dazu führen wir den Befehl `/usr/bin/dockerd-rootless-setuptool.sh install` aus, so wird `docker` auf rootless-Betrieb umgestellt. Beachtet dabei auch die Hinweise während das Skript durchläuft und führt Instruktionen entsprechend aus!
+
+**HINWEIS**: falls dieses Shell-Script nicht vorhanden ist, könnt ihr es nachinstallieren, indem ihr die rootless-Extras installiert: `sudo apt-get install -y docker-ce-rootless-extras`
 
 # Fazit
 Das Grundgerüst für einen stabilen Media Server zu legen war eine interessante Geschichte, vor allem wenn man sich noch nie mit einem Storage-fokussierten Computer-Build auseinandergesetzt hat. Herausfordernd war eigentlich nur der Zeitaufwand bezüglich Disk-Burnin und Initialisierung der Arrays, der Rest war relativ simpel zu bewerkstelligen.
