@@ -15,22 +15,12 @@ const { posts, renderMode = RenderMode.Teaser } = Astro.props;
 
 <div class="flex flex-col gap-4 md:flex-row md:flex-wrap mt-5">
     {
-        posts
-            .sort((a, b) => {
-                if (a.data.pubDate > b.data.pubDate) {
-                    return -1;
-                }
-                if (a.data.pubDate < b.data.pubDate) {
-                    return 1;
-                }
-                return 0;
-            })
-            .map((post) =>
-                renderMode === RenderMode.Teaser ? (
-                    <BlogTeaserItem post={post} />
-                ) : (
-                    <BlogListItem post={post} />
-                ),
-            )
+        posts.map((post) =>
+            renderMode === RenderMode.Teaser ? (
+                <BlogTeaserItem post={post} />
+            ) : (
+                <BlogListItem post={post} />
+            ),
+        )
     }
 </div>

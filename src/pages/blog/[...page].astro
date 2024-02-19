@@ -13,6 +13,15 @@ const pageTitle = "der bloggende schärmu";
 
 export const getStaticPaths = (async ({ paginate }) => {
     const allPosts = await getCollection("blog");
+    allPosts.sort((a, b) => {
+        if (a.data.pubDate > b.data.pubDate) {
+            return -1;
+        }
+        if (a.data.pubDate < b.data.pubDate) {
+            return 1;
+        }
+        return 0;
+    });
     return paginate(allPosts, { pageSize: 3 });
 }) satisfies GetStaticPaths;
 
