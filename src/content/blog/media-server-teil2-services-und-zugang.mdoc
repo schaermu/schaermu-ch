@@ -1,0 +1,345 @@
+---
+title: 'DIY Media Server: Services und Zugang (Teil 2)'
+pubDate: 2024-02-18
+lead: "In diesem Blogpost werde ich im Detail auf die Services eingehen, welche ich auf dem im ersten Teil zusammengeschraubten Media Server laufen lassen werden. Damit diese Services und Applikationen auch brauchbar sind, gehe ich im zweiten Teil des Posts auf das Thema Ingress/Egress ein und mit welchen Patterns das gelöst wurde."
+cover:
+    promptInput: 'Setting up and configuring container-based services for a media server'
+    src: https://storage.schaermu.ch/blog/media-server-teil2-services-und-zugang/header.png
+    alt: "Create an illustration as a blog header symbolizing the process of setting up and configuring container-based services for a media server. This image should be minimalistic and aesthetic, illustrating key elements such as a media server icon, a symbolic representation of a computer and elements denoting self-hosting and docker. The design should be modern and techie, filled with bright colors and strong contrasts."
+tags: ["media server", "computer", "self-hosting", "docker"]
+---
+# Grundlagen
+Im Teil 1 habe ich ja bereits ausgeführt, aus welchen Gründen ich mich gegen ein komplexes Kubernetes-Setup und für eine simplere Lösung mit `docker` und `docker compose` entschiden habe. Da ich zu Beginn jedoch noch nicht genau wusste, welche Services ich im Endausbau einsetzen möchte, habe ich mir initial mal eine Liste mit den MVP-Services erstellt:
+* [traefik](https://traefik.io/traefik/) als Cloud-native Reverse-Proxy.
+* [crowdsec](https://www.crowdsec.net) als Intrusion Prevention System.
+* [victoriametrics](https://victoriametrics.com/products/open-source/) als Time-Series Datenbank für Metriken.
+* [grafana](https://grafana.com/oss/grafana/) als Visualisierungs-Plattform.
+* [vaultwarden](https://github.com/dani-garcia/vaultwarden) als Passwort-Storage.
+* [pihole](https://pi-hole.net) als DNS-basierenden Ad-Blocker auf Netzwerkstufe.
+* [jellyfin](https://jellyfin.org) als Media-Server.
+
+Mit diesen Services konnte ich alles abdecken, was ich mit dem alten QNAP-NAS out-of-the-box oder als App verfügbar hatte (wobei ich Jellyfin als direkten Ersatz für Plex geplant habe, weil ich deren Pricing- / Cloud-Service-Modell einfach nur noch zum Kotzen finde).
+
+Für simple Deployments mit 4-6 Services kann Deployment mit einem einzelnen `docker-compose.yml` völlig ausreichend sein. Es hat auch den Vorteil, dass Dinge wie Updates oder allgemein Diagnostik an einem zentralen Ort durchgeführt werden können. Wenn wir jedoch mehr als diese Handvoll Services betreiben möchten, gibt es 2 Möglichkeiten:
+* 1 zentrales `docker-compose.yml` und der Einsatz von [Includes](https://docs.docker.com/compose/compose-file/14-include/).
+* Pro Service-Kategorie ein `docker-compose.yml`, welches einen in sich geschlossenen Stack definiert.
+
+Da ich ein kein Fan von verschachtelten, nicht klar ersichtlichen Abhängigkeiten bin, entschied ich mich für Variante 2 (würde ich auch heute noch so machen). Dies führte mich zu folgender Verzeichnisstruktur für den MVP:
+```shell
+├── monitoring
+│   └── config
+├── network
+│   └── config
+├── security
+│   └── config
+├── streaming
+│   └── config
+└── tools
+```
+
+Jeder dieser Unterordner enthält ein `docker-compose.yml`, welches einen in sich geschlossenen Stack abbildet (mit eigenem [Netzwerk](https://docs.docker.com/network/), [Volumes](https://docs.docker.com/storage/volumes/) und [Env-Files](https://docs.docker.com/compose/environment-variables/)).
+
+# Reverse-Proxy
+Um die Services auch erreichbar zu machen, muss zuerst ein Reverse-Proxy eingerichtet werden. Aufgrund der super-simplen Integration mit Docker entschied ich mich dabei für [traefik](https://traefik.io/traefik/): mit ein paar Labels und einer schlauen Standard-Config kann ich so einen neuen Service mit wenig Aufwand über eine beliebige Domain exponieren. Am Beispiel `traefik`  werde ich ein Compose-File ein bisschen genauer erklären, für alle anderen Services werde ich nur noch auf die Spezialitäten eingehen.
+
+## docker-compose.yml
+Zuerst definieren wir die Compose-Version sowie das Default-Netzwerk. Da ich pro Kategorie ein dediziertes Netzwerk konfiguriere, muss dieses über alle Stacks eindeutig sein:
+```yaml
+version: '3.9'
+
+networks:
+  default:
+    name: proxy-net
+```
+
+Im nächsten Block folgen die Secrets, welche ich direkt über Dateien in einem `./config`-Verzeichnis reinmounte. Im Falle von Traefik handelt es sich dabei um die API-Secrets für [Cloudflare](https://developers.cloudflare.com/api/), welche ich verwende, um via LetsEncrypt Wildcard-Zertifikate für meine Domain auszustellen:
+```yaml
+secrets:
+  cf_credentials_api_key:
+    file: ./config/traefik/cf_api_key
+  cf_credentials_email:
+    file: ./config/traefik/cf_email
+```
+
+Nun folgt die Service-Definition. Diese Parameter variieren je nach Service oder Stack stark, gerade Treaefik ist ein Speziellfall da er auf privilegierten Ports läuft (80 und 443). Was jedoch allen Compose-Stacks gemein ist, sind die gepinnten Versionen (ich verwende NIE `latest`) und das relativ gemountete `./config`-Verzeichnis. Das macht zukünftige Full-Backups des Docker-Stacks massiv einfacher.
+```yaml
+services:
+  traefik:
+    container_name: traefik
+    image: traefik:v2.11.0
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - /var/log/traefik/:/var/log/traefik/
+      - ./config/traefik:/etc/traefik
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.traefik.entryPoints=websecure"
+      - "traefik.http.routers.traefik.middlewares=default@file"
+      - "traefik.http.routers.traefik.service=api@internal"
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+    networks:
+      - default
+    secrets:
+      - cf_credentials_api_key
+      - cf_credentials_email
+    environment:
+      - CF_DNS_API_TOKEN_FILE=/run/secrets/cf_credentials_api_key
+      - CF_EMAIL_FILE=/run/secrets/cf_credentials_email
+    hostname: traefik
+    ports:
+      - 80:80
+      - 443:443
+```
+## config/traefik/traefik.yml
+Da gerade die Konfiguration von Traefik für alle Services von Bedeutung ist, möchte ich diese ein bisschen genauer beleuchten, namentlich die folgenden Aspekte:
+
+* LetsEncrypt via DNS-Challenge
+* Wildcard-Zertifikate
+* Default-Rule für LAN-Access
+
+LetsEncrypt lässt sich sehr einfach konfigurieren, auch die DNS-Challenge via Cloudflare ist easy:
+```yaml
+certificatesResolvers:
+  letsencrypt:
+    acme:
+      email: "foo@bar.org"
+      storage: "/etc/traefik/acme_letsencrypt.json"
+      dnschallenge:
+        provider: cloudflare
+```
+Damit dieser Provider auch funktioniert, müsst ihr einen entsprechenden Cloudflare API-Key einrichten (siehe [Guide](https://go-acme.github.io/lego/dns/cloudflare/)) und diesen via Secrets im Compose-File mounten. Dieses Snippet reicht bereits, um gültige Zertifikate zu provisionieren, jedoch weiss Traefik aktuell noch nicht für welche Domain. Dies können wir mit folgender Konfiguration definieren:
+
+```yaml
+entryPoints:
+  web:
+    address: ":80"
+    http:
+      redirections:
+         entryPoint:
+           to: "websecure"
+           scheme: "https"
+
+  websecure:
+    address: ":443"
+    http:
+      tls:
+         certResolver: letsencrypt
+         domains:
+           - main: hpfr.ch
+             sans:
+               - "*.hpfr.ch"
+               - "*.home.hpfr.ch"
+           - main: schaermu.ch
+             sans:
+               - "*.schaermu.ch"
+      middlewares:
+        - default@file
+```
+Der erste Abschnitt ist die Standard-Deklaration für einen HTTP-to-HTTPS-Redirect in Traefik. Interessant ist der zweite Teil: hier definiert ihr, für welche Domains und Hosts ihr Wildcard-Zertifikate mit LetsEncrypt provisionieren möchtet. In meinem Fall werde ich zwei Domains und eine Subdomain verwenden:
+* `*.hpfr.ch` - Alle Docker-Services, welche von aussen erreichbar sein sollen.
+* `*.home.hpfr.ch` - Wird nur intern aufgelöst (via `pihole`) und ist die Standard-Domain für Docker-Services.
+* `*.schaermu.ch` - All mein privates Gebastel, welches ich irgendwo hosten möchte.
+
+Damit ich nicht für JEDEN meiner Services extra einen Hostname definieren muss, sondern nur für die (wenigen) extern exponierten, habe ich noch eine Standard-Rule für den Docker-Provider in Traefik implementiert:
+```yaml
+providers:
+  docker:
+    endpoint: "unix:///var/run/docker.sock"
+    exposedByDefault: false
+    network: "proxy-net"
+    defaultRule: "Host(`{{ index .Labels \"com.docker.compose.service\" }}.home.hpfr.ch`)"
+  file:
+    filename: "/etc/traefik/dynamic.conf.yml"
+    watch: true
+  providersThrottleDuration: 10
+```
+Wichtig zu beachten: es wird standardmässig keinen Docker-Container exponieren (`exposedByDefault: false`), die Connectivity erfolgt nur über das Docker-Netzwerk `proxy-net` und als Standard-Hostname wird `{service_name}.home.hpfr.ch` definiert. Auf diese Weise muss ich für intern exponierte Container nicht explizit einen Hostname setzten sondern kann mich auf eine Konvention verlassen.
+
+# Routing-Konfiguration
+Damit ihr nun Traffic auf einen bestimmten Service routen könnt, müssen im Compose-File bestimmte Labels konfiguriert werden. Am Beispiel von Vaultwarden und Jellyfin werde ich jeweils einen extern zugänglichen sowie einen LAN-only Service durchspielen. Da der externe Zugang aufbauend auf den LAN-only Access ist, werde ich zuerst das Jellyfin-Beispiel aufzeigen:
+```yaml
+---
+version: "3"
+networks:
+  default:
+    name: streaming-net
+  proxy-net:
+    external: true
+
+volumes:
+  jellyfin-data:
+
+services:
+  jellyfin:
+    image: linuxserver/jellyfin:10.8.13
+    container_name: jellyfin
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Zurich
+      - JELLYFIN_PublishedServerUrl=x.x.x.x
+      - JELLYFIN_CACHE_DIR=/cache
+      - JELLYFIN_LOG_DIR=/log
+    volumes:
+      - jellyfin-data:/config
+      - /var/tmp/docker-storage/jellyfin-cache:/cache
+      - /var/tmp/docker-storage/jellyfin-logs:/log
+      - /mnt/media/video/Serien:/data/tvshows
+      - /mnt/media/video/Movies:/data/movies
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.jellyfin.entryPoints=websecure"
+      - "traefik.http.services.jellyfin.loadbalancer.server.port=8096"
+    hostname: jellyfin
+    ports:
+      - 8096:8096
+      - 8920:8920
+      - 7359:7359/udp
+    networks:
+      - default
+      - proxy-net
+    restart: unless-stopped
+```
+Damit das Routing korrekt funktioniert sind folgende Konfigurationswerte wichtig:
+* `traefik.enable=true` - dieses Label exponiert den Service gegenüber Traefik.
+* `traefik.http.routers.{servicename}.entryPoints=websecure` - damit aktivieren wir den HTTPS-Endpoint für Jellyfin (default wäre HTTP)
+* `traefik.http.services.jellyfin.loadbalancer.server.port=8096` - damit Traefik weiss, auf welchen Port er HTTP-Traffic schicken muss (nicht nötig falls ein Service nur einen einzigen Port exponiert)
+* `networks: - proxy-net` - Nur wenn wir den Service zusätzlich zum `default`-Netzwerk auch ins `proxy-net`-Netzwerk einhängen, wird Traefik fähig sein Traffic auf diesen Container zu routen.
+
+Damit die Auflösung des Standard-Hostnames `{service-name}.home.hpfr.ch` (siehe Traefik-Konfiguration) funktioniert, muss PiHole (oder ein anderer DNS-Server mit `dnsmasqd`-Unterstützung) entsprechend konfiguriert werden:
+```shell
+address=/.home.hpfr.ch/192.168.x.x
+```
+
+Um meinen Passwortmanager auch unterwegs einsetzen zu können (via Mobile-App und Browser-Plugins), muss dieser zwingend extern erreichbar sein. Dazu habe ich auf Cloudflare einen generischen CNAME `rp.hpfr.ch` konfiguriert, welcher auf meine öffentliche IP zeigt. Dieser CNAME wird bei Bedarf automatisch updated falls sich meine öffentliche IP ändern sollte (das dazu passende Script werde ich im Teil 3 betreffend Automatisierung vorstellen).
+
+Die Hosts für die einzelnen Services habe ich als CNAME auf `rp.hpfr.ch` zeigend eingerichtet, im Falle des Passwortmanagers `vault.hpfr.ch`. Um wirklich nur auf die Unterschiede bezüglich Routing einzugehen, werde ich den grössten Teil des Compose-Files ausblenden:
+```yaml
+---
+version: "3"
+networks:
+  ...
+
+volumes:
+  ...
+
+services:
+  vaultwarden:
+    image: vaultwarden/server:1.30.3
+    container_name: vaultwarden
+    ...
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.vaultwarden.entrypoints=websecure"
+      - "traefik.http.routers.vaultwarden.rule=Host(`${DNS_CNAME_VAULTWARDEN}`)"
+      - "traefik.http.services.vaultwarden-tools.loadbalancer.server.port=80"
+```
+Den effektiven Hostname `vault.hpfr.ch` habe ich in einem File namens `.env` hinterlegt (welches von Docker Compose automatisch eingelesen wird):
+```shell
+DNS_CNAME_VAULTWARDEN=vault.hpfr.ch
+```
+Die Konfiguration ist bis auf die explizite Angabe des Tags `traefik.http.routers.vaultwarden.rule` dieselbe wie für LAN-only Services. Allein diese Rule sorgt jedoch dafür, dass der Service auch auf externen DNS-Servern auflöst weil nur diese Hosts einen öffentlichen DNS-Record besitzen.
+
+
+# Security
+Eine Internet-Exponierung der Ports 80 und 443 ist immer mit Risiken verbunden: die IP-Adress Bereiche grosser Provider wie UPC oder Swisscom sind besonders betroffen von grossangelegten Vulnerability-Scans. Um so wichtiger ist ein adäquater Schutz gegen solche HTTP-basierten Angriffsversuche, insbesondere wenn Thirdparty-Software öffentlich zugänglich gemacht wird. Für meinen Home-Server habe ich mich diesbezüglich für zwei Schichten entschieden:
+* Cloudflare als simple WAF (vorgeschaltet)
+* CrowdSec als IPS für Traefik
+
+Da die Einrichtung von Cloudflare sehr simpel ist (es muss lediglich die Domain onboarded werden und schon ist die basic WAF protection aktiv), werde ich vorwiegend auf die Einrichtung und Konfiguration von CrowdSec eingehen.
+
+[Crowdsec Security Engine](https://www.crowdsec.net/product/crowdsec-security-engine) ist eine crowd-gestützte IPS-Lösung. IP-Adressen werden aufgrund verdächtiger Aktivitäten auf Community-Blacklists geflagged, welche wiederum als Quelle für abgelehnte Anforderungen dienen. Ich werde hier vor allem auf die Konfiguration und das Zusammenspiel mit Traefik eingehen, CrowdSec hat natürlich noch viel mehr Möglichkeiten. Zuerst möchte ich auf das Compose-File eingehen:
+```yaml
+version: "3"
+networks:
+  proxy-net:
+    external: true
+
+volumes:
+  crowdsec-data:
+
+services:
+  crowdsec:
+    container_name: crowdsec
+    image: crowdsecurity/crowdsec:v1.6.0
+    environment:
+      GID: "${GID-1000}"
+      COLLECTIONS: "crowdsecurity/sshd crowdsecurity/traefik crowdsecurity/http-cve crowdsecurity/whitelist-good-actors crowdsecurity/iptables"
+    volumes:
+      - ./config:/etc/crowdsec
+      - crowdsec-data:/var/lib/crowdsec/data
+      - /etc/localtime:/etc/localtime:ro
+      - /var/log/kern.log:/logs/kern.log:ro
+      - /var/log/auth.log:/logs/auth.log:ro
+      - /var/log/ufw.log:/logs/ufw.log:ro
+      - /var/log/syslog:/logs/syslog:ro
+      - /var/log/traefik:/logs/traefik:ro
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges=true
+    networks:
+      - proxy-net
+
+  bouncer-traefik:
+    container_name: crowdsec-bouncer-traefik
+    image: fbonalair/traefik-crowdsec-bouncer:0.5
+    environment:
+      CROWDSEC_BOUNCER_API_KEY: ${TRAEFIK_BOUNCER_KEY}
+      CROWDSEC_AGENT_HOST: crowdsec:8080
+      GIN_MODE: release
+    restart: unless-stopped
+    depends_on:
+      - crowdsec
+    networks:
+      - proxy-net
+    hostname: crowdsec-bouncer-traefik
+```
+Wir deployen zwei Services: zum einen die Security-Engine `crowdsec` und zum anderen einen sog. Bouncer (Türsteher) für traefik. Beide Services werden auf dem Netzwerk von Traefik hochgefahren (`proxy-net`), weswegen es in dieser Definition auch mit `external: true` geflagged ist (sonst würde Docker versuchen, es erneut zu erstellen). Wichtig sind bei dieser Konfiguration vor allem die Bind-Mounts für die Logfiles wie z.B. `/var/log/auth.log` oder `/var/log/traefik`, da diese die Entscheidungsgrundlage für CrowdSec bilden. In der Acquisition-Konfiguration (`./config/acquis.d/*.yaml`) werden diese nun auch entsprechend markiert:
+
+```yaml
+filenames:
+ - /logs/auth.log
+ - /logs/syslog
+ - /logs/kern.log
+ - /logs/ufw.log
+labels:
+  type: syslog
+```
+
+Damit eingehende Requests von Traefik in Echtzeit durch Crowdsec analysiert werden können, muss `crowdsec-bouncer-traefik` als Standard-Middleware für Traefik konfiguriert werden (im File `/traefik/config/traefik/dynamic.conf.yml`). Falls noch nicht geschehen könnt ihr in diesem Schritt auch gleich vernüftige Security-Headers und GZIP-Kompression als Middleware registrieren:
+
+```yaml
+...
+http:
+  middlewares:
+    default:
+      chain:
+        middlewares:
+          - crowdsec-bouncer
+          - default-security-headers
+          - gzip
+    default-security-headers:
+      headers:
+        browserXssFilter: true
+        contentTypeNosniff: true
+        forceSTSHeader: true
+        frameDeny: true
+        stsIncludeSubdomains: true
+        stsPreload: true
+        stsSeconds: 31536000
+        customFrameOptionsValue: "SAMEORIGIN"
+    gzip:
+      compress: {}
+    crowdsec-bouncer:
+      forwardAuth:
+        address: http://crowdsec-bouncer-traefik:8080/api/v1/forwardAuth
+        trustForwardHeader: true
+```
+
+# Fazit
+Mit dem hier gezeigten Setup war eine robuste Grundlage für einen vielseitigen und flexiblen Home-Server gelegt. Dank Docker konnte ich (fast) alles laufen lassen, was das Nerd-Herz begehrt, das ganze war vergleichsweise sicher und solide aufgebaut und ermöglichte es mir trotzdem, schnell und einfach neue Services onboarden zu können.
+
+Im dritten und letzten Teil werde ich dieses Setup so weit wie möglich automatisieren und euch zeigen, wie man auch ohne ArgoCD einen GitOps-Ansatz für Compose-basierende Deployments implementieren kann.
