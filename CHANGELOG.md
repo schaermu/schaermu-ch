@@ -1,5 +1,7 @@
 # Changelog
 
+## [2024.2.1](https://github.com/schaermu/schaermu-ch/compare/2024.2.0...2024.2.1) (2024-02-19)
+
 ## [2023.13.0](https://github.com/schaermu/schaermu-ch/compare/2023.12.0...2023.13.0) (2024-02-17)
 
 
