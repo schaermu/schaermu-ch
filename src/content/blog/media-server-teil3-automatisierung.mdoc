@@ -1,0 +1,215 @@
+---
+title: 'DIY Media Server: Automatisierung (Teil 3)'
+pubDate: 2024-02-20
+lead: "Im letzten Post der Media Server Serie werde ich über Automatisierung sprechen. Im ersten Teil werde ich speziell auf das Thema Updates und Deployment der Docker Stacks eingehen und den Lösungsansatz erklären, im zweiten Teil werde ich das Thema Backups ein bisschen genauer auseinandernehmen."
+cover:
+    promptInput: 'Configuring backups and automatic deployments for a media server'
+    src: https://storage.schaermu.ch/blog/media-server-teil3-automatisierung/header.png
+    alt: "Create a simplistic yet artistic illustration for a header image. The illustration should contain a conceptual representation of a media server, featured with a computer and intricate web of connections indicating self-hosting. Nearby, embed symbols of a docker whale and arrows indicative of automation. On the other side, utilize imagery symbolizing backup like external hard drive and clouds. All of these objects should be neatly arranged and interconnected, reflecting the all-embracing nature of configuring backups and automatic deployments for a media server. The color scheme should be warm yet subdued, perfect for a technical blog post header."
+tags: ["media server", "computer", "self-hosting", "docker", "backup", "automation"]
+---
+# Wieso automatisieren?
+Aus einem Softwareentwickler-Hintergrund kommend stellt sich diese Frage nur eingeschränkt: grundsätzlich automatisiere ich alles, was ich häufiger als 2-3x pro Woche tun muss (sei das im Arbeitsumfeld oder privat). Wenn ich automatisieren kann, dann mache ich das auch. Das Projekt Media Server bietet sich im Speziellen an, da es viele verschiedene Facetten zur Automatisierung gibt: Updates, Deployments, Backups, Benachrichtigungen und vieles mehr. Dieser Post wird im Groben zwei Teile haben:
+* Automatisierung von Updates & Deployments für die Docker Stacks
+* Automatisierung des Backups
+
+# Docker-Stacks: renovate and automate!
+Mein Plan zur Automatisierung setzte sich grob aus folgenden Schritten zusammen:
+1) Alle Definitionen und (ein Teil) der Configs in ein [Git-Repository](https://github.com/schaermu/homelab-docker-stacks) pushen.
+2) [Renovate](https://docs.renovatebot.com) konfigurieren und testen.
+3) Änderungen im Remote-Repository automatisch auf den Server pullen.
+4) Die Container mit den neuen Images starten und alte Images & Container löschen.
+
+Für Schritt 1 war eigentlich nur die Identifikation der geheimzuhaltenden Files herausfordernd (entsprechend ausführlich gestaltet sich auch das [`.gitignore`-File](https://github.com/schaermu/homelab-docker-stacks/blob/main/.gitignore)), der Rest war ein bisschen `git init`, `git add .` und `git commit -m ...` bis das ganze Zeug auf GitHub lag.
+
+## Renovate
+Als Basis-Konfiguration für Renovate dient ihr `config:base`-Template, erweitert um ein AutoMerge-Verfahren für `patch`, `pin` und `digest`, damit Updates auf Stufe `patch` (z.B. Security-Fixes) ohne weitere Interaktion ihren Weg in die Stacks finden:
+```json
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base"
+  ],
+  "packageRules": [
+    {
+      "matchUpdateTypes": [
+        "patch",
+        "pin",
+        "digest"
+      ],
+      "automerge": true
+    }
+  ]
+}
+```
+
+Die finale Konfiguration hat ein bisschen länger gedauert, vor allem bis alle Services auch wirklich die korrekten Updates reingekriegt haben. Die meisten Applikationen haben als Versioning-Strategie [SemVer](https://semver.org) gewählt, welche ohne weitere Konfiguration von Renovate unterstützt wird. Einzig für [transmission](https://github.com/linuxserver/docker-transmission) und für [jellyfin](https://github.com/jellyfin/jellyfin) musste ich mit `allowedVersions` ein Pattern konfigurieren. Dies, weil diese Apps nicht 100% konsistente Docker-Tags veröffentlicht haben (tw. mit [CalVer](https://calver.org)), was dazu führte dass plötzlich eine Pull-Request für eine Uralt-Version eröffnet wurde.
+
+Für den Rest der Services habe ich lediglich die `customChangelogUrl` pro Package ergänzt und gewisse Services gruppiert (z.B. VictoriaMetrics, da diese gleich-getaktete Releasezyklen für `victoriametrics` und `vmagent` haben). Services, die einen sehr aggressiven Release-Schedule haben (z.B. Jackett) wurden so konfiguriert, dass sie jeweils nur am Freitag einen PR eröffnen. So konnte der Noise massiv reduziert werden.
+
+Nach über 350 Pull-Requests und nur einem (selbstverschuldetem) fehlerhaften Deployment kann ich mit gutem Gewissen sagen, dass diese Konfiguration funktioniert.
+
+## Auto-Pull & -Deploy
+Um die verschiedenen Services (aktuell 23 an der Zahl, Stand Februar 2024) auf eine einfache und effiziente Weise auf dem aktuellsten Stand zu halten, hab ich zuerst ein [Shell-Script](https://github.com/schaermu/homelab-docker-stacks/blob/main/update.sh) für das lokale Update anhand der aktuellsten Compose-Files geschrieben. Ich werde hier nur auf ein paar einzelne Elemente eingehen, z.B. die `update`-Funktion:
+```shell
+update() {
+	if [ -d "$1" ]; then
+		pushd $1
+		echo "${BLUE}[`date`]${NORM} updating '$1'."
+        	docker compose pull -q
+	        docker compose up -d --force-recreate
+		echo "${BLUE}[`date`]${NORM} '$1' updated."
+		popd
+	else
+		echo "${BLUE}[`date`]${RED} '$1' not found!"
+	fi
+}
+```
+Zuerst werden mit `docker compose pull -q` die aktuellsten (gepinnten) Images für alle Services im Stack heruntergeladen, bevor mit `docker compose up -d --force-recreate` alle Container neu erstellt werden (falls ein neues Image vorhanden ist). Damit nicht nach jedem Update ungenutzte Images unnötig Speicherplatz verschwenden, wird zu guter Letzt `docker image prune -a -f` ausgeführt und damit alle ungenutzten Images entfernt. Wird dem Script das Flag `--all` mitgegeben, looped das Script einfach alle Unterverzeichnise (= Stacks) und führt die Update-Funktion darin aus und zieht damit alle Stacks auf die aktuellste Version hoch.
+
+Als letztes Verbindungsstück fehlt nun noch ein Weg, Änderungen am Remote-Repository lokal zu synchronisieren und entsprechend das Update-Script auszuführen. Es mag vielleicht ein bisschen krude wirken (ist es wahrscheinlich auch), aber ich hab mir das mit einem kleinen Shell-Script als Cronjob zusammengebastelt:
+```shell
+#!/bin/env bash
+TARGET=/home/schaermu/docker
+
+if test -f "$TARGET/NOOP"; then
+        exit 1
+fi
+
+# fetch all and get diff stats
+git -C "$TARGET" fetch --all
+DIFF_MSG=$(git -C "$TARGET" diff --shortstat origin/main)
+GIT_CHANGES=$(git -C "$TARGET" log origin/main ..HEAD --pretty=format:"%h %ad | %s %d" --date=short)
+
+if [[ ! -z "$DIFF_MSG" ]]
+then
+        # update local repositories & run update for all stacks
+        git -C "$TARGET" checkout --force origin/main
+        (pushd "$TARGET" && ./update.sh update --all; popd)
+        payload=$(jq -n --arg title "$DIFF_MSG" --arg updates "$GIT_CHANGES" '{"username": "docker-git-notifier", "content": $title, "embeds": [{"type":"rich","title":"Sucessfully updated docker stacks","description": $updates}]}')
+        curl -H "Accept: application/json" -H "Content-Type: application/json" -X POST --data "$payload" "$WEBHOOK_URL"
+fi
+```
+
+Das Script führt vereinfacht gesagt folgende Schritte aus:
+1) Prüfen ob im Zielordner `$TARGET` ein File mit dem Namen `NOOP` vorhanden ist, falls ja wird abgebrochen.
+2) Mittels `git fetch` die aktuellsten Änderungen fürs Repository holen.
+3) Mit `git diff` und `git log` ermitteln, ob verglichen mit der letzten Aktualisierung neue Änderungen geholt wurden.
+4) Falls Änderungen vorhanden sind, wird das Update-Script für alle Stacks ausgeführt.
+5) Via Discord-Webhook eine Benachrichtigung auslösen.
+
+In Crontab ist dieses Shell-Script wie folgt registriert und wird so minütlich ausgeführt:
+```shell
+*/1 * * * * WEBHOOK_URL="<DISCORD_WEBHOOK_URL>" /home/schaermu/deploy-docker.sh 2>/dev/null
+```
+# Backups
+Bezüglich Backups gibt es in meinem Use-Case drei wichtige Datenquellen, weil dies die Einzigen sind, die ich im Verlustfall nicht oder nur mühsam wiederherstellen kann:
+1) Alles was auf dem ZFS-Pool liegt (Photos, Unterlagen, etc.)
+2) Docker-Configs, -Volumes und -Secrets
+3) Meine Musik (old-school runterkopiert von CD's)
+
+Als Backup-Lösung habe ich mit für [borg](https://borgbackup.readthedocs.io/en/stable/installation.html) mit [borgmatic](https://torsion.org/borgmatic/) entschieden, es schien mir nach einiger Recherche die beste Kombination zu sein für automatische Backups (Remote & Lokal). Alles, was wirklich wertvoll ist (vor allem Fotots, Unterlagen und die ganzen Docker-Daten und -Configs) plane ich auf zwei verschiedene Targets zu spiegeln:
+* Externe Disk
+* Remote Host (in meinem Fall [Borgbase](https://www.borgbase.com))
+
+Die Musik werde ich nur lokal und auf der externen Disk spiegeln um den Remote Host zu entlasten. Für diese zwei Szenarien habe ich jeweils eine borgmatic-Konfiguration im Ordner `~/config/borgmatic.d/` und einen generischen Teil unter `/etc/borgmatic/common.yaml` erstellt. Im generischen Teil werden Dinge wie Retention, Passphrase und Kompression konfiguriert:
+```yaml
+# storage
+encryption_passphrase: "<generate-your-own-passphrase-here>"
+compression: "zlib,5"
+
+# retention
+keep_daily: 7
+keep_weekly: 4
+keep_monthly: 12
+keep_yearly: 10
+
+# consistency
+checks:
+    - name: repository
+    - name: archives
+check_last: 3
+```
+
+Die erste, darauf aufbauende Konfiguration ist diejenige für mein High-Value-Backup, `high-value-backup.yaml`:
+```yaml
+# location
+source_directories:
+    - /home/schaermu/docker
+    - /home/schaermu/data-backups
+    - /mnt/docker-volume-backups
+    - /mnt/tank/photos
+one_file_system: true
+repositories:
+    - path: /mnt/external/borg.local
+      label: local
+    - path: ssh://t128rhf5@t128rhf5.repo.borgbase.com/./repo
+      label: borgbase
+
+# storage
+archive_name_format: 'backup-{now}'
+
+<<: !include /etc/borgmatic/common.yaml
+
+# hooks
+before_everything:
+    - echo "Preparing data backups."
+    - /home/schaermu/prepare-backups.sh
+before_backup:
+    - echo "Starting a backup job."
+    - findmnt /mnt/external > /dev/null || exit 75
+after_backup:
+    - echo "Backup created."
+after_everything:
+    - echo "Cleaning up data backups."
+    - /home/schaermu/cleanup-backups.sh
+on_error:
+    - echo "Error while creating a backup."
+
+healthchecks:
+    ping_url: <hc-ping-url>
+```
+
+Diese ist insofern speziell, dass intensiv mit Hooks gearbeitet wird, dies um alle notwendigen Vor- und Nachbereitungen zu treffen. Dazu werden beispielsweise im Script `/home/schaermu/prepare-backups.sh` ein SQL-Backup von `photoprism` erstellt bevor alle Docker-Volumes mit dem Script [`backup-volumes.sh mount`](https://github.com/schaermu/homelab-docker-stacks/blob/main/backup-volumes.sh) gemounted werden. Dieses Script pausiert auch alle betroffenen Container während des Backup-Prozesses, so wird sichergestellt dass während des Backups keine Datenkorruption auftritt.
+
+Im `after_everything`-Hook wird der ganze Prozess wieder rückgängig gemacht, es werden also alle Volumes wieder unmounted, die Mount-Points bereinigt und die Container werden mit `docker unpause` wieder weitergeführt.
+
+Die zweite Konfiguration `music-local-backup.yaml` für ist vergleichsweise simpel und sorgt lediglich dafür, dass die Musik auf die externe Disk gespiegelt wird:
+```yaml
+# location
+source_directories:
+    - /mnt/media/music
+one_file_system: true
+repositories:
+    - path: /mnt/external/borg.local
+      label: local
+
+# storage
+archive_name_format: 'music-backup-{now}'
+
+<<: !include /etc/borgmatic/common.yaml
+
+# hooks
+before_backup:
+    - echo "Starting a backup job."
+    - findmnt /mnt/external > /dev/null || exit 75
+after_backup:
+    - echo "Backup created."
+on_error:
+    - echo "Error while creating a backup."
+```
+
+Diese zwei Konfigurationen dienen nun als Grundlage für die Initialisierung der Repositories mit `borgmatic`:
+```shell
+$ sudo borgmatic rcreate --encryption repokey-aes-ocb
+```
+
+Nun können die Backups ganz einfachautomatisiert werden, indem ein Cronjob eingerichtet wird (in diesem Beispiel täglich um 03:00):
+```shell
+0 3 * * * PATH=$PATH:/usr/bin:/usr/local/bin /home/schaermu/.local/bin/borgmatic --verbosity -1 --syslog-verbosity 1
+```
+
+# Fazit
+Die hier vorgestellten Automatisierungen tragen einen bedeutenden Anteil zur Wartungsarmut des vorgestellten Setups bei. Ich muss pro Woche vielleicht 5-10 Minuten investieren, um alle, über 20 Applikationen auf dem aktuellsten Stand zu halten und kriege dank [Discord-Benachrichtigungen](https://github.com/schaermu/homelab-docker-stacks/blob/main/system-update-notifier.sh) auch mit, wenn es neue System-Updates zu installieren gibt (ausserhalb von `unattended-upgrade`).
+
+Natürlich gibts noch Verbesserungspotential (beispielsweise das selektive Neu-Starten eines Stacks bei Updates), aber das ist auch das Spannende an diesem Projekt: es kann und darf sich stetig weiterentwickeln.
