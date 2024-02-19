@@ -81,16 +81,16 @@ dependencies:
 devDependencies:
   '@csmith/release-it-calver-plugin':
     specifier: 2023.12.0
-    version: 2023.12.0(release-it@17.0.5)
+    version: 2023.12.0(release-it@17.1.1)
   '@playwright/test':
     specifier: 1.41.2
     version: 1.41.2
   '@release-it/conventional-changelog':
     specifier: 8.0.1
-    version: 8.0.1(release-it@17.0.5)
+    version: 8.0.1(release-it@17.1.1)
   release-it:
-    specifier: 17.0.5
-    version: 17.0.5(typescript@5.2.2)
+    specifier: 17.1.1
+    version: 17.1.1(typescript@5.2.2)
 
 packages:
 
@@ -1099,7 +1099,7 @@ packages:
       to-fast-properties: 2.0.0
     dev: false
 
-  /@csmith/release-it-calver-plugin@2023.12.0(release-it@17.0.5):
+  /@csmith/release-it-calver-plugin@2023.12.0(release-it@17.1.1):
     resolution: {integrity: sha512-q6Ba0L2jDFknEltlZw0z7V7Wm0AoPv4So/D3j2GqXkPMYgju89Ll1G/ak1/ef5+p9WtIaELDcpOBzJ+b+knksQ==}
     peerDependencies:
       release-it: ^17.0.0
@@ -1107,7 +1107,7 @@ packages:
       calver: 22.9.1
       chai: 5.0.0
       mocha: 10.2.0
-      release-it: 17.0.5(typescript@5.2.2)
+      release-it: 17.1.1(typescript@5.2.2)
     dev: true
 
   /@emnapi/runtime@0.45.0:
@@ -1784,7 +1784,7 @@ packages:
     resolution: {integrity: sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==}
     dev: false
 
-  /@release-it/conventional-changelog@8.0.1(release-it@17.0.5):
+  /@release-it/conventional-changelog@8.0.1(release-it@17.1.1):
     resolution: {integrity: sha512-pwc9jaBYDaSX5TXw6rEnPfqDkKJN2sFBhYpON1kBi9T3sA9EOBncC4ed0Bv3L1ciNb6eqEJXPfp+tQMqVlv/eg==}
     engines: {node: '>=18'}
     peerDependencies:
@@ -1793,7 +1793,7 @@ packages:
       concat-stream: 2.0.0
       conventional-changelog: 5.1.0
       conventional-recommended-bump: 9.0.0
-      release-it: 17.0.5(typescript@5.2.2)
+      release-it: 17.1.1(typescript@5.2.2)
       semver: 7.6.0
     dev: true
 
@@ -6988,8 +6988,8 @@ packages:
       unified: 11.0.4
     dev: false
 
-  /release-it@17.0.5(typescript@5.2.2):
-    resolution: {integrity: sha512-97FcBu/2IjPd4qMvliZSnavpCO0+BWi8lZr+BgVJTXs6ihX8HLPucYR5RsgUUcZoGKj3beO8cunrsMuvEWTzGQ==}
+  /release-it@17.1.1(typescript@5.2.2):
+    resolution: {integrity: sha512-b+4Tu2eb5f2wIdIe5E9hre0evbMQrXp/kRq0natHsHYJVqu1Bd4/h2a+swFi0faGmC3cJdB16uYR6LscG9SchQ==}
     engines: {node: '>=18'}
     hasBin: true
     dependencies:
