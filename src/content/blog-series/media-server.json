@@ -1,0 +1,17 @@
+{
+    "title": "DIY Media Server",
+    "posts": [
+        {
+            "label": "Planung & Setup",
+            "post": "media-server-teil1-planung-und-setup"
+        },
+        {
+            "label": "Services & Zugang",
+            "post": "media-server-teil2-services-und-zugang"
+        },
+        {
+            "label": "Automatisierung",
+            "post": "media-server-teil3-automatisierung"
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+---
+export interface Props {
+    headings: {
+        text: string;
+        slug: string;
+    }[];
+}
+
+const { headings } = Astro.props;
+---
+
+<ul>
+    {
+        headings.map((heading) => (
+            <li>
+                <a href={`#${heading.slug}`}>{heading.text}</a>
+            </li>
+        ))
+    }
+</ul>

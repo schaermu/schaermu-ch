@@ -1,0 +1,60 @@
+---
+import type { CollectionEntry } from "astro:content";
+import type { MarkdownHeading } from "astro";
+
+import BlogAsideHeadings from "./BlogAsideHeadings.astro";
+import BlogAsideSeriesItem from "./BlogAsideSeriesItem.astro";
+
+export interface Props {
+    headings: MarkdownHeading[];
+    series?: CollectionEntry<"blog-series">;
+    currentPost: string;
+    classList?: string[];
+}
+
+const { series, headings, currentPost } = Astro.props;
+---
+
+<aside class="sticky top-5">
+    <ul>
+        {
+            series &&
+                series.data.posts.map((sp) => (
+                    <BlogAsideSeriesItem
+                        isCurrent={sp.post.slug === currentPost}
+                        url={`/blog/${sp.post.slug}`}
+                        label={sp.label}
+                    >
+                        <BlogAsideHeadings headings={headings} />
+                    </BlogAsideSeriesItem>
+                ))
+        }
+        {!series && <BlogAsideHeadings headings={headings} />}
+    </ul>
+</aside>
+
+<!--
+<div
+    class="hidden md:flex flex-col rounded-2xl bg-slate-100 dark:bg-slate-800 ring-primary-blue ring-2"
+>
+    <div class="mx-4 my-2 text-center">
+        <span class="font-xl text-slate-500 dark:text-slate-400 inline-block">
+            Mehr aus der Reihe <span
+                class="font-bold text-slate-600 dark:text-slate-300"
+                >&laquo;{series.data.title}&raquo;:</span
+            ></span
+        >
+    </div>
+    <ul class="not-prose mx-4 mb-4 flex flex-row justify-evenly">
+        {
+            series.data.posts.map((sp) => (
+                <MultiBlogSeriesItem
+                    isCurrent={sp.post.slug === currentPost}
+                    url={`/blog/${sp.post.slug}`}
+                    label={sp.label}
+                />
+            ))
+        }
+    </ul>
+</div>
+-->

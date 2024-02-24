@@ -1,11 +1,12 @@
 ---
-import { getCollection, getEntryBySlug } from "astro:content";
+import { getCollection, getEntry } from "astro:content";
 import { Picture } from "astro:assets";
 
 import MarkdownPostLayout from "@layouts/MarkdownPostLayout.astro";
 
 import FancyHeading from "@components/Elements/FancyHeading.astro";
 import TagItem from "@components/Blog/TagItem.astro";
+import BlogAside from "@components/Blog/BlogAside.astro";
 
 import { format, formatDistanceToNow } from "date-fns";
 import { de } from "date-fns/locale";
@@ -21,9 +22,9 @@ export async function getStaticPaths() {
 }
 
 const page = Astro.props;
-const entry = await getEntryBySlug("blog", page.slug);
+const entry = await getEntry("blog", page.slug);
 
-const { Content } = await entry.render();
+const { Content, headings } = await entry.render();
 
 const readableDate = formatDistanceToNow(new Date(page.data.pubDate), {
   locale: de,
@@ -32,32 +33,47 @@ const readableDate = formatDistanceToNow(new Date(page.data.pubDate), {
 const exactDate = format(new Date(page.data.pubDate), "dd.MM.yyyy", {
   locale: de,
 });
+
+const series = entry.data.partOfSeries
+  ? await getEntry("blog-series", entry.data.partOfSeries.id)
+  : null;
 ---
 
 <MarkdownPostLayout frontmatter={page.data}>
-  <FancyHeading color="blue" classList={["mb-2"]}>
-    {page.data.title}
-  </FancyHeading>
-  <small class="block w-full text-center text-slate-500 dark:text-slate-400"
-    >Veröffentlicht {readableDate} ({exactDate})</small
-  >
-  <Picture
-    class="w-full h-auto rounded-xl"
-    formats={["webp", "avif"]}
-    widths={[400, 800, 1200]}
-    sizes="(max-width: 1200px) 100vw, 1200px"
-    src={entry.data.cover.src}
-    alt={entry.data.cover.alt}
-    width={800}
-    height={250}
-  />
-  <div class="not-prose mt-10">
-    {
-      page.data.tags.map((tag: string) => (
-        <TagItem classList={["gap-2"]} label={tag} href={`/blog/tags/${tag}`} />
-      ))
-    }
+  <div class="flex">
+    <div class="w-full md:basis-3/4">
+      <FancyHeading color="blue" classList={["mb-2"]}>
+        {page.data.title}
+      </FancyHeading>
+      <small class="block w-full text-center text-slate-500 dark:text-slate-400"
+        >Veröffentlicht {readableDate} ({exactDate})</small
+      >
+      <div class="not-prose mt-10">
+        {
+          page.data.tags.map((tag: string) => (
+            <TagItem
+              classList={["gap-2"]}
+              label={tag}
+              href={`/blog/tags/${tag}`}
+            />
+          ))
+        }
+      </div>
+      <Picture
+        class="w-full h-auto rounded-xl"
+        formats={["webp", "avif"]}
+        widths={[400, 800, 1200]}
+        sizes="(max-width: 1200px) 100vw, 1200px"
+        src={entry.data.cover.src}
+        alt={entry.data.cover.alt}
+        width={800}
+        height={250}
+      />
+      <p class="lead">{page.data.lead}</p>
+      <Content frontmatter={entry.data} />
+    </div>
+    <div class="hidden md:flex md:basis-1/4">
+      <BlogAside headings={headings} series={series} currentPost={page.slug} />
+    </div>
   </div>
-  <p class="lead">{page.data.lead}</p>
-  <Content frontmatter={entry.data} />
 </MarkdownPostLayout>
