@@ -11,12 +11,16 @@ const { isCurrent, url, label } = Astro.props;
 {
     isCurrent ? (
         <li>
-            <span>{label}</span>
             <slot />
         </li>
     ) : (
         <li>
-            <a href={url}>{label}</a>
+            <a
+                href={url}
+                class="unset block rounded-sm ring-1 my-2 p-1 px-2 bg-slate-100 dark:bg-slate-800 hover:ring-2 hover:bg-slate-200 dark:hover:bg-slate-900"
+            >
+                {label}
+            </a>
         </li>
     )
 }
