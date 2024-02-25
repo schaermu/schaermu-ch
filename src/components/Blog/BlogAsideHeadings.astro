@@ -1,9 +1,8 @@
 ---
+import type { MarkdownHeading } from "astro";
+
 export interface Props {
-    headings: {
-        text: string;
-        slug: string;
-    }[];
+    headings: MarkdownHeading[];
 }
 
 const { headings } = Astro.props;
