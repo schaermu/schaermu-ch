@@ -48,7 +48,7 @@ const series = entry.data.partOfSeries
       <small class="block w-full text-center text-slate-500 dark:text-slate-400"
         >Veröffentlicht {readableDate} ({exactDate})</small
       >
-      <div class="not-prose mt-10">
+      <div class="not-prose my-5">
         {
           page.data.tags.map((tag: string) => (
             <TagItem
@@ -60,7 +60,7 @@ const series = entry.data.partOfSeries
         }
       </div>
       <Picture
-        class="w-full h-auto rounded-xl"
+        class="w-full h-auto rounded-xl my-5"
         formats={["webp", "avif"]}
         widths={[400, 800, 1200]}
         sizes="(max-width: 1200px) 100vw, 1200px"
@@ -69,7 +69,7 @@ const series = entry.data.partOfSeries
         width={800}
         height={250}
       />
-      <p class="lead">{page.data.lead}</p>
+      <p class="lead my-5">{page.data.lead}</p>
       <Content frontmatter={entry.data} />
     </div>
     <div class="hidden md:flex md:basis-1/4">
