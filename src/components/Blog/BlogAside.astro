@@ -83,25 +83,25 @@ const { series, headings, currentPost } = Astro.props;
 
 <script>
     // @ts-nocheck
-    const menuElem = document.querySelector("#table-of-contents");
+    const $menuElem = document.querySelector("#table-of-contents");
 
     const closeMenu = () => {
-        menuElem?.classList.add("hidden");
+        $menuElem?.classList.add("hidden");
     };
     const openMenu = () => {
-        menuElem?.classList.remove("hidden");
+        $menuElem?.classList.remove("hidden");
     };
     const recalcTocWidth = () => {
         if (window.matchMedia("(max-width: 767px)").matches) {
-            menuElem?.setAttribute(
+            $menuElem?.setAttribute(
                 "style",
-                `width: ${window.getComputedStyle(menuElem?.parentElement).getPropertyValue("width")}`,
+                `width: ${window.getComputedStyle($menuElem?.parentElement).getPropertyValue("width")}`,
             );
         }
     };
 
     // make sure menu is closed when navigating on current page
-    menuElem?.querySelectorAll("a.text-sm").forEach((el) => {
+    $menuElem?.querySelectorAll("a.text-sm").forEach((el) => {
         el.addEventListener("click", () => {
             closeMenu();
         });
@@ -142,4 +142,18 @@ const { series, headings, currentPost } = Astro.props;
     // recalculate width of menu on resize/load (fixed is not relative to parent but viewport)
     window.addEventListener("resize", () => recalcTocWidth());
     window.addEventListener("load", () => recalcTocWidth());
+
+    // register scrollspy
+    const $scrollSpyEl = document.querySelector(
+        '[data-hs-scrollspy="#scrollspy-post"]',
+    );
+
+    $scrollSpyEl.addEventListener("scroll.hs.scrollspy", () => {
+        if (
+            window.outerWidth <= 639 &&
+            !$menuElem.classList.contains("hidden")
+        ) {
+            HSCollapse.hide($collapseEl);
+        }
+    });
 </script>

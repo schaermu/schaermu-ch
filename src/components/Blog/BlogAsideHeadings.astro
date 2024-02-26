@@ -10,6 +10,12 @@ export interface Props {
 const { headings, title, indentTitle = true } = Astro.props;
 ---
 
+<style>
+    [data-hs-scrollspy="#scrollspy-post"] a.text-sm.active {
+        @apply font-bold;
+    }
+</style>
+
 {
     title && (
         <em
@@ -21,11 +27,14 @@ const { headings, title, indentTitle = true } = Astro.props;
     )
 }
 
-<ul class="unset list-none headings">
+<ul data-hs-scrollspy="#scrollspy-post" class="unset list-none headings">
     {
         headings.map((heading) => (
             <li class:list={[`pl-${heading.depth * 3}`]}>
-                <a class="text-sm" href={`#${heading.slug}`}>
+                <a
+                    class="unset animated-link text-sm"
+                    href={`#${heading.slug}`}
+                >
                     {heading.text}
                 </a>
             </li>
