@@ -1,0 +1,43 @@
+---
+import type { MarkdownHeading } from "astro";
+
+export interface Props {
+    headings: MarkdownHeading[];
+    title?: string;
+    indentTitle?: boolean;
+}
+
+const { headings, title, indentTitle = true } = Astro.props;
+---
+
+<style>
+    [data-hs-scrollspy="#scrollspy-post"] a.text-sm.active {
+        @apply font-bold;
+    }
+</style>
+
+{
+    title && (
+        <em
+            class:list={[{ "pl-3": indentTitle }]}
+            class="text-slate-800 dark:text-slate-400"
+        >
+            {title}
+        </em>
+    )
+}
+
+<ul data-hs-scrollspy="#scrollspy-post" class="unset list-none headings">
+    {
+        headings.map((heading) => (
+            <li class:list={[`pl-${heading.depth * 3}`]}>
+                <a
+                    class="unset animated-link text-sm"
+                    href={`#${heading.slug}`}
+                >
+                    {heading.text}
+                </a>
+            </li>
+        ))
+    }
+</ul>

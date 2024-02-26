@@ -1,6 +1,7 @@
 ---
 title: 'DIY Media Server: Services und Zugang (Teil 2)'
 pubDate: 2024-02-18
+partOfSeries: 'media-server'
 lead: "In diesem Blogpost werde ich im Detail auf die Services eingehen, welche ich auf dem im ersten Teil zusammengeschraubten Media Server laufen lassen werden. Damit diese Services und Applikationen auch brauchbar sind, gehe ich im zweiten Teil des Posts auf das Thema Ingress/Egress ein und mit welchen Patterns das gelöst wurde."
 cover:
     promptInput: 'Setting up and configuring container-based services for a media server'
@@ -205,8 +206,10 @@ services:
 ```
 Damit das Routing korrekt funktioniert sind folgende Konfigurationswerte wichtig:
 * `traefik.enable=true` - dieses Label exponiert den Service gegenüber Traefik.
-* `traefik.http.routers.{servicename}.entryPoints=websecure` - damit aktivieren wir den HTTPS-Endpoint für Jellyfin (default wäre HTTP)
-* `traefik.http.services.jellyfin.loadbalancer.server.port=8096` - damit Traefik weiss, auf welchen Port er HTTP-Traffic schicken muss (nicht nötig falls ein Service nur einen einzigen Port exponiert)
+* `traefik.http.routers.{servicename}.entryPoints=
+websecure` - damit aktivieren wir den HTTPS-Endpoint für Jellyfin (default wäre HTTP)
+* `traefik.http.services.jellyfin.
+loadbalancer.server.port=8096` - damit Traefik weiss, auf welchen Port er HTTP-Traffic schicken muss (nicht nötig falls ein Service nur einen einzigen Port exponiert)
 * `networks: - proxy-net` - Nur wenn wir den Service zusätzlich zum `default`-Netzwerk auch ins `proxy-net`-Netzwerk einhängen, wird Traefik fähig sein Traffic auf diesen Container zu routen.
 
 Damit die Auflösung des Standard-Hostnames `{service-name}.home.hpfr.ch` (siehe Traefik-Konfiguration) funktioniert, muss PiHole (oder ein anderer DNS-Server mit `dnsmasqd`-Unterstützung) entsprechend konfiguriert werden:
@@ -309,7 +312,8 @@ labels:
   type: syslog
 ```
 
-Damit eingehende Requests von Traefik in Echtzeit durch Crowdsec analysiert werden können, muss `crowdsec-bouncer-traefik` als Standard-Middleware für Traefik konfiguriert werden (im File `/traefik/config/traefik/dynamic.conf.yml`). Falls noch nicht geschehen könnt ihr in diesem Schritt auch gleich vernüftige Security-Headers und GZIP-Kompression als Middleware registrieren:
+Damit eingehende Requests von Traefik in Echtzeit durch Crowdsec analysiert werden können, muss `crowdsec-bouncer-traefik` als Standard-Middleware für Traefik konfiguriert werden (im File `/traefik/config/traefik/
+dynamic.conf.yml`). Falls noch nicht geschehen könnt ihr in diesem Schritt auch gleich vernüftige Security-Headers und GZIP-Kompression als Middleware registrieren:
 
 ```yaml
 ...

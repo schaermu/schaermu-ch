@@ -64,6 +64,10 @@ export default defineMarkdocConfig({
         },
     },
     nodes: {
+        document: {
+            ...nodes.document,
+            render: component('src/components/Renderer/Article.astro'),
+        },
         heading: {
             ...nodes.heading,
             render: component('src/components/Renderer/Heading.astro')

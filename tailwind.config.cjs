@@ -124,7 +124,7 @@ module.exports = {
 		// (tw only generates colors actually referenced in code, see https://stackoverflow.com/questions/71647859/tailwind-css-certain-custom-colors-are-not-working)
 		pattern: /(.)-primary-(.)/,
 		variants: ['dark', 'hover', 'dark:hover'],
-	}],
+	}, { pattern: /pl-(.)/ }],
 	plugins: [
 		require('@tailwindcss/typography'),
 		require('preline/plugin'),

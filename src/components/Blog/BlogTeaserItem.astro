@@ -14,7 +14,7 @@ const { post } = Astro.props;
 const href = `/blog/${post.slug}`;
 ---
 
-<article class:list={["flex flex-col mb-5"]}>
+<article class:list={["flex", "flex-col", "mb-5"]}>
     <a class="unset border-none" href={href}>
         <Picture
             class="w-full h-auto rounded-xl"

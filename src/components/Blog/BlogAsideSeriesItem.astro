@@ -1,0 +1,26 @@
+---
+export interface Props {
+    isCurrent?: boolean;
+    url?: string;
+    label?: string;
+}
+
+const { isCurrent, url, label } = Astro.props;
+---
+
+{
+    isCurrent ? (
+        <li>
+            <slot />
+        </li>
+    ) : (
+        <li>
+            <a
+                href={url}
+                class="unset block rounded-lg my-2 p-2 px-3 border-2 border-transparent bg-slate-200 dark:bg-slate-700 hover:border-primary-blue"
+            >
+                {label}
+            </a>
+        </li>
+    )
+}

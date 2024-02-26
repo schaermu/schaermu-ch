@@ -6,8 +6,6 @@ const { frontmatter } = Astro.props;
 
 <BaseLayout pageTitle={frontmatter.title}>
   <Fragment slot="main">
-    <article class="prose prose-schaermu">
-      <slot />
-    </article>
+    <slot />
   </Fragment>
 </BaseLayout>
