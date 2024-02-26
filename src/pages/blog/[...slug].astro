@@ -5,7 +5,7 @@ import { Picture } from "astro:assets";
 import MarkdownPostLayout from "@layouts/MarkdownPostLayout.astro";
 
 import FancyHeading from "@components/Elements/FancyHeading.astro";
-import TagItem from "@components/Blog/TagItem.astro";
+import TagList from "@components/Blog/TagList.astro";
 import BlogAside from "@components/Blog/BlogAside.astro";
 
 import { format, formatDistanceToNow } from "date-fns";
@@ -48,17 +48,8 @@ const series = entry.data.partOfSeries
       <small class="block w-full text-center text-slate-500 dark:text-slate-400"
         >Veröffentlicht {readableDate} ({exactDate})</small
       >
-      <div class="not-prose my-5">
-        {
-          page.data.tags.map((tag: string) => (
-            <TagItem
-              classList={["gap-2"]}
-              label={tag}
-              href={`/blog/tags/${tag}`}
-            />
-          ))
-        }
-      </div>
+      <TagList tags={page.data.tags} />
+
       <Picture
         class="w-full h-auto rounded-xl my-5"
         formats={["webp", "avif"]}
