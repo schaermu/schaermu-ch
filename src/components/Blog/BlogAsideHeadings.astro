@@ -25,7 +25,7 @@ const { headings, title, indentTitle = true } = Astro.props;
     {
         headings.map((heading) => (
             <li class:list={[`pl-${heading.depth * 3}`]}>
-                <a class="" href={`#${heading.slug}`}>
+                <a class="text-sm" href={`#${heading.slug}`}>
                     {heading.text}
                 </a>
             </li>

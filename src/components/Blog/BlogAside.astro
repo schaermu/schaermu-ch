@@ -24,16 +24,33 @@ const { series, headings, currentPost } = Astro.props;
 </style>
 
 <button
-    class="fixed bottom-3 shadow-xl right-5 p-6 rounded-full bg-slate-300 dark:bg-slate-800 md:hidden"
+    id="mobile-toc-open"
+    class="fixed z-40 bottom-3 shadow-xl right-6 p-6 rounded-full bg-slate-300 dark:bg-slate-800 md:hidden"
 >
     <Icon name="fa-solid:bars" title="Open mobile menu" aria-hidden={true} />
     <span class="sr-only">Open mobile menu</span>
 </button>
 
-<div class="hidden md:flex md:basis-1/4">
+<div
+    id="mobile-toc"
+    class="hidden fixed z-50 rounded-2xl bottom-3 bg-slate-300 dark:bg-slate-800 md:top-4 md:bg-transparent md:dark:bg-transparent md:relative md:flex md:basis-1/4"
+>
+    <button
+        id="mobile-toc-close"
+        style="margin-right: 0.2em"
+        class="fixed z-50 bottom-3 right-6 p-6 rounded-full bg-slate-300 dark:bg-slate-800 md:hidden"
+    >
+        <Icon
+            name="fa-solid:times"
+            title="Close mobile menu"
+            aria-hidden={true}
+        />
+        <span class="sr-only">Close mobile menu</span>
+    </button>
+
     <aside
-        class:list={[{ "pl-5": series, "pl-2": !series }]}
-        class="unset top-5 content-overview"
+        class:list={[{ "md:pl-5": series, "md:pl-2": !series }]}
+        class="unset p-3 pb-14 md:p-0 md:top-5 content-overview"
     >
         <ul class="unset list-none">
             {
@@ -63,3 +80,43 @@ const { series, headings, currentPost } = Astro.props;
         </ul>
     </aside>
 </div>
+
+<script>
+    // @ts-nocheck
+    const menuElem = document.querySelector("#mobile-toc");
+
+    const closeMenu = () => {
+        menuElem?.classList.add("hidden");
+    };
+    const openMenu = () => {
+        menuElem?.classList.remove("hidden");
+    };
+
+    const recalcTocWidth = () => {
+        if (window.matchMedia("(max-width: 767px)").matches) {
+            menuElem?.setAttribute(
+                "style",
+                `width: ${window.getComputedStyle(menuElem?.parentElement).getPropertyValue("width")}`,
+            );
+        }
+    };
+
+    // make sure menu is closed when navigating on current page
+    menuElem?.querySelectorAll("a.text-sm").forEach((el) => {
+        el.addEventListener("click", () => {
+            closeMenu();
+        });
+    });
+
+    document.querySelector("#mobile-toc-open").addEventListener("click", () => {
+        openMenu();
+        recalcTocWidth();
+    });
+    document
+        .querySelector("#mobile-toc-close")
+        .addEventListener("click", () => {
+            closeMenu();
+        });
+    window.addEventListener("resize", () => recalcTocWidth());
+    window.addEventListener("load", () => recalcTocWidth());
+</script>
