@@ -32,7 +32,7 @@ const { series, headings, currentPost } = Astro.props;
 </button>
 
 <div
-    id="mobile-toc"
+    id="table-of-contents"
     class="hidden fixed z-50 rounded-2xl bottom-3 bg-slate-300 dark:bg-slate-800 md:top-4 md:bg-transparent md:dark:bg-transparent md:relative md:flex md:basis-1/4"
 >
     <button
@@ -83,7 +83,7 @@ const { series, headings, currentPost } = Astro.props;
 
 <script>
     // @ts-nocheck
-    const menuElem = document.querySelector("#mobile-toc");
+    const menuElem = document.querySelector("#table-of-contents");
 
     const closeMenu = () => {
         menuElem?.classList.add("hidden");
@@ -91,7 +91,6 @@ const { series, headings, currentPost } = Astro.props;
     const openMenu = () => {
         menuElem?.classList.remove("hidden");
     };
-
     const recalcTocWidth = () => {
         if (window.matchMedia("(max-width: 767px)").matches) {
             menuElem?.setAttribute(
@@ -108,6 +107,28 @@ const { series, headings, currentPost } = Astro.props;
         });
     });
 
+    // close menu when clicking outside
+    window.addEventListener("click", (e) => {
+        let target = e.target,
+            insideMenu = false;
+        while (!insideMenu) {
+            if (target === null) {
+                closeMenu();
+                return false;
+            }
+            if (
+                target.id !== "table-of-contents" &&
+                target.id !== "mobile-toc-open"
+            ) {
+                target = target.parentNode;
+            } else {
+                insideMenu = true;
+            }
+        }
+        return !insideMenu;
+    });
+
+    // register toggle events
     document.querySelector("#mobile-toc-open").addEventListener("click", () => {
         openMenu();
         recalcTocWidth();
@@ -117,6 +138,8 @@ const { series, headings, currentPost } = Astro.props;
         .addEventListener("click", () => {
             closeMenu();
         });
+
+    // recalculate width of menu on resize/load (fixed is not relative to parent but viewport)
     window.addEventListener("resize", () => recalcTocWidth());
     window.addEventListener("load", () => recalcTocWidth());
 </script>
