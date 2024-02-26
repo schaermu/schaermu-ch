@@ -1,5 +1,22 @@
 # Changelog
 
+## [2024.3.0](https://github.com/schaermu/schaermu-ch/compare/2024.2.1...2024.3.0) (2024-02-26)
+
+
+### Features
+
+* adds devcontainer spec ([#111](https://github.com/schaermu/schaermu-ch/issues/111)) ([bc49a0e](https://github.com/schaermu/schaermu-ch/commit/bc49a0e9e155893f8b6e01bb41db545b93ca6fbe))
+* Multi-Post Series & Table of Contents ([#112](https://github.com/schaermu/schaermu-ch/issues/112)) ([6259343](https://github.com/schaermu/schaermu-ch/commit/62593434daddfa6b7381f8b6dc8c6067b0d47472))
+
+
+### Bug Fixes
+
+* **deps:** update dependency astro to v4.4.1 ([#104](https://github.com/schaermu/schaermu-ch/issues/104)) ([05c7986](https://github.com/schaermu/schaermu-ch/commit/05c7986cf4b8019518d9232eb649de6847c1e905))
+* **deps:** update dependency astro to v4.4.3 ([#106](https://github.com/schaermu/schaermu-ch/issues/106)) ([390a2b4](https://github.com/schaermu/schaermu-ch/commit/390a2b4bf79e6a3043b849695d441b51c43d8112))
+* **deps:** update dependency dotenv to v16.4.5 ([#103](https://github.com/schaermu/schaermu-ch/issues/103)) ([65ca6ad](https://github.com/schaermu/schaermu-ch/commit/65ca6ad05d372fb653363b4c4d442a1dc2f4ef6d))
+* **deps:** update dependency svelte to v4.2.12 ([#108](https://github.com/schaermu/schaermu-ch/issues/108)) ([93219e3](https://github.com/schaermu/schaermu-ch/commit/93219e37a523d69bc7f69cef176b87af208f5312))
+* posts are now sorted before paginating ([#102](https://github.com/schaermu/schaermu-ch/issues/102)) ([447b607](https://github.com/schaermu/schaermu-ch/commit/447b607c25750a75d097a924f45267dc0e54b91b))
+
 ## [2024.2.1](https://github.com/schaermu/schaermu-ch/compare/2024.2.0...2024.2.1) (2024-02-19)
 
 ## [2023.13.0](https://github.com/schaermu/schaermu-ch/compare/2023.12.0...2023.13.0) (2024-02-17)
