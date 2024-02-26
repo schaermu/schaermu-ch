@@ -72,8 +72,6 @@ const series = entry.data.partOfSeries
       <p class="lead my-5">{page.data.lead}</p>
       <Content frontmatter={entry.data} />
     </div>
-    <div class="hidden md:flex md:basis-1/4">
-      <BlogAside headings={headings} series={series} currentPost={page.slug} />
-    </div>
+    <BlogAside headings={headings} series={series} currentPost={page.slug} />
   </div>
 </MarkdownPostLayout>

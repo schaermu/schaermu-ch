@@ -2,6 +2,8 @@
 import type { CollectionEntry } from "astro:content";
 import type { MarkdownHeading } from "astro";
 
+import { Icon } from "astro-icon/components";
+
 import BlogAsideHeadings from "./BlogAsideHeadings.astro";
 import BlogAsideSeriesItem from "./BlogAsideSeriesItem.astro";
 
@@ -21,34 +23,43 @@ const { series, headings, currentPost } = Astro.props;
     }
 </style>
 
-<aside
-    class:list={[{ "pl-5": series, "pl-2": !series }]}
-    class="unset top-5 content-overview"
+<button
+    class="fixed bottom-3 shadow-xl right-5 p-6 rounded-full bg-slate-300 dark:bg-slate-800 md:hidden"
 >
-    <ul class="unset list-none">
-        {
-            series &&
-                series.data.posts.map((sp) => (
-                    <BlogAsideSeriesItem
-                        isCurrent={sp.post.slug === currentPost}
-                        url={`/blog/${sp.post.slug}`}
-                        label={sp.label}
-                    >
-                        <BlogAsideHeadings
-                            headings={headings}
-                            title={sp.label}
-                            indentTitle={false}
-                        />
-                    </BlogAsideSeriesItem>
-                ))
-        }
-        {
-            !series && (
-                <BlogAsideHeadings
-                    headings={headings}
-                    title="Auf dieser Seite:"
-                />
-            )
-        }
-    </ul>
-</aside>
+    <Icon name="fa-solid:bars" title="Open mobile menu" aria-hidden={true} />
+    <span class="sr-only">Open mobile menu</span>
+</button>
+
+<div class="hidden md:flex md:basis-1/4">
+    <aside
+        class:list={[{ "pl-5": series, "pl-2": !series }]}
+        class="unset top-5 content-overview"
+    >
+        <ul class="unset list-none">
+            {
+                series &&
+                    series.data.posts.map((sp) => (
+                        <BlogAsideSeriesItem
+                            isCurrent={sp.post.slug === currentPost}
+                            url={`/blog/${sp.post.slug}`}
+                            label={sp.label}
+                        >
+                            <BlogAsideHeadings
+                                headings={headings}
+                                title={sp.label}
+                                indentTitle={false}
+                            />
+                        </BlogAsideSeriesItem>
+                    ))
+            }
+            {
+                !series && (
+                    <BlogAsideHeadings
+                        headings={headings}
+                        title="Auf dieser Seite:"
+                    />
+                )
+            }
+        </ul>
+    </aside>
+</div>
