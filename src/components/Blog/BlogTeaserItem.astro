@@ -29,9 +29,9 @@ const href = `/blog/${post.slug}`;
             />
         </a>
         <div class="p-3 md:py-0 md:px-5 md:basis-2/3 flex flex-col h-full">
-            <h1 class="text-lg font-bold text-slate-800 dark:text-slate-100">
+            <h2 class="text-lg font-bold text-slate-800 dark:text-slate-100">
                 {post.data.title}
-            </h1>
+            </h2>
             <small
                 slot="post-title"
                 title={format(post.data.pubDate, "dd.MM.yyyy", {
