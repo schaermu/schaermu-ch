@@ -57,8 +57,8 @@ dependencies:
     specifier: 4.0.2
     version: 4.0.2
   openai:
-    specifier: 4.28.0
-    version: 4.28.0
+    specifier: 4.28.4
+    version: 4.28.4
   pino:
     specifier: 8.19.0
     version: 8.19.0
@@ -6249,8 +6249,8 @@ packages:
       is-wsl: 3.1.0
     dev: true
 
-  /openai@4.28.0:
-    resolution: {integrity: sha512-JM8fhcpmpGN0vrUwGquYIzdcEQHtFuom6sRCbbCM6CfzZXNuRk33G7KfeRAIfnaCxSpzrP5iHtwJzIm6biUZ2Q==}
+  /openai@4.28.4:
+    resolution: {integrity: sha512-RNIwx4MT/F0zyizGcwS+bXKLzJ8QE9IOyigDG/ttnwB220d58bYjYFp0qjvGwEFBO6+pvFVIDABZPGDl46RFsg==}
     hasBin: true
     dependencies:
       '@types/node': 18.19.15
