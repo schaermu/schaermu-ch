@@ -1,0 +1,14 @@
+FROM mcr.microsoft.com/playwright:v1.42.0-jammy
+
+COPY . /app
+WORKDIR /app
+
+# install pnpm
+RUN npm install -g pnpm
+
+# setup dependencies& playwright
+RUN pnpm install
+RUN pnpm exec playwright install
+
+# run tests
+CMD ["pnpm", "exec", "playwright", "test", "--reporter=list"]
