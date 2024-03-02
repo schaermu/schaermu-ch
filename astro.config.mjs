@@ -19,7 +19,7 @@ export default defineConfig({
   }), icon({
     include: {
       'fa-brands': ["github", "stack-overflow", "linkedin"],
-      'fa-solid': ["bars", "times"]
+      'fa-solid': ["bars", "times", "heart", "rocket"]
     }
   })]
 });

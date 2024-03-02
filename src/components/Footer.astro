@@ -1,6 +1,38 @@
 ---
+import { format } from "date-fns";
+import { de } from "date-fns/locale";
+
+import { Icon } from "astro-icon/components";
+
+import { version } from "../../package.json";
+
+const buildTime = format(new Date(), "dd.MM.yyyy HH:mm", {
+    locale: de,
+});
+const year = format(new Date(), "yyyy");
 ---
 
-<footer class="flex gap-1 mt-2">
-    <small>smol futer</small>
+<footer
+    class="flex gap-1 my-5 pt-5 border-t border-slate-300 dark:border-slate-600"
+>
+    <small class="basis-1/4">&copy; {year}</small>
+    <small class="basis-2/4 text-center"
+        >built with <Icon
+            class="inline text-red-500 dark:text-red-400"
+            name="fa-solid:heart"
+            aria-hidden={true}
+        /> using <a href="https://astro.build" target="_blank">Astro</a>
+        <Icon
+            class="inline text-blue-500 dark:text-blue-400"
+            name="fa-solid:rocket"
+            aria-hidden={true}
+        /></small
+    >
+    <small class="basis-1/4 text-right" title={buildTime}
+        ><a
+            class="unset animated-link"
+            href="https://github.com/schaermu/schaermu-ch"
+            target="_blank">v{version}</a
+        ></small
+    >
 </footer>

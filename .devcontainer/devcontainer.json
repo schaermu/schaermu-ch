@@ -12,7 +12,7 @@
 				"astro-build.astro-vscode",
 				"svelte.svelte-vscode",
 				"bradlc.vscode-tailwindcss",
-				"ms-playwright.playwright",
+				"ms-playwright.playwright"
 			]
 		}
 	}
