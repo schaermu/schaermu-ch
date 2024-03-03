@@ -1,5 +1,22 @@
 # Changelog
 
+## [2024.2.3](https://github.com/schaermu/schaermu-ch/compare/2024.2.2...2024.2.3) (2024-03-03)
+
+
+### Bug Fixes
+
+* **deps:** pin dependency @preline/scrollspy to 2.0.2 ([#113](https://github.com/schaermu/schaermu-ch/issues/113)) ([e2d8de5](https://github.com/schaermu/schaermu-ch/commit/e2d8de58a55e635890a0b476d6107897e3f1cda4))
+* **deps:** pin dependency dayjs to 1.11.10 ([#124](https://github.com/schaermu/schaermu-ch/issues/124)) ([4ec1c5b](https://github.com/schaermu/schaermu-ch/commit/4ec1c5b5f505ae8791bbfffe8223875d3da99c87))
+* **deps:** update astro-js ([#109](https://github.com/schaermu/schaermu-ch/issues/109)) ([5cf18b0](https://github.com/schaermu/schaermu-ch/commit/5cf18b0bab6c986d1469be2a60ca46d084a8ec67))
+* **deps:** update astro-js ([#115](https://github.com/schaermu/schaermu-ch/issues/115)) ([cf15b4c](https://github.com/schaermu/schaermu-ch/commit/cf15b4ce466ff9c0fc742ea2743e27a32c96824a))
+* **deps:** update astro-js ([#121](https://github.com/schaermu/schaermu-ch/issues/121)) ([7bd4aac](https://github.com/schaermu/schaermu-ch/commit/7bd4aaca8052c8dc62b682b266e933de6a2a410a))
+* **deps:** update dependency @aws-sdk/client-s3 to v3.523.0 ([#110](https://github.com/schaermu/schaermu-ch/issues/110)) ([01d75a5](https://github.com/schaermu/schaermu-ch/commit/01d75a5c907cad063368dbed30f96b76173ac551))
+* **deps:** update dependency astro to v4.4.8 ([#119](https://github.com/schaermu/schaermu-ch/issues/119)) ([03edb92](https://github.com/schaermu/schaermu-ch/commit/03edb92989a1667c169cf413dd982bc6034288f3))
+* **deps:** update dependency openai to v4.28.4 ([#116](https://github.com/schaermu/schaermu-ch/issues/116)) ([349f509](https://github.com/schaermu/schaermu-ch/commit/349f509b0aed44e4b4d736e153331fd304f63bff))
+* desktop layout for overview improved ([6006c30](https://github.com/schaermu/schaermu-ch/commit/6006c30fd3d528ce20c1f8b8079a3deb09cb44ba))
+* gh cli in devcontainer ([6b61936](https://github.com/schaermu/schaermu-ch/commit/6b619364a3c9b626d8000e5a505e3304f3df33fa))
+* revert heading h1 change ([a72ad08](https://github.com/schaermu/schaermu-ch/commit/a72ad08b716f3871e0f799e76eb54894c829ec75))
+
 ## [2024.3.0](https://github.com/schaermu/schaermu-ch/compare/2024.2.1...2024.3.0) (2024-02-26)
 
 
