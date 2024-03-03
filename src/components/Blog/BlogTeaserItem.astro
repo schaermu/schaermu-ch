@@ -33,7 +33,7 @@ const href = `/blog/${post.slug}`;
             </h2>
             <small
                 slot="post-title"
-                title={dayjs(post.data.pubDate).format("dd.MM.yyyy")}
+                title={dayjs(post.data.pubDate).format("DD.MM.YYYY")}
             >
                 {dayjs(post.data.pubDate).fromNow()}
             </small>

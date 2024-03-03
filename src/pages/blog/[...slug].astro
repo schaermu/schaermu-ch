@@ -26,7 +26,7 @@ const entry = await getEntry("blog", page.slug);
 const { Content, headings } = await entry.render();
 
 const readableDate = dayjs(page.data.pubDate).fromNow();
-const exactDate = dayjs(page.data.pubDate).format("dd.MM.yyyy");
+const exactDate = dayjs(page.data.pubDate).format("DD.MM.YYYY");
 
 const series = entry.data.partOfSeries
   ? await getEntry("blog-series", entry.data.partOfSeries.id)

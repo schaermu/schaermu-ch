@@ -1,6 +1,6 @@
 ---
 import dayjs from "dayjs";
-import "@lib/dayjs"
+import "@lib/dayjs";
 
 import Card from "@components/Elements/Card.astro";
 import type { CollectionEntry } from "astro:content";
@@ -25,7 +25,7 @@ const { post } = Astro.props;
     <Fragment slot="title">{post.data.title}</Fragment>
     <small
         slot="post-title"
-        title={dayjs(post.data.pubDate).format("dd.MM.yyyy")}
+        title={dayjs(post.data.pubDate).format("DD.MM.YYYY")}
     >
         {dayjs(post.data.pubDate).fromNow()}
     </small>
