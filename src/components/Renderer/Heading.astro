@@ -12,7 +12,7 @@ let Tag: HTMLTag = `h${level}`;
 const shouldAddBeforePseudoStyle = ["h1", "h2"].includes(Tag);
 ---
 
-<Tag id={id} class="group flex">
+<Tag id={id} class="group flex hyphens-auto">
   {
     shouldAddBeforePseudoStyle ? (
       <span
