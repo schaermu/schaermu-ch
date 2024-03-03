@@ -1,6 +1,6 @@
 ---
-import { format, formatDistanceToNow } from "date-fns";
-import { de } from "date-fns/locale";
+import dayjs from "dayjs";
+import "@lib/dayjs"
 
 import Card from "@components/Elements/Card.astro";
 import type { CollectionEntry } from "astro:content";
@@ -25,16 +25,9 @@ const { post } = Astro.props;
     <Fragment slot="title">{post.data.title}</Fragment>
     <small
         slot="post-title"
-        title={format(post.data.pubDate, "dd.MM.yyyy", {
-            locale: de,
-        })}
+        title={dayjs(post.data.pubDate).format("dd.MM.yyyy")}
     >
-        {
-            formatDistanceToNow(post.data.pubDate, {
-                locale: de,
-                addSuffix: true,
-            })
-        }
+        {dayjs(post.data.pubDate).fromNow()}
     </small>
     <Fragment slot="text">
         {post.data.lead}

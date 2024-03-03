@@ -1,15 +1,12 @@
 ---
-import { format } from "date-fns";
-import { de } from "date-fns/locale";
+import dayjs from "@lib/dayjs";
 
 import { Icon } from "astro-icon/components";
 
 import { version } from "../../package.json";
 
-const buildTime = format(new Date(), "dd.MM.yyyy HH:mm", {
-    locale: de,
-});
-const year = format(new Date(), "yyyy");
+const buildTime = dayjs.tz().format("DD.MM.YYYY HH:mm");
+const year = dayjs().format("YYYY");
 ---
 
 <footer

@@ -1,9 +1,8 @@
 ---
-import { format, formatDistanceToNow } from "date-fns";
-import { de } from "date-fns/locale";
+import dayjs from "dayjs";
 
 import type { CollectionEntry } from "astro:content";
-import { Image, Picture } from "astro:assets";
+import { Picture } from "astro:assets";
 
 export interface Props {
     post: CollectionEntry<"blog">;
@@ -34,16 +33,9 @@ const href = `/blog/${post.slug}`;
             </h2>
             <small
                 slot="post-title"
-                title={format(post.data.pubDate, "dd.MM.yyyy", {
-                    locale: de,
-                })}
+                title={dayjs(post.data.pubDate).format("dd.MM.yyyy")}
             >
-                {
-                    formatDistanceToNow(post.data.pubDate, {
-                        locale: de,
-                        addSuffix: true,
-                    })
-                }
+                {dayjs(post.data.pubDate).fromNow()}
             </small>
             <p class="mt-1 text-slate-800 dark:text-slate-400 h-full">
                 {post.data.lead}
