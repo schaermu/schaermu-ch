@@ -28,9 +28,13 @@ const href = `/blog/${post.slug}`;
             />
         </a>
         <div class="p-3 md:py-0 md:px-5 md:basis-2/3 flex flex-col h-full">
-            <h2 class="text-lg font-bold text-slate-800 dark:text-slate-100">
-                {post.data.title}
-            </h2>
+            <a class="unset" href={href}>
+                <h2
+                    class="text-lg font-bold text-slate-800 dark:text-slate-100"
+                >
+                    {post.data.title}
+                </h2></a
+            >
             <small
                 slot="post-title"
                 title={dayjs(post.data.pubDate).format("DD.MM.YYYY")}
@@ -44,7 +48,10 @@ const href = `/blog/${post.slug}`;
     </div>
 
     <div class="flex flex-row-reverse">
-        <a class="self-start gap-2 font-medium justify-end" href={href}>
+        <a
+            class="unset animated-link self-start gap-2 font-medium justify-end"
+            href={href}
+        >
             zum Post
         </a>
     </div>

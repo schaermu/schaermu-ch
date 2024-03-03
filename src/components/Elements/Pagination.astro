@@ -37,8 +37,8 @@ const previousUrl =
     firstPageUrl && page.currentPage === 2 ? firstPageUrl : page.url.prev;
 ---
 
-<nav aria-label="Page navigation example" class="mt-5 align-bottom">
-    <ul class="list-style-none flex unset justify-center">
+<nav aria-label="Seiten-Navigation" class="mt-5 align-bottom">
+    <ul class="list-style-none flex gap-1 unset justify-center">
         {showPrevNext && <NavLink url={previousUrl} label={previousLabel} />}
         {
             showFirst && (
