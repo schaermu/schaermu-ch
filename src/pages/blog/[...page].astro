@@ -10,7 +10,6 @@ import FancyHeading from "@components/Elements/FancyHeading.astro";
 import Pagination from "@components/Elements/Pagination.astro";
 
 const pageTitle = "der bloggende schärmu";
-
 export const getStaticPaths = (async ({ paginate }) => {
     const allPosts = await getCollection("blog");
     allPosts.sort((a, b) => {
@@ -22,7 +21,7 @@ export const getStaticPaths = (async ({ paginate }) => {
         }
         return 0;
     });
-    return paginate(allPosts, { pageSize: 3 });
+    return paginate(allPosts, { pageSize: 5 });
 }) satisfies GetStaticPaths;
 
 interface Props {
@@ -37,7 +36,7 @@ const { page } = Astro.props;
         <FancyHeading color="blue">Schärmu's Blog</FancyHeading>
         <BlogList posts={page.data} />
         {
-            page.total > 1 && (
+            page.total / 5 > 1 && (
                 <Pagination
                     page={page}
                     urlPattern="/blog/{}"

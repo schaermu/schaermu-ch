@@ -15,9 +15,9 @@ const { posts, renderMode = RenderMode.Teaser } = Astro.props;
 
 <div class="flex flex-col gap-4 md:flex-row md:flex-wrap mt-5">
     {
-        posts.map((post) =>
+        posts.map((post, i) =>
             renderMode === RenderMode.Teaser ? (
-                <BlogTeaserItem post={post} />
+                <BlogTeaserItem post={post} reverse={i % 2 !== 0} />
             ) : (
                 <BlogListItem post={post} />
             ),

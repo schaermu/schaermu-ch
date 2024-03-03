@@ -1,21 +1,24 @@
 ---
-import { format, formatDistanceToNow } from "date-fns";
-import { de } from "date-fns/locale";
+import dayjs from "dayjs";
 
 import type { CollectionEntry } from "astro:content";
-import { Image, Picture } from "astro:assets";
+import { Picture } from "astro:assets";
 
 export interface Props {
     post: CollectionEntry<"blog">;
+    reverse?: boolean;
 }
 
-const { post } = Astro.props;
+const { post, reverse } = Astro.props;
 
 const href = `/blog/${post.slug}`;
 ---
 
 <article class:list={["flex", "flex-col", "my-3"]}>
-    <div class="flex flex-col md:flex-row">
+    <div
+        class="flex flex-col md:flex-row"
+        class:list={[{ "md:flex-row-reverse": reverse }]}
+    >
         <a class="unset border-none md:basis-1/3" href={href}>
             <Picture
                 class="w-full h-auto rounded-xl"
@@ -29,21 +32,18 @@ const href = `/blog/${post.slug}`;
             />
         </a>
         <div class="p-3 md:py-0 md:px-5 md:basis-2/3 flex flex-col h-full">
-            <h2 class="text-lg font-bold text-slate-800 dark:text-slate-100">
-                {post.data.title}
-            </h2>
+            <a class="unset" href={href}>
+                <h2
+                    class="text-lg font-bold text-slate-800 dark:text-slate-100"
+                >
+                    {post.data.title}
+                </h2></a
+            >
             <small
                 slot="post-title"
-                title={format(post.data.pubDate, "dd.MM.yyyy", {
-                    locale: de,
-                })}
+                title={dayjs(post.data.pubDate).format("DD.MM.YYYY")}
             >
-                {
-                    formatDistanceToNow(post.data.pubDate, {
-                        locale: de,
-                        addSuffix: true,
-                    })
-                }
+                {dayjs(post.data.pubDate).fromNow()}
             </small>
             <p class="mt-1 text-slate-800 dark:text-slate-400 h-full">
                 {post.data.lead}
@@ -52,7 +52,10 @@ const href = `/blog/${post.slug}`;
     </div>
 
     <div class="flex flex-row-reverse">
-        <a class="self-start gap-2 font-medium justify-end" href={href}>
+        <a
+            class="unset animated-link self-start gap-2 font-medium justify-end"
+            href={href}
+        >
             zum Post
         </a>
     </div>
