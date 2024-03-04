@@ -12,6 +12,14 @@
   ],
   "packageRules": [
     {
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
+      "matchCurrentVersion": "!/^0/",
+      "automerge": true
+    },
+    {
       "groupName": "astro-js",
       "matchPackagePrefixes": [
         "@astrojs/",
@@ -36,6 +44,13 @@
       "matchPackagePrefixes": [
         "@fontsource/"
       ]
+    },
+    {
+      "matchFileNames": [
+        "@aws-sdk/"
+      ],
+      "groupName": "aws-sdk",
+      "schedule": "before 6am on Friday"
     },
     {
       "matchFileNames": [
