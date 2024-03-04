@@ -24,8 +24,8 @@ dependencies:
     specifier: 3.523.0
     version: 3.523.0
   '@fontsource/space-grotesk':
-    specifier: 5.0.16
-    version: 5.0.16
+    specifier: 5.0.17
+    version: 5.0.17
   '@iconify-json/fa-brands':
     specifier: 1.1.8
     version: 1.1.8
@@ -1329,8 +1329,8 @@ packages:
     dev: false
     optional: true
 
-  /@fontsource/space-grotesk@5.0.16:
-    resolution: {integrity: sha512-z1QJtxH1EpbU/dljkwczvdZUSOEfzpnd5xrCzTCM/Ru+m3opmwHWTg2qHOaHUvBSD2iGy59hJazOYj27/F52uA==}
+  /@fontsource/space-grotesk@5.0.17:
+    resolution: {integrity: sha512-N2LC4atRec1b87oKDiXI/TYCOA8NanT4+cnmGYHbzzIJpQB4eQJtfLgJp8rm0+8xsvTID6eNi2fZGbvrzpL2CQ==}
     dev: false
 
   /@hutson/parse-repository-url@5.0.0:
