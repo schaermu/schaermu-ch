@@ -9,9 +9,8 @@ const buildTime = dayjs.tz().format("DD.MM.YYYY HH:mm");
 const year = dayjs().format("YYYY");
 ---
 
-<footer
-    class="flex gap-1 my-5 pt-5 border-t border-slate-300 dark:border-slate-600"
->
+<hr class="h-px my-8 bg-slate-200 border-0 dark:bg-slate-700" />
+<footer class="flex place-items-stretch mb-8 gap-1">
     <small class="basis-1/4">&copy; {year}</small>
     <small class="basis-2/4 text-center"
         >built with <Icon
