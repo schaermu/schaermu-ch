@@ -2,17 +2,16 @@
 import { Image } from "astro:assets";
 
 interface Props {
-    src: ImageMetadata | string;
+    src: string;
     alt: string;
     width: number;
-    height: number;
     caption: string;
 }
 
-const { src, alt, width, height, caption } = Astro.props;
+const { src, alt, width, caption } = Astro.props;
 ---
 
 <figure class="flex flex-col place-items-center">
-    <Image {src} {alt} {width} {height} />
+    <Image src={src} alt={alt} inferSize width={width} />
     {caption && <figcaption>{caption}</figcaption>}
 </figure>

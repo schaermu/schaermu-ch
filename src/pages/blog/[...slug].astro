@@ -30,7 +30,7 @@ const exactDate = dayjs(page.data.pubDate).format("DD.MM.YYYY");
 
 const series = entry.data.partOfSeries
   ? await getEntry("blog-series", entry.data.partOfSeries.id)
-  : null;
+  : undefined;
 ---
 
 <MarkdownPostLayout frontmatter={page.data}>

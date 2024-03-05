@@ -5,7 +5,7 @@ export async function get() {
         title: 'Astro Learner | Blog',
         description: 'My journey learning Astro',
         site: 'https://www.schaermu.ch',
-        items: await pagesGlobToRssItems(import.meta.glob('./**/*.md')),
+        items: await pagesGlobToRssItems(import.meta.glob('./**/*.mdoc')),
         customData: `<language>en-us</language>`,
     })
 }
