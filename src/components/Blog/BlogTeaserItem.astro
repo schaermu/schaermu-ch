@@ -4,12 +4,15 @@ import dayjs from "dayjs";
 import type { CollectionEntry } from "astro:content";
 import { Picture } from "astro:assets";
 
+import { readingTimeInMin } from "@lib/reading-time";
+
 export interface Props {
     post: CollectionEntry<"blog">;
     reverse?: boolean;
 }
 
 const { post, reverse } = Astro.props;
+const readingTime = readingTimeInMin(post);
 
 const href = `/blog/${post.slug}`;
 ---
@@ -31,7 +34,7 @@ const href = `/blog/${post.slug}`;
                 height={250}
             />
         </a>
-        <div class="p-3 md:py-0 md:px-5 md:basis-2/3 flex flex-col h-full">
+        <div class="py-3 md:py-0 md:px-5 md:basis-2/3 flex flex-col h-full">
             <a class="unset" href={href}>
                 <h2
                     class="text-lg font-bold text-slate-800 dark:text-slate-100"
@@ -39,12 +42,18 @@ const href = `/blog/${post.slug}`;
                     {post.data.title}
                 </h2></a
             >
-            <small
-                slot="post-title"
-                title={dayjs(post.data.pubDate).format("DD.MM.YYYY")}
-            >
-                {dayjs(post.data.pubDate).fromNow()}
-            </small>
+            <div class="flex gap-3">
+                <small title={dayjs(post.data.pubDate).format("DD.MM.YYYY")}>
+                    {dayjs(post.data.pubDate).fromNow()}
+                </small>
+                <small class="text-slate-300 dark:text-slate-700">|</small>
+                <small
+                    title="Lesezeit"
+                    class="text-slate-300 dark:text-slate-700"
+                >
+                    Lesezeit: ca. {readingTime} Minuten
+                </small>
+            </div>
             <p class="mt-1 text-slate-800 dark:text-slate-400 h-full">
                 {post.data.lead}
             </p>

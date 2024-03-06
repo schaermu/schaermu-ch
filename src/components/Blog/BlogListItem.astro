@@ -1,15 +1,17 @@
 ---
 import dayjs from "dayjs";
-import "@lib/dayjs";
 
 import Card from "@components/Elements/Card.astro";
 import type { CollectionEntry } from "astro:content";
+
+import { readingTimeInMin } from "@lib/reading-time";
 
 export interface Props {
     post: CollectionEntry<"blog">;
 }
 
 const { post } = Astro.props;
+const readingTime = readingTimeInMin(post);
 ---
 
 <Card
@@ -23,12 +25,15 @@ const { post } = Astro.props;
     href={`/blog/${post.slug}`}
 >
     <Fragment slot="title">{post.data.title}</Fragment>
-    <small
-        slot="post-title"
-        title={dayjs(post.data.pubDate).format("DD.MM.YYYY")}
-    >
-        {dayjs(post.data.pubDate).fromNow()}
-    </small>
+    <div class="flex gap-3" slot="post-title">
+        <small title={dayjs(post.data.pubDate).format("DD.MM.YYYY")}>
+            {dayjs(post.data.pubDate).fromNow()}
+        </small>
+        <small class="text-slate-300 dark:text-slate-700">|</small>
+        <small title="Lesezeit" class="text-slate-300 dark:text-slate-700">
+            Lesezeit: ca. {readingTime} Minuten
+        </small>
+    </div>
     <Fragment slot="text">
         {post.data.lead}
     </Fragment>
