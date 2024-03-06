@@ -1,5 +1,22 @@
 # Changelog
 
+## [2024.4.0](https://github.com/schaermu/schaermu-ch/compare/2024.3.0...2024.4.0) (2024-03-06)
+
+
+### Features
+
+* adds reading time for blog posts ([#132](https://github.com/schaermu/schaermu-ch/issues/132)) ([f2cf7e7](https://github.com/schaermu/schaermu-ch/commit/f2cf7e70b7b5793ba98a4a9853cff2a43ac000ce))
+
+
+### Bug Fixes
+
+* adds proper separator, fixes box issues and margins (fixes [#125](https://github.com/schaermu/schaermu-ch/issues/125)) ([#129](https://github.com/schaermu/schaermu-ch/issues/129)) ([19d282b](https://github.com/schaermu/schaermu-ch/commit/19d282b1db886d0f8475413f1002f506125c4209))
+* **deps:** update dependency @aws-sdk/client-s3 to v3.525.0 ([#117](https://github.com/schaermu/schaermu-ch/issues/117)) ([ec1ba57](https://github.com/schaermu/schaermu-ch/commit/ec1ba57fc2f449a5bfc321a492cd667b036f4b90))
+* **deps:** update dependency @fontsource/space-grotesk to v5.0.17 ([#126](https://github.com/schaermu/schaermu-ch/issues/126)) ([204197a](https://github.com/schaermu/schaermu-ch/commit/204197a5bc5f914287b4885924730ddca005553c))
+* **deps:** update dependency astro to v4.4.11 ([3d8fb03](https://github.com/schaermu/schaermu-ch/commit/3d8fb03cb109f23b870955c3abe691feb6a83cc5))
+* **deps:** update dependency astro to v4.4.12 ([4f6ed3e](https://github.com/schaermu/schaermu-ch/commit/4f6ed3e95e394e25f6cd9fea0bf2dad906c0647f))
+* **deps:** update dependency astro to v4.4.13 ([f935a02](https://github.com/schaermu/schaermu-ch/commit/f935a026bd73945949244501b64093f9b7998337))
+
 ## [2024.2.3](https://github.com/schaermu/schaermu-ch/compare/2024.2.2...2024.2.3) (2024-03-03)
 
 
