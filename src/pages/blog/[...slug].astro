@@ -9,6 +9,7 @@ import TagList from "@components/Blog/TagList.astro";
 import BlogAside from "@components/Blog/BlogAside.astro";
 
 import dayjs from "@lib/dayjs";
+import { readingTimeInMin } from "@lib/reading-time";
 
 export async function getStaticPaths() {
   const pages = await getCollection("blog");
@@ -22,6 +23,7 @@ export async function getStaticPaths() {
 
 const page = Astro.props;
 const entry = await getEntry("blog", page.slug);
+const readingTime = readingTimeInMin(entry);
 
 const { Content, headings } = await entry.render();
 
@@ -42,8 +44,10 @@ const series = entry.data.partOfSeries
       <small class="block w-full text-center text-slate-500 dark:text-slate-400"
         >Veröffentlicht {readableDate} ({exactDate})</small
       >
+      <small class="block w-full text-center text-slate-500 dark:text-slate-400"
+        >Lesezeit: ca. {readingTime} Minuten</small
+      >
       <TagList tags={page.data.tags} />
-
       <Picture
         class="w-full h-auto rounded-xl my-5"
         formats={["webp", "avif"]}
