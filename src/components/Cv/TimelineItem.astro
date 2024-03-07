@@ -1,0 +1,26 @@
+---
+import type { CollectionEntry } from "astro:content";
+
+import TimelineItemDate from "./TimelineItemDate.astro";
+import TimelineItemJob from "./TimelineItemJob.astro";
+import TimelineItemTech from "./TimelineItemTech.astro";
+
+export interface Props {
+    entry: CollectionEntry<"cv-entries">;
+}
+
+const { entry } = Astro.props;
+---
+
+<li class="mb-10">
+    <div
+        class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"
+    >
+    </div>
+    <TimelineItemDate from={entry.data.from} to={entry.data.to} />
+    <TimelineItemJob title={entry.data.title} role={entry.data.role} />
+    <p class="my-4 text-base font-normal text-slate-500 dark:text-slate-400">
+        {entry.data.description}
+    </p>
+    <TimelineItemTech technologies={entry.data.tech} />
+</li>

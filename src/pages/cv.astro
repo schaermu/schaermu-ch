@@ -1,0 +1,20 @@
+---
+import { getCollection } from "astro:content";
+
+const pageTitle = "der wärchende schärmu";
+
+import BaseLayout from "@layouts/BaseLayout.astro";
+import TimelineItem from "../components/Cv/TimelineItem.astro";
+
+const entries = await getCollection("cv-entries");
+---
+
+<BaseLayout pageTitle={pageTitle}>
+    <Fragment slot="main">
+        <ol
+            class="relative md:m-auto md:w-3/5 border-s border-gray-200 dark:border-gray-700"
+        >
+            {entries.map((entry) => <TimelineItem entry={entry} />)}
+        </ol>
+    </Fragment>
+</BaseLayout>

@@ -1,0 +1,24 @@
+---
+import dayjs from "@lib/dayjs";
+
+export interface Props {
+    from: Date;
+    to?: Date;
+}
+
+const { from, to } = Astro.props;
+---
+
+<div class="flex gap-3 mb-2">
+    <time
+        class="flex-auto text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
+        >{dayjs(from).format("MMMM YYYY")} bis {
+            to ? dayjs(to).format("MMMM YYYY") : "heute"
+        }
+    </time>
+    <p
+        class="self-end text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
+    >
+        {dayjs(to ?? new Date()).from(from, true)}
+    </p>
+</div>
