@@ -9,7 +9,7 @@ export interface Props {
 const { from, to } = Astro.props;
 ---
 
-<div class="flex gap-3 mb-2">
+<div class="flex gap-3 my-2">
     <time
         class="flex-auto text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
         >{dayjs(from).format("MMMM YYYY")} bis {
@@ -17,7 +17,7 @@ const { from, to } = Astro.props;
         }
     </time>
     <p
-        class="self-end text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
+        class="self-end w-1/4 text-right text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
     >
         {dayjs(to ?? new Date()).from(from, true)}
     </p>

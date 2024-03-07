@@ -6,7 +6,7 @@ export interface Props {
 const { technologies } = Astro.props;
 ---
 
-<ul class="unset flex gap-3">
+<ul class="unset flex flex-wrap gap-3">
     {
         technologies.map((technology) => (
             <li class="text-xs font-semibold leading-none text-slate-400 dark:text-slate-400 bg-slate-200 dark:bg-slate-800 px-3 py-2 rounded-full">

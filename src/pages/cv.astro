@@ -7,12 +7,21 @@ import BaseLayout from "@layouts/BaseLayout.astro";
 import TimelineItem from "../components/Cv/TimelineItem.astro";
 
 const entries = await getCollection("cv-entries");
+entries.sort((a, b) => {
+    if (a.data.from > b.data.from) {
+        return -1;
+    }
+    if (a.data.from < b.data.from) {
+        return 1;
+    }
+    return 0;
+});
 ---
 
 <BaseLayout pageTitle={pageTitle}>
     <Fragment slot="main">
         <ol
-            class="relative md:m-auto md:w-3/5 border-s border-gray-200 dark:border-gray-700"
+            class="unset flex flex-col gap-10 pl-4 relative md:m-auto md:w-3/5 border-s border-gray-200 dark:border-gray-700"
         >
             {entries.map((entry) => <TimelineItem entry={entry} />)}
         </ol>
