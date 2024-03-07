@@ -27,7 +27,26 @@ const blogSeriesCollection = defineCollection({
     })
 })
 
+const cvEntryCollection = defineCollection({
+    type: 'data',
+    schema: z.object({
+        from: z.date(),
+        to: z.date().optional(),
+        title: z.string(),
+        role: z.string(),
+        company: z.object({
+            name: z.string(),
+            icon: z.string().optional(),
+            url: z.string().optional()
+        }),
+        description: z.string(),
+        tech: z.array(z.string())
+    })
+
+})
+
 export const collections = {
     'blog': blogCollection,
-    'blog-series': blogSeriesCollection
+    'blog-series': blogSeriesCollection,
+    'cv-entries': cvEntryCollection
 };

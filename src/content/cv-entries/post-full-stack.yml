@@ -1,0 +1,25 @@
+from: 2018-11-01
+to: 2022-09-30
+title: Post CH AG
+role: Full-Stack-Entwickler
+company:
+    name: Post CH AG
+    url: https://www.post.ch
+    logo: https://www.post.ch/favicon.ico
+description: |
+    Umsetzung diverser Proof-of-Concepts und marktfähiger MVPs für unsere Geschäftsbereiche mit verschidensten Web-, AR-, Voice- und KI-Technologien. Dabei lag ein starker Fokus auf Design-Thinking Ansätzen mit den involvierten Stakeholdern um innert kürzester Zeit einen maximalen Effekt zu erzielen.
+    
+    Zusätzlich Mitarbeit beim Aufbau einer internen, cloud-basierten Betriebsplattform für Innovations-Vorhaben mit Terraform, Mitarbeit bei diversen internen Innovations-Vorhaben und -Arbeitsgruppen.
+    
+    Von 2020 bis 2022 Co-Lead für die Implementierung und den Rollout eines Security-Champion Programms innerhalb der IT-Entwicklung.
+tech:
+    - Angular
+    - dotnet Core
+    - Docker
+    - AWS
+    - Kubernetes
+    - Security
+    - Automatisierung
+    - CI/CD
+    - Agile Methoden
+    - Design Thinking

@@ -1,0 +1,21 @@
+from: 2007-09-01
+to: 2011-05-30
+title: nc AG
+role: Web-Entwickler
+company:
+    name: neue chemigraphie AG
+    url: https://www.ncag.ch
+    logo: https://www.ncag.ch/favicon.ico
+description: |
+    Umsetzung von Individuallösungen für Kundem wie Kuoni, Migros oder Hotelplan im Bereich Medienmanagement und -produktion. Lead-Entwickler für die Umsetzung der next-Generation Standard-Lösung Mediendatenbank auf Basis von State-of-the-Art Technologien im Microsoft-Umfeld. Auch der Aufbau einer modernen CI/CD-Pipeline und -Infrastruktur oder die Einführung von Git als Versionsverwaltungssystem gehörten zu meinen Aufgaben.
+tech:
+    - PHP
+    - ASP.NET
+    - HTML/CSS
+    - JavaScript
+    - Linux
+    - IIS
+    - Server-Betrieb
+    - MySQL
+    - MSSQL
+    - Apache

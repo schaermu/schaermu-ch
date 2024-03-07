@@ -1,0 +1,16 @@
+from: 2004-06-01
+to: 2007-08-30
+title: Selbstständig
+role: Web-Entwickler
+company:
+    name: Hostplanet
+description: |
+    Mitinhaber einer Hosting-Firma im Günstig-Segment für den Schweizer Markt. Implementierung und Weiterentwicklung eines Custom-Adminpanels, Umsetzung von Websites und PHP-Applikationen für Kunden sowie Administration von Linux-basierenden Serversystemen.
+tech:
+    - PHP
+    - HTML/CSS
+    - JavaScript
+    - Linux
+    - Server-Betrieb
+    - MySQL
+    - Apache
