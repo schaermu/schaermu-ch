@@ -1,0 +1,24 @@
+from: 2016-10-01
+to: 2018-10-31
+title: smartfactory GmbH
+role: Full-Stack-Entwickler
+company:
+    name: Maxomedia AG
+    url: https://www.maxomedia.ch
+description: |
+    Mitarbeit in einem kleinen, multi-nationalen Team bestehend aus App- und Backend-Entwicklern, welches diverse Kundenprojekte umgesetzt hat. Sehr aktive Mitarbeit an der Modernisierung der CI/CD-Plattformen und der Automatisierung aller Release- und Deploymentprozesse.
+    
+    Eigenständige Umsetzung von marktfähigen MVPs und Prototypen für Startups und KMUs mit modernen Technologien wie Django, Ionic und Angular.
+tech:
+    - Django
+    - Python
+    - Ionic
+    - Angular
+    - HTML/CSS
+    - JavaScript
+    - PostgreSQL
+    - Linux
+    - Automatisierung
+    - CI/CD
+    - Agile Methoden
+    - Design Thinking

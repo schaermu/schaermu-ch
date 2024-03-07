@@ -1,0 +1,24 @@
+from: 2022-10-01
+title: Post CH AG
+role: Requirements-To-Deployment Manager
+company:
+    name: Post CH AG
+    url: https://www.post.ch
+    logo: https://www.post.ch/favicon.ico
+description: |
+    In der Rolle des Requirements-to-Deployment Manager verantworte ich die fachliche Führung im Bereich Software-Entwicklung von 13 Teams und unterstütze sie in allen Belangen der Software-Entwicklung als Coach. Dies kann den Bereich des Requirements Engineering betreffen, Standard-Tools in der Software-Entwicklung oder auch Deployment- und Release-Prozesse betreffen.
+    
+    Zusätzlich bin ich für das aktive Vorantreiben des konzernweiten Post2Cloud-Vorhabens innerhalb unserer Abteilung verantwortlich und unterstütze die Teams bei der Planung und Umsetzung der Migration hin zu Cloud-Technologien und entsprechenden Entwicklungs-Prozessen.
+tech:
+    - Angular
+    - Docker
+    - AWS
+    - Cloud-Migration
+    - Security
+    - Automatisierung
+    - Coaching
+    - Requirements Management
+    - Prozess-Optimierung
+    - SAFe
+    - Agile Methoden
+    - Design Thinking

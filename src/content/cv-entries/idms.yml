@@ -1,0 +1,20 @@
+from: 2011-06-01
+to: 2012-05-30
+title: IDMS AG
+role: Application Manager
+company:
+    name: Interactive Data Managed Solutions AG
+    url: https://www.interactivedata.com
+description: |
+    Applikatorische Betreuung diverser Kundenapplikationen im Umfeld von (Near-)Real-Time Börsendaten für Banken (ZKB, Julius Bär, Sarasin) und Medienhäuser wie die NZZ. Verantwortlich für den Betrieb und kleinere Fehlerbehebungen sowie die Koordination von grösseren Anpassungen und Releases. Zudem war ich für die Einhaltung der ITIL-Prozesse verantwortlich.
+
+    Die IDMS AG ist ein Tochterunternehmen der Interactive Data Corporation, welche 2015 von der Intercontinental Exchange (ICE) übernommen wurde.
+tech:
+    - PHP
+    - TCL
+    - HTML/CSS
+    - JavaScript
+    - ITIL
+    - ISO 27001
+    - Deployment
+    - Release-Management

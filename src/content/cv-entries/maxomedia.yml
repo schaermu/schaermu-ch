@@ -1,0 +1,21 @@
+from: 2012-06-01
+to: 2016-04-31
+title: Maxomedia AG
+role: Software-Entwickler / Teamleiter
+company:
+    name: Maxomedia AG
+    url: https://www.maxomedia.ch
+description: |
+    Agile Umsetzung diverser Kundenprojekte, unter anderem nationale Kampagnen für die SBB, Postfinance oder Postauto. Auch hier habe ich stark an der Modernisierung der CI/CD-Pipeline sowie agilen Arbeitsmethoden mitgewirkt.
+
+    Ab Anfang 2015 Übernahme von Teamleitungs-Funktionen für ein Team von 4 Entwicklern sowie die technische Verantwortung für die interne CI/CD-Infrastruktur und -Prozesse.
+tech:
+    - ASP.NET
+    - .NET MVC
+    - HTML/CSS
+    - JavaScript
+    - SQL Server
+    - IIS
+    - Windows Server
+    - Teamleitung
+    - Agile Methoden

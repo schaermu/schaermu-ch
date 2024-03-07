@@ -1,10 +1,11 @@
 from: 2003-10-01
 to: 2004-05-30
-title: "mediatower GmbH"
-role: "Web-Entwickler"
+title: mediatower GmbH
+role: Web-Entwickler
 company:
-    name: "mediatower GmbH"
-description: "Arbeit als Freelancer für die Web-Agentur mediatower GmbH in Bern. Entwicklung von Webseiten im Content-Management-System Typo3, Umsetzung diverser Custom-Plugins und Beratung."
+    name: mediatower GmbH
+description: |
+    Arbeit als Freelancer für die Web-Agentur mediatower GmbH in Bern. Entwicklung von Webseiten im Content-Management-System Typo3, Umsetzung diverser Custom-Plugins und Beratung.
 tech:
     - Typo3
     - PHP

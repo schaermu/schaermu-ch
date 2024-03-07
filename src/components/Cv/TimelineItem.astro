@@ -5,6 +5,8 @@ import TimelineItemDate from "./TimelineItemDate.astro";
 import TimelineItemJob from "./TimelineItemJob.astro";
 import TimelineItemTech from "./TimelineItemTech.astro";
 
+import nl2br from "@lib/nl2br";
+
 export interface Props {
     entry: CollectionEntry<"cv-entries">;
 }
@@ -19,8 +21,9 @@ const { entry } = Astro.props;
     </div>
     <TimelineItemDate from={entry.data.from} to={entry.data.to} />
     <TimelineItemJob title={entry.data.title} role={entry.data.role} />
-    <p class="my-4 text-base font-normal text-slate-500 dark:text-slate-400">
-        {entry.data.description}
-    </p>
+    <p
+        class="my-4 text-base font-normal text-slate-500 dark:text-slate-400"
+        set:html={nl2br(entry.data.description)}
+    />
     <TimelineItemTech technologies={entry.data.tech} />
 </li>

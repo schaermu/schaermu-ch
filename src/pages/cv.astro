@@ -5,6 +5,7 @@ const pageTitle = "der wärchende schärmu";
 
 import BaseLayout from "@layouts/BaseLayout.astro";
 import TimelineItem from "../components/Cv/TimelineItem.astro";
+import FancyHeading from "../components/Elements/FancyHeading.astro";
 
 const entries = await getCollection("cv-entries");
 entries.sort((a, b) => {
@@ -20,8 +21,11 @@ entries.sort((a, b) => {
 
 <BaseLayout pageTitle={pageTitle}>
     <Fragment slot="main">
+        <FancyHeading color="blue" classList={["mb-10"]}>
+            Schärmu's CV
+        </FancyHeading>
         <ol
-            class="unset flex flex-col gap-10 pl-4 relative md:m-auto md:w-3/5 border-s border-gray-200 dark:border-gray-700"
+            class="unset flex flex-col gap-16 pl-4 relative md:m-auto md:w-3/5 border-s border-gray-200 dark:border-gray-700"
         >
             {entries.map((entry) => <TimelineItem entry={entry} />)}
         </ol>
