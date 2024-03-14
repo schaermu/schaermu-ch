@@ -21,8 +21,8 @@ dependencies:
     specifier: 5.1.0
     version: 5.1.0(astro@4.4.15)(tailwindcss@3.4.1)
   '@aws-sdk/client-s3':
-    specifier: 3.533.0
-    version: 3.533.0
+    specifier: 3.534.0
+    version: 3.534.0
   '@fontsource/space-grotesk':
     specifier: 5.0.17
     version: 5.0.17
@@ -302,8 +302,8 @@ packages:
       tslib: 1.14.1
     dev: false
 
-  /@aws-sdk/client-s3@3.533.0:
-    resolution: {integrity: sha512-KkzRS3Dt+dmNBe0a627RGr5aFqI+xw5UhqB+8Gr4r6Xy1/8sMGE+AXKVl/sYVbRQo/9aSCBak71baGE3XCm/pQ==}
+  /@aws-sdk/client-s3@3.534.0:
+    resolution: {integrity: sha512-ulu0M9kj9KVXBluAfFPL4Bm/b7VReH4mu/kC45A4lai0zBRHtBsr274vOBaLESGcV6wiMNPU18Xb+oxV91DTcw==}
     engines: {node: '>=14.0.0'}
     dependencies:
       '@aws-crypto/sha1-browser': 3.0.0
@@ -320,7 +320,7 @@ packages:
       '@aws-sdk/middleware-logger': 3.533.0
       '@aws-sdk/middleware-recursion-detection': 3.533.0
       '@aws-sdk/middleware-sdk-s3': 3.533.0
-      '@aws-sdk/middleware-signing': 3.533.0
+      '@aws-sdk/middleware-signing': 3.534.0
       '@aws-sdk/middleware-ssec': 3.533.0
       '@aws-sdk/middleware-user-agent': 3.533.0
       '@aws-sdk/region-config-resolver': 3.533.0
@@ -721,8 +721,8 @@ packages:
       tslib: 2.6.2
     dev: false
 
-  /@aws-sdk/middleware-signing@3.533.0:
-    resolution: {integrity: sha512-qJZBoNKoSacIkHZfHcQfxmrogQcb0OPEaeEwwH563f8D5qYjQ3yuSaq7X9BKL7W8f9GjUYUJYZJwK3tbDh1ccg==}
+  /@aws-sdk/middleware-signing@3.534.0:
+    resolution: {integrity: sha512-TUjCjK6o8TZ5w4NEllGtGFaq4kVet0ysoocnjMoOqBUTKBSYLwRe6bkrd5rF+onJj0fMIazGz6vaQyy/0iRNjQ==}
     engines: {node: '>=14.0.0'}
     dependencies:
       '@aws-sdk/types': 3.533.0
