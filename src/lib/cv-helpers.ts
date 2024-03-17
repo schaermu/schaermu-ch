@@ -85,7 +85,6 @@ const getTopSkills = (entries: CollectionEntry<"cv-entries">[], topN = { tech: 5
 
     // normalize scales
     Object.keys(groups).forEach((group) => {
-        console.log(groups[group])
         const maxScore = Math.max(...Object.values(groups[group])) * 1.1; // one never achieves perfection
         Object.keys(groups[group]).forEach((key) => {
             groups[group][key] = (groups[group][key] / maxScore) * 100;
