@@ -9,13 +9,14 @@ description: |
     Agile Umsetzung diverser Kundenprojekte, unter anderem nationale Kampagnen für die SBB, Postfinance oder Postauto. Auch hier habe ich stark an der Modernisierung der CI/CD-Pipeline sowie agilen Arbeitsmethoden mitgewirkt.
 
     Ab Anfang 2015 Übernahme von Teamleitungs-Funktionen für ein Team von 4 Entwicklern sowie die technische Verantwortung für die interne CI/CD-Infrastruktur und -Prozesse.
-tech:
-    - ASP.NET
-    - .NET MVC
+skills:
+    - Dotnet
+    - Node.JS
     - HTML/CSS
     - JavaScript
     - SQL Server
+    - CI/CD
     - IIS
     - Windows Server
     - Teamleitung
-    - Agile Methoden
+    - Scrum

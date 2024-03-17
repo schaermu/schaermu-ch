@@ -7,8 +7,8 @@ company:
     url: https://www.sbb.ch/
     logo: https://www.sbb.ch/favicon.ico
 description: |
-    Ausbildung zum Informatiker EFZ bei der SBB CH AG (ab 2002 bei der login Berufsbildung AG) in der Fachrichtung Softwareentwicklung. Die Abschlussarbeit wurde im Bereich der Webentwicklung durchgeführt.
-tech:
+    Ausbildung zum Informatiker EFZ bei der SBB CH AG (ab 2002 bei der login Berufsbildung AG) in der Fachrichtung Softwareentwicklung. Die Abschlussarbeit habe ich im Bereich Webentwicklung in PHP durchgeführt.
+skills:
     - COBOL
     - DB2
     - PHP

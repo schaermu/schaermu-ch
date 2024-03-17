@@ -40,7 +40,7 @@ const cvEntryCollection = defineCollection({
             url: z.string().optional()
         }),
         description: z.string(),
-        tech: z.array(z.string())
+        skills: z.array(z.string())
     })
 
 })
