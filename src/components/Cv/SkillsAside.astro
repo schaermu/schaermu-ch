@@ -1,0 +1,45 @@
+---
+import { getCollection } from "astro:content";
+
+import { getTopSkills } from "@lib/cv-helpers";
+
+import SkillsAsideItem from "./SkillsAsideItem.astro";
+
+const cvEntries = await getCollection("cv-entries");
+const { techSkills, methodSkills } = getTopSkills(cvEntries, {
+    tech: 20,
+    method: 5,
+});
+---
+
+<style>
+    .vertical-title {
+        @apply text-center;
+        @apply text-lg;
+        @apply font-light;
+        @apply rotate-180;
+        writing-mode: vertical-lr;
+        text-orientation: mixed;
+    }
+</style>
+
+<div class="flex relative">
+    <h3 class="vertical-title">Technisch</h3>
+    <ol class="unset pl-4 w-full relative">
+        {
+            techSkills.map(([skill, score]) => (
+                <SkillsAsideItem skill={skill} score={score} />
+            ))
+        }
+    </ol>
+</div>
+<div class="flex relative pt-10">
+    <h3 class="vertical-title">Methodisch</h3>
+    <ol class="unset pl-4 w-full relative">
+        {
+            methodSkills.map(([skill, score]) => (
+                <SkillsAsideItem skill={skill} score={score} />
+            ))
+        }
+    </ol>
+</div>

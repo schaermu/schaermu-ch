@@ -1,16 +1,16 @@
 ---
 export interface Props {
-    technologies: string[];
+    skills: string[];
 }
 
-const { technologies } = Astro.props;
+const { skills } = Astro.props;
 ---
 
 <ul class="unset flex flex-wrap gap-3">
     {
-        technologies.map((technology) => (
+        skills.map((skill) => (
             <li class="text-xs font-semibold leading-none text-slate-400 dark:text-slate-400 bg-slate-200 dark:bg-slate-800 px-3 py-2 rounded-full">
-                {technology}
+                {skill}
             </li>
         ))
     }
