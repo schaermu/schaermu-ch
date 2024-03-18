@@ -31,7 +31,7 @@ const { techSkills, methodSkills } = getTopSkills(cvEntries, {
 
 <div
     id="skill-list"
-    class="hidden fixed z-50 rounded-2xl bottom-3 p-5 bg-slate-300 dark:bg-slate-800 md:p-0 md:top-4 md:bg-transparent md:dark:bg-transparent md:relative md:flex md:flex-col"
+    class="hidden z-50 rounded-2xl p-5 bg-slate-300 dark:bg-slate-800 md:rounded-none md:p-0 md:bg-transparent md:dark:bg-transparent md:relative md:flex md:flex-col"
 >
     <button
         style="margin-right: 0.2em"
@@ -42,7 +42,7 @@ const { techSkills, methodSkills } = getTopSkills(cvEntries, {
         <span class="sr-only">Close skills</span>
     </button>
     <h2 class="mb-5 font-bold text-3xl">Skills</h2>
-    <aside class="mb-10 md:mt-5">
+    <aside class="mb-10">
         <div class="flex relative">
             <h3 class="vertical-title">Technisch</h3>
             <ol class="unset pl-4 w-full relative">
