@@ -3,7 +3,7 @@ import type { CollectionEntry } from "astro:content";
 
 import TimelineItemDate from "./TimelineItemDate.astro";
 import TimelineItemJob from "./TimelineItemJob.astro";
-import TimelineItemTech from "./TimelineItemTech.astro";
+import TimelineItemSkills from "./TimelineItemSkills.astro";
 
 import nl2br from "@lib/nl2br";
 
@@ -22,8 +22,8 @@ const { entry } = Astro.props;
     <TimelineItemDate from={entry.data.from} to={entry.data.to} />
     <TimelineItemJob title={entry.data.title} role={entry.data.role} />
     <p
-        class="my-4 text-base font-normal text-slate-500 dark:text-slate-400"
+        class="my-4 text-base text-pretty text-slate-500 dark:text-slate-400"
         set:html={nl2br(entry.data.description)}
     />
-    <TimelineItemTech technologies={entry.data.tech} />
+    <TimelineItemSkills skills={entry.data.skills} />
 </li>

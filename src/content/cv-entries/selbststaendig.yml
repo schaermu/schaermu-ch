@@ -6,7 +6,7 @@ company:
     name: Hostplanet
 description: |
     Mitinhaber einer Hosting-Firma im Günstig-Segment für den Schweizer Markt. Implementierung und Weiterentwicklung eines Custom-Adminpanels, Umsetzung von Websites und PHP-Applikationen für Kunden sowie Administration von Linux-basierenden Serversystemen.
-tech:
+skills:
     - PHP
     - HTML/CSS
     - JavaScript

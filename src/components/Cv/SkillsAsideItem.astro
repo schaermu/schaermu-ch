@@ -1,0 +1,23 @@
+---
+export interface Props {
+    skill: string;
+    score: number;
+}
+
+const { skill, score } = Astro.props;
+---
+
+<li>
+    <div class="mb-1 text-sm font-medium dark:text-white">
+        {skill}
+    </div>
+    <div
+        class="w-full h-2 mb-2 bg-gray-200 rounded-full dark:bg-gray-700 md:h-3 md:mb-4"
+    >
+        <div
+            class="h-2 bg-blue-600 rounded-full dark:bg-blue-500 md:h-3"
+            style={{ width: score + "%" }}
+        >
+        </div>
+    </div>
+</li>

@@ -12,14 +12,16 @@ description: |
     Zusätzlich Mitarbeit beim Aufbau einer internen, cloud-basierten Betriebsplattform für Innovations-Vorhaben mit Terraform, Mitarbeit bei diversen internen Innovations-Vorhaben und -Arbeitsgruppen.
     
     Von 2020 bis 2022 Co-Lead für die Implementierung und den Rollout eines Security-Champion Programms innerhalb der IT-Entwicklung.
-tech:
+skills:
     - Angular
-    - dotnet Core
+    - Dotnet
+    - Python
     - Docker
     - AWS
     - Kubernetes
     - Security
     - Automatisierung
     - CI/CD
-    - Agile Methoden
+    - Scrum
+    - Kanban
     - Design Thinking
