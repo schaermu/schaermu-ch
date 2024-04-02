@@ -8,6 +8,7 @@ import TimelineItem from "@components/Cv/TimelineItem.astro";
 import FancyHeading from "@components/Elements/FancyHeading.astro";
 
 import CvAside from "@components/Cv/CvAside.astro";
+import PersonalData from "@components/Cv/PersonalData.astro";
 
 const entries = await getCollection("cv-entries");
 entries.sort((a, b) => {
@@ -28,12 +29,15 @@ entries.sort((a, b) => {
         </FancyHeading>
         <div class="flex gap-10" data-toggle-root>
             <div class="m-auto w-full md:w-2/3 lg:w-3/4">
-                <h2 class="font-bold text-3xl">Timeline</h2>
-                <ol
-                    class="unset flex flex-col mt-5 gap-16 pl-4 relative border-s border-gray-200 dark:border-gray-700"
-                >
-                    {entries.map((entry) => <TimelineItem entry={entry} />)}
-                </ol>
+                <div class="flex flex-col">
+                    <PersonalData />
+                    <h2 class="font-bold text-3xl">Timeline</h2>
+                    <ol
+                        class="unset flex flex-col mt-5 gap-16 pl-4 relative border-s border-gray-200 dark:border-gray-700"
+                    >
+                        {entries.map((entry) => <TimelineItem entry={entry} />)}
+                    </ol>
+                </div>
             </div>
             <CvAside />
         </div>
