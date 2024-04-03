@@ -7,7 +7,7 @@ settings:
 dependencies:
   '@astrojs/markdoc':
     specifier: 0.9.4
-    version: 0.9.4(astro@4.5.14)
+    version: 0.9.4(astro@4.5.15)
   '@astrojs/prism':
     specifier: 3.0.0
     version: 3.0.0
@@ -16,10 +16,10 @@ dependencies:
     version: 4.0.5
   '@astrojs/svelte':
     specifier: 5.3.0
-    version: 5.3.0(astro@4.5.14)(svelte@4.2.12)(typescript@5.4.3)(vite@5.2.7)
+    version: 5.3.0(astro@4.5.15)(svelte@4.2.12)(typescript@5.4.3)(vite@5.2.7)
   '@astrojs/tailwind':
     specifier: 5.1.0
-    version: 5.1.0(astro@4.5.14)(tailwindcss@3.4.3)
+    version: 5.1.0(astro@4.5.15)(tailwindcss@3.4.3)
   '@aws-sdk/client-s3':
     specifier: 3.540.0
     version: 3.540.0
@@ -39,8 +39,8 @@ dependencies:
     specifier: 0.5.12
     version: 0.5.12(tailwindcss@3.4.3)
   astro:
-    specifier: 4.5.14
-    version: 4.5.14(typescript@5.4.3)
+    specifier: 4.5.15
+    version: 4.5.15(typescript@5.4.3)
   astro-icon:
     specifier: 1.1.0
     version: 1.1.0
@@ -129,7 +129,7 @@ packages:
     resolution: {integrity: sha512-6B13lz5n6BrbTqCTwhXjJXuR1sqiX/H6rTxzlXx+lN1NnV4jgnq/KJldCQaUWJzPL5SiWahQyinxAbxQtwgPHA==}
     dev: false
 
-  /@astrojs/markdoc@0.9.4(astro@4.5.14):
+  /@astrojs/markdoc@0.9.4(astro@4.5.15):
     resolution: {integrity: sha512-kxzAF1WLO7fvUem8XK68zpjIENbNmGVtcnEr9M46UuaD8gmgTkvHvokq9RCWLah+hpIiE+M96pBLU4cPzby1uA==}
     engines: {node: '>=18.14.1'}
     peerDependencies:
@@ -139,7 +139,7 @@ packages:
       '@astrojs/markdown-remark': 5.0.0
       '@astrojs/prism': 3.0.0
       '@markdoc/markdoc': 0.3.5
-      astro: 4.5.14(typescript@5.4.3)
+      astro: 4.5.15(typescript@5.4.3)
       esbuild: 0.19.12
       github-slugger: 2.0.0
       gray-matter: 4.0.3
@@ -191,7 +191,7 @@ packages:
       kleur: 4.1.5
     dev: false
 
-  /@astrojs/svelte@5.3.0(astro@4.5.14)(svelte@4.2.12)(typescript@5.4.3)(vite@5.2.7):
+  /@astrojs/svelte@5.3.0(astro@4.5.15)(svelte@4.2.12)(typescript@5.4.3)(vite@5.2.7):
     resolution: {integrity: sha512-7jKT6uQo6V4XNS4DmlZTlliO4qn9dOTsbRB3PyIzAnbTNqJnDBPY6Hj0X5uhELXSmKkn/o+ncJ46kLtFLqEq8w==}
     engines: {node: '>=18.14.1'}
     peerDependencies:
@@ -200,7 +200,7 @@ packages:
       typescript: ^5.3.3
     dependencies:
       '@sveltejs/vite-plugin-svelte': 3.0.2(svelte@4.2.12)(vite@5.2.7)
-      astro: 4.5.14(typescript@5.4.3)
+      astro: 4.5.15(typescript@5.4.3)
       svelte: 4.2.12
       svelte2tsx: 0.6.27(svelte@4.2.12)(typescript@5.4.3)
       typescript: 5.4.3
@@ -209,13 +209,13 @@ packages:
       - vite
     dev: false
 
-  /@astrojs/tailwind@5.1.0(astro@4.5.14)(tailwindcss@3.4.3):
+  /@astrojs/tailwind@5.1.0(astro@4.5.15)(tailwindcss@3.4.3):
     resolution: {integrity: sha512-BJoCDKuWhU9FT2qYg+fr6Nfb3qP4ShtyjXGHKA/4mHN94z7BGcmauQK23iy+YH5qWvTnhqkd6mQPQ1yTZTe9Ig==}
     peerDependencies:
       astro: ^3.0.0 || ^4.0.0
       tailwindcss: ^3.0.24
     dependencies:
-      astro: 4.5.14(typescript@5.4.3)
+      astro: 4.5.15(typescript@5.4.3)
       autoprefixer: 10.4.19(postcss@8.4.38)
       postcss: 8.4.38
       postcss-load-config: 4.0.2(postcss@8.4.38)
@@ -3004,8 +3004,8 @@ packages:
       - supports-color
     dev: false
 
-  /astro@4.5.14(typescript@5.4.3):
-    resolution: {integrity: sha512-OXQ9Wbcn5e2eEPrNKJjGXeCWnKamNGyvSwORL0B8BB1fp3OO/EYo/RfeQGTR9kxGNxEpokoPZL9JNgFHoVK+wA==}
+  /astro@4.5.15(typescript@5.4.3):
+    resolution: {integrity: sha512-d2+yMv4ZlWwWFzfbpXIULMniNmdPlbwGrQScacEni0WLeo4k7ETO51/bHN/i/fXwxL9IGfasdEFkk2baYXDRog==}
     engines: {node: '>=18.14.1', npm: '>=6.14.0'}
     hasBin: true
     dependencies:
@@ -3550,9 +3550,11 @@ packages:
 
   /color-name@1.1.4:
     resolution: {integrity: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==}
+    requiresBuild: true
 
   /color-string@1.9.1:
     resolution: {integrity: sha512-shrVawQFojnZv6xM40anx4CkoDP+fZsw/ZerEMsW/pyzsRbElpsL/DBVW7q3ExxwusdNXI3lXpuhEZkzs8p5Eg==}
+    requiresBuild: true
     dependencies:
       color-name: 1.1.4
       simple-swizzle: 0.2.2
@@ -5309,6 +5311,7 @@ packages:
 
   /is-arrayish@0.3.2:
     resolution: {integrity: sha512-eVRqCvVlZbuw3GrM63ovNSNAeA1K16kaR/LRY/92w0zxQ5/1YzwblUX652i4Xs9RwAGjW9d9y6X88t8OaAJfWQ==}
+    requiresBuild: true
     dev: false
 
   /is-bigint@1.0.4:
@@ -7835,6 +7838,7 @@ packages:
 
   /simple-swizzle@0.2.2:
     resolution: {integrity: sha512-JA//kQgZtbuY83m+xT+tXJkmJncGMTFT+C+g2h2R9uxkYIrE2yy9sgmcLhCnw57/WSD+Eh3J97FPEDFnbXnDUg==}
+    requiresBuild: true
     dependencies:
       is-arrayish: 0.3.2
     dev: false
