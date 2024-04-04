@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@astrojs/markdoc':
-    specifier: 0.9.4
-    version: 0.9.4(astro@4.5.15)
+    specifier: 0.9.5
+    version: 0.9.5(astro@4.5.15)
   '@astrojs/prism':
     specifier: 3.0.0
     version: 3.0.0
@@ -129,8 +129,8 @@ packages:
     resolution: {integrity: sha512-6B13lz5n6BrbTqCTwhXjJXuR1sqiX/H6rTxzlXx+lN1NnV4jgnq/KJldCQaUWJzPL5SiWahQyinxAbxQtwgPHA==}
     dev: false
 
-  /@astrojs/markdoc@0.9.4(astro@4.5.15):
-    resolution: {integrity: sha512-kxzAF1WLO7fvUem8XK68zpjIENbNmGVtcnEr9M46UuaD8gmgTkvHvokq9RCWLah+hpIiE+M96pBLU4cPzby1uA==}
+  /@astrojs/markdoc@0.9.5(astro@4.5.15):
+    resolution: {integrity: sha512-ZhovF5AZJVsVtpJ86YSSbuTAKFwVYo58BggYCiA8ZPeQJZ1Kyh91kfo+wBEx+6CIqC85L2d+yQ6qWH4Ud+273w==}
     engines: {node: '>=18.14.1'}
     peerDependencies:
       astro: ^3.0.0 || ^4.0.0
