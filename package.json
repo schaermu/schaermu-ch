@@ -24,7 +24,7 @@
     "@iconify-json/fa-solid": "1.1.8",
     "@preline/scrollspy": "2.1.0",
     "@tailwindcss/typography": "0.5.12",
-    "astro": "4.5.15",
+    "astro": "4.5.16",
     "astro-icon": "1.1.0",
     "commander": "12.0.0",
     "dayjs": "1.11.10",
