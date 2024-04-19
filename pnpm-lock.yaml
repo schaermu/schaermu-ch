@@ -60,8 +60,8 @@ importers:
         specifier: 4.0.2
         version: 4.0.2
       openai:
-        specifier: 4.38.1
-        version: 4.38.1
+        specifier: 4.38.2
+        version: 4.38.2
       pino:
         specifier: 8.20.0
         version: 8.20.0
@@ -3401,8 +3401,8 @@ packages:
     resolution: {integrity: sha512-mnkeQ1qP5Ue2wd+aivTD3NHd/lZ96Lu0jgf0pwktLPtx6cTZiH7tyeGRRHs0zX0rbrahXPnXlUnbeXyaBBuIaw==}
     engines: {node: '>=18'}
 
-  openai@4.38.1:
-    resolution: {integrity: sha512-nmSKE9O2piuoh9+AgDqwGHojIFSxToQ2jJqwaxjbzz2ebdD5LYY9s+bMe25b18t4QEgvtgW70JfK8BU3xf5dRw==}
+  openai@4.38.2:
+    resolution: {integrity: sha512-M16ehj0D84Gjq5cjvBzXRb5X+UvtWlxPDRAWAWMC0EN+6nHqnULIn5fWWeiexDPup25FeSZYv/ldp8KefcZVJQ==}
     hasBin: true
 
   ora@5.4.1:
@@ -8666,7 +8666,7 @@ snapshots:
       is-inside-container: 1.0.0
       is-wsl: 3.1.0
 
-  openai@4.38.1:
+  openai@4.38.2:
     dependencies:
       '@types/node': 18.19.28
       '@types/node-fetch': 2.6.11
