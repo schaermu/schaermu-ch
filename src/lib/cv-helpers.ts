@@ -5,6 +5,7 @@ import dayjs from "./dayjs";
 // based on private experience and to level out certain outliers
 const SKILL_MODIFIERS = [
     { "Container": 1.9 },
+    { "Cloud": 1.9 },
     { "Security": 2.2 },
     { "Automatisierung": 1.2 }
 ]

@@ -1,5 +1,9 @@
 ---
 import { Picture } from "astro:assets";
+
+const leadContent = `
+    Seit ich in den 90ern die ersten BASIC-Scripts aus dem AMIGA-Magazin minutiös in meinen Amiga 600 abgetippt habe, hat mich die Faszination Software-Entwicklung mit all ihren Facetten nicht mehr losgelassen.
+`;
 ---
 
 <div class="flex gap-5 mb-5">
@@ -19,5 +23,7 @@ import { Picture } from "astro:assets";
         <em class="text-gray-400 text-sm"
             >Senior DevOps Engineer, Baujahr 1983, zu Hause in Bern.</em
         >
+        <p class="hidden lg:block mt-3">{leadContent}</p>
     </div>
 </div>
+<p class="lg:hidden mb-5">{leadContent}</p>
