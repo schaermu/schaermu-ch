@@ -35,6 +35,9 @@ dependencies:
   '@preline/scrollspy':
     specifier: 2.1.0
     version: 2.1.0
+  '@preline/tooltip':
+    specifier: ^2.1.0
+    version: 2.1.0
   '@tailwindcss/typography':
     specifier: 0.5.12
     version: 0.5.12(tailwindcss@3.4.3)
@@ -2017,6 +2020,10 @@ packages:
 
   /@preline/scrollspy@2.1.0:
     resolution: {integrity: sha512-Lp6P6hnQ2g/EZ1WFcCm8/HRHTfj0GIL7YrSUl04NPylY1q3suJ+vyBkdEEx0ohTmsBguX808+qd2vtn6W5crXQ==}
+    dev: false
+
+  /@preline/tooltip@2.1.0:
+    resolution: {integrity: sha512-ateBPiXniSXgHGQog7dsl0wOTKLZrkpo3w8ioAM9t60w3ajZSMMZCsfTbfeWMdHWs/VOOQyMWmRCBPfI369wTQ==}
     dev: false
 
   /@release-it/conventional-changelog@8.0.1(release-it@17.2.0):
