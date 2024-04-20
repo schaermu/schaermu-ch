@@ -5,6 +5,7 @@ import dayjs from "./dayjs";
 // based on private experience and to level out certain outliers
 const SKILL_MODIFIERS = [
     { "Container": 1.9 },
+    { "Cloud": 1.9 },
     { "Security": 2.2 },
     { "Automatisierung": 1.2 }
 ]
@@ -12,7 +13,7 @@ const SKILL_MODIFIERS = [
 // aggregate tech skills into groups
 const SKILL_GROUPS = [
     { label: "Frontend", skills: ["HTML/CSS", "JavaScript", "Angular"] },
-    { label: "Backend", skills: ["Node.JS", "Dotnet", "Python", "Django", "PHP"] },
+    { label: "Backend", skills: ["Golang", "Node.JS", "Dotnet", "Python", "Django", "PHP"] },
     { label: "Cloud", skills: ["AWS", "Cloud-Migration", "Azure", "GCP"] },
     { label: "Container", skills: ["Docker", "Kubernetes", "Helm"] }
 ]
@@ -20,6 +21,14 @@ const SKILL_GROUPS = [
 // define skill groups
 const TECH_SKILLS = ["Frontend", "Backend", "Cloud", "Container", "Security", "Automatisierung"]
 const METHOD_SKILLS = ["Agile", "SAFe", "Requirements Management", "Design Thinking", "Scrum", "Kanban", "Design Thinking"]
+
+const getToolTip = (label: string) => {
+    const idx = SKILL_GROUPS.findIndex(group => group.label === label);
+    if (idx > -1) {
+        return SKILL_GROUPS[idx].skills.join(", ");
+    }
+    return label;
+}
 
 const getMaxDays = (entries: CollectionEntry<"cv-entries">[]) => {
     const maxFromDate = entries.map(entry => entry.data.from).reduce((acc: Date, date: Date) => {
@@ -108,4 +117,5 @@ const calculateSkillScore = (entry: CollectionEntry<"cv-entries">, maxDays: numb
 
 export {
     getTopSkills,
+    getToolTip
 }
