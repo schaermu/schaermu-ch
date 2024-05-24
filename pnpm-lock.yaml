@@ -72,8 +72,8 @@ importers:
         specifier: 11.1.0
         version: 11.1.0
       preline:
-        specifier: 2.1.0
-        version: 2.1.0
+        specifier: 2.3.0
+        version: 2.3.0
       sharp:
         specifier: 0.33.3
         version: 0.33.3
@@ -3614,8 +3614,8 @@ packages:
     resolution: {integrity: sha512-MkXsENfftWSRpzCzImcp4FRsCc3y1opwB73CfCNWyzMqArju2CrlMHlqB7VexKiPEOjGMbttv1r9fSCn5S610w==}
     engines: {node: '>=10'}
 
-  preline@2.1.0:
-    resolution: {integrity: sha512-7pwrGNPVfGYUv1XHW9i49ejowIVHCDTx8JvbM43hapLi1GCjj9NnAZmTKupxaROboB4Nvp2x0ADBVKAhpmZppA==}
+  preline@2.3.0:
+    resolution: {integrity: sha512-mBMF7NTbbhC2wp+1RHbBaHUCXsdM9ObJo64LvDcNRSKLbaC4uszkqBZ/X/paklEQh3+dOUAVBp1zvE5yQf/czw==}
 
   prismjs@1.29.0:
     resolution: {integrity: sha512-Kx/1w86q/epKcmte75LNrEoT+lX8pBpavuAbvJWRXar7Hz8jrtF+e3vY751p0R8H9HdArwaCTNDDzHg/ScJK1Q==}
@@ -8815,7 +8815,7 @@ snapshots:
       path-exists: 4.0.0
       which-pm: 2.0.0
 
-  preline@2.1.0:
+  preline@2.3.0:
     dependencies:
       '@popperjs/core': 2.11.8
 
