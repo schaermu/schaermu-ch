@@ -89,16 +89,16 @@ importers:
     devDependencies:
       '@csmith/release-it-calver-plugin':
         specifier: 2023.12.0
-        version: 2023.12.0(release-it@17.4.1(typescript@5.4.5))
+        version: 2023.12.0(release-it@17.5.0(typescript@5.4.5))
       '@playwright/test':
         specifier: 1.45.1
         version: 1.45.1
       '@release-it/conventional-changelog':
         specifier: 8.0.1
-        version: 8.0.1(release-it@17.4.1(typescript@5.4.5))
+        version: 8.0.1(release-it@17.5.0(typescript@5.4.5))
       release-it:
-        specifier: 17.4.1
-        version: 17.4.1(typescript@5.4.5)
+        specifier: 17.5.0
+        version: 17.5.0(typescript@5.4.5)
 
 packages:
 
@@ -3386,8 +3386,8 @@ packages:
   rehype@13.0.1:
     resolution: {integrity: sha512-AcSLS2mItY+0fYu9xKxOu1LhUZeBZZBx8//5HKzF+0XP+eP8+6a5MXn2+DW2kfXR6Dtp1FEXMVrjyKAcvcU8vg==}
 
-  release-it@17.4.1:
-    resolution: {integrity: sha512-Aa48kKx5qZRVXJ6YCnCJRg6sJiofEX7RErTLmnlFbCE7k1Kg8ayhgJovofuBhCtz3FRdsYnxBKjlh+VAMeazEA==}
+  release-it@17.5.0:
+    resolution: {integrity: sha512-+g6k/7i6AjdCozLkcybvwgYLw/RF6bcYJHf1xDLcg36GeBu8zr/geI9joLk5drubiE/UKdN694vwAeimmJWt8Q==}
     engines: {node: ^18.18.0 || ^20.9.0 || ^22.0.0}
     hasBin: true
 
@@ -4807,12 +4807,12 @@ snapshots:
       '@babel/helper-validator-identifier': 7.24.7
       to-fast-properties: 2.0.0
 
-  '@csmith/release-it-calver-plugin@2023.12.0(release-it@17.4.1(typescript@5.4.5))':
+  '@csmith/release-it-calver-plugin@2023.12.0(release-it@17.5.0(typescript@5.4.5))':
     dependencies:
       calver: 22.9.1
       chai: 5.1.1
       mocha: 10.4.0
-      release-it: 17.4.1(typescript@5.4.5)
+      release-it: 17.5.0(typescript@5.4.5)
 
   '@emnapi/runtime@1.2.0':
     dependencies:
@@ -5138,12 +5138,12 @@ snapshots:
 
   '@preline/tooltip@2.3.0': {}
 
-  '@release-it/conventional-changelog@8.0.1(release-it@17.4.1(typescript@5.4.5))':
+  '@release-it/conventional-changelog@8.0.1(release-it@17.5.0(typescript@5.4.5))':
     dependencies:
       concat-stream: 2.0.0
       conventional-changelog: 5.1.0
       conventional-recommended-bump: 9.0.0
-      release-it: 17.4.1(typescript@5.4.5)
+      release-it: 17.5.0(typescript@5.4.5)
       semver: 7.6.2
 
   '@rollup/rollup-android-arm-eabi@4.18.0':
@@ -8141,7 +8141,7 @@ snapshots:
       rehype-stringify: 10.0.0
       unified: 11.0.5
 
-  release-it@17.4.1(typescript@5.4.5):
+  release-it@17.5.0(typescript@5.4.5):
     dependencies:
       '@iarna/toml': 2.2.5
       '@octokit/rest': 20.1.1
