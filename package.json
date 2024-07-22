@@ -28,7 +28,7 @@
     "astro": "4.11.5",
     "astro-icon": "1.1.0",
     "commander": "12.1.0",
-    "dayjs": "1.11.11",
+    "dayjs": "1.11.12",
     "dotenv": "16.4.5",
     "front-matter": "4.0.2",
     "openai": "4.52.7",
