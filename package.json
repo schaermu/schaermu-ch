@@ -32,7 +32,7 @@
     "dotenv": "16.4.5",
     "front-matter": "4.0.2",
     "openai": "4.53.0",
-    "pino": "9.2.0",
+    "pino": "9.3.1",
     "pino-pretty": "11.2.1",
     "preline": "2.4.0",
     "sharp": "0.33.4",
