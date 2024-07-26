@@ -39,8 +39,8 @@ importers:
         specifier: 2.4.1
         version: 2.4.1
       '@preline/tooltip':
-        specifier: 2.4.0
-        version: 2.4.0
+        specifier: 2.4.1
+        version: 2.4.1
       '@tailwindcss/typography':
         specifier: 0.5.13
         version: 0.5.13(tailwindcss@3.4.7)
@@ -851,8 +851,8 @@ packages:
   '@preline/scrollspy@2.4.1':
     resolution: {integrity: sha512-9HBiGqSRHyzRsL0oJ/n1a22W1SmzOAIHEcjYeVOVoMHPeik2Lk1Z2okMvbeNYElQUz2EXSr47IeYx33bPe8Y5A==}
 
-  '@preline/tooltip@2.4.0':
-    resolution: {integrity: sha512-4PSaH/oSwXYlnp3diPo1rD5grO++V7OwUSRMv47VGBqf4mNRq+28nKdTe+dO4xOqj1cBihW++W/QdSYRMqCySQ==}
+  '@preline/tooltip@2.4.1':
+    resolution: {integrity: sha512-jl2pUDuntN8I+xhzFWhbiZFcZapBIiVyIJLE8ffh1n/jtoiyCQseXL439xpM5AHAngblcQLHijT39KFZz8WzOA==}
 
   '@release-it/conventional-changelog@8.0.1':
     resolution: {integrity: sha512-pwc9jaBYDaSX5TXw6rEnPfqDkKJN2sFBhYpON1kBi9T3sA9EOBncC4ed0Bv3L1ciNb6eqEJXPfp+tQMqVlv/eg==}
@@ -5123,7 +5123,7 @@ snapshots:
 
   '@preline/scrollspy@2.4.1': {}
 
-  '@preline/tooltip@2.4.0': {}
+  '@preline/tooltip@2.4.1': {}
 
   '@release-it/conventional-changelog@8.0.1(release-it@17.6.0(typescript@5.5.3))':
     dependencies:
