@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@astrojs/markdoc':
         specifier: 0.11.3
-        version: 0.11.3(astro@4.14.1(@types/node@20.14.10)(rollup@4.18.1)(typescript@5.5.3))
+        version: 0.11.3(astro@4.14.2(@types/node@20.14.10)(rollup@4.18.1)(typescript@5.5.3))
       '@astrojs/prism':
         specifier: 3.1.0
         version: 3.1.0
@@ -19,10 +19,10 @@ importers:
         version: 4.0.7
       '@astrojs/svelte':
         specifier: 5.7.0
-        version: 5.7.0(astro@4.14.1(@types/node@20.14.10)(rollup@4.18.1)(typescript@5.5.3))(svelte@4.2.18)(typescript@5.5.3)(vite@5.4.0(@types/node@20.14.10))
+        version: 5.7.0(astro@4.14.2(@types/node@20.14.10)(rollup@4.18.1)(typescript@5.5.3))(svelte@4.2.18)(typescript@5.5.3)(vite@5.4.0(@types/node@20.14.10))
       '@astrojs/tailwind':
         specifier: 5.1.0
-        version: 5.1.0(astro@4.14.1(@types/node@20.14.10)(rollup@4.18.1)(typescript@5.5.3))(tailwindcss@3.4.10)
+        version: 5.1.0(astro@4.14.2(@types/node@20.14.10)(rollup@4.18.1)(typescript@5.5.3))(tailwindcss@3.4.10)
       '@aws-sdk/client-s3':
         specifier: 3.631.0
         version: 3.631.0
@@ -45,8 +45,8 @@ importers:
         specifier: 0.5.14
         version: 0.5.14(tailwindcss@3.4.10)
       astro:
-        specifier: 4.14.1
-        version: 4.14.1(@types/node@20.14.10)(rollup@4.18.1)(typescript@5.5.3)
+        specifier: 4.14.2
+        version: 4.14.2(@types/node@20.14.10)(rollup@4.18.1)(typescript@5.5.3)
       astro-icon:
         specifier: 1.1.0
         version: 1.1.0
@@ -1340,8 +1340,8 @@ packages:
   astro-icon@1.1.0:
     resolution: {integrity: sha512-Nksc09p7UuHeMcPNS9w1pKqRw3+wEmmh0A3FJW+FNXvqaeWI4RLvD1MCWErpY3Z5Cvad317rvLdik/Hg8GEk8Q==}
 
-  astro@4.14.1:
-    resolution: {integrity: sha512-tLhGE+vHl+n66KgzyV7ek6ro2dqKenHqdxPb/R6x9ci+fKG5lSSOeb/dP/XVhpKUMcuV98IGWTxL5VPzqPFUJQ==}
+  astro@4.14.2:
+    resolution: {integrity: sha512-x9VeYx8Ih6kYKBMVwwsfRzsZVq30+SUhiawnYQ6+46qQnEx3zH05KcH24HsJMe6dVpHD8HdH7CWR5C4o7Q/jeg==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -4068,13 +4068,13 @@ snapshots:
 
   '@astrojs/internal-helpers@0.4.1': {}
 
-  '@astrojs/markdoc@0.11.3(astro@4.14.1(@types/node@20.14.10)(rollup@4.18.1)(typescript@5.5.3))':
+  '@astrojs/markdoc@0.11.3(astro@4.14.2(@types/node@20.14.10)(rollup@4.18.1)(typescript@5.5.3))':
     dependencies:
       '@astrojs/internal-helpers': 0.4.1
       '@astrojs/markdown-remark': 5.2.0
       '@astrojs/prism': 3.1.0
       '@markdoc/markdoc': 0.4.0
-      astro: 4.14.1(@types/node@20.14.10)(rollup@4.18.1)(typescript@5.5.3)
+      astro: 4.14.2(@types/node@20.14.10)(rollup@4.18.1)(typescript@5.5.3)
       esbuild: 0.21.5
       github-slugger: 2.0.0
       gray-matter: 4.0.3
@@ -4118,10 +4118,10 @@ snapshots:
       fast-xml-parser: 4.4.1
       kleur: 4.1.5
 
-  '@astrojs/svelte@5.7.0(astro@4.14.1(@types/node@20.14.10)(rollup@4.18.1)(typescript@5.5.3))(svelte@4.2.18)(typescript@5.5.3)(vite@5.4.0(@types/node@20.14.10))':
+  '@astrojs/svelte@5.7.0(astro@4.14.2(@types/node@20.14.10)(rollup@4.18.1)(typescript@5.5.3))(svelte@4.2.18)(typescript@5.5.3)(vite@5.4.0(@types/node@20.14.10))':
     dependencies:
       '@sveltejs/vite-plugin-svelte': 3.1.1(svelte@4.2.18)(vite@5.4.0(@types/node@20.14.10))
-      astro: 4.14.1(@types/node@20.14.10)(rollup@4.18.1)(typescript@5.5.3)
+      astro: 4.14.2(@types/node@20.14.10)(rollup@4.18.1)(typescript@5.5.3)
       svelte: 4.2.18
       svelte2tsx: 0.7.13(svelte@4.2.18)(typescript@5.5.3)
       typescript: 5.5.3
@@ -4129,9 +4129,9 @@ snapshots:
       - supports-color
       - vite
 
-  '@astrojs/tailwind@5.1.0(astro@4.14.1(@types/node@20.14.10)(rollup@4.18.1)(typescript@5.5.3))(tailwindcss@3.4.10)':
+  '@astrojs/tailwind@5.1.0(astro@4.14.2(@types/node@20.14.10)(rollup@4.18.1)(typescript@5.5.3))(tailwindcss@3.4.10)':
     dependencies:
-      astro: 4.14.1(@types/node@20.14.10)(rollup@4.18.1)(typescript@5.5.3)
+      astro: 4.14.2(@types/node@20.14.10)(rollup@4.18.1)(typescript@5.5.3)
       autoprefixer: 10.4.19(postcss@8.4.41)
       postcss: 8.4.41
       postcss-load-config: 4.0.2(postcss@8.4.41)
@@ -5733,7 +5733,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  astro@4.14.1(@types/node@20.14.10)(rollup@4.18.1)(typescript@5.5.3):
+  astro@4.14.2(@types/node@20.14.10)(rollup@4.18.1)(typescript@5.5.3):
     dependencies:
       '@astrojs/compiler': 2.10.2
       '@astrojs/internal-helpers': 0.4.1
@@ -5798,6 +5798,7 @@ snapshots:
       vitefu: 0.2.5(vite@5.4.0(@types/node@20.14.10))
       which-pm: 3.0.0
       xxhash-wasm: 1.0.2
+      yargs-parser: 21.1.1
       zod: 3.23.8
       zod-to-json-schema: 3.23.2(zod@3.23.8)
       zod-to-ts: 1.2.0(typescript@5.5.3)(zod@3.23.8)
