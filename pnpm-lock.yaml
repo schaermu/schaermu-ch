@@ -30,11 +30,11 @@ importers:
         specifier: 5.0.19
         version: 5.0.19
       '@iconify-json/fa-brands':
-        specifier: 1.1.9
-        version: 1.1.9
+        specifier: 1.2.0
+        version: 1.2.0
       '@iconify-json/fa-solid':
-        specifier: 1.1.9
-        version: 1.1.9
+        specifier: 1.2.0
+        version: 1.2.0
       '@preline/scrollspy':
         specifier: 2.4.1
         version: 2.4.1
@@ -574,11 +574,11 @@ packages:
   '@iarna/toml@2.2.5':
     resolution: {integrity: sha512-trnsAYxU3xnS1gPHPyU961coFyLkh4gAD/0zQ5mymY4yOZ+CYvsPqUbOFSw0aDM4y0tV7tiFxL/1XfXPNC6IPg==}
 
-  '@iconify-json/fa-brands@1.1.9':
-    resolution: {integrity: sha512-ZxmF81wCR1mHh0YiaRdMg9gTWtxacSN7OrdKxZG4QYm3MXJlcHdxBO6/qAqC9EhVIjkhJSS6hOclKInH0mX28w==}
+  '@iconify-json/fa-brands@1.2.0':
+    resolution: {integrity: sha512-063zve/7GEfzEnlDQycVQbcrx6MD206bmrnWLYaPFvLcPVioN8DGPbOBzpy3/zI2RQFe/T+ZuCB8XWi+AmBR9w==}
 
-  '@iconify-json/fa-solid@1.1.9':
-    resolution: {integrity: sha512-0hFYl7359Cs1eQu2NJZ65GKAn+Vh4exnRPU7MJUIElXFYfkMoYHPJ42vR6yjXMD2JczrH2XEdoETXIbD9UBVUA==}
+  '@iconify-json/fa-solid@1.2.0':
+    resolution: {integrity: sha512-8WV0gViiLN7WK150B9Ub+2nzqOmdmhMAKZAO9JqRDGhO07GEH4T/FYlKXK2zlF51C6HAx8fXV8pDapDX3TBavg==}
 
   '@iconify/tools@4.0.5':
     resolution: {integrity: sha512-l8KoA1lxlN/FFjlMd3vjfD7BtcX/QnFWtlBapILMlJSBgM5zhDYak/ldw/LkKG3258q/0YmXa48sO/QpxX7ptg==}
@@ -4966,11 +4966,11 @@ snapshots:
 
   '@iarna/toml@2.2.5': {}
 
-  '@iconify-json/fa-brands@1.1.9':
+  '@iconify-json/fa-brands@1.2.0':
     dependencies:
       '@iconify/types': 2.0.0
 
-  '@iconify-json/fa-solid@1.1.9':
+  '@iconify-json/fa-solid@1.2.0':
     dependencies:
       '@iconify/types': 2.0.0
 
