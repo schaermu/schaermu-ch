@@ -25,7 +25,7 @@
     "@preline/scrollspy": "2.4.1",
     "@preline/tooltip": "2.4.1",
     "@tailwindcss/typography": "0.5.15",
-    "astro": "4.15.4",
+    "astro": "4.15.5",
     "astro-icon": "1.1.1",
     "commander": "12.1.0",
     "dayjs": "1.11.13",
