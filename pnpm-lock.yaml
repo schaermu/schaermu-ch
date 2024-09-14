@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@astrojs/markdoc':
         specifier: 0.11.4
-        version: 0.11.4(astro@4.15.5(@types/node@20.14.10)(rollup@4.21.0)(typescript@5.5.3))
+        version: 0.11.4(astro@4.15.6(@types/node@20.14.10)(rollup@4.21.0)(typescript@5.5.3))
       '@astrojs/prism':
         specifier: 3.1.0
         version: 3.1.0
@@ -19,10 +19,10 @@ importers:
         version: 4.0.7
       '@astrojs/svelte':
         specifier: 5.7.0
-        version: 5.7.0(astro@4.15.5(@types/node@20.14.10)(rollup@4.21.0)(typescript@5.5.3))(svelte@4.2.19)(typescript@5.5.3)(vite@5.4.5(@types/node@20.14.10))
+        version: 5.7.0(astro@4.15.6(@types/node@20.14.10)(rollup@4.21.0)(typescript@5.5.3))(svelte@4.2.19)(typescript@5.5.3)(vite@5.4.5(@types/node@20.14.10))
       '@astrojs/tailwind':
         specifier: 5.1.0
-        version: 5.1.0(astro@4.15.5(@types/node@20.14.10)(rollup@4.21.0)(typescript@5.5.3))(tailwindcss@3.4.11)
+        version: 5.1.0(astro@4.15.6(@types/node@20.14.10)(rollup@4.21.0)(typescript@5.5.3))(tailwindcss@3.4.11)
       '@aws-sdk/client-s3':
         specifier: 3.651.1
         version: 3.651.1
@@ -45,8 +45,8 @@ importers:
         specifier: 0.5.15
         version: 0.5.15(tailwindcss@3.4.11)
       astro:
-        specifier: 4.15.5
-        version: 4.15.5(@types/node@20.14.10)(rollup@4.21.0)(typescript@5.5.3)
+        specifier: 4.15.6
+        version: 4.15.6(@types/node@20.14.10)(rollup@4.21.0)(typescript@5.5.3)
       astro-icon:
         specifier: 1.1.1
         version: 1.1.1
@@ -1359,8 +1359,8 @@ packages:
   astro-icon@1.1.1:
     resolution: {integrity: sha512-HKBesWk2Faw/0+klLX+epQVqdTfSzZz/9+5vxXUjTJaN/HnpDf608gRPgHh7ZtwBPNJMEFoU5GLegxoDcT56OQ==}
 
-  astro@4.15.5:
-    resolution: {integrity: sha512-zcHXpRav0dtYpddxoGMDN7A7SKrGL9wsu5IxLjqCcZhylfZ/5mfLfoGYnSg7aFwuAleUXP66lyfY+GDbFTbF2w==}
+  astro@4.15.6:
+    resolution: {integrity: sha512-SWcUNwm8CiVRaIbh4w5byh62BNihpsovlCd4ElvC7cL/53D24HcI7AaGFsPrromCamQklwQmIan/QS7x/3lLuQ==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -3244,6 +3244,9 @@ packages:
     resolution: {integrity: sha512-Xa4Nw17FS9ApQFJ9umLiJS4orGjm7ZzwUrwamcGQuHSzDyth9boKDaycYdDcZDuqYATXw4HFXgaqWTctW/v1HA==}
     engines: {node: '>=16 || 14 >=14.18'}
 
+  path-to-regexp@6.2.2:
+    resolution: {integrity: sha512-GQX3SSMokngb36+whdpRXE+3f9V8UzyAorlYvOGx87ufGHehNTn5lCxrKtLyZ4Yl/wEKnNnr98ZzOwwDZV5ogw==}
+
   path-type@5.0.0:
     resolution: {integrity: sha512-5HviZNaZcfqP95rwpv+1HDgUamezbqdSYTyzjTvwtJSnIH+3vnbmWsItli8OFEndS984VT55M3jduxZbX351gg==}
     engines: {node: '>=12'}
@@ -4207,13 +4210,13 @@ snapshots:
 
   '@astrojs/internal-helpers@0.4.1': {}
 
-  '@astrojs/markdoc@0.11.4(astro@4.15.5(@types/node@20.14.10)(rollup@4.21.0)(typescript@5.5.3))':
+  '@astrojs/markdoc@0.11.4(astro@4.15.6(@types/node@20.14.10)(rollup@4.21.0)(typescript@5.5.3))':
     dependencies:
       '@astrojs/internal-helpers': 0.4.1
       '@astrojs/markdown-remark': 5.2.0
       '@astrojs/prism': 3.1.0
       '@markdoc/markdoc': 0.4.0
-      astro: 4.15.5(@types/node@20.14.10)(rollup@4.21.0)(typescript@5.5.3)
+      astro: 4.15.6(@types/node@20.14.10)(rollup@4.21.0)(typescript@5.5.3)
       esbuild: 0.21.5
       github-slugger: 2.0.0
       gray-matter: 4.0.3
@@ -4255,10 +4258,10 @@ snapshots:
       fast-xml-parser: 4.4.1
       kleur: 4.1.5
 
-  '@astrojs/svelte@5.7.0(astro@4.15.5(@types/node@20.14.10)(rollup@4.21.0)(typescript@5.5.3))(svelte@4.2.19)(typescript@5.5.3)(vite@5.4.5(@types/node@20.14.10))':
+  '@astrojs/svelte@5.7.0(astro@4.15.6(@types/node@20.14.10)(rollup@4.21.0)(typescript@5.5.3))(svelte@4.2.19)(typescript@5.5.3)(vite@5.4.5(@types/node@20.14.10))':
     dependencies:
       '@sveltejs/vite-plugin-svelte': 3.1.1(svelte@4.2.19)(vite@5.4.5(@types/node@20.14.10))
-      astro: 4.15.5(@types/node@20.14.10)(rollup@4.21.0)(typescript@5.5.3)
+      astro: 4.15.6(@types/node@20.14.10)(rollup@4.21.0)(typescript@5.5.3)
       svelte: 4.2.19
       svelte2tsx: 0.7.13(svelte@4.2.19)(typescript@5.5.3)
       typescript: 5.5.3
@@ -4266,9 +4269,9 @@ snapshots:
       - supports-color
       - vite
 
-  '@astrojs/tailwind@5.1.0(astro@4.15.5(@types/node@20.14.10)(rollup@4.21.0)(typescript@5.5.3))(tailwindcss@3.4.11)':
+  '@astrojs/tailwind@5.1.0(astro@4.15.6(@types/node@20.14.10)(rollup@4.21.0)(typescript@5.5.3))(tailwindcss@3.4.11)':
     dependencies:
-      astro: 4.15.5(@types/node@20.14.10)(rollup@4.21.0)(typescript@5.5.3)
+      astro: 4.15.6(@types/node@20.14.10)(rollup@4.21.0)(typescript@5.5.3)
       autoprefixer: 10.4.19(postcss@8.4.45)
       postcss: 8.4.45
       postcss-load-config: 4.0.2(postcss@8.4.45)
@@ -5908,7 +5911,7 @@ snapshots:
       - debug
       - supports-color
 
-  astro@4.15.5(@types/node@20.14.10)(rollup@4.21.0)(typescript@5.5.3):
+  astro@4.15.6(@types/node@20.14.10)(rollup@4.21.0)(typescript@5.5.3):
     dependencies:
       '@astrojs/compiler': 2.10.3
       '@astrojs/internal-helpers': 0.4.1
@@ -5956,6 +5959,7 @@ snapshots:
       ora: 8.1.0
       p-limit: 6.1.0
       p-queue: 8.0.1
+      path-to-regexp: 6.2.2
       preferred-pm: 4.0.0
       prompts: 2.4.2
       rehype: 13.0.1
@@ -8117,6 +8121,8 @@ snapshots:
     dependencies:
       lru-cache: 10.4.3
       minipass: 7.1.2
+
+  path-to-regexp@6.2.2: {}
 
   path-type@5.0.0: {}
 
