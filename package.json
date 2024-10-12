@@ -13,11 +13,11 @@
     "openai": "node ./scripts/openai.js"
   },
   "dependencies": {
-    "@astrojs/markdoc": "0.11.4",
+    "@astrojs/markdoc": "0.11.5",
     "@astrojs/prism": "3.1.0",
-    "@astrojs/rss": "4.0.7",
+    "@astrojs/rss": "4.0.8",
     "@astrojs/svelte": "5.7.2",
-    "@astrojs/tailwind": "5.1.1",
+    "@astrojs/tailwind": "5.1.2",
     "@aws-sdk/client-s3": "3.670.0",
     "@fontsource/space-grotesk": "5.1.0",
     "@iconify-json/fa-brands": "1.2.0",
@@ -25,7 +25,7 @@
     "@preline/scrollspy": "2.5.0",
     "@preline/tooltip": "2.5.0",
     "@tailwindcss/typography": "0.5.15",
-    "astro": "4.15.12",
+    "astro": "4.16.2",
     "astro-icon": "1.1.1",
     "commander": "12.1.0",
     "dayjs": "1.11.13",
