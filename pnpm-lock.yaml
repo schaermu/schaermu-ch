@@ -89,16 +89,16 @@ importers:
     devDependencies:
       '@csmith/release-it-calver-plugin':
         specifier: 2023.12.0
-        version: 2023.12.0(release-it@17.8.2(typescript@5.5.3))
+        version: 2023.12.0(release-it@17.9.0(typescript@5.5.3))
       '@playwright/test':
         specifier: 1.48.0
         version: 1.48.0
       '@release-it/conventional-changelog':
         specifier: 9.0.0
-        version: 9.0.0(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.0.0)(release-it@17.8.2(typescript@5.5.3))
+        version: 9.0.0(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.0.0)(release-it@17.9.0(typescript@5.5.3))
       release-it:
-        specifier: 17.8.2
-        version: 17.8.2(typescript@5.5.3)
+        specifier: 17.9.0
+        version: 17.9.0(typescript@5.5.3)
 
 packages:
 
@@ -3274,8 +3274,8 @@ packages:
   rehype@13.0.2:
     resolution: {integrity: sha512-j31mdaRFrwFRUIlxGeuPXXKWQxet52RBQRvCmzl5eCefn/KGbomK5GMHNMsOJf55fgo3qw5tST5neDuarDYR2A==}
 
-  release-it@17.8.2:
-    resolution: {integrity: sha512-IgTrtALUTDEYBnVk/c6WNUkwNN+8S7/AE+PgdpP1wS+9kBm3H5tQ8AaNwkvQX/smULxOdFqMEd6DMUDHJfW7NA==}
+  release-it@17.9.0:
+    resolution: {integrity: sha512-KAZqvYcfYI/Rva8yr7vzVruM3mN8kuUR1WeQfOtGrc4ub7bGYf8eN91NOXC73LJE1uNpVlppF5xB8KOvKtQosg==}
     engines: {node: ^18.18.0 || ^20.9.0 || ^22.0.0}
     hasBin: true
 
@@ -4692,12 +4692,12 @@ snapshots:
       conventional-commits-filter: 5.0.0
       conventional-commits-parser: 6.0.0
 
-  '@csmith/release-it-calver-plugin@2023.12.0(release-it@17.8.2(typescript@5.5.3))':
+  '@csmith/release-it-calver-plugin@2023.12.0(release-it@17.9.0(typescript@5.5.3))':
     dependencies:
       calver: 22.9.1
       chai: 5.1.1
       mocha: 10.6.0
-      release-it: 17.8.2(typescript@5.5.3)
+      release-it: 17.9.0(typescript@5.5.3)
 
   '@emnapi/runtime@1.2.0':
     dependencies:
@@ -5027,13 +5027,13 @@ snapshots:
 
   '@preline/tooltip@2.5.0': {}
 
-  '@release-it/conventional-changelog@9.0.0(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.0.0)(release-it@17.8.2(typescript@5.5.3))':
+  '@release-it/conventional-changelog@9.0.0(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.0.0)(release-it@17.9.0(typescript@5.5.3))':
     dependencies:
       concat-stream: 2.0.0
       conventional-changelog: 6.0.0(conventional-commits-filter@5.0.0)
       conventional-recommended-bump: 10.0.0
       git-semver-tags: 8.0.0(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.0.0)
-      release-it: 17.8.2(typescript@5.5.3)
+      release-it: 17.9.0(typescript@5.5.3)
       semver: 7.6.3
     transitivePeerDependencies:
       - conventional-commits-filter
@@ -7949,7 +7949,7 @@ snapshots:
       rehype-stringify: 10.0.1
       unified: 11.0.5
 
-  release-it@17.8.2(typescript@5.5.3):
+  release-it@17.9.0(typescript@5.5.3):
     dependencies:
       '@iarna/toml': 2.2.5
       '@octokit/rest': 20.1.1
