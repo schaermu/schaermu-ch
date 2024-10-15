@@ -15,7 +15,7 @@
   "dependencies": {
     "@astrojs/markdoc": "0.11.5",
     "@astrojs/prism": "3.1.0",
-    "@astrojs/rss": "4.0.8",
+    "@astrojs/rss": "4.0.9",
     "@astrojs/svelte": "5.7.2",
     "@astrojs/tailwind": "5.1.2",
     "@aws-sdk/client-s3": "3.670.0",
@@ -25,7 +25,7 @@
     "@preline/scrollspy": "2.5.0",
     "@preline/tooltip": "2.5.0",
     "@tailwindcss/typography": "0.5.15",
-    "astro": "4.16.4",
+    "astro": "4.16.5",
     "astro-icon": "1.1.1",
     "commander": "12.1.0",
     "dayjs": "1.11.13",
