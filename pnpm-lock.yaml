@@ -94,8 +94,8 @@ importers:
         specifier: 1.48.1
         version: 1.48.1
       '@release-it/conventional-changelog':
-        specifier: 9.0.0
-        version: 9.0.0(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.0.0)(release-it@17.10.0(typescript@5.5.3))
+        specifier: 9.0.1
+        version: 9.0.1(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.0.0)(release-it@17.10.0(typescript@5.5.3))
       release-it:
         specifier: 17.10.0
         version: 17.10.0(typescript@5.5.3)
@@ -841,8 +841,8 @@ packages:
   '@preline/tooltip@2.5.0':
     resolution: {integrity: sha512-ZC6o4ZeBWCkih5cp+KxKX2WkH/Y5Afu/2yrwlCOqf+Chy3ff5YEJXfkuUN5ReIE/oYnVIjb1e+n/DZXPQACTYA==}
 
-  '@release-it/conventional-changelog@9.0.0':
-    resolution: {integrity: sha512-jISIZ3kFR/xxBlDlbLBdQJsIDaml6NzTueAps3uZV2GDnQhe6FytCAmztiyEXRvCBXIvVV4X/O9S2l5zt2vmbA==}
+  '@release-it/conventional-changelog@9.0.1':
+    resolution: {integrity: sha512-7vGLMLcj/MaQjktNPR0rI6fdFVvVDXpOqk/fVTaFSeMVd9vjpVGrvRg5+Ko82Z/dOsiLGLEMFMQ9Xu31YjvJ5g==}
     engines: {node: ^18.18.0 || ^20.9.0 || ^22.0.0}
     peerDependencies:
       release-it: ^17.0.0
@@ -5027,7 +5027,7 @@ snapshots:
 
   '@preline/tooltip@2.5.0': {}
 
-  '@release-it/conventional-changelog@9.0.0(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.0.0)(release-it@17.10.0(typescript@5.5.3))':
+  '@release-it/conventional-changelog@9.0.1(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.0.0)(release-it@17.10.0(typescript@5.5.3))':
     dependencies:
       concat-stream: 2.0.0
       conventional-changelog: 6.0.0(conventional-commits-filter@5.0.0)
