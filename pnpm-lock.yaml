@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@astrojs/markdoc':
         specifier: 0.11.5
-        version: 0.11.5(astro@4.16.10(@types/node@20.14.10)(rollup@4.24.0)(typescript@5.5.3))
+        version: 0.11.5(astro@4.16.11(@types/node@20.14.10)(rollup@4.24.0)(typescript@5.5.3))
       '@astrojs/prism':
         specifier: 3.1.0
         version: 3.1.0
@@ -19,10 +19,10 @@ importers:
         version: 4.0.9
       '@astrojs/svelte':
         specifier: 5.7.3
-        version: 5.7.3(astro@4.16.10(@types/node@20.14.10)(rollup@4.24.0)(typescript@5.5.3))(svelte@4.2.19)(typescript@5.5.3)(vite@5.4.10(@types/node@20.14.10))
+        version: 5.7.3(astro@4.16.11(@types/node@20.14.10)(rollup@4.24.0)(typescript@5.5.3))(svelte@4.2.19)(typescript@5.5.3)(vite@5.4.10(@types/node@20.14.10))
       '@astrojs/tailwind':
         specifier: 5.1.2
-        version: 5.1.2(astro@4.16.10(@types/node@20.14.10)(rollup@4.24.0)(typescript@5.5.3))(tailwindcss@3.4.14)
+        version: 5.1.2(astro@4.16.11(@types/node@20.14.10)(rollup@4.24.0)(typescript@5.5.3))(tailwindcss@3.4.14)
       '@aws-sdk/client-s3':
         specifier: 3.689.0
         version: 3.689.0
@@ -45,8 +45,8 @@ importers:
         specifier: 0.5.15
         version: 0.5.15(tailwindcss@3.4.14)
       astro:
-        specifier: 4.16.10
-        version: 4.16.10(@types/node@20.14.10)(rollup@4.24.0)(typescript@5.5.3)
+        specifier: 4.16.11
+        version: 4.16.11(@types/node@20.14.10)(rollup@4.24.0)(typescript@5.5.3)
       astro-icon:
         specifier: 1.1.2
         version: 1.1.2
@@ -1330,8 +1330,8 @@ packages:
   astro-icon@1.1.2:
     resolution: {integrity: sha512-2qAHBtZLYuFEIMP0Ck0edyLi5fQmJjwP2Qbv41f8L4KAJ2sra/dH7q5lCOn4q0DHVtS0w3tPG8UKQRits3UPcg==}
 
-  astro@4.16.10:
-    resolution: {integrity: sha512-a+nB4bZE50NXHLzVXUHtx/lYct2Aa8kbqZnWNrWqkU97RuhBuWJ5H5/LQbKRnBWGvqChKfJBiMWJe53TY9ieYQ==}
+  astro@4.16.11:
+    resolution: {integrity: sha512-Pm0ATut4f8kM2OKbSDbatO5Q/f2ynt1dbc5UGQN8I5bFnJvDbJj3R1NE513BOXXv4GQBKJZUshcZEMvlZpA61g==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -3925,13 +3925,13 @@ snapshots:
 
   '@astrojs/internal-helpers@0.4.1': {}
 
-  '@astrojs/markdoc@0.11.5(astro@4.16.10(@types/node@20.14.10)(rollup@4.24.0)(typescript@5.5.3))':
+  '@astrojs/markdoc@0.11.5(astro@4.16.11(@types/node@20.14.10)(rollup@4.24.0)(typescript@5.5.3))':
     dependencies:
       '@astrojs/internal-helpers': 0.4.1
       '@astrojs/markdown-remark': 5.3.0
       '@astrojs/prism': 3.1.0
       '@markdoc/markdoc': 0.4.0
-      astro: 4.16.10(@types/node@20.14.10)(rollup@4.24.0)(typescript@5.5.3)
+      astro: 4.16.11(@types/node@20.14.10)(rollup@4.24.0)(typescript@5.5.3)
       esbuild: 0.21.5
       github-slugger: 2.0.0
       gray-matter: 4.0.3
@@ -3973,10 +3973,10 @@ snapshots:
       fast-xml-parser: 4.5.0
       kleur: 4.1.5
 
-  '@astrojs/svelte@5.7.3(astro@4.16.10(@types/node@20.14.10)(rollup@4.24.0)(typescript@5.5.3))(svelte@4.2.19)(typescript@5.5.3)(vite@5.4.10(@types/node@20.14.10))':
+  '@astrojs/svelte@5.7.3(astro@4.16.11(@types/node@20.14.10)(rollup@4.24.0)(typescript@5.5.3))(svelte@4.2.19)(typescript@5.5.3)(vite@5.4.10(@types/node@20.14.10))':
     dependencies:
       '@sveltejs/vite-plugin-svelte': 3.1.2(svelte@4.2.19)(vite@5.4.10(@types/node@20.14.10))
-      astro: 4.16.10(@types/node@20.14.10)(rollup@4.24.0)(typescript@5.5.3)
+      astro: 4.16.11(@types/node@20.14.10)(rollup@4.24.0)(typescript@5.5.3)
       svelte: 4.2.19
       svelte2tsx: 0.7.22(svelte@4.2.19)(typescript@5.5.3)
       typescript: 5.5.3
@@ -3984,9 +3984,9 @@ snapshots:
       - supports-color
       - vite
 
-  '@astrojs/tailwind@5.1.2(astro@4.16.10(@types/node@20.14.10)(rollup@4.24.0)(typescript@5.5.3))(tailwindcss@3.4.14)':
+  '@astrojs/tailwind@5.1.2(astro@4.16.11(@types/node@20.14.10)(rollup@4.24.0)(typescript@5.5.3))(tailwindcss@3.4.14)':
     dependencies:
-      astro: 4.16.10(@types/node@20.14.10)(rollup@4.24.0)(typescript@5.5.3)
+      astro: 4.16.11(@types/node@20.14.10)(rollup@4.24.0)(typescript@5.5.3)
       autoprefixer: 10.4.20(postcss@8.4.47)
       postcss: 8.4.47
       postcss-load-config: 4.0.2(postcss@8.4.47)
@@ -5608,7 +5608,7 @@ snapshots:
       - debug
       - supports-color
 
-  astro@4.16.10(@types/node@20.14.10)(rollup@4.24.0)(typescript@5.5.3):
+  astro@4.16.11(@types/node@20.14.10)(rollup@4.24.0)(typescript@5.5.3):
     dependencies:
       '@astrojs/compiler': 2.10.3
       '@astrojs/internal-helpers': 0.4.1
