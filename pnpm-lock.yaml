@@ -48,8 +48,8 @@ importers:
         specifier: 4.16.14
         version: 4.16.14(@types/node@20.14.10)(rollup@4.24.0)(typescript@5.5.3)
       astro-icon:
-        specifier: 1.1.2
-        version: 1.1.2
+        specifier: 1.1.4
+        version: 1.1.4
       commander:
         specifier: 12.1.0
         version: 12.1.0
@@ -1327,8 +1327,8 @@ packages:
     resolution: {integrity: sha512-x1FCFnFifvYDDzTaLII71vG5uvDwgtmDTEVWAxrgeiR8VjMONcCXJx7E+USjDtHlwFmt9MysbqgF9b9Vjr6w+w==}
     engines: {node: '>=4'}
 
-  astro-icon@1.1.2:
-    resolution: {integrity: sha512-2qAHBtZLYuFEIMP0Ck0edyLi5fQmJjwP2Qbv41f8L4KAJ2sra/dH7q5lCOn4q0DHVtS0w3tPG8UKQRits3UPcg==}
+  astro-icon@1.1.4:
+    resolution: {integrity: sha512-sMLkQaevIQLv38WBzb/RDbsmxhg5+X+KcNmpTi9cE6MLurNWU1MPnlO87d9Vwg4HxTenKpDlYp81A3syXFW/gw==}
 
   astro@4.16.14:
     resolution: {integrity: sha512-2IuLkIp4idyspugq+F52rHZyNqHHi2AdQzuKp3SGytg/YAm50dNeWhP/7l+enjgWZLloLq5xsH5gVQpoDFoyFg==}
@@ -5599,7 +5599,7 @@ snapshots:
     dependencies:
       tslib: 2.6.3
 
-  astro-icon@1.1.2:
+  astro-icon@1.1.4:
     dependencies:
       '@iconify/tools': 4.0.5
       '@iconify/types': 2.0.0
