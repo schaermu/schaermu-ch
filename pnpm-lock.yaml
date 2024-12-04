@@ -63,8 +63,8 @@ importers:
         specifier: 4.0.2
         version: 4.0.2
       openai:
-        specifier: 4.74.0
-        version: 4.74.0(zod@3.23.8)
+        specifier: 4.75.0
+        version: 4.75.0(zod@3.23.8)
       pino:
         specifier: 9.5.0
         version: 9.5.0
@@ -2888,8 +2888,8 @@ packages:
     resolution: {integrity: sha512-mnkeQ1qP5Ue2wd+aivTD3NHd/lZ96Lu0jgf0pwktLPtx6cTZiH7tyeGRRHs0zX0rbrahXPnXlUnbeXyaBBuIaw==}
     engines: {node: '>=18'}
 
-  openai@4.74.0:
-    resolution: {integrity: sha512-pQ8t1jchUymw5WB5jZPchuBtWvxul7RyVxa+9RWfiCQyzvzUyI2sKvUYfpEDI/ouaRLcik3K6psj15ByCefeNA==}
+  openai@4.75.0:
+    resolution: {integrity: sha512-8cWaK3td0qLspaflKWD6AvpQnl0gynWFbHg7sMAgiu//F20I4GJlCCpllDrECO6WFSuY8HXJj8gji3urw2BGGg==}
     hasBin: true
     peerDependencies:
       zod: ^3.23.8
@@ -7459,7 +7459,7 @@ snapshots:
       is-inside-container: 1.0.0
       is-wsl: 3.1.0
 
-  openai@4.74.0(zod@3.23.8):
+  openai@4.75.0(zod@3.23.8):
     dependencies:
       '@types/node': 18.19.39
       '@types/node-fetch': 2.6.11
