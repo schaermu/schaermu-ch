@@ -36,8 +36,8 @@ importers:
         specifier: 1.2.0
         version: 1.2.0
       '@preline/scrollspy':
-        specifier: 2.5.0
-        version: 2.5.0
+        specifier: 2.6.0
+        version: 2.6.0
       '@preline/tooltip':
         specifier: 2.5.0
         version: 2.5.0
@@ -827,8 +827,8 @@ packages:
   '@popperjs/core@2.11.8':
     resolution: {integrity: sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==}
 
-  '@preline/scrollspy@2.5.0':
-    resolution: {integrity: sha512-sZisX6CXpUZJ2o9BdxGX5Ai4GAvytVZtRgquZmtyhIiSLIHQOCfECrGSYe8yR0JiXvzccIoKEn/bto2uQgJoYw==}
+  '@preline/scrollspy@2.6.0':
+    resolution: {integrity: sha512-JDkUGA4WBj4PLuKgjVCXyuUHEZPFfBNBTA0FHEpz9Ln6Lntx0D3q4LiGGMasgFG2umUxPtUem37HyKHKfM/i+g==}
 
   '@preline/tooltip@2.5.0':
     resolution: {integrity: sha512-ZC6o4ZeBWCkih5cp+KxKX2WkH/Y5Afu/2yrwlCOqf+Chy3ff5YEJXfkuUN5ReIE/oYnVIjb1e+n/DZXPQACTYA==}
@@ -4986,7 +4986,7 @@ snapshots:
 
   '@popperjs/core@2.11.8': {}
 
-  '@preline/scrollspy@2.5.0': {}
+  '@preline/scrollspy@2.6.0': {}
 
   '@preline/tooltip@2.5.0': {}
 
