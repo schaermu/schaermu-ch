@@ -89,16 +89,16 @@ importers:
     devDependencies:
       '@csmith/release-it-calver-plugin':
         specifier: 2023.12.0
-        version: 2023.12.0(release-it@18.0.0(@types/node@20.14.10)(typescript@5.5.3))
+        version: 2023.12.0(release-it@18.1.2(@types/node@20.14.10)(typescript@5.5.3))
       '@playwright/test':
         specifier: 1.50.1
         version: 1.50.1
       '@release-it/conventional-changelog':
         specifier: 9.0.4
-        version: 9.0.4(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.0.0)(release-it@18.0.0(@types/node@20.14.10)(typescript@5.5.3))
+        version: 9.0.4(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.0.0)(release-it@18.1.2(@types/node@20.14.10)(typescript@5.5.3))
       release-it:
-        specifier: 18.0.0
-        version: 18.0.0(@types/node@20.14.10)(typescript@5.5.3)
+        specifier: 18.1.2
+        version: 18.1.2(@types/node@20.14.10)(typescript@5.5.3)
 
 packages:
 
@@ -3358,8 +3358,8 @@ packages:
   rehype@13.0.2:
     resolution: {integrity: sha512-j31mdaRFrwFRUIlxGeuPXXKWQxet52RBQRvCmzl5eCefn/KGbomK5GMHNMsOJf55fgo3qw5tST5neDuarDYR2A==}
 
-  release-it@18.0.0:
-    resolution: {integrity: sha512-aO7sGBwv+0m8FXVNT+RyL1yky9Nhg0IxkqJIdofTma0Dz4w9z0+u5DddzesOoYQL2fawib3Kwn30DaLxqiz5ng==}
+  release-it@18.1.2:
+    resolution: {integrity: sha512-HOVRcicehCgoCsPFOu0iCBlEC8GDOoKS5s6ICkWmqomGEoZtRQ88D3RCsI5MciSU8vAQU+aWZW2z57NQNNb74w==}
     engines: {node: ^20.9.0 || >=22.0.0}
     hasBin: true
 
@@ -3740,8 +3740,8 @@ packages:
   undici-types@5.26.5:
     resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
 
-  undici@6.21.0:
-    resolution: {integrity: sha512-BUgJXc752Kou3oOIuU1i+yZZypyZRqNPW0vqoMPl8VaoalSfeR0D8/t4iAS3yirs79SSMTxTag+ZC86uswv+Cw==}
+  undici@6.21.1:
+    resolution: {integrity: sha512-q/1rj5D0/zayJB2FraXdaWxbhWiNKDvu8naDT2dl1yTlvJp4BLtOcp2a5BvgGNQpYYJzau7tf1WgKv3b+7mqpQ==}
     engines: {node: '>=18.17'}
 
   unicorn-magic@0.1.0:
@@ -4761,12 +4761,12 @@ snapshots:
       conventional-commits-filter: 5.0.0
       conventional-commits-parser: 6.0.0
 
-  '@csmith/release-it-calver-plugin@2023.12.0(release-it@18.0.0(@types/node@20.14.10)(typescript@5.5.3))':
+  '@csmith/release-it-calver-plugin@2023.12.0(release-it@18.1.2(@types/node@20.14.10)(typescript@5.5.3))':
     dependencies:
       calver: 22.9.1
       chai: 5.1.1
       mocha: 10.6.0
-      release-it: 18.0.0(@types/node@20.14.10)(typescript@5.5.3)
+      release-it: 18.1.2(@types/node@20.14.10)(typescript@5.5.3)
 
   '@emnapi/runtime@1.2.0':
     dependencies:
@@ -5199,13 +5199,13 @@ snapshots:
 
   '@preline/tooltip@2.6.0': {}
 
-  '@release-it/conventional-changelog@9.0.4(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.0.0)(release-it@18.0.0(@types/node@20.14.10)(typescript@5.5.3))':
+  '@release-it/conventional-changelog@9.0.4(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.0.0)(release-it@18.1.2(@types/node@20.14.10)(typescript@5.5.3))':
     dependencies:
       concat-stream: 2.0.0
       conventional-changelog: 6.0.0(conventional-commits-filter@5.0.0)
       conventional-recommended-bump: 10.0.0
       git-semver-tags: 8.0.0(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.0.0)
-      release-it: 18.0.0(@types/node@20.14.10)(typescript@5.5.3)
+      release-it: 18.1.2(@types/node@20.14.10)(typescript@5.5.3)
       semver: 7.6.3
     transitivePeerDependencies:
       - conventional-commits-filter
@@ -6062,7 +6062,7 @@ snapshots:
       parse5: 7.1.2
       parse5-htmlparser2-tree-adapter: 7.0.0
       parse5-parser-stream: 7.1.2
-      undici: 6.21.0
+      undici: 6.21.1
       whatwg-mimetype: 4.0.0
 
   chokidar@3.6.0:
@@ -8115,7 +8115,7 @@ snapshots:
       rehype-stringify: 10.0.1
       unified: 11.0.5
 
-  release-it@18.0.0(@types/node@20.14.10)(typescript@5.5.3):
+  release-it@18.1.2(@types/node@20.14.10)(typescript@5.5.3):
     dependencies:
       '@iarna/toml': 2.2.5
       '@octokit/rest': 21.0.2
@@ -8137,7 +8137,7 @@ snapshots:
       proxy-agent: 6.5.0
       semver: 7.6.3
       shelljs: 0.8.5
-      undici: 6.21.0
+      undici: 6.21.1
       update-notifier: 7.3.1
       url-join: 5.0.0
       wildcard-match: 5.1.4
@@ -8595,7 +8595,7 @@ snapshots:
 
   undici-types@5.26.5: {}
 
-  undici@6.21.0: {}
+  undici@6.21.1: {}
 
   unicorn-magic@0.1.0: {}
 
