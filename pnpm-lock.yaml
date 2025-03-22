@@ -27,8 +27,8 @@ importers:
         specifier: 3.758.0
         version: 3.758.0
       '@fontsource/space-grotesk':
-        specifier: 5.2.5
-        version: 5.2.5
+        specifier: 5.2.6
+        version: 5.2.6
       '@iconify-json/fa-brands':
         specifier: 1.2.1
         version: 1.2.1
@@ -556,8 +556,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@fontsource/space-grotesk@5.2.5':
-    resolution: {integrity: sha512-/9ZtHSxnBwIXbE0XD+69ww4gViWLgzMAkzHZJ8D0pNlN5nWlrDlRJGYGte0o+yxlBZZKDeXbqSP6Jh5L710d+g==}
+  '@fontsource/space-grotesk@5.2.6':
+    resolution: {integrity: sha512-Ejf50hUdoWYFkVdqckXxXuIY3tPgQZ/095EHa21uLBOuk7CQAlxqSdkPu5y47Xv+xa8A4TSrdAJlS9YdF5DqGg==}
 
   '@hutson/parse-repository-url@5.0.0':
     resolution: {integrity: sha512-e5+YUKENATs1JgYHMzTr2MW/NDcXGfYFAuOQU8gJgF/kEh4EqKgfGrfLI67bMD4tbhZVlkigz/9YYwWcbOFthg==}
@@ -4784,7 +4784,7 @@ snapshots:
   '@esbuild/win32-x64@0.21.5':
     optional: true
 
-  '@fontsource/space-grotesk@5.2.5': {}
+  '@fontsource/space-grotesk@5.2.6': {}
 
   '@hutson/parse-repository-url@5.0.0': {}
 
