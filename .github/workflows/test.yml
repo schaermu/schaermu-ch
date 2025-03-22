@@ -29,6 +29,7 @@ jobs:
           context: .
           file: Dockerfile.test
           push: true
+          tags: ${{ env.REGISTRY }}/${{ github.repository }}-test:latest
 
       - name: Build and run dev container task
         uses: devcontainers/ci@v0.3
