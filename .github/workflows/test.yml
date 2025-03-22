@@ -9,12 +9,13 @@ env:
   REGISTRY: ghcr.io
 
 jobs:
-  test:
+  build-tests:
     timeout-minutes: 60
     runs-on: ubuntu-latest
     permissions:
       contents: read
       packages: write
+
     steps:
       - name: Checkout code
         uses: actions/checkout@eef61447b9ff4aafe5dcd4e0bbf5d482be7e7871
@@ -37,7 +38,12 @@ jobs:
           push: true
           tags: ${{ env.REGISTRY }}/${{ github.repository }}-test:latest
 
-      - name: Run E2E tests
-        uses: devcontainers/ci@v0.3
-        with:
-          runCmd: pnpm test:e2e:run
+  run-tests:
+    timeout-minutes: 60
+    depends-on: build-tests
+    runs-on: ubuntu-latest
+    container:
+      image: ${{ env.REGISTRY }}/${{ github.repository }}-test:latest
+      env:
+        HOME: /root
+      options: -t --rm
