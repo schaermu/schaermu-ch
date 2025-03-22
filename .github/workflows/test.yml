@@ -9,9 +9,6 @@ jobs:
   test:
     timeout-minutes: 60
     runs-on: ubuntu-latest
-    container:
-      image: mcr.microsoft.com/playwright:v1.48.1-jammy
-      options: "--ipc=host --init"
     steps:
       - name: Checkout code
         uses: actions/checkout@eef61447b9ff4aafe5dcd4e0bbf5d482be7e7871 # v4
