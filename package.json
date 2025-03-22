@@ -9,8 +9,8 @@
     "preview": "astro preview",
     "astro": "astro",
     "test:e2e": "pnpm test:e2e:build && pnpm test:e2e:run",
-    "test:e2e:build": "docker build -f Dockerfile.test -t ghcr.io/schaermu/schaermu-ch-tests:latest .",
-    "test:e2e:run": "docker run -t --rm -e HOME=/root ghcr.io/schaermu/schaermu-ch-tests:latest",
+    "test:e2e:build": "docker build -f Dockerfile.test -t ghcr.io/schaermu/schaermu-ch-test:latest .",
+    "test:e2e:run": "docker run -t --rm -e HOME=/root ghcr.io/schaermu/schaermu-ch-test:latest",
     "release": "release-it",
     "openai": "node ./scripts/openai.js"
   },
