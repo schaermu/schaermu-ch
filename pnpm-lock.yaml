@@ -36,8 +36,8 @@ importers:
         specifier: 1.2.1
         version: 1.2.1
       '@preline/scrollspy':
-        specifier: 2.6.0
-        version: 2.6.0
+        specifier: 3.0.0
+        version: 3.0.0
       '@preline/tooltip':
         specifier: 3.0.0
         version: 3.0.0
@@ -897,8 +897,8 @@ packages:
     resolution: {integrity: sha512-UA91GwWPhFExt3IizW6bOeY/pQ0BkuNwKjk9iQW9KqxluGCrg4VenZ0/L+2Y0+ZOtme72EVvg6v0zo3AMQRCeA==}
     engines: {node: '>=12'}
 
-  '@preline/scrollspy@2.6.0':
-    resolution: {integrity: sha512-JDkUGA4WBj4PLuKgjVCXyuUHEZPFfBNBTA0FHEpz9Ln6Lntx0D3q4LiGGMasgFG2umUxPtUem37HyKHKfM/i+g==}
+  '@preline/scrollspy@3.0.0':
+    resolution: {integrity: sha512-+uUaF2alNptcXGBic0qOBWOvwgyr6+a4d0YSUyD2mLS1WBr5zYglWQ78w9YW+Bsz0Y7o7kyK4pMigyTQFNCOmw==}
 
   '@preline/tooltip@3.0.0':
     resolution: {integrity: sha512-p0DmSjbxZxugbPDRlP4slHXkgvWhdTNDcIsT2grzrNtieDZwBGcBoKLIgQAxbtYjcNQsAkp67sIBpg+5RDkM0A==}
@@ -5131,7 +5131,7 @@ snapshots:
       '@pnpm/network.ca-file': 1.0.2
       config-chain: 1.1.13
 
-  '@preline/scrollspy@2.6.0': {}
+  '@preline/scrollspy@3.0.0': {}
 
   '@preline/tooltip@3.0.0': {}
 
