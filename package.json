@@ -20,7 +20,7 @@
     "@astrojs/rss": "4.0.9",
     "@astrojs/svelte": "5.7.3",
     "@astrojs/tailwind": "5.1.2",
-    "@aws-sdk/client-s3": "3.758.0",
+    "@aws-sdk/client-s3": "3.772.0",
     "@fontsource/space-grotesk": "5.2.6",
     "@iconify-json/fa-brands": "1.2.1",
     "@iconify-json/fa-solid": "1.2.1",
@@ -33,7 +33,7 @@
     "dayjs": "1.11.13",
     "dotenv": "16.4.7",
     "front-matter": "4.0.2",
-    "openai": "4.86.1",
+    "openai": "4.89.0",
     "pino": "9.6.0",
     "pino-pretty": "11.3.0",
     "preline": "2.7.0",
@@ -44,7 +44,7 @@
   },
   "devDependencies": {
     "@csmith/release-it-calver-plugin": "2023.12.0",
-    "@playwright/test": "1.50.1",
+    "@playwright/test": "1.51.1",
     "@release-it/conventional-changelog": "10.0.0",
     "release-it": "18.1.2"
   }
