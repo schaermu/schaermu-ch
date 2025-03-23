@@ -37,6 +37,9 @@ jobs:
   run-tests:
     needs: build-tests
     runs-on: ubuntu-latest
+    env:
+      PLAYWRIGHT_HTML_OPEN: false
+      PLAYWRIGHT_REPORT_DIR: /app/playwright-report
     steps:
       - name: Checkout code
         uses: actions/checkout@v4

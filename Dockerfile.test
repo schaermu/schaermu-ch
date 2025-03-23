@@ -11,4 +11,4 @@ RUN pnpm install
 RUN pnpm exec playwright install
 
 # run tests
-ENTRYPOINT ["pnpm", "exec", "playwright", "test", "--reporter=list"]
+ENTRYPOINT ["pnpm", "exec", "playwright", "test"]
