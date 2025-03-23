@@ -44,7 +44,7 @@ jobs:
       
       - name: Run tests
         run: |
-          docker run -v ${{ github.workspace }}/playwright-report:/app/playwright-report ghcr.io/${{ github.repository }}-test:latest
+          docker run -v ${{ github.workspace }}/playwright-report:/app/playwright-report -e CI ghcr.io/${{ github.repository }}-test:latest
 
       - name: Upload Report
         uses: actions/upload-artifact@v4
