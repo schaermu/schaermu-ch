@@ -7,7 +7,6 @@ on:
 
 jobs:
   build-tests:
-    timeout-minutes: 60
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -15,10 +14,10 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@eef61447b9ff4aafe5dcd4e0bbf5d482be7e7871
+        uses: actions/checkout@v4
 
       - name: Log in to the Container registry
-        uses: docker/login-action@1f36f5b7a2d2f7bfd524795fc966e6d88c37baa9
+        uses: docker/login-action@v3
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
@@ -28,7 +27,7 @@ jobs:
         uses: docker/setup-buildx-action@v3
 
       - name: Build & push latest test docker image
-        uses: docker/build-push-action@4f58ea79222b3b9dc2c8bbdd6debcef730109a75
+        uses: docker/build-push-action@v6
         with:
           context: .
           file: Dockerfile.test
@@ -36,14 +35,20 @@ jobs:
           tags: ghcr.io/${{ github.repository }}-test:latest
 
   run-tests:
-    timeout-minutes: 60
     needs: build-tests
     runs-on: ubuntu-latest
-    container:
-      image: ghcr.io/${{ github.repository }}-test:latest
-      env:
-        HOME: /root
-      options: -t --rm
     steps:
-      - name: Run E2E tests
-        run: pnpm exec playwright test --reporter=list
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Run tests
+        run: |
+          docker run -v ${{ github.workspace }}/playwright-report:/app/playwright-report ghcr.io/${{ github.repository }}-test:latest
+
+      - name: Upload Report
+        uses: actions/upload-artifact@v4
+        if: ${{ !cancelled() }}
+        with:
+          name: playwright-report
+          path: ${{ github.workspace }}/playwright-report/
+          retention-days: 7
