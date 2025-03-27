@@ -5,7 +5,7 @@ module.exports = {
 	content: [
 		'./public/**/*.astro',
 		'./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}',
-		'./node_modules/preline/dist/*.js',
+		'./node_modules/preline/preline.js',
 	],
 	darkMode: "class",
 	theme: {
