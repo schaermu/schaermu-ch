@@ -1,5 +1,7 @@
 # Changelog
 
+## [2025.5.1](https://github.com/schaermu/schaermu-ch/compare/2025.5.0...2025.5.1) (2025-05-29)
+
 ## [2024.4.1](https://github.com/schaermu/schaermu-ch/compare/2024.4.0...2024.4.1) (2025-05-29)
 
 ### Bug Fixes
