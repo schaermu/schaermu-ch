@@ -33,8 +33,8 @@ importers:
         specifier: 1.2.1
         version: 1.2.1
       '@preline/scrollspy':
-        specifier: 2.6.0
-        version: 2.6.0
+        specifier: 3.0.0
+        version: 3.0.0
       '@preline/tooltip':
         specifier: 3.0.0
         version: 3.0.0
@@ -883,8 +883,8 @@ packages:
     resolution: {integrity: sha512-c83qWb22rNRuB0UaVCI0uRPNRr8Z0FWnEIvT47jiHAmOIUHbBOg5XvV7pM5x+rKn9HRpjxquDbXYSXr3fAKFcw==}
     engines: {node: '>=12'}
 
-  '@preline/scrollspy@2.6.0':
-    resolution: {integrity: sha512-JDkUGA4WBj4PLuKgjVCXyuUHEZPFfBNBTA0FHEpz9Ln6Lntx0D3q4LiGGMasgFG2umUxPtUem37HyKHKfM/i+g==}
+  '@preline/scrollspy@3.0.0':
+    resolution: {integrity: sha512-+uUaF2alNptcXGBic0qOBWOvwgyr6+a4d0YSUyD2mLS1WBr5zYglWQ78w9YW+Bsz0Y7o7kyK4pMigyTQFNCOmw==}
 
   '@preline/tooltip@3.0.0':
     resolution: {integrity: sha512-p0DmSjbxZxugbPDRlP4slHXkgvWhdTNDcIsT2grzrNtieDZwBGcBoKLIgQAxbtYjcNQsAkp67sIBpg+5RDkM0A==}
@@ -5200,7 +5200,7 @@ snapshots:
       '@pnpm/network.ca-file': 1.0.2
       config-chain: 1.1.13
 
-  '@preline/scrollspy@2.6.0': {}
+  '@preline/scrollspy@3.0.0': {}
 
   '@preline/tooltip@3.0.0': {}
 
@@ -5806,7 +5806,7 @@ snapshots:
 
   '@types/node-fetch@2.6.12':
     dependencies:
-      '@types/node': 18.19.104
+      '@types/node': 22.15.23
       form-data: 4.0.2
 
   '@types/node@18.19.104':
@@ -7892,7 +7892,7 @@ snapshots:
       ky: 1.8.1
       registry-auth-token: 5.1.0
       registry-url: 6.0.1
-      semver: 7.6.3
+      semver: 7.7.2
 
   package-manager-detector@1.3.0: {}
 
@@ -8737,7 +8737,7 @@ snapshots:
       is-npm: 6.0.0
       latest-version: 9.0.0
       pupa: 3.1.0
-      semver: 7.6.3
+      semver: 7.7.2
       xdg-basedir: 5.1.0
 
   url-join@5.0.0: {}
