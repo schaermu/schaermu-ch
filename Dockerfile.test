@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/playwright:v1.51.1-noble
+FROM mcr.microsoft.com/playwright:v1.52.0-noble
 
 COPY . /app
 WORKDIR /app
@@ -6,7 +6,7 @@ WORKDIR /app
 # install pnpm
 RUN npm install -g pnpm
 
-# setup dependencies& playwright
+# setup dependencies & playwright
 RUN pnpm install
 RUN pnpm exec playwright install
 
