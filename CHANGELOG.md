@@ -1,5 +1,11 @@
 # Changelog
 
+## [2025.5.2](https://github.com/schaermu/schaermu-ch/compare/2025.5.1...2025.5.2) (2025-05-29)
+
+### Bug Fixes
+
+* preline script loading ([28c9eed](https://github.com/schaermu/schaermu-ch/commit/28c9eed7b89f7a50086913a4249afb08cc8c0929))
+
 ## [2025.5.1](https://github.com/schaermu/schaermu-ch/compare/2025.5.0...2025.5.1) (2025-05-29)
 
 ## [2024.4.1](https://github.com/schaermu/schaermu-ch/compare/2024.4.0...2024.4.1) (2025-05-29)
