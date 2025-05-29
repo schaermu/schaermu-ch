@@ -1,5 +1,5 @@
 ---
-import { getCollection, getEntry } from "astro:content";
+import { getCollection, getEntry, render } from "astro:content";
 import { Picture } from "astro:assets";
 
 import MarkdownPostLayout from "@layouts/MarkdownPostLayout.astro";
@@ -15,17 +15,20 @@ export async function getStaticPaths() {
   const pages = await getCollection("blog");
 
   const paths = pages.map((page) => {
-    return { params: { slug: page.slug || undefined }, props: page };
+    return { params: { slug: page.id || undefined }, props: page };
   });
 
   return paths;
 }
 
 const page = Astro.props;
-const entry = await getEntry("blog", page.slug);
+const entry = await getEntry("blog", page.id);
+if (!entry) {
+  throw new Error("Could not find blog post with slug: " + page.id);
+}
 const readingTime = readingTimeInMin(entry);
 
-const { Content, headings } = await entry.render();
+const { Content, headings } = await render(entry);
 
 const readableDate = dayjs(page.data.pubDate).fromNow();
 const exactDate = dayjs(page.data.pubDate).format("DD.MM.YYYY");
@@ -61,6 +64,6 @@ const series = entry.data.partOfSeries
       <p class="lead my-5">{page.data.lead}</p>
       <Content frontmatter={entry.data} />
     </div>
-    <BlogAside headings={headings} series={series} currentPost={page.slug} />
+    <BlogAside headings={headings} series={series} currentPost={page.id} />
   </div>
 </MarkdownPostLayout>

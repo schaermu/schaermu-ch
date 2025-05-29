@@ -9,6 +9,7 @@
   ],
   "compilerOptions": {
     "strictNullChecks": true,
+    "allowJs": true,
     "allowSyntheticDefaultImports": true,
     "verbatimModuleSyntax": true,
     "baseUrl": ".",

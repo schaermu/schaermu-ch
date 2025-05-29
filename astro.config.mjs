@@ -1,8 +1,8 @@
 import { defineConfig } from 'astro/config';
 import svelte from "@astrojs/svelte";
-import tailwind from "@astrojs/tailwind";
 import markdoc from '@astrojs/markdoc';
 import icon from "astro-icon";
+import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
@@ -13,13 +13,13 @@ export default defineConfig({
   image: {
     domains: ['storage.schaermu.ch'],
   },
-  integrations: [markdoc(), svelte(), tailwind({
-    applyBaseStyles: false,
-    nesting: true,
-  }), icon({
+  integrations: [markdoc(), svelte(), icon({
     include: {
       'fa-brands': ["github", "stack-overflow", "linkedin"],
       'fa-solid': ["bars", "times", "heart", "rocket"]
     }
-  })]
+  })],
+  vite: {
+    plugins: [tailwindcss()]
+  }
 });

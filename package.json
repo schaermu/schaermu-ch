@@ -3,8 +3,8 @@
   "type": "module",
   "version": "2024.4.0",
   "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
+    "dev": "astro dev --host",
+    "start": "astro dev --host",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
@@ -15,11 +15,10 @@
     "openai": "node ./scripts/openai.js"
   },
   "dependencies": {
-    "@astrojs/markdoc": "0.13.1",
-    "@astrojs/prism": "3.2.0",
+    "@astrojs/markdoc": "0.15.0",
+    "@astrojs/prism": "3.3.0",
     "@astrojs/rss": "4.0.11",
-    "@astrojs/svelte": "7.0.7",
-    "@astrojs/tailwind": "6.0.1",
+    "@astrojs/svelte": "7.1.0",
     "@aws-sdk/client-s3": "3.772.0",
     "@fontsource/space-grotesk": "5.2.6",
     "@iconify-json/fa-brands": "1.2.1",
@@ -27,7 +26,8 @@
     "@preline/scrollspy": "2.6.0",
     "@preline/tooltip": "3.0.0",
     "@tailwindcss/typography": "0.5.15",
-    "astro": "5.5.4",
+    "@tailwindcss/vite": "^4.1.7",
+    "astro": "5.8.0",
     "astro-icon": "1.1.4",
     "commander": "12.1.0",
     "dayjs": "1.11.13",
@@ -36,11 +36,11 @@
     "openai": "4.89.0",
     "pino": "9.6.0",
     "pino-pretty": "13.0.0",
-    "preline": "3.0.1",
+    "preline": "^3.0.1",
     "sharp": "0.33.5",
     "slugify": "1.6.6",
     "svelte": "5.25.3",
-    "tailwindcss": "3.4.17"
+    "tailwindcss": "4.0.17"
   },
   "devDependencies": {
     "@csmith/release-it-calver-plugin": "2023.12.0",

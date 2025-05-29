@@ -1,7 +1,8 @@
+import { glob } from 'astro/loaders';
 import { defineCollection, reference, z } from 'astro:content';
 
 const blogCollection = defineCollection({
-    type: 'content',
+    loader: glob({ pattern: '**/*.mdoc', base: './src/content/blog' }),
     schema: z.object({
         title: z.string(),
         pubDate: z.date(),
@@ -17,7 +18,7 @@ const blogCollection = defineCollection({
 });
 
 const blogSeriesCollection = defineCollection({
-    type: 'data',
+    loader: glob({ pattern: '**/*.json', base: './src/content/blog-series' }),
     schema: z.object({
         title: z.string(),
         posts: z.array(z.object({
@@ -28,7 +29,7 @@ const blogSeriesCollection = defineCollection({
 })
 
 const cvEntryCollection = defineCollection({
-    type: 'data',
+    loader: glob({ pattern: '**/*.yml', base: './src/content/cv-entries' }),
     schema: z.object({
         from: z.date(),
         to: z.date().optional(),

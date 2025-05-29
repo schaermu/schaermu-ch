@@ -33,7 +33,7 @@ const { series, headings, currentPost } = Astro.props;
 
 <div
     id="table-of-contents"
-    class="hidden fixed z-50 rounded-2xl bottom-3 bg-slate-300 dark:bg-slate-800 md:top-4 md:bg-transparent md:dark:bg-transparent md:relative md:flex md:basis-1/4"
+    class="hidden fixed z-50 w-[calc(100%-32px)] rounded-2xl bottom-3 bg-slate-300 dark:bg-slate-800 md:top-4 md:bg-transparent md:dark:bg-transparent md:relative md:flex md:basis-1/4"
 >
     <button
         style="margin-right: 0.2em"
@@ -57,8 +57,8 @@ const { series, headings, currentPost } = Astro.props;
                 series &&
                     series.data.posts.map((sp) => (
                         <BlogAsideSeriesItem
-                            isCurrent={sp.post.slug === currentPost}
-                            url={`/blog/${sp.post.slug}`}
+                            isCurrent={sp.post.id === currentPost}
+                            url={`/blog/${sp.post.id}`}
                             label={sp.label}
                         >
                             <BlogAsideHeadings
