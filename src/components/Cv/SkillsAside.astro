@@ -13,7 +13,9 @@ const { techSkills, methodSkills } = getTopSkills(cvEntries, {
 });
 ---
 
-<style>
+<style scoped>
+    @reference "tailwindcss";
+
     .vertical-title {
         @apply text-center text-lg font-light rotate-180;
         writing-mode: vertical-lr;

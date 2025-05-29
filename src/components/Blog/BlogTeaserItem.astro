@@ -14,7 +14,7 @@ export interface Props {
 const { post, reverse } = Astro.props;
 const readingTime = readingTimeInMin(post);
 
-const href = `/blog/${post.slug}`;
+const href = `/blog/${post.id}`;
 ---
 
 <article class:list={["flex", "flex-col", "my-3"]}>

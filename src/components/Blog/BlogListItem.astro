@@ -22,7 +22,7 @@ const readingTime = readingTimeInMin(post);
         width: 800,
         height: 400,
     }}
-    href={`/blog/${post.slug}`}
+    href={`/blog/${post.id}`}
 >
     <Fragment slot="title">{post.data.title}</Fragment>
     <div class="flex gap-3" slot="post-title">
