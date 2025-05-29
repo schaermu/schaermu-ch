@@ -1,5 +1,11 @@
 # Changelog
 
+## [2025.5.3](https://github.com/schaermu/schaermu-ch/compare/2025.5.2...2025.5.3) (2025-05-29)
+
+### Bug Fixes
+
+* update dependencies ([d996aac](https://github.com/schaermu/schaermu-ch/commit/d996aac453fbde66f1b5341b48e25be8340b530e))
+
 ## [2025.5.2](https://github.com/schaermu/schaermu-ch/compare/2025.5.1...2025.5.2) (2025-05-29)
 
 ### Bug Fixes
