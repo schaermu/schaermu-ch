@@ -36,8 +36,8 @@ importers:
         specifier: 3.0.0
         version: 3.0.0
       '@preline/tooltip':
-        specifier: 3.0.0
-        version: 3.0.0
+        specifier: 3.1.0
+        version: 3.1.0
       '@tailwindcss/typography':
         specifier: 0.5.16
         version: 0.5.16(tailwindcss@4.1.8)
@@ -982,8 +982,8 @@ packages:
   '@preline/scrollspy@3.0.0':
     resolution: {integrity: sha512-+uUaF2alNptcXGBic0qOBWOvwgyr6+a4d0YSUyD2mLS1WBr5zYglWQ78w9YW+Bsz0Y7o7kyK4pMigyTQFNCOmw==}
 
-  '@preline/tooltip@3.0.0':
-    resolution: {integrity: sha512-p0DmSjbxZxugbPDRlP4slHXkgvWhdTNDcIsT2grzrNtieDZwBGcBoKLIgQAxbtYjcNQsAkp67sIBpg+5RDkM0A==}
+  '@preline/tooltip@3.1.0':
+    resolution: {integrity: sha512-0PxYORj6W2ShDXw8Eqj2L6rVM5cCem9UMrkPKtzNtttNRIvJVF4Rnds5WqZP8Znvmg1ksuIE8qIz6yt+GoXeGw==}
 
   '@release-it/conventional-changelog@10.0.1':
     resolution: {integrity: sha512-Qp+eyMGCPyq5xiWoNK91cWVIR/6HD1QAUNeG6pV2G4kxotWl81k/KDQqDNvrNVmr9+zDp53jI7pVVYQp6mi4zA==}
@@ -5091,7 +5091,9 @@ snapshots:
 
   '@preline/scrollspy@3.0.0': {}
 
-  '@preline/tooltip@3.0.0': {}
+  '@preline/tooltip@3.1.0':
+    dependencies:
+      '@floating-ui/dom': 1.7.0
 
   '@release-it/conventional-changelog@10.0.1(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.1.0)(release-it@19.0.2(@types/node@22.15.24)(magicast@0.3.5))':
     dependencies:
