@@ -33,8 +33,8 @@ importers:
         specifier: 1.2.1
         version: 1.2.1
       '@preline/scrollspy':
-        specifier: 3.0.0
-        version: 3.0.0
+        specifier: 3.1.0
+        version: 3.1.0
       '@preline/tooltip':
         specifier: 3.1.0
         version: 3.1.0
@@ -979,8 +979,8 @@ packages:
     engines: {node: '>=18'}
     hasBin: true
 
-  '@preline/scrollspy@3.0.0':
-    resolution: {integrity: sha512-+uUaF2alNptcXGBic0qOBWOvwgyr6+a4d0YSUyD2mLS1WBr5zYglWQ78w9YW+Bsz0Y7o7kyK4pMigyTQFNCOmw==}
+  '@preline/scrollspy@3.1.0':
+    resolution: {integrity: sha512-vm8FqGC9Mq/WFDYzibjBmOwYvPQRUnPlvbx1r+TH7W50FvrQpRyJWDr1jC2SFc64voMJZBw4FoFPJzTanNsG3w==}
 
   '@preline/tooltip@3.1.0':
     resolution: {integrity: sha512-0PxYORj6W2ShDXw8Eqj2L6rVM5cCem9UMrkPKtzNtttNRIvJVF4Rnds5WqZP8Znvmg1ksuIE8qIz6yt+GoXeGw==}
@@ -5089,7 +5089,7 @@ snapshots:
     dependencies:
       playwright: 1.52.0
 
-  '@preline/scrollspy@3.0.0': {}
+  '@preline/scrollspy@3.1.0': {}
 
   '@preline/tooltip@3.1.0':
     dependencies:
