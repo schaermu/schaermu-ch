@@ -54,8 +54,8 @@ importers:
         specifier: 1.11.13
         version: 1.11.13
       dotenv:
-        specifier: 16.6.1
-        version: 16.6.1
+        specifier: 17.2.0
+        version: 17.2.0
       front-matter:
         specifier: 4.0.2
         version: 4.0.2
@@ -2095,6 +2095,10 @@ packages:
 
   dotenv@16.6.1:
     resolution: {integrity: sha512-uBq4egWHTcTt33a72vpSG0z3HnPuIl6NqYcTrKEg2azoEyl2hpW0zqlxysq2pK9HlDIHyHyakeYaYnSAwd8bow==}
+    engines: {node: '>=12'}
+
+  dotenv@17.2.0:
+    resolution: {integrity: sha512-Q4sgBT60gzd0BB0lSyYD3xM4YxrXA9y4uBDof1JNYGzOXrQdQ6yX+7XIAqoFOGQFOTK1D3Hts5OllpxMDZFONQ==}
     engines: {node: '>=12'}
 
   dropzone@6.0.0-beta.2:
@@ -6436,6 +6440,8 @@ snapshots:
       is-obj: 2.0.0
 
   dotenv@16.6.1: {}
+
+  dotenv@17.2.0: {}
 
   dropzone@6.0.0-beta.2:
     dependencies:
