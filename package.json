@@ -46,6 +46,6 @@
     "@playwright/test": "1.54.1",
     "@release-it/conventional-changelog": "10.0.1",
     "commander": "14.0.0",
-    "release-it": "19.0.2"
+    "release-it": "19.0.4"
   }
 }
