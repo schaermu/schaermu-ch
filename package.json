@@ -15,7 +15,7 @@
     "openai": "node ./scripts/openai.js"
   },
   "dependencies": {
-    "@astrojs/markdoc": "0.15.0",
+    "@astrojs/markdoc": "0.15.1",
     "@astrojs/prism": "3.3.0",
     "@astrojs/rss": "4.0.12",
     "@astrojs/svelte": "7.1.0",
@@ -27,7 +27,7 @@
     "@preline/tooltip": "3.1.0",
     "@tailwindcss/typography": "0.5.16",
     "@tailwindcss/vite": "4.1.11",
-    "astro": "5.11.2",
+    "astro": "5.12.3",
     "astro-icon": "1.1.5",
     "dayjs": "1.11.13",
     "dotenv": "16.6.1",
