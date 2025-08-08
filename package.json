@@ -24,7 +24,7 @@
     "@iconify-json/fa-brands": "1.2.1",
     "@iconify-json/fa-solid": "1.2.1",
     "@preline/scrollspy": "3.2.3",
-    "@preline/tooltip": "3.1.0",
+    "@preline/tooltip": "3.2.3",
     "@tailwindcss/typography": "0.5.16",
     "@tailwindcss/vite": "4.1.11",
     "astro": "5.12.8",

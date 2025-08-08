@@ -36,8 +36,8 @@ importers:
         specifier: 3.2.3
         version: 3.2.3
       '@preline/tooltip':
-        specifier: 3.1.0
-        version: 3.1.0
+        specifier: 3.2.3
+        version: 3.2.3
       '@tailwindcss/typography':
         specifier: 0.5.16
         version: 0.5.16(tailwindcss@4.1.11)
@@ -1028,8 +1028,8 @@ packages:
   '@preline/scrollspy@3.2.3':
     resolution: {integrity: sha512-yKHzlhpMzp6mtS1Ha5D09U3qahH6hBlTKrtOmwTF12IgB2Ir+RYd0dVyP8UEpOrgHZyXPZLGHrv7Ozu/tcJGRg==}
 
-  '@preline/tooltip@3.1.0':
-    resolution: {integrity: sha512-0PxYORj6W2ShDXw8Eqj2L6rVM5cCem9UMrkPKtzNtttNRIvJVF4Rnds5WqZP8Znvmg1ksuIE8qIz6yt+GoXeGw==}
+  '@preline/tooltip@3.2.3':
+    resolution: {integrity: sha512-VB2ywqCkE+JocSkf1pvIpwzD6GOKsznJdD4AYUH9a0zDf31VlrAmqTvXL57E/yfcR4qzYR71+tyXxhtw85ifxA==}
 
   '@release-it/conventional-changelog@10.0.1':
     resolution: {integrity: sha512-Qp+eyMGCPyq5xiWoNK91cWVIR/6HD1QAUNeG6pV2G4kxotWl81k/KDQqDNvrNVmr9+zDp53jI7pVVYQp6mi4zA==}
@@ -5240,7 +5240,7 @@ snapshots:
 
   '@preline/scrollspy@3.2.3': {}
 
-  '@preline/tooltip@3.1.0':
+  '@preline/tooltip@3.2.3':
     dependencies:
       '@floating-ui/dom': 1.7.0
 
