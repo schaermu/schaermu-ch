@@ -69,8 +69,8 @@ importers:
         specifier: 13.1.1
         version: 13.1.1
       preline:
-        specifier: 3.1.0
-        version: 3.1.0
+        specifier: 3.2.3
+        version: 3.2.3
       sharp:
         specifier: 0.34.2
         version: 0.34.2
@@ -3313,8 +3313,8 @@ packages:
     resolution: {integrity: sha512-QSa9EBe+uwlGTFmHsPKokv3B/oEMQZxfqW0QqNCyhpa6mB1afzulwn8hihglqAb2pOw+BJgNlmXQ8la2VeHB7w==}
     engines: {node: ^10 || ^12 || >=14}
 
-  preline@3.1.0:
-    resolution: {integrity: sha512-vBDqqcANzw1Fom1Ot0x/k2f0zGE9NgGqyfgycxqaG2XgIUyvWOjNB5r2urlabCMsdnURx1g9QRncElwO8iJskQ==}
+  preline@3.2.3:
+    resolution: {integrity: sha512-S13MFdC/1FWFz3S+oW1PlyZ6Alo0SZxJ9HwaZRg5IQZjcbKqCFIOXAbAhQeX0izauqWJXIQdKofhfCWBizwleQ==}
 
   prettier@3.6.2:
     resolution: {integrity: sha512-I7AIg5boAr5R0FFtJ6rCfD+LFsWHp81dolrFD8S79U9tb8Az2nGrJncnMSnys+bpQJfRUzqs9hnA81OAA3hCuQ==}
@@ -7964,7 +7964,7 @@ snapshots:
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
-  preline@3.1.0:
+  preline@3.2.3:
     dependencies:
       '@floating-ui/dom': 1.7.0
       apexcharts: 4.7.0
