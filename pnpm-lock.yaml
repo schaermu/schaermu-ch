@@ -60,8 +60,8 @@ importers:
         specifier: 4.0.2
         version: 4.0.2
       openai:
-        specifier: 5.16.0
-        version: 5.16.0(zod@3.25.36)
+        specifier: 5.17.0
+        version: 5.17.0(zod@3.25.36)
       pino:
         specifier: 9.9.0
         version: 9.9.0
@@ -3146,8 +3146,8 @@ packages:
     resolution: {integrity: sha512-YgBpdJHPyQ2UE5x+hlSXcnejzAvD0b22U2OuAP+8OnlJT+PjWPxtgmGqKKc+RgTM63U9gN0YzrYc71R2WT/hTA==}
     engines: {node: '>=18'}
 
-  openai@5.16.0:
-    resolution: {integrity: sha512-hoEH8ZNvg1HXjU9mp88L/ZH8O082Z8r6FHCXGiWAzVRrEv443aI57qhch4snu07yQydj+AUAWLenAiBXhu89Tw==}
+  openai@5.17.0:
+    resolution: {integrity: sha512-7djpJzihvQ2KlKdfhLcShB+DYQpKW+EPndSM86AvKfXCISnqDYnA/aZtrUWa+VB8zvG/K0rJ6Cmjtd79b64u2w==}
     hasBin: true
     peerDependencies:
       ws: ^8.18.0
@@ -7757,7 +7757,7 @@ snapshots:
       is-inside-container: 1.0.0
       wsl-utils: 0.1.0
 
-  openai@5.16.0(zod@3.25.36):
+  openai@5.17.0(zod@3.25.36):
     optionalDependencies:
       zod: 3.25.36
 
