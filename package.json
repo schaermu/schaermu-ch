@@ -26,7 +26,7 @@
     "@preline/scrollspy": "3.2.3",
     "@preline/tooltip": "3.2.3",
     "@tailwindcss/typography": "0.5.16",
-    "@tailwindcss/vite": "4.1.12",
+    "@tailwindcss/vite": "4.1.13",
     "astro": "5.13.2",
     "astro-icon": "1.1.5",
     "dayjs": "1.11.18",
@@ -39,7 +39,7 @@
     "sharp": "0.34.2",
     "slugify": "1.6.6",
     "svelte": "5.38.6",
-    "tailwindcss": "4.1.12"
+    "tailwindcss": "4.1.13"
   },
   "devDependencies": {
     "@csmith/release-it-calver-plugin": "2023.12.0",
