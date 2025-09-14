@@ -32,7 +32,7 @@
     "dayjs": "1.11.18",
     "dotenv": "16.6.1",
     "front-matter": "4.0.2",
-    "openai": "5.20.1",
+    "openai": "5.20.2",
     "pino": "9.9.5",
     "pino-pretty": "13.1.1",
     "preline": "3.2.3",
