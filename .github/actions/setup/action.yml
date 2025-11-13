@@ -15,7 +15,7 @@ runs:
         run_install: false
 
     - name: Use Node.js ${{ steps.versions.outputs.nodejs }}
-      uses: actions/setup-node@v4
+      uses: actions/setup-node@v6
       with:
         node-version: ${{ steps.versions.outputs.nodejs }}
         cache: "pnpm"
