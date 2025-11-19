@@ -30,7 +30,7 @@
     "astro": "5.15.9",
     "astro-icon": "1.1.5",
     "dayjs": "1.11.18",
-    "dotenv": "16.6.1",
+    "dotenv": "17.2.3",
     "front-matter": "4.0.2",
     "openai": "5.23.2",
     "pino": "9.13.1",
