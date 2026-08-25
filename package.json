@@ -43,7 +43,7 @@
   },
   "devDependencies": {
     "@csmith/release-it-calver-plugin": "2026.7.0",
-    "@playwright/test": "1.62.0",
+    "@playwright/test": "1.62.1",
     "@release-it/conventional-changelog": "10.0.6",
     "commander": "15.0.0",
     "release-it": "19.2.4"
