@@ -15,10 +15,10 @@
     "openai": "node ./scripts/openai.js"
   },
   "dependencies": {
-    "@astrojs/markdoc": "0.15.0",
+    "@astrojs/markdoc": "0.15.11",
     "@astrojs/prism": "3.3.0",
     "@astrojs/rss": "4.0.19",
-    "@astrojs/svelte": "7.1.0",
+    "@astrojs/svelte": "7.2.5",
     "@aws-sdk/client-s3": "3.1123.0",
     "@fontsource/space-grotesk": "5.3.0",
     "@iconify-json/fa-brands": "1.2.2",
@@ -27,8 +27,8 @@
     "@preline/tooltip": "3.2.3",
     "@tailwindcss/typography": "0.5.16",
     "@tailwindcss/vite": "4.3.3",
-    "astro": "7.1.0",
-    "astro-icon": "1.1.5",
+    "astro": "7.3.1",
+    "astro-icon": "1.2.0",
     "dayjs": "1.11.23",
     "dotenv": "16.6.1",
     "front-matter": "4.0.2",
