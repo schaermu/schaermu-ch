@@ -86,19 +86,19 @@ importers:
     devDependencies:
       '@csmith/release-it-calver-plugin':
         specifier: 2026.7.0
-        version: 2026.7.0(release-it@21.0.2(@types/node@22.15.24)(magicast@0.5.2)(supports-color@8.1.1))
+        version: 2026.7.0(release-it@21.0.3(@types/node@22.15.24)(magicast@0.5.2)(supports-color@8.1.1))
       '@playwright/test':
         specifier: 1.63.0
         version: 1.63.0
       '@release-it/conventional-changelog':
-        specifier: 12.0.0
-        version: 12.0.0(conventional-commits-filter@6.0.1)(conventional-commits-parser@7.1.2)(release-it@21.0.2(@types/node@22.15.24)(magicast@0.5.2)(supports-color@8.1.1))
+        specifier: 12.0.2
+        version: 12.0.2(conventional-commits-filter@6.0.1)(conventional-commits-parser@7.1.2)(release-it@21.0.3(@types/node@22.15.24)(magicast@0.5.2)(supports-color@8.1.1))
       commander:
         specifier: 15.0.0
         version: 15.0.0
       release-it:
-        specifier: 21.0.2
-        version: 21.0.2(@types/node@22.15.24)(magicast@0.5.2)(supports-color@8.1.1)
+        specifier: 21.0.3
+        version: 21.0.3(@types/node@22.15.24)(magicast@0.5.2)(supports-color@8.1.1)
 
 packages:
 
@@ -1145,9 +1145,9 @@ packages:
   '@preline/tooltip@3.2.3':
     resolution: {integrity: sha512-VB2ywqCkE+JocSkf1pvIpwzD6GOKsznJdD4AYUH9a0zDf31VlrAmqTvXL57E/yfcR4qzYR71+tyXxhtw85ifxA==}
 
-  '@release-it/conventional-changelog@12.0.0':
-    resolution: {integrity: sha512-b9N8/tUjO9JNH1u2fVSmq8QmbqnE//Y5iCgvPcytsk0pj0GhgGCp+VmfzhEBIdd+lVGZJKs+ZSaGaOHjtmtv7g==}
-    engines: {node: ^22.21.0 || >=24.0.0}
+  '@release-it/conventional-changelog@12.0.2':
+    resolution: {integrity: sha512-mJsfycScVqud9O+GzVLT1wQBsIR2WO3kEe6Xm7ucf9yP9KyKRTY9yqoFe/kjLCNSu0lP0PzpuOooUYyzHm1oFw==}
+    engines: {node: ^22.22.2 || ^24.15.0 || >=26.0.0}
     peerDependencies:
       release-it: ^18.0.0 || ^19.0.0 || ^20.0.0 || ^21.0.0
 
@@ -3211,8 +3211,8 @@ packages:
   rehype-stringify@10.0.1:
     resolution: {integrity: sha512-k9ecfXHmIPuFVI61B9DeLPN0qFHfawM6RsuX48hoqlaKSF61RskNjSm1lI8PhBEM0MRdLxVVm4WmTqJQccH9mA==}
 
-  release-it@21.0.2:
-    resolution: {integrity: sha512-QwyDnWiQNB4d8Hc2b5FLMHcsKz9S2O1dMNnPB7w+0knsL5r8+qbnznDA1X7Bw5D863+Ud7eRHc71Cfth5Tlrgg==}
+  release-it@21.0.3:
+    resolution: {integrity: sha512-Pd5Uqj5hJmVAZzb+QSkkDgfvHJwRBazWryb90x5FYHhPxg35cE+1wX9v1DXk4ENy8C0osHxH/yRk1mvnZi7ZHQ==}
     engines: {node: ^22.21.0 || >=24.0.0}
     hasBin: true
 
@@ -4160,10 +4160,10 @@ snapshots:
 
   '@conventional-changelog/template@1.4.0': {}
 
-  '@csmith/release-it-calver-plugin@2026.7.0(release-it@21.0.2(@types/node@22.15.24)(magicast@0.5.2)(supports-color@8.1.1))':
+  '@csmith/release-it-calver-plugin@2026.7.0(release-it@21.0.3(@types/node@22.15.24)(magicast@0.5.2)(supports-color@8.1.1))':
     dependencies:
       calver: 24.1.0
-      release-it: 21.0.2(@types/node@22.15.24)(magicast@0.5.2)(supports-color@8.1.1)
+      release-it: 21.0.3(@types/node@22.15.24)(magicast@0.5.2)(supports-color@8.1.1)
 
   '@emnapi/core@1.11.1':
     dependencies:
@@ -4741,7 +4741,7 @@ snapshots:
     dependencies:
       '@floating-ui/dom': 1.7.0
 
-  '@release-it/conventional-changelog@12.0.0(conventional-commits-filter@6.0.1)(conventional-commits-parser@7.1.2)(release-it@21.0.2(@types/node@22.15.24)(magicast@0.5.2)(supports-color@8.1.1))':
+  '@release-it/conventional-changelog@12.0.2(conventional-commits-filter@6.0.1)(conventional-commits-parser@7.1.2)(release-it@21.0.3(@types/node@22.15.24)(magicast@0.5.2)(supports-color@8.1.1))':
     dependencies:
       '@conventional-changelog/git-client': 3.1.2(conventional-commits-filter@6.0.1)(conventional-commits-parser@7.1.2)
       concat-stream: 2.0.0
@@ -4749,7 +4749,7 @@ snapshots:
       conventional-changelog-angular: 9.4.0
       conventional-changelog-conventionalcommits: 10.4.0
       conventional-recommended-bump: 12.1.0
-      release-it: 21.0.2(@types/node@22.15.24)(magicast@0.5.2)(supports-color@8.1.1)
+      release-it: 21.0.3(@types/node@22.15.24)(magicast@0.5.2)(supports-color@8.1.1)
       semver: 7.8.5
     transitivePeerDependencies:
       - conventional-commits-filter
@@ -7017,7 +7017,7 @@ snapshots:
       hast-util-to-html: 9.0.5
       unified: 11.0.5
 
-  release-it@21.0.2(@types/node@22.15.24)(magicast@0.5.2)(supports-color@8.1.1):
+  release-it@21.0.3(@types/node@22.15.24)(magicast@0.5.2)(supports-color@8.1.1):
     dependencies:
       '@inquirer/prompts': 8.5.2(@types/node@22.15.24)
       '@octokit/rest': 22.0.1
