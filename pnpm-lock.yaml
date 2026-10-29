@@ -85,8 +85,8 @@ importers:
         version: 4.3.3
     devDependencies:
       '@csmith/release-it-calver-plugin':
-        specifier: 2026.7.0
-        version: 2026.7.0(release-it@21.1.1(@types/node@22.15.24)(magicast@0.5.2)(supports-color@8.1.1))
+        specifier: 2026.9.0
+        version: 2026.9.0(release-it@21.1.1(@types/node@22.15.24)(magicast@0.5.2)(supports-color@8.1.1))
       '@playwright/test':
         specifier: 1.64.1
         version: 1.64.1
@@ -380,8 +380,8 @@ packages:
     resolution: {integrity: sha512-aalGyl7dbB5PArRebDIX43ZvBlXrYm9uWzGJ26t+4SzJVPsOuvfILGGbw5X4yX7i50YEmJ8zvbiWnqH/AAnZqg==}
     engines: {node: '>=22'}
 
-  '@csmith/release-it-calver-plugin@2026.7.0':
-    resolution: {integrity: sha512-V6iYrayMveHPuFEtQLdFnyR96xDiUvQ51fuTRIEsKtScNgM4o7wEuig7+jMGKWP4mSIXNOzgNZ1A02zHbvAiMQ==}
+  '@csmith/release-it-calver-plugin@2026.9.0':
+    resolution: {integrity: sha512-zL74jOwdIRCTUaLGADMCmpDSsIgW7YTgev0t49bmFkSf8uOlohqdTIRxgbLwXjb7CbW/Dxw+czZ4VdYKOwY/pw==}
     peerDependencies:
       release-it: ^21.0.0
 
@@ -4177,7 +4177,7 @@ snapshots:
 
   '@conventional-changelog/template@1.4.0': {}
 
-  '@csmith/release-it-calver-plugin@2026.7.0(release-it@21.1.1(@types/node@22.15.24)(magicast@0.5.2)(supports-color@8.1.1))':
+  '@csmith/release-it-calver-plugin@2026.9.0(release-it@21.1.1(@types/node@22.15.24)(magicast@0.5.2)(supports-color@8.1.1))':
     dependencies:
       calver: 24.1.0
       release-it: 21.1.1(@types/node@22.15.24)(magicast@0.5.2)(supports-color@8.1.1)
